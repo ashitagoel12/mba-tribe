@@ -57,7 +57,7 @@ export default function WelcomeScreen({ onStart }) {
             },
             {
               icon: <Users size={20} className="text-indigo-500" />,
-              heading: '26 programs analysed',
+              heading: '50 programs analysed',
               body: 'Data from official class profiles and employment reports, updated for 2025–2026.',
             },
             {
@@ -78,7 +78,7 @@ export default function WelcomeScreen({ onStart }) {
       {/* ── Footer ──────────────────────────────────────────────────────── */}
       <footer className="bg-white border-t border-slate-100 px-6 py-4">
         <div className="max-w-5xl mx-auto text-center text-sm text-slate-400">
-          26 programs · Data updated 2025–2026 · Built by MBA Tribe
+          50 programs · Data updated 2025–2026 · Built by MBA Tribe
         </div>
       </footer>
 
