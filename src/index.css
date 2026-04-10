@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply text-slate-700 antialiased;
+  }
+}
+
+@layer utilities {
+  .fit-bar-fill {
+    transition: width 1s ease-out;
+  }
+}
