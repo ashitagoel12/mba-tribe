@@ -33,7 +33,7 @@ function buildSummary(formData, results) {
   let summary = `You're targeting ${goalLabel} in the ${geoLabel} area.`
   summary += ` Your highest-rated priorities are ${priorityPhrase}.`
   if (isIntl) summary += ` As an international applicant, we've given extra weight to programs with strong global communities and international student support.`
-  summary += ` We've sorted all 26 programs accordingly — programs that genuinely over-index on what matters to you appear first.`
+  summary += ` We've sorted all 50 programs accordingly — programs that genuinely over-index on what matters to you appear first.`
 
   return summary
 }
@@ -385,7 +385,7 @@ export default function ResultsPage({ schools, formData, onRetake }) {
       {/* ── Footer ──────────────────────────────────────────────────────── */}
       <footer className="border-t border-slate-100 bg-white mt-12 px-6 py-5">
         <div className="max-w-4xl mx-auto text-center text-sm text-slate-400">
-          26 programs · Data updated 2025–2026 · MBA Tribe
+          50 programs · Data updated 2025–2026 · MBA Tribe
         </div>
       </footer>
 

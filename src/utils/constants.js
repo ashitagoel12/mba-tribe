@@ -109,25 +109,35 @@ export const T15_IDS = new Set([
 
 // ---------------------------------------------------------------------------
 // Geography mapping: US state abbreviation → target geography bucket
+// Update this when adding schools in new states.
 // ---------------------------------------------------------------------------
 export const STATE_TO_GEO = {
+  // Northeast US
   MA: 'northeast',
   NY: 'northeast',
   CT: 'northeast',
   NH: 'northeast',
   PA: 'northeast',
+  // West Coast
   CA: 'west-coast',
   WA: 'west-coast',
+  UT: 'west-coast',   // Provo/SLC — closest Western cluster
+  // Midwest
   IL: 'midwest',
   MI: 'midwest',
   IN: 'midwest',
   OH: 'midwest',
   WI: 'midwest',
+  MN: 'midwest',     // Minneapolis
+  // South / Southwest
   TX: 'south-southwest',
   NC: 'south-southwest',
   GA: 'south-southwest',
   VA: 'south-southwest',
   DC: 'south-southwest',
+  TN: 'south-southwest',  // Nashville
+  MD: 'south-southwest',  // DC metro (College Park)
+  AZ: 'south-southwest',  // Tempe / Phoenix
 }
 
 // ---------------------------------------------------------------------------

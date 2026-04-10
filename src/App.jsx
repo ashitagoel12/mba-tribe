@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import WelcomeScreen from './components/WelcomeScreen.jsx'
 import AssessmentForm from './components/AssessmentForm.jsx'
 import ResultsPage from './components/ResultsPage.jsx'
-import schoolsData from '../mba_schools_data.json'
+import schoolsData from '../data/mba_schools_data.json'
 
 // ---------------------------------------------------------------------------
 // Default form state — reset to this when the user clicks "Retake"
