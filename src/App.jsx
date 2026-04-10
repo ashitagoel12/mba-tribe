@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import WelcomeScreen from './components/WelcomeScreen.jsx'
 import AssessmentForm from './components/AssessmentForm.jsx'
 import ResultsPage from './components/ResultsPage.jsx'
@@ -69,26 +70,37 @@ export default function App() {
   const schools = schoolsData.schools
 
   if (step === 0) {
-    return <WelcomeScreen onStart={handleStart} />
+    return (
+      <>
+        <WelcomeScreen onStart={handleStart} />
+        <Analytics />
+      </>
+    )
   }
 
   if (step === 5) {
     return (
-      <ResultsPage
-        schools={schools}
-        formData={formData}
-        onRetake={handleRetake}
-      />
+      <>
+        <ResultsPage
+          schools={schools}
+          formData={formData}
+          onRetake={handleRetake}
+        />
+        <Analytics />
+      </>
     )
   }
 
   return (
-    <AssessmentForm
-      formData={formData}
-      setFormData={setFormData}
-      currentStep={step}
-      setStep={setStep}
-      onComplete={handleFormComplete}
-    />
+    <>
+      <AssessmentForm
+        formData={formData}
+        setFormData={setFormData}
+        currentStep={step}
+        setStep={setStep}
+        onComplete={handleFormComplete}
+      />
+      <Analytics />
+    </>
   )
 }
