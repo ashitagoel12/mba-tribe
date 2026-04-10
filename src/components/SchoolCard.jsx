@@ -1,0 +1,137 @@
+import React, { useEffect, useState } from 'react'
+import { ExternalLink, AlertCircle, CheckCircle2 } from 'lucide-react'
+import { generateFitBullets, generateWatchOut } from '../utils/bulletGenerator.js'
+
+// ---------------------------------------------------------------------------
+// Helpers
+// ---------------------------------------------------------------------------
+
+function fmt(n) {
+  if (!n && n !== 0) return '—'
+  if (n >= 1_000_000) return `$${(n / 1_000_000).toFixed(1)}M`
+  if (n >= 1_000) return `$${Math.round(n / 1_000)}k`
+  return `$${n}`
+}
+
+// ---------------------------------------------------------------------------
+// Animated fit-score bar
+// ---------------------------------------------------------------------------
+
+function FitScoreBar({ score }) {
+  const [width, setWidth] = useState(0)
+
+  useEffect(() => {
+    const t = setTimeout(() => setWidth(score), 100)
+    return () => clearTimeout(t)
+  }, [score])
+
+  const colour =
+    score >= 65 ? 'bg-emerald-500'
+    : score >= 45 ? 'bg-indigo-400'
+    : 'bg-amber-400'
+
+  const textColour =
+    score >= 65 ? 'text-emerald-600'
+    : score >= 45 ? 'text-indigo-600'
+    : 'text-amber-600'
+
+  return (
+    <div className="flex items-center gap-3">
+      <div className="flex-1 bg-slate-100 rounded-full h-2 overflow-hidden">
+        <div
+          className={`h-2 rounded-full transition-all duration-1000 ease-out ${colour}`}
+          style={{ width: `${width}%` }}
+        />
+      </div>
+      <span className={`font-mono text-sm font-bold ${textColour}`}>{score}%</span>
+    </div>
+  )
+}
+
+// ---------------------------------------------------------------------------
+// Quick stat tile
+// ---------------------------------------------------------------------------
+
+function StatTile({ label, value }) {
+  return (
+    <div className="bg-slate-50 rounded-lg p-3 text-center">
+      <div className="font-mono font-semibold text-slate-800 text-sm leading-none mb-1">{value}</div>
+      <div className="text-xs text-slate-400">{label}</div>
+    </div>
+  )
+}
+
+// ---------------------------------------------------------------------------
+// Main component — Full card used in Strong Fit tier
+// ---------------------------------------------------------------------------
+
+export default function SchoolCard({ scored, formData }) {
+  const { school, totalScore, breakdown, tier } = scored
+  const bullets = generateFitBullets(school, formData, breakdown)
+  const watchOut = generateWatchOut(school, formData)
+
+  return (
+    <div className="bg-white rounded-xl shadow-sm border border-slate-100 p-6 hover:shadow-md transition-shadow">
+
+      {/* ── Header ─────────────────────────────────────────────────────── */}
+      <div className="flex items-start justify-between gap-4 mb-5">
+        <div className="flex-1 min-w-0">
+          <h3 className="text-lg font-semibold text-slate-800 leading-snug">{school.name}</h3>
+          <p className="text-sm text-slate-500 mt-0.5">{school.university}</p>
+          <p className="text-xs text-slate-400 mt-0.5 font-mono">
+            {school.location.city}, {school.location.state}
+          </p>
+        </div>
+        <a
+          href={school.programUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-1 text-indigo-600 hover:text-indigo-800 text-sm font-medium transition-colors shrink-0 mt-0.5"
+          aria-label={`Visit ${school.name} website`}
+        >
+          Visit site
+          <ExternalLink size={13} />
+        </a>
+      </div>
+
+      {/* ── Fit score ──────────────────────────────────────────────────── */}
+      <div className="mb-5">
+        <div className="flex items-center justify-between text-xs text-slate-400 mb-1.5">
+          <span>Fit score</span>
+          <span>based on your inputs</span>
+        </div>
+        <FitScoreBar score={totalScore} />
+      </div>
+
+      {/* ── Why this fits you ──────────────────────────────────────────── */}
+      <div className="mb-5">
+        <h4 className="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-3">
+          Why this fits you
+        </h4>
+        <ul className="space-y-2.5">
+          {bullets.map((bullet, i) => (
+            <li key={i} className="flex gap-2.5 text-sm text-slate-600 leading-relaxed">
+              <CheckCircle2 size={15} className="text-emerald-500 shrink-0 mt-0.5" />
+              <span>{bullet}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* ── Quick stats ────────────────────────────────────────────────── */}
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 mb-5">
+        <StatTile label="Avg GMAT" value={school.classProfile.avgGMAT} />
+        <StatTile label="Placed (3 mo)" value={`${school.employment.employmentRate3Months}%`} />
+        <StatTile label="Tuition / yr" value={fmt(school.costs.annualTuition)} />
+        <StatTile label="Avg Salary" value={fmt(school.employment.avgStartingSalary)} />
+      </div>
+
+      {/* ── Watch out ──────────────────────────────────────────────────── */}
+      <div className="flex gap-2.5 bg-amber-50 rounded-lg p-3.5 border border-amber-100">
+        <AlertCircle size={15} className="text-amber-500 shrink-0 mt-0.5" />
+        <p className="text-sm text-amber-800 leading-relaxed">{watchOut}</p>
+      </div>
+
+    </div>
+  )
+}
