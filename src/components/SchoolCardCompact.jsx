@@ -39,7 +39,7 @@ function FitScoreBar({ score, tier }) {
 // Compact card — used in Worth Exploring and Stretch tiers
 // ---------------------------------------------------------------------------
 
-export default function SchoolCardCompact({ scored, formData }) {
+export default function SchoolCardCompact({ scored, formData, isSelectable, isSelected, isDisabled, onToggleSelect }) {
   const { school, totalScore, breakdown, tier } = scored
   const bullets = generateFitBullets(school, formData, breakdown)
   const watchOut = generateWatchOut(school, formData)
@@ -48,7 +48,7 @@ export default function SchoolCardCompact({ scored, formData }) {
 
   return (
     <div className={`bg-white rounded-xl shadow-sm border p-5 hover:shadow-md transition-shadow ${
-      isStretch ? 'border-amber-200' : 'border-slate-100'
+      isSelected ? 'border-indigo-400 ring-2 ring-indigo-200' : isStretch ? 'border-amber-200' : 'border-slate-100'
     }`}>
 
       {/* Stretch badge */}
@@ -66,15 +66,37 @@ export default function SchoolCardCompact({ scored, formData }) {
             {school.location.city}, {school.location.state}
           </p>
         </div>
-        <a
-          href={school.programUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-indigo-500 hover:text-indigo-700 transition-colors shrink-0 mt-0.5"
-          aria-label={`Visit ${school.name} website`}
-        >
-          <ExternalLink size={14} />
-        </a>
+        <div className="flex items-center gap-2 shrink-0 mt-0.5">
+          {isSelectable && (
+            <button
+              onClick={() => onToggleSelect(school.id)}
+              disabled={isDisabled}
+              title={isSelected ? 'Remove from comparison' : isDisabled ? 'Max 3 schools selected' : 'Add to comparison'}
+              className={`w-4.5 h-4.5 w-[18px] h-[18px] rounded border-2 flex items-center justify-center transition-colors ${
+                isSelected
+                  ? 'bg-indigo-600 border-indigo-600 text-white'
+                  : isDisabled
+                  ? 'border-slate-200 bg-slate-50 cursor-not-allowed'
+                  : 'border-slate-300 hover:border-indigo-400 bg-white cursor-pointer'
+              }`}
+            >
+              {isSelected && (
+                <svg width="9" height="7" viewBox="0 0 10 8" fill="none">
+                  <path d="M1 4l3 3 5-6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              )}
+            </button>
+          )}
+          <a
+            href={school.programUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-indigo-500 hover:text-indigo-700 transition-colors"
+            aria-label={`Visit ${school.name} website`}
+          >
+            <ExternalLink size={14} />
+          </a>
+        </div>
       </div>
 
       {/* ── Fit score ──────────────────────────────────────────────────── */}

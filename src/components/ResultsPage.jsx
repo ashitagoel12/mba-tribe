@@ -1,8 +1,10 @@
-import React, { useMemo } from 'react'
-import { RotateCcw, BookOpen, Users, MessageCircle, HelpCircle, Sparkles, ChevronRight } from 'lucide-react'
+import React, { useMemo, useState } from 'react'
+import { RotateCcw, BookOpen, Users, MessageCircle, HelpCircle, Sparkles, ChevronRight, GitCompare } from 'lucide-react'
 import { runMatching } from '../utils/matchingAlgorithm.js'
+import { generateUserInsights } from '../utils/userInsights.js'
 import SchoolCard from './SchoolCard.jsx'
 import SchoolCardCompact from './SchoolCardCompact.jsx'
+import ComparisonView from './ComparisonView.jsx'
 import {
   POST_MBA_GOALS,
   TARGET_GEOGRAPHIES,
@@ -129,14 +131,51 @@ function hiddenGemNote(school, formData) {
 // ---------------------------------------------------------------------------
 
 export default function ResultsPage({ schools, formData, onRetake }) {
-  const results = useMemo(() => runMatching(schools, formData), [schools, formData])
+  const results  = useMemo(() => runMatching(schools, formData), [schools, formData])
+  const insights = useMemo(() => generateUserInsights(formData), [formData])
 
   const { strongFit, worthExploring, stretch, hiddenGems } = results
-  const summary = useMemo(() => buildSummary(formData, results), [formData, results])
+  const summary   = useMemo(() => buildSummary(formData, results), [formData, results])
   const questions = useMemo(() => buildVisitQuestions(formData), [formData])
 
-  const hasStretch  = stretch.length > 0
+  const hasStretch    = stretch.length > 0
   const hasHiddenGems = hiddenGems.length > 0
+
+  // ── Comparison mode state ───────────────────────────────────────────────
+  const [selectedIds, setSelectedIds]     = useState(new Set())
+  const [showComparison, setShowComparison] = useState(false)
+  const MAX_COMPARE = 3
+
+  const toggleSelect = (id) => {
+    setSelectedIds(prev => {
+      const next = new Set(prev)
+      if (next.has(id)) { next.delete(id) }
+      else if (next.size < MAX_COMPARE) { next.add(id) }
+      return next
+    })
+  }
+
+  // Build full school objects for the comparison view
+  const selectedSchools = [...selectedIds]
+    .map(id => schools.find(s => s.id === id))
+    .filter(Boolean)
+
+  if (showComparison) {
+    return (
+      <ComparisonView
+        selectedSchools={selectedSchools}
+        onBack={() => setShowComparison(false)}
+      />
+    )
+  }
+
+  // Shared comparison props passed to every card
+  const compareProps = (id) => ({
+    isSelectable:   true,
+    isSelected:     selectedIds.has(id),
+    isDisabled:     !selectedIds.has(id) && selectedIds.size >= MAX_COMPARE,
+    onToggleSelect: toggleSelect,
+  })
 
   return (
     <div className="min-h-screen bg-slate-50">
@@ -161,13 +200,49 @@ export default function ResultsPage({ schools, formData, onRetake }) {
       <main className="max-w-4xl mx-auto px-4 py-10">
 
         {/* ── Page header ─────────────────────────────────────────────── */}
-        <div className="mb-10">
+        <div className="mb-8">
           <p className="text-xs font-semibold text-indigo-500 uppercase tracking-widest mb-2">Your Results</p>
           <h1 className="text-3xl sm:text-4xl font-semibold text-slate-800 tracking-tight mb-4">
             Your MBA Fit Report
           </h1>
           <div className="bg-white rounded-xl border border-slate-100 shadow-sm p-5">
             <p className="text-slate-600 leading-relaxed">{summary}</p>
+          </div>
+        </div>
+
+        {/* ── What matters to you ─────────────────────────────────────── */}
+        <div className="bg-indigo-50 border border-indigo-100 rounded-xl p-5 mb-10">
+          <div className="flex items-start gap-3">
+            <span className="text-xl shrink-0 mt-0.5">🎯</span>
+            <div className="flex-1 min-w-0">
+              <h2 className="text-sm font-semibold text-indigo-800 mb-1.5">What matters to you</h2>
+              <p className="text-sm text-indigo-900 leading-relaxed mb-3">{insights.summary}</p>
+
+              <div className="flex flex-wrap gap-4 text-xs">
+                {insights.topPriorities.length > 0 && (
+                  <div>
+                    <span className="font-semibold text-indigo-700 uppercase tracking-wide">Optimising for · </span>
+                    {insights.topPriorities.map((p, i) => (
+                      <span key={i} className="inline-flex items-center bg-indigo-100 text-indigo-800 font-medium px-2 py-0.5 rounded-full mr-1 mb-1">{p}</span>
+                    ))}
+                  </div>
+                )}
+                {insights.flexibleOn.length > 0 && (
+                  <div>
+                    <span className="font-semibold text-indigo-400 uppercase tracking-wide">Flexible on · </span>
+                    {insights.flexibleOn.map((p, i) => (
+                      <span key={i} className="inline-flex items-center bg-white text-indigo-400 border border-indigo-200 font-medium px-2 py-0.5 rounded-full mr-1 mb-1">{p}</span>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {insights.profileNote && (
+                <p className="text-xs text-indigo-700 mt-3 pt-3 border-t border-indigo-200 leading-relaxed">
+                  💡 {insights.profileNote}
+                </p>
+              )}
+            </div>
           </div>
         </div>
 
@@ -182,7 +257,12 @@ export default function ResultsPage({ schools, formData, onRetake }) {
           />
           <div className="space-y-5">
             {strongFit.map(scored => (
-              <SchoolCard key={scored.school.id} scored={scored} formData={formData} />
+              <SchoolCard
+                key={scored.school.id}
+                scored={scored}
+                formData={formData}
+                {...compareProps(scored.school.id)}
+              />
             ))}
           </div>
         </section>
@@ -201,7 +281,12 @@ export default function ResultsPage({ schools, formData, onRetake }) {
               />
               <div className="grid sm:grid-cols-2 gap-4">
                 {worthExploring.map(scored => (
-                  <SchoolCardCompact key={scored.school.id} scored={scored} formData={formData} />
+                  <SchoolCardCompact
+                    key={scored.school.id}
+                    scored={scored}
+                    formData={formData}
+                    {...compareProps(scored.school.id)}
+                  />
                 ))}
               </div>
             </section>
@@ -222,7 +307,12 @@ export default function ResultsPage({ schools, formData, onRetake }) {
               />
               <div className="grid sm:grid-cols-2 gap-4">
                 {stretch.map(scored => (
-                  <SchoolCardCompact key={scored.school.id} scored={scored} formData={formData} />
+                  <SchoolCardCompact
+                    key={scored.school.id}
+                    scored={scored}
+                    formData={formData}
+                    {...compareProps(scored.school.id)}
+                  />
                 ))}
               </div>
             </section>
@@ -381,6 +471,22 @@ export default function ResultsPage({ schools, formData, onRetake }) {
         </div>
 
       </main>
+
+      {/* ── Floating compare button ──────────────────────────────────────── */}
+      {selectedIds.size > 0 && (
+        <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50">
+          <button
+            onClick={() => setShowComparison(true)}
+            className="inline-flex items-center gap-2.5 bg-slate-900 hover:bg-slate-800 text-white px-6 py-3.5 rounded-full shadow-xl font-medium text-sm transition-colors"
+          >
+            <GitCompare size={16} />
+            Compare Selected Schools ({selectedIds.size})
+            {selectedIds.size < MAX_COMPARE && (
+              <span className="text-slate-400 text-xs">· add up to {MAX_COMPARE - selectedIds.size} more</span>
+            )}
+          </button>
+        </div>
+      )}
 
       {/* ── Footer ──────────────────────────────────────────────────────── */}
       <footer className="border-t border-slate-100 bg-white mt-12 px-6 py-5">

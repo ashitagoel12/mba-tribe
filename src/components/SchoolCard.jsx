@@ -65,13 +65,15 @@ function StatTile({ label, value }) {
 // Main component — Full card used in Strong Fit tier
 // ---------------------------------------------------------------------------
 
-export default function SchoolCard({ scored, formData }) {
+export default function SchoolCard({ scored, formData, isSelectable, isSelected, isDisabled, onToggleSelect }) {
   const { school, totalScore, breakdown, tier } = scored
   const bullets = generateFitBullets(school, formData, breakdown)
   const watchOut = generateWatchOut(school, formData)
 
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-slate-100 p-6 hover:shadow-md transition-shadow">
+    <div className={`bg-white rounded-xl shadow-sm border p-6 hover:shadow-md transition-shadow ${
+      isSelected ? 'border-indigo-400 ring-2 ring-indigo-200' : 'border-slate-100'
+    }`}>
 
       {/* ── Header ─────────────────────────────────────────────────────── */}
       <div className="flex items-start justify-between gap-4 mb-5">
@@ -82,16 +84,38 @@ export default function SchoolCard({ scored, formData }) {
             {school.location.city}, {school.location.state}
           </p>
         </div>
-        <a
-          href={school.programUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-1 text-indigo-600 hover:text-indigo-800 text-sm font-medium transition-colors shrink-0 mt-0.5"
-          aria-label={`Visit ${school.name} website`}
-        >
-          Visit site
-          <ExternalLink size={13} />
-        </a>
+        <div className="flex items-center gap-2.5 shrink-0 mt-0.5">
+          {isSelectable && (
+            <button
+              onClick={() => onToggleSelect(school.id)}
+              disabled={isDisabled}
+              title={isSelected ? 'Remove from comparison' : isDisabled ? 'Max 3 schools selected' : 'Add to comparison'}
+              className={`w-5 h-5 rounded border-2 flex items-center justify-center transition-colors ${
+                isSelected
+                  ? 'bg-indigo-600 border-indigo-600 text-white'
+                  : isDisabled
+                  ? 'border-slate-200 bg-slate-50 cursor-not-allowed'
+                  : 'border-slate-300 hover:border-indigo-400 bg-white cursor-pointer'
+              }`}
+            >
+              {isSelected && (
+                <svg width="10" height="8" viewBox="0 0 10 8" fill="none">
+                  <path d="M1 4l3 3 5-6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              )}
+            </button>
+          )}
+          <a
+            href={school.programUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1 text-indigo-600 hover:text-indigo-800 text-sm font-medium transition-colors"
+            aria-label={`Visit ${school.name} website`}
+          >
+            Visit site
+            <ExternalLink size={13} />
+          </a>
+        </div>
       </div>
 
       {/* ── Fit score ──────────────────────────────────────────────────── */}

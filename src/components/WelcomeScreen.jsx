@@ -46,6 +46,30 @@ export default function WelcomeScreen({ onStart }) {
         </div>
       </main>
 
+      {/* ── Why I Built This ────────────────────────────────────────────── */}
+      <section className="px-4 pb-12">
+        <div className="max-w-2xl mx-auto bg-white rounded-2xl border border-slate-100 shadow-sm p-8">
+          <h2 className="text-lg font-semibold text-slate-800 mb-5 tracking-tight">
+            Why This Tool Exists
+          </h2>
+          <div className="space-y-4 text-slate-600 text-sm leading-relaxed">
+            <p>
+              I built MBA Tribe when I was applying to business school as an international applicant.
+              I was overwhelmed by rankings, prestige obsession, and expensive consultants who pushed
+              the same "safe" schools to everyone — regardless of what I actually wanted from the degree.
+            </p>
+            <p>
+              MBA Tribe grew to 2,000 members in four months because applicants need clarity, not more
+              noise. This tool exists to help you find schools that actually fit your goals — not just
+              the most famous names on a magazine list.
+            </p>
+            <p className="font-medium text-slate-700">
+              This is peer-first, practical guidance. No sales pitch, no BS.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* ── Value props ─────────────────────────────────────────────────── */}
       <section className="px-4 pb-16">
         <div className="max-w-3xl mx-auto grid sm:grid-cols-3 gap-4">
