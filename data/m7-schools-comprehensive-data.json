@@ -21,25 +21,25 @@
           "name": "MBA/MPP Joint Degree",
           "type": "joint-degree",
           "duration": "36 months",
-          "url": "https://www.hbs.edu/mba/academic-experience/joint-and-concurrent-degree-programs"
+          "url": "https://www.hbs.edu/mba/academic-experience/joint-degree-programs"
         },
         {
           "name": "MBA/MPA-ID Joint Degree",
           "type": "joint-degree",
           "duration": "36 months",
-          "url": "https://www.hbs.edu/mba/academic-experience/joint-and-concurrent-degree-programs"
+          "url": "https://www.hbs.edu/mba/academic-experience/joint-degree-programs"
         },
         {
           "name": "MBA/MD Joint Degree",
           "type": "joint-degree",
           "duration": "60 months",
-          "url": "https://www.hbs.edu/mba/academic-experience/joint-and-concurrent-degree-programs"
+          "url": "https://www.hbs.edu/mba/academic-experience/joint-degree-programs"
         },
         {
           "name": "MBA/JD Joint Degree",
           "type": "joint-degree",
           "duration": "48 months",
-          "url": "https://www.hbs.edu/mba/academic-experience/joint-and-concurrent-degree-programs"
+          "url": "https://www.hbs.edu/mba/academic-experience/joint-degree-programs"
         },
         {
           "name": "2+2 Deferred Admission",
@@ -64,7 +64,7 @@
           {
             "name": "FIELD Global Immersion",
             "description": "Field-based learning experiences worldwide",
-            "url": "https://www.hbs.edu/mba/academic-experience/experiential-learning"
+            "url": "https://www.hbs.edu/mba/academic-experience"
           }
         ],
         "centers": [
@@ -82,7 +82,7 @@
           "MIT Sloan",
           "Other Harvard graduate schools"
         ],
-        "courseCatalog": "https://www.hbs.edu/mba/academic-experience/curriculum/elective-curriculum/course-catalog"
+        "courseCatalog": "https://www.hbs.edu/mba/academic-experience/curriculum/Pages/default.aspx"
       },
       
       "admissions": {
@@ -128,7 +128,7 @@
         "recommendations": {
           "required": 2,
           "preferredFrom": "Current or former professional supervisors",
-          "url": "https://www.hbs.edu/mba/admissions/application-process/application-components"
+          "url": "https://www.hbs.edu/mba/admissions/application-process"
         },
         "testScores": {
           "gmat": {
@@ -170,15 +170,15 @@
           { "industry": "Finance", "percentage": 20 },
           { "industry": "Private Equity/VC", "percentage": 10 }
         ],
-        "employmentReportUrl": "https://www.hbs.edu/recruiting/data-and-statistics",
-        "careerServicesUrl": "https://www.hbs.edu/recruiting"
+        "employmentReportUrl": "https://www.hbs.edu/mba/blog/class-of-2025-employment-report",
+        "careerServicesUrl": "https://www.hbs.edu/mba/career-journey"
       },
       
       "eventsAndEngagement": {
         "eventCategories": [
           {
             "name": "Campus Visits",
-            "url": "https://www.hbs.edu/mba/admissions/visit-hbs"
+            "url": "https://www.hbs.edu/mba/visit"
           },
           {
             "name": "Information Sessions",
@@ -189,16 +189,12 @@
             "url": "https://www.hbs.edu/mba/admissions/events"
           },
           {
-            "name": "Coffee Chats",
-            "url": "https://www.hbs.edu/mba/admissions/connect"
-          },
-          {
             "name": "Class Visits",
-            "url": "https://www.hbs.edu/mba/admissions/visit-hbs/class-visit"
+            "url": "https://www.hbs.edu/mba/visit"
           }
         ],
         "eventsCalendarUrl": "https://www.hbs.edu/mba/admissions/events",
-        "virtualTourUrl": "https://www.hbs.edu/mba/admissions/visit-hbs/virtual-tour"
+        "virtualTourUrl": "https://www.hbs.edu/mba/visit/campus-tour"
       },
       
       "financialAid": {
@@ -219,7 +215,7 @@
       
       "studentLife": {
         "clubs": "95+ student clubs",
-        "housingUrl": "https://www.hbs.edu/mba/student-life/housing",
+        "housingUrl": "https://www.hbs.edu/mba/student-life/campus-experience/residence-life",
         "location": "40-acre campus in Boston, MA. ~65% live on campus",
         "studentBlogsUrl": "https://www.hbs.edu/mba/blog"
       },
@@ -247,17 +243,17 @@
         },
         {
           "name": "Virtual Tour",
-          "url": "https://www.hbs.edu/mba/admissions/visit-hbs/virtual-tour",
+          "url": "https://www.hbs.edu/mba/visit/campus-tour",
           "icon": "tour"
         },
         {
           "name": "Contact Admissions",
-          "url": "https://www.hbs.edu/mba/admissions/contact-us",
+          "url": "https://www.hbs.edu/about/contact",
           "icon": "contact"
         }
       ]
     },
-    
+
     {
       "id": "stanford-gsb",
       "name": "Stanford Graduate School of Business",
@@ -321,7 +317,7 @@
           {
             "name": "Action Learning",
             "description": "Hands-on consulting and entrepreneurial projects",
-            "url": "https://www.gsb.stanford.edu/programs/mba/academic-experience/experiential-learning"
+            "url": "https://www.gsb.stanford.edu/programs/mba/academic-experience/curriculum"
           }
         ],
         "centers": [
@@ -331,14 +327,10 @@
           },
           {
             "name": "Center for Social Innovation",
-            "url": "https://www.gsb.stanford.edu/experience/about/centers-institutes/center-social-innovation"
-          },
-          {
-            "name": "Stanford Venture Studio",
-            "url": "https://www.gsb.stanford.edu/experience/learning/entrepreneurship/stanford-venture-studio"
+            "url": "https://www.gsb.stanford.edu/ces"
           }
         ],
-        "courseCatalog": "https://www.gsb.stanford.edu/programs/mba/academic-experience/curriculum/courses"
+        "courseCatalog": "https://www.gsb.stanford.edu/programs/mba/academic-experience/curriculum"
       },
       
       "admissions": {
@@ -361,7 +353,7 @@
             }
           ]
         },
-        "applicationUrl": "https://www.gsb.stanford.edu/programs/mba/admission/apply",
+        "applicationUrl": "https://www.gsb.stanford.edu/programs/mba/admission/application",
         "applicationFee": "$275",
         "essays": [
           {
@@ -376,7 +368,7 @@
         "recommendations": {
           "required": 2,
           "preferredFrom": "Professional supervisors",
-          "url": "https://www.gsb.stanford.edu/programs/mba/admission/evaluation-criteria/recommendations"
+          "url": "https://www.gsb.stanford.edu/programs/mba/admission/application/letters-recommendation"
         },
         "testScores": {
           "gmat": {
@@ -414,15 +406,15 @@
           { "industry": "Finance", "percentage": 18 },
           { "industry": "Venture Capital/Private Equity", "percentage": 12 }
         ],
-        "employmentReportUrl": "https://www.gsb.stanford.edu/programs/mba/career-support/employment-reports",
-        "careerServicesUrl": "https://www.gsb.stanford.edu/programs/mba/career-support"
+        "employmentReportUrl": "https://www.gsb.stanford.edu/programs/mba/career-impact/employment-outcomes",
+        "careerServicesUrl": "https://www.gsb.stanford.edu/programs/mba/career-impact"
       },
       
       "eventsAndEngagement": {
         "eventCategories": [
           {
             "name": "Campus Visits",
-            "url": "https://www.gsb.stanford.edu/programs/mba/admission/visit-us"
+            "url": "https://www.gsb.stanford.edu/programs/mba/admission/events"
           },
           {
             "name": "Information Sessions",
@@ -434,11 +426,11 @@
           },
           {
             "name": "Coffee Chats",
-            "url": "https://www.gsb.stanford.edu/programs/mba/admission/connect-with-us"
+            "url": "https://www.gsb.stanford.edu/programs/mba/contact"
           }
         ],
         "eventsCalendarUrl": "https://www.gsb.stanford.edu/programs/mba/admission/events",
-        "virtualTourUrl": "https://www.gsb.stanford.edu/programs/mba/admission/visit-us"
+        "virtualTourUrl": "https://www.gsb.stanford.edu/visit"
       },
       
       "financialAid": {
@@ -450,23 +442,23 @@
           {
             "name": "Fellowship Program",
             "description": "Need-based and merit-based fellowships",
-            "url": "https://www.gsb.stanford.edu/programs/mba/financial-aid/fellowships-loans"
+            "url": "https://www.gsb.stanford.edu/programs/mba/tuition-financial-aid/types-aid"
           }
         ],
-        "financialAidUrl": "https://www.gsb.stanford.edu/programs/mba/financial-aid"
+        "financialAidUrl": "https://www.gsb.stanford.edu/programs/mba/tuition-financial-aid"
       },
       
       "studentLife": {
         "clubs": "80+ student clubs",
         "housingUrl": "https://www.gsb.stanford.edu/programs/mba/student-life/housing",
         "location": "Stanford Campus, Palo Alto, CA",
-        "studentBlogsUrl": "https://www.gsb.stanford.edu/programs/mba/student-life/blogs"
+        "studentBlogsUrl": "https://www.gsb.stanford.edu/programs/mba/life-community/voices"
       },
       
       "quickLinks": [
         {
           "name": "Apply Now",
-          "url": "https://www.gsb.stanford.edu/programs/mba/admission/apply",
+          "url": "https://www.gsb.stanford.edu/programs/mba/admission/application",
           "icon": "application"
         },
         {
@@ -476,7 +468,7 @@
         },
         {
           "name": "Employment Report",
-          "url": "https://www.gsb.stanford.edu/programs/mba/career-support/employment-reports",
+          "url": "https://www.gsb.stanford.edu/programs/mba/career-impact/employment-outcomes",
           "icon": "career"
         },
         {
@@ -486,17 +478,17 @@
         },
         {
           "name": "Virtual Tour",
-          "url": "https://www.gsb.stanford.edu/programs/mba/admission/visit-us",
+          "url": "https://www.gsb.stanford.edu/visit",
           "icon": "tour"
         },
         {
           "name": "Contact Admissions",
-          "url": "https://www.gsb.stanford.edu/programs/mba/admission/contact-us",
+          "url": "https://www.gsb.stanford.edu/programs/mba/contact",
           "icon": "contact"
         }
       ]
     },
-    
+
     {
       "id": "wharton",
       "name": "The Wharton School, University of Pennsylvania",
@@ -523,7 +515,7 @@
           "name": "Carey JD/MBA Program",
           "type": "joint-degree",
           "duration": "48 months",
-          "url": "https://mba.wharton.upenn.edu/dual-degrees/jd-mba/"
+          "url": "https://mba.wharton.upenn.edu/carey-jd-mba-program/"
         },
         {
           "name": "MBA for Executives",
@@ -535,7 +527,7 @@
           "name": "Moelis Advance Access Program",
           "type": "deferred",
           "duration": "20 months (after 2-4 years work)",
-          "url": "https://mba.wharton.upenn.edu/moelis-advance-access/"
+          "url": "https://mba.wharton.upenn.edu/deferred-admissions/moelis-advance-access-program/"
         }
       ],
       
@@ -549,12 +541,12 @@
           {
             "name": "Global Modular Courses",
             "description": "Intensive international study experiences",
-            "url": "https://mba.wharton.upenn.edu/academics/global-modular-courses/"
+            "url": "https://mba.wharton.upenn.edu/international-study/"
           },
           {
             "name": "Wharton Leadership Ventures",
             "description": "Hands-on leadership development",
-            "url": "https://mba.wharton.upenn.edu/academics/leadership/"
+            "url": "https://mba.wharton.upenn.edu/leadership-2/"
           }
         ],
         "centers": [
@@ -564,14 +556,14 @@
           },
           {
             "name": "Stevens Center for Innovation in Finance",
-            "url": "https://finance.wharton.upenn.edu/centers/"
+            "url": "https://stevenscenter.wharton.upenn.edu/"
           },
           {
             "name": "Mack Institute for Innovation Management",
             "url": "https://mackinstitute.wharton.upenn.edu"
           }
         ],
-        "courseCatalog": "https://mba.wharton.upenn.edu/academics/courses/"
+        "courseCatalog": "https://mba.wharton.upenn.edu/elective-course-list/"
       },
       
       "admissions": {
@@ -601,7 +593,7 @@
             }
           ]
         },
-        "applicationUrl": "https://mba.wharton.upenn.edu/apply/",
+        "applicationUrl": "https://mba.wharton.upenn.edu/application-guide/",
         "applicationFee": "$275",
         "essays": [
           {
@@ -617,7 +609,7 @@
         "recommendations": {
           "required": 2,
           "preferredFrom": "Professional supervisors",
-          "url": "https://mba.wharton.upenn.edu/apply/application-requirements/"
+          "url": "https://mba.wharton.upenn.edu/application-guide/"
         },
         "testScores": {
           "gmat": {
@@ -653,31 +645,31 @@
           { "industry": "Technology", "percentage": 18 },
           { "industry": "Private Equity/VC", "percentage": 10 }
         ],
-        "employmentReportUrl": "https://mba.wharton.upenn.edu/career-management/employment-report/",
-        "careerServicesUrl": "https://mba.wharton.upenn.edu/career-management/"
+        "employmentReportUrl": "https://mba.wharton.upenn.edu/mba-career-services/",
+        "careerServicesUrl": "https://mba.wharton.upenn.edu/mba-career-services/"
       },
       
       "eventsAndEngagement": {
         "eventCategories": [
           {
             "name": "Campus Visits",
-            "url": "https://mba.wharton.upenn.edu/visit/"
+            "url": "https://mba.wharton.upenn.edu/visits/"
           },
           {
             "name": "Information Sessions",
-            "url": "https://mba.wharton.upenn.edu/admissions-events/"
+            "url": "https://mba.wharton.upenn.edu/events/"
           },
           {
             "name": "Virtual Events",
-            "url": "https://mba.wharton.upenn.edu/admissions-events/"
+            "url": "https://mba.wharton.upenn.edu/events/"
           },
           {
             "name": "Class Visits",
-            "url": "https://mba.wharton.upenn.edu/visit/class-visits/"
+            "url": "https://mba.wharton.upenn.edu/visits/"
           }
         ],
-        "eventsCalendarUrl": "https://mba.wharton.upenn.edu/admissions-events/",
-        "virtualTourUrl": "https://mba.wharton.upenn.edu/visit/"
+        "eventsCalendarUrl": "https://mba.wharton.upenn.edu/events/",
+        "virtualTourUrl": "https://mba.wharton.upenn.edu/visits/"
       },
       
       "financialAid": {
@@ -689,23 +681,23 @@
           {
             "name": "Merit & Need-Based Fellowships",
             "description": "Various fellowship opportunities",
-            "url": "https://mba.wharton.upenn.edu/financing/"
+            "url": "https://mba.wharton.upenn.edu/tuition-financial-aid/"
           }
         ],
-        "financialAidUrl": "https://mba.wharton.upenn.edu/financing/"
+        "financialAidUrl": "https://mba.wharton.upenn.edu/tuition-financial-aid/"
       },
       
       "studentLife": {
         "clubs": "100+ student clubs",
-        "housingUrl": "https://mba.wharton.upenn.edu/student-life/housing/",
+        "housingUrl": "https://mba.wharton.upenn.edu/living-in-philly/",
         "location": "University City, Philadelphia, PA",
-        "studentBlogsUrl": "https://mba.wharton.upenn.edu/student-life/blogs/"
+        "studentBlogsUrl": "https://mba.wharton.upenn.edu/stories/"
       },
       
       "quickLinks": [
         {
           "name": "Apply Now",
-          "url": "https://mba.wharton.upenn.edu/apply/",
+          "url": "https://mba.wharton.upenn.edu/application-guide/",
           "icon": "application"
         },
         {
@@ -715,27 +707,27 @@
         },
         {
           "name": "Employment Report",
-          "url": "https://mba.wharton.upenn.edu/career-management/employment-report/",
+          "url": "https://mba.wharton.upenn.edu/mba-career-services/",
           "icon": "career"
         },
         {
           "name": "Events Calendar",
-          "url": "https://mba.wharton.upenn.edu/admissions-events/",
+          "url": "https://mba.wharton.upenn.edu/events/",
           "icon": "calendar"
         },
         {
           "name": "Virtual Tour",
-          "url": "https://mba.wharton.upenn.edu/visit/",
+          "url": "https://mba.wharton.upenn.edu/visits/",
           "icon": "tour"
         },
         {
           "name": "Contact Admissions",
-          "url": "https://mba.wharton.upenn.edu/contact-us/",
+          "url": "https://mba.wharton.upenn.edu/contact-wharton/",
           "icon": "contact"
         }
       ]
     },
-    
+
     {
       "id": "chicago-booth",
       "name": "University of Chicago Booth School of Business",
@@ -782,13 +774,13 @@
         "curriculum": {
           "structure": "Flexible curriculum - design your own path",
           "description": "No majors required, complete freedom in course selection after core",
-          "url": "https://www.chicagobooth.edu/mba/full-time/program"
+          "url": "https://www.chicagobooth.edu/mba/academics/curriculum"
         },
         "learningMethods": [
           {
             "name": "LEAD Program",
             "description": "Leadership effectiveness and development",
-            "url": "https://www.chicagobooth.edu/mba/full-time/program/leadership-development"
+            "url": "https://www.chicagobooth.edu/mba/academics/leadership-development"
           },
           {
             "name": "New Venture Challenge",
@@ -810,7 +802,7 @@
             "url": "https://www.chicagobooth.edu/research/kilts"
           }
         ],
-        "courseCatalog": "https://www.chicagobooth.edu/mba/full-time/program/courses"
+        "courseCatalog": "https://www.chicagobooth.edu/mba/academics/curriculum"
       },
       
       "admissions": {
@@ -851,7 +843,7 @@
         "recommendations": {
           "required": 2,
           "preferredFrom": "One from current supervisor, one from professional contact",
-          "url": "https://www.chicagobooth.edu/mba/full-time/admissions/apply"
+          "url": "https://www.chicagobooth.edu/mba/full-time/admissions/how-to-apply"
         },
         "testScores": {
           "gmat": {
@@ -886,15 +878,15 @@
           { "industry": "Technology", "percentage": 19 },
           { "industry": "Private Equity/VC", "percentage": 9 }
         ],
-        "employmentReportUrl": "https://www.chicagobooth.edu/employment-report",
-        "careerServicesUrl": "https://www.chicagobooth.edu/mba/full-time/careers"
+        "employmentReportUrl": "https://www.chicagobooth.edu/mba/full-time/career-impact/employment-report",
+        "careerServicesUrl": "https://www.chicagobooth.edu/mba/full-time/career-impact"
       },
       
       "eventsAndEngagement": {
         "eventCategories": [
           {
             "name": "Campus Visits",
-            "url": "https://www.chicagobooth.edu/mba/full-time/admissions/visit"
+            "url": "https://www.chicagobooth.edu/mba/full-time/admissions/visit-campus"
           },
           {
             "name": "Information Sessions",
@@ -903,14 +895,10 @@
           {
             "name": "Virtual Events",
             "url": "https://www.chicagobooth.edu/mba/full-time/admissions/events"
-          },
-          {
-            "name": "Coffee Chats",
-            "url": "https://www.chicagobooth.edu/mba/full-time/admissions/connect"
           }
         ],
         "eventsCalendarUrl": "https://www.chicagobooth.edu/mba/full-time/admissions/events",
-        "virtualTourUrl": "https://www.chicagobooth.edu/mba/full-time/admissions/visit"
+        "virtualTourUrl": "https://www.chicagobooth.edu/mba/full-time/admissions/visit-campus"
       },
       
       "financialAid": {
@@ -922,17 +910,17 @@
           {
             "name": "Merit-Based Fellowships",
             "description": "Automatic consideration for all admits",
-            "url": "https://www.chicagobooth.edu/mba/full-time/admissions/tuition-aid"
+            "url": "https://www.chicagobooth.edu/mba/full-time/admissions/scholarships-and-aid"
           }
         ],
-        "financialAidUrl": "https://www.chicagobooth.edu/mba/full-time/admissions/tuition-aid"
+        "financialAidUrl": "https://www.chicagobooth.edu/mba/full-time/admissions/scholarships-and-aid"
       },
       
       "studentLife": {
         "clubs": "90+ student clubs",
-        "housingUrl": "https://www.chicagobooth.edu/mba/full-time/student-life/housing",
+        "housingUrl": "https://www.chicagobooth.edu/mba/full-time/student-experience",
         "location": "Hyde Park, Chicago, IL",
-        "studentBlogsUrl": "https://www.chicagobooth.edu/blog"
+        "studentBlogsUrl": "https://www.chicagobooth.edu/mba/mba-life/full-time-mba-blog"
       },
       
       "quickLinks": [
@@ -948,7 +936,7 @@
         },
         {
           "name": "Employment Report",
-          "url": "https://www.chicagobooth.edu/employment-report",
+          "url": "https://www.chicagobooth.edu/mba/full-time/career-impact/employment-report",
           "icon": "career"
         },
         {
@@ -958,17 +946,17 @@
         },
         {
           "name": "Virtual Tour",
-          "url": "https://www.chicagobooth.edu/mba/full-time/admissions/visit",
+          "url": "https://www.chicagobooth.edu/mba/full-time/admissions/visit-campus",
           "icon": "tour"
         },
         {
           "name": "Contact Admissions",
-          "url": "https://www.chicagobooth.edu/mba/full-time/admissions/contact",
+          "url": "https://www.chicagobooth.edu/mba/full-time/admissions",
           "icon": "contact"
         }
       ]
     },
-    
+
     {
       "id": "mit-sloan",
       "name": "MIT Sloan School of Management",
@@ -1013,7 +1001,7 @@
           "name": "MBA Early Admission",
           "type": "deferred",
           "duration": "24 months (after 2-5 years work)",
-          "url": "https://mitsloan.mit.edu/mba/admissions/early-admission"
+          "url": "https://mitsloan.mit.edu/mba/deferred-admission"
         }
       ],
       
@@ -1027,12 +1015,12 @@
           {
             "name": "Action Learning Labs",
             "description": "Hands-on consulting projects with real companies",
-            "url": "https://mitsloan.mit.edu/mba/academics/action-learning"
+            "url": "https://mitsloan.mit.edu/action-learning/explore-our-labs"
           },
           {
             "name": "Global Entrepreneurship Lab",
             "description": "Work with startups in emerging markets",
-            "url": "https://mitsloan.mit.edu/mba/academics/global-entrepreneurship-lab"
+            "url": "https://mitsloan.mit.edu/action-learning/global-entrepreneurship-lab/welcome"
           }
         ],
         "centers": [
@@ -1049,7 +1037,7 @@
             "url": "https://cisr.mit.edu"
           }
         ],
-        "courseCatalog": "https://mitsloan.mit.edu/mba/academics/courses"
+        "courseCatalog": "https://mitsloan.mit.edu/mba/explore-program/mba-curriculum"
       },
       
       "admissions": {
@@ -1130,31 +1118,31 @@
           { "industry": "Finance", "percentage": 20 },
           { "industry": "Manufacturing/Operations", "percentage": 8 }
         ],
-        "employmentReportUrl": "https://mitsloan.mit.edu/mba/career-development/employment-reports",
-        "careerServicesUrl": "https://mitsloan.mit.edu/mba/career-development"
+        "employmentReportUrl": "https://mitsloan.mit.edu/career-development-office/employment-reports",
+        "careerServicesUrl": "https://mitsloan.mit.edu/career-development-office/employment-reports"
       },
       
       "eventsAndEngagement": {
         "eventCategories": [
           {
             "name": "Campus Visits",
-            "url": "https://mitsloan.mit.edu/mba/admissions/visit"
+            "url": "https://mitsloan.mit.edu/mba/admissions-events"
           },
           {
             "name": "Information Sessions",
-            "url": "https://mitsloan.mit.edu/mba/admissions/events"
+            "url": "https://mitsloan.mit.edu/mba/admissions-events"
           },
           {
             "name": "Virtual Events",
-            "url": "https://mitsloan.mit.edu/mba/admissions/events"
+            "url": "https://mitsloan.mit.edu/mba/admissions-events"
           },
           {
             "name": "Class Visit Program",
-            "url": "https://mitsloan.mit.edu/mba/admissions/visit/class-visit"
+            "url": "https://mitsloan.mit.edu/mba/admissions-events"
           }
         ],
-        "eventsCalendarUrl": "https://mitsloan.mit.edu/mba/admissions/events",
-        "virtualTourUrl": "https://mitsloan.mit.edu/mba/admissions/visit"
+        "eventsCalendarUrl": "https://mitsloan.mit.edu/mba/admissions-events",
+        "virtualTourUrl": "https://mitsloan.mit.edu/mba/admissions-events"
       },
       
       "financialAid": {
@@ -1166,17 +1154,17 @@
           {
             "name": "Merit-Based Fellowships",
             "description": "Automatic consideration for all admits",
-            "url": "https://mitsloan.mit.edu/mba/admissions/financial-aid"
+            "url": "https://mitsloan.mit.edu/mba/admissions/financing-your-education"
           }
         ],
-        "financialAidUrl": "https://mitsloan.mit.edu/mba/admissions/financial-aid"
+        "financialAidUrl": "https://mitsloan.mit.edu/mba/admissions/financing-your-education"
       },
       
       "studentLife": {
         "clubs": "70+ student clubs",
-        "housingUrl": "https://mitsloan.mit.edu/mba/student-life/housing",
+        "housingUrl": "https://mitsloan.mit.edu/mba/admissions/frequently-asked-questions",
         "location": "Cambridge, MA (MIT Campus)",
-        "studentBlogsUrl": "https://mitsloan.mit.edu/mba/blog"
+        "studentBlogsUrl": "https://mitsloan.mit.edu/programs/mba/a-day-life-mba-student-0"
       },
       
       "quickLinks": [
@@ -1187,32 +1175,32 @@
         },
         {
           "name": "Class Profile",
-          "url": "https://mitsloan.mit.edu/mba/admissions/class-profile",
+          "url": "https://mitsloan.mit.edu/mba/meet-class/class-profile",
           "icon": "stats"
         },
         {
           "name": "Employment Report",
-          "url": "https://mitsloan.mit.edu/mba/career-development/employment-reports",
+          "url": "https://mitsloan.mit.edu/career-development-office/employment-reports",
           "icon": "career"
         },
         {
           "name": "Events Calendar",
-          "url": "https://mitsloan.mit.edu/mba/admissions/events",
+          "url": "https://mitsloan.mit.edu/mba/admissions-events",
           "icon": "calendar"
         },
         {
           "name": "Virtual Tour",
-          "url": "https://mitsloan.mit.edu/mba/admissions/visit",
+          "url": "https://mitsloan.mit.edu/mba/admissions-events",
           "icon": "tour"
         },
         {
           "name": "Contact Admissions",
-          "url": "https://mitsloan.mit.edu/mba/admissions/contact",
+          "url": "https://mitsloan.mit.edu/contact-us",
           "icon": "contact"
         }
       ]
     },
-    
+
     {
       "id": "kellogg",
       "name": "Kellogg School of Management, Northwestern University",
@@ -1233,31 +1221,31 @@
           "name": "Full-Time MBA (1-Year)",
           "type": "full-time",
           "duration": "12 months",
-          "url": "https://www.kellogg.northwestern.edu/programs/full-time-mba/1y-2y-mba-program.aspx"
+          "url": "https://www.kellogg.northwestern.edu/programs/full-time-mba/one-year-mba-program/"
         },
         {
           "name": "MMM Program (MBA + Design)",
           "type": "dual-degree",
           "duration": "24 months",
-          "url": "https://www.kellogg.northwestern.edu/programs/mmm.aspx"
+          "url": "https://www.kellogg.northwestern.edu/programs/full-time-mba/mmm-program/"
         },
         {
           "name": "MBAi Program (MBA + AI)",
           "type": "dual-degree",
           "duration": "24 months",
-          "url": "https://www.kellogg.northwestern.edu/programs/mbai.aspx"
+          "url": "https://www.kellogg.northwestern.edu/programs/full-time-mba/mbai-program/"
         },
         {
           "name": "JD-MBA",
           "type": "joint-degree",
           "duration": "36 months",
-          "url": "https://www.kellogg.northwestern.edu/programs/dual-degrees.aspx"
+          "url": "https://www.kellogg.northwestern.edu/admissions/ft-admissions/"
         },
         {
           "name": "Part-Time MBA",
           "type": "part-time",
           "duration": "varies",
-          "url": "https://www.kellogg.northwestern.edu/programs/evening-weekend-mba.aspx"
+          "url": "https://www.kellogg.northwestern.edu/admissions/ft-admissions/"
         },
         {
           "name": "Executive MBA",
@@ -1271,35 +1259,35 @@
         "curriculum": {
           "majors": "14 majors to choose from",
           "pathways": "4 career pathways",
-          "url": "https://www.kellogg.northwestern.edu/programs/full-time-mba/academics/majors-pathways.aspx"
+          "url": "https://www.kellogg.northwestern.edu/programs/full-time-mba/academics/majors-pathways/"
         },
         "learningMethods": [
           {
             "name": "Global Initiatives in Management (GIM)",
             "description": "International experiential learning",
-            "url": "https://www.kellogg.northwestern.edu/programs/full-time-mba/academics/global-initiatives.aspx"
+            "url": "https://www.kellogg.northwestern.edu/programs/full-time-mba/academics/global-experience.aspx"
           },
           {
             "name": "Kellogg Innovation Network",
             "description": "Hands-on innovation and design thinking",
-            "url": "https://www.kellogg.northwestern.edu/research-support/kellogg-innovation-network.aspx"
+            "url": "https://www.kellogg.northwestern.edu/programs/full-time-mba/academics/"
           }
         ],
         "centers": [
           {
             "name": "Kellogg Innovation & Entrepreneurship Center",
-            "url": "https://www.kellogg.northwestern.edu/research-support/kellogg-innovation-network.aspx"
+            "url": "https://www.kellogg.northwestern.edu/programs/full-time-mba/academics/"
           },
           {
             "name": "Center for Nonprofit Management",
-            "url": "https://www.kellogg.northwestern.edu/research/nonprofit-management-center.aspx"
+            "url": "https://www.kellogg.northwestern.edu/executive-education/nonprofit-management/about-us.aspx"
           },
           {
             "name": "Kellogg Global Hub",
-            "url": "https://www.kellogg.northwestern.edu/about/global-hub.aspx"
+            "url": "https://www.kellogg.northwestern.edu/the-experience/campuses/global-hub/"
           }
         ],
-        "courseCatalog": "https://www.kellogg.northwestern.edu/programs/full-time-mba/academics/course-catalog.aspx"
+        "courseCatalog": "https://www.kellogg.northwestern.edu/programs/full-time-mba/academics/"
       },
       
       "admissions": {
@@ -1325,7 +1313,7 @@
             }
           ]
         },
-        "applicationUrl": "https://www.kellogg.northwestern.edu/programs/full-time-mba/admissions/apply.aspx",
+        "applicationUrl": "https://www.kellogg.northwestern.edu/admissions/ft-admissions/ft-how-to-apply/",
         "applicationFee": "$275",
         "essays": [
           {
@@ -1340,12 +1328,12 @@
         "videoEssay": {
           "required": true,
           "description": "3 questions, 96 hours after application submission",
-          "url": "https://www.kellogg.northwestern.edu/programs/full-time-mba/admissions/apply.aspx"
+          "url": "https://www.kellogg.northwestern.edu/admissions/ft-admissions/ft-how-to-apply/"
         },
         "recommendations": {
           "required": 2,
           "preferredFrom": "Professional supervisors",
-          "url": "https://www.kellogg.northwestern.edu/programs/full-time-mba/admissions/apply.aspx"
+          "url": "https://www.kellogg.northwestern.edu/admissions/ft-admissions/ft-how-to-apply/"
         },
         "testScores": {
           "gmat": {
@@ -1384,31 +1372,31 @@
           { "industry": "Consumer Packaged Goods", "percentage": 6.9 },
           { "industry": "Finance: Investment Banking", "percentage": 4.7 }
         ],
-        "employmentReportUrl": "https://www.kellogg.northwestern.edu/the-experience/career/employer/employment-statistics.aspx",
-        "careerServicesUrl": "https://www.kellogg.northwestern.edu/the-experience/career.aspx"
+        "employmentReportUrl": "https://www.kellogg.northwestern.edu/companies-recruiters/recruiter-employment-outcomes/",
+        "careerServicesUrl": "https://www.kellogg.northwestern.edu/programs/full-time-mba/career-services/career-path/"
       },
       
       "eventsAndEngagement": {
         "eventCategories": [
           {
             "name": "Campus Visits",
-            "url": "https://www.kellogg.northwestern.edu/admissions/visit-kellogg.aspx"
+            "url": "https://www.kellogg.northwestern.edu/admissions/admissions-events/campus-visits/"
           },
           {
             "name": "Admissions Events",
-            "url": "https://www.kellogg.northwestern.edu/admissions/admissions-events.aspx"
+            "url": "https://www.kellogg.northwestern.edu/admissions/admissions-events/"
           },
           {
             "name": "Coffee Chats",
-            "url": "https://www.kellogg.northwestern.edu/admissions/admissions-events.aspx"
+            "url": "https://www.kellogg.northwestern.edu/admissions/admissions-events/"
           },
           {
             "name": "Class Visits",
-            "url": "https://www.kellogg.northwestern.edu/admissions/visit-kellogg/class-visit.aspx"
+            "url": "https://www.kellogg.northwestern.edu/admissions/admissions-events/campus-visits/"
           }
         ],
-        "eventsCalendarUrl": "https://www.kellogg.northwestern.edu/admissions/admissions-events.aspx",
-        "virtualTourUrl": "https://www.kellogg.northwestern.edu/admissions/visit-kellogg.aspx"
+        "eventsCalendarUrl": "https://www.kellogg.northwestern.edu/admissions/admissions-events/",
+        "virtualTourUrl": "https://www.kellogg.northwestern.edu/admissions/admissions-events/campus-visits/"
       },
       
       "financialAid": {
@@ -1420,60 +1408,60 @@
           {
             "name": "Merit-Based Scholarships",
             "description": "Automatic consideration for all admits",
-            "url": "https://www.kellogg.northwestern.edu/programs/full-time-mba/admissions/tuition-financial-aid.aspx"
+            "url": "https://www.kellogg.northwestern.edu/admissions/financial-aid/ft-fin-aid/"
           }
         ],
-        "financialAidUrl": "https://www.kellogg.northwestern.edu/programs/full-time-mba/admissions/tuition-financial-aid.aspx"
+        "financialAidUrl": "https://www.kellogg.northwestern.edu/admissions/financial-aid/ft-fin-aid/"
       },
       
       "studentLife": {
         "clubs": "80+ student clubs",
-        "housingUrl": "https://www.kellogg.northwestern.edu/programs/full-time-mba/student-life/housing.aspx",
+        "housingUrl": "https://www.kellogg.northwestern.edu/serial/student-life/housing.aspx",
         "location": "Evanston, IL (near Chicago)",
-        "studentBlogsUrl": "https://www.kellogg.northwestern.edu/news-events/blog.aspx"
+        "studentBlogsUrl": "https://www.kellogg.northwestern.edu/news/"
       },
       
       "quickLinks": [
         {
           "name": "Apply Now",
-          "url": "https://www.kellogg.northwestern.edu/programs/full-time-mba/admissions/apply.aspx",
+          "url": "https://www.kellogg.northwestern.edu/admissions/ft-admissions/ft-how-to-apply/",
           "icon": "application"
         },
         {
           "name": "Class Profile",
-          "url": "https://www.kellogg.northwestern.edu/programs/full-time-mba/class-profile.aspx",
+          "url": "https://www.kellogg.northwestern.edu/programs/full-time-mba/class-profile/",
           "icon": "stats"
         },
         {
           "name": "Employment Report",
-          "url": "https://www.kellogg.northwestern.edu/the-experience/career/employer/employment-statistics.aspx",
+          "url": "https://www.kellogg.northwestern.edu/companies-recruiters/recruiter-employment-outcomes/",
           "icon": "career"
         },
         {
           "name": "Events Calendar",
-          "url": "https://www.kellogg.northwestern.edu/admissions/admissions-events.aspx",
+          "url": "https://www.kellogg.northwestern.edu/admissions/admissions-events/",
           "icon": "calendar"
         },
         {
           "name": "Virtual Tour",
-          "url": "https://www.kellogg.northwestern.edu/admissions/visit-kellogg.aspx",
+          "url": "https://www.kellogg.northwestern.edu/admissions/admissions-events/campus-visits/",
           "icon": "tour"
         },
         {
           "name": "Contact Admissions",
-          "url": "https://www.kellogg.northwestern.edu/admissions/contact-us.aspx",
+          "url": "https://www.kellogg.northwestern.edu/admissions/",
           "icon": "contact"
         }
       ]
     },
-    
+
     {
       "id": "columbia-business-school",
       "name": "Columbia Business School",
       "shortName": "Columbia CBS",
       "location": "New York, NY",
       "description": "Columbia offers August-entry (2-year) and January-entry (16-month) MBA programs in the heart of New York City. Known for finance, media, real estate, and NYC connections.",
-      "website": "https://academics.business.columbia.edu/admissions/mba",
+      "website": "https://business.columbia.edu/mba",
       "logo": "/logos/columbia-cbs.png",
       
       "programs": [
@@ -1481,25 +1469,25 @@
           "name": "Full-Time MBA (August Entry)",
           "type": "full-time",
           "duration": "24 months",
-          "url": "https://academics.business.columbia.edu/admissions/mba"
+          "url": "https://business.columbia.edu/mba"
         },
         {
           "name": "Full-Time MBA (January Entry)",
           "type": "full-time",
           "duration": "16 months",
-          "url": "https://academics.business.columbia.edu/admissions/mba/options-deadlines/january-entry"
+          "url": "https://business.columbia.edu/mba"
         },
         {
           "name": "Executive MBA",
           "type": "executive",
           "duration": "20 months",
-          "url": "https://academics.business.columbia.edu/emba"
+          "url": "https://business.columbia.edu/emba"
         },
         {
           "name": "MBA-MS (Healthcare, Real Estate, Social Impact)",
           "type": "dual-degree",
           "duration": "24 months",
-          "url": "https://academics.business.columbia.edu/mba-ms-programs"
+          "url": "https://business.columbia.edu/admissions/dual-degrees"
         }
       ],
       
@@ -1507,35 +1495,35 @@
         "curriculum": {
           "structure": "Core curriculum followed by curriculum pathways",
           "pathways": "Value Investing, Media, Tech, Entrepreneurship, and more",
-          "url": "https://academics.business.columbia.edu/phd/academics"
+          "url": "https://business.columbia.edu/mba/academics/curriculum"
         },
         "learningMethods": [
           {
             "name": "Chazen Global Immersion",
             "description": "International study tours led by CBS faculty",
-            "url": "https://academics.business.columbia.edu/mba/student-life/global-immersion"
+            "url": "https://business.columbia.edu/mba/academics/global-opportunities"
           },
           {
             "name": "Master Classes",
             "description": "Hands-on consulting projects with NYC companies",
-            "url": "https://academics.business.columbia.edu/mba/academics"
+            "url": "https://business.columbia.edu/mba/academics/curriculum"
           }
         ],
         "centers": [
           {
             "name": "Eugene Lang Entrepreneurship Center",
-            "url": "https://entrepreneurship.columbia.edu"
+            "url": "https://business.columbia.edu/lang"
           },
           {
             "name": "Heilbrunn Center for Graham & Dodd Investing",
-            "url": "https://www8.gsb.columbia.edu/valueinvesting"
+            "url": "https://business.columbia.edu/heilbrunn"
           },
           {
             "name": "Paul Milstein Center for Real Estate",
-            "url": "https://realestate.columbia.edu"
+            "url": "https://business.columbia.edu/realestate"
           }
         ],
-        "courseCatalog": "https://academics.business.columbia.edu/mba/academics"
+        "courseCatalog": "https://business.columbia.edu/mba/academics/curriculum"
       },
       
       "admissions": {
@@ -1573,7 +1561,7 @@
             }
           ]
         },
-        "applicationUrl": "https://academics.business.columbia.edu/admissions/mba",
+        "applicationUrl": "https://business.columbia.edu/admissions/mba",
         "applicationFee": "$250",
         "essays": [
           {
@@ -1592,7 +1580,7 @@
         "recommendations": {
           "required": 1,
           "preferredFrom": "Current supervisor ideally",
-          "url": "https://academics.business.columbia.edu/admissions/mba"
+          "url": "https://business.columbia.edu/admissions/mba"
         },
         "testScores": {
           "gmat": {
@@ -1632,31 +1620,23 @@
           { "industry": "Technology", "percentage": 10.2 },
           { "industry": "Real Estate", "percentage": 4 }
         ],
-        "employmentReportUrl": "https://academics.business.columbia.edu/mba/career-outcomes",
-        "careerServicesUrl": "https://academics.business.columbia.edu/mba/career"
+        "employmentReportUrl": "https://business.columbia.edu/recruiters/employment-report",
+        "careerServicesUrl": "https://students.business.columbia.edu/career-management-center"
       },
       
       "eventsAndEngagement": {
         "eventCategories": [
           {
-            "name": "Campus Visits",
-            "url": "https://academics.business.columbia.edu/admissions/mba/visit-us"
-          },
-          {
             "name": "Information Sessions",
-            "url": "https://academics.business.columbia.edu/admissions/mba/events"
+            "url": "https://business.columbia.edu/admissions/mba/events"
           },
           {
             "name": "Virtual Events",
-            "url": "https://academics.business.columbia.edu/admissions/mba/events"
-          },
-          {
-            "name": "Coffee Chats",
-            "url": "https://academics.business.columbia.edu/admissions/mba/connect"
+            "url": "https://business.columbia.edu/admissions/mba/events"
           }
         ],
-        "eventsCalendarUrl": "https://academics.business.columbia.edu/admissions/mba/events",
-        "virtualTourUrl": "https://academics.business.columbia.edu/admissions/mba/visit-us"
+        "eventsCalendarUrl": "https://business.columbia.edu/admissions/mba/events",
+        "virtualTourUrl": "https://business.columbia.edu/admissions/mba/events"
       },
       
       "financialAid": {
@@ -1668,48 +1648,46 @@
           {
             "name": "Merit & Need-Based Fellowships",
             "description": "~50% of students receive financial aid",
-            "url": "https://academics.business.columbia.edu/mba/financing"
+            "url": "https://business.columbia.edu/mba/tuition-financial-aid/mba-scholarships"
           }
         ],
-        "financialAidUrl": "https://academics.business.columbia.edu/mba/financing"
+        "financialAidUrl": "https://business.columbia.edu/mba/tuition-financial-aid"
       },
       
       "studentLife": {
         "clubs": "100+ student clubs",
-        "housingUrl": "https://academics.business.columbia.edu/mba/student-life/housing",
-        "location": "Morningside Heights, New York, NY",
-        "studentBlogsUrl": "https://academics.business.columbia.edu/mba/student-life/blogs"
+        "location": "Morningside Heights, New York, NY"
       },
       
       "quickLinks": [
         {
           "name": "Apply Now",
-          "url": "https://academics.business.columbia.edu/admissions/mba",
+          "url": "https://business.columbia.edu/admissions/mba",
           "icon": "application"
         },
         {
           "name": "Class Profile",
-          "url": "https://academics.business.columbia.edu/mba/class-profile",
+          "url": "https://business.columbia.edu/admissions/mba",
           "icon": "stats"
         },
         {
           "name": "Employment Report",
-          "url": "https://academics.business.columbia.edu/mba/career-outcomes",
+          "url": "https://business.columbia.edu/recruiters/employment-report",
           "icon": "career"
         },
         {
           "name": "Events Calendar",
-          "url": "https://academics.business.columbia.edu/admissions/mba/events",
+          "url": "https://business.columbia.edu/admissions/mba/events",
           "icon": "calendar"
         },
         {
           "name": "Virtual Tour",
-          "url": "https://academics.business.columbia.edu/admissions/mba/visit-us",
+          "url": "https://business.columbia.edu/admissions/mba/events",
           "icon": "tour"
         },
         {
           "name": "Contact Admissions",
-          "url": "https://academics.business.columbia.edu/admissions/mba/contact",
+          "url": "https://business.columbia.edu/admissions/mba",
           "icon": "contact"
         }
       ]
