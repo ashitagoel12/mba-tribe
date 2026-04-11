@@ -60,7 +60,7 @@
       },
       "classProfile": {
         "size": 431,
-        "avgWorkExperience": 5.0,
+        "avgWorkExperience": 5,
         "avgGMAT": 738,
         "avgGRE": 165,
         "internationalStudentPct": 40
@@ -110,7 +110,7 @@
       },
       "classProfile": {
         "size": 866,
-        "avgWorkExperience": 5.0,
+        "avgWorkExperience": 5,
         "avgGMAT": 735,
         "avgGRE": 163,
         "internationalStudentPct": 31
@@ -160,7 +160,7 @@
       },
       "classProfile": {
         "size": 603,
-        "avgWorkExperience": 5.0,
+        "avgWorkExperience": 5,
         "avgGMAT": 728,
         "avgGRE": 163,
         "internationalStudentPct": 38
@@ -210,7 +210,7 @@
       },
       "classProfile": {
         "size": 474,
-        "avgWorkExperience": 5.0,
+        "avgWorkExperience": 5,
         "avgGMAT": 730,
         "avgGRE": 162,
         "internationalStudentPct": 35
@@ -260,7 +260,7 @@
       },
       "classProfile": {
         "size": 438,
-        "avgWorkExperience": 5.0,
+        "avgWorkExperience": 5,
         "avgGMAT": 735,
         "avgGRE": 165,
         "internationalStudentPct": 44
@@ -310,7 +310,7 @@
       },
       "classProfile": {
         "size": 756,
-        "avgWorkExperience": 5.0,
+        "avgWorkExperience": 5,
         "avgGMAT": 730,
         "avgGRE": 163,
         "internationalStudentPct": 43
@@ -360,7 +360,7 @@
       },
       "classProfile": {
         "size": 295,
-        "avgWorkExperience": 5.0,
+        "avgWorkExperience": 5,
         "avgGMAT": 723,
         "avgGRE": 162,
         "internationalStudentPct": 37
@@ -410,7 +410,7 @@
       },
       "classProfile": {
         "size": 335,
-        "avgWorkExperience": 5.0,
+        "avgWorkExperience": 5,
         "avgGMAT": 730,
         "avgGRE": 163,
         "internationalStudentPct": 47
@@ -510,7 +510,7 @@
       },
       "classProfile": {
         "size": 413,
-        "avgWorkExperience": 5.0,
+        "avgWorkExperience": 5,
         "avgGMAT": 722,
         "avgGRE": 162,
         "internationalStudentPct": 32
@@ -560,7 +560,7 @@
       },
       "classProfile": {
         "size": 316,
-        "avgWorkExperience": 5.0,
+        "avgWorkExperience": 5,
         "avgGMAT": 722,
         "avgGRE": 162,
         "internationalStudentPct": 36
@@ -610,7 +610,7 @@
       },
       "classProfile": {
         "size": 470,
-        "avgWorkExperience": 5.0,
+        "avgWorkExperience": 5,
         "avgGMAT": 718,
         "avgGRE": 161,
         "internationalStudentPct": 38
@@ -860,7 +860,7 @@
       },
       "classProfile": {
         "size": 240,
-        "avgWorkExperience": 5.0,
+        "avgWorkExperience": 5,
         "avgGMAT": 710,
         "avgGRE": 321,
         "internationalStudentPct": 31
@@ -910,7 +910,7 @@
       },
       "classProfile": {
         "size": 249,
-        "avgWorkExperience": 5.0,
+        "avgWorkExperience": 5,
         "avgGMAT": 707,
         "avgGRE": 318,
         "internationalStudentPct": 43
@@ -1010,7 +1010,7 @@
       },
       "classProfile": {
         "size": 128,
-        "avgWorkExperience": 6.0,
+        "avgWorkExperience": 6,
         "avgGMAT": 723,
         "avgGRE": 160,
         "internationalStudentPct": 40
@@ -1060,7 +1060,7 @@
       },
       "classProfile": {
         "size": 248,
-        "avgWorkExperience": 5.0,
+        "avgWorkExperience": 5,
         "avgGMAT": 700,
         "avgGRE": 318,
         "internationalStudentPct": 44
@@ -1160,7 +1160,7 @@
       },
       "classProfile": {
         "size": 102,
-        "avgWorkExperience": 6.0,
+        "avgWorkExperience": 6,
         "avgGMAT": 720,
         "avgGRE": 320,
         "internationalStudentPct": 56
@@ -1210,7 +1210,7 @@
       },
       "classProfile": {
         "size": 137,
-        "avgWorkExperience": 5.0,
+        "avgWorkExperience": 5,
         "avgGMAT": 693,
         "avgGRE": 160,
         "internationalStudentPct": 34
@@ -2523,6 +2523,1863 @@
         "Analytics focus"
       ],
       "programUrl": "https://rady.ucsd.edu/programs/mba/index.html"
+    },
+    {
+      "id": "ut-dallas-jindal",
+      "rank": 51,
+      "name": "Jindal School of Management",
+      "university": "University of Texas at Dallas",
+      "location": {
+        "city": "Richardson",
+        "state": "TX"
+      },
+      "classProfile": {
+        "size": 75,
+        "avgWorkExperience": 4.8,
+        "avgGMAT": 682,
+        "avgGRE": 156,
+        "internationalStudentPct": null
+      },
+      "costs": {
+        "annualTuition": null,
+        "totalProgramCost": 110907
+      },
+      "employment": {
+        "top3Industries": [
+          "Technology",
+          "Consulting",
+          "Finance"
+        ],
+        "top5Companies": [
+          "Amazon",
+          "AT&T",
+          "Dell",
+          "EY",
+          "HP"
+        ],
+        "employmentRate3Months": 90,
+        "avgStartingSalary": 113107,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "Research productivity (#4 globally)",
+        "Business Analytics",
+        "Technology",
+        "DFW corporate ecosystem"
+      ],
+      "culture": [
+        "Collaborative",
+        "Small cohort focus",
+        "Innovation-driven",
+        "Flexible formats"
+      ],
+      "programUrl": "https://jindal.utdallas.edu/mba/"
+    },
+    {
+      "id": "georgia-terry",
+      "rank": 52,
+      "name": "Terry College of Business",
+      "university": "University of Georgia",
+      "location": {
+        "city": "Athens",
+        "state": "GA"
+      },
+      "classProfile": {
+        "size": 74,
+        "avgWorkExperience": 3.8,
+        "avgGMAT": 656,
+        "avgGRE": 157,
+        "internationalStudentPct": null
+      },
+      "costs": {
+        "annualTuition": 13918,
+        "totalProgramCost": 27836
+      },
+      "employment": {
+        "top3Industries": [
+          "Consulting",
+          "Finance",
+          "Technology"
+        ],
+        "top5Companies": [
+          "Deloitte",
+          "Accenture",
+          "McKinsey",
+          "BCG",
+          "EY"
+        ],
+        "employmentRate3Months": 95,
+        "avgStartingSalary": 135255,
+        "medianSigningBonus": 25267
+      },
+      "academicStrengths": [
+        "Consulting placement (#1 focus)",
+        "Business Analytics",
+        "Value/ROI",
+        "Experiential learning"
+      ],
+      "culture": [
+        "Collaborative",
+        "College town atmosphere",
+        "Work-hard-play-hard",
+        "Passionate alumni network"
+      ],
+      "programUrl": "https://www.terry.uga.edu/mba/"
+    },
+    {
+      "id": "washu-olin",
+      "rank": 53,
+      "name": "Olin Business School",
+      "university": "Washington University in St. Louis",
+      "location": {
+        "city": "St. Louis",
+        "state": "MO"
+      },
+      "classProfile": {
+        "size": 93,
+        "avgWorkExperience": 4.4,
+        "avgGMAT": 701,
+        "avgGRE": 164,
+        "internationalStudentPct": 44
+      },
+      "costs": {
+        "annualTuition": 70250,
+        "totalProgramCost": 143000
+      },
+      "employment": {
+        "top3Industries": [
+          "Consulting",
+          "Marketing",
+          "General Management"
+        ],
+        "top5Companies": [
+          "VMware",
+          "Wayfair",
+          "Boeing",
+          "Mastercard",
+          "Panera"
+        ],
+        "employmentRate3Months": 81,
+        "avgStartingSalary": 124122,
+        "medianSigningBonus": 27154
+      },
+      "academicStrengths": [
+        "Test-optional admissions",
+        "Experiential learning (Olin Cup)",
+        "Analytics & STEM",
+        "Intimate cohort"
+      ],
+      "culture": [
+        "Competitive but collaborative",
+        "Close-knit community",
+        "Students front and center",
+        "Gender parity (53% women)"
+      ],
+      "programUrl": "https://olin.wustl.edu/mba/"
+    },
+    {
+      "id": "iowa-state-ivy",
+      "rank": 54,
+      "name": "Ivy College of Business",
+      "university": "Iowa State University",
+      "location": {
+        "city": "Ames",
+        "state": "IA"
+      },
+      "classProfile": {
+        "size": 45,
+        "avgWorkExperience": 1.2,
+        "avgGMAT": 593,
+        "avgGRE": null,
+        "internationalStudentPct": null
+      },
+      "costs": {
+        "annualTuition": null,
+        "totalProgramCost": 29966
+      },
+      "employment": {
+        "top3Industries": [
+          "Manufacturing",
+          "Finance",
+          "Healthcare"
+        ],
+        "top5Companies": [],
+        "employmentRate3Months": 93,
+        "avgStartingSalary": 73885,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "Affordable value",
+        "Real-world consulting projects",
+        "Case competitions",
+        "International study abroad"
+      ],
+      "culture": [
+        "Collaborative",
+        "Supportive",
+        "Team-based learning",
+        "Diverse backgrounds"
+      ],
+      "programUrl": "https://www.ivybusiness.iastate.edu/academics/graduate-programs/ivy-mba/full-time-mba/"
+    },
+    {
+      "id": "miami-herbert",
+      "rank": 55,
+      "name": "Herbert Business School",
+      "university": "University of Miami",
+      "location": {
+        "city": "Coral Gables",
+        "state": "FL"
+      },
+      "classProfile": {
+        "size": 50,
+        "avgWorkExperience": 3.8,
+        "avgGMAT": 631,
+        "avgGRE": 149,
+        "internationalStudentPct": 40
+      },
+      "costs": {
+        "annualTuition": null,
+        "totalProgramCost": 92290
+      },
+      "employment": {
+        "top3Industries": [
+          "Finance",
+          "Consulting",
+          "Technology"
+        ],
+        "top5Companies": [],
+        "employmentRate3Months": 83,
+        "avgStartingSalary": 94257,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "Latin America access",
+        "Global focus",
+        "Sustainability integration",
+        "STEM-designated"
+      ],
+      "culture": [
+        "International",
+        "Entrepreneurial",
+        "Fast-paced",
+        "Diverse"
+      ],
+      "programUrl": "https://www.herbert.miami.edu/graduate/find-and-compare-programs/full-time-mba/"
+    },
+    {
+      "id": "utah-eccles",
+      "rank": 56,
+      "name": "David Eccles School of Business",
+      "university": "University of Utah",
+      "location": {
+        "city": "Salt Lake City",
+        "state": "UT"
+      },
+      "classProfile": {
+        "size": 55,
+        "avgWorkExperience": 4.3,
+        "avgGMAT": 651,
+        "avgGRE": null,
+        "internationalStudentPct": null
+      },
+      "costs": {
+        "annualTuition": null,
+        "totalProgramCost": 77500
+      },
+      "employment": {
+        "top3Industries": [
+          "Technology",
+          "Entrepreneurship",
+          "Finance"
+        ],
+        "top5Companies": [],
+        "employmentRate3Months": 85,
+        "avgStartingSalary": 101682,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "Technology focus",
+        "Entrepreneurship (Lassonde Institute)",
+        "Flexibility & customization",
+        "Small cohort"
+      ],
+      "culture": [
+        "Collaborative",
+        "Abundance mentality",
+        "Supportive",
+        "Non-competitive"
+      ],
+      "programUrl": "https://eccles.utah.edu/programs/mba/full-time-mba/"
+    },
+    {
+      "id": "tennessee-haslam",
+      "rank": 57,
+      "name": "Haslam College of Business",
+      "university": "University of Tennessee, Knoxville",
+      "location": {
+        "city": "Knoxville",
+        "state": "TN"
+      },
+      "classProfile": {
+        "size": 50,
+        "avgWorkExperience": 2.8,
+        "avgGMAT": 660,
+        "avgGRE": null,
+        "internationalStudentPct": null
+      },
+      "costs": {
+        "annualTuition": null,
+        "totalProgramCost": 38875
+      },
+      "employment": {
+        "top3Industries": [
+          "Supply Chain/Operations",
+          "Consulting",
+          "Finance"
+        ],
+        "top5Companies": [],
+        "employmentRate3Months": 85,
+        "avgStartingSalary": 100254,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "#2 nationally in Supply Chain",
+        "Global Supply Chain Institute",
+        "Fast 16-month program",
+        "Value proposition"
+      ],
+      "culture": [
+        "Positive & high energy",
+        "Collaborative",
+        "Supportive",
+        "Fun college town"
+      ],
+      "programUrl": "https://haslam.utk.edu/full-time-mba/"
+    },
+    {
+      "id": "american-kogod",
+      "rank": 58,
+      "name": "Kogod School of Business",
+      "university": "American University",
+      "location": {
+        "city": "Washington",
+        "state": "DC"
+      },
+      "classProfile": {
+        "size": 25,
+        "avgWorkExperience": 6.2,
+        "avgGMAT": 643,
+        "avgGRE": 147,
+        "internationalStudentPct": null
+      },
+      "costs": {
+        "annualTuition": null,
+        "totalProgramCost": 98282
+      },
+      "employment": {
+        "top3Industries": [
+          "Government/Non-profit",
+          "Consulting",
+          "Finance"
+        ],
+        "top5Companies": [],
+        "employmentRate3Months": 94,
+        "avgStartingSalary": 98641,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "#3 Best Green MBA",
+        "Sustainability focus",
+        "Washington DC location",
+        "STEM-designated"
+      ],
+      "culture": [
+        "Intimate cohort",
+        "Sustainability-focused",
+        "Collaborative",
+        "Global mindset"
+      ],
+      "programUrl": "https://kogod.american.edu/programs-admissions/mba"
+    },
+    {
+      "id": "arkansas-walton",
+      "rank": 59,
+      "name": "Sam M. Walton College of Business",
+      "university": "University of Arkansas",
+      "location": {
+        "city": "Fayetteville",
+        "state": "AR"
+      },
+      "classProfile": {
+        "size": 30,
+        "avgWorkExperience": 1.8,
+        "avgGMAT": 577,
+        "avgGRE": null,
+        "internationalStudentPct": null
+      },
+      "costs": {
+        "annualTuition": null,
+        "totalProgramCost": 24054
+      },
+      "employment": {
+        "top3Industries": [
+          "Retail",
+          "Supply Chain",
+          "Consulting"
+        ],
+        "top5Companies": [
+          "Walmart",
+          "Tyson Foods",
+          "J.B. Hunt",
+          "Deloitte",
+          "KPMG"
+        ],
+        "employmentRate3Months": null,
+        "avgStartingSalary": 79911,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "Retail & Supply Chain (Walmart connection)",
+        "Value proposition",
+        "NW Arkansas business community",
+        "Strong assistantships"
+      ],
+      "culture": [
+        "Collaborative",
+        "Diverse backgrounds",
+        "SEC college town",
+        "Walmart-focused ecosystem"
+      ],
+      "programUrl": "https://walton.uark.edu/graduate-programs/mba-masters-degree-program/"
+    },
+    {
+      "id": "kansas",
+      "rank": 60,
+      "name": "School of Business",
+      "university": "University of Kansas",
+      "location": {
+        "city": "Lawrence",
+        "state": "KS"
+      },
+      "classProfile": {
+        "size": 53,
+        "avgWorkExperience": 3.7,
+        "avgGMAT": 587,
+        "avgGRE": 153,
+        "internationalStudentPct": null
+      },
+      "costs": {
+        "annualTuition": null,
+        "totalProgramCost": 33019
+      },
+      "employment": {
+        "top3Industries": [
+          "Marketing",
+          "Finance",
+          "Operations"
+        ],
+        "top5Companies": [
+          "Tradebot",
+          "MarketSphere",
+          "United Missouri Bank",
+          "Sprint",
+          "Hallmark"
+        ],
+        "employmentRate3Months": 96,
+        "avgStartingSalary": 85645,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "Affordable",
+        "Fast 16-month program",
+        "No business background required",
+        "Strong alumni network"
+      ],
+      "culture": [
+        "Supportive",
+        "Diverse backgrounds",
+        "Collaborative",
+        "Fun college atmosphere"
+      ],
+      "programUrl": "https://business.ku.edu/mba"
+    },
+    {
+      "id": "chapman-argyros",
+      "rank": 61,
+      "name": "Argyros School of Business",
+      "university": "Chapman University",
+      "location": {
+        "city": "Orange",
+        "state": "CA"
+      },
+      "classProfile": {
+        "size": 55,
+        "avgWorkExperience": 2.8,
+        "avgGMAT": 633,
+        "avgGRE": 154,
+        "internationalStudentPct": null
+      },
+      "costs": {
+        "annualTuition": null,
+        "totalProgramCost": 103750
+      },
+      "employment": {
+        "top3Industries": [
+          "Technology",
+          "Financial Services",
+          "Entertainment"
+        ],
+        "top5Companies": [],
+        "employmentRate3Months": 86,
+        "avgStartingSalary": 73876,
+        "medianSigningBonus": 4000
+      },
+      "academicStrengths": [
+        "Orange County location",
+        "Entrepreneurship",
+        "Entertainment & Media Management",
+        "Finance"
+      ],
+      "culture": [
+        "Personalized education",
+        "Small classes",
+        "Research-focused",
+        "Orange County ecosystem"
+      ],
+      "programUrl": "https://www.chapman.edu/business/academic-programs/graduate/prospective-students/programs/full-time-mba.aspx"
+    },
+    {
+      "id": "tulane-freeman",
+      "rank": 62,
+      "name": "Freeman School of Business",
+      "university": "Tulane University",
+      "location": {
+        "city": "New Orleans",
+        "state": "LA"
+      },
+      "classProfile": {
+        "size": 84,
+        "avgWorkExperience": 2.8,
+        "avgGMAT": 608,
+        "avgGRE": 152,
+        "internationalStudentPct": null
+      },
+      "costs": {
+        "annualTuition": null,
+        "totalProgramCost": null
+      },
+      "employment": {
+        "top3Industries": [
+          "Finance",
+          "Energy",
+          "Consulting"
+        ],
+        "top5Companies": [],
+        "employmentRate3Months": 100,
+        "avgStartingSalary": 106033,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "STEM-designated",
+        "Energy sector focus",
+        "New Orleans location",
+        "Analytics"
+      ],
+      "culture": [
+        "Diverse",
+        "Experiential learning",
+        "New Orleans culture",
+        "Global immersions"
+      ],
+      "programUrl": "https://freeman.tulane.edu/graduate/full-time-mba"
+    },
+    {
+      "id": "alabama-manderson",
+      "rank": 63,
+      "name": "Manderson Graduate School of Business",
+      "university": "University of Alabama",
+      "location": {
+        "city": "Tuscaloosa",
+        "state": "AL"
+      },
+      "classProfile": {
+        "size": 170,
+        "avgWorkExperience": 1,
+        "avgGMAT": 653,
+        "avgGRE": null,
+        "internationalStudentPct": null
+      },
+      "costs": {
+        "annualTuition": null,
+        "totalProgramCost": 28377
+      },
+      "employment": {
+        "top3Industries": [
+          "Finance",
+          "Marketing",
+          "Consulting"
+        ],
+        "top5Companies": [],
+        "employmentRate3Months": 93,
+        "avgStartingSalary": 73222,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "Value proposition",
+        "Young cohort (many from undergrad)",
+        "SEC culture",
+        "3 pathway options"
+      ],
+      "culture": [
+        "Team-oriented",
+        "TIDE Together",
+        "Social",
+        "SEC football atmosphere"
+      ],
+      "programUrl": "https://manderson.culverhouse.ua.edu/business-administration-mba/"
+    },
+    {
+      "id": "kentucky-gatton",
+      "rank": 64,
+      "name": "Gatton College of Business and Economics",
+      "university": "University of Kentucky",
+      "location": {
+        "city": "Lexington",
+        "state": "KY"
+      },
+      "classProfile": {
+        "size": 55,
+        "avgWorkExperience": 1,
+        "avgGMAT": 621,
+        "avgGRE": null,
+        "internationalStudentPct": null
+      },
+      "costs": {
+        "annualTuition": null,
+        "totalProgramCost": 39252
+      },
+      "employment": {
+        "top3Industries": [
+          "Finance",
+          "Consulting",
+          "Healthcare"
+        ],
+        "top5Companies": [],
+        "employmentRate3Months": 69,
+        "avgStartingSalary": 59373,
+        "medianSigningBonus": 5750
+      },
+      "academicStrengths": [
+        "Fast 12-month program",
+        "Business Analytics certificate",
+        "Data focus",
+        "Affordable"
+      ],
+      "culture": [
+        "Student-focused",
+        "Supportive",
+        "Collaborative",
+        "Intimate"
+      ],
+      "programUrl": "https://gatton.uky.edu/prc/full-time-mba"
+    },
+    {
+      "id": "south-carolina-moore",
+      "rank": 65,
+      "name": "Moore School of Business",
+      "university": "University of South Carolina",
+      "location": {
+        "city": "Columbia",
+        "state": "SC"
+      },
+      "classProfile": {
+        "size": 48,
+        "avgWorkExperience": 4.5,
+        "avgGMAT": 656,
+        "avgGRE": 151,
+        "internationalStudentPct": null
+      },
+      "costs": {
+        "annualTuition": null,
+        "totalProgramCost": null
+      },
+      "employment": {
+        "top3Industries": [
+          "Consulting",
+          "Finance",
+          "Technology"
+        ],
+        "top5Companies": [],
+        "employmentRate3Months": null,
+        "avgStartingSalary": 101937,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "Regional network",
+        "Strong salary outcomes",
+        "International business",
+        "Operations & Supply Chain"
+      ],
+      "culture": [
+        "Traditional Southern business school",
+        "Collaborative",
+        "Professional",
+        "Close-knit"
+      ],
+      "programUrl": "https://www.sc.edu/study/colleges_schools/moore/graduate/mba/"
+    },
+    {
+      "id": "fordham-gabelli",
+      "rank": 66,
+      "name": "Gabelli School of Business",
+      "university": "Fordham University",
+      "location": {
+        "city": "New York",
+        "state": "NY"
+      },
+      "classProfile": {
+        "size": 60,
+        "avgWorkExperience": 5,
+        "avgGMAT": 644,
+        "avgGRE": null,
+        "internationalStudentPct": 48
+      },
+      "costs": {
+        "annualTuition": null,
+        "totalProgramCost": 103748
+      },
+      "employment": {
+        "top3Industries": [
+          "Financial Services",
+          "Technology",
+          "Non-Profit"
+        ],
+        "top5Companies": [],
+        "employmentRate3Months": null,
+        "avgStartingSalary": 124886,
+        "medianSigningBonus": 29467
+      },
+      "academicStrengths": [
+        "NYC location",
+        "Finance",
+        "Corporate access",
+        "Communication & Media Management"
+      ],
+      "culture": [
+        "Intimate cohort",
+        "NYC-focused",
+        "Corporate immersions",
+        "Alumni network"
+      ],
+      "programUrl": "https://www.fordham.edu/gabelli-school-of-business/academic-programs-and-admissions/graduate-programs/academic-programs/mba-programs/"
+    },
+    {
+      "id": "oklahoma-state-spears",
+      "rank": 67,
+      "name": "Spears School of Business",
+      "university": "Oklahoma State University",
+      "location": {
+        "city": "Stillwater",
+        "state": "OK"
+      },
+      "classProfile": {
+        "size": 68,
+        "avgWorkExperience": 9,
+        "avgGMAT": 538,
+        "avgGRE": 154,
+        "internationalStudentPct": null
+      },
+      "costs": {
+        "annualTuition": null,
+        "totalProgramCost": null
+      },
+      "employment": {
+        "top3Industries": [
+          "Energy",
+          "Finance",
+          "Consulting"
+        ],
+        "top5Companies": [],
+        "employmentRate3Months": 98,
+        "avgStartingSalary": 56809,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "Customizable MBA",
+        "Entrepreneurship",
+        "Energy Business",
+        "Data Science"
+      ],
+      "culture": [
+        "Team-based",
+        "Innovation-focused",
+        "Flexible",
+        "Case competitions"
+      ],
+      "programUrl": "https://spears.okstate.edu/graduate/mba/"
+    },
+    {
+      "id": "tcu-neeley",
+      "rank": 68,
+      "name": "Neeley School of Business",
+      "university": "Texas Christian University",
+      "location": {
+        "city": "Fort Worth",
+        "state": "TX"
+      },
+      "classProfile": {
+        "size": 60,
+        "avgWorkExperience": 5,
+        "avgGMAT": 612,
+        "avgGRE": null,
+        "internationalStudentPct": 24
+      },
+      "costs": {
+        "annualTuition": null,
+        "totalProgramCost": 122790
+      },
+      "employment": {
+        "top3Industries": [
+          "Consulting",
+          "Finance",
+          "Technology"
+        ],
+        "top5Companies": [
+          "Accenture",
+          "Deloitte",
+          "Nike",
+          "PepsiCo",
+          "Alcon"
+        ],
+        "employmentRate3Months": 96,
+        "avgStartingSalary": 127500,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "STEM-designated",
+        "DFW corporate access",
+        "Small cohort (personalized)",
+        "Neeley & Associates Consulting"
+      ],
+      "culture": [
+        "Personalized attention",
+        "Small-school atmosphere",
+        "Big business ties",
+        "Collaborative"
+      ],
+      "programUrl": "https://www.neeley.tcu.edu/Graduate-Programs/MBA/Full-time-MBA"
+    },
+    {
+      "id": "rutgers",
+      "rank": 69,
+      "name": "Rutgers Business School",
+      "university": "Rutgers University",
+      "location": {
+        "city": "Newark",
+        "state": "NJ"
+      },
+      "classProfile": {
+        "size": 95,
+        "avgWorkExperience": 5.3,
+        "avgGMAT": 664,
+        "avgGRE": 156,
+        "internationalStudentPct": null
+      },
+      "costs": {
+        "annualTuition": 27704,
+        "totalProgramCost": 55408
+      },
+      "employment": {
+        "top3Industries": [
+          "Consulting",
+          "Finance",
+          "Healthcare"
+        ],
+        "top5Companies": [
+          "Google",
+          "Amazon",
+          "Dell",
+          "Deloitte",
+          "EY"
+        ],
+        "employmentRate3Months": null,
+        "avgStartingSalary": 103378,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "#1 Public Business School in Northeast (MBA)",
+        "Supply Chain Management",
+        "NYC proximity",
+        "166% salary increase"
+      ],
+      "culture": [
+        "Diverse",
+        "NYC/NJ ecosystem",
+        "Pharmaceutical/Healthcare focus",
+        "ROI-focused"
+      ],
+      "programUrl": "https://www.business.rutgers.edu/full-time-mba"
+    },
+    {
+      "id": "syracuse-whitman",
+      "rank": 70,
+      "name": "Whitman School of Management",
+      "university": "Syracuse University",
+      "location": {
+        "city": "Syracuse",
+        "state": "NY"
+      },
+      "classProfile": {
+        "size": 41,
+        "avgWorkExperience": 2.8,
+        "avgGMAT": 640,
+        "avgGRE": null,
+        "internationalStudentPct": 64
+      },
+      "costs": {
+        "annualTuition": null,
+        "totalProgramCost": 108810
+      },
+      "employment": {
+        "top3Industries": [
+          "Technology",
+          "Finance",
+          "Consulting"
+        ],
+        "top5Companies": [
+          "Amazon",
+          "American Express",
+          "Goldman Sachs",
+          "IBM",
+          "JP Morgan"
+        ],
+        "employmentRate3Months": null,
+        "avgStartingSalary": 107517,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "Business Analytics",
+        "Strong corporate connections",
+        "International diversity",
+        "Real Estate"
+      ],
+      "culture": [
+        "International",
+        "Collaborative",
+        "Holistic admissions",
+        "Diverse backgrounds"
+      ],
+      "programUrl": "https://whitman.syracuse.edu/graduate-programs/full-time-mba-program/"
+    },
+    {
+      "id": "northeastern-damore-mckim",
+      "rank": 71,
+      "name": "D'Amore-McKim School of Business",
+      "university": "Northeastern University",
+      "location": {
+        "city": "Boston",
+        "state": "MA"
+      },
+      "classProfile": {
+        "size": 50,
+        "avgWorkExperience": null,
+        "avgGMAT": 658,
+        "avgGRE": null,
+        "internationalStudentPct": null
+      },
+      "costs": {
+        "annualTuition": null,
+        "totalProgramCost": 102582
+      },
+      "employment": {
+        "top3Industries": [
+          "Consumer Products",
+          "Manufacturing",
+          "Energy"
+        ],
+        "top5Companies": [],
+        "employmentRate3Months": null,
+        "avgStartingSalary": 92000,
+        "medianSigningBonus": 10000
+      },
+      "academicStrengths": [
+        "Boston innovation ecosystem",
+        "Experiential learning",
+        "Test-optional",
+        "Co-op integration"
+      ],
+      "culture": [
+        "Creative",
+        "Driven",
+        "Action-oriented",
+        "Innovation-focused"
+      ],
+      "programUrl": "https://damore-mckim.northeastern.edu/programs/full-time-mba/"
+    },
+    {
+      "id": "baylor-hankamer",
+      "rank": 72,
+      "name": "Hankamer School of Business",
+      "university": "Baylor University",
+      "location": {
+        "city": "Waco",
+        "state": "TX"
+      },
+      "classProfile": {
+        "size": 93,
+        "avgWorkExperience": 2.2,
+        "avgGMAT": 617,
+        "avgGRE": 154,
+        "internationalStudentPct": null
+      },
+      "costs": {
+        "annualTuition": 42842,
+        "totalProgramCost": 85684
+      },
+      "employment": {
+        "top3Industries": [
+          "Finance",
+          "Consulting",
+          "Healthcare"
+        ],
+        "top5Companies": [],
+        "employmentRate3Months": null,
+        "avgStartingSalary": null,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "Values-based leadership",
+        "Healthcare focus",
+        "Affordable Texas option",
+        "Faith integration"
+      ],
+      "culture": [
+        "Values-driven",
+        "Collaborative",
+        "Service-oriented",
+        "Christian university"
+      ],
+      "programUrl": "https://www.baylor.edu/business/mba/"
+    },
+    {
+      "id": "pepperdine-graziadio",
+      "rank": 73,
+      "name": "Graziadio Business School",
+      "university": "Pepperdine University",
+      "location": {
+        "city": "Malibu",
+        "state": "CA"
+      },
+      "classProfile": {
+        "size": 131,
+        "avgWorkExperience": 4.3,
+        "avgGMAT": 597,
+        "avgGRE": 154,
+        "internationalStudentPct": null
+      },
+      "costs": {
+        "annualTuition": 50940,
+        "totalProgramCost": 101880
+      },
+      "employment": {
+        "top3Industries": [
+          "Finance",
+          "Consulting",
+          "Entertainment"
+        ],
+        "top5Companies": [],
+        "employmentRate3Months": null,
+        "avgStartingSalary": null,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "Malibu/LA location",
+        "Values-based leadership",
+        "Entertainment industry access",
+        "Christian university"
+      ],
+      "culture": [
+        "Values-driven",
+        "Collaborative",
+        "West Coast lifestyle",
+        "Purpose-oriented"
+      ],
+      "programUrl": "https://bschool.pepperdine.edu/programs/mba/"
+    },
+    {
+      "id": "george-washington",
+      "rank": 74,
+      "name": "School of Business",
+      "university": "George Washington University",
+      "location": {
+        "city": "Washington",
+        "state": "DC"
+      },
+      "classProfile": {
+        "size": null,
+        "avgWorkExperience": 6.7,
+        "avgGMAT": 669,
+        "avgGRE": null,
+        "internationalStudentPct": null
+      },
+      "costs": {
+        "annualTuition": null,
+        "totalProgramCost": 113090
+      },
+      "employment": {
+        "top3Industries": [
+          "Government",
+          "Consulting",
+          "Finance"
+        ],
+        "top5Companies": [],
+        "employmentRate3Months": null,
+        "avgStartingSalary": 115951,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "Washington DC location",
+        "Government & policy access",
+        "Test-optional",
+        "GMAT-based scholarships ($10K-$70K)"
+      ],
+      "culture": [
+        "Policy-focused",
+        "Professional",
+        "Capital access",
+        "International affairs"
+      ],
+      "programUrl": "https://business.gwu.edu/prospective-students/mba-admissions"
+    },
+    {
+      "id": "drexel-lebow",
+      "rank": 75,
+      "name": "LeBow College of Business",
+      "university": "Drexel University",
+      "location": {
+        "city": "Philadelphia",
+        "state": "PA"
+      },
+      "classProfile": {
+        "size": 29,
+        "avgWorkExperience": null,
+        "avgGMAT": 582,
+        "avgGRE": null,
+        "internationalStudentPct": null
+      },
+      "costs": {
+        "annualTuition": null,
+        "totalProgramCost": null
+      },
+      "employment": {
+        "top3Industries": [
+          "Technology",
+          "Financial Services",
+          "Pharmaceuticals"
+        ],
+        "top5Companies": [
+          "Vanguard",
+          "Johnson & Johnson",
+          "JP Morgan Chase",
+          "Comcast",
+          "SEI"
+        ],
+        "employmentRate3Months": null,
+        "avgStartingSalary": 84000,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "Co-op program (3-month summer)",
+        "STEM concentrations",
+        "Practical education",
+        "Philadelphia market access"
+      ],
+      "culture": [
+        "Hands-on learning",
+        "Technology emphasis",
+        "Pragmatic approach",
+        "Urban campus"
+      ],
+      "programUrl": "https://drexel.edu/lebow/degrees/mba/"
+    },
+    {
+      "id": "villanova",
+      "rank": 76,
+      "name": "Villanova School of Business",
+      "university": "Villanova University",
+      "location": {
+        "city": "Villanova",
+        "state": "PA"
+      },
+      "classProfile": {
+        "size": null,
+        "avgWorkExperience": 9.8,
+        "avgGMAT": null,
+        "avgGRE": null,
+        "internationalStudentPct": null
+      },
+      "costs": {
+        "annualTuition": null,
+        "totalProgramCost": null
+      },
+      "employment": {
+        "top3Industries": [
+          "Finance",
+          "Consulting",
+          "Healthcare"
+        ],
+        "top5Companies": [],
+        "employmentRate3Months": null,
+        "avgStartingSalary": 109344,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "Catholic values",
+        "Philadelphia market",
+        "Business Analytics",
+        "Strong regional network"
+      ],
+      "culture": [
+        "Values-driven",
+        "Augustinian tradition",
+        "Philadelphia focus",
+        "Collaborative"
+      ],
+      "programUrl": "https://www.villanova.edu/business/graduate/"
+    },
+    {
+      "id": "case-western-weatherhead",
+      "rank": 77,
+      "name": "Weatherhead School of Management",
+      "university": "Case Western Reserve University",
+      "location": {
+        "city": "Cleveland",
+        "state": "OH"
+      },
+      "classProfile": {
+        "size": 66,
+        "avgWorkExperience": 4.5,
+        "avgGMAT": 674,
+        "avgGRE": null,
+        "internationalStudentPct": null
+      },
+      "costs": {
+        "annualTuition": 42450,
+        "totalProgramCost": 99660
+      },
+      "employment": {
+        "top3Industries": [
+          "Healthcare",
+          "Manufacturing",
+          "Technology"
+        ],
+        "top5Companies": [],
+        "employmentRate3Months": null,
+        "avgStartingSalary": 92560,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "Healthcare management",
+        "Cleveland Clinic proximity",
+        "Test waivers available",
+        "STEM options"
+      ],
+      "culture": [
+        "Healthcare-focused",
+        "Research-oriented",
+        "Cleveland ecosystem",
+        "Innovation-driven"
+      ],
+      "programUrl": "https://case.edu/weatherhead/degrees/master-business-administration-mba"
+    },
+    {
+      "id": "uconn",
+      "rank": 78,
+      "name": "School of Business",
+      "university": "University of Connecticut",
+      "location": {
+        "city": "Storrs",
+        "state": "CT"
+      },
+      "classProfile": {
+        "size": null,
+        "avgWorkExperience": null,
+        "avgGMAT": 520,
+        "avgGRE": null,
+        "internationalStudentPct": null
+      },
+      "costs": {
+        "annualTuition": null,
+        "totalProgramCost": 44100
+      },
+      "employment": {
+        "top3Industries": [
+          "Finance",
+          "Technology",
+          "Healthcare"
+        ],
+        "top5Companies": [],
+        "employmentRate3Months": null,
+        "avgStartingSalary": 101501,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "Business Analytics (#5 online nationally)",
+        "Affordable flagship",
+        "Strong ROI (130%)",
+        "Northeast corridor access"
+      ],
+      "culture": [
+        "Public flagship",
+        "Collaborative",
+        "Connecticut business community",
+        "Analytics-focused"
+      ],
+      "programUrl": "https://mba.business.uconn.edu/"
+    },
+    {
+      "id": "temple-fox",
+      "rank": 79,
+      "name": "Fox School of Business",
+      "university": "Temple University",
+      "location": {
+        "city": "Philadelphia",
+        "state": "PA"
+      },
+      "classProfile": {
+        "size": null,
+        "avgWorkExperience": null,
+        "avgGMAT": null,
+        "avgGRE": null,
+        "internationalStudentPct": null
+      },
+      "costs": {
+        "annualTuition": null,
+        "totalProgramCost": null
+      },
+      "employment": {
+        "top3Industries": [
+          "Finance",
+          "Consulting",
+          "Healthcare"
+        ],
+        "top5Companies": [
+          "Aramark",
+          "Cigna",
+          "Comcast",
+          "Deloitte",
+          "JPMorgan"
+        ],
+        "employmentRate3Months": null,
+        "avgStartingSalary": 85000,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "Philadelphia market access",
+        "Risk Management & Insurance",
+        "Public university value",
+        "Urban location"
+      ],
+      "culture": [
+        "Diverse",
+        "Urban ecosystem",
+        "Philadelphia-focused",
+        "Accessible"
+      ],
+      "programUrl": "https://www.fox.temple.edu/graduate-programs/mba/"
+    },
+    {
+      "id": "lehigh",
+      "rank": 80,
+      "name": "College of Business",
+      "university": "Lehigh University",
+      "location": {
+        "city": "Bethlehem",
+        "state": "PA"
+      },
+      "classProfile": {
+        "size": null,
+        "avgWorkExperience": null,
+        "avgGMAT": null,
+        "avgGRE": null,
+        "internationalStudentPct": null
+      },
+      "costs": {
+        "annualTuition": null,
+        "totalProgramCost": null
+      },
+      "employment": {
+        "top3Industries": [
+          "Finance",
+          "Consulting",
+          "Manufacturing"
+        ],
+        "top5Companies": [],
+        "employmentRate3Months": null,
+        "avgStartingSalary": null,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "Finance",
+        "Analytics",
+        "NYC proximity",
+        "Strong alumni network"
+      ],
+      "culture": [
+        "Rigorous",
+        "Collaborative",
+        "Engineering mindset",
+        "Northeast corridor"
+      ],
+      "programUrl": "https://business.lehigh.edu/mba"
+    },
+    {
+      "id": "colorado-leeds",
+      "rank": 81,
+      "name": "Leeds School of Business",
+      "university": "University of Colorado Boulder",
+      "location": {
+        "city": "Boulder",
+        "state": "CO"
+      },
+      "classProfile": {
+        "size": null,
+        "avgWorkExperience": null,
+        "avgGMAT": null,
+        "avgGRE": null,
+        "internationalStudentPct": null
+      },
+      "costs": {
+        "annualTuition": null,
+        "totalProgramCost": null
+      },
+      "employment": {
+        "top3Industries": [
+          "Technology",
+          "Outdoor Industry",
+          "Consulting"
+        ],
+        "top5Companies": [],
+        "employmentRate3Months": null,
+        "avgStartingSalary": null,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "Entrepreneurship",
+        "Sustainability",
+        "Outdoor industry",
+        "Denver/Boulder tech ecosystem"
+      ],
+      "culture": [
+        "Entrepreneurial",
+        "Outdoor-focused",
+        "Innovative",
+        "Work-life balance"
+      ],
+      "programUrl": "https://www.colorado.edu/business/mba"
+    },
+    {
+      "id": "arizona-eller",
+      "rank": 82,
+      "name": "Eller College of Management",
+      "university": "University of Arizona",
+      "location": {
+        "city": "Tucson",
+        "state": "AZ"
+      },
+      "classProfile": {
+        "size": null,
+        "avgWorkExperience": null,
+        "avgGMAT": null,
+        "avgGRE": null,
+        "internationalStudentPct": null
+      },
+      "costs": {
+        "annualTuition": null,
+        "totalProgramCost": null
+      },
+      "employment": {
+        "top3Industries": [
+          "Technology",
+          "Healthcare",
+          "Consulting"
+        ],
+        "top5Companies": [],
+        "employmentRate3Months": null,
+        "avgStartingSalary": null,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "MIS/Analytics",
+        "Affordable Pac-12",
+        "Entrepreneurship",
+        "Southwest business corridor"
+      ],
+      "culture": [
+        "Collaborative",
+        "Desert innovation",
+        "Diverse",
+        "Entrepreneurial"
+      ],
+      "programUrl": "https://eller.arizona.edu/programs/master-business-administration"
+    },
+    {
+      "id": "baruch-zicklin",
+      "rank": 83,
+      "name": "Zicklin School of Business",
+      "university": "CUNY Baruch College",
+      "location": {
+        "city": "New York",
+        "state": "NY"
+      },
+      "classProfile": {
+        "size": 72,
+        "avgWorkExperience": 5.5,
+        "avgGMAT": 620,
+        "avgGRE": 157,
+        "internationalStudentPct": 37
+      },
+      "costs": {
+        "annualTuition": 37338,
+        "totalProgramCost": 74676
+      },
+      "employment": {
+        "top3Industries": [
+          "Financial Services",
+          "Technology",
+          "Consulting"
+        ],
+        "top5Companies": [
+          "American Express",
+          "Barclays",
+          "Deloitte",
+          "Moody's",
+          "New York Life"
+        ],
+        "employmentRate3Months": 87,
+        "avgStartingSalary": 85000,
+        "medianSigningBonus": 14000
+      },
+      "academicStrengths": [
+        "Finance",
+        "Real Estate",
+        "Business Analytics",
+        "International Business"
+      ],
+      "culture": [
+        "Manhattan location",
+        "Diverse student body",
+        "Strong NYC network",
+        "Urban campus environment"
+      ],
+      "programUrl": "https://zicklin.baruch.cuny.edu/programs/graduate/mba/"
+    },
+    {
+      "id": "nc-at-deese",
+      "rank": 84,
+      "name": "Willie A. Deese College of Business",
+      "university": "North Carolina A&T State University",
+      "location": {
+        "city": "Greensboro",
+        "state": "NC"
+      },
+      "classProfile": {
+        "size": 45,
+        "avgWorkExperience": 5,
+        "avgGMAT": 684,
+        "avgGRE": null,
+        "internationalStudentPct": 15
+      },
+      "costs": {
+        "annualTuition": 16590,
+        "totalProgramCost": 33180
+      },
+      "employment": {
+        "top3Industries": [
+          "Supply Chain Management",
+          "Human Resources",
+          "General Management"
+        ],
+        "top5Companies": [
+          "Industry Advisory Board partners",
+          "Regional corporations",
+          "Fortune 500 companies",
+          "Consulting firms",
+          "Technology companies"
+        ],
+        "employmentRate3Months": 94,
+        "avgStartingSalary": 101000,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "Supply Chain Management",
+        "Human Resources Management",
+        "Accounting",
+        "General Management"
+      ],
+      "culture": [
+        "#1 ranked HBCU business school",
+        "Strong alumni network",
+        "Collaborative environment",
+        "Excellence-driven"
+      ],
+      "programUrl": "https://www.ncat.edu/cob/departments/mba/index.php"
+    },
+    {
+      "id": "stevens-business",
+      "rank": 85,
+      "name": "School of Business",
+      "university": "Stevens Institute of Technology",
+      "location": {
+        "city": "Hoboken",
+        "state": "NJ"
+      },
+      "classProfile": {
+        "size": 100,
+        "avgWorkExperience": 4,
+        "avgGMAT": 620,
+        "avgGRE": 153,
+        "internationalStudentPct": 45
+      },
+      "costs": {
+        "annualTuition": 75270,
+        "totalProgramCost": 75270
+      },
+      "employment": {
+        "top3Industries": [
+          "Technology",
+          "Finance",
+          "Consulting"
+        ],
+        "top5Companies": [
+          "Fortune 500 firms",
+          "NYC financial institutions",
+          "Technology companies",
+          "Consulting firms",
+          "Manufacturing companies"
+        ],
+        "employmentRate3Months": 89,
+        "avgStartingSalary": 116000,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "Business Intelligence & Analytics",
+        "Finance",
+        "Information Systems",
+        "Technology Management"
+      ],
+      "culture": [
+        "STEM-designated",
+        "Technology-focused",
+        "NYC proximity",
+        "Innovation-driven"
+      ],
+      "programUrl": "https://www.stevens.edu/school-business/graduate-programs/master-business-administration"
+    },
+    {
+      "id": "auburn-harbert",
+      "rank": 86,
+      "name": "Harbert College of Business",
+      "university": "Auburn University",
+      "location": {
+        "city": "Auburn",
+        "state": "AL"
+      },
+      "classProfile": {
+        "size": 66,
+        "avgWorkExperience": 3,
+        "avgGMAT": 598,
+        "avgGRE": 151,
+        "internationalStudentPct": 12
+      },
+      "costs": {
+        "annualTuition": 30000,
+        "totalProgramCost": 42500
+      },
+      "employment": {
+        "top3Industries": [
+          "Finance",
+          "Consulting",
+          "Technology"
+        ],
+        "top5Companies": [
+          "Deloitte",
+          "EY",
+          "PwC",
+          "KPMG",
+          "Regional corporations"
+        ],
+        "employmentRate3Months": 97,
+        "avgStartingSalary": 68000,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "Finance",
+        "Supply Chain Management",
+        "Information Systems",
+        "Accounting"
+      ],
+      "culture": [
+        "Cohort-based",
+        "Family atmosphere",
+        "Southern hospitality",
+        "Strong school spirit"
+      ],
+      "programUrl": "https://harbert.auburn.edu/programs/mba/"
+    },
+    {
+      "id": "lsu-ourso",
+      "rank": 87,
+      "name": "E.J. Ourso College of Business",
+      "university": "Louisiana State University",
+      "location": {
+        "city": "Baton Rouge",
+        "state": "LA"
+      },
+      "classProfile": {
+        "size": 84,
+        "avgWorkExperience": 2,
+        "avgGMAT": 596,
+        "avgGRE": null,
+        "internationalStudentPct": 20
+      },
+      "costs": {
+        "annualTuition": 36800,
+        "totalProgramCost": 73600
+      },
+      "employment": {
+        "top3Industries": [
+          "Finance",
+          "Accounting",
+          "Operations"
+        ],
+        "top5Companies": [
+          "JPMorgan Chase",
+          "Deloitte",
+          "EY",
+          "ExxonMobil",
+          "PwC"
+        ],
+        "employmentRate3Months": 95,
+        "avgStartingSalary": 71000,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "Finance",
+        "Accounting",
+        "Internal Auditing",
+        "Energy Management"
+      ],
+      "culture": [
+        "STEM-designated",
+        "Strong regional reputation",
+        "Entrepreneurship focus",
+        "Southern business culture"
+      ],
+      "programUrl": "https://business.lsu.edu/mba/"
+    },
+    {
+      "id": "binghamton-som",
+      "rank": 88,
+      "name": "School of Management",
+      "university": "Binghamton University-SUNY",
+      "location": {
+        "city": "Binghamton",
+        "state": "NY"
+      },
+      "classProfile": {
+        "size": 200,
+        "avgWorkExperience": 1.5,
+        "avgGMAT": 603,
+        "avgGRE": 152,
+        "internationalStudentPct": 40
+      },
+      "costs": {
+        "annualTuition": 24390,
+        "totalProgramCost": 48780
+      },
+      "employment": {
+        "top3Industries": [
+          "Finance",
+          "Consulting",
+          "Technology"
+        ],
+        "top5Companies": [
+          "American Express",
+          "Deloitte",
+          "EY",
+          "JP Morgan",
+          "Goldman Sachs"
+        ],
+        "employmentRate3Months": 80,
+        "avgStartingSalary": 65000,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "Finance",
+        "Accounting",
+        "Business Analytics",
+        "Management"
+      ],
+      "culture": [
+        "STEM-designated",
+        "Public university value",
+        "Diverse cohort",
+        "Strong SUNY network"
+      ],
+      "programUrl": "https://www.binghamton.edu/som/mba/"
+    },
+    {
+      "id": "charleston-mba",
+      "rank": 89,
+      "name": "School of Business MBA",
+      "university": "College of Charleston",
+      "location": {
+        "city": "Charleston",
+        "state": "SC"
+      },
+      "classProfile": {
+        "size": 50,
+        "avgWorkExperience": 2,
+        "avgGMAT": 519,
+        "avgGRE": 149,
+        "internationalStudentPct": 10
+      },
+      "costs": {
+        "annualTuition": 28204,
+        "totalProgramCost": 28204
+      },
+      "employment": {
+        "top3Industries": [
+          "Logistics",
+          "Finance",
+          "Hospitality"
+        ],
+        "top5Companies": [
+          "Boeing",
+          "Volvo",
+          "Mercedes-Benz",
+          "Google",
+          "Mediterranean Shipping Company"
+        ],
+        "employmentRate3Months": 100,
+        "avgStartingSalary": 70000,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "Logistics",
+        "Hospitality Management",
+        "Finance",
+        "Marketing"
+      ],
+      "culture": [
+        "One-year program",
+        "Historic Charleston location",
+        "Cohort-based",
+        "#1 job placement nationally"
+      ],
+      "programUrl": "https://business.cofc.edu/graduate-programs/mba.php"
     }
   ]
 }

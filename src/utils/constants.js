@@ -135,9 +135,25 @@ export const STATE_TO_GEO = {
   GA: 'south-southwest',
   VA: 'south-southwest',
   DC: 'south-southwest',
-  TN: 'south-southwest',  // Nashville
+  TN: 'south-southwest',  // Nashville / Knoxville
   MD: 'south-southwest',  // DC metro (College Park)
-  AZ: 'south-southwest',  // Tempe / Phoenix
+  AZ: 'south-southwest',  // Tempe / Phoenix / Tucson
+  FL: 'south-southwest',  // Miami / Gainesville / Tampa
+  AL: 'south-southwest',  // Tuscaloosa
+  LA: 'south-southwest',  // New Orleans
+  SC: 'south-southwest',  // Columbia
+  AR: 'south-southwest',  // Fayetteville
+  OK: 'south-southwest',  // Norman / Stillwater
+  KY: 'south-southwest',  // Lexington
+  NJ: 'northeast',        // Newark / New Brunswick
+  MO: 'midwest',          // St. Louis / Columbia
+  IA: 'midwest',          // Iowa City / Ames
+  KS: 'midwest',          // Lawrence
+  NE: 'midwest',          // Lincoln / Omaha
+  CO: 'west-coast',       // Denver / Boulder (Mountain West → closest bucket)
+  OR: 'west-coast',       // Eugene / Portland
+  HI: 'west-coast',       // Honolulu
+  NM: 'south-southwest',  // Albuquerque
 }
 
 // ---------------------------------------------------------------------------
