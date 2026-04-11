@@ -48,7 +48,108 @@
         "Leadership Development",
         "Section-based community"
       ],
-      "programUrl": "https://www.hbs.edu/mba/"
+      "programUrl": "https://www.hbs.edu/mba/",
+      "applicationInfo": {
+        "deadlines": {
+          "round1": {
+            "deadline": "2025-09-03",
+            "decisionDate": "2025-12-10"
+          },
+          "round2": {
+            "deadline": "2026-01-05",
+            "decisionDate": "2026-03-25"
+          }
+        },
+        "essayQuestions": [
+          {
+            "id": 1,
+            "prompt": "Business-Minded: Please reflect on how your choices have influenced your career path and aspirations.",
+            "wordLimit": 300,
+            "optional": false,
+            "notes": "Focus on what drives you professionally and your purpose behind career choices"
+          },
+          {
+            "id": 2,
+            "prompt": "Leadership-Focused: What experiences have shaped how you invest in others and how you lead?",
+            "wordLimit": 250,
+            "optional": false,
+            "notes": "Demonstrate your leadership philosophy and impact on others"
+          },
+          {
+            "id": 3,
+            "prompt": "Growth-Oriented: Curiosity can be seen in many ways. Please share an example of how you have demonstrated curiosity and how that has influenced your growth.",
+            "wordLimit": 250,
+            "optional": false,
+            "notes": "Show intellectual curiosity and proactive learning"
+          }
+        ],
+        "requirements": {
+          "gmat": {
+            "required": false,
+            "averageScore": 730,
+            "range": "690-760"
+          },
+          "gre": {
+            "accepted": true,
+            "averageScore": "163V/163Q"
+          },
+          "toefl": {
+            "required": true,
+            "minimumScore": 100,
+            "preferredScore": 109
+          },
+          "workExperience": {
+            "minimum": 0,
+            "average": 4.7,
+            "range": "0-10+",
+            "notes": "No minimum required but 95%+ have work experience"
+          },
+          "recommendations": {
+            "required": 2,
+            "professionalPreferred": true
+          },
+          "interviews": {
+            "format": "Invitation-only, blind interview",
+            "avgInviteDate": "Oct-Nov for R1, Feb-Mar for R2"
+          }
+        },
+        "applicationFee": 250,
+        "feeWaiverAvailable": true
+      },
+      "events": [
+        {
+          "id": "evt_hbs_001",
+          "type": "campus_visit",
+          "title": "MBA Program Open House",
+          "date": "2025-10-17",
+          "time": "3:00 PM EST",
+          "format": "in_person",
+          "location": "Spangler Center, Boston MA",
+          "registrationUrl": "https://www.hbs.edu/mba/admissions/events",
+          "description": "Campus tour and information session with admissions team"
+        },
+        {
+          "id": "evt_hbs_002",
+          "type": "class_visit",
+          "title": "Experience the HBS Case Method: Class Visit",
+          "date": "2025-10-24",
+          "time": "Various times",
+          "format": "in_person",
+          "location": "HBS Campus, Boston MA",
+          "registrationUrl": "https://www.hbs.edu/mba/admissions/events",
+          "description": "Firsthand view of HBS's teaching methodology"
+        },
+        {
+          "id": "evt_hbs_003",
+          "type": "webinar",
+          "title": "Student Insights: Life at HBS",
+          "date": "2025-10-21",
+          "time": "Various times",
+          "format": "virtual",
+          "registrationUrl": "https://www.hbs.edu/mba/admissions/events",
+          "description": "Current students share their HBS experience"
+        }
+      ]
     },
     {
       "id": "stanford-gsb",
@@ -98,7 +199,89 @@
         "Collaborative",
         "Think beyond business"
       ],
-      "programUrl": "https://www.gsb.stanford.edu/programs/mba"
+      "programUrl": "https://www.gsb.stanford.edu/programs/mba",
+      "applicationInfo": {
+        "deadlines": {
+          "round1": {
+            "deadline": "2025-09-09",
+            "decisionDate": "2025-12-10"
+          },
+          "round2": {
+            "deadline": "2026-01-07",
+            "decisionDate": "2026-04-02"
+          },
+          "round3": {
+            "deadline": "2026-04-01",
+            "decisionDate": "2026-05-12"
+          }
+        },
+        "essayQuestions": [
+          {
+            "id": 1,
+            "prompt": "What matters most to you, and why? For this essay, we would like you to reflect deeply and write from the heart. Once you've identified what matters most to you, help us understand why. You might consider, for example, what makes this so important to you? What people, insights, or experiences have shaped your perspectives?",
+            "wordLimit": 650,
+            "optional": false,
+            "notes": "Stanford's signature essay - be authentic and personal"
+          },
+          {
+            "id": 2,
+            "prompt": "Describe your aspirations and how your Stanford GSB experience will help you realize them. If you are applying to both the MBA and MSx programs, use this essay to address your interest in both programs.",
+            "wordLimit": 350,
+            "optional": false,
+            "notes": "Connect your goals to Stanford's specific resources"
+          },
+          {
+            "id": 3,
+            "prompt": "Think about times you've created a positive impact, whether in professional, extracurricular, academic, or other settings. What was your impact? What made it significant to you or to others? You can share up to three examples.",
+            "wordLimit": null,
+            "characterLimit": 1200,
+            "optional": true,
+            "notes": "Approximately 200 words per example, up to 3 examples"
+          }
+        ],
+        "requirements": {
+          "gmat": {
+            "required": false,
+            "averageScore": 738,
+            "range": "710-760"
+          },
+          "gre": {
+            "accepted": true,
+            "averageScore": "165V/165Q"
+          },
+          "toefl": {
+            "required": true,
+            "minimumScore": 100
+          },
+          "workExperience": {
+            "minimum": 0,
+            "average": 5,
+            "range": "2-10+"
+          },
+          "recommendations": {
+            "required": 2,
+            "professionalPreferred": true
+          },
+          "interviews": {
+            "format": "Invitation-only",
+            "notes": "Conducted by admissions committee"
+          }
+        },
+        "applicationFee": 275,
+        "feeWaiverAvailable": true
+      },
+      "events": [
+        {
+          "id": "evt_gsb_001",
+          "type": "info_session",
+          "title": "Virtual Information Session",
+          "date": "2025-09-15",
+          "time": "12:00 PM PST",
+          "format": "virtual",
+          "registrationUrl": "https://www.gsb.stanford.edu/programs/mba/admission/events",
+          "description": "Learn about Stanford GSB's MBA program and application process"
+        }
+      ]
     },
     {
       "id": "wharton-penn",
@@ -148,7 +331,66 @@
         "Collaborative",
         "Large cohort diversity"
       ],
-      "programUrl": "https://mba.wharton.upenn.edu/"
+      "programUrl": "https://mba.wharton.upenn.edu/",
+      "applicationInfo": {
+        "deadlines": {
+          "round1": {
+            "deadline": "2025-09-03",
+            "decisionDate": "2025-12-15"
+          },
+          "round2": {
+            "deadline": "2026-01-06",
+            "decisionDate": "2026-03-31"
+          },
+          "round3": {
+            "deadline": "2026-04-01",
+            "decisionDate": "2026-05-12"
+          }
+        },
+        "essayQuestions": [
+          {
+            "id": 1,
+            "prompt": "How do you plan to use the Wharton MBA program to help you achieve your future professional goals? You might consider your past experience, short- and long-term goals, and resources available at Wharton.",
+            "wordLimit": 500,
+            "optional": false
+          },
+          {
+            "id": 2,
+            "prompt": "Taking into consideration your background – personal, professional, and/or academic – how do you plan to make specific, meaningful contributions to the Wharton community?",
+            "wordLimit": 350,
+            "optional": false
+          }
+        ],
+        "requirements": {
+          "gmat": {
+            "required": false,
+            "averageScore": 735,
+            "range": "700-760"
+          },
+          "gre": {
+            "accepted": true,
+            "averageScore": "163V/163Q"
+          },
+          "toefl": {
+            "required": true,
+            "minimumScore": 100
+          },
+          "workExperience": {
+            "minimum": 0,
+            "average": 5,
+            "range": "2-12"
+          },
+          "recommendations": {
+            "required": 2
+          },
+          "interviews": {
+            "format": "Invitation-only, post-deadline",
+            "notes": "Conducted by admissions staff and students"
+          }
+        },
+        "applicationFee": 275,
+        "feeWaiverAvailable": true
+      }
     },
     {
       "id": "booth-chicago",
@@ -198,7 +440,67 @@
         "Flexible curriculum",
         "Academic freedom"
       ],
-      "programUrl": "https://www.chicagobooth.edu/programs/full-time"
+      "programUrl": "https://www.chicagobooth.edu/programs/full-time",
+      "applicationInfo": {
+        "deadlines": {
+          "round1": {
+            "deadline": "2025-09-11",
+            "decisionDate": "2025-12-XX"
+          },
+          "round2": {
+            "deadline": "2026-01-03",
+            "decisionDate": "2026-03-XX"
+          },
+          "round3": {
+            "deadline": "2026-04-03",
+            "decisionDate": "2026-05-XX"
+          }
+        },
+        "essayQuestions": [
+          {
+            "id": 1,
+            "prompt": "How will a Booth MBA help you achieve your immediate and long-term post-MBA career goals?",
+            "wordLimit": 500,
+            "optional": false,
+            "notes": "Specific 3-5 year goals and long-term aspirations"
+          },
+          {
+            "id": 2,
+            "prompt": "An MBA is as much about personal growth as it is about professional development. In addition to sharing your experience and goals in terms of career, we'd like to learn more about you outside of the office. Use this opportunity to tell us something about who you are...",
+            "wordLimit": 250,
+            "optional": false,
+            "notes": "The photos showing Booth values - select one and relate to your values"
+          }
+        ],
+        "requirements": {
+          "gmat": {
+            "required": false,
+            "averageScore": 728,
+            "range": "690-760"
+          },
+          "gre": {
+            "accepted": true,
+            "averageScore": "163V/163Q"
+          },
+          "toefl": {
+            "required": true,
+            "minimumScore": 104
+          },
+          "workExperience": {
+            "average": 5,
+            "range": "2-10"
+          },
+          "recommendations": {
+            "required": 2
+          },
+          "interviews": {
+            "format": "Invitation-only",
+            "notes": "Alumni and admissions committee"
+          }
+        },
+        "applicationFee": 275,
+        "feeWaiverAvailable": true
+      }
     },
     {
       "id": "kellogg-northwestern",
@@ -248,7 +550,67 @@
         "Leadership development",
         "High EQ community"
       ],
-      "programUrl": "https://www.kellogg.northwestern.edu/programs/full-time-mba.aspx"
+      "programUrl": "https://www.kellogg.northwestern.edu/programs/full-time-mba.aspx",
+      "applicationInfo": {
+        "deadlines": {
+          "round1": {
+            "deadline": "2025-09-10",
+            "decisionDate": "2025-12-10"
+          },
+          "round2": {
+            "deadline": "2026-01-07",
+            "decisionDate": "2026-03-26"
+          },
+          "round3": {
+            "deadline": "2026-04-01",
+            "decisionDate": "2026-05-13"
+          }
+        },
+        "essayQuestions": [
+          {
+            "id": 1,
+            "prompt": "Intentionality is a key aspect of what makes our graduates successful Kellogg leaders. Help us understand your journey by articulating your motivations for pursuing an MBA, the specific goals you aim to achieve, and why you believe now is the right moment. Moreover, share why you feel Kellogg is best suited to serve as a catalyst for your career aspirations and what you will contribute to our community of lifelong learners during your time here.",
+            "wordLimit": 450,
+            "optional": false,
+            "notes": "Focus on motivations, goals, timing, and Kellogg fit"
+          },
+          {
+            "id": 2,
+            "prompt": "Kellogg leaders are primed to tackle challenges everywhere, from the boardroom to their neighborhoods. Describe a specific professional experience where you had to make a difficult decision. Reflecting on this experience, identify the values that guided your decision-making process and how it impacted your leadership style.",
+            "wordLimit": 450,
+            "optional": false,
+            "notes": "Leadership and values-based decision making"
+          }
+        ],
+        "requirements": {
+          "gmat": {
+            "required": false,
+            "averageScore": 730,
+            "range": "690-760"
+          },
+          "gre": {
+            "accepted": true,
+            "averageScore": "162V/162Q"
+          },
+          "toefl": {
+            "required": true,
+            "minimumScore": 100
+          },
+          "workExperience": {
+            "average": 5,
+            "range": "2-10"
+          },
+          "recommendations": {
+            "required": 2
+          },
+          "interviews": {
+            "format": "Invitation-only",
+            "notes": "Alumni and admissions interviews"
+          }
+        },
+        "applicationFee": 275,
+        "feeWaiverAvailable": true
+      }
     },
     {
       "id": "sloan-mit",
@@ -298,7 +660,67 @@
         "Experiential learning (Action Learning)",
         "STEM-heavy"
       ],
-      "programUrl": "https://mitsloan.mit.edu/mba"
+      "programUrl": "https://mitsloan.mit.edu/mba",
+      "applicationInfo": {
+        "deadlines": {
+          "round1": {
+            "deadline": "2025-09-29",
+            "decisionDate": "2025-12-XX"
+          },
+          "round2": {
+            "deadline": "2026-01-13",
+            "decisionDate": "2026-04-XX"
+          },
+          "round3": {
+            "deadline": "2026-04-06",
+            "decisionDate": "2026-05-XX"
+          }
+        },
+        "essayQuestions": [
+          {
+            "id": 1,
+            "prompt": "MIT Sloan seeks students whose personal characteristics demonstrate that they will make the most of the incredible opportunities at MIT, both academic and non-academic. We are on a quest to find those whose presence will enhance the experience of other students. We seek thoughtful leaders with exceptional intellectual ability and the drive and determination to put their stamp on the world. We welcome people who are independent, authentic, and fearlessly creative — true doers. We want people who can redefine solutions to conventional problems, and strive to preempt unconventional dilemmas with cutting-edge ideas. How do you see yourself contributing to this community?",
+            "wordLimit": 300,
+            "optional": false,
+            "notes": "Cover letter format allowed"
+          },
+          {
+            "id": 2,
+            "prompt": "Please introduce yourself to your future classmates.",
+            "wordLimit": 250,
+            "optional": false,
+            "notes": "Video essay in addition to written essay"
+          }
+        ],
+        "requirements": {
+          "gmat": {
+            "required": false,
+            "averageScore": 735,
+            "range": "700-760"
+          },
+          "gre": {
+            "accepted": true,
+            "averageScore": "165V/165Q"
+          },
+          "toefl": {
+            "required": true,
+            "minimumScore": 100
+          },
+          "workExperience": {
+            "average": 5,
+            "range": "2-10"
+          },
+          "recommendations": {
+            "required": 2
+          },
+          "interviews": {
+            "format": "Invitation-only",
+            "notes": "Virtual or in-person with admissions"
+          }
+        },
+        "applicationFee": 275,
+        "feeWaiverAvailable": true
+      }
     },
     {
       "id": "columbia-cbs",
@@ -348,7 +770,70 @@
         "Competitive",
         "High energy"
       ],
-      "programUrl": "https://business.columbia.edu/mba"
+      "programUrl": "https://business.columbia.edu/mba",
+      "applicationInfo": {
+        "deadlines": {
+          "round1": {
+            "deadline": "2025-09-03",
+            "decisionDate": "2025-12-XX"
+          },
+          "round2": {
+            "deadline": "2026-01-06",
+            "decisionDate": "2026-03-31"
+          },
+          "round3": {
+            "deadline": "2026-03-26",
+            "decisionDate": "2026-05-20"
+          }
+        },
+        "essayQuestions": [
+          {
+            "id": 1,
+            "prompt": "Through your resume and recommendation, we have a clear sense of your professional path to date. What are your career goals over the next three to five years and what is your long-term dream job?",
+            "wordLimit": 500,
+            "optional": false
+          },
+          {
+            "id": 2,
+            "prompt": "Please share a specific example of how you made a team more collaborative, more inclusive or fostered a greater sense of community within an organization.",
+            "wordLimit": 250,
+            "optional": false
+          },
+          {
+            "id": 3,
+            "prompt": "We believe Columbia Business School is a special place with a collaborative learning environment in which students feel a sense of belonging, agency, and partnership with the institution. Why do you feel Columbia Business School is a good fit for you academically, culturally, and professionally?",
+            "wordLimit": 250,
+            "optional": false
+          }
+        ],
+        "requirements": {
+          "gmat": {
+            "required": false,
+            "averageScore": 730,
+            "range": "690-760"
+          },
+          "gre": {
+            "accepted": true,
+            "averageScore": "163V/163Q"
+          },
+          "toefl": {
+            "required": true,
+            "minimumScore": 100
+          },
+          "workExperience": {
+            "average": 5,
+            "range": "2-12"
+          },
+          "recommendations": {
+            "required": 2
+          },
+          "interviews": {
+            "format": "Invitation-only"
+          }
+        },
+        "applicationFee": 275,
+        "feeWaiverAvailable": true
+      }
     },
     {
       "id": "tuck-dartmouth",

@@ -1,17 +1,14 @@
 import React from 'react'
-import { ArrowRight, BookOpen, Users, Target, DollarSign } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { ArrowRight, Users, Target, DollarSign } from 'lucide-react'
+import NavBar from './NavBar.jsx'
 
 export default function WelcomeScreen({ onStart }) {
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col">
 
       {/* ── Nav ─────────────────────────────────────────────────────────── */}
-      <header className="px-6 py-4 bg-white border-b border-slate-100">
-        <div className="max-w-5xl mx-auto flex items-center gap-2">
-          <BookOpen size={18} className="text-indigo-600" />
-          <span className="font-semibold text-slate-800 tracking-tight">MBA Tribe</span>
-        </div>
-      </header>
+      <NavBar />
 
       {/* ── Hero ────────────────────────────────────────────────────────── */}
       <main className="flex-1 flex items-center justify-center px-4 py-16 sm:py-24">
@@ -43,6 +40,15 @@ export default function WelcomeScreen({ onStart }) {
           <p className="mt-4 text-sm text-slate-400">
             Takes about 4 minutes · No sign-up required
           </p>
+
+          <div className="mt-5">
+            <Link
+              to="/schools"
+              className="inline-flex items-center gap-2 border border-slate-300 text-slate-600 hover:text-indigo-600 hover:border-indigo-300 px-6 py-3 rounded-lg font-medium text-sm transition-colors"
+            >
+              Browse all 100 MBA schools
+            </Link>
+          </div>
         </div>
       </main>
 

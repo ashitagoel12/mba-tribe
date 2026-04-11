@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { ExternalLink, AlertCircle, CheckCircle2 } from 'lucide-react'
 import { generateFitBullets, generateWatchOut } from '../utils/bulletGenerator.js'
 
@@ -154,6 +155,16 @@ export default function SchoolCard({ scored, formData, isSelectable, isSelected,
       <div className="flex gap-2.5 bg-amber-50 rounded-lg p-3.5 border border-amber-100">
         <AlertCircle size={15} className="text-amber-500 shrink-0 mt-0.5" />
         <p className="text-sm text-amber-800 leading-relaxed">{watchOut}</p>
+      </div>
+
+      {/* ── View full profile ───────────────────────────────────────────── */}
+      <div className="mt-4">
+        <Link
+          to={`/schools/${school.id}`}
+          className="block w-full text-center bg-indigo-600 text-white text-sm font-medium py-2 rounded-lg hover:bg-indigo-700 transition-colors"
+        >
+          View Full Profile
+        </Link>
       </div>
 
     </div>

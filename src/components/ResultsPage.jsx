@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { RotateCcw, BookOpen, Users, MessageCircle, HelpCircle, Sparkles, ChevronRight, GitCompare } from 'lucide-react'
 import { runMatching } from '../utils/matchingAlgorithm.js'
 import { generateUserInsights } from '../utils/userInsights.js'
@@ -459,15 +460,25 @@ export default function ResultsPage({ schools, formData, onRetake }) {
           </div>
         </section>
 
-        {/* ── Retake button ─────────────────────────────────────────────── */}
-        <div className="mt-10 text-center">
-          <button
-            onClick={onRetake}
-            className="inline-flex items-center gap-2 text-slate-500 hover:text-slate-700 transition-colors px-4 py-2 rounded-lg hover:bg-slate-100 text-sm"
-          >
-            <RotateCcw size={15} />
-            Retake the assessment
-          </button>
+        {/* ── Retake + Browse ───────────────────────────────────────────── */}
+        <div className="mt-10 text-center space-y-3">
+          <div>
+            <Link
+              to="/schools"
+              className="inline-flex items-center gap-2 border border-slate-200 text-slate-600 hover:text-indigo-600 hover:border-indigo-300 px-5 py-2.5 rounded-lg text-sm font-medium transition-colors"
+            >
+              Browse all 100 schools in our database
+            </Link>
+          </div>
+          <div>
+            <button
+              onClick={onRetake}
+              className="inline-flex items-center gap-2 text-slate-400 hover:text-slate-600 transition-colors px-4 py-2 rounded-lg hover:bg-slate-100 text-sm"
+            >
+              <RotateCcw size={15} />
+              Retake the assessment
+            </button>
+          </div>
         </div>
 
       </main>

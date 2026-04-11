@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import WelcomeScreen from './components/WelcomeScreen.jsx'
 import AssessmentForm from './components/AssessmentForm.jsx'
 import ResultsPage from './components/ResultsPage.jsx'
+import SchoolDetailPage from './components/SchoolDetailPage.jsx'
+import BrowseSchools from './components/BrowseSchools.jsx'
 import schoolsData from '../data/mba_schools_data.json'
 
 // ---------------------------------------------------------------------------
@@ -68,27 +71,39 @@ export default function App() {
 
   const schools = schoolsData.schools
 
-  if (step === 0) {
-    return <WelcomeScreen onStart={handleStart} />
-  }
+  function AssessmentFlow() {
+    if (step === 0) {
+      return <WelcomeScreen onStart={handleStart} />
+    }
 
-  if (step === 5) {
+    if (step === 5) {
+      return (
+        <ResultsPage
+          schools={schools}
+          formData={formData}
+          onRetake={handleRetake}
+        />
+      )
+    }
+
     return (
-      <ResultsPage
-        schools={schools}
+      <AssessmentForm
         formData={formData}
-        onRetake={handleRetake}
+        setFormData={setFormData}
+        currentStep={step}
+        setStep={setStep}
+        onComplete={handleFormComplete}
       />
     )
   }
 
   return (
-    <AssessmentForm
-      formData={formData}
-      setFormData={setFormData}
-      currentStep={step}
-      setStep={setStep}
-      onComplete={handleFormComplete}
-    />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/schools"           element={<BrowseSchools />} />
+        <Route path="/schools/:schoolId" element={<SchoolDetailPage />} />
+        <Route path="*"                  element={<AssessmentFlow />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
