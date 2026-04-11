@@ -16,7 +16,7 @@ export default function WelcomeScreen({ onStart }) {
 
           <div className="inline-flex items-center gap-2 bg-indigo-50 border border-indigo-100 text-indigo-700 text-sm font-medium px-4 py-2 rounded-full mb-8">
             <Target size={14} />
-            <span>MBA Fit Copilot</span>
+            <span>MBA Fit Assessment</span>
           </div>
 
           <h1 className="text-4xl sm:text-5xl font-semibold text-slate-800 tracking-tight leading-tight mb-6">
