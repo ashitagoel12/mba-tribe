@@ -1,14 +1,33 @@
 import React, { useState, useMemo, useCallback, memo } from 'react'
 import { Link } from 'react-router-dom'
-import { Search, ChevronDown, X } from 'lucide-react'
+import { Search, ChevronDown, X, GraduationCap } from 'lucide-react'
 import NavBar from './NavBar.jsx'
 import allSchoolsData from '../../data/mba_schools_data.json'
+import comprehensiveData from '../../data/m7-schools-comprehensive-data.json'
 
 // ---------------------------------------------------------------------------
 // Data preparation — done once at module load (not on every render)
 // ---------------------------------------------------------------------------
 
 const ALL_SCHOOLS = allSchoolsData.schools  // array keeps original order = ranking order
+
+// M7 ID bridge
+const M7_ID_MAP = {
+  'harvard-hbs':          'harvard-business-school',
+  'stanford-gsb':         'stanford-gsb',
+  'wharton-penn':         'wharton',
+  'booth-chicago':        'chicago-booth',
+  'kellogg-northwestern': 'kellogg',
+  'sloan-mit':            'mit-sloan',
+  'columbia-cbs':         'columbia-business-school',
+}
+const M7_DATA_BY_ID = Object.fromEntries(
+  comprehensiveData.schools.map(s => [s.id, s])
+)
+function getM7Data(schoolId) {
+  const cid = M7_ID_MAP[schoolId]
+  return cid ? M7_DATA_BY_ID[cid] : null
+}
 
 const STATES = ['All States', ...Array.from(new Set(ALL_SCHOOLS.map(s => s.location.state))).sort()]
 
@@ -39,22 +58,38 @@ function fmt(n) {
 // ---------------------------------------------------------------------------
 
 const SchoolBrowseCard = memo(function SchoolBrowseCard({ school, rank }) {
+  const m7 = getM7Data(school.id)
+
   return (
-    <div className="bg-white rounded-xl border border-slate-100 shadow-sm p-5 flex flex-col gap-3 hover:shadow-md transition-shadow">
+    <div className={`bg-white rounded-xl border shadow-sm p-5 flex flex-col gap-3 hover:shadow-md transition-shadow ${m7 ? 'border-indigo-100' : 'border-slate-100'}`}>
 
       {/* Rank badge + name */}
       <div className="flex items-start gap-3">
         <span className="shrink-0 w-7 h-7 rounded-full bg-slate-100 text-slate-400 text-xs font-mono font-semibold flex items-center justify-center mt-0.5">
           {rank}
         </span>
-        <div className="min-w-0">
-          <h3 className="font-semibold text-slate-800 text-sm leading-snug">{school.name}</h3>
+        <div className="min-w-0 flex-1">
+          <div className="flex items-start justify-between gap-1">
+            <h3 className="font-semibold text-slate-800 text-sm leading-snug">{school.name}</h3>
+            {m7 && (
+              <span className="shrink-0 bg-indigo-600 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full uppercase tracking-widest">
+                M7
+              </span>
+            )}
+          </div>
           <p className="text-xs text-slate-500 mt-0.5">{school.university}</p>
           <p className="text-xs text-slate-400 font-mono mt-0.5">
             {school.location.city}, {school.location.state}
           </p>
         </div>
       </div>
+
+      {/* M7 description snippet */}
+      {m7?.description && (
+        <p className="text-[11px] text-slate-500 leading-relaxed line-clamp-2">
+          {m7.description}
+        </p>
+      )}
 
       {/* Stats row */}
       <div className="grid grid-cols-3 gap-2 text-center">
@@ -77,6 +112,14 @@ const SchoolBrowseCard = memo(function SchoolBrowseCard({ school, rank }) {
           <div className="text-[10px] text-slate-400 mt-0.5">Avg salary</div>
         </div>
       </div>
+
+      {/* M7 programs count */}
+      {m7?.programs?.length > 0 && (
+        <div className="flex items-center gap-1.5 text-[11px] text-slate-500">
+          <GraduationCap size={12} className="text-indigo-400 shrink-0" />
+          <span>{m7.programs.length} programs offered</span>
+        </div>
+      )}
 
       {/* Strengths */}
       {school.academicStrengths?.length > 0 && (
