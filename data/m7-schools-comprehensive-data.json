@@ -82,7 +82,7 @@
           "MIT Sloan",
           "Other Harvard graduate schools"
         ],
-        "courseCatalog": "https://www.hbs.edu/mba/academic-experience/curriculum/Pages/default.aspx"
+        "courseCatalog": "https://www.hbs.edu/mba/academic-experience/curriculum"
       },
       
       "admissions": {
@@ -233,7 +233,7 @@
         },
         {
           "name": "Employment Report",
-          "url": "https://www.hbs.edu/recruiting/data-and-statistics",
+          "url": "https://www.hbs.edu/mba/blog/class-of-2025-employment-report",
           "icon": "career"
         },
         {
@@ -1162,9 +1162,7 @@
       
       "studentLife": {
         "clubs": "70+ student clubs",
-        "housingUrl": "https://mitsloan.mit.edu/mba/admissions/frequently-asked-questions",
-        "location": "Cambridge, MA (MIT Campus)",
-        "studentBlogsUrl": "https://mitsloan.mit.edu/programs/mba/a-day-life-mba-student-0"
+        "location": "Cambridge, MA (MIT Campus)"
       },
       
       "quickLinks": [
