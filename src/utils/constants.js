@@ -154,6 +154,7 @@ export const STATE_TO_GEO = {
   OR: 'west-coast',       // Eugene / Portland
   HI: 'west-coast',       // Honolulu
   NM: 'south-southwest',  // Albuquerque
+  MS: 'south-southwest',  // Oxford / Jackson
 }
 
 // ---------------------------------------------------------------------------

@@ -4380,6 +4380,567 @@
         "#1 job placement nationally"
       ],
       "programUrl": "https://business.cofc.edu/graduate-programs/mba.php"
+    },
+    {
+      "id": "oklahoma-price",
+      "rank": 90,
+      "name": "Michael F. Price College of Business",
+      "university": "University of Oklahoma",
+      "location": {
+        "city": "Norman",
+        "state": "OK"
+      },
+      "classProfile": {
+        "size": 66,
+        "avgWorkExperience": 3.6,
+        "avgGMAT": 604,
+        "avgGRE": 155,
+        "internationalStudentPct": 20
+      },
+      "costs": {
+        "annualTuition": 33306,
+        "totalProgramCost": 49959
+      },
+      "employment": {
+        "top3Industries": [
+          "Energy",
+          "Finance",
+          "Consulting"
+        ],
+        "top5Companies": [
+          "Williams Partners",
+          "AT&T",
+          "Hitachi Consulting",
+          "Chevron",
+          "Devon Energy"
+        ],
+        "employmentRate3Months": 77,
+        "avgStartingSalary": 81000,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "Energy Management",
+        "Finance",
+        "Entrepreneurship",
+        "Management Information Systems"
+      ],
+      "culture": [
+        "Energy sector focus",
+        "Small cohorts",
+        "Paris IFP partnership",
+        "Tight-knit community"
+      ],
+      "programUrl": "https://price.ou.edu/mba/"
+    },
+    {
+      "id": "oregon-lundquist",
+      "rank": 91,
+      "name": "Lundquist College of Business",
+      "university": "University of Oregon",
+      "location": {
+        "city": "Eugene",
+        "state": "OR"
+      },
+      "classProfile": {
+        "size": 60,
+        "avgWorkExperience": 4.4,
+        "avgGMAT": 610,
+        "avgGRE": 154,
+        "internationalStudentPct": 25
+      },
+      "costs": {
+        "annualTuition": 65726,
+        "totalProgramCost": 131452
+      },
+      "employment": {
+        "top3Industries": [
+          "Technology",
+          "Sports Business",
+          "Sustainable Business"
+        ],
+        "top5Companies": [
+          "Intel",
+          "Nike",
+          "Columbia Sportswear",
+          "Electronic Arts",
+          "US Bank"
+        ],
+        "employmentRate3Months": 85,
+        "avgStartingSalary": 85000,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "Sustainable Business Practices",
+        "Sports Business",
+        "Innovation & Entrepreneurship",
+        "Finance"
+      ],
+      "culture": [
+        "Experiential learning",
+        "Pacific Rim focus",
+        "Outdoor lifestyle",
+        "Innovation-driven"
+      ],
+      "programUrl": "https://business.uoregon.edu/mba"
+    },
+    {
+      "id": "mississippi",
+      "rank": 92,
+      "name": "School of Business Administration",
+      "university": "University of Mississippi",
+      "location": {
+        "city": "Oxford",
+        "state": "MS"
+      },
+      "classProfile": {
+        "size": 45,
+        "avgWorkExperience": 2.5,
+        "avgGMAT": 550,
+        "avgGRE": 152,
+        "internationalStudentPct": 18
+      },
+      "costs": {
+        "annualTuition": 25000,
+        "totalProgramCost": 50000
+      },
+      "employment": {
+        "top3Industries": [
+          "Finance",
+          "General Management",
+          "Operations"
+        ],
+        "top5Companies": [
+          "FedEx",
+          "Regional corporations",
+          "Consulting firms",
+          "Manufacturing companies",
+          "Financial services"
+        ],
+        "employmentRate3Months": 80,
+        "avgStartingSalary": 65000,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "Finance",
+        "General Management",
+        "Marketing",
+        "Accounting"
+      ],
+      "culture": [
+        "Southern hospitality",
+        "SEC network",
+        "Small class sizes",
+        "Personalized attention"
+      ],
+      "programUrl": "https://business.olemiss.edu/mba/"
+    },
+    {
+      "id": "cincinnati-lindner",
+      "rank": 93,
+      "name": "Carl H. Lindner College of Business",
+      "university": "University of Cincinnati",
+      "location": {
+        "city": "Cincinnati",
+        "state": "OH"
+      },
+      "classProfile": {
+        "size": 72,
+        "avgWorkExperience": 5,
+        "avgGMAT": 639,
+        "avgGRE": 158,
+        "internationalStudentPct": 30
+      },
+      "costs": {
+        "annualTuition": 23996,
+        "totalProgramCost": 47992
+      },
+      "employment": {
+        "top3Industries": [
+          "Consulting",
+          "Finance",
+          "Technology"
+        ],
+        "top5Companies": [
+          "Procter & Gamble",
+          "Kroger",
+          "Macy's",
+          "Fifth Third Bank",
+          "Deloitte"
+        ],
+        "employmentRate3Months": 92,
+        "avgStartingSalary": 97000,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "Artificial Intelligence",
+        "Data Analytics",
+        "Healthcare Administration",
+        "Finance"
+      ],
+      "culture": [
+        "#3 ROI nationally",
+        "Corporate partnerships",
+        "Study abroad required",
+        "Personalized learning"
+      ],
+      "programUrl": "https://business.uc.edu/graduate/mba.html"
+    },
+    {
+      "id": "buffalo-suny",
+      "rank": 94,
+      "name": "School of Management",
+      "university": "University at Buffalo-SUNY",
+      "location": {
+        "city": "Buffalo",
+        "state": "NY"
+      },
+      "classProfile": {
+        "size": 85,
+        "avgWorkExperience": 3,
+        "avgGMAT": 590,
+        "avgGRE": 153,
+        "internationalStudentPct": 45
+      },
+      "costs": {
+        "annualTuition": 28194,
+        "totalProgramCost": 56388
+      },
+      "employment": {
+        "top3Industries": [
+          "Finance",
+          "Consulting",
+          "Technology"
+        ],
+        "top5Companies": [
+          "Deloitte",
+          "PwC",
+          "M&T Bank",
+          "Delaware North",
+          "Rich Products"
+        ],
+        "employmentRate3Months": 82,
+        "avgStartingSalary": 70000,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "Finance",
+        "Analytics",
+        "International Business",
+        "Operations Management"
+      ],
+      "culture": [
+        "SUNY system value",
+        "International diversity",
+        "Research-focused",
+        "Collaborative environment"
+      ],
+      "programUrl": "https://management.buffalo.edu/programs/mba.html"
+    },
+    {
+      "id": "canisius-wehle",
+      "rank": 95,
+      "name": "Richard J. Wehle School of Business",
+      "university": "Canisius University",
+      "location": {
+        "city": "Buffalo",
+        "state": "NY"
+      },
+      "classProfile": {
+        "size": 40,
+        "avgWorkExperience": 4,
+        "avgGMAT": 540,
+        "avgGRE": 150,
+        "internationalStudentPct": 20
+      },
+      "costs": {
+        "annualTuition": 24000,
+        "totalProgramCost": 48000
+      },
+      "employment": {
+        "top3Industries": [
+          "Finance",
+          "Healthcare",
+          "General Management"
+        ],
+        "top5Companies": [
+          "M&T Bank",
+          "Catholic Health",
+          "Delaware North",
+          "Kaleida Health",
+          "Rich Products"
+        ],
+        "employmentRate3Months": 85,
+        "avgStartingSalary": 68000,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "Finance",
+        "Accounting",
+        "Healthcare Management",
+        "International Business"
+      ],
+      "culture": [
+        "Jesuit values",
+        "Personalized attention",
+        "Buffalo business community",
+        "Service-oriented"
+      ],
+      "programUrl": "https://www.canisius.edu/academics/schools-colleges/richard-j-wehle-school-business/graduate-programs/mba"
+    },
+    {
+      "id": "loyola-maryland-sellinger",
+      "rank": 96,
+      "name": "Sellinger School of Business",
+      "university": "Loyola University Maryland",
+      "location": {
+        "city": "Baltimore",
+        "state": "MD"
+      },
+      "classProfile": {
+        "size": 55,
+        "avgWorkExperience": 4.5,
+        "avgGMAT": 560,
+        "avgGRE": 152,
+        "internationalStudentPct": 15
+      },
+      "costs": {
+        "annualTuition": 32000,
+        "totalProgramCost": 64000
+      },
+      "employment": {
+        "top3Industries": [
+          "Finance",
+          "Consulting",
+          "Technology"
+        ],
+        "top5Companies": [
+          "T. Rowe Price",
+          "Legg Mason",
+          "Under Armour",
+          "Johns Hopkins",
+          "Deloitte"
+        ],
+        "employmentRate3Months": 88,
+        "avgStartingSalary": 75000,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "Finance",
+        "Accounting",
+        "Information Systems",
+        "Marketing"
+      ],
+      "culture": [
+        "Jesuit tradition",
+        "Ethics-focused",
+        "Baltimore location",
+        "Collaborative learning"
+      ],
+      "programUrl": "https://sellinger.loyola.edu/graduate-programs/mba/"
+    },
+    {
+      "id": "detroit-mercy",
+      "rank": 97,
+      "name": "College of Business Administration",
+      "university": "University of Detroit Mercy",
+      "location": {
+        "city": "Detroit",
+        "state": "MI"
+      },
+      "classProfile": {
+        "size": 50,
+        "avgWorkExperience": 5,
+        "avgGMAT": 530,
+        "avgGRE": 150,
+        "internationalStudentPct": 25
+      },
+      "costs": {
+        "annualTuition": 28000,
+        "totalProgramCost": 56000
+      },
+      "employment": {
+        "top3Industries": [
+          "Automotive",
+          "Finance",
+          "Healthcare"
+        ],
+        "top5Companies": [
+          "General Motors",
+          "Ford Motor Company",
+          "Quicken Loans",
+          "Blue Cross Blue Shield",
+          "Deloitte"
+        ],
+        "employmentRate3Months": 83,
+        "avgStartingSalary": 72000,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "Automotive Management",
+        "Finance",
+        "Healthcare Administration",
+        "Supply Chain"
+      ],
+      "culture": [
+        "Jesuit & Mercy tradition",
+        "Detroit connections",
+        "Industry partnerships",
+        "Urban campus"
+      ],
+      "programUrl": "https://business.udmercy.edu/mba/"
+    },
+    {
+      "id": "bentley-mccallum",
+      "rank": 98,
+      "name": "McCallum Graduate School of Business",
+      "university": "Bentley University",
+      "location": {
+        "city": "Waltham",
+        "state": "MA"
+      },
+      "classProfile": {
+        "size": 95,
+        "avgWorkExperience": 2.8,
+        "avgGMAT": 563,
+        "avgGRE": 152,
+        "internationalStudentPct": 35
+      },
+      "costs": {
+        "annualTuition": 67080,
+        "totalProgramCost": 100620
+      },
+      "employment": {
+        "top3Industries": [
+          "Finance",
+          "Consulting",
+          "Technology"
+        ],
+        "top5Companies": [
+          "Deloitte",
+          "PwC",
+          "Fidelity Investments",
+          "State Street",
+          "KPMG"
+        ],
+        "employmentRate3Months": 88,
+        "avgStartingSalary": 87000,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "Business Analytics",
+        "Finance",
+        "Accounting",
+        "Information Systems"
+      ],
+      "culture": [
+        "Technology focus",
+        "Boston proximity",
+        "Trading floor facilities",
+        "Data-driven"
+      ],
+      "programUrl": "https://www.bentley.edu/graduate/mba"
+    },
+    {
+      "id": "clemson",
+      "rank": 99,
+      "name": "Wilbur O. and Ann Powers College of Business",
+      "university": "Clemson University",
+      "location": {
+        "city": "Clemson",
+        "state": "SC"
+      },
+      "classProfile": {
+        "size": 99,
+        "avgWorkExperience": 4.8,
+        "avgGMAT": 550,
+        "avgGRE": 153,
+        "internationalStudentPct": 22
+      },
+      "costs": {
+        "annualTuition": 32000,
+        "totalProgramCost": 64000
+      },
+      "employment": {
+        "top3Industries": [
+          "Manufacturing",
+          "Finance",
+          "Technology"
+        ],
+        "top5Companies": [
+          "BMW",
+          "Michelin",
+          "GE",
+          "Fluor",
+          "Duke Energy"
+        ],
+        "employmentRate3Months": 85,
+        "avgStartingSalary": 71000,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "Supply Chain Management",
+        "Entrepreneurship",
+        "Real Estate",
+        "Analytics"
+      ],
+      "culture": [
+        "ACC network",
+        "Strong school spirit",
+        "Southeast focus",
+        "Family atmosphere"
+      ],
+      "programUrl": "https://business.clemson.edu/mba/"
+    },
+    {
+      "id": "claremont-drucker",
+      "rank": 100,
+      "name": "Peter F. Drucker School of Management",
+      "university": "Claremont Graduate University",
+      "location": {
+        "city": "Claremont",
+        "state": "CA"
+      },
+      "classProfile": {
+        "size": 65,
+        "avgWorkExperience": 5.5,
+        "avgGMAT": 580,
+        "avgGRE": 155,
+        "internationalStudentPct": 28
+      },
+      "costs": {
+        "annualTuition": 47520,
+        "totalProgramCost": 95040
+      },
+      "employment": {
+        "top3Industries": [
+          "Consulting",
+          "Technology",
+          "Healthcare"
+        ],
+        "top5Companies": [
+          "Deloitte",
+          "Kaiser Permanente",
+          "Amazon",
+          "Accenture",
+          "EY"
+        ],
+        "employmentRate3Months": 82,
+        "avgStartingSalary": 80000,
+        "medianSigningBonus": null
+      },
+      "academicStrengths": [
+        "Social Innovation",
+        "Finance",
+        "Healthcare Management",
+        "Leadership"
+      ],
+      "culture": [
+        "Peter Drucker legacy",
+        "Graduate-only institution",
+        "Purpose-driven",
+        "Southern California network"
+      ],
+      "programUrl": "https://cgu.edu/school/drucker-school-of-management/programs/mba/"
     }
   ]
 }
