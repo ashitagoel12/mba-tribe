@@ -9,12 +9,14 @@ import {
 import NavBar from './NavBar.jsx'
 import schoolsData from '../../data/mba_schools_data.json'
 import comprehensiveData from '../../data/m7-schools-comprehensive-data.json'
+import top18Data from '../../data/top-18-schools-comprehensive-data.json'
 
 // ---------------------------------------------------------------------------
-// M7 ID bridge — maps existing app IDs → comprehensive data IDs
+// ID bridge — maps app IDs (mba_schools_data.json) → comprehensive data IDs
 // ---------------------------------------------------------------------------
 
-const M7_ID_MAP = {
+const COMPREHENSIVE_ID_MAP = {
+  // M7
   'harvard-hbs':          'harvard-business-school',
   'stanford-gsb':         'stanford-gsb',
   'wharton-penn':         'wharton',
@@ -22,15 +24,36 @@ const M7_ID_MAP = {
   'kellogg-northwestern': 'kellogg',
   'sloan-mit':            'mit-sloan',
   'columbia-cbs':         'columbia-business-school',
+  // Top 18
+  'tuck-dartmouth':         'tuck-dartmouth',
+  'yale-som':               'yale-som',
+  'haas-berkeley':          'haas-berkeley',
+  'ross-michigan':          'ross-michigan',
+  'darden-virginia':        'darden-uva',
+  'fuqua-duke':             'fuqua-duke',
+  'nyu-stern':              'stern-nyu',
+  'anderson-ucla':          'anderson-ucla',
+  'cornell-johnson':        'johnson-cornell',
+  'tepper-cmu':             'tepper-cmu',
+  'mccombs-utaustin':       'mccombs-texas',
+  'kenan-flagler-unc':      'kenan-flagler-unc',
+  'goizueta-emory':         'goizueta-emory',
+  'marshall-usc':           'marshall-usc',
+  'mcdonough-georgetown':   'mcdonough-georgetown',
+  'jones-rice':             'jones-rice',
+  'vanderbilt-owen':        'owen-vanderbilt',
+  'foster-uw':              'foster-uw',
 }
 
-const M7_DATA_BY_ID = Object.fromEntries(
-  comprehensiveData.schools.map(s => [s.id, s])
-)
+// Merge both comprehensive datasets into one lookup
+const ALL_COMPREHENSIVE_DATA = Object.fromEntries([
+  ...comprehensiveData.schools.map(s => [s.id, s]),
+  ...top18Data.schools.map(s => [s.id, s]),
+])
 
 function getM7Data(schoolId) {
-  const comprehensiveId = M7_ID_MAP[schoolId]
-  return comprehensiveId ? M7_DATA_BY_ID[comprehensiveId] : null
+  const comprehensiveId = COMPREHENSIVE_ID_MAP[schoolId]
+  return comprehensiveId ? ALL_COMPREHENSIVE_DATA[comprehensiveId] : null
 }
 
 // ---------------------------------------------------------------------------

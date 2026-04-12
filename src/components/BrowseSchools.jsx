@@ -4,6 +4,7 @@ import { Search, ChevronDown, X, GraduationCap } from 'lucide-react'
 import NavBar from './NavBar.jsx'
 import allSchoolsData from '../../data/mba_schools_data.json'
 import comprehensiveData from '../../data/m7-schools-comprehensive-data.json'
+import top18Data from '../../data/top-18-schools-comprehensive-data.json'
 
 // ---------------------------------------------------------------------------
 // Data preparation — done once at module load (not on every render)
@@ -11,8 +12,9 @@ import comprehensiveData from '../../data/m7-schools-comprehensive-data.json'
 
 const ALL_SCHOOLS = allSchoolsData.schools  // array keeps original order = ranking order
 
-// M7 ID bridge
-const M7_ID_MAP = {
+// ID bridge — maps app IDs → comprehensive data IDs
+const COMPREHENSIVE_ID_MAP = {
+  // M7
   'harvard-hbs':          'harvard-business-school',
   'stanford-gsb':         'stanford-gsb',
   'wharton-penn':         'wharton',
@@ -20,13 +22,36 @@ const M7_ID_MAP = {
   'kellogg-northwestern': 'kellogg',
   'sloan-mit':            'mit-sloan',
   'columbia-cbs':         'columbia-business-school',
+  // Top 18
+  'tuck-dartmouth':         'tuck-dartmouth',
+  'yale-som':               'yale-som',
+  'haas-berkeley':          'haas-berkeley',
+  'ross-michigan':          'ross-michigan',
+  'darden-virginia':        'darden-uva',
+  'fuqua-duke':             'fuqua-duke',
+  'nyu-stern':              'stern-nyu',
+  'anderson-ucla':          'anderson-ucla',
+  'cornell-johnson':        'johnson-cornell',
+  'tepper-cmu':             'tepper-cmu',
+  'mccombs-utaustin':       'mccombs-texas',
+  'kenan-flagler-unc':      'kenan-flagler-unc',
+  'goizueta-emory':         'goizueta-emory',
+  'marshall-usc':           'marshall-usc',
+  'mcdonough-georgetown':   'mcdonough-georgetown',
+  'jones-rice':             'jones-rice',
+  'vanderbilt-owen':        'owen-vanderbilt',
+  'foster-uw':              'foster-uw',
 }
-const M7_DATA_BY_ID = Object.fromEntries(
-  comprehensiveData.schools.map(s => [s.id, s])
-)
+
+// Merge both comprehensive datasets into one lookup
+const ALL_COMPREHENSIVE_DATA = Object.fromEntries([
+  ...comprehensiveData.schools.map(s => [s.id, s]),
+  ...top18Data.schools.map(s => [s.id, s]),
+])
+
 function getM7Data(schoolId) {
-  const cid = M7_ID_MAP[schoolId]
-  return cid ? M7_DATA_BY_ID[cid] : null
+  const cid = COMPREHENSIVE_ID_MAP[schoolId]
+  return cid ? ALL_COMPREHENSIVE_DATA[cid] : null
 }
 
 const STATES = ['All States', ...Array.from(new Set(ALL_SCHOOLS.map(s => s.location.state))).sort()]
