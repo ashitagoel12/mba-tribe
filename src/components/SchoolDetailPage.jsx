@@ -10,6 +10,7 @@ import NavBar from './NavBar.jsx'
 import schoolsData from '../../data/mba_schools_data.json'
 import comprehensiveData from '../../data/m7-schools-comprehensive-data.json'
 import top18Data from '../../data/top-18-schools-comprehensive-data.json'
+import next10Data from '../../data/next-10-schools-comprehensive-data.json'
 
 // ---------------------------------------------------------------------------
 // ID bridge — maps app IDs (mba_schools_data.json) → comprehensive data IDs
@@ -43,12 +44,24 @@ const COMPREHENSIVE_ID_MAP = {
   'jones-rice':             'jones-rice',
   'vanderbilt-owen':        'owen-vanderbilt',
   'foster-uw':              'foster-uw',
+  // Next 10
+  'kelley-indiana':         'kelley-indiana',
+  'simon-rochester':        'simon-rochester',
+  'georgia-tech-scheller':  'georgia-tech-scheller',
+  'notre-dame-mendoza':     'notre-dame-mendoza',
+  'ohio-state-fisher':      'ohio-state-fisher',
+  'wisconsin':              'wisconsin',
+  'texas-am-mays':          'texas-am-mays',
+  'penn-state-smeal':       'penn-state-smeal',
+  'maryland-smith':         'maryland-smith',
+  'minnesota-carlson':      'minnesota-carlson',
 }
 
-// Merge both comprehensive datasets into one lookup
+// Merge all comprehensive datasets into one lookup
 const ALL_COMPREHENSIVE_DATA = Object.fromEntries([
   ...comprehensiveData.schools.map(s => [s.id, s]),
   ...top18Data.schools.map(s => [s.id, s]),
+  ...next10Data.schools.map(s => [s.id, s]),
 ])
 
 function getM7Data(schoolId) {

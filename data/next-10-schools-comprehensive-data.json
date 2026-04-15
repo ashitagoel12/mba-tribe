@@ -1,0 +1,1158 @@
+{
+  "schools": [
+    {
+      "id": "kelley-indiana",
+      "name": "Kelley School of Business",
+      "shortName": "Kelley",
+      "location": "Bloomington, IN",
+      "description": "The Kelley School of Business at Indiana University is consistently ranked among the top business schools in the U.S., celebrated for its rigorous academics, strong career outcomes, and collaborative culture. The Full-Time MBA program emphasizes experiential learning through consulting projects, brand management immersions, and domestic treks, preparing graduates for leadership roles across industries. Kelley is particularly renowned for its consulting and finance placements, with over 90% of students receiving merit-based scholarships.",
+      "website": "https://kelley.iu.edu/programs/full-time-mba/index.html",
+      "logo": "/logos/kelley-indiana.png",
+      "programs": [
+        { "name": "Full-Time MBA", "type": "full-time", "duration": "20 months", "url": "https://kelley.iu.edu/programs/full-time-mba/index.html" },
+        { "name": "Kelley Direct Online MBA", "type": "online", "duration": "2-3 years", "url": "https://kelley.iu.edu/programs/online/mba/index.html" },
+        { "name": "Evening MBA (Indianapolis)", "type": "part-time", "duration": "varies", "url": "https://kelley.indianapolis.iu.edu/programs/evening-mba/" },
+        { "name": "3-2 MBA (Accelerated)", "type": "accelerated", "duration": "5 years combined", "url": "https://kelley.iu.edu/programs/3-2-mba/" },
+        { "name": "JD/MBA", "type": "joint-degree", "duration": "3-4 years", "url": "https://kelley.iu.edu/programs/full-time-mba/academics/joint-degrees/index.html" },
+        { "name": "MD/MBA", "type": "joint-degree", "duration": "varies", "url": "https://kelley.iu.edu/programs/full-time-mba/academics/joint-degrees/index.html" }
+      ],
+      "academics": {
+        "curriculum": {
+          "year1": "First year focuses on a rigorous core curriculum covering economics, business law, organizational behavior, operational management, marketing management, financial management, digital technology innovation, and strategic capabilities. The core is structured in three progressive blocks: Foundations, Functions, and Future.",
+          "year2": "Second year offers 24 credits of electives to personalize the MBA across seven majors including Business Analytics, Entrepreneurship & Innovation, Finance, Global Supply Chain Management, Information Technology Management, Marketing, and Strategic Management. Students may pursue dual degrees, global immersions, and domestic treks.",
+          "url": "https://kelley.iu.edu/programs/full-time-mba/academics/index.html"
+        },
+        "learningMethods": [
+          { "name": "Consulting Projects", "description": "Students engage in real-world consulting engagements with companies as part of the experiential learning curriculum.", "url": "https://kelley.iu.edu/programs/full-time-mba/academics/index.html" },
+          { "name": "Brand Management Immersion", "description": "Hands-on brand management experience working with nationally distributed consumer products.", "url": "https://kelley.iu.edu/programs/full-time-mba/academics/index.html" },
+          { "name": "Washington DC Trek", "description": "Intensive week of networking and education in Washington, DC, connecting students to policy and business leaders.", "url": "https://kelley.iu.edu/programs/full-time-mba/academics/index.html" }
+        ],
+        "centers": [
+          { "name": "Johnson Center for Entrepreneurship and Innovation", "url": "https://kelley.iu.edu/centers-institutes/entrepreneurship-innovation/index.html" },
+          { "name": "Center for Real Estate Studies", "url": "https://kelley.iu.edu/centers-institutes/real-estate/index.html" },
+          { "name": "Center for the Business of Life Sciences", "url": "https://kelley.iu.edu/centers-institutes/business-life-sciences/index.html" }
+        ],
+        "crossRegistration": [],
+        "courseCatalog": "https://kelley.iu.edu/programs/full-time-mba/academics/majors-minors/index.html"
+      },
+      "admissions": {
+        "deadlines": {
+          "fullTime": [
+            { "round": "Round 1", "applicationDeadline": "2025-10-15", "interviewInvites": null, "decision": null },
+            { "round": "Round 2", "applicationDeadline": "2026-01-05", "interviewInvites": null, "decision": null },
+            { "round": "Round 3", "applicationDeadline": "2026-03-01", "interviewInvites": null, "decision": null },
+            { "round": "Round 4", "applicationDeadline": "2026-04-15", "interviewInvites": null, "decision": null }
+          ]
+        },
+        "applicationUrl": "https://kelley.iu.edu/programs/full-time-mba/admissions/process-timeline.html",
+        "applicationFee": "$75",
+        "essays": [
+          { "prompt": "Discuss your immediate post-MBA professional goals. How will your professional experience, when combined with a Kelley MBA degree, allow you to achieve these goals? Should the short-term goals you have identified not materialize, what alternate career paths might you consider?", "wordLimit": 500 },
+          { "prompt": "Please respond to one of the following: 'My greatest memory is…' OR 'I'm most afraid of…' OR 'My greatest challenge has been…' OR 'I'm most proud of…'", "wordLimit": 300 },
+          { "prompt": "Share a brief fact about yourself that your classmates would find interesting, surprising, or noteworthy.", "wordLimit": 25 },
+          { "prompt": "(Optional) Is there anything else that you think we should know as we evaluate your application?", "wordLimit": 300 }
+        ],
+        "videoEssay": null,
+        "recommendations": {
+          "required": 1,
+          "preferredFrom": "Current or recent direct supervisor who can comment on professional performance",
+          "url": "https://kelley.iu.edu/programs/full-time-mba/admissions/process-timeline.html"
+        },
+        "testScores": {
+          "gmat": { "required": false, "median": 690, "middleRange": "650-730" },
+          "gre": { "accepted": true, "medianVerbal": null, "medianQuant": null }
+        }
+      },
+      "classProfile": {
+        "classSize": 103,
+        "averageAge": 30,
+        "averageWorkExperience": 6.3,
+        "womenPercentage": 28,
+        "internationalPercentage": 46,
+        "averageGPA": 3.4,
+        "countries": null
+      },
+      "career": {
+        "employmentRate": { "atGraduation": null, "threeMonthsPost": 93 },
+        "averageSalary": "$137,500",
+        "averageSigningBonus": null,
+        "topIndustries": [
+          { "industry": "Consulting", "percentage": 34 },
+          { "industry": "Technology", "percentage": 20 },
+          { "industry": "Financial Services", "percentage": 15 },
+          { "industry": "Consumer Products", "percentage": 10 }
+        ],
+        "employmentReportUrl": "https://kelley.iu.edu/programs/full-time-mba/careers/statistics.html",
+        "careerServicesUrl": "https://kelley.iu.edu/recruiters-companies/graduate/employment-statistics/mba-full-time/index.html"
+      },
+      "eventsAndEngagement": {
+        "eventCategories": [
+          { "name": "MBA Information Sessions", "url": "https://kelley.iu.edu/programs/full-time-mba/admissions/events.html" },
+          { "name": "Campus Visits", "url": "https://kelley.iu.edu/programs/full-time-mba/admissions/events.html" },
+          { "name": "Virtual Events", "url": "https://kelley.iu.edu/programs/full-time-mba/admissions/events.html" }
+        ],
+        "eventsCalendarUrl": "https://kelley.iu.edu/programs/full-time-mba/admissions/events.html",
+        "virtualTourUrl": "https://kelley.iu.edu/programs/full-time-mba/admissions/visit.html"
+      },
+      "financialAid": {
+        "tuition": "$55,695",
+        "fees": null,
+        "estimatedLivingExpenses": null,
+        "totalCostOfAttendance": null,
+        "scholarships": [
+          { "name": "Dean's Fellowship", "description": "Most prestigious Kelley award covering two full years of tuition, awarded for exceptional academic and professional achievement.", "averageAward": "Full tuition", "url": "https://kelley.iu.edu/programs/full-time-mba/admissions/tuition-aid-scholarships.html" },
+          { "name": "Merit Scholarships", "description": "Merit-based awards automatically considered during admissions review. Over 90% of students receive awards ranging from $15,000 to full tuition.", "averageAward": "$15,000–full tuition", "url": "https://kelley.iu.edu/programs/full-time-mba/admissions/tuition-aid-scholarships.html" }
+        ],
+        "financialAidUrl": "https://kelley.iu.edu/programs/full-time-mba/admissions/tuition-aid-scholarships.html"
+      },
+      "studentLife": {
+        "clubs": "30+ student clubs",
+        "housingUrl": "https://housing.indiana.edu/",
+        "location": "Located in Bloomington, Indiana, a vibrant college town offering a high quality of life with arts, outdoor activities, and a close-knit MBA community on a beautiful residential campus.",
+        "studentBlogsUrl": "https://kelley.iu.edu/programs/full-time-mba/student-experience/index.html"
+      },
+      "quickLinks": [
+        { "name": "Apply Now", "url": "https://kelley.iu.edu/programs/full-time-mba/admissions/process-timeline.html", "icon": "application" },
+        { "name": "Class Profile", "url": "https://kelley.iu.edu/programs/full-time-mba/admissions/class-profile.html", "icon": "stats" },
+        { "name": "Employment Report", "url": "https://kelley.iu.edu/programs/full-time-mba/careers/statistics.html", "icon": "career" },
+        { "name": "Events Calendar", "url": "https://kelley.iu.edu/programs/full-time-mba/admissions/index.html", "icon": "calendar" },
+        { "name": "Virtual Tour", "url": "https://kelley.iu.edu/programs/full-time-mba/admissions/index.html", "icon": "tour" },
+        { "name": "Contact Admissions", "url": "https://kelley.iu.edu/programs/full-time-mba/admissions/contact.html", "icon": "contact" }
+      ]
+    },
+    {
+      "id": "simon-rochester",
+      "name": "Simon Business School",
+      "shortName": "Simon",
+      "location": "Rochester, NY",
+      "description": "Simon Business School at the University of Rochester is a rigorous, analytically driven MBA program known for its economics-based curriculum, STEM designation, and strong focus on finance, technology, and consulting. The school's small cohort size fosters an intimate learning environment with exceptional faculty access and personalized career support. Simon is particularly noted for its flexible curriculum with 10 career-focused concentrations spanning finance, marketing, and consulting tracks.",
+      "website": "https://simon.rochester.edu/programs/full-time-mba",
+      "logo": "/logos/simon-rochester.png",
+      "programs": [
+        { "name": "Full-Time MBA", "type": "full-time", "duration": "21 months", "url": "https://simon.rochester.edu/programs/full-time-mba" },
+        { "name": "Professional MBA (Part-Time)", "type": "part-time", "duration": "varies", "url": "https://simon.rochester.edu/programs/pmba/admissions-curriculums" },
+        { "name": "Executive MBA", "type": "executive", "duration": "varies", "url": "https://simon.rochester.edu/programs/emba/admissions-curriculums" },
+        { "name": "Online MBA", "type": "online", "duration": "varies", "url": "https://simon.rochester.edu/full-time-and-part-time-mba" }
+      ],
+      "academics": {
+        "curriculum": {
+          "year1": "Year one is anchored by nine required core courses covering economics, accounting, finance, marketing, operations, strategy, and statistics, along with a Communicating Business Decisions sequence and a client-facing project aligned with career interests. Students can begin electives in the first year to accelerate specialization.",
+          "year2": "Year two focuses on electives and two required breadth courses covering professional skills such as leadership, ethics, negotiation, and organizational behavior. Students choose from 10 concentrations across Finance, Marketing, and Consulting tracks, including Asset Management, Banking, Corporate Finance, Venture Capital & Private Equity, Brand Management, Product Management, Operations, Pricing, Strategy, and Technology.",
+          "url": "https://simon.rochester.edu/programs/full-time-mba/academics/curriculum"
+        },
+        "learningMethods": [
+          { "name": "Client Projects", "description": "Students work on real client-facing projects aligned with their career interests, integrating academic learning with practical problem-solving.", "url": "https://simon.rochester.edu/programs/full-time-mba/student-experience/hands-on-experience" },
+          { "name": "International Immersions", "description": "Global treks and international immersion experiences that expose students to business environments outside the United States.", "url": "https://simon.rochester.edu/programs/full-time-mba/student-experience" },
+          { "name": "STEM MBA Designation", "description": "Simon's Full-Time MBA is STEM-designated, providing quantitative rigor and extending OPT eligibility for international students.", "url": "https://simon.rochester.edu/programs/full-time-mba/academics/stem" }
+        ],
+        "centers": [
+          { "name": "Ain Center for Entrepreneurship and Innovation", "url": "https://simon.rochester.edu/faculty-research/centers-excellence" },
+          { "name": "Center for Pricing", "url": "https://simon.rochester.edu/faculty-research/centers-excellence" }
+        ],
+        "crossRegistration": ["University of Rochester (all schools)"],
+        "courseCatalog": "https://simon.rochester.edu/programs/full-time-mba/academics/curriculum"
+      },
+      "admissions": {
+        "deadlines": {
+          "fullTime": [
+            { "round": "Round 1", "applicationDeadline": "2025-10-15", "interviewInvites": null, "decision": null },
+            { "round": "Round 2", "applicationDeadline": "2026-01-05", "interviewInvites": null, "decision": null },
+            { "round": "Round 3", "applicationDeadline": "2026-02-15", "interviewInvites": null, "decision": null },
+            { "round": "Round 4", "applicationDeadline": "2026-03-31", "interviewInvites": null, "decision": null },
+            { "round": "Round 5", "applicationDeadline": "2026-05-01", "interviewInvites": null, "decision": null }
+          ]
+        },
+        "applicationUrl": "https://simon.rochester.edu/apply",
+        "applicationFee": "$90",
+        "essays": [
+          { "prompt": "Describe your short-term and long-term goals after graduation. Include a backup plan if your primary short-term goal doesn't immediately materialize, how your education and experience support these goals, and what specific aspects of the Simon MBA make it a strong choice for you.", "wordLimit": 500 },
+          { "prompt": "Describe how you have supported diversity, equity, inclusion, and access in your life (personal, academic, professional, or volunteer) and how you hope to grow in these areas during your MBA at Simon.", "wordLimit": 500 }
+        ],
+        "videoEssay": { "description": "Optional video essay giving candidates the chance to show who they are beyond what appears on paper, demonstrating communication style and personality.", "platform": "Simon Application Portal" },
+        "recommendations": {
+          "required": 2,
+          "preferredFrom": "Professional supervisors or managers who can speak to the applicant's professional capabilities and leadership potential",
+          "url": "https://simon.rochester.edu/programs/full-time-mba/admissions"
+        },
+        "testScores": {
+          "gmat": { "required": false, "median": null, "middleRange": "620-730" },
+          "gre": { "accepted": true, "medianVerbal": null, "medianQuant": null }
+        }
+      },
+      "classProfile": {
+        "classSize": 116,
+        "averageAge": null,
+        "averageWorkExperience": 5.2,
+        "womenPercentage": 46,
+        "internationalPercentage": null,
+        "averageGPA": 3.3,
+        "countries": null
+      },
+      "career": {
+        "employmentRate": { "atGraduation": null, "threeMonthsPost": 87 },
+        "averageSalary": "$129,093",
+        "averageSigningBonus": "$26,470",
+        "topIndustries": [
+          { "industry": "Technology", "percentage": 26 },
+          { "industry": "Consulting", "percentage": 19 },
+          { "industry": "Financial Services", "percentage": 18 },
+          { "industry": "Healthcare", "percentage": 15 }
+        ],
+        "employmentReportUrl": "https://simon.rochester.edu/programs/full-time-mba/careers-outcomes",
+        "careerServicesUrl": "https://simon.rochester.edu/programs/full-time-mba/careers-outcomes"
+      },
+      "eventsAndEngagement": {
+        "eventCategories": [
+          { "name": "MBA Information Sessions", "url": "https://simon.rochester.edu/events" },
+          { "name": "Campus Visits", "url": "https://simon.rochester.edu/events" },
+          { "name": "Virtual Events", "url": "https://simon.rochester.edu/events" }
+        ],
+        "eventsCalendarUrl": "https://simon.rochester.edu/events",
+        "virtualTourUrl": "https://simon.rochester.edu/programs/full-time-mba/admissions"
+      },
+      "financialAid": {
+        "tuition": "$57,500",
+        "fees": null,
+        "estimatedLivingExpenses": "$17,570",
+        "totalCostOfAttendance": "$75,070",
+        "scholarships": [
+          { "name": "Merit Scholarships & Fellowships", "description": "Simon awards nearly $5 million annually in merit-based scholarships and fellowships; 90% of Full-Time MBA students receive an award.", "averageAward": null, "url": "https://simon.rochester.edu/programs/full-time-mba/tuition-financial-aid" },
+          { "name": "Alumni Scholarship", "description": "University of Rochester or Simon alumni are eligible for a 50% tuition scholarship toward the Full-Time MBA program.", "averageAward": "50% tuition", "url": "https://simon.rochester.edu/programs/full-time-mba/tuition-financial-aid" }
+        ],
+        "financialAidUrl": "https://simon.rochester.edu/programs/full-time-mba/tuition-financial-aid"
+      },
+      "studentLife": {
+        "clubs": "30+ student clubs and organizations",
+        "housingUrl": "https://www.rochester.edu/living/",
+        "location": "Located in Rochester, New York, Simon's MBA students benefit from a mid-sized city with affordable living, strong community ties, and proximity to a vibrant tech and healthcare industry ecosystem.",
+        "studentBlogsUrl": "https://simon.rochester.edu/blog/admissions-blog"
+      },
+      "quickLinks": [
+        { "name": "Apply Now", "url": "https://simon.rochester.edu/apply", "icon": "application" },
+        { "name": "Class Profile", "url": "https://simon.rochester.edu/programs/full-time-mba/admissions/class-profile", "icon": "stats" },
+        { "name": "Employment Report", "url": "https://simon.rochester.edu/programs/full-time-mba/careers-outcomes", "icon": "career" },
+        { "name": "Events Calendar", "url": "https://simon.rochester.edu/events", "icon": "calendar" },
+        { "name": "Virtual Tour", "url": "https://simon.rochester.edu/programs/full-time-mba/admissions", "icon": "tour" },
+        { "name": "Contact Admissions", "url": "https://simon.rochester.edu/programs/full-time-mba/admissions", "icon": "contact" }
+      ]
+    },
+    {
+      "id": "georgia-tech-scheller",
+      "name": "Scheller College of Business",
+      "shortName": "Scheller",
+      "location": "Atlanta, GA",
+      "description": "Georgia Tech's Scheller College of Business delivers a distinctive MBA experience that merges rigorous business fundamentals with Georgia Tech's world-class engineering and technology ecosystem. The Full-Time MBA program is STEM-designated and particularly strong in analytics, consulting, technology, and sustainability, with 14 concentration options and extensive access to Atlanta's booming business community. Scheller is known for producing analytically sophisticated graduates who command strong outcomes in top consulting and technology firms.",
+      "website": "https://scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/",
+      "logo": "/logos/georgia-tech-scheller.png",
+      "programs": [
+        { "name": "Full-Time MBA", "type": "full-time", "duration": "22 months", "url": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/index.html" },
+        { "name": "Evening MBA (Part-Time)", "type": "part-time", "duration": "varies", "url": "https://www.scheller.gatech.edu/explore-programs/mba-programs/evening-mba/index.html" },
+        { "name": "Executive MBA", "type": "executive", "duration": "varies", "url": "https://www.scheller.gatech.edu/explore-programs/mba-programs/executive-mba/index.html" },
+        { "name": "MBA with Engineering/Computing (Dual Degree)", "type": "joint-degree", "duration": "varies", "url": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/index.html" }
+      ],
+      "academics": {
+        "curriculum": {
+          "year1": "Year one consists of 12 required core courses (21 credit hours) covering accounting, finance, economics, marketing, operations, strategy, organizational behavior, and business law. The compressed core is sequenced to build essential skills quickly, and students can begin electives in the first year to prepare for summer internships.",
+          "year2": "Year two focuses primarily on 11 elective courses (33 credit hours) and allows students to complete one required concentration from 14 STEM-designated options: accounting, business analytics, entrepreneurship, finance, international business, leadership, management of information resources, marketing, supply chain & operations, product & service innovation, strategy & innovation, sustainability, and TI:GER.",
+          "url": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/curriculum/index.html"
+        },
+        "learningMethods": [
+          { "name": "Practicum Courses", "description": "10 practicum course options allow students to apply academic theory to real-world business challenges with industry partners.", "url": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/curriculum/index.html" },
+          { "name": "TI:GER Program", "description": "A 12-month transdisciplinary program where MBA students collaborate with Georgia Tech PhD students from Engineering, Computing, and Sciences on commercializing innovative technology.", "url": "https://www.scheller.gatech.edu/centers-and-initiatives/tiger/index.html" }
+        ],
+        "centers": [
+          { "name": "Business Analytics Center (BAC)", "url": "https://www.scheller.gatech.edu/centers-and-initiatives/business-analytics-center/index.html" },
+          { "name": "Ray C. Anderson Center for Sustainable Business", "url": "https://www.scheller.gatech.edu/centers-and-initiatives/ray-c-anderson-center-for-sustainable-business/index.html" },
+          { "name": "TI:GER (Technology Innovation: Generating Economic Results)", "url": "https://www.scheller.gatech.edu/centers-and-initiatives/tiger/index.html" }
+        ],
+        "crossRegistration": ["Georgia Tech Colleges of Engineering, Computing, Design, Liberal Arts"],
+        "courseCatalog": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/curriculum/concentrations.html"
+      },
+      "admissions": {
+        "deadlines": {
+          "fullTime": [
+            { "round": "Round 1", "applicationDeadline": "2025-10-01", "interviewInvites": null, "decision": null },
+            { "round": "Round 2", "applicationDeadline": "2026-01-10", "interviewInvites": null, "decision": null },
+            { "round": "Round 3", "applicationDeadline": "2026-03-05", "interviewInvites": null, "decision": null },
+            { "round": "Round 4", "applicationDeadline": "2026-05-01", "interviewInvites": null, "decision": null }
+          ]
+        },
+        "applicationUrl": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/admissions/index.html",
+        "applicationFee": "$75",
+        "essays": [
+          { "prompt": "Why an MBA and Why the Georgia Tech Scheller College of Business? Describe how your experience, both professional and personal, has led you to the decision to pursue an MBA at Georgia Tech.", "wordLimit": null },
+          { "prompt": "Professional Aspirations: What are your short-term career goals after you complete your MBA?", "wordLimit": null },
+          { "prompt": "Ten Facts: List 10 facts about yourself that will help your future classmates get to know you.", "wordLimit": null },
+          { "prompt": "(Optional) Provide any information pertinent to your admission not covered elsewhere, or discuss unique aspects of your candidacy or perceived weaknesses.", "wordLimit": null }
+        ],
+        "videoEssay": null,
+        "recommendations": {
+          "required": 2,
+          "preferredFrom": "Professional supervisors who can speak to professional performance and leadership potential",
+          "url": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/admissions/index.html"
+        },
+        "testScores": {
+          "gmat": { "required": false, "median": 654, "middleRange": null },
+          "gre": { "accepted": true, "medianVerbal": null, "medianQuant": null }
+        }
+      },
+      "classProfile": {
+        "classSize": 72,
+        "averageAge": null,
+        "averageWorkExperience": 4.8,
+        "womenPercentage": 44,
+        "internationalPercentage": 43,
+        "averageGPA": 3.3,
+        "countries": null
+      },
+      "career": {
+        "employmentRate": { "atGraduation": null, "threeMonthsPost": 88 },
+        "averageSalary": "$146,260",
+        "averageSigningBonus": "$29,405",
+        "topIndustries": [
+          { "industry": "Consulting", "percentage": 43 },
+          { "industry": "Technology", "percentage": 20 },
+          { "industry": "Financial Services", "percentage": 12 },
+          { "industry": "Healthcare", "percentage": 8 }
+        ],
+        "employmentReportUrl": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/index.html",
+        "careerServicesUrl": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/index.html"
+      },
+      "eventsAndEngagement": {
+        "eventCategories": [
+          { "name": "MBA Information Sessions", "url": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/admissions/index.html" },
+          { "name": "Campus Visits & Class Visits", "url": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/admissions/index.html" },
+          { "name": "Student Clubs & Committees", "url": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/student-experience/clubs-and-committees.html" }
+        ],
+        "eventsCalendarUrl": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/admissions/index.html",
+        "virtualTourUrl": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/admissions/index.html"
+      },
+      "financialAid": {
+        "tuition": "$43,646",
+        "fees": "$1,496",
+        "estimatedLivingExpenses": null,
+        "totalCostOfAttendance": null,
+        "scholarships": [
+          { "name": "Graduate Assistantships", "description": "Merit-based assistantships that fund a portion or all of program tuition. Over half of Full-Time MBA students receive funding in the form of graduate assistantships and fellowships.", "averageAward": "Partial to full tuition", "url": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/tuition-and-financing/index.html" },
+          { "name": "Merit-Based Fellowships", "description": "Awarded to exceptional applicants with strong academic performance, professional experience, and leadership potential. Majority of awards go to Round 1 and Round 2 applicants.", "averageAward": null, "url": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/tuition-and-financing/index.html" }
+        ],
+        "financialAidUrl": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/tuition-and-financing/index.html"
+      },
+      "studentLife": {
+        "clubs": "22 MBA clubs and committees",
+        "housingUrl": "https://housing.gatech.edu/",
+        "location": "Located on Georgia Tech's urban campus in the heart of Atlanta, MBA students enjoy access to one of the fastest-growing business hubs in the U.S., with unparalleled networking opportunities in technology, consulting, and financial services.",
+        "studentBlogsUrl": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/student-experience/index.html"
+      },
+      "quickLinks": [
+        { "name": "Apply Now", "url": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/admissions/index.html", "icon": "application" },
+        { "name": "Class Profile", "url": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/admissions/class-profile.html", "icon": "stats" },
+        { "name": "Employment Report", "url": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/index.html", "icon": "career" },
+        { "name": "Events Calendar", "url": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/admissions/index.html", "icon": "calendar" },
+        { "name": "Virtual Tour", "url": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/admissions/index.html", "icon": "tour" },
+        { "name": "Contact Admissions", "url": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/admissions/index.html", "icon": "contact" }
+      ]
+    },
+    {
+      "id": "notre-dame-mendoza",
+      "name": "Mendoza College of Business",
+      "shortName": "Mendoza",
+      "location": "Notre Dame, IN",
+      "description": "The Mendoza College of Business at the University of Notre Dame offers a values-driven MBA education that integrates rigorous business training with ethical leadership development and a strong sense of community. Mendoza's MBA is known for its intimate cohort environment, collaborative culture, and exceptional alumni network, producing graduates who are highly sought after in finance, consulting, and corporate roles. The program's tradition of integrity and service distinguishes it as one of the most values-focused MBA programs in the country.",
+      "website": "https://mendoza.nd.edu/graduate-programs/the-notre-dame-mba/",
+      "logo": "/logos/notre-dame-mendoza.png",
+      "programs": [
+        { "name": "Two-Year MBA", "type": "full-time", "duration": "24 months", "url": "https://mendoza.nd.edu/graduate-programs/the-notre-dame-mba/" },
+        { "name": "Executive MBA (South Bend)", "type": "executive", "duration": "22 months", "url": "https://mendoza.nd.edu/graduate-programs/executive-mba/" },
+        { "name": "Executive MBA (Chicago)", "type": "executive", "duration": "17 months", "url": "https://mendoza.nd.edu/graduate-programs/executive-mba/" },
+        { "name": "JD/MBA", "type": "joint-degree", "duration": "3-4 years", "url": "https://mendoza.nd.edu/graduate-programs/more-dual-degrees/" },
+        { "name": "MBA/Master of Global Affairs", "type": "joint-degree", "duration": "3 years", "url": "https://mendoza.nd.edu/graduate-programs/more-dual-degrees/" }
+      ],
+      "academics": {
+        "curriculum": {
+          "year1": "First year covers core business disciplines across four semesters structured in two seven-week modules per semester, including analytics, strategy, finance, marketing, operations, and leadership. Students begin selecting concentration tracks toward the end of the first year.",
+          "year2": "Second year focuses on electives and experiential learning in one of nine concentrations: business analytics, business leadership, corporate finance, digital marketing & marketing analytics, innovation & entrepreneurship, investments, marketing, strategy, and supply chain & operations management.",
+          "url": "https://mendoza.nd.edu/graduate-programs/the-notre-dame-mba/two-year-mba-curriculum/"
+        },
+        "learningMethods": [
+          { "name": "Domestic Consulting Practicum", "description": "Students engage in real-world consulting projects with U.S. companies, applying academic frameworks to live business challenges.", "url": "https://mendoza.nd.edu/graduate-programs/the-notre-dame-mba/two-year-mba-curriculum/" },
+          { "name": "International Consulting Practicum", "description": "Global consulting experiences offering exposure to international business environments and cross-cultural leadership.", "url": "https://mendoza.nd.edu/graduate-programs/the-notre-dame-mba/two-year-mba-curriculum/" }
+        ],
+        "centers": [
+          { "name": "Gigot Center for Entrepreneurship", "url": "https://mendoza.nd.edu/research-and-centers/centers-and-institutes/gigot-center-for-entrepreneurship/" },
+          { "name": "Center for Accounting Research and Education (CARE)", "url": "https://mendoza.nd.edu/research-and-centers/centers-and-institutes/care/" },
+          { "name": "Fitzgerald Institute for Real Estate", "url": "https://mendoza.nd.edu/research-and-centers/centers-and-institutes/fitzgerald-institute-for-real-estate/" }
+        ],
+        "crossRegistration": ["Notre Dame Law School", "Keough School of Global Affairs"],
+        "courseCatalog": "https://mendoza.nd.edu/graduate-programs/the-notre-dame-mba/two-year-mba-curriculum/"
+      },
+      "admissions": {
+        "deadlines": {
+          "fullTime": [
+            { "round": "Early Action", "applicationDeadline": "2025-09-12", "interviewInvites": null, "decision": null },
+            { "round": "Round 1", "applicationDeadline": "2025-10-25", "interviewInvites": null, "decision": null },
+            { "round": "Round 2", "applicationDeadline": "2026-01-10", "interviewInvites": null, "decision": null },
+            { "round": "Round 3", "applicationDeadline": "2026-03-19", "interviewInvites": null, "decision": null }
+          ]
+        },
+        "applicationUrl": "https://mendoza.nd.edu/graduate-programs/the-notre-dame-mba/apply/",
+        "applicationFee": "$100",
+        "essays": [
+          { "prompt": "What are your detailed post-master's degree career plans? Illustrate how your background, experiences, interests, and personal attributes, in conjunction with your studies at Notre Dame, will equip you to realize these ambitions. Specify both short-term and long-term career goals.", "wordLimit": 500 },
+          { "prompt": "Slide presentation: A visual presentation component submitted in addition to the written essay.", "wordLimit": null }
+        ],
+        "videoEssay": { "description": "Video assessment emailed after application submission. Questions may include topics such as hobbies, challenges, experiences working with limited resources, and problem-solving scenarios.", "platform": "Mendoza Application Portal" },
+        "recommendations": {
+          "required": 2,
+          "preferredFrom": "Professional supervisors or managers familiar with the applicant's work performance and leadership potential",
+          "url": "https://mendoza.nd.edu/graduate-programs/the-notre-dame-mba/apply/"
+        },
+        "testScores": {
+          "gmat": { "required": false, "median": 655, "middleRange": "610-740" },
+          "gre": { "accepted": true, "medianVerbal": null, "medianQuant": null }
+        }
+      },
+      "classProfile": {
+        "classSize": 104,
+        "averageAge": 28,
+        "averageWorkExperience": 4.8,
+        "womenPercentage": 26,
+        "internationalPercentage": 25,
+        "averageGPA": 3.3,
+        "countries": null
+      },
+      "career": {
+        "employmentRate": { "atGraduation": null, "threeMonthsPost": 74 },
+        "averageSalary": "$136,573",
+        "averageSigningBonus": "$31,620",
+        "topIndustries": [
+          { "industry": "Consulting", "percentage": 28 },
+          { "industry": "Financial Services", "percentage": 22 },
+          { "industry": "Technology", "percentage": 15 },
+          { "industry": "Consumer Products", "percentage": 10 }
+        ],
+        "employmentReportUrl": "https://mendoza.nd.edu/graduate-programs/the-notre-dame-mba/outcomes/",
+        "careerServicesUrl": "https://mendoza.nd.edu/graduate-programs/the-notre-dame-mba/outcomes/"
+      },
+      "eventsAndEngagement": {
+        "eventCategories": [
+          { "name": "MBA Events", "url": "https://mendoza.nd.edu/events/category/mba-events/" },
+          { "name": "Campus Visits", "url": "https://mendoza.nd.edu/graduate-programs/the-notre-dame-mba/apply/" },
+          { "name": "Virtual Information Sessions", "url": "https://mendoza.nd.edu/graduate-programs/the-notre-dame-mba/apply/" }
+        ],
+        "eventsCalendarUrl": "https://mendoza.nd.edu/events/category/mba-events/",
+        "virtualTourUrl": "https://mendoza.nd.edu/graduate-programs/the-notre-dame-mba/apply/"
+      },
+      "financialAid": {
+        "tuition": "$73,260",
+        "fees": null,
+        "estimatedLivingExpenses": "$30,665",
+        "totalCostOfAttendance": "$103,925",
+        "scholarships": [
+          { "name": "Kenneth R. Meyer Fellowship", "description": "Full tuition scholarship plus an annual stipend of $25,000, comprehensive health insurance, and priority registration for the most exceptional students.", "averageAward": "Full tuition + $25,000 stipend", "url": "https://mendoza.nd.edu/graduate-programs/the-notre-dame-mba/two-year-mba-tuition-aid/" },
+          { "name": "Angrick Military Scholars Program", "description": "Up to 10 scholars receive $30,000 per year in wrap-around funding for relocation, housing, and childcare. Preference given to U.S. Military and Coast Guard veterans.", "averageAward": "$30,000/year", "url": "https://mendoza.nd.edu/graduate-programs/the-notre-dame-mba/two-year-mba-tuition-aid/" },
+          { "name": "Brogan Fellowships", "description": "Merit-based fellowships for high-achieving MBA candidates, automatically considered for all admitted students.", "averageAward": null, "url": "https://mendoza.nd.edu/graduate-programs/the-notre-dame-mba/two-year-mba-tuition-aid/" },
+          { "name": "Forté Fellowships", "description": "Awarded to outstanding women MBA candidates in partnership with the Forté Foundation.", "averageAward": null, "url": "https://mendoza.nd.edu/graduate-programs/the-notre-dame-mba/two-year-mba-tuition-aid/" }
+        ],
+        "financialAidUrl": "https://mendoza.nd.edu/graduate-programs/the-notre-dame-mba/two-year-mba-tuition-aid/"
+      },
+      "studentLife": {
+        "clubs": "18+ student clubs",
+        "housingUrl": "https://off-campus.nd.edu/",
+        "location": "Located on the beautiful Notre Dame campus near South Bend, Indiana, MBA students enjoy a close-knit residential campus community with exceptional facilities, a passionate alumni network, and a strong tradition of values and service.",
+        "studentBlogsUrl": "https://mendoza.nd.edu/graduate-programs/the-notre-dame-mba/"
+      },
+      "quickLinks": [
+        { "name": "Apply Now", "url": "https://mendoza.nd.edu/graduate-programs/the-notre-dame-mba/apply/", "icon": "application" },
+        { "name": "Class Profile", "url": "https://mendoza.nd.edu/graduate-programs/the-notre-dame-mba/", "icon": "stats" },
+        { "name": "Employment Report", "url": "https://mendoza.nd.edu/graduate-programs/the-notre-dame-mba/outcomes/", "icon": "career" },
+        { "name": "Events Calendar", "url": "https://mendoza.nd.edu/events/category/mba-events/", "icon": "calendar" },
+        { "name": "Virtual Tour", "url": "https://mendoza.nd.edu/graduate-programs/the-notre-dame-mba/apply/", "icon": "tour" },
+        { "name": "Contact Admissions", "url": "https://mendoza.nd.edu/graduate-programs/the-notre-dame-mba/apply/", "icon": "contact" }
+      ]
+    },
+    {
+      "id": "ohio-state-fisher",
+      "name": "Fisher College of Business",
+      "shortName": "Fisher",
+      "location": "Columbus, OH",
+      "description": "The Max M. Fisher College of Business at The Ohio State University offers a highly ranked Full-Time MBA program known for its rigorous academics, strong career outcomes, and tight-knit cohort of approximately 100 students. Fisher leverages Columbus's growing tech and corporate hub, with exceptional strengths in finance, consulting, and supply chain management. The program is distinguished by its Career & Industry Immersion Academies, Global Applied Projects, and generous merit-based funding that supports 75% of incoming students.",
+      "website": "https://fisher.osu.edu/graduate/ftmba",
+      "logo": "/logos/ohio-state-fisher.png",
+      "programs": [
+        { "name": "Full-Time MBA", "type": "full-time", "duration": "21 months", "url": "https://fisher.osu.edu/graduate/ftmba" },
+        { "name": "Working Professional MBA", "type": "part-time", "duration": "varies", "url": "https://fisher.osu.edu/graduate/wpmba" },
+        { "name": "Executive MBA", "type": "executive", "duration": "17 months", "url": "https://fisher.osu.edu/graduate/executive-mba" },
+        { "name": "MBA/JD", "type": "joint-degree", "duration": "varies", "url": "https://fisher.osu.edu/graduate/ftmba/academics/dual-degree-programs" },
+        { "name": "MBA/MD", "type": "joint-degree", "duration": "varies", "url": "https://fisher.osu.edu/graduate/ftmba/academics/dual-degree-programs" },
+        { "name": "MBA/MS Business Analytics", "type": "joint-degree", "duration": "varies", "url": "https://fisher.osu.edu/graduate/ftmba/academics/dual-degree-programs" },
+        { "name": "MBA/Master in Health Administration", "type": "joint-degree", "duration": "varies", "url": "https://fisher.osu.edu/graduate/ftmba/academics/dual-degree-programs" }
+      ],
+      "academics": {
+        "curriculum": {
+          "year1": "Year one focuses on the 27-credit core curriculum covering finance, marketing, accounting, operations, strategy, and leadership, with team projects, professional development workshops, and Career & Industry Immersion Academy excursions. Students complete a Business Lab Project consulting engagement for a local firm.",
+          "year2": "Year two provides 27 elective credits and 6 experiential learning credits for specialization. Students assume leadership roles in student organizations and pursue optional specialization pathways through Career and Industry Immersion Academies in Marketing, Finance, Strategy & Consulting, Operations & Analytics, and Supply Chain.",
+          "url": "https://fisher.osu.edu/graduate/ftmba/academics/curriculum"
+        },
+        "learningMethods": [
+          { "name": "Business Lab Project", "description": "Students work in teams on a real-world business project for a local firm, applying project management and consulting best practices.", "url": "https://fisher.osu.edu/graduate/ftmba/academics/program-structure" },
+          { "name": "Global Applied Projects (GAP)", "description": "International project-based learning experience where students address real business challenges for organizations in global markets.", "url": "https://fisher.osu.edu/graduate/ftmba/academics/program-structure" },
+          { "name": "Career & Industry Immersion Academies (CIIA)", "description": "Structured academies introducing MBA candidates to specific career pathways including Marketing, Finance, Strategy & Consulting, Operations, Analytics, and Supply Chain.", "url": "https://fisher.osu.edu/graduate/ftmba/academics/program-structure" }
+        ],
+        "centers": [
+          { "name": "Center for Operational Excellence", "url": "https://fisher.osu.edu/centers/operational-excellence" },
+          { "name": "National Center for the Middle Market", "url": "https://fisher.osu.edu/centers/middle-market" },
+          { "name": "Center for Real Estate", "url": "https://fisher.osu.edu/centers/real-estate" }
+        ],
+        "crossRegistration": ["Ohio State University graduate programs (100+ options)"],
+        "courseCatalog": "https://fisher.osu.edu/graduate/ftmba/academics/curriculum"
+      },
+      "admissions": {
+        "deadlines": {
+          "fullTime": [
+            { "round": "Early MBA", "applicationDeadline": "2025-10-13", "interviewInvites": null, "decision": null },
+            { "round": "Round 1", "applicationDeadline": "2025-12-01", "interviewInvites": null, "decision": null },
+            { "round": "Round 2", "applicationDeadline": "2026-01-05", "interviewInvites": null, "decision": null },
+            { "round": "Round 3", "applicationDeadline": "2026-02-23", "interviewInvites": null, "decision": null },
+            { "round": "Final Round", "applicationDeadline": "2026-04-27", "interviewInvites": null, "decision": "2026-05-29" }
+          ]
+        },
+        "applicationUrl": "https://fisher.osu.edu/graduate/ftmba/admissions/applying-fisher",
+        "applicationFee": "$60",
+        "essays": [
+          { "prompt": "What are your short-term and long-term career goals? How/why will an MBA help you achieve those goals?", "wordLimit": null },
+          { "prompt": "(Optional) Address any circumstances such as gaps in work history, quantitative ability through work experience, past academic performance, or test waiver requests.", "wordLimit": null }
+        ],
+        "videoEssay": null,
+        "recommendations": {
+          "required": 2,
+          "preferredFrom": "Professional supervisors or managers who can speak to leadership, performance, and growth potential",
+          "url": "https://fisher.osu.edu/graduate/ftmba/admissions/applying-fisher"
+        },
+        "testScores": {
+          "gmat": { "required": false, "median": 673, "middleRange": null },
+          "gre": { "accepted": true, "medianVerbal": null, "medianQuant": null }
+        }
+      },
+      "classProfile": {
+        "classSize": 100,
+        "averageAge": null,
+        "averageWorkExperience": 4.7,
+        "womenPercentage": 36,
+        "internationalPercentage": 44,
+        "averageGPA": 3.4,
+        "countries": 13
+      },
+      "career": {
+        "employmentRate": { "atGraduation": null, "threeMonthsPost": 83 },
+        "averageSalary": "$123,525",
+        "averageSigningBonus": "$25,481",
+        "topIndustries": [
+          { "industry": "Financial Services", "percentage": 26 },
+          { "industry": "Consulting", "percentage": 20 },
+          { "industry": "Technology", "percentage": 17 },
+          { "industry": "Consumer Products", "percentage": 9 },
+          { "industry": "Healthcare", "percentage": 6 }
+        ],
+        "employmentReportUrl": "https://fisher.osu.edu/graduate/ftmba/mba-career-outcomes",
+        "careerServicesUrl": "https://fisher.osu.edu/careers-recruiting/salary-outcome-data"
+      },
+      "eventsAndEngagement": {
+        "eventCategories": [
+          { "name": "MBA Information Sessions & Webinars", "url": "https://fisher.osu.edu/graduate/ftmba/admissions" },
+          { "name": "Campus Visits & Class Visits", "url": "https://fisher.osu.edu/graduate/ftmba/admissions" },
+          { "name": "Virtual Events", "url": "https://fisher.osu.edu/graduate/ftmba/admissions" }
+        ],
+        "eventsCalendarUrl": "https://fisher.osu.edu/graduate/ftmba/admissions",
+        "virtualTourUrl": "https://fisher.osu.edu/graduate/ftmba/admissions"
+      },
+      "financialAid": {
+        "tuition": "$61,308",
+        "fees": null,
+        "estimatedLivingExpenses": null,
+        "totalCostOfAttendance": null,
+        "scholarships": [
+          { "name": "Fisher MBA Leadership Fellows", "description": "Highly competitive award involving a 20-hour-per-week work schedule, providing a 100% tuition waiver plus a monthly stipend during the academic year.", "averageAward": "Full tuition + monthly stipend", "url": "https://fisher.osu.edu/graduate/ftmba/admissions/tuition-funding" },
+          { "name": "Graduate Assistantships", "description": "Involves a 10-hour-per-week work schedule and provides a 50% tuition waiver plus a monthly stipend during the academic year.", "averageAward": "50% tuition + monthly stipend", "url": "https://fisher.osu.edu/graduate/ftmba/admissions/tuition-funding" },
+          { "name": "Merit Cash Awards", "description": "Limited merit-based cash awards to select incoming students ranging from $1,000 to full tuition.", "averageAward": "$1,000–full tuition", "url": "https://fisher.osu.edu/graduate/ftmba/admissions/tuition-funding" }
+        ],
+        "financialAidUrl": "https://fisher.osu.edu/graduate/ftmba/admissions/tuition-funding"
+      },
+      "studentLife": {
+        "clubs": "30+ student organizations",
+        "housingUrl": "https://offcampus.osu.edu/",
+        "location": "Located in Columbus, Ohio — one of the fastest-growing cities in the Midwest — Fisher MBA students benefit from a vibrant urban campus, a thriving startup ecosystem, and easy access to major corporate employers in finance, retail, healthcare, and tech.",
+        "studentBlogsUrl": "https://fisher.osu.edu/graduate/ftmba/student-experience"
+      },
+      "quickLinks": [
+        { "name": "Apply Now", "url": "https://fisher.osu.edu/graduate/ftmba/admissions/applying-fisher", "icon": "application" },
+        { "name": "Class Profile", "url": "https://fisher.osu.edu/graduate/ftmba/admissions/class-profile", "icon": "stats" },
+        { "name": "Employment Report", "url": "https://fisher.osu.edu/graduate/ftmba/mba-career-outcomes", "icon": "career" },
+        { "name": "Events Calendar", "url": "https://fisher.osu.edu/graduate/ftmba/admissions", "icon": "calendar" },
+        { "name": "Virtual Tour", "url": "https://fisher.osu.edu/graduate/ftmba/admissions", "icon": "tour" },
+        { "name": "Contact Admissions", "url": "https://fisher.osu.edu/graduate/ftmba/admissions", "icon": "contact" }
+      ]
+    },
+    {
+      "id": "wisconsin",
+      "name": "Wisconsin School of Business",
+      "shortName": "Wisconsin",
+      "location": "Madison, WI",
+      "description": "The Wisconsin School of Business Full-Time MBA is a specialized, career-focused program at the University of Wisconsin-Madison that allows students to concentrate in their chosen field from the first semester. The program integrates a rigorous general management core with hands-on, team-focused experiential learning tied to career specializations in areas such as finance, marketing, supply chain, consulting, and more. With 99% of students receiving merit aid and a strong placement track record, Wisconsin delivers outstanding value and career outcomes.",
+      "website": "https://business.wisc.edu/graduate/mba/full-time/",
+      "logo": "/logos/wisconsin.png",
+      "programs": [
+        { "name": "Full-Time MBA", "type": "full-time", "duration": "21 months", "url": "https://business.wisc.edu/graduate/mba/full-time/" },
+        { "name": "Professional MBA", "type": "part-time", "duration": "24-60 months", "url": "https://business.wisc.edu/graduate/mba/professional/" },
+        { "name": "Executive MBA", "type": "executive", "duration": "18 months", "url": "https://guide.wisc.edu/graduate/business-school-wide/business-executive-mba/" },
+        { "name": "Online MBA", "type": "online", "duration": "24-48 months", "url": "https://www.wisconsinonlinemba.org/" }
+      ],
+      "academics": {
+        "curriculum": {
+          "year1": "The first year establishes a general management core that integrates key functional areas of business with essential leadership skills. Students begin specializing in their chosen career track from the first semester, gaining robust, team-focused, hands-on project and consulting experience tailored to their field.",
+          "year2": "Second-year students deepen their specialization through advanced electives, experiential learning projects, and leadership development. The Ignite Career Accelerator continues throughout the program to prepare graduates for immediate career impact.",
+          "url": "https://business.wisc.edu/graduate/mba/full-time/curriculum/"
+        },
+        "learningMethods": [
+          { "name": "Career Specializations", "description": "Students choose from over 20 career specializations starting in the first semester, with many linked to Centers of Expertise for focused, real-world learning.", "url": "https://business.wisc.edu/graduate/mba/full-time/curriculum/" },
+          { "name": "Ignite Career Accelerator", "description": "Embedded leadership training and career development program running throughout the MBA to prepare students for immediate impact.", "url": "https://business.wisc.edu/graduate/mba/full-time/curriculum/" }
+        ],
+        "centers": [
+          { "name": "Grainger Center for Supply Chain Management", "url": "https://business.wisc.edu/research/centers/supply-chain-management/" },
+          { "name": "Weinert Center for Entrepreneurship", "url": "https://business.wisc.edu/research/centers/entrepreneurship/" },
+          { "name": "Bolz Center for Arts Administration", "url": "https://business.wisc.edu/research/centers/arts-administration/" }
+        ],
+        "crossRegistration": [],
+        "courseCatalog": "https://business.wisc.edu/graduate/mba/full-time/curriculum/"
+      },
+      "admissions": {
+        "deadlines": {
+          "fullTime": [
+            { "round": "Round 1", "applicationDeadline": "2025-10-15", "interviewInvites": null, "decision": null },
+            { "round": "Round 2", "applicationDeadline": "2026-01-05", "interviewInvites": null, "decision": null }
+          ]
+        },
+        "applicationUrl": "https://admissions.wsb.wisc.edu/FTMBA",
+        "applicationFee": null,
+        "essays": [
+          { "prompt": "Why have you selected your functional area of business specialization, and how does it align with your career goals?", "wordLimit": 600 },
+          { "prompt": "(Optional) Is there any additional information you would like to communicate to the admissions committee?", "wordLimit": 600 }
+        ],
+        "videoEssay": null,
+        "recommendations": {
+          "required": 2,
+          "preferredFrom": "Professional recommenders who can speak to your leadership and work performance",
+          "url": "https://business.wisc.edu/graduate/mba/full-time/admissions/"
+        },
+        "testScores": {
+          "gmat": { "required": false, "median": 651, "middleRange": null },
+          "gre": { "accepted": true, "medianVerbal": null, "medianQuant": null }
+        }
+      },
+      "classProfile": {
+        "classSize": 145,
+        "averageAge": null,
+        "averageWorkExperience": 4.8,
+        "womenPercentage": 35,
+        "internationalPercentage": null,
+        "averageGPA": 3.38,
+        "countries": null
+      },
+      "career": {
+        "employmentRate": { "atGraduation": null, "threeMonthsPost": 84 },
+        "averageSalary": "$124,313",
+        "averageSigningBonus": "$35,297",
+        "topIndustries": [
+          { "industry": "Marketing", "percentage": null },
+          { "industry": "Finance", "percentage": null },
+          { "industry": "Consulting", "percentage": null },
+          { "industry": "Technology", "percentage": null },
+          { "industry": "Operations", "percentage": null }
+        ],
+        "employmentReportUrl": "https://wsb.wisc.edu/companies-recruit-hire/mba-students/employment-outcomes",
+        "careerServicesUrl": "https://wsb.wisc.edu/companies-recruit-hire/mba-students/employment-outcomes"
+      },
+      "eventsAndEngagement": {
+        "eventCategories": [
+          { "name": "Information Sessions", "url": "https://business.wisc.edu/graduate/mba/full-time/events/" },
+          { "name": "Campus Visits", "url": "https://business.wisc.edu/graduate/mba/full-time/events/" },
+          { "name": "Virtual Visits", "url": "https://business.wisc.edu/graduate/mba/full-time/events/" }
+        ],
+        "eventsCalendarUrl": "https://business.wisc.edu/graduate/mba/full-time/events/",
+        "virtualTourUrl": "https://business.wisc.edu/graduate/mba/full-time/events/"
+      },
+      "financialAid": {
+        "tuition": "$51,413",
+        "fees": null,
+        "estimatedLivingExpenses": null,
+        "totalCostOfAttendance": null,
+        "scholarships": [
+          { "name": "Merit-Based Aid", "description": "99% of MBA students receive merit aid; automatically considered upon application with no separate application required.", "averageAward": null, "url": "https://business.wisc.edu/graduate/mba/full-time/tuition/" },
+          { "name": "Forté Fellows", "description": "Financial support for outstanding women in business leadership.", "averageAward": null, "url": "https://business.wisc.edu/graduate/mba/full-time/tuition/" },
+          { "name": "Consortium Fellowships", "description": "Tuition award and scholarship for the duration of the MBA program.", "averageAward": null, "url": "https://business.wisc.edu/graduate/mba/full-time/tuition/" }
+        ],
+        "financialAidUrl": "https://business.wisc.edu/graduate/mba/full-time/tuition/"
+      },
+      "studentLife": {
+        "clubs": null,
+        "housingUrl": "https://www.wisc.edu/visit/",
+        "location": "Madison, WI is consistently ranked among the top college cities in the U.S., offering a vibrant lakeside campus, a thriving startup ecosystem, and a high quality of life on the shores of Lake Mendota.",
+        "studentBlogsUrl": null
+      },
+      "quickLinks": [
+        { "name": "Apply Now", "url": "https://admissions.wsb.wisc.edu/FTMBA", "icon": "application" },
+        { "name": "Class Profile", "url": "https://business.wisc.edu/graduate/mba/full-time/admissions/class-profile/", "icon": "stats" },
+        { "name": "Employment Report", "url": "https://wsb.wisc.edu/companies-recruit-hire/mba-students/employment-outcomes", "icon": "career" },
+        { "name": "Events Calendar", "url": "https://business.wisc.edu/graduate/mba/full-time/events/", "icon": "calendar" },
+        { "name": "Virtual Tour", "url": "https://business.wisc.edu/graduate/mba/full-time/events/", "icon": "tour" },
+        { "name": "Contact Admissions", "url": "https://business.wisc.edu/graduate/mba/full-time/admissions/", "icon": "contact" }
+      ]
+    },
+    {
+      "id": "texas-am-mays",
+      "name": "Mays Business School",
+      "shortName": "Mays",
+      "location": "College Station, TX",
+      "description": "The Mays Business School Full-Time MBA at Texas A&M University offers an immersive two-year experience grounded in the Aggie Core Values of Excellence, Integrity, Leadership, Loyalty, Respect, and Selfless Service. The program combines a rigorous, data-driven curriculum with hands-on experiential learning, real-world company projects, and dedicated career coaching. Students can specialize in finance, supply chain, marketing, or data analytics while benefiting from one of the largest alumni networks in the world.",
+      "website": "https://mays.tamu.edu/graduate/mba/full-time-mba/",
+      "logo": "/logos/texas-am-mays.png",
+      "programs": [
+        { "name": "Full-Time MBA", "type": "full-time", "duration": "24 months", "url": "https://mays.tamu.edu/graduate/mba/full-time-mba/" },
+        { "name": "Professional MBA", "type": "part-time", "duration": "24 months", "url": "https://mays.tamu.edu/graduate/mba/professional-mba/" },
+        { "name": "Flex Online MBA", "type": "online", "duration": "24 months", "url": "https://mays.tamu.edu/graduate/mba/flex-online-mba/" }
+      ],
+      "academics": {
+        "curriculum": {
+          "year1": "The first year focuses on core business fundamentals with an emphasis on data-driven decision making and analytical rigor. Students engage in leadership development grounded in the Aggie Core Values, with experiential learning through project-based courses and case competitions.",
+          "year2": "Second-year students choose a specialization in Finance, Supply Chain & Operations, Marketing, or Data Analytics to tailor their MBA experience. Advanced electives, capstone projects, and industry engagements deepen technical skills and leadership capabilities.",
+          "url": "https://mays.tamu.edu/graduate/mba/full-time-mba/program-details/"
+        },
+        "learningMethods": [
+          { "name": "Experiential Learning Projects", "description": "Students engage in real-world projects, case studies, and company engagements that connect classroom learning to practical business scenarios.", "url": "https://mays.tamu.edu/graduate/mba/full-time-mba/" },
+          { "name": "Case Competitions", "description": "Competitive case-based learning providing opportunities to practice leadership and analytical skills in real-world business scenarios.", "url": "https://mays.tamu.edu/graduate/mba/full-time-mba/" }
+        ],
+        "centers": [
+          { "name": "Center for Retailing Studies", "url": "https://mays.tamu.edu/crs/" },
+          { "name": "Center for Human Resource Management", "url": "https://mays.tamu.edu/management/centers/center-for-human-resource-management/" }
+        ],
+        "crossRegistration": [],
+        "courseCatalog": "https://mays.tamu.edu/graduate/mba/full-time-mba/program-details/"
+      },
+      "admissions": {
+        "deadlines": {
+          "fullTime": [
+            { "round": "Round 1", "applicationDeadline": "2025-10-15", "interviewInvites": null, "decision": null },
+            { "round": "Round 2", "applicationDeadline": "2026-01-28", "interviewInvites": null, "decision": null },
+            { "round": "Final (Domestic)", "applicationDeadline": "2026-05-06", "interviewInvites": null, "decision": null }
+          ]
+        },
+        "applicationUrl": "https://mays.tamu.edu/graduate/mba/full-time-mba/application-ft-mba/",
+        "applicationFee": null,
+        "essays": [
+          { "prompt": "Career goals essay: Describe your post-MBA career plans and how the Mays MBA will help you achieve them.", "wordLimit": null },
+          { "prompt": "List the top 12 things the admissions committee should know about you, with at least two items connecting to the Texas A&M Core Values.", "wordLimit": null }
+        ],
+        "videoEssay": null,
+        "recommendations": {
+          "required": 2,
+          "preferredFrom": "Professional recommenders who can speak to leadership ability and work performance",
+          "url": "https://mays.tamu.edu/graduate/mba/full-time-mba/application-ft-mba/"
+        },
+        "testScores": {
+          "gmat": { "required": false, "median": null, "middleRange": "560-700" },
+          "gre": { "accepted": true, "medianVerbal": null, "medianQuant": null }
+        }
+      },
+      "classProfile": {
+        "classSize": 123,
+        "averageAge": null,
+        "averageWorkExperience": null,
+        "womenPercentage": 23,
+        "internationalPercentage": null,
+        "averageGPA": 3.24,
+        "countries": null
+      },
+      "career": {
+        "employmentRate": { "atGraduation": null, "threeMonthsPost": 96 },
+        "averageSalary": "$133,075",
+        "averageSigningBonus": "$20,000",
+        "topIndustries": [
+          { "industry": "Finance", "percentage": null },
+          { "industry": "Consulting", "percentage": null },
+          { "industry": "Technology", "percentage": null },
+          { "industry": "Supply Chain", "percentage": null },
+          { "industry": "Marketing", "percentage": null }
+        ],
+        "employmentReportUrl": "https://mays.tamu.edu/career-management-center/",
+        "careerServicesUrl": "https://mays.tamu.edu/career-management-center/"
+      },
+      "eventsAndEngagement": {
+        "eventCategories": [
+          { "name": "Information Sessions", "url": "https://mays.tamu.edu/graduate/mba/full-time-mba/" },
+          { "name": "Campus Visits", "url": "https://mays.tamu.edu/graduate/mba/full-time-mba/" }
+        ],
+        "eventsCalendarUrl": "https://mays.tamu.edu/graduate/mba/",
+        "virtualTourUrl": null
+      },
+      "financialAid": {
+        "tuition": "$51,648",
+        "fees": null,
+        "estimatedLivingExpenses": null,
+        "totalCostOfAttendance": null,
+        "scholarships": [
+          { "name": "Merit-Based Fellowships", "description": "Competitive merit-based awards considered during the admissions process; no separate application required.", "averageAward": null, "url": "https://mays.tamu.edu/graduate/mba/full-time-mba/" }
+        ],
+        "financialAidUrl": "https://mays.tamu.edu/graduate/mba/full-time-mba/"
+      },
+      "studentLife": {
+        "clubs": null,
+        "housingUrl": null,
+        "location": "College Station, TX is home to Texas A&M University's main campus, a vibrant college town with one of the most spirited student communities in the country and access to the broader Texas economy.",
+        "studentBlogsUrl": null
+      },
+      "quickLinks": [
+        { "name": "Apply Now", "url": "https://mays.tamu.edu/graduate/mba/full-time-mba/application-ft-mba/", "icon": "application" },
+        { "name": "Class Profile", "url": "https://mays.tamu.edu/full-time-mba/current-class-profile/", "icon": "stats" },
+        { "name": "Employment Report", "url": "https://mays.tamu.edu/career-management-center/", "icon": "career" },
+        { "name": "Events Calendar", "url": "https://mays.tamu.edu/graduate/mba/", "icon": "calendar" },
+        { "name": "Virtual Tour", "url": "https://mays.tamu.edu/graduate/mba/full-time-mba/", "icon": "tour" },
+        { "name": "Contact Admissions", "url": "https://mays.tamu.edu/apply/", "icon": "contact" }
+      ]
+    },
+    {
+      "id": "penn-state-smeal",
+      "name": "Smeal College of Business",
+      "shortName": "Penn State Smeal",
+      "location": "University Park, PA",
+      "description": "The Penn State Smeal College of Business offers a STEM-designated One-Year MBA that provides an immersive, customizable residential experience at the University Park campus. The program allows students to build a personalized learning plan and stack credentials in specialized areas such as accounting, business analytics, finance, real estate, and supply chain management. With a rolling admissions process, a global immersion component, and strong placement outcomes, Smeal offers exceptional value for both recent graduates and early-career professionals.",
+      "website": "https://oneyearmba.smeal.psu.edu/",
+      "logo": "/logos/penn-state-smeal.png",
+      "programs": [
+        { "name": "One-Year MBA (Full-Time)", "type": "full-time", "duration": "9 months", "url": "https://oneyearmba.smeal.psu.edu/" },
+        { "name": "Executive MBA", "type": "executive", "duration": "17 months", "url": "https://www.smeal.psu.edu/academic-programs/mbas" },
+        { "name": "Online MBA", "type": "online", "duration": "24-60 months", "url": "https://www.smeal.psu.edu/academic-programs/mbas" }
+      ],
+      "academics": {
+        "curriculum": {
+          "year1": "The 35-credit One-Year MBA program begins in August and concludes in May. The academic year consists of two semesters divided into four 7-week modules covering core business fundamentals. Students build a personalized learning plan and may stack credentials in accounting, business analytics, finance, real estate analysis and development, and supply chain management.",
+          "year2": null,
+          "url": "https://oneyearmba.smeal.psu.edu/program-details/curriculum"
+        },
+        "learningMethods": [
+          { "name": "Modular Curriculum", "description": "Four 7-week modules across two semesters provide an intensive, focused approach to business education with hands-on experiences throughout.", "url": "https://oneyearmba.smeal.psu.edu/program-details/curriculum" },
+          { "name": "Global Immersion", "description": "An international experience that broadens students' global business perspectives as part of the MBA curriculum.", "url": "https://oneyearmba.smeal.psu.edu/program-details" }
+        ],
+        "centers": [
+          { "name": "Smeal Center for Supply Chain Research", "url": "https://www.smeal.psu.edu/scr" },
+          { "name": "Center for the Business of Sustainability", "url": "https://www.smeal.psu.edu/sustainability" }
+        ],
+        "crossRegistration": [],
+        "courseCatalog": "https://oneyearmba.smeal.psu.edu/program-details/curriculum"
+      },
+      "admissions": {
+        "deadlines": {
+          "fullTime": [
+            { "round": "Rolling Admissions", "applicationDeadline": "2026-06-01", "interviewInvites": null, "decision": null }
+          ]
+        },
+        "applicationUrl": "https://oneyearmba.smeal.psu.edu/apply",
+        "applicationFee": null,
+        "essays": [
+          { "prompt": "Virtual interview and essay completed via Kira Talent within 7 days of submitting the Graduate School Online Application.", "wordLimit": null }
+        ],
+        "videoEssay": { "description": "Required virtual interview and essay conducted via Kira Talent, completed within 7 days of submitting the application.", "platform": "Kira Talent" },
+        "recommendations": {
+          "required": 3,
+          "preferredFrom": "Professional or academic recommenders who can speak to your abilities and potential",
+          "url": "https://oneyearmba.smeal.psu.edu/program-admissions"
+        },
+        "testScores": {
+          "gmat": { "required": false, "median": null, "middleRange": null },
+          "gre": { "accepted": true, "medianVerbal": null, "medianQuant": null }
+        }
+      },
+      "classProfile": {
+        "classSize": 105,
+        "averageAge": null,
+        "averageWorkExperience": null,
+        "womenPercentage": 33,
+        "internationalPercentage": 30,
+        "averageGPA": null,
+        "countries": 11
+      },
+      "career": {
+        "employmentRate": { "atGraduation": null, "threeMonthsPost": 97 },
+        "averageSalary": "$114,008",
+        "averageSigningBonus": "$26,179",
+        "topIndustries": [
+          { "industry": "Consulting", "percentage": null },
+          { "industry": "Finance", "percentage": null },
+          { "industry": "Technology", "percentage": null },
+          { "industry": "Supply Chain", "percentage": null },
+          { "industry": "Healthcare", "percentage": null }
+        ],
+        "employmentReportUrl": "https://oneyearmba.smeal.psu.edu/program-admissions/class-profile",
+        "careerServicesUrl": "https://www.smeal.psu.edu/career-solutions"
+      },
+      "eventsAndEngagement": {
+        "eventCategories": [
+          { "name": "Information Sessions", "url": "https://oneyearmba.smeal.psu.edu/program-admissions" },
+          { "name": "Campus Visits", "url": "https://oneyearmba.smeal.psu.edu/program-admissions" }
+        ],
+        "eventsCalendarUrl": "https://oneyearmba.smeal.psu.edu/program-admissions",
+        "virtualTourUrl": null
+      },
+      "financialAid": {
+        "tuition": "$49,612",
+        "fees": "$500",
+        "estimatedLivingExpenses": "$2,350",
+        "totalCostOfAttendance": null,
+        "scholarships": [
+          { "name": "Merit Scholarships", "description": "All admitted students are automatically considered for merit-based funding; no separate application required.", "averageAward": null, "url": "https://oneyearmba.smeal.psu.edu/program-details/tuition-aid" }
+        ],
+        "financialAidUrl": "https://oneyearmba.smeal.psu.edu/program-details/tuition-aid"
+      },
+      "studentLife": {
+        "clubs": null,
+        "housingUrl": null,
+        "location": "University Park, PA (Happy Valley) is a vibrant college community surrounded by Pennsylvania's natural beauty, offering a tight-knit campus environment with outstanding recreational opportunities and a strong sense of school pride.",
+        "studentBlogsUrl": null
+      },
+      "quickLinks": [
+        { "name": "Apply Now", "url": "https://oneyearmba.smeal.psu.edu/apply", "icon": "application" },
+        { "name": "Class Profile", "url": "https://oneyearmba.smeal.psu.edu/program-admissions/class-profile", "icon": "stats" },
+        { "name": "Employment Report", "url": "https://oneyearmba.smeal.psu.edu/program-admissions/class-profile", "icon": "career" },
+        { "name": "Events Calendar", "url": "https://oneyearmba.smeal.psu.edu/program-admissions", "icon": "calendar" },
+        { "name": "Virtual Tour", "url": "https://oneyearmba.smeal.psu.edu/", "icon": "tour" },
+        { "name": "Contact Admissions", "url": "https://oneyearmba.smeal.psu.edu/program-admissions", "icon": "contact" }
+      ]
+    },
+    {
+      "id": "maryland-smith",
+      "name": "Robert H. Smith School of Business",
+      "shortName": "Maryland Smith",
+      "location": "College Park, MD",
+      "description": "The Robert H. Smith School of Business at the University of Maryland offers a Full-Time MBA that prepares students for high-impact careers in the dynamic Washington, D.C.–Baltimore corridor and beyond. The program combines rigorous academics with strong industry connections, a collaborative community, and 99% of the incoming class receiving financial awards. Located near the nation's capital, Smith provides unparalleled access to government agencies, consulting firms, technology companies, and global organizations.",
+      "website": "https://www.rhsmith.umd.edu/programs/mba-programs",
+      "logo": "/logos/maryland-smith.png",
+      "programs": [
+        { "name": "Full-Time MBA", "type": "full-time", "duration": "21 months", "url": "https://www.rhsmith.umd.edu/programs/full-time-mba" },
+        { "name": "Flex MBA (Evening/Part-Time)", "type": "part-time", "duration": "24-60 months", "url": "https://www.rhsmith.umd.edu/programs/flex-mba" },
+        { "name": "Online MBA", "type": "online", "duration": "24-48 months", "url": "https://www.rhsmith.umd.edu/programs/online-mba" },
+        { "name": "Executive MBA", "type": "executive", "duration": "21 months", "url": "https://www.rhsmith.umd.edu/programs/mba-programs" }
+      ],
+      "academics": {
+        "curriculum": {
+          "year1": "The first year covers core business disciplines including finance, marketing, operations, strategy, and leadership. The curriculum integrates quantitative skills with strategic thinking, preparing students for summer internships in their target industries.",
+          "year2": "Second-year students customize their experience through specializations in areas including marketing, finance, information systems and business analytics, AI in business, supply chain management, and innovation and project management.",
+          "url": "https://www.rhsmith.umd.edu/programs/full-time-mba"
+        },
+        "learningMethods": [
+          { "name": "Action Learning", "description": "Project-based learning that connects students directly with companies and organizations in the DC-Baltimore region for real-world problem solving.", "url": "https://www.rhsmith.umd.edu/programs/full-time-mba" },
+          { "name": "Technology & Analytics Integration", "description": "Curriculum incorporates AI in business, data analytics, and emerging technologies as core competencies throughout the program.", "url": "https://www.rhsmith.umd.edu/programs/full-time-mba" }
+        ],
+        "centers": [
+          { "name": "Center for Financial Policy", "url": "https://www.rhsmith.umd.edu/research/centers-excellence" },
+          { "name": "Center for Digital Innovation and Sustainability", "url": "https://www.rhsmith.umd.edu/research/centers-excellence" }
+        ],
+        "crossRegistration": [],
+        "courseCatalog": "https://www.rhsmith.umd.edu/programs/full-time-mba"
+      },
+      "admissions": {
+        "deadlines": {
+          "fullTime": [
+            { "round": "Round 1", "applicationDeadline": "2025-10-01", "interviewInvites": null, "decision": null },
+            { "round": "Round 2", "applicationDeadline": "2025-11-01", "interviewInvites": null, "decision": null },
+            { "round": "Round 3 (International Priority)", "applicationDeadline": "2025-12-15", "interviewInvites": null, "decision": null },
+            { "round": "Round 4 (Domestic Scholarship Priority)", "applicationDeadline": "2026-01-15", "interviewInvites": null, "decision": null },
+            { "round": "Round 5 (Final)", "applicationDeadline": "2026-03-13", "interviewInvites": null, "decision": null }
+          ]
+        },
+        "applicationUrl": "https://www.rhsmith.umd.edu/programs/full-time-mba/admissions",
+        "applicationFee": null,
+        "essays": [
+          { "prompt": "How will the Smith Full-Time MBA program help you achieve your professional endeavors and why are you interested in pursuing an MBA at UMD Smith in particular?", "wordLimit": 300 }
+        ],
+        "videoEssay": null,
+        "recommendations": {
+          "required": 1,
+          "preferredFrom": "Current or previous supervisor who has managed you professionally",
+          "url": "https://www.rhsmith.umd.edu/programs/full-time-mba/admissions"
+        },
+        "testScores": {
+          "gmat": { "required": false, "median": 656, "middleRange": null },
+          "gre": { "accepted": true, "medianVerbal": null, "medianQuant": null }
+        }
+      },
+      "classProfile": {
+        "classSize": 199,
+        "averageAge": null,
+        "averageWorkExperience": 6.4,
+        "womenPercentage": 35,
+        "internationalPercentage": null,
+        "averageGPA": 3.5,
+        "countries": null
+      },
+      "career": {
+        "employmentRate": { "atGraduation": null, "threeMonthsPost": null },
+        "averageSalary": "$119,175",
+        "averageSigningBonus": "$38,914",
+        "topIndustries": [
+          { "industry": "Consulting", "percentage": null },
+          { "industry": "Marketing/Sales", "percentage": null },
+          { "industry": "General Management", "percentage": null },
+          { "industry": "Finance", "percentage": null },
+          { "industry": "Technology", "percentage": null }
+        ],
+        "employmentReportUrl": "https://www.rhsmith.umd.edu/programs/full-time-mba",
+        "careerServicesUrl": "https://www.rhsmith.umd.edu/programs/full-time-mba"
+      },
+      "eventsAndEngagement": {
+        "eventCategories": [
+          { "name": "Information Sessions", "url": "https://www.rhsmith.umd.edu/programs/full-time-mba/admissions" },
+          { "name": "Campus Visits", "url": "https://www.rhsmith.umd.edu/programs/full-time-mba/admissions" }
+        ],
+        "eventsCalendarUrl": "https://www.rhsmith.umd.edu/programs/full-time-mba/admissions",
+        "virtualTourUrl": "https://www.rhsmith.umd.edu/visit"
+      },
+      "financialAid": {
+        "tuition": "$58,239",
+        "fees": "$2,204",
+        "estimatedLivingExpenses": null,
+        "totalCostOfAttendance": null,
+        "scholarships": [
+          { "name": "Merit Awards", "description": "99% of the incoming class receives some level of financial award; automatically considered based on scholastic achievement, test scores, and leadership experience.", "averageAward": null, "url": "https://networth.rhsmith.umd.edu/welcome-ft-fall/financial-information/tuition-fees-full-time-mba" }
+        ],
+        "financialAidUrl": "https://networth.rhsmith.umd.edu/welcome-ft-fall/financial-information/tuition-fees-full-time-mba"
+      },
+      "studentLife": {
+        "clubs": null,
+        "housingUrl": null,
+        "location": "College Park, MD sits within the Washington, D.C.–Baltimore metropolitan corridor, offering MBA students direct access to the federal government, major consulting firms, Fortune 500 companies, and a thriving technology sector.",
+        "studentBlogsUrl": null
+      },
+      "quickLinks": [
+        { "name": "Apply Now", "url": "https://www.rhsmith.umd.edu/programs/full-time-mba/admissions", "icon": "application" },
+        { "name": "Class Profile", "url": "https://www.rhsmith.umd.edu/news/quick-look-full-time-mba-class-profile", "icon": "stats" },
+        { "name": "Employment Report", "url": "https://www.rhsmith.umd.edu/programs/full-time-mba", "icon": "career" },
+        { "name": "Events Calendar", "url": "https://www.rhsmith.umd.edu/programs/full-time-mba/admissions", "icon": "calendar" },
+        { "name": "Virtual Tour", "url": "https://www.rhsmith.umd.edu/about", "icon": "tour" },
+        { "name": "Contact Admissions", "url": "https://www.rhsmith.umd.edu/programs/full-time-mba/admissions", "icon": "contact" }
+      ]
+    },
+    {
+      "id": "minnesota-carlson",
+      "name": "Carlson School of Management",
+      "shortName": "Carlson",
+      "location": "Minneapolis, MN",
+      "description": "The Carlson School of Management at the University of Minnesota offers a Full-Time MBA that combines academic rigor with the vibrant business community of the Twin Cities. The program produces highly skilled graduates who join leading companies across healthcare, consulting, financial services, and consumer goods. With 42% women and strong industry diversity, Carlson fosters an inclusive community situated amid 19 Fortune 500 companies including Target, UnitedHealth Group, and 3M.",
+      "website": "https://carlsonschool.umn.edu/graduate/mba",
+      "logo": "/logos/minnesota-carlson.png",
+      "programs": [
+        { "name": "Full-Time MBA", "type": "full-time", "duration": "21 months", "url": "https://carlsonschool.umn.edu/graduate/mba/full-time" },
+        { "name": "Part-Time MBA", "type": "part-time", "duration": "30-84 months", "url": "https://carlsonschool.umn.edu/graduate/mba/part-time" },
+        { "name": "Online MBA", "type": "online", "duration": "30-60 months", "url": "https://carlsonschool.umn.edu/graduate/mba/online" },
+        { "name": "Executive MBA", "type": "executive", "duration": "20 months", "url": "https://carlsonschool.umn.edu/graduate/mba/executive" }
+      ],
+      "academics": {
+        "curriculum": {
+          "year1": "The first year establishes a strong foundation in core business disciplines including finance, marketing, operations, strategy, and leadership. Students develop both technical expertise and management skills through a combination of case-based learning, team projects, and experiential coursework.",
+          "year2": "Second-year students deepen their expertise through electives and concentrations, engaging with Minneapolis-St. Paul's rich business ecosystem through consulting projects, company treks, and networking with local and national employers.",
+          "url": "https://carlsonschool.umn.edu/graduate/mba/full-time"
+        },
+        "learningMethods": [
+          { "name": "Experiential Learning", "description": "Students work on consulting projects with companies in the Twin Cities and beyond, applying classroom knowledge to real business challenges.", "url": "https://carlsonschool.umn.edu/graduate/mba/full-time" },
+          { "name": "Leadership Development", "description": "Integrated leadership programming throughout the MBA develops professional presence, executive communication, and management capabilities.", "url": "https://carlsonschool.umn.edu/graduate/mba/full-time" }
+        ],
+        "centers": [
+          { "name": "Holmes Center for Entrepreneurship", "url": "https://carlsonschool.umn.edu/faculty-research/centers-institutes" },
+          { "name": "Center for Supply Chain and Logistics", "url": "https://carlsonschool.umn.edu/faculty-research/centers-institutes" },
+          { "name": "Institute for Research in Marketing", "url": "https://carlsonschool.umn.edu/faculty-research/centers-institutes" }
+        ],
+        "crossRegistration": [],
+        "courseCatalog": "https://umtc.catalog.prod.coursedog.com/programs/015230602"
+      },
+      "admissions": {
+        "deadlines": {
+          "fullTime": [
+            { "round": "Round 1", "applicationDeadline": "2025-10-01", "interviewInvites": null, "decision": null },
+            { "round": "Round 2", "applicationDeadline": "2025-12-01", "interviewInvites": null, "decision": null },
+            { "round": "Round 3", "applicationDeadline": "2026-02-01", "interviewInvites": null, "decision": null },
+            { "round": "Round 4", "applicationDeadline": "2026-04-01", "interviewInvites": null, "decision": null }
+          ]
+        },
+        "applicationUrl": "https://carlsonschool.umn.edu/graduate/mba/full-time/admissions/requirements-deadlines",
+        "applicationFee": "$75",
+        "essays": [
+          { "prompt": "Why are you pursuing an MBA, what are your career goals, what excites you about the Carlson program, and how have you contributed to inclusive communities?", "wordLimit": null }
+        ],
+        "videoEssay": null,
+        "recommendations": {
+          "required": 2,
+          "preferredFrom": "Professional recommenders who can speak to leadership, collaboration, and work performance",
+          "url": "https://carlsonschool.umn.edu/graduate/mba/full-time/admissions/requirements-deadlines"
+        },
+        "testScores": {
+          "gmat": { "required": false, "median": 664, "middleRange": null },
+          "gre": { "accepted": true, "medianVerbal": null, "medianQuant": 318 }
+        }
+      },
+      "classProfile": {
+        "classSize": 72,
+        "averageAge": 29,
+        "averageWorkExperience": 5.8,
+        "womenPercentage": 42,
+        "internationalPercentage": 18,
+        "averageGPA": 3.64,
+        "countries": null
+      },
+      "career": {
+        "employmentRate": { "atGraduation": null, "threeMonthsPost": 83 },
+        "averageSalary": "$135,058",
+        "averageSigningBonus": "$30,317",
+        "topIndustries": [
+          { "industry": "Healthcare", "percentage": null },
+          { "industry": "Consulting", "percentage": null },
+          { "industry": "Financial Services", "percentage": null },
+          { "industry": "Consumer Packaged Goods", "percentage": null },
+          { "industry": "Retail", "percentage": null }
+        ],
+        "employmentReportUrl": "https://carlsonschool.umn.edu/graduate/mba/full-time/admissions/class-profile",
+        "careerServicesUrl": "https://carlsonschool.umn.edu/graduate/mba/full-time"
+      },
+      "eventsAndEngagement": {
+        "eventCategories": [
+          { "name": "Information Sessions", "url": "https://carlsonschool.umn.edu/graduate/mba/full-time/admissions" },
+          { "name": "Campus Visits", "url": "https://carlsonschool.umn.edu/graduate/mba/full-time/admissions" }
+        ],
+        "eventsCalendarUrl": "https://carlsonschool.umn.edu/graduate/mba/full-time/admissions",
+        "virtualTourUrl": "https://carlsonschool.umn.edu/visit"
+      },
+      "financialAid": {
+        "tuition": "$62,280",
+        "fees": null,
+        "estimatedLivingExpenses": null,
+        "totalCostOfAttendance": "$71,792",
+        "scholarships": [
+          { "name": "Merit Fellowships", "description": "All applicants are automatically considered for scholarships; awards range from partial to full tuition with stipend for military candidates.", "averageAward": null, "url": "https://carlsonschool.umn.edu/graduate/mba/full-time/tuition-aid/scholarships" },
+          { "name": "Finance Leaders of Tomorrow", "description": "Full tuition scholarship for outstanding candidates in the Full-Time MBA and MS Finance programs.", "averageAward": "Full tuition", "url": "https://carlsonschool.umn.edu/graduate/mba/full-time/tuition-aid/scholarships" }
+        ],
+        "financialAidUrl": "https://carlsonschool.umn.edu/graduate/mba/full-time/tuition-aid"
+      },
+      "studentLife": {
+        "clubs": null,
+        "housingUrl": null,
+        "location": "Minneapolis, MN is a thriving metropolitan area home to 19 Fortune 500 companies including Target, UnitedHealth Group, and 3M, offering MBA students extraordinary access to top employers, a vibrant arts scene, and an outstanding quality of life.",
+        "studentBlogsUrl": null
+      },
+      "quickLinks": [
+        { "name": "Apply Now", "url": "https://carlsonschool.umn.edu/graduate/mba/full-time/admissions/requirements-deadlines", "icon": "application" },
+        { "name": "Class Profile", "url": "https://carlsonschool.umn.edu/graduate/mba/full-time/admissions/class-profile", "icon": "stats" },
+        { "name": "Employment Report", "url": "https://carlsonschool.umn.edu/graduate/mba/full-time/admissions/class-profile", "icon": "career" },
+        { "name": "Events Calendar", "url": "https://carlsonschool.umn.edu/graduate/mba/full-time/admissions", "icon": "calendar" },
+        { "name": "Virtual Tour", "url": "https://carlsonschool.umn.edu/about", "icon": "tour" },
+        { "name": "Contact Admissions", "url": "https://carlsonschool.umn.edu/graduate/mba/full-time/admissions", "icon": "contact" }
+      ]
+    }
+  ]
+}
