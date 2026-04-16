@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState } from 'react'
 import { ChevronLeft, ChevronRight, BookOpen } from 'lucide-react'
 import {
   REGIONS,
@@ -318,7 +318,6 @@ function SectionC({ formData, updatePriority }) {
 function SectionD({ formData, updateField, errors }) {
   const selectedExam = EXAM_TYPE_OPTIONS.find(o => o.value === formData.examType)
   const showScoreInput = formData.examType && formData.examType !== 'none'
-  const scoreInputRef = useRef(null)
 
   const scoreLabel = {
     'gmat-focus':   'GMAT Focus score (205–805)',
@@ -331,18 +330,6 @@ function SectionD({ formData, updateField, errors }) {
     'gmat-classic': 'e.g. 720',
     'gre':          'e.g. 320',
   }[formData.examType] || ''
-
-  const handleScoreChange = (e) => {
-    const raw = e.target.value
-    const filtered = raw.replace(/[^0-9]/g, '')
-    const cursor = e.target.selectionStart - (raw.length - filtered.length)
-    updateField('examScore', filtered)
-    requestAnimationFrame(() => {
-      if (scoreInputRef.current) {
-        scoreInputRef.current.setSelectionRange(cursor, cursor)
-      }
-    })
-  }
 
   return (
     <div>
@@ -373,12 +360,22 @@ function SectionD({ formData, updateField, errors }) {
               Enter your actual score, or your target score if you haven't taken the exam yet.
             </p>
             <input
-              ref={scoreInputRef}
               id="examScore"
               type="text"
               inputMode="numeric"
               value={formData.examScore}
-              onChange={handleScoreChange}
+              onChange={e => updateField('examScore', e.target.value)}
+              onKeyDown={e => {
+                // Block non-digit printable keys; allow Backspace, Delete, arrows, etc.
+                if (e.key.length === 1 && !/\d/.test(e.key) && !e.ctrlKey && !e.metaKey) {
+                  e.preventDefault()
+                }
+              }}
+              onPaste={e => {
+                e.preventDefault()
+                const digits = e.clipboardData.getData('text/plain').replace(/[^0-9]/g, '')
+                if (digits) updateField('examScore', formData.examScore + digits)
+              }}
               placeholder={scorePlaceholder}
               className={`w-full border rounded-lg px-3 py-2.5 text-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-400 transition-colors ${
                 errors.examScore ? 'border-red-400 bg-red-50' : 'border-slate-200'
