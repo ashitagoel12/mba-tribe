@@ -151,7 +151,17 @@
         }
       ],
       "campusType": "campus-town",
-      "stemOpt": false
+      "stemOpt": false,
+      "recruiterAccess": {
+        "investment-banking": "target",
+        "consulting": "target",
+        "technology": "target",
+        "private-equity": "target",
+        "healthcare": "target",
+        "social-impact": "core",
+        "entrepreneurship": "target",
+        "general-management": "target"
+      }
     },
     {
       "id": "stanford-gsb",
@@ -285,7 +295,17 @@
         }
       ],
       "campusType": "campus-town",
-      "stemOpt": false
+      "stemOpt": false,
+      "recruiterAccess": {
+        "investment-banking": "core",
+        "consulting": "target",
+        "technology": "target",
+        "private-equity": "core",
+        "healthcare": "core",
+        "social-impact": "target",
+        "entrepreneurship": "target",
+        "general-management": "target"
+      }
     },
     {
       "id": "wharton-penn",
@@ -396,7 +416,17 @@
         "feeWaiverAvailable": true
       },
       "campusType": "campus-town",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "target",
+        "consulting": "target",
+        "technology": "core",
+        "private-equity": "target",
+        "healthcare": "target",
+        "social-impact": "broad",
+        "entrepreneurship": "core",
+        "general-management": "target"
+      }
     },
     {
       "id": "booth-chicago",
@@ -508,7 +538,17 @@
         "feeWaiverAvailable": true
       },
       "campusType": "urban",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "target",
+        "consulting": "target",
+        "technology": "core",
+        "private-equity": "target",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "core",
+        "general-management": "target"
+      }
     },
     {
       "id": "kellogg-northwestern",
@@ -620,7 +660,17 @@
         "feeWaiverAvailable": true
       },
       "campusType": "campus-town",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "core",
+        "consulting": "target",
+        "technology": "core",
+        "private-equity": "broad",
+        "healthcare": "core",
+        "social-impact": "broad",
+        "entrepreneurship": "core",
+        "general-management": "target"
+      }
     },
     {
       "id": "sloan-mit",
@@ -732,7 +782,17 @@
         "feeWaiverAvailable": true
       },
       "campusType": "campus-town",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "core",
+        "consulting": "target",
+        "technology": "target",
+        "private-equity": "broad",
+        "healthcare": "core",
+        "social-impact": "core",
+        "entrepreneurship": "target",
+        "general-management": "core"
+      }
     },
     {
       "id": "columbia-cbs",
@@ -847,7 +907,17 @@
         "feeWaiverAvailable": true
       },
       "campusType": "urban",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "target",
+        "consulting": "target",
+        "technology": "core",
+        "private-equity": "target",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "core",
+        "general-management": "core"
+      }
     },
     {
       "id": "tuck-dartmouth",
@@ -899,7 +969,17 @@
       ],
       "programUrl": "https://www.tuck.dartmouth.edu/mba",
       "campusType": "campus-town",
-      "stemOpt": false
+      "stemOpt": false,
+      "recruiterAccess": {
+        "investment-banking": "core",
+        "consulting": "target",
+        "technology": "broad",
+        "private-equity": "broad",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "core"
+      }
     },
     {
       "id": "yale-som",
@@ -951,7 +1031,17 @@
       ],
       "programUrl": "https://som.yale.edu/programs/mba",
       "campusType": "campus-town",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "core",
+        "consulting": "target",
+        "technology": "broad",
+        "private-equity": "broad",
+        "healthcare": "core",
+        "social-impact": "target",
+        "entrepreneurship": "broad",
+        "general-management": "core"
+      }
     },
     {
       "id": "haas-berkeley",
@@ -1003,7 +1093,17 @@
       ],
       "programUrl": "https://haas.berkeley.edu/mba/",
       "campusType": "urban",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "core",
+        "consulting": "target",
+        "technology": "target",
+        "private-equity": "broad",
+        "healthcare": "broad",
+        "social-impact": "core",
+        "entrepreneurship": "target",
+        "general-management": "core"
+      }
     },
     {
       "id": "ross-michigan",
@@ -1055,7 +1155,17 @@
       ],
       "programUrl": "https://michiganross.umich.edu/programs/full-time-mba",
       "campusType": "campus-town",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "core",
+        "consulting": "target",
+        "technology": "core",
+        "private-equity": "broad",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "core"
+      }
     },
     {
       "id": "darden-virginia",
@@ -1107,7 +1217,17 @@
       ],
       "programUrl": "https://www.darden.virginia.edu/mba",
       "campusType": "campus-town",
-      "stemOpt": false
+      "stemOpt": false,
+      "recruiterAccess": {
+        "investment-banking": "core",
+        "consulting": "target",
+        "technology": "broad",
+        "private-equity": "broad",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "core"
+      }
     },
     {
       "id": "fuqua-duke",
@@ -1159,7 +1279,17 @@
       ],
       "programUrl": "https://www.fuqua.duke.edu/programs/mba-programs/daytime-mba",
       "campusType": "campus-town",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "broad",
+        "consulting": "target",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "target",
+        "social-impact": "core",
+        "entrepreneurship": "core",
+        "general-management": "core"
+      }
     },
     {
       "id": "cornell-johnson",
@@ -1211,7 +1341,17 @@
       ],
       "programUrl": "https://www.johnson.cornell.edu/programs/full-time-mba/two-year-mba/",
       "campusType": "campus-town",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "core",
+        "consulting": "core",
+        "technology": "broad",
+        "private-equity": "broad",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "nyu-stern",
@@ -1263,7 +1403,17 @@
       ],
       "programUrl": "https://www.stern.nyu.edu/programs-admissions/full-time-mba",
       "campusType": "urban",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "target",
+        "consulting": "core",
+        "technology": "core",
+        "private-equity": "core",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "anderson-ucla",
@@ -1315,7 +1465,17 @@
       ],
       "programUrl": "https://www.anderson.ucla.edu/programs/mba",
       "campusType": "urban",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "broad",
+        "consulting": "core",
+        "technology": "target",
+        "private-equity": "broad",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "core",
+        "general-management": "broad"
+      }
     },
     {
       "id": "marshall-usc",
@@ -1367,7 +1527,17 @@
       ],
       "programUrl": "https://www.marshall.usc.edu/programs/mba-programs/full-time",
       "campusType": "urban",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "broad",
+        "consulting": "core",
+        "technology": "core",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "core",
+        "general-management": "broad"
+      }
     },
     {
       "id": "mccombs-utaustin",
@@ -1419,7 +1589,17 @@
       ],
       "programUrl": "https://www.mccombs.utexas.edu/graduate/mba/full-time-mba/",
       "campusType": "urban",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "broad",
+        "consulting": "core",
+        "technology": "core",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "core",
+        "general-management": "broad"
+      }
     },
     {
       "id": "kenan-flagler-unc",
@@ -1471,7 +1651,17 @@
       ],
       "programUrl": "https://www.kenan-flagler.unc.edu/programs/mba/",
       "campusType": "campus-town",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "broad",
+        "consulting": "core",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "core",
+        "social-impact": "core",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "tepper-cmu",
@@ -1523,7 +1713,17 @@
       ],
       "programUrl": "https://www.cmu.edu/tepper/programs/mba/",
       "campusType": "campus-town",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "broad",
+        "consulting": "core",
+        "technology": "target",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "goizueta-emory",
@@ -1575,7 +1775,17 @@
       ],
       "programUrl": "https://goizueta.emory.edu/full-time-mba/",
       "campusType": "campus-town",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "broad",
+        "consulting": "core",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "core",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "mcdonough-georgetown",
@@ -1627,7 +1837,17 @@
       ],
       "programUrl": "https://msb.georgetown.edu/full-time-mba/",
       "campusType": "urban",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "broad",
+        "consulting": "core",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "core",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "kelley-indiana",
@@ -1679,7 +1899,17 @@
       ],
       "programUrl": "https://kelley.iu.edu/programs/full-time-mba/index.html",
       "campusType": "campus-town",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "broad",
+        "consulting": "core",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "foster-uw",
@@ -1731,7 +1961,17 @@
       ],
       "programUrl": "https://foster.uw.edu/academics/degree-programs/full-time-mba/",
       "campusType": "urban",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "broad",
+        "consulting": "broad",
+        "technology": "target",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "core",
+        "general-management": "broad"
+      }
     },
     {
       "id": "jones-rice",
@@ -1783,7 +2023,17 @@
       ],
       "programUrl": "https://business.rice.edu/mba",
       "campusType": "campus-town",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "broad",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "core",
+        "social-impact": "broad",
+        "entrepreneurship": "core",
+        "general-management": "broad"
+      }
     },
     {
       "id": "simon-rochester",
@@ -1835,7 +2085,17 @@
       ],
       "programUrl": "https://www.simon.rochester.edu/programs/full-time-mba/index.aspx",
       "campusType": "campus-town",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "broad",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "vanderbilt-owen",
@@ -1888,7 +2148,17 @@
       ],
       "programUrl": "https://business.vanderbilt.edu/mba/",
       "campusType": "urban",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "georgia-tech-scheller",
@@ -1941,7 +2211,17 @@
       ],
       "programUrl": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/",
       "campusType": "urban",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "notre-dame-mendoza",
@@ -1994,7 +2274,17 @@
       ],
       "programUrl": "https://mendoza.nd.edu/graduate-programs/the-notre-dame-mba/",
       "campusType": "campus-town",
-      "stemOpt": false
+      "stemOpt": false,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "ohio-state-fisher",
@@ -2047,7 +2337,17 @@
       ],
       "programUrl": "https://fisher.osu.edu/graduate/ftmba",
       "campusType": "campus-town",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "wisconsin",
@@ -2100,7 +2400,17 @@
       ],
       "programUrl": "https://business.wisc.edu/graduate/mba/full-time/",
       "campusType": "campus-town",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "texas-am-mays",
@@ -2153,7 +2463,17 @@
       ],
       "programUrl": "https://mays.tamu.edu/graduate/mba/full-time-mba/",
       "campusType": "campus-town",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "penn-state-smeal",
@@ -2206,7 +2526,17 @@
       ],
       "programUrl": "https://www.smeal.psu.edu/mba",
       "campusType": "campus-town",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "maryland-smith",
@@ -2259,7 +2589,17 @@
       ],
       "programUrl": "https://www.rhsmith.umd.edu/programs/full-time-mba",
       "campusType": "campus-town",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "minnesota-carlson",
@@ -2312,7 +2652,17 @@
       ],
       "programUrl": "https://carlsonschool.umn.edu/degrees/mba",
       "campusType": "urban",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "arizona-state-carey",
@@ -2365,7 +2715,17 @@
       ],
       "programUrl": "https://wpcarey.asu.edu/mba-programs/full-time",
       "campusType": "urban",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "purdue-krannert",
@@ -2418,7 +2778,17 @@
       ],
       "programUrl": "https://krannert.purdue.edu/masters/programs/full-time-mba/",
       "campusType": "campus-town",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "michigan-state-broad",
@@ -2471,7 +2841,17 @@
       ],
       "programUrl": "https://broad.msu.edu/masters/mba/",
       "campusType": "campus-town",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "byu-marriott",
@@ -2524,7 +2904,17 @@
       ],
       "programUrl": "https://marriott.byu.edu/mba/",
       "campusType": "campus-town",
-      "stemOpt": false
+      "stemOpt": false,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "boston-university-questrom",
@@ -2577,7 +2967,17 @@
       ],
       "programUrl": "https://www.bu.edu/questrom/mba/",
       "campusType": "urban",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "uc-davis",
@@ -2630,7 +3030,17 @@
       ],
       "programUrl": "https://gsm.ucdavis.edu/mba",
       "campusType": "campus-town",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "uci-merage",
@@ -2683,7 +3093,17 @@
       ],
       "programUrl": "https://merage.uci.edu/programs/mba/index.html",
       "campusType": "campus-town",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "boston-college-carroll",
@@ -2736,7 +3156,17 @@
       ],
       "programUrl": "https://www.bc.edu/bc-web/schools/carroll-school/graduate/mba.html",
       "campusType": "campus-town",
-      "stemOpt": false
+      "stemOpt": false,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "pittsburgh-katz",
@@ -2789,7 +3219,17 @@
       ],
       "programUrl": "https://www.business.pitt.edu/mba/",
       "campusType": "urban",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "smu-cox",
@@ -2842,7 +3282,17 @@
       ],
       "programUrl": "https://www.smu.edu/cox/mba",
       "campusType": "urban",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "babson-olin",
@@ -2895,7 +3345,17 @@
       ],
       "programUrl": "https://www.babson.edu/academics/graduate-school/mba-programs/two-year-mba/",
       "campusType": "campus-town",
-      "stemOpt": false
+      "stemOpt": false,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "thunderbird",
@@ -2948,7 +3408,17 @@
       ],
       "programUrl": "https://thunderbird.asu.edu/degrees/mba",
       "campusType": "urban",
-      "stemOpt": false
+      "stemOpt": false,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "wake-forest",
@@ -3001,7 +3471,17 @@
       ],
       "programUrl": "https://business.wfu.edu/mba/",
       "campusType": "campus-town",
-      "stemOpt": false
+      "stemOpt": false,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "william-mary-mason",
@@ -3054,7 +3534,17 @@
       ],
       "programUrl": "https://mason.wm.edu/programs/mba/index.php",
       "campusType": "campus-town",
-      "stemOpt": false
+      "stemOpt": false,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "ucsd-rady",
@@ -3107,7 +3597,17 @@
       ],
       "programUrl": "https://rady.ucsd.edu/programs/mba/index.html",
       "campusType": "urban",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "ut-dallas-jindal",
@@ -3160,7 +3660,17 @@
       ],
       "programUrl": "https://jindal.utdallas.edu/mba/",
       "campusType": "urban",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "georgia-terry",
@@ -3213,7 +3723,17 @@
       ],
       "programUrl": "https://www.terry.uga.edu/mba/",
       "campusType": "campus-town",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "washu-olin",
@@ -3266,7 +3786,17 @@
       ],
       "programUrl": "https://olin.wustl.edu/mba/",
       "campusType": "urban",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "iowa-state-ivy",
@@ -3313,7 +3843,17 @@
       ],
       "programUrl": "https://www.ivybusiness.iastate.edu/academics/graduate-programs/ivy-mba/full-time-mba/",
       "campusType": "campus-town",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "miami-herbert",
@@ -3360,7 +3900,17 @@
       ],
       "programUrl": "https://www.herbert.miami.edu/graduate/find-and-compare-programs/full-time-mba/",
       "campusType": "urban",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "utah-eccles",
@@ -3407,7 +3957,17 @@
       ],
       "programUrl": "https://eccles.utah.edu/programs/mba/full-time-mba/",
       "campusType": "urban",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "tennessee-haslam",
@@ -3454,7 +4014,17 @@
       ],
       "programUrl": "https://haslam.utk.edu/full-time-mba/",
       "campusType": "campus-town",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "american-kogod",
@@ -3501,7 +4071,17 @@
       ],
       "programUrl": "https://kogod.american.edu/programs-admissions/mba",
       "campusType": "urban",
-      "stemOpt": false
+      "stemOpt": false,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "arkansas-walton",
@@ -3554,7 +4134,17 @@
       ],
       "programUrl": "https://walton.uark.edu/graduate-programs/mba-masters-degree-program/",
       "campusType": "campus-town",
-      "stemOpt": false
+      "stemOpt": false,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "kansas",
@@ -3607,7 +4197,17 @@
       ],
       "programUrl": "https://business.ku.edu/mba",
       "campusType": "campus-town",
-      "stemOpt": false
+      "stemOpt": false,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "chapman-argyros",
@@ -3654,7 +4254,17 @@
       ],
       "programUrl": "https://www.chapman.edu/business/academic-programs/graduate/prospective-students/programs/full-time-mba.aspx",
       "campusType": "campus-town",
-      "stemOpt": false
+      "stemOpt": false,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "tulane-freeman",
@@ -3701,7 +4311,17 @@
       ],
       "programUrl": "https://freeman.tulane.edu/graduate/full-time-mba",
       "campusType": "urban",
-      "stemOpt": false
+      "stemOpt": false,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "alabama-manderson",
@@ -3748,7 +4368,17 @@
       ],
       "programUrl": "https://manderson.culverhouse.ua.edu/business-administration-mba/",
       "campusType": "campus-town",
-      "stemOpt": false
+      "stemOpt": false,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "kentucky-gatton",
@@ -3795,7 +4425,17 @@
       ],
       "programUrl": "https://gatton.uky.edu/prc/full-time-mba",
       "campusType": "campus-town",
-      "stemOpt": false
+      "stemOpt": false,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "south-carolina-moore",
@@ -3842,7 +4482,17 @@
       ],
       "programUrl": "https://www.sc.edu/study/colleges_schools/moore/graduate/mba/",
       "campusType": "campus-town",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "fordham-gabelli",
@@ -3889,7 +4539,17 @@
       ],
       "programUrl": "https://www.fordham.edu/gabelli-school-of-business/academic-programs-and-admissions/graduate-programs/academic-programs/mba-programs/",
       "campusType": "urban",
-      "stemOpt": false
+      "stemOpt": false,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "oklahoma-state-spears",
@@ -3936,7 +4596,17 @@
       ],
       "programUrl": "https://spears.okstate.edu/graduate/mba/",
       "campusType": "campus-town",
-      "stemOpt": false
+      "stemOpt": false,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "tcu-neeley",
@@ -3989,7 +4659,17 @@
       ],
       "programUrl": "https://www.neeley.tcu.edu/Graduate-Programs/MBA/Full-time-MBA",
       "campusType": "urban",
-      "stemOpt": false
+      "stemOpt": false,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "rutgers",
@@ -4042,7 +4722,17 @@
       ],
       "programUrl": "https://www.business.rutgers.edu/full-time-mba",
       "campusType": "urban",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "syracuse-whitman",
@@ -4095,7 +4785,17 @@
       ],
       "programUrl": "https://whitman.syracuse.edu/graduate-programs/full-time-mba-program/",
       "campusType": "campus-town",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "northeastern-damore-mckim",
@@ -4142,7 +4842,17 @@
       ],
       "programUrl": "https://damore-mckim.northeastern.edu/programs/full-time-mba/",
       "campusType": "urban",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "baylor-hankamer",
@@ -4189,7 +4899,17 @@
       ],
       "programUrl": "https://www.baylor.edu/business/mba/",
       "campusType": "campus-town",
-      "stemOpt": false
+      "stemOpt": false,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "pepperdine-graziadio",
@@ -4236,7 +4956,17 @@
       ],
       "programUrl": "https://bschool.pepperdine.edu/programs/mba/",
       "campusType": "urban",
-      "stemOpt": false
+      "stemOpt": false,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "george-washington",
@@ -4283,7 +5013,17 @@
       ],
       "programUrl": "https://business.gwu.edu/prospective-students/mba-admissions",
       "campusType": "urban",
-      "stemOpt": false
+      "stemOpt": false,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "drexel-lebow",
@@ -4336,7 +5076,17 @@
       ],
       "programUrl": "https://drexel.edu/lebow/degrees/mba/",
       "campusType": "urban",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "villanova",
@@ -4383,7 +5133,17 @@
       ],
       "programUrl": "https://www.villanova.edu/business/graduate/",
       "campusType": "campus-town",
-      "stemOpt": false
+      "stemOpt": false,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "case-western-weatherhead",
@@ -4430,7 +5190,17 @@
       ],
       "programUrl": "https://case.edu/weatherhead/degrees/master-business-administration-mba",
       "campusType": "urban",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "uconn",
@@ -4477,7 +5247,17 @@
       ],
       "programUrl": "https://mba.business.uconn.edu/",
       "campusType": "campus-town",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "temple-fox",
@@ -4530,7 +5310,17 @@
       ],
       "programUrl": "https://www.fox.temple.edu/graduate-programs/mba/",
       "campusType": "urban",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "lehigh",
@@ -4577,7 +5367,17 @@
       ],
       "programUrl": "https://business.lehigh.edu/mba",
       "campusType": "campus-town",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "colorado-leeds",
@@ -4624,7 +5424,17 @@
       ],
       "programUrl": "https://www.colorado.edu/business/mba",
       "campusType": "campus-town",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "arizona-eller",
@@ -4671,7 +5481,17 @@
       ],
       "programUrl": "https://eller.arizona.edu/programs/master-business-administration",
       "campusType": "campus-town",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "baruch-zicklin",
@@ -4724,7 +5544,17 @@
       ],
       "programUrl": "https://zicklin.baruch.cuny.edu/programs/graduate/mba/",
       "campusType": "urban",
-      "stemOpt": false
+      "stemOpt": false,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "nc-at-deese",
@@ -4777,7 +5607,17 @@
       ],
       "programUrl": "https://www.ncat.edu/cob/departments/mba/index.php",
       "campusType": "campus-town",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "stevens-business",
@@ -4830,7 +5670,17 @@
       ],
       "programUrl": "https://www.stevens.edu/school-business/graduate-programs/master-business-administration",
       "campusType": "urban",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "auburn-harbert",
@@ -4883,7 +5733,17 @@
       ],
       "programUrl": "https://harbert.auburn.edu/programs/mba/",
       "campusType": "campus-town",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "lsu-ourso",
@@ -4936,7 +5796,17 @@
       ],
       "programUrl": "https://business.lsu.edu/mba/",
       "campusType": "campus-town",
-      "stemOpt": false
+      "stemOpt": false,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "binghamton-som",
@@ -4989,7 +5859,17 @@
       ],
       "programUrl": "https://www.binghamton.edu/som/mba/",
       "campusType": "campus-town",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "charleston-mba",
@@ -5042,7 +5922,17 @@
       ],
       "programUrl": "https://business.cofc.edu/graduate-programs/mba.php",
       "campusType": "urban",
-      "stemOpt": false
+      "stemOpt": false,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "oklahoma-price",
@@ -5095,7 +5985,17 @@
       ],
       "programUrl": "https://price.ou.edu/mba/",
       "campusType": "campus-town",
-      "stemOpt": false
+      "stemOpt": false,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "oregon-lundquist",
@@ -5148,7 +6048,17 @@
       ],
       "programUrl": "https://business.uoregon.edu/mba",
       "campusType": "campus-town",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "mississippi",
@@ -5201,7 +6111,17 @@
       ],
       "programUrl": "https://business.olemiss.edu/mba/",
       "campusType": "campus-town",
-      "stemOpt": false
+      "stemOpt": false,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "cincinnati-lindner",
@@ -5254,7 +6174,17 @@
       ],
       "programUrl": "https://business.uc.edu/graduate/mba.html",
       "campusType": "urban",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "buffalo-suny",
@@ -5307,7 +6237,17 @@
       ],
       "programUrl": "https://management.buffalo.edu/programs/mba.html",
       "campusType": "urban",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "canisius-wehle",
@@ -5360,7 +6300,17 @@
       ],
       "programUrl": "https://www.canisius.edu/academics/schools-colleges/richard-j-wehle-school-business/graduate-programs/mba",
       "campusType": "urban",
-      "stemOpt": false
+      "stemOpt": false,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "loyola-maryland-sellinger",
@@ -5413,7 +6363,17 @@
       ],
       "programUrl": "https://sellinger.loyola.edu/graduate-programs/mba/",
       "campusType": "urban",
-      "stemOpt": false
+      "stemOpt": false,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "detroit-mercy",
@@ -5466,7 +6426,17 @@
       ],
       "programUrl": "https://business.udmercy.edu/mba/",
       "campusType": "urban",
-      "stemOpt": false
+      "stemOpt": false,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "bentley-mccallum",
@@ -5519,7 +6489,17 @@
       ],
       "programUrl": "https://www.bentley.edu/graduate/mba",
       "campusType": "campus-town",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "clemson",
@@ -5572,7 +6552,17 @@
       ],
       "programUrl": "https://business.clemson.edu/mba/",
       "campusType": "campus-town",
-      "stemOpt": true
+      "stemOpt": true,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     },
     {
       "id": "claremont-drucker",
@@ -5625,7 +6615,17 @@
       ],
       "programUrl": "https://cgu.edu/school/drucker-school-of-management/programs/mba/",
       "campusType": "campus-town",
-      "stemOpt": false
+      "stemOpt": false,
+      "recruiterAccess": {
+        "investment-banking": "limited",
+        "consulting": "broad",
+        "technology": "broad",
+        "private-equity": "limited",
+        "healthcare": "broad",
+        "social-impact": "broad",
+        "entrepreneurship": "broad",
+        "general-management": "broad"
+      }
     }
   ]
 }

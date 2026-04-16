@@ -63,7 +63,8 @@
       "Bash(node -e \"const d = require\\('./data/mba_schools_data.json'\\); const s = d.schools[0]; console.log\\(JSON.stringify\\(Object.keys\\(s\\), null, 2\\)\\); console.log\\('First school id:', s.id\\); console.log\\('costs keys:', Object.keys\\(s.costs\\)\\); console.log\\('classProfile keys:', Object.keys\\(s.classProfile\\)\\); console.log\\('Total schools:', d.schools.length\\); d.schools.forEach\\(s => console.log\\(s.id\\)\\);\")",
       "Bash(mv \"C:\\\\Users\\\\Ashita Goel\\\\Desktop\\\\There Is No Try\\\\mba-tribe\\\\scripts\\\\addSchoolFields.js\" \"C:\\\\Users\\\\Ashita Goel\\\\Desktop\\\\There Is No Try\\\\mba-tribe\\\\scripts\\\\addSchoolFields.cjs\")",
       "Bash(node scripts/addSchoolFields.cjs)",
-      "Bash(node -e \"const d = JSON.parse\\(require\\('fs'\\).readFileSync\\('./data/mba_schools_data.json','utf8'\\)\\); const spot = ['harvard-hbs','booth-chicago','columbia-cbs','nyu-stern','tuck-dartmouth']; spot.forEach\\(id => { const s = d.schools.find\\(s=>s.id===id\\); console.log\\(id, s.campusType, s.stemOpt\\); }\\);\")"
+      "Bash(node -e \"const d = JSON.parse\\(require\\('fs'\\).readFileSync\\('./data/mba_schools_data.json','utf8'\\)\\); const spot = ['harvard-hbs','booth-chicago','columbia-cbs','nyu-stern','tuck-dartmouth']; spot.forEach\\(id => { const s = d.schools.find\\(s=>s.id===id\\); console.log\\(id, s.campusType, s.stemOpt\\); }\\);\")",
+      "Bash(node scripts/addRecruiterAccess.cjs)"
     ]
   }
 }

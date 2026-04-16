@@ -140,7 +140,25 @@ function scoreCareer(school, formData) {
   else if (kwMatch(top3[2], industryKW)) base = 11
   else base = 4 // goal industry not in top 3
 
-  // Academic strength bonus (capped so max stays 25)
+  // Apply recruiterAccess multiplier — reflects whether structured pipelines exist
+  const goalToAccessKey = {
+    'consulting':          'consulting',
+    'finance':             'investment-banking',
+    'tech':                'technology',
+    'entrepreneurship':    'entrepreneurship',
+    'general-management':  'general-management',
+    'social-impact':       'social-impact',
+    'healthcare':          'healthcare',
+  }
+  const accessKey = goalToAccessKey[effectiveGoal]
+  if (accessKey) {
+    const accessTier = school.recruiterAccess?.[accessKey]
+    const multipliers = { target: 1.0, core: 0.75, broad: 0.45, limited: 0.20 }
+    const multiplier = multipliers[accessTier] ?? 0.60
+    base = Math.round(base * multiplier)
+  }
+
+  // Academic strength bonus applied after multiplier (capped so max stays 25)
   const hasStrength = kwMatchAny(school.academicStrengths, strengthKW)
   return Math.min(base + (hasStrength ? 5 : 0), 25)
 }
