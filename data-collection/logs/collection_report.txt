@@ -1,0 +1,110 @@
+MBA Schools Data Collection Report
+Generated  : 2026-04-09T20:53:03Z
+Schools    : 50
+================================================================================
+
+#   School                                        Tier     Fresh    GMAT   Size    Salary  LiveDelta
+--------------------------------------------------------------------------------
+1   Harvard Business School                       M7       fallback  730    938  $ 175000          0
+2   Stanford Graduate School of Business          M7       fallback  738    436  $ 175000          0
+3   Wharton School                                M7       partial   733    866  $ 175000          2
+4   Booth School of Business                      M7       manual_review_needed  730    580  $ 175000          0
+5   Kellogg School of Management                  M7       fallback  727    525  $ 175000          0
+6   MIT Sloan School of Management                M7       fallback  730    406  $ 175000          0
+7   Columbia Business School                      M7       manual_review_needed  729    754  $ 175000          0
+8   Tuck School of Business                       T8-15    manual_review_needed  722    285  $ 160000          0
+9   Yale School of Management                     T8-15    partial   760    350  $ 155000          2
+10  Haas School of Business                       T8-15    manual_review_needed  729    252  $ 162000          0
+11  Ross School of Business                       T8-15    manual_review_needed  716    413  $ 155000          0
+12  Darden School of Business                     T8-15    partial   713    325  $ 162578          1
+13  Fuqua School of Business                      T8-15    manual_review_needed  710    440  $ 150000          0
+14  Johnson Graduate School of Management         T8-15    manual_review_needed  700    272  $ 148000          0
+15  Stern School of Business                      T8-15    fallback  721    330  $ 155000          0
+16  Anderson School of Management                 T16-30   manual_review_needed  708    360  $ 148000          0
+17  McCombs School of Business                    T16-30   partial   655    270  $ 135000          3
+18  Kenan-Flagler Business School                 T16-30   partial   605    153  $ 135000          3
+19  Marshall School of Business                   T16-30   partial   706    210  $ 138000          1
+20  Tepper School of Business                     T16-30   manual_review_needed  692    200  $ 140000          0
+21  Goizueta Business School                      T16-30   manual_review_needed  682    180  $ 130000          0
+22  McDonough School of Business                  T16-30   manual_review_needed  694    240  $ 132000          0
+23  Kelley School of Business                     T16-30   manual_review_needed  672    190  $ 120000          0
+24  Foster School of Business                     T16-30   manual_review_needed  689    110  $ 135000          0
+25  Jones Graduate School of Business             T16-30   manual_review_needed  694    120  $ 130000          0
+26  Owen Graduate School of Management            T16-30   fallback  690    180  $ 125000          0
+27  Scheller College of Business                  T16-30   manual_review_needed  673    130  $ 128000          0
+28  Mendoza College of Business                   T16-30   fallback  679    150  $ 122000          0
+29  Fisher College of Business                    T16-30   manual_review_needed  663    100  $ 115000          0
+30  Wisconsin School of Business                  T16-30   manual_review_needed  647     80  $ 112000          0
+31  Mays Business School                          T31-50   manual_review_needed  635    100  $ 108000          0
+32  Smeal College of Business                     T31-50   manual_review_needed  637    100  $ 110000          0
+33  Smith School of Business                      T31-50   manual_review_needed  650    150  $ 115000          0
+34  Carlson School of Management                  T31-50   manual_review_needed  660    110  $ 112000          0
+35  W.P. Carey School of Business                 T31-50   manual_review_needed  645    100  $ 108000          0
+36  Krannert School of Management                 T31-50   manual_review_needed  628    100  $ 105000          0
+37  Broad College of Business                     T31-50   manual_review_needed  610     80  $ 100000          0
+38  Marriott School of Business                   T31-50   fallback  674    150  $ 120000          0
+39  Questrom School of Business                   T31-50   manual_review_needed  660    180  $ 112000          0
+40  Graduate School of Management                 T31-50   manual_review_needed  638     90  $ 115000          0
+41  Merage School of Business                     T31-50   manual_review_needed  633     80  $ 112000          0
+42  Carroll School of Management                  T31-50   manual_review_needed  643    120  $ 110000          0
+43  Katz Graduate School of Business              T31-50   manual_review_needed  598     80  $ 100000          0
+44  Simon Business School                         T31-50   partial   625     92  $ 108000          3
+45  Cox School of Business                        T31-50   manual_review_needed  662    120  $ 115000          0
+46  F.W. Olin Graduate School of Business         T31-50   manual_review_needed  640    150  $ 112000          0
+47  Thunderbird School of Global Management       T31-50   manual_review_needed  600     80  $ 100000          0
+48  School of Business                            T31-50   manual_review_needed  641     75  $ 108000          0
+49  Raymond A. Mason School of Business           T31-50   manual_review_needed  605     55  $ 100000          0
+50  Rady School of Management                     T31-50   manual_review_needed  630     60  $ 115000          0
+--------------------------------------------------------------------------------
+Freshness summary:  live=0  partial=7  fallback=8  manual_review_needed=35
+
+Freshness definitions:
+  live    = >=50% of key numeric fields confirmed/updated by live scraping
+  partial = 1-49% of key fields live-scraped
+  fallback= pages fetched but no numeric fields extracted; seed data used
+  manual_review_needed = could not access any pages
+
+Schools needing manual review:
+  - Harvard Business School (fallback)
+  - Stanford Graduate School of Business (fallback)
+  - Booth School of Business (manual_review_needed)
+  - Kellogg School of Management (fallback)
+  - MIT Sloan School of Management (fallback)
+  - Columbia Business School (manual_review_needed)
+  - Tuck School of Business (manual_review_needed)
+  - Haas School of Business (manual_review_needed)
+  - Ross School of Business (manual_review_needed)
+  - Fuqua School of Business (manual_review_needed)
+  - Johnson Graduate School of Management (manual_review_needed)
+  - Stern School of Business (fallback)
+  - Anderson School of Management (manual_review_needed)
+  - Tepper School of Business (manual_review_needed)
+  - Goizueta Business School (manual_review_needed)
+  - McDonough School of Business (manual_review_needed)
+  - Kelley School of Business (manual_review_needed)
+  - Foster School of Business (manual_review_needed)
+  - Jones Graduate School of Business (manual_review_needed)
+  - Owen Graduate School of Management (fallback)
+  - Scheller College of Business (manual_review_needed)
+  - Mendoza College of Business (fallback)
+  - Fisher College of Business (manual_review_needed)
+  - Wisconsin School of Business (manual_review_needed)
+  - Mays Business School (manual_review_needed)
+  - Smeal College of Business (manual_review_needed)
+  - Smith School of Business (manual_review_needed)
+  - Carlson School of Management (manual_review_needed)
+  - W.P. Carey School of Business (manual_review_needed)
+  - Krannert School of Management (manual_review_needed)
+  - Broad College of Business (manual_review_needed)
+  - Marriott School of Business (fallback)
+  - Questrom School of Business (manual_review_needed)
+  - Graduate School of Management (manual_review_needed)
+  - Merage School of Business (manual_review_needed)
+  - Carroll School of Management (manual_review_needed)
+  - Katz Graduate School of Business (manual_review_needed)
+  - Cox School of Business (manual_review_needed)
+  - F.W. Olin Graduate School of Business (manual_review_needed)
+  - Thunderbird School of Global Management (manual_review_needed)
+  - School of Business (manual_review_needed)
+  - Raymond A. Mason School of Business (manual_review_needed)
+  - Rady School of Management (manual_review_needed)

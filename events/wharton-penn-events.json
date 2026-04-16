@@ -1,0 +1,61 @@
+{
+  "schoolId": "wharton-penn",
+  "schoolName": "Wharton School",
+  "eventsPageUrl": "https://mba.wharton.upenn.edu/admissions-events/",
+  "scrapingStatus": "success",
+  "eventsFound": 3,
+  "scrapedAt": "2026-04-11T19:51:33.518493+00:00",
+  "events": [
+    {
+      "id": "wharton-penn-undated-student-led-wharton-mba-overview-webinar",
+      "title": "Student-led Wharton MBA Overview Webinar",
+      "date": null,
+      "time": "04:00 PM",
+      "location": {
+        "type": "virtual",
+        "venue": null,
+        "city": null,
+        "state": null
+      },
+      "eventType": "webinar",
+      "description": "April 15 | 04:00 PM  - 05:00 PM Virtual",
+      "registrationUrl": "https://mba.wharton.upenn.edu/events-hq/a1WVr000009W1ztMAC/",
+      "registrationDeadline": null,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+    },
+    {
+      "id": "wharton-penn-undated-clear-admit-mba-fair-2026",
+      "title": "Clear Admit MBA Fair 2026",
+      "date": null,
+      "time": "05:00 PM",
+      "location": {
+        "type": "in-person",
+        "venue": "George Tower | Scheller Tower Atlanta",
+        "city": null,
+        "state": null
+      },
+      "eventType": "info-session",
+      "description": "May 11 | 05:00 PM  - 08:30 PM George Tower | Scheller Tower Atlanta",
+      "registrationUrl": "https://mba.wharton.upenn.edu/events-hq/a1WVr00000GDFG9MAP/",
+      "registrationDeadline": null,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+    },
+    {
+      "id": "wharton-penn-undated-clear-admit-mba-application-overview",
+      "title": "Clear Admit MBA Application Overview",
+      "date": null,
+      "time": "12:00 PM",
+      "location": {
+        "type": "virtual",
+        "venue": null,
+        "city": null,
+        "state": null
+      },
+      "eventType": "info-session",
+      "description": "May 26 | 12:00 PM  - 01:45 PM Virtual",
+      "registrationUrl": "https://mba.wharton.upenn.edu/events-hq/a1WVr00000FzxSLMAZ/",
+      "registrationDeadline": null,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+    }
+  ]
+}

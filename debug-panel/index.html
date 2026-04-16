@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MBA Scraper — Debug Panel</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Courier New', monospace;
+      background: #0d1117;
+      color: #c9d1d9;
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    header {
+      background: #161b22;
+      border-bottom: 1px solid #30363d;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    header h1 { font-size: 15px; color: #e6edf3; letter-spacing: .5px; }
+    header .badge {
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 20px;
+      background: #21262d;
+      border: 1px solid #30363d;
+      color: #8b949e;
+    }
+    .run-ts { margin-left: auto; font-size: 11px; color: #6e7681; }
+
+    /* ── Stat bar ── */
+    .stats {
+      display: flex;
+      gap: 0;
+      border-bottom: 1px solid #30363d;
+      background: #161b22;
+    }
+    .stat {
+      flex: 1;
+      padding: 14px 20px;
+      border-right: 1px solid #30363d;
+      cursor: pointer;
+      transition: background .15s;
+      position: relative;
+    }
+    .stat:last-child { border-right: none; }
+    .stat:hover { background: #1c2128; }
+    .stat.active::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 2px;
+    }
+    .stat.active[data-filter="all"]::after    { background: #58a6ff; }
+    .stat.active[data-filter="success"]::after { background: #3fb950; }
+    .stat.active[data-filter="failed"]::after  { background: #f85149; }
+    .stat.active[data-filter="manual_review_needed"]::after { background: #d29922; }
+
+    .stat-num {
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .stat-label { font-size: 11px; color: #8b949e; text-transform: uppercase; letter-spacing: .8px; }
+    .stat[data-filter="all"] .stat-num    { color: #58a6ff; }
+    .stat[data-filter="success"] .stat-num { color: #3fb950; }
+    .stat[data-filter="failed"] .stat-num  { color: #f85149; }
+    .stat[data-filter="manual_review_needed"] .stat-num { color: #d29922; }
+
+    /* ── Layout ── */
+    .layout {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      height: calc(100vh - 106px);
+    }
+
+    /* ── School list ── */
+    .school-list {
+      border-right: 1px solid #30363d;
+      overflow-y: auto;
+      background: #0d1117;
+    }
+    .school-list::-webkit-scrollbar { width: 4px; }
+    .school-list::-webkit-scrollbar-thumb { background: #30363d; border-radius: 2px; }
+
+    .search-wrap {
+      position: sticky;
+      top: 0;
+      background: #0d1117;
+      padding: 10px 12px;
+      border-bottom: 1px solid #21262d;
+      z-index: 10;
+    }
+    .search-wrap input {
+      width: 100%;
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      color: #c9d1d9;
+      font-family: inherit;
+      font-size: 12px;
+      padding: 6px 10px;
+      outline: none;
+    }
+    .search-wrap input:focus { border-color: #58a6ff; }
+    .search-wrap input::placeholder { color: #6e7681; }
+
+    .school-item {
+      padding: 10px 14px;
+      border-bottom: 1px solid #161b22;
+      cursor: pointer;
+      transition: background .1s;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .school-item:hover { background: #161b22; }
+    .school-item.selected { background: #1c2128; border-left: 3px solid #58a6ff; }
+
+    .dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      margin-top: 4px;
+      flex-shrink: 0;
+    }
+    .dot-success { background: #3fb950; }
+    .dot-failed  { background: #f85149; }
+    .dot-manual  { background: #d29922; }
+
+    .school-item-name { font-size: 12px; color: #e6edf3; line-height: 1.4; }
+    .school-item-sub  { font-size: 10px; color: #6e7681; margin-top: 2px; }
+
+    /* ── Detail pane ── */
+    .detail {
+      overflow-y: auto;
+      padding: 24px;
+      background: #0d1117;
+    }
+    .detail::-webkit-scrollbar { width: 4px; }
+    .detail::-webkit-scrollbar-thumb { background: #30363d; border-radius: 2px; }
+
+    .detail-empty {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      gap: 8px;
+      color: #6e7681;
+      font-size: 13px;
+    }
+    .detail-empty .icon { font-size: 32px; opacity: .4; }
+
+    .detail-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 24px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #21262d;
+    }
+    .detail-dot { width: 12px; height: 12px; border-radius: 50%; margin-top: 5px; flex-shrink: 0; }
+    .detail-name { font-size: 18px; color: #e6edf3; font-weight: 700; line-height: 1.3; }
+    .detail-id   { font-size: 11px; color: #6e7681; margin-top: 4px; font-family: monospace; }
+
+    .status-chip {
+      margin-left: auto;
+      font-size: 11px;
+      padding: 3px 10px;
+      border-radius: 20px;
+      white-space: nowrap;
+      font-weight: 600;
+      letter-spacing: .3px;
+    }
+    .chip-success { background: #0d4429; color: #3fb950; border: 1px solid #1f6233; }
+    .chip-failed  { background: #3d0c0c; color: #f85149; border: 1px solid #6e1313; }
+    .chip-manual  { background: #3d2a00; color: #d29922; border: 1px solid #6e4d00; }
+
+    /* ── Sections ── */
+    .section { margin-bottom: 22px; }
+    .section-title {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #6e7681;
+      margin-bottom: 10px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #21262d;
+    }
+
+    /* Error box */
+    .error-box {
+      background: #160b0b;
+      border: 1px solid #6e1313;
+      border-radius: 6px;
+      padding: 12px 14px;
+      font-size: 12px;
+      color: #f85149;
+      line-height: 1.5;
+      word-break: break-all;
+    }
+
+    /* URL list */
+    .url-list { display: flex; flex-direction: column; gap: 6px; }
+    .url-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: #161b22;
+      border: 1px solid #21262d;
+      border-radius: 6px;
+      padding: 8px 12px;
+      font-size: 11px;
+    }
+    .url-item a { color: #58a6ff; text-decoration: none; word-break: break-all; }
+    .url-item a:hover { text-decoration: underline; }
+    .url-icon { font-size: 13px; flex-shrink: 0; }
+
+    /* Data grid */
+    .data-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 10px;
+    }
+    .data-card {
+      background: #161b22;
+      border: 1px solid #21262d;
+      border-radius: 6px;
+      padding: 10px 14px;
+    }
+    .data-card-label { font-size: 10px; color: #6e7681; text-transform: uppercase; letter-spacing: .6px; margin-bottom: 4px; }
+    .data-card-val   { font-size: 15px; color: #e6edf3; font-weight: 700; }
+    .data-card-val.null-val { color: #6e7681; font-size: 12px; font-weight: 400; font-style: italic; }
+
+    /* Raw JSON */
+    .raw-toggle {
+      font-size: 11px;
+      color: #58a6ff;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      margin-bottom: 8px;
+    }
+    .raw-toggle:hover { text-decoration: underline; }
+    pre.raw-json {
+      background: #161b22;
+      border: 1px solid #21262d;
+      border-radius: 6px;
+      padding: 14px;
+      font-size: 11px;
+      line-height: 1.6;
+      overflow-x: auto;
+      color: #c9d1d9;
+      display: none;
+    }
+    pre.raw-json.visible { display: block; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>&#9679; MBA Scraper — Debug Panel</h1>
+  <span class="badge">mba_scraper.py</span>
+  <span class="run-ts" id="runTs"></span>
+</header>
+
+<div class="stats" id="stats"></div>
+
+<div class="layout">
+  <aside class="school-list">
+    <div class="search-wrap">
+      <input type="text" id="search" placeholder="Search schools…" />
+    </div>
+    <div id="list"></div>
+  </aside>
+  <main class="detail" id="detail">
+    <div class="detail-empty">
+      <div class="icon">&#128269;</div>
+      <div>Select a school to inspect</div>
+    </div>
+  </main>
+</div>
+
+<script>
+const DATA = {"successful":[{"id":"harvard-hbs","name":"Harvard Business School","status":"success","data":{"location":{"city":null,"state":null},"class_profile":{},"academics":{"gmat_average":10},"extraction_method":"automated_scraping"},"urls_attempted":["https://www.hbs.edu/mba/admissions/class-profile/","https://www.hbs.edu/mba/career-outcomes/"]},{"id":"chicago-booth","name":"University of Chicago Booth School of Business","status":"success","data":{"location":{"city":null,"state":null},"class_profile":{"class_size":714,"international_percentage":37},"academics":{"gmat_average":729,"gpa_average":3.6},"extraction_method":"automated_scraping","employment":{}},"urls_attempted":["https://www.chicagobooth.edu/mba/full-time/admissions/class-profile","https://www.chicagobooth.edu/mba/full-time/career-impact/employment-report"]},{"id":"mit-sloan","name":"MIT Sloan School of Management","status":"success","data":{"location":{"city":null,"state":null},"class_profile":{},"academics":{},"extraction_method":"automated_scraping"},"urls_attempted":["https://mitsloan.mit.edu/mba/meet-class/class-profile","https://mitsloan.mit.edu/mba/careers/employment-data"]},{"id":"tuck-dartmouth","name":"Tuck School of Business - Dartmouth","status":"success","data":{"location":{"city":null,"state":null},"class_profile":{},"academics":{"gpa_average":3.6},"extraction_method":"automated_scraping"},"urls_attempted":["https://tuck.dartmouth.edu/admissions/class-profile","https://tuck.dartmouth.edu/careers/employment-reports"]},{"id":"yale-som","name":"Yale School of Management","status":"success","data":{"location":{"city":null,"state":null},"class_profile":{},"academics":{},"extraction_method":"automated_scraping"},"urls_attempted":["https://som.yale.edu/programs/mba/admissions/class-profile","https://som.yale.edu/programs/mba/career-development/employment-data"]},{"id":"darden-virginia","name":"Darden School of Business - University of Virginia","status":"success","data":{"location":{"city":null,"state":null},"class_profile":{},"academics":{},"extraction_method":"automated_scraping"},"urls_attempted":["https://www.darden.virginia.edu/mba/admissions/class-profile","https://www.darden.virginia.edu/mba/career-development/employment-report"]},{"id":"anderson-ucla","name":"UCLA Anderson School of Management","status":"success","data":{"location":{"city":null,"state":null},"class_profile":{},"academics":{"gmat_average":10,"gpa_average":3.1},"extraction_method":"automated_scraping"},"urls_attempted":["https://www.anderson.ucla.edu/degrees/full-time-mba/admissions/class-profile","https://www.anderson.ucla.edu/degrees/full-time-mba/career-services/employment-reports"]},{"id":"marshall-usc","name":"Marshall School of Business - USC","status":"success","data":{"location":{"city":null,"state":null},"class_profile":{},"academics":{},"extraction_method":"automated_scraping","employment":{}},"urls_attempted":["https://www.marshall.usc.edu/programs/mba-programs/full-time-mba/admissions/class-profile","https://www.marshall.usc.edu/programs/mba-programs/full-time-mba/career-services/employment-reports"]},{"id":"kelley-indiana","name":"Kelley School of Business - Indiana University","status":"success","data":{"location":{"city":null,"state":null},"class_profile":{},"academics":{"gpa_average":3.5},"extraction_method":"automated_scraping"},"urls_attempted":["https://kelley.iu.edu/programs/full-time-mba/admissions/class-profile.html","https://kelley.iu.edu/programs/full-time-mba/career-services/employment-report.html"]},{"id":"simon-rochester","name":"Simon Business School - University of Rochester","status":"success","data":{"location":{"city":null,"state":null},"class_profile":{},"academics":{"gmat_average":10},"extraction_method":"automated_scraping"},"urls_attempted":["https://www.simon.rochester.edu/programs/full-time-mba/admissions/class-profile","https://www.simon.rochester.edu/programs/full-time-mba/career-management/employment-report"]}],"failed":[{"id":"stern-nyu","name":"NYU Stern School of Business","status":"failed","data":{},"urls_attempted":["https://www.stern.nyu.edu/programs-admissions/full-time-mba/admissions/class-profile"],"error":"HTTP 404"},{"id":"goizueta-emory","name":"Goizueta Business School - Emory University","status":"failed","data":{},"urls_attempted":["https://goizueta.emory.edu/programs/mba/admissions/class_profile"],"error":"HTTP 404"},{"id":"jones-rice","name":"Jones Graduate School of Business - Rice University","status":"failed","data":{},"urls_attempted":["https://business.rice.edu/mba/admissions/class-profile"],"error":"HTTP 404"},{"id":"scheller-gatech","name":"Scheller College of Business - Georgia Tech","status":"failed","data":{},"urls_attempted":["https://scheller.gatech.edu/degree-programs/full-time-mba/admissions/class-profile.html"],"error":"HTTP 404"},{"id":"fisher-ohio-state","name":"Fisher College of Business - Ohio State University","status":"failed","data":{},"urls_attempted":["https://fisher.osu.edu/graduate/full-time-mba/admissions/class-profile"],"error":"HTTP 404"},{"id":"smeal-penn-state","name":"Smeal College of Business - Penn State University","status":"failed","data":{},"urls_attempted":["https://www.smeal.psu.edu/mba/admissions/class-profile"],"error":"HTTPSConnectionPool(host='oneyearmba.smeal.psu.edu', port=443): Max retries exceeded with url: /details/application-process (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)']))"},{"id":"smith-maryland","name":"Robert H. Smith School of Business - University of Maryland","status":"failed","data":{},"urls_attempted":["https://www.rhsmith.umd.edu/programs/full-time-mba/admissions/class-profile"],"error":"HTTP 404"},{"id":"carey-asu","name":"W. P. Carey School of Business - Arizona State University","status":"failed","data":{},"urls_attempted":["https://wpcarey.asu.edu/mba-programs/full-time-mba/admissions/class-profile"],"error":"HTTP 404"},{"id":"krannert-purdue","name":"Krannert School of Management - Purdue University","status":"failed","data":{},"urls_attempted":["https://krannert.purdue.edu/masters/programs/mba/admissions/class-profile.php"],"error":"HTTP 404"},{"id":"gsm-ucdavis","name":"Graduate School of Management - UC Davis","status":"failed","data":{},"urls_attempted":["https://gsm.ucdavis.edu/mba-programs/full-time-mba/admissions/class-profile"],"error":"HTTP 404"},{"id":"merage-uci","name":"Paul Merage School of Business - UC Irvine","status":"failed","data":{},"urls_attempted":["https://merage.uci.edu/programs/mba/full-time-mba/admissions/class-profile.html"],"error":"('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"},{"id":"cox-smu","name":"Cox School of Business - Southern Methodist University","status":"failed","data":{},"urls_attempted":["https://www.smu.edu/cox/Degrees-and-Programs/mba/admissions/class-profile"],"error":"HTTP 404"},{"id":"thunderbird-asu","name":"Thunderbird School of Global Management - ASU","status":"failed","data":{},"urls_attempted":["https://thunderbird.asu.edu/degrees/global-mba/admissions/class-profile"],"error":"HTTP 404"},{"id":"mason-wm","name":"Raymond A. Mason School of Business - William & Mary","status":"failed","data":{},"urls_attempted":["https://mason.wm.edu/programs/mba/admissions/class-profile.php"],"error":"HTTP 404"}],"manual_review_needed":[{"id":"stanford-gsb","name":"Stanford Graduate School of Business","status":"manual_review_needed","data":{},"urls_attempted":["https://www.gsb.stanford.edu/programs/mba/admission/evaluation-criteria/class-profile"],"error":"Anti-bot protection (Cloudflare/CAPTCHA)"},{"id":"wharton-penn","name":"The Wharton School - University of Pennsylvania","status":"manual_review_needed","data":{},"urls_attempted":["https://mba.wharton.upenn.edu/class-profile/"],"error":"Anti-bot protection (Cloudflare/CAPTCHA)"},{"id":"kellogg-northwestern","name":"Northwestern University Kellogg School of Management","status":"manual_review_needed","data":{},"urls_attempted":["https://www.kellogg.northwestern.edu/programs/full-time-mba/class-profile/"],"error":"Anti-bot protection (Cloudflare/CAPTCHA)"},{"id":"columbia-cbs","name":"Columbia Business School","status":"manual_review_needed","data":{},"urls_attempted":["https://academics.business.columbia.edu/mba/admissions/class-profile"],"error":"Anti-bot protection (Cloudflare/CAPTCHA)"},{"id":"haas-berkeley","name":"Haas School of Business - UC Berkeley","status":"manual_review_needed","data":{},"urls_attempted":["https://mba.haas.berkeley.edu/admissions/class-profile"],"error":"Anti-bot protection (Cloudflare/CAPTCHA)"},{"id":"ross-michigan","name":"Ross School of Business - University of Michigan","status":"manual_review_needed","data":{},"urls_attempted":["https://michiganross.umich.edu/graduate/full-time-mba/admissions/class-profile"],"error":"Anti-bot protection (Cloudflare/CAPTCHA)"},{"id":"fuqua-duke","name":"Fuqua School of Business - Duke University","status":"manual_review_needed","data":{},"urls_attempted":["https://www.fuqua.duke.edu/programs/daytime-mba/class-profile"],"error":"Anti-bot protection (Cloudflare/CAPTCHA)"},{"id":"johnson-cornell","name":"Johnson Graduate School of Management - Cornell University","status":"manual_review_needed","data":{},"urls_attempted":["https://www.johnson.cornell.edu/programs/full-time-mba/admissions/class-profile/"],"error":"Anti-bot protection (Cloudflare/CAPTCHA)"},{"id":"mccombs-texas","name":"McCombs School of Business - University of Texas Austin","status":"manual_review_needed","data":{},"urls_attempted":["https://www.mccombs.utexas.edu/master-of-business-administration/full-time-mba/admissions/class-profile"],"error":"Anti-bot protection (Cloudflare/CAPTCHA)"},{"id":"kenan-flagler-unc","name":"Kenan-Flagler Business School - UNC Chapel Hill","status":"manual_review_needed","data":{},"urls_attempted":["https://www.kenan-flagler.unc.edu/programs/mba/admissions/class-profile/"],"error":"Anti-bot protection (Cloudflare/CAPTCHA)"},{"id":"tepper-cmu","name":"Tepper School of Business - Carnegie Mellon University","status":"manual_review_needed","data":{},"urls_attempted":["https://www.cmu.edu/tepper/programs/mba/admissions/class-profile.html"],"error":"Anti-bot protection (Cloudflare/CAPTCHA)"},{"id":"mcdough-georgetown","name":"McDonough School of Business - Georgetown University","status":"manual_review_needed","data":{},"urls_attempted":["https://msb.georgetown.edu/mba/full-time-mba/admissions/class-profile"],"error":"Anti-bot protection (Cloudflare/CAPTCHA)"},{"id":"foster-washington","name":"Foster School of Business - University of Washington","status":"manual_review_needed","data":{},"urls_attempted":["https://foster.uw.edu/academics/degree-programs/full-time-mba/admissions/class-profile/"],"error":"Anti-bot protection (Cloudflare/CAPTCHA)"},{"id":"owen-vanderbilt","name":"Owen Graduate School of Management - Vanderbilt University","status":"manual_review_needed","data":{},"urls_attempted":["https://business.vanderbilt.edu/mba/admissions/class-profile/"],"error":"Anti-bot protection (Cloudflare/CAPTCHA)"},{"id":"mendoza-notredame","name":"Mendoza College of Business - University of Notre Dame","status":"manual_review_needed","data":{},"urls_attempted":["https://mendoza.nd.edu/mba/admissions/class-profile/"],"error":"Anti-bot protection (Cloudflare/CAPTCHA)"},{"id":"wisconsin-wsb","name":"Wisconsin School of Business - UW Madison","status":"manual_review_needed","data":{},"urls_attempted":["https://wsb.wisc.edu/programs/full-time-mba/admissions/class-profile"],"error":"Anti-bot protection (Cloudflare/CAPTCHA)"},{"id":"mays-texas-am","name":"Mays Business School - Texas A&M University","status":"manual_review_needed","data":{},"urls_attempted":["https://mays.tamu.edu/mba/admissions/class-profile/"],"error":"Anti-bot protection (Cloudflare/CAPTCHA)"},{"id":"carlson-minnesota","name":"Carlson School of Management - University of Minnesota","status":"manual_review_needed","data":{},"urls_attempted":["https://carlsonschool.umn.edu/degrees/master-business-administration/admissions/class-profile"],"error":"Anti-bot protection (Cloudflare/CAPTCHA)"},{"id":"broad-msu","name":"Broad College of Business - Michigan State University","status":"manual_review_needed","data":{},"urls_attempted":["https://broad.msu.edu/mba/admissions/class-profile/"],"error":"Anti-bot protection (Cloudflare/CAPTCHA)"},{"id":"marriott-byu","name":"Marriott School of Business - Brigham Young University","status":"manual_review_needed","data":{},"urls_attempted":["https://marriott.byu.edu/mba/admissions/class-profile/"],"error":"Anti-bot protection (Cloudflare/CAPTCHA)"},{"id":"questrom-bu","name":"Questrom School of Business - Boston University","status":"manual_review_needed","data":{},"urls_attempted":["https://www.bu.edu/questrom/degree-programs/mba/admissions/class-profile/"],"error":"Anti-bot protection (Cloudflare/CAPTCHA)"},{"id":"carroll-bc","name":"Carroll School of Management - Boston College","status":"manual_review_needed","data":{},"urls_attempted":["https://www.bc.edu/bc-web/schools/carroll-school/graduate/full-time-mba/admissions/class-profile.html"],"error":"Anti-bot protection (Cloudflare/CAPTCHA)"},{"id":"katz-pitt","name":"Joseph M. Katz Graduate School of Business - University of Pittsburgh","status":"manual_review_needed","data":{},"urls_attempted":["https://www.business.pitt.edu/mba/admissions/class-profile/"],"error":"Anti-bot protection (Cloudflare/CAPTCHA)"},{"id":"olin-babson","name":"F.W. Olin Graduate School of Business - Babson College","status":"manual_review_needed","data":{},"urls_attempted":["https://www.babson.edu/academics/graduate-school/mba-programs/one-year-mba/admissions/class-profile/"],"error":"Anti-bot protection (Cloudflare/CAPTCHA)"},{"id":"wfu-business","name":"School of Business - Wake Forest University","status":"manual_review_needed","data":{},"urls_attempted":["https://business.wfu.edu/mba/admissions/class-profile/"],"error":"Anti-bot protection (Cloudflare/CAPTCHA)"},{"id":"rady-ucsd","name":"Rady School of Management - UC San Diego","status":"manual_review_needed","data":{},"urls_attempted":["https://rady.ucsd.edu/programs/mba/admissions/class-profile.html"],"error":"Anti-bot protection (Cloudflare/CAPTCHA)"}],"metadata":{"scrape_date":"2026-04-10T09:50:01.459804","total_schools":50,"success_count":10,"fail_count":14,"manual_count":26}};
+
+// Flatten all schools into one array with status normalised
+const ALL = [
+  ...DATA.successful.map(s => ({...s, status:'success'})),
+  ...DATA.failed.map(s => ({...s, status:'failed'})),
+  ...DATA.manual_review_needed.map(s => ({...s, status:'manual_review_needed'})),
+];
+
+let activeFilter = 'all';
+let selectedId   = null;
+
+// ── Timestamp ──
+document.getElementById('runTs').textContent =
+  'Run: ' + new Date(DATA.metadata.scrape_date).toLocaleString();
+
+// ── Stats bar ──
+const statDefs = [
+  { filter:'all',                  label:'Total',         num: DATA.metadata.total_schools },
+  { filter:'success',              label:'Scraped',       num: DATA.metadata.success_count },
+  { filter:'failed',               label:'Failed / 404',  num: DATA.metadata.fail_count },
+  { filter:'manual_review_needed', label:'Bot-Blocked',   num: DATA.metadata.manual_count },
+];
+const statsEl = document.getElementById('stats');
+statDefs.forEach(def => {
+  const div = document.createElement('div');
+  div.className = 'stat' + (def.filter === activeFilter ? ' active' : '');
+  div.dataset.filter = def.filter;
+  div.innerHTML = `<div class="stat-num">${def.num}</div><div class="stat-label">${def.label}</div>`;
+  div.addEventListener('click', () => {
+    activeFilter = def.filter;
+    document.querySelectorAll('.stat').forEach(el => el.classList.remove('active'));
+    div.classList.add('active');
+    renderList();
+  });
+  statsEl.appendChild(div);
+});
+
+// ── List rendering ──
+function dotClass(s) {
+  if (s === 'success') return 'dot-success';
+  if (s === 'failed')  return 'dot-failed';
+  return 'dot-manual';
+}
+function statusLabel(s) {
+  if (s === 'success') return 'OK';
+  if (s === 'failed')  return 'FAILED';
+  return 'BLOCKED';
+}
+function chipClass(s) {
+  if (s === 'success') return 'chip-success';
+  if (s === 'failed')  return 'chip-failed';
+  return 'chip-manual';
+}
+
+function renderList() {
+  const q = document.getElementById('search').value.toLowerCase();
+  const listEl = document.getElementById('list');
+  listEl.innerHTML = '';
+
+  const visible = ALL.filter(s => {
+    const matchFilter = activeFilter === 'all' || s.status === activeFilter;
+    const matchSearch = !q || s.name.toLowerCase().includes(q) || s.id.toLowerCase().includes(q);
+    return matchFilter && matchSearch;
+  });
+
+  visible.forEach(school => {
+    const div = document.createElement('div');
+    div.className = 'school-item' + (school.id === selectedId ? ' selected' : '');
+    div.innerHTML = `
+      <div class="dot ${dotClass(school.status)}"></div>
+      <div>
+        <div class="school-item-name">${school.name}</div>
+        <div class="school-item-sub">${school.id} &nbsp;·&nbsp; ${statusLabel(school.status)}</div>
+      </div>`;
+    div.addEventListener('click', () => {
+      selectedId = school.id;
+      renderList();
+      renderDetail(school);
+    });
+    listEl.appendChild(div);
+  });
+}
+
+// ── Detail rendering ──
+function renderDetail(school) {
+  const det = document.getElementById('detail');
+
+  const dataFields = [];
+  const d = school.data || {};
+  if (d.academics) {
+    Object.entries(d.academics).forEach(([k,v]) => dataFields.push([k, v]));
+  }
+  if (d.class_profile) {
+    Object.entries(d.class_profile).forEach(([k,v]) => dataFields.push([k, v]));
+  }
+  if (d.employment) {
+    Object.entries(d.employment).forEach(([k,v]) => dataFields.push([k, v]));
+  }
+  if (d.location) {
+    Object.entries(d.location).forEach(([k,v]) => dataFields.push([k, v]));
+  }
+
+  const dataCardsHtml = dataFields.length
+    ? `<div class="data-grid">${dataFields.map(([k,v]) => `
+        <div class="data-card">
+          <div class="data-card-label">${k.replace(/_/g,' ')}</div>
+          <div class="data-card-val ${v === null ? 'null-val' : ''}">${v === null ? 'null' : v}</div>
+        </div>`).join('')}
+      </div>`
+    : `<div style="color:#6e7681;font-size:12px;font-style:italic;">No fields extracted — page loaded but regex matched nothing.</div>`;
+
+  const errorHtml = school.error
+    ? `<div class="section">
+        <div class="section-title">Error</div>
+        <div class="error-box">${school.error}</div>
+       </div>`
+    : '';
+
+  const urlsHtml = (school.urls_attempted || []).map(u =>
+    `<div class="url-item">
+      <span class="url-icon">&#128279;</span>
+      <a href="${u}" target="_blank">${u}</a>
+     </div>`
+  ).join('');
+
+  det.innerHTML = `
+    <div class="detail-header">
+      <div class="detail-dot ${dotClass(school.status)}"></div>
+      <div>
+        <div class="detail-name">${school.name}</div>
+        <div class="detail-id">${school.id}</div>
+      </div>
+      <span class="status-chip ${chipClass(school.status)}">${statusLabel(school.status)}</span>
+    </div>
+
+    ${errorHtml}
+
+    <div class="section">
+      <div class="section-title">URLs Attempted (${(school.urls_attempted||[]).length})</div>
+      <div class="url-list">${urlsHtml || '<div style="color:#6e7681;font-size:12px;">none</div>'}</div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Extracted Data</div>
+      ${dataCardsHtml}
+    </div>
+
+    <div class="section">
+      <button class="raw-toggle" onclick="this.nextElementSibling.classList.toggle('visible');this.textContent=this.nextElementSibling.classList.contains('visible')?'Hide raw JSON':'Show raw JSON'">Show raw JSON</button>
+      <pre class="raw-json">${JSON.stringify(school, null, 2)}</pre>
+    </div>`;
+}
+
+// ── Search ──
+document.getElementById('search').addEventListener('input', renderList);
+
+// Init
+renderList();
+</script>
+</body>
+</html>

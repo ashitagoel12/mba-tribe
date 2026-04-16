@@ -1,0 +1,197 @@
+{
+  "schoolId": "harvard-hbs",
+  "schoolName": "Harvard Business School",
+  "eventsPageUrl": "https://www.hbs.edu/mba/admissions/events/Pages/default.aspx",
+  "scrapingStatus": "success",
+  "eventsFound": 11,
+  "scrapedAt": "2026-04-11T19:51:33.518493+00:00",
+  "events": [
+    {
+      "id": "harvard-hbs-undated-mba-class-visit",
+      "title": "MBA Class Visit",
+      "date": null,
+      "time": null,
+      "location": {
+        "type": "in-person",
+        "venue": null,
+        "city": null,
+        "state": null
+      },
+      "eventType": "class-visit",
+      "description": "Event",
+      "registrationUrl": "https://www.hbs.edu/mba/admissions/events/Pages/default.aspx",
+      "registrationDeadline": null,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+    },
+    {
+      "id": "harvard-hbs-undated-2-2-program-information-session",
+      "title": "2+2 Program Information Session",
+      "date": null,
+      "time": null,
+      "location": {
+        "type": "in-person",
+        "venue": null,
+        "city": null,
+        "state": null
+      },
+      "eventType": "info-session",
+      "description": "Event",
+      "registrationUrl": "https://www.hbs.edu/mba/admissions/events/Pages/default.aspx",
+      "registrationDeadline": null,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+    },
+    {
+      "id": "harvard-hbs-undated-hbs-information-session-in-warsaw",
+      "title": "HBS Information Session in Warsaw",
+      "date": null,
+      "time": null,
+      "location": {
+        "type": "in-person",
+        "venue": null,
+        "city": null,
+        "state": null
+      },
+      "eventType": "info-session",
+      "description": "Event",
+      "registrationUrl": "https://www.hbs.edu/mba/admissions/events/Pages/default.aspx",
+      "registrationDeadline": null,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+    },
+    {
+      "id": "harvard-hbs-undated-2-2-program-application-q-a",
+      "title": "2+2 Program Application Q&A",
+      "date": null,
+      "time": null,
+      "location": {
+        "type": "in-person",
+        "venue": null,
+        "city": null,
+        "state": null
+      },
+      "eventType": "info-session",
+      "description": "Event",
+      "registrationUrl": "https://www.hbs.edu/mba/admissions/events/Pages/default.aspx",
+      "registrationDeadline": null,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+    },
+    {
+      "id": "harvard-hbs-undated-hbs-information-session-in-copenhagen",
+      "title": "HBS Information Session in Copenhagen",
+      "date": null,
+      "time": null,
+      "location": {
+        "type": "in-person",
+        "venue": null,
+        "city": null,
+        "state": null
+      },
+      "eventType": "info-session",
+      "description": "Event",
+      "registrationUrl": "https://www.hbs.edu/mba/admissions/events/Pages/default.aspx",
+      "registrationDeadline": null,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+    },
+    {
+      "id": "harvard-hbs-undated-hbs-information-session-in-zurich",
+      "title": "HBS Information Session in Zurich",
+      "date": null,
+      "time": null,
+      "location": {
+        "type": "in-person",
+        "venue": null,
+        "city": null,
+        "state": null
+      },
+      "eventType": "info-session",
+      "description": "Event",
+      "registrationUrl": "https://www.hbs.edu/mba/admissions/events/Pages/default.aspx",
+      "registrationDeadline": null,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+    },
+    {
+      "id": "harvard-hbs-undated-mba-program-open-house",
+      "title": "MBA Program Open House",
+      "date": null,
+      "time": null,
+      "location": {
+        "type": "in-person",
+        "venue": null,
+        "city": null,
+        "state": null
+      },
+      "eventType": "campus-visit",
+      "description": "Event",
+      "registrationUrl": "https://www.hbs.edu/mba/admissions/events/Pages/default.aspx",
+      "registrationDeadline": null,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+    },
+    {
+      "id": "harvard-hbs-undated-hbs-information-session-in-london",
+      "title": "HBS Information Session in London",
+      "date": null,
+      "time": null,
+      "location": {
+        "type": "in-person",
+        "venue": null,
+        "city": null,
+        "state": null
+      },
+      "eventType": "info-session",
+      "description": "Event",
+      "registrationUrl": "https://www.hbs.edu/mba/admissions/events/Pages/default.aspx",
+      "registrationDeadline": null,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+    },
+    {
+      "id": "harvard-hbs-undated-life-at-hbs-chat-with-the-hbs-club-of-sw",
+      "title": "Life at HBS Chat with the HBS Club of Sweden (Virtual)",
+      "date": null,
+      "time": null,
+      "location": {
+        "type": "virtual",
+        "venue": null,
+        "city": null,
+        "state": null
+      },
+      "eventType": "info-session",
+      "description": "Event",
+      "registrationUrl": "https://www.hbs.edu/mba/admissions/events/Pages/default.aspx",
+      "registrationDeadline": null,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+    },
+    {
+      "id": "harvard-hbs-undated-life-at-hbs-chat-with-the-hbs-club-of-sw",
+      "title": "Life at HBS Chat with the HBS Club of Sweden (In-Person)",
+      "date": null,
+      "time": null,
+      "location": {
+        "type": "in-person",
+        "venue": null,
+        "city": null,
+        "state": null
+      },
+      "eventType": "info-session",
+      "description": "Event",
+      "registrationUrl": "https://www.hbs.edu/mba/admissions/events/Pages/default.aspx",
+      "registrationDeadline": null,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+    },
+    {
+      "id": "harvard-hbs-undated-hbs-information-session-in-milan",
+      "title": "HBS Information Session in Milan",
+      "date": null,
+      "time": null,
+      "location": {
+        "type": "in-person",
+        "venue": null,
+        "city": null,
+        "state": null
+      },
+      "eventType": "info-session",
+      "description": "Event",
+      "registrationUrl": "https://www.hbs.edu/mba/admissions/events/Pages/default.aspx",
+      "registrationDeadline": null,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+    }
+  ]
+}

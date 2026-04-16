@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "mba-fit-copilot",
+      "runtimeExecutable": "C:\\Windows\\System32\\cmd.exe",
+      "runtimeArgs": ["/c", "C:\\Users\\Ashita Goel\\Desktop\\There Is No Try\\mba-tribe\\start-dev.cmd"],
+      "port": 5173
+    }
+  ]
+}

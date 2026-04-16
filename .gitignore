@@ -7,3 +7,5 @@ __pycache__/
 data-collection/raw-data/*
 !data-collection/raw-data/.gitkeep
 start-dev.cmd
+
+.vercel

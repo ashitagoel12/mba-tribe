@@ -1,0 +1,78 @@
+{
+  "schoolId": "kellogg-northwestern",
+  "schoolName": "Kellogg School of Management",
+  "eventsPageUrl": "https://www.kellogg.northwestern.edu/admissions/admissions-events.aspx",
+  "scrapingStatus": "success",
+  "eventsFound": 4,
+  "scrapedAt": "2026-04-11T19:51:33.518493+00:00",
+  "events": [
+    {
+      "id": "kellogg-northwestern-undated-we-d-love-to-meet-you",
+      "title": "We’d love to meet you",
+      "date": null,
+      "time": null,
+      "location": {
+        "type": "virtual",
+        "venue": null,
+        "city": null,
+        "state": null
+      },
+      "eventType": "info-session",
+      "description": "Choose from virtual and in-person events to discover more about our programs, connect with students, faculty and alumni, and learn about applying to Kellogg.",
+      "registrationUrl": "https://admissions.kellogg.northwestern.edu/portal/admissions-events",
+      "registrationDeadline": null,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+    },
+    {
+      "id": "kellogg-northwestern-undated-exploring-specialized-mbas-one-year-mmm-",
+      "title": "Exploring Specialized MBAs: One-Year, MMM, MBAi, JD-MBA",
+      "date": null,
+      "time": null,
+      "location": {
+        "type": "in-person",
+        "venue": null,
+        "city": null,
+        "state": null
+      },
+      "eventType": "info-session",
+      "description": "",
+      "registrationUrl": "https://admissions.kellogg.northwestern.edu/register/?id=f1df8474-3e87-494a-b66f-fb40dd945a93",
+      "registrationDeadline": null,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+    },
+    {
+      "id": "kellogg-northwestern-undated-atlanta-get-to-know-kellogg",
+      "title": "Atlanta: Get to Know Kellogg",
+      "date": null,
+      "time": null,
+      "location": {
+        "type": "in-person",
+        "venue": null,
+        "city": null,
+        "state": null
+      },
+      "eventType": "info-session",
+      "description": "",
+      "registrationUrl": "https://admissions.kellogg.northwestern.edu/register/EWATL041426",
+      "registrationDeadline": null,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+    },
+    {
+      "id": "kellogg-northwestern-undated-virtual-chat-with-a-miami-student-kevin-",
+      "title": "Virtual Chat with a Miami Student: Kevin Sims, Sr. Group Manager - Procurement, Walgreens",
+      "date": null,
+      "time": null,
+      "location": {
+        "type": "virtual",
+        "venue": null,
+        "city": null,
+        "state": null
+      },
+      "eventType": "info-session",
+      "description": "",
+      "registrationUrl": "https://admissions.kellogg.northwestern.edu/register/embavcks41526",
+      "registrationDeadline": null,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "metadata": {
+    "last_updated": "2026-04-10T09:53:23.731307",
+    "source": "automated_scraping",
+    "schools_count": 10
+  },
+  "schools": [
+    {
+      "id": "harvard-hbs",
+      "name": "Harvard Business School",
+      "location": {
+        "city": null,
+        "state": null
+      },
+      "class_profile": {},
+      "academics": {
+        "gmat_average": 10
+      },
+      "extraction_method": "automated_scraping"
+    },
+    {
+      "id": "chicago-booth",
+      "name": "University of Chicago Booth School of Business",
+      "location": {
+        "city": null,
+        "state": null
+      },
+      "class_profile": {
+        "class_size": 714,
+        "international_percentage": 37
+      },
+      "academics": {
+        "gmat_average": 729,
+        "gpa_average": 3.6
+      },
+      "extraction_method": "automated_scraping",
+      "employment": {}
+    },
+    {
+      "id": "mit-sloan",
+      "name": "MIT Sloan School of Management",
+      "location": {
+        "city": null,
+        "state": null
+      },
+      "class_profile": {},
+      "academics": {},
+      "extraction_method": "automated_scraping"
+    },
+    {
+      "id": "tuck-dartmouth",
+      "name": "Tuck School of Business - Dartmouth",
+      "location": {
+        "city": null,
+        "state": null
+      },
+      "class_profile": {},
+      "academics": {
+        "gpa_average": 3.6
+      },
+      "extraction_method": "automated_scraping"
+    },
+    {
+      "id": "yale-som",
+      "name": "Yale School of Management",
+      "location": {
+        "city": null,
+        "state": null
+      },
+      "class_profile": {},
+      "academics": {},
+      "extraction_method": "automated_scraping"
+    },
+    {
+      "id": "darden-virginia",
+      "name": "Darden School of Business - University of Virginia",
+      "location": {
+        "city": null,
+        "state": null
+      },
+      "class_profile": {},
+      "academics": {},
+      "extraction_method": "automated_scraping"
+    },
+    {
+      "id": "anderson-ucla",
+      "name": "UCLA Anderson School of Management",
+      "location": {
+        "city": null,
+        "state": null
+      },
+      "class_profile": {},
+      "academics": {
+        "gmat_average": 10,
+        "gpa_average": 3.1
+      },
+      "extraction_method": "automated_scraping"
+    },
+    {
+      "id": "marshall-usc",
+      "name": "Marshall School of Business - USC",
+      "location": {
+        "city": null,
+        "state": null
+      },
+      "class_profile": {},
+      "academics": {},
+      "extraction_method": "automated_scraping",
+      "employment": {}
+    },
+    {
+      "id": "kelley-indiana",
+      "name": "Kelley School of Business - Indiana University",
+      "location": {
+        "city": null,
+        "state": null
+      },
+      "class_profile": {},
+      "academics": {
+        "gpa_average": 3.5
+      },
+      "extraction_method": "automated_scraping"
+    },
+    {
+      "id": "simon-rochester",
+      "name": "Simon Business School - University of Rochester",
+      "location": {
+        "city": null,
+        "state": null
+      },
+      "class_profile": {},
+      "academics": {
+        "gmat_average": 10
+      },
+      "extraction_method": "automated_scraping"
+    }
+  ]
+}

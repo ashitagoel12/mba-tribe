@@ -1,0 +1,58 @@
+[15:51:34] 
+=======================================================
+[15:51:34] Scraping: Harvard Business School
+[15:51:34] URL: https://www.hbs.edu/mba/admissions/events/Pages/default.aspx
+[15:51:39]   Raw: 61  |  After filter: 11  |  Status: success
+[15:51:39]   Saved -> events/harvard-hbs-events.json
+[15:51:41] 
+=======================================================
+[15:51:41] Scraping: Stanford Graduate School of Business
+[15:51:41] URL: https://www.gsb.stanford.edu/programs/mba/admission/events
+[15:51:47]   Raw: 25  |  After filter: 7  |  Status: success
+[15:51:47]   Saved -> events/stanford-gsb-events.json
+[15:51:49] 
+=======================================================
+[15:51:49] Scraping: Wharton School
+[15:51:49] URL: https://mba.wharton.upenn.edu/admissions-events/
+[15:51:57]   Raw: 3  |  After filter: 3  |  Status: success
+[15:51:57]   Saved -> events/wharton-penn-events.json
+[15:51:59] 
+=======================================================
+[15:51:59] Scraping: Booth School of Business
+[15:51:59] URL: https://www.chicagobooth.edu/mba/full-time/admissions/events
+[15:52:07]   Raw: 4  |  After filter: 1  |  Status: success
+[15:52:07]   Saved -> events/booth-chicago-events.json
+[15:52:09] 
+=======================================================
+[15:52:09] Scraping: MIT Sloan School of Management
+[15:52:09] URL: https://mitsloan.mit.edu/mba/admissions/events
+[15:52:15]   Raw: 10  |  After filter: 8  |  Status: success
+[15:52:15]   Saved -> events/sloan-mit-events.json
+[15:52:17] 
+=======================================================
+[15:52:17] Scraping: Kellogg School of Management
+[15:52:17] URL: https://www.kellogg.northwestern.edu/admissions/admissions-events.aspx
+[15:52:25]   Raw: 14  |  After filter: 4  |  Status: success
+[15:52:25]   Saved -> events/kellogg-northwestern-events.json
+[15:52:27] 
+=======================================================
+[15:52:27] Scraping: Columbia Business School
+[15:52:27] URL: https://academics.business.columbia.edu/mba/admissions/events
+[15:52:37]   Raw: 0  |  After filter: 0  |  Status: blocked-bot-protection
+[15:52:37]   WARNING: Blocked by bot-protection (Cloudflare)
+[15:52:37]   Saved -> events/columbia-cbs-events.json
+[15:52:39] 
+=======================================================
+[15:52:39] Combined output -> m7-events.json
+[15:52:39] Total events scraped: 34
+[15:52:39] 
+???????????????????????????????????????????????????????
+[15:52:39] School                         Events  Status
+[15:52:39] ???????????????????????????????????????????????????????
+[15:52:39] harvard-hbs                        11  success
+[15:52:39] stanford-gsb                        7  success
+[15:52:39] wharton-penn                        3  success
+[15:52:39] booth-chicago                       1  success
+[15:52:39] sloan-mit                           8  success
+[15:52:39] kellogg-northwestern                4  success
+[15:52:39] columbia-cbs                        0  blocked-bot-protection

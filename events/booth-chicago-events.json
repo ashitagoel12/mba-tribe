@@ -1,0 +1,27 @@
+{
+  "schoolId": "booth-chicago",
+  "schoolName": "Booth School of Business",
+  "eventsPageUrl": "https://www.chicagobooth.edu/mba/full-time/admissions/events",
+  "scrapingStatus": "success",
+  "eventsFound": 1,
+  "scrapedAt": "2026-04-11T19:51:33.518493+00:00",
+  "events": [
+    {
+      "id": "booth-chicago-undated-campus-visit-program",
+      "title": "Campus Visit Program",
+      "date": null,
+      "time": null,
+      "location": {
+        "type": "in-person",
+        "venue": null,
+        "city": null,
+        "state": null
+      },
+      "eventType": "campus-visit",
+      "description": "Join us on campus to see what life is like at Chicago Booth. Sign up for a day and time that works for you.",
+      "registrationUrl": "https://apply.chicagobooth.edu/portal/FTCampus2023",
+      "registrationDeadline": null,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+    }
+  ]
+}

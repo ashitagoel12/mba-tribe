@@ -16,17 +16,21 @@ const INITIAL_FORM_DATA = {
   currentRegion: '',
   yearsExperience: '',
   currentIndustry: '',
+  currentIndustryOther: '',
   currentFunction: '',
+  currentFunctionOther: '',
 
   // Section B — Goals
   postMBAGoal: '',
-  targetGeography: '',
+  postMBAGoalOther: '',
+  careerSwitchTarget: '',
+  campusEnv: '',
 
   // Section C — Priority ratings (1–5, all default to 3 = neutral)
   priorities: {
     prestige: 3,
     industryPlacement: 3,
-    locationLifestyle: 3,
+    campusEnvironment: 3,
     affordability: 3,
     scholarship: 3,
     internationalSupport: 3,
@@ -34,7 +38,8 @@ const INITIAL_FORM_DATA = {
   },
 
   // Section D — Constraints
-  gmatScore: '',
+  examType: '',
+  examScore: '',
   budgetSensitivity: '',
   scholarshipImportance: '',
   additionalNotes: '',

@@ -5,7 +5,9 @@ import {
   INDUSTRIES,
   FUNCTIONS,
   POST_MBA_GOALS,
-  TARGET_GEOGRAPHIES,
+  CAMPUS_ENV_OPTIONS,
+  EXAM_TYPE_OPTIONS,
+  CAREER_SWITCH_INDUSTRIES,
   PRIORITIES,
   BUDGET_SENSITIVITY_OPTIONS,
   SCHOLARSHIP_OPTIONS,
@@ -155,6 +157,27 @@ function SectionA({ formData, updateField, errors }) {
           required
         />
 
+        {formData.currentIndustry === 'other' && (
+          <div>
+            <label htmlFor="industryOther" className="block text-sm font-medium text-slate-700 mb-1.5">
+              Please describe your industry
+              <span className="text-red-400 ml-1" aria-hidden>*</span>
+            </label>
+            <input
+              id="industryOther"
+              type="text"
+              maxLength={80}
+              value={formData.currentIndustryOther}
+              onChange={e => updateField('currentIndustryOther', e.target.value)}
+              placeholder="e.g. Aerospace, Agriculture, Education..."
+              className={`w-full border rounded-lg px-3 py-2.5 text-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-400 transition-colors ${
+                errors.currentIndustryOther ? 'border-red-400 bg-red-50' : 'border-slate-200'
+              }`}
+            />
+            <FieldError message={errors.currentIndustryOther} />
+          </div>
+        )}
+
         <SelectField
           label="Current function"
           id="function"
@@ -164,6 +187,27 @@ function SectionA({ formData, updateField, errors }) {
           error={errors.currentFunction}
           required
         />
+
+        {formData.currentFunction === 'other' && (
+          <div>
+            <label htmlFor="functionOther" className="block text-sm font-medium text-slate-700 mb-1.5">
+              Please describe your function
+              <span className="text-red-400 ml-1" aria-hidden>*</span>
+            </label>
+            <input
+              id="functionOther"
+              type="text"
+              maxLength={80}
+              value={formData.currentFunctionOther}
+              onChange={e => updateField('currentFunctionOther', e.target.value)}
+              placeholder="e.g. Data Science, Legal, Communications..."
+              className={`w-full border rounded-lg px-3 py-2.5 text-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-400 transition-colors ${
+                errors.currentFunctionOther ? 'border-red-400 bg-red-50' : 'border-slate-200'
+              }`}
+            />
+            <FieldError message={errors.currentFunctionOther} />
+          </div>
+        )}
       </div>
     </div>
   )
@@ -186,13 +230,46 @@ function SectionB({ formData, updateField, errors }) {
           required
         />
 
+        {formData.postMBAGoal === 'career-switch' && (
+          <SelectField
+            label="What industry are you switching into?"
+            id="careerSwitchTarget"
+            value={formData.careerSwitchTarget}
+            onChange={v => updateField('careerSwitchTarget', v)}
+            options={CAREER_SWITCH_INDUSTRIES}
+            error={errors.careerSwitchTarget}
+            required
+          />
+        )}
+
+        {formData.postMBAGoal === 'other' && (
+          <div>
+            <label htmlFor="postMBAGoalOther" className="block text-sm font-medium text-slate-700 mb-1.5">
+              What are you hoping to do after your MBA?
+              <span className="text-red-400 ml-1" aria-hidden>*</span>
+            </label>
+            <input
+              id="postMBAGoalOther"
+              type="text"
+              maxLength={100}
+              value={formData.postMBAGoalOther}
+              onChange={e => updateField('postMBAGoalOther', e.target.value)}
+              placeholder="e.g. Real estate development, Policy work, Family business..."
+              className={`w-full border rounded-lg px-3 py-2.5 text-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-400 transition-colors ${
+                errors.postMBAGoalOther ? 'border-red-400 bg-red-50' : 'border-slate-200'
+              }`}
+            />
+            <FieldError message={errors.postMBAGoalOther} />
+          </div>
+        )}
+
         <SelectField
-          label="Target geography after MBA"
-          id="geography"
-          value={formData.targetGeography}
-          onChange={v => updateField('targetGeography', v)}
-          options={TARGET_GEOGRAPHIES}
-          error={errors.targetGeography}
+          label="Campus environment preference"
+          id="campusEnv"
+          value={formData.campusEnv}
+          onChange={v => updateField('campusEnv', v)}
+          options={CAMPUS_ENV_OPTIONS}
+          error={errors.campusEnv}
           required
         />
       </div>
@@ -239,28 +316,63 @@ function SectionC({ formData, updatePriority }) {
 }
 
 function SectionD({ formData, updateField, errors }) {
+  const selectedExam = EXAM_TYPE_OPTIONS.find(o => o.value === formData.examType)
+  const showScoreInput = formData.examType && formData.examType !== 'none'
+
+  const scoreLabel = {
+    'gmat-focus':   'GMAT Focus score (205–805)',
+    'gmat-classic': 'GMAT Classic score (200–800)',
+    'gre':          'GRE total score (260–340)',
+  }[formData.examType] || 'Exam score'
+
+  const scorePlaceholder = {
+    'gmat-focus':   'e.g. 645',
+    'gmat-classic': 'e.g. 720',
+    'gre':          'e.g. 320',
+  }[formData.examType] || ''
+
   return (
     <div>
       <h2 className="text-2xl font-semibold text-slate-800 mb-1 tracking-tight">Constraints & Profile</h2>
       <p className="text-slate-500 mb-8 leading-relaxed">Final details to sharpen your fit score.</p>
 
       <div className="space-y-7">
-        <div>
-          <label htmlFor="gmat" className="block text-sm font-medium text-slate-700 mb-1">
-            GMAT score
-          </label>
-          <p className="text-xs text-slate-400 mb-1.5">Enter 0 if not yet taken; it won't penalise you.</p>
-          <input
-            id="gmat"
-            type="number"
-            min="200"
-            max="800"
-            value={formData.gmatScore}
-            onChange={e => updateField('gmatScore', e.target.value)}
-            placeholder="e.g. 720"
-            className="w-full border border-slate-200 rounded-lg px-3 py-2.5 text-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-400 transition-colors"
-          />
-        </div>
+        <SelectField
+          label="Which exam have you taken or plan to take?"
+          id="examType"
+          value={formData.examType}
+          onChange={v => {
+            updateField('examType', v)
+            updateField('examScore', '')
+          }}
+          options={EXAM_TYPE_OPTIONS}
+          error={errors.examType}
+          required
+        />
+
+        {showScoreInput && (
+          <div>
+            <label htmlFor="examScore" className="block text-sm font-medium text-slate-700 mb-1">
+              {scoreLabel}
+            </label>
+            <p className="text-xs text-slate-400 mb-1.5">
+              Enter 0 or leave blank if not yet taken; it won't penalise you.
+            </p>
+            <input
+              id="examScore"
+              type="number"
+              min={selectedExam?.min}
+              max={selectedExam?.max}
+              value={formData.examScore}
+              onChange={e => updateField('examScore', e.target.value)}
+              placeholder={scorePlaceholder}
+              className={`w-full border rounded-lg px-3 py-2.5 text-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-400 transition-colors ${
+                errors.examScore ? 'border-red-400 bg-red-50' : 'border-slate-200'
+              }`}
+            />
+            <FieldError message={errors.examScore} />
+          </div>
+        )}
 
         <RadioGroup
           label="Budget sensitivity"
@@ -337,14 +449,31 @@ export default function AssessmentForm({
       if (formData.yearsExperience === '' || formData.yearsExperience === undefined)
         e.yearsExperience = 'Please enter your years of experience'
       if (!formData.currentIndustry) e.currentIndustry = 'Please select your industry'
+      if (formData.currentIndustry === 'other' && !formData.currentIndustryOther)
+        e.currentIndustryOther = 'Please describe your industry'
       if (!formData.currentFunction) e.currentFunction = 'Please select your function'
+      if (formData.currentFunction === 'other' && !formData.currentFunctionOther)
+        e.currentFunctionOther = 'Please describe your function'
     }
     if (section === 2) {
       if (!formData.postMBAGoal) e.postMBAGoal = 'Please select your post-MBA goal'
-      if (!formData.targetGeography) e.targetGeography = 'Please select your target geography'
+      if (formData.postMBAGoal === 'career-switch' && !formData.careerSwitchTarget)
+        e.careerSwitchTarget = 'Please select your target industry'
+      if (formData.postMBAGoal === 'other' && !formData.postMBAGoalOther)
+        e.postMBAGoalOther = 'Please describe your goal'
+      if (!formData.campusEnv) e.campusEnv = 'Please select a campus preference'
     }
     // Section 3 (priorities) has defaults — no validation needed
     if (section === 4) {
+      if (!formData.examType) e.examType = 'Please select an exam type'
+      // Validate score range if a score was entered
+      if (formData.examType && formData.examType !== 'none' && formData.examScore) {
+        const score = parseInt(formData.examScore)
+        const examOpt = EXAM_TYPE_OPTIONS.find(o => o.value === formData.examType)
+        if (examOpt && score && (score < examOpt.min || score > examOpt.max)) {
+          e.examScore = `Score must be between ${examOpt.min} and ${examOpt.max} for ${examOpt.label}`
+        }
+      }
       if (!formData.budgetSensitivity) e.budgetSensitivity = 'Please select an option'
       if (!formData.scholarshipImportance) e.scholarshipImportance = 'Please select an option'
     }

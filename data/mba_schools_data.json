@@ -149,7 +149,9 @@
           "registrationUrl": "https://www.hbs.edu/mba/admissions/events",
           "description": "Current students share their HBS experience"
         }
-      ]
+      ],
+      "campusType": "campus-town",
+      "stemOpt": false
     },
     {
       "id": "stanford-gsb",
@@ -281,7 +283,9 @@
           "registrationUrl": "https://www.gsb.stanford.edu/programs/mba/admission/events",
           "description": "Learn about Stanford GSB's MBA program and application process"
         }
-      ]
+      ],
+      "campusType": "campus-town",
+      "stemOpt": false
     },
     {
       "id": "wharton-penn",
@@ -390,7 +394,9 @@
         },
         "applicationFee": 275,
         "feeWaiverAvailable": true
-      }
+      },
+      "campusType": "campus-town",
+      "stemOpt": true
     },
     {
       "id": "booth-chicago",
@@ -500,7 +506,9 @@
         },
         "applicationFee": 275,
         "feeWaiverAvailable": true
-      }
+      },
+      "campusType": "urban",
+      "stemOpt": true
     },
     {
       "id": "kellogg-northwestern",
@@ -610,7 +618,9 @@
         },
         "applicationFee": 275,
         "feeWaiverAvailable": true
-      }
+      },
+      "campusType": "campus-town",
+      "stemOpt": true
     },
     {
       "id": "sloan-mit",
@@ -720,7 +730,9 @@
         },
         "applicationFee": 275,
         "feeWaiverAvailable": true
-      }
+      },
+      "campusType": "campus-town",
+      "stemOpt": true
     },
     {
       "id": "columbia-cbs",
@@ -833,7 +845,9 @@
         },
         "applicationFee": 275,
         "feeWaiverAvailable": true
-      }
+      },
+      "campusType": "urban",
+      "stemOpt": true
     },
     {
       "id": "tuck-dartmouth",
@@ -883,7 +897,9 @@
         "Residential immersion",
         "Generous MBA"
       ],
-      "programUrl": "https://www.tuck.dartmouth.edu/mba"
+      "programUrl": "https://www.tuck.dartmouth.edu/mba",
+      "campusType": "campus-town",
+      "stemOpt": false
     },
     {
       "id": "yale-som",
@@ -933,7 +949,9 @@
         "Collaborative",
         "Social impact focus"
       ],
-      "programUrl": "https://som.yale.edu/programs/mba"
+      "programUrl": "https://som.yale.edu/programs/mba",
+      "campusType": "campus-town",
+      "stemOpt": true
     },
     {
       "id": "haas-berkeley",
@@ -983,7 +1001,9 @@
         "Confidence without attitude",
         "Beyond yourself"
       ],
-      "programUrl": "https://haas.berkeley.edu/mba/"
+      "programUrl": "https://haas.berkeley.edu/mba/",
+      "campusType": "urban",
+      "stemOpt": true
     },
     {
       "id": "ross-michigan",
@@ -1033,7 +1053,9 @@
         "Midwestern collaborative",
         "Strong alumni network"
       ],
-      "programUrl": "https://michiganross.umich.edu/programs/full-time-mba"
+      "programUrl": "https://michiganross.umich.edu/programs/full-time-mba",
+      "campusType": "campus-town",
+      "stemOpt": true
     },
     {
       "id": "darden-virginia",
@@ -1083,7 +1105,9 @@
         "Honor code community",
         "Strong alumni loyalty"
       ],
-      "programUrl": "https://www.darden.virginia.edu/mba"
+      "programUrl": "https://www.darden.virginia.edu/mba",
+      "campusType": "campus-town",
+      "stemOpt": false
     },
     {
       "id": "fuqua-duke",
@@ -1133,7 +1157,9 @@
         "Leadership-focused",
         "Diverse & inclusive"
       ],
-      "programUrl": "https://www.fuqua.duke.edu/programs/mba-programs/daytime-mba"
+      "programUrl": "https://www.fuqua.duke.edu/programs/mba-programs/daytime-mba",
+      "campusType": "campus-town",
+      "stemOpt": true
     },
     {
       "id": "cornell-johnson",
@@ -1183,7 +1209,9 @@
         "Immersion learning",
         "Ivy League prestige"
       ],
-      "programUrl": "https://www.johnson.cornell.edu/programs/full-time-mba/two-year-mba/"
+      "programUrl": "https://www.johnson.cornell.edu/programs/full-time-mba/two-year-mba/",
+      "campusType": "campus-town",
+      "stemOpt": true
     },
     {
       "id": "nyu-stern",
@@ -1233,7 +1261,9 @@
         "Block system community",
         "High international diversity"
       ],
-      "programUrl": "https://www.stern.nyu.edu/programs-admissions/full-time-mba"
+      "programUrl": "https://www.stern.nyu.edu/programs-admissions/full-time-mba",
+      "campusType": "urban",
+      "stemOpt": true
     },
     {
       "id": "anderson-ucla",
@@ -1283,7 +1313,9 @@
         "LA network access",
         "Entrepreneurial spirit"
       ],
-      "programUrl": "https://www.anderson.ucla.edu/programs/mba"
+      "programUrl": "https://www.anderson.ucla.edu/programs/mba",
+      "campusType": "urban",
+      "stemOpt": true
     },
     {
       "id": "marshall-usc",
@@ -1333,7 +1365,9 @@
         "LA-embedded",
         "Diverse cohort"
       ],
-      "programUrl": "https://www.marshall.usc.edu/programs/mba-programs/full-time"
+      "programUrl": "https://www.marshall.usc.edu/programs/mba-programs/full-time",
+      "campusType": "urban",
+      "stemOpt": true
     },
     {
       "id": "mccombs-utaustin",
@@ -1383,7 +1417,9 @@
         "Austin tech ecosystem access",
         "Strong alumni pride"
       ],
-      "programUrl": "https://www.mccombs.utexas.edu/graduate/mba/full-time-mba/"
+      "programUrl": "https://www.mccombs.utexas.edu/graduate/mba/full-time-mba/",
+      "campusType": "urban",
+      "stemOpt": true
     },
     {
       "id": "kenan-flagler-unc",
@@ -1433,7 +1469,9 @@
         "Values-driven leadership",
         "Strong community"
       ],
-      "programUrl": "https://www.kenan-flagler.unc.edu/programs/mba/"
+      "programUrl": "https://www.kenan-flagler.unc.edu/programs/mba/",
+      "campusType": "campus-town",
+      "stemOpt": true
     },
     {
       "id": "tepper-cmu",
@@ -1483,7 +1521,9 @@
         "Small intimate cohort",
         "CMU tech ecosystem"
       ],
-      "programUrl": "https://www.cmu.edu/tepper/programs/mba/"
+      "programUrl": "https://www.cmu.edu/tepper/programs/mba/",
+      "campusType": "campus-town",
+      "stemOpt": true
     },
     {
       "id": "goizueta-emory",
@@ -1533,7 +1573,9 @@
         "Atlanta business hub",
         "High career service ROI"
       ],
-      "programUrl": "https://goizueta.emory.edu/full-time-mba/"
+      "programUrl": "https://goizueta.emory.edu/full-time-mba/",
+      "campusType": "campus-town",
+      "stemOpt": true
     },
     {
       "id": "mcdonough-georgetown",
@@ -1583,7 +1625,9 @@
         "DC policy access",
         "Globally diverse cohort"
       ],
-      "programUrl": "https://msb.georgetown.edu/full-time-mba/"
+      "programUrl": "https://msb.georgetown.edu/full-time-mba/",
+      "campusType": "urban",
+      "stemOpt": true
     },
     {
       "id": "kelley-indiana",
@@ -1633,7 +1677,9 @@
         "Midwest community feel",
         "Strong ROI/value"
       ],
-      "programUrl": "https://kelley.iu.edu/programs/full-time-mba/index.html"
+      "programUrl": "https://kelley.iu.edu/programs/full-time-mba/index.html",
+      "campusType": "campus-town",
+      "stemOpt": true
     },
     {
       "id": "foster-uw",
@@ -1683,7 +1729,9 @@
         "High tech placement",
         "Diverse inclusive community"
       ],
-      "programUrl": "https://foster.uw.edu/academics/degree-programs/full-time-mba/"
+      "programUrl": "https://foster.uw.edu/academics/degree-programs/full-time-mba/",
+      "campusType": "urban",
+      "stemOpt": true
     },
     {
       "id": "jones-rice",
@@ -1733,7 +1781,9 @@
         "Energy sector access",
         "Collaborative entrepreneurial"
       ],
-      "programUrl": "https://business.rice.edu/mba"
+      "programUrl": "https://business.rice.edu/mba",
+      "campusType": "campus-town",
+      "stemOpt": true
     },
     {
       "id": "simon-rochester",
@@ -1783,7 +1833,9 @@
         "Economics-grounded",
         "Quantitative focus"
       ],
-      "programUrl": "https://www.simon.rochester.edu/programs/full-time-mba/index.aspx"
+      "programUrl": "https://www.simon.rochester.edu/programs/full-time-mba/index.aspx",
+      "campusType": "campus-town",
+      "stemOpt": true
     },
     {
       "id": "vanderbilt-owen",
@@ -1834,7 +1886,9 @@
         "Supportive community",
         "Southern hospitality"
       ],
-      "programUrl": "https://business.vanderbilt.edu/mba/"
+      "programUrl": "https://business.vanderbilt.edu/mba/",
+      "campusType": "urban",
+      "stemOpt": true
     },
     {
       "id": "georgia-tech-scheller",
@@ -1885,7 +1939,9 @@
         "Collaborative",
         "Atlanta advantage"
       ],
-      "programUrl": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/"
+      "programUrl": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/",
+      "campusType": "urban",
+      "stemOpt": true
     },
     {
       "id": "notre-dame-mendoza",
@@ -1936,7 +1992,9 @@
         "Strong alumni",
         "Catholic mission"
       ],
-      "programUrl": "https://mendoza.nd.edu/graduate-programs/the-notre-dame-mba/"
+      "programUrl": "https://mendoza.nd.edu/graduate-programs/the-notre-dame-mba/",
+      "campusType": "campus-town",
+      "stemOpt": false
     },
     {
       "id": "ohio-state-fisher",
@@ -1987,7 +2045,9 @@
         "Buckeye network",
         "Columbus hub"
       ],
-      "programUrl": "https://fisher.osu.edu/graduate/ftmba"
+      "programUrl": "https://fisher.osu.edu/graduate/ftmba",
+      "campusType": "campus-town",
+      "stemOpt": true
     },
     {
       "id": "wisconsin",
@@ -2038,7 +2098,9 @@
         "High ROI",
         "Midwest network"
       ],
-      "programUrl": "https://business.wisc.edu/graduate/mba/full-time/"
+      "programUrl": "https://business.wisc.edu/graduate/mba/full-time/",
+      "campusType": "campus-town",
+      "stemOpt": true
     },
     {
       "id": "texas-am-mays",
@@ -2089,7 +2151,9 @@
         "Collaborative",
         "Leadership focus"
       ],
-      "programUrl": "https://mays.tamu.edu/graduate/mba/full-time-mba/"
+      "programUrl": "https://mays.tamu.edu/graduate/mba/full-time-mba/",
+      "campusType": "campus-town",
+      "stemOpt": true
     },
     {
       "id": "penn-state-smeal",
@@ -2140,7 +2204,9 @@
         "Penn State proud",
         "East Coast access"
       ],
-      "programUrl": "https://www.smeal.psu.edu/mba"
+      "programUrl": "https://www.smeal.psu.edu/mba",
+      "campusType": "campus-town",
+      "stemOpt": true
     },
     {
       "id": "maryland-smith",
@@ -2191,7 +2257,9 @@
         "STEM designated",
         "Diverse"
       ],
-      "programUrl": "https://www.rhsmith.umd.edu/programs/full-time-mba"
+      "programUrl": "https://www.rhsmith.umd.edu/programs/full-time-mba",
+      "campusType": "campus-town",
+      "stemOpt": true
     },
     {
       "id": "minnesota-carlson",
@@ -2242,7 +2310,9 @@
         "Fortune 500 access",
         "Small class size"
       ],
-      "programUrl": "https://carlsonschool.umn.edu/degrees/mba"
+      "programUrl": "https://carlsonschool.umn.edu/degrees/mba",
+      "campusType": "urban",
+      "stemOpt": true
     },
     {
       "id": "arizona-state-carey",
@@ -2293,7 +2363,9 @@
         "Entrepreneurial",
         "Growing network"
       ],
-      "programUrl": "https://wpcarey.asu.edu/mba-programs/full-time"
+      "programUrl": "https://wpcarey.asu.edu/mba-programs/full-time",
+      "campusType": "urban",
+      "stemOpt": true
     },
     {
       "id": "purdue-krannert",
@@ -2344,7 +2416,9 @@
         "Collaborative",
         "Midwest industry ties"
       ],
-      "programUrl": "https://krannert.purdue.edu/masters/programs/full-time-mba/"
+      "programUrl": "https://krannert.purdue.edu/masters/programs/full-time-mba/",
+      "campusType": "campus-town",
+      "stemOpt": true
     },
     {
       "id": "michigan-state-broad",
@@ -2395,7 +2469,9 @@
         "Midwest roots",
         "Industry connections"
       ],
-      "programUrl": "https://broad.msu.edu/masters/mba/"
+      "programUrl": "https://broad.msu.edu/masters/mba/",
+      "campusType": "campus-town",
+      "stemOpt": true
     },
     {
       "id": "byu-marriott",
@@ -2446,7 +2522,9 @@
         "Exceptional ROI",
         "Strong network"
       ],
-      "programUrl": "https://marriott.byu.edu/mba/"
+      "programUrl": "https://marriott.byu.edu/mba/",
+      "campusType": "campus-town",
+      "stemOpt": false
     },
     {
       "id": "boston-university-questrom",
@@ -2497,7 +2575,9 @@
         "Global focus",
         "Entrepreneurial"
       ],
-      "programUrl": "https://www.bu.edu/questrom/mba/"
+      "programUrl": "https://www.bu.edu/questrom/mba/",
+      "campusType": "urban",
+      "stemOpt": true
     },
     {
       "id": "uc-davis",
@@ -2548,7 +2628,9 @@
         "Collaborative",
         "California network"
       ],
-      "programUrl": "https://gsm.ucdavis.edu/mba"
+      "programUrl": "https://gsm.ucdavis.edu/mba",
+      "campusType": "campus-town",
+      "stemOpt": true
     },
     {
       "id": "uci-merage",
@@ -2599,7 +2681,9 @@
         "Collaborative",
         "Global perspective"
       ],
-      "programUrl": "https://merage.uci.edu/programs/mba/index.html"
+      "programUrl": "https://merage.uci.edu/programs/mba/index.html",
+      "campusType": "campus-town",
+      "stemOpt": true
     },
     {
       "id": "boston-college-carroll",
@@ -2650,7 +2734,9 @@
         "Boston network",
         "Small class size"
       ],
-      "programUrl": "https://www.bc.edu/bc-web/schools/carroll-school/graduate/mba.html"
+      "programUrl": "https://www.bc.edu/bc-web/schools/carroll-school/graduate/mba.html",
+      "campusType": "campus-town",
+      "stemOpt": false
     },
     {
       "id": "pittsburgh-katz",
@@ -2701,7 +2787,9 @@
         "Industry connections",
         "Practical focus"
       ],
-      "programUrl": "https://www.business.pitt.edu/mba/"
+      "programUrl": "https://www.business.pitt.edu/mba/",
+      "campusType": "urban",
+      "stemOpt": true
     },
     {
       "id": "smu-cox",
@@ -2752,7 +2840,9 @@
         "Strong network",
         "Professional focus"
       ],
-      "programUrl": "https://www.smu.edu/cox/mba"
+      "programUrl": "https://www.smu.edu/cox/mba",
+      "campusType": "urban",
+      "stemOpt": true
     },
     {
       "id": "babson-olin",
@@ -2803,7 +2893,9 @@
         "Global",
         "Boston proximity"
       ],
-      "programUrl": "https://www.babson.edu/academics/graduate-school/mba-programs/two-year-mba/"
+      "programUrl": "https://www.babson.edu/academics/graduate-school/mba-programs/two-year-mba/",
+      "campusType": "campus-town",
+      "stemOpt": false
     },
     {
       "id": "thunderbird",
@@ -2854,7 +2946,9 @@
         "International focus",
         "Entrepreneurial"
       ],
-      "programUrl": "https://thunderbird.asu.edu/degrees/mba"
+      "programUrl": "https://thunderbird.asu.edu/degrees/mba",
+      "campusType": "urban",
+      "stemOpt": false
     },
     {
       "id": "wake-forest",
@@ -2905,7 +2999,9 @@
         "Southern values",
         "Personalized attention"
       ],
-      "programUrl": "https://business.wfu.edu/mba/"
+      "programUrl": "https://business.wfu.edu/mba/",
+      "campusType": "campus-town",
+      "stemOpt": false
     },
     {
       "id": "william-mary-mason",
@@ -2956,7 +3052,9 @@
         "DC proximity",
         "Small class size"
       ],
-      "programUrl": "https://mason.wm.edu/programs/mba/index.php"
+      "programUrl": "https://mason.wm.edu/programs/mba/index.php",
+      "campusType": "campus-town",
+      "stemOpt": false
     },
     {
       "id": "ucsd-rady",
@@ -3007,7 +3105,9 @@
         "Collaborative",
         "Analytics focus"
       ],
-      "programUrl": "https://rady.ucsd.edu/programs/mba/index.html"
+      "programUrl": "https://rady.ucsd.edu/programs/mba/index.html",
+      "campusType": "urban",
+      "stemOpt": true
     },
     {
       "id": "ut-dallas-jindal",
@@ -3058,7 +3158,9 @@
         "Innovation-driven",
         "Flexible formats"
       ],
-      "programUrl": "https://jindal.utdallas.edu/mba/"
+      "programUrl": "https://jindal.utdallas.edu/mba/",
+      "campusType": "urban",
+      "stemOpt": true
     },
     {
       "id": "georgia-terry",
@@ -3109,7 +3211,9 @@
         "Work-hard-play-hard",
         "Passionate alumni network"
       ],
-      "programUrl": "https://www.terry.uga.edu/mba/"
+      "programUrl": "https://www.terry.uga.edu/mba/",
+      "campusType": "campus-town",
+      "stemOpt": true
     },
     {
       "id": "washu-olin",
@@ -3160,7 +3264,9 @@
         "Students front and center",
         "Gender parity (53% women)"
       ],
-      "programUrl": "https://olin.wustl.edu/mba/"
+      "programUrl": "https://olin.wustl.edu/mba/",
+      "campusType": "urban",
+      "stemOpt": true
     },
     {
       "id": "iowa-state-ivy",
@@ -3205,7 +3311,9 @@
         "Team-based learning",
         "Diverse backgrounds"
       ],
-      "programUrl": "https://www.ivybusiness.iastate.edu/academics/graduate-programs/ivy-mba/full-time-mba/"
+      "programUrl": "https://www.ivybusiness.iastate.edu/academics/graduate-programs/ivy-mba/full-time-mba/",
+      "campusType": "campus-town",
+      "stemOpt": true
     },
     {
       "id": "miami-herbert",
@@ -3250,7 +3358,9 @@
         "Fast-paced",
         "Diverse"
       ],
-      "programUrl": "https://www.herbert.miami.edu/graduate/find-and-compare-programs/full-time-mba/"
+      "programUrl": "https://www.herbert.miami.edu/graduate/find-and-compare-programs/full-time-mba/",
+      "campusType": "urban",
+      "stemOpt": true
     },
     {
       "id": "utah-eccles",
@@ -3295,7 +3405,9 @@
         "Supportive",
         "Non-competitive"
       ],
-      "programUrl": "https://eccles.utah.edu/programs/mba/full-time-mba/"
+      "programUrl": "https://eccles.utah.edu/programs/mba/full-time-mba/",
+      "campusType": "urban",
+      "stemOpt": true
     },
     {
       "id": "tennessee-haslam",
@@ -3340,7 +3452,9 @@
         "Supportive",
         "Fun college town"
       ],
-      "programUrl": "https://haslam.utk.edu/full-time-mba/"
+      "programUrl": "https://haslam.utk.edu/full-time-mba/",
+      "campusType": "campus-town",
+      "stemOpt": true
     },
     {
       "id": "american-kogod",
@@ -3385,7 +3499,9 @@
         "Collaborative",
         "Global mindset"
       ],
-      "programUrl": "https://kogod.american.edu/programs-admissions/mba"
+      "programUrl": "https://kogod.american.edu/programs-admissions/mba",
+      "campusType": "urban",
+      "stemOpt": false
     },
     {
       "id": "arkansas-walton",
@@ -3436,7 +3552,9 @@
         "SEC college town",
         "Walmart-focused ecosystem"
       ],
-      "programUrl": "https://walton.uark.edu/graduate-programs/mba-masters-degree-program/"
+      "programUrl": "https://walton.uark.edu/graduate-programs/mba-masters-degree-program/",
+      "campusType": "campus-town",
+      "stemOpt": false
     },
     {
       "id": "kansas",
@@ -3487,7 +3605,9 @@
         "Collaborative",
         "Fun college atmosphere"
       ],
-      "programUrl": "https://business.ku.edu/mba"
+      "programUrl": "https://business.ku.edu/mba",
+      "campusType": "campus-town",
+      "stemOpt": false
     },
     {
       "id": "chapman-argyros",
@@ -3532,7 +3652,9 @@
         "Research-focused",
         "Orange County ecosystem"
       ],
-      "programUrl": "https://www.chapman.edu/business/academic-programs/graduate/prospective-students/programs/full-time-mba.aspx"
+      "programUrl": "https://www.chapman.edu/business/academic-programs/graduate/prospective-students/programs/full-time-mba.aspx",
+      "campusType": "campus-town",
+      "stemOpt": false
     },
     {
       "id": "tulane-freeman",
@@ -3577,7 +3699,9 @@
         "New Orleans culture",
         "Global immersions"
       ],
-      "programUrl": "https://freeman.tulane.edu/graduate/full-time-mba"
+      "programUrl": "https://freeman.tulane.edu/graduate/full-time-mba",
+      "campusType": "urban",
+      "stemOpt": false
     },
     {
       "id": "alabama-manderson",
@@ -3622,7 +3746,9 @@
         "Social",
         "SEC football atmosphere"
       ],
-      "programUrl": "https://manderson.culverhouse.ua.edu/business-administration-mba/"
+      "programUrl": "https://manderson.culverhouse.ua.edu/business-administration-mba/",
+      "campusType": "campus-town",
+      "stemOpt": false
     },
     {
       "id": "kentucky-gatton",
@@ -3667,7 +3793,9 @@
         "Collaborative",
         "Intimate"
       ],
-      "programUrl": "https://gatton.uky.edu/prc/full-time-mba"
+      "programUrl": "https://gatton.uky.edu/prc/full-time-mba",
+      "campusType": "campus-town",
+      "stemOpt": false
     },
     {
       "id": "south-carolina-moore",
@@ -3712,7 +3840,9 @@
         "Professional",
         "Close-knit"
       ],
-      "programUrl": "https://www.sc.edu/study/colleges_schools/moore/graduate/mba/"
+      "programUrl": "https://www.sc.edu/study/colleges_schools/moore/graduate/mba/",
+      "campusType": "campus-town",
+      "stemOpt": true
     },
     {
       "id": "fordham-gabelli",
@@ -3757,7 +3887,9 @@
         "Corporate immersions",
         "Alumni network"
       ],
-      "programUrl": "https://www.fordham.edu/gabelli-school-of-business/academic-programs-and-admissions/graduate-programs/academic-programs/mba-programs/"
+      "programUrl": "https://www.fordham.edu/gabelli-school-of-business/academic-programs-and-admissions/graduate-programs/academic-programs/mba-programs/",
+      "campusType": "urban",
+      "stemOpt": false
     },
     {
       "id": "oklahoma-state-spears",
@@ -3802,7 +3934,9 @@
         "Flexible",
         "Case competitions"
       ],
-      "programUrl": "https://spears.okstate.edu/graduate/mba/"
+      "programUrl": "https://spears.okstate.edu/graduate/mba/",
+      "campusType": "campus-town",
+      "stemOpt": false
     },
     {
       "id": "tcu-neeley",
@@ -3853,7 +3987,9 @@
         "Big business ties",
         "Collaborative"
       ],
-      "programUrl": "https://www.neeley.tcu.edu/Graduate-Programs/MBA/Full-time-MBA"
+      "programUrl": "https://www.neeley.tcu.edu/Graduate-Programs/MBA/Full-time-MBA",
+      "campusType": "urban",
+      "stemOpt": false
     },
     {
       "id": "rutgers",
@@ -3904,7 +4040,9 @@
         "Pharmaceutical/Healthcare focus",
         "ROI-focused"
       ],
-      "programUrl": "https://www.business.rutgers.edu/full-time-mba"
+      "programUrl": "https://www.business.rutgers.edu/full-time-mba",
+      "campusType": "urban",
+      "stemOpt": true
     },
     {
       "id": "syracuse-whitman",
@@ -3955,7 +4093,9 @@
         "Holistic admissions",
         "Diverse backgrounds"
       ],
-      "programUrl": "https://whitman.syracuse.edu/graduate-programs/full-time-mba-program/"
+      "programUrl": "https://whitman.syracuse.edu/graduate-programs/full-time-mba-program/",
+      "campusType": "campus-town",
+      "stemOpt": true
     },
     {
       "id": "northeastern-damore-mckim",
@@ -4000,7 +4140,9 @@
         "Action-oriented",
         "Innovation-focused"
       ],
-      "programUrl": "https://damore-mckim.northeastern.edu/programs/full-time-mba/"
+      "programUrl": "https://damore-mckim.northeastern.edu/programs/full-time-mba/",
+      "campusType": "urban",
+      "stemOpt": true
     },
     {
       "id": "baylor-hankamer",
@@ -4045,7 +4187,9 @@
         "Service-oriented",
         "Christian university"
       ],
-      "programUrl": "https://www.baylor.edu/business/mba/"
+      "programUrl": "https://www.baylor.edu/business/mba/",
+      "campusType": "campus-town",
+      "stemOpt": false
     },
     {
       "id": "pepperdine-graziadio",
@@ -4090,7 +4234,9 @@
         "West Coast lifestyle",
         "Purpose-oriented"
       ],
-      "programUrl": "https://bschool.pepperdine.edu/programs/mba/"
+      "programUrl": "https://bschool.pepperdine.edu/programs/mba/",
+      "campusType": "urban",
+      "stemOpt": false
     },
     {
       "id": "george-washington",
@@ -4135,7 +4281,9 @@
         "Capital access",
         "International affairs"
       ],
-      "programUrl": "https://business.gwu.edu/prospective-students/mba-admissions"
+      "programUrl": "https://business.gwu.edu/prospective-students/mba-admissions",
+      "campusType": "urban",
+      "stemOpt": false
     },
     {
       "id": "drexel-lebow",
@@ -4186,7 +4334,9 @@
         "Pragmatic approach",
         "Urban campus"
       ],
-      "programUrl": "https://drexel.edu/lebow/degrees/mba/"
+      "programUrl": "https://drexel.edu/lebow/degrees/mba/",
+      "campusType": "urban",
+      "stemOpt": true
     },
     {
       "id": "villanova",
@@ -4231,7 +4381,9 @@
         "Philadelphia focus",
         "Collaborative"
       ],
-      "programUrl": "https://www.villanova.edu/business/graduate/"
+      "programUrl": "https://www.villanova.edu/business/graduate/",
+      "campusType": "campus-town",
+      "stemOpt": false
     },
     {
       "id": "case-western-weatherhead",
@@ -4276,7 +4428,9 @@
         "Cleveland ecosystem",
         "Innovation-driven"
       ],
-      "programUrl": "https://case.edu/weatherhead/degrees/master-business-administration-mba"
+      "programUrl": "https://case.edu/weatherhead/degrees/master-business-administration-mba",
+      "campusType": "urban",
+      "stemOpt": true
     },
     {
       "id": "uconn",
@@ -4321,7 +4475,9 @@
         "Connecticut business community",
         "Analytics-focused"
       ],
-      "programUrl": "https://mba.business.uconn.edu/"
+      "programUrl": "https://mba.business.uconn.edu/",
+      "campusType": "campus-town",
+      "stemOpt": true
     },
     {
       "id": "temple-fox",
@@ -4372,7 +4528,9 @@
         "Philadelphia-focused",
         "Accessible"
       ],
-      "programUrl": "https://www.fox.temple.edu/graduate-programs/mba/"
+      "programUrl": "https://www.fox.temple.edu/graduate-programs/mba/",
+      "campusType": "urban",
+      "stemOpt": true
     },
     {
       "id": "lehigh",
@@ -4417,7 +4575,9 @@
         "Engineering mindset",
         "Northeast corridor"
       ],
-      "programUrl": "https://business.lehigh.edu/mba"
+      "programUrl": "https://business.lehigh.edu/mba",
+      "campusType": "campus-town",
+      "stemOpt": true
     },
     {
       "id": "colorado-leeds",
@@ -4462,7 +4622,9 @@
         "Innovative",
         "Work-life balance"
       ],
-      "programUrl": "https://www.colorado.edu/business/mba"
+      "programUrl": "https://www.colorado.edu/business/mba",
+      "campusType": "campus-town",
+      "stemOpt": true
     },
     {
       "id": "arizona-eller",
@@ -4507,7 +4669,9 @@
         "Diverse",
         "Entrepreneurial"
       ],
-      "programUrl": "https://eller.arizona.edu/programs/master-business-administration"
+      "programUrl": "https://eller.arizona.edu/programs/master-business-administration",
+      "campusType": "campus-town",
+      "stemOpt": true
     },
     {
       "id": "baruch-zicklin",
@@ -4558,7 +4722,9 @@
         "Strong NYC network",
         "Urban campus environment"
       ],
-      "programUrl": "https://zicklin.baruch.cuny.edu/programs/graduate/mba/"
+      "programUrl": "https://zicklin.baruch.cuny.edu/programs/graduate/mba/",
+      "campusType": "urban",
+      "stemOpt": false
     },
     {
       "id": "nc-at-deese",
@@ -4609,7 +4775,9 @@
         "Collaborative environment",
         "Excellence-driven"
       ],
-      "programUrl": "https://www.ncat.edu/cob/departments/mba/index.php"
+      "programUrl": "https://www.ncat.edu/cob/departments/mba/index.php",
+      "campusType": "campus-town",
+      "stemOpt": true
     },
     {
       "id": "stevens-business",
@@ -4660,7 +4828,9 @@
         "NYC proximity",
         "Innovation-driven"
       ],
-      "programUrl": "https://www.stevens.edu/school-business/graduate-programs/master-business-administration"
+      "programUrl": "https://www.stevens.edu/school-business/graduate-programs/master-business-administration",
+      "campusType": "urban",
+      "stemOpt": true
     },
     {
       "id": "auburn-harbert",
@@ -4711,7 +4881,9 @@
         "Southern hospitality",
         "Strong school spirit"
       ],
-      "programUrl": "https://harbert.auburn.edu/programs/mba/"
+      "programUrl": "https://harbert.auburn.edu/programs/mba/",
+      "campusType": "campus-town",
+      "stemOpt": true
     },
     {
       "id": "lsu-ourso",
@@ -4762,7 +4934,9 @@
         "Entrepreneurship focus",
         "Southern business culture"
       ],
-      "programUrl": "https://business.lsu.edu/mba/"
+      "programUrl": "https://business.lsu.edu/mba/",
+      "campusType": "campus-town",
+      "stemOpt": false
     },
     {
       "id": "binghamton-som",
@@ -4813,7 +4987,9 @@
         "Diverse cohort",
         "Strong SUNY network"
       ],
-      "programUrl": "https://www.binghamton.edu/som/mba/"
+      "programUrl": "https://www.binghamton.edu/som/mba/",
+      "campusType": "campus-town",
+      "stemOpt": true
     },
     {
       "id": "charleston-mba",
@@ -4864,7 +5040,9 @@
         "Cohort-based",
         "#1 job placement nationally"
       ],
-      "programUrl": "https://business.cofc.edu/graduate-programs/mba.php"
+      "programUrl": "https://business.cofc.edu/graduate-programs/mba.php",
+      "campusType": "urban",
+      "stemOpt": false
     },
     {
       "id": "oklahoma-price",
@@ -4915,7 +5093,9 @@
         "Paris IFP partnership",
         "Tight-knit community"
       ],
-      "programUrl": "https://price.ou.edu/mba/"
+      "programUrl": "https://price.ou.edu/mba/",
+      "campusType": "campus-town",
+      "stemOpt": false
     },
     {
       "id": "oregon-lundquist",
@@ -4966,7 +5146,9 @@
         "Outdoor lifestyle",
         "Innovation-driven"
       ],
-      "programUrl": "https://business.uoregon.edu/mba"
+      "programUrl": "https://business.uoregon.edu/mba",
+      "campusType": "campus-town",
+      "stemOpt": true
     },
     {
       "id": "mississippi",
@@ -5017,7 +5199,9 @@
         "Small class sizes",
         "Personalized attention"
       ],
-      "programUrl": "https://business.olemiss.edu/mba/"
+      "programUrl": "https://business.olemiss.edu/mba/",
+      "campusType": "campus-town",
+      "stemOpt": false
     },
     {
       "id": "cincinnati-lindner",
@@ -5068,7 +5252,9 @@
         "Study abroad required",
         "Personalized learning"
       ],
-      "programUrl": "https://business.uc.edu/graduate/mba.html"
+      "programUrl": "https://business.uc.edu/graduate/mba.html",
+      "campusType": "urban",
+      "stemOpt": true
     },
     {
       "id": "buffalo-suny",
@@ -5119,7 +5305,9 @@
         "Research-focused",
         "Collaborative environment"
       ],
-      "programUrl": "https://management.buffalo.edu/programs/mba.html"
+      "programUrl": "https://management.buffalo.edu/programs/mba.html",
+      "campusType": "urban",
+      "stemOpt": true
     },
     {
       "id": "canisius-wehle",
@@ -5170,7 +5358,9 @@
         "Buffalo business community",
         "Service-oriented"
       ],
-      "programUrl": "https://www.canisius.edu/academics/schools-colleges/richard-j-wehle-school-business/graduate-programs/mba"
+      "programUrl": "https://www.canisius.edu/academics/schools-colleges/richard-j-wehle-school-business/graduate-programs/mba",
+      "campusType": "urban",
+      "stemOpt": false
     },
     {
       "id": "loyola-maryland-sellinger",
@@ -5221,7 +5411,9 @@
         "Baltimore location",
         "Collaborative learning"
       ],
-      "programUrl": "https://sellinger.loyola.edu/graduate-programs/mba/"
+      "programUrl": "https://sellinger.loyola.edu/graduate-programs/mba/",
+      "campusType": "urban",
+      "stemOpt": false
     },
     {
       "id": "detroit-mercy",
@@ -5272,7 +5464,9 @@
         "Industry partnerships",
         "Urban campus"
       ],
-      "programUrl": "https://business.udmercy.edu/mba/"
+      "programUrl": "https://business.udmercy.edu/mba/",
+      "campusType": "urban",
+      "stemOpt": false
     },
     {
       "id": "bentley-mccallum",
@@ -5323,7 +5517,9 @@
         "Trading floor facilities",
         "Data-driven"
       ],
-      "programUrl": "https://www.bentley.edu/graduate/mba"
+      "programUrl": "https://www.bentley.edu/graduate/mba",
+      "campusType": "campus-town",
+      "stemOpt": true
     },
     {
       "id": "clemson",
@@ -5374,7 +5570,9 @@
         "Southeast focus",
         "Family atmosphere"
       ],
-      "programUrl": "https://business.clemson.edu/mba/"
+      "programUrl": "https://business.clemson.edu/mba/",
+      "campusType": "campus-town",
+      "stemOpt": true
     },
     {
       "id": "claremont-drucker",
@@ -5425,7 +5623,9 @@
         "Purpose-driven",
         "Southern California network"
       ],
-      "programUrl": "https://cgu.edu/school/drucker-school-of-management/programs/mba/"
+      "programUrl": "https://cgu.edu/school/drucker-school-of-management/programs/mba/",
+      "campusType": "campus-town",
+      "stemOpt": false
     }
   ]
 }

@@ -8,13 +8,13 @@
  * ---------------------------------------------------------------------------
  */
 
-import { POST_MBA_GOALS, TARGET_GEOGRAPHIES } from './constants.js'
+import { POST_MBA_GOALS, CAMPUS_ENV_OPTIONS } from './constants.js'
 
 // Human-readable labels for each priority key
 const PRIORITY_LABELS = {
   prestige:             'academic prestige',
   industryPlacement:    'strong industry placement',
-  locationLifestyle:    'location & city lifestyle',
+  campusEnvironment:    'campus vibe & environment',
   affordability:        'affordability',
   scholarship:          'scholarship potential',
   internationalSupport: 'international student support',
@@ -33,12 +33,12 @@ const PRIORITY_LABELS = {
  * }}
  */
 export function generateUserInsights(formData) {
-  const { priorities, postMBAGoal, targetGeography, currentRegion,
-          budgetSensitivity, scholarshipImportance, gmatScore } = formData
+  const { priorities, postMBAGoal, campusEnv, currentRegion,
+          budgetSensitivity, scholarshipImportance, examScore, examType } = formData
 
   const isInternational = currentRegion !== 'north-america'
-  const goalLabel = POST_MBA_GOALS.find(g => g.value === postMBAGoal)?.label ?? 'your target role'
-  const geoLabel  = TARGET_GEOGRAPHIES.find(g => g.value === targetGeography)?.label ?? 'your region'
+  const goalLabel  = POST_MBA_GOALS.find(g => g.value === postMBAGoal)?.label ?? 'your target role'
+  const envLabel   = CAMPUS_ENV_OPTIONS.find(o => o.value === campusEnv)?.label ?? null
 
   // Sort priorities by rating
   const sorted = Object.entries(priorities).sort((a, b) => b[1] - a[1])
@@ -66,10 +66,10 @@ export function generateUserInsights(formData) {
     summary = `You're optimising for ${rest}, and ${topLabels[topLabels.length - 1]}`
   }
 
-  // Add goal + geo context
+  // Add goal context
   summary += `, with a clear target of ${goalLabel}`
-  if (targetGeography && targetGeography !== 'flexible' && targetGeography !== 'outside-us') {
-    summary += ` in the ${geoLabel} area`
+  if (campusEnv && campusEnv !== 'no-preference' && envLabel) {
+    summary += `. You prefer a ${campusEnv === 'urban' ? 'big-city campus' : 'quieter campus-town setting'}`
   }
   summary += '.'
 
@@ -86,15 +86,15 @@ export function generateUserInsights(formData) {
   // ── Profile note (optional contextual observation) ─────────────────────
   let profileNote = null
 
-  const gmat = parseInt(gmatScore)
+  const gmat = parseInt(examScore)
   if (isInternational && priorities.internationalSupport >= 4) {
     profileNote = 'As an international applicant who also prioritises international support, we\'ve up-weighted programs with strong global communities and cross-border career services.'
   } else if (isInternational) {
     profileNote = 'As an international applicant, we\'ve given extra weight to programs with higher international cohort percentages and dedicated global career support.'
   } else if (budgetSensitivity === 'major-factor' || scholarshipImportance === 'deal-breaker') {
     profileNote = 'Cost is a real constraint for you — programs with tuition below $65k/yr and strong scholarship track records are weighted more heavily in your results.'
-  } else if (gmat > 0 && gmat < 680) {
-    profileNote = 'With a GMAT below 680, some top-ranked programs may be stretch territory. We\'ve surfaced programs where your profile is genuinely competitive.'
+  } else if (examType && examType !== 'none' && gmat > 0 && gmat < 680) {
+    profileNote = 'With a score below 680, some top-ranked programs may be stretch territory. We\'ve surfaced programs where your profile is genuinely competitive.'
   } else if (postMBAGoal === 'entrepreneurship') {
     profileNote = 'Entrepreneurship paths vary a lot by program — we\'ve weighted academic strength in this area alongside access to startup ecosystems.'
   } else if (postMBAGoal === 'social-impact') {

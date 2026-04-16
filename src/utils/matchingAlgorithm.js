@@ -6,7 +6,7 @@
  *
  * SCORE ARCHITECTURE
  * ------------------
- * Each school receives a raw score in 8 dimensions. Each dimension is
+ * Each school receives a raw score across 10 dimensions. Each dimension is
  * normalised to a 0–1 fraction and multiplied by an adjustable weight.
  * Weights sum to a dynamic total, and the final score is expressed as
  * a 0–100 integer.
@@ -16,10 +16,10 @@
  *
  * TIER CUTOFFS (applied after scoring)
  * -------------------------------------
- * Strong Fit   : top schools, score >= 65 (floor: always show ≥ 3)
+ * Strong Fit      : top schools, score >= 65 (floor: always show >= 3)
  * Worth Exploring : score 45–64
- * Stretch      : GMAT gap > 30 pts AND otherwise reasonable fit (score >= 40
- *                when GMAT dimension is treated as neutral)
+ * Stretch         : exam score gap > 30 pts AND otherwise reasonable fit
+ *                   (score >= 40 when test dimension is treated as neutral)
  *
  * To adjust weights, edit the `buildWeights()` function below.
  * To add more schools, just append to the JSON — no code changes needed.
@@ -29,7 +29,6 @@
 import {
   M7_IDS,
   T15_IDS,
-  STATE_TO_GEO,
   GOAL_TO_INDUSTRY_KW,
   GOAL_TO_STRENGTH_KW,
 } from './constants.js'
@@ -56,7 +55,6 @@ function kwMatchAny(arr, keywords) {
 
 /**
  * Build the scoring weight object based on user inputs.
- * Base weights sum to ~110 before user-priority adjustments.
  *
  * @param {object} formData
  * @returns {object} weights keyed by dimension name
@@ -69,15 +67,24 @@ function buildWeights(formData) {
     // Career goal alignment — scales with how much user cares about placement
     career: 15 + (priorities.industryPlacement / 5) * 20, // 19–35
 
-    // Geography — fixed; geography is binary (matches or it doesn't)
-    geography: 15,
+    // Campus environment preference
+    campusEnv: priorities.campusEnvironment <= 2
+      ? 5
+      : 5 + (priorities.campusEnvironment / 5) * 10, // 6–15
 
-    // Affordability — doubles if cost is a major factor
+    // Affordability — scales with budget sensitivity
     affordability: budgetSensitivity === 'major-factor'
-      ? 25
+      ? 20
       : budgetSensitivity === 'matters-somewhat'
-        ? 18
-        : 10 + (priorities.affordability / 5) * 5,
+        ? 14
+        : 8,
+
+    // ROI (salary-to-cost ratio) — separate from raw affordability
+    roi: budgetSensitivity === 'major-factor'
+      ? 15
+      : budgetSensitivity === 'matters-somewhat'
+        ? 10
+        : 5,
 
     // International student support — heavily upweighted for non-US applicants
     international: isInternational
@@ -87,7 +94,7 @@ function buildWeights(formData) {
     // Culture fit — scales with collaborative culture rating
     culture: 8 + (priorities.collaborativeCulture / 5) * 12, // 10.4–20
 
-    // GMAT competitiveness
+    // Test score competitiveness
     gmat: 10,
 
     // Employment rate quality
@@ -95,6 +102,9 @@ function buildWeights(formData) {
 
     // Prestige / brand — flattened when user doesn't care about rankings
     prestige: priorities.prestige <= 2 ? 4 : 5 + (priorities.prestige / 5) * 8,
+
+    // Work experience fit — fixed small signal
+    workExperience: 6,
   }
 }
 
@@ -105,13 +115,21 @@ function buildWeights(formData) {
 /**
  * 1. Career Goal Alignment — max 25 pts
  * Maps the user's post-MBA goal to industry keywords and academic strengths.
+ * Career switchers use their careerSwitchTarget sub-goal for real matching.
  */
 function scoreCareer(school, formData) {
   const { postMBAGoal } = formData
-  const industryKW = GOAL_TO_INDUSTRY_KW[postMBAGoal] || []
-  const strengthKW  = GOAL_TO_STRENGTH_KW[postMBAGoal] || []
 
-  if (!industryKW.length) return 12 // neutral goals (career-switch, other)
+  // Career switchers with a target get real matching against that target
+  let effectiveGoal = postMBAGoal
+  if (postMBAGoal === 'career-switch' && formData.careerSwitchTarget) {
+    effectiveGoal = formData.careerSwitchTarget
+  }
+
+  const industryKW = GOAL_TO_INDUSTRY_KW[effectiveGoal] || []
+  const strengthKW = GOAL_TO_STRENGTH_KW[effectiveGoal] || []
+
+  if (!industryKW.length) return 12 // neutral goals (career-switch w/o target, other)
 
   const top3 = school.employment.top3Industries
   let base = 0
@@ -128,64 +146,113 @@ function scoreCareer(school, formData) {
 }
 
 /**
- * 2. Geography Match — max 15 pts
- * Maps the user's target region to the school's state.
+ * 2. Campus Environment Match — max 10 pts
+ * Matches user's campus preference against school's campusType field.
  */
-function scoreGeography(school, formData) {
-  const { targetGeography } = formData
-  if (targetGeography === 'flexible') return 15
-  if (targetGeography === 'outside-us') return 2 // all schools are US-based
-  const schoolGeo = STATE_TO_GEO[school.location.state]
-  return schoolGeo === targetGeography ? 15 : 2
+function scoreCampusEnv(school, formData) {
+  const pref = formData.campusEnv
+  if (!pref || pref === 'no-preference') return 10
+  return school.campusType === pref ? 10 : 3
 }
 
 /**
- * 3. Affordability — max 15 pts (effective max raised to 25 via weight)
- * Tiers based on annual tuition.
+ * 3. Affordability — max 15 pts
+ * Tiers based on annual tuition. Scholarship deal-breaker further penalises.
  */
-function scoreAffordability(school) {
+function scoreAffordability(school, formData) {
   const t = school.costs.annualTuition
-  if (t < 55000) return 15
-  if (t < 70000) return 10
-  if (t < 80000) return 6
-  return 2
+  let score
+  if (t < 55000) score = 15
+  else if (t < 70000) score = 10
+  else if (t < 80000) score = 6
+  else score = 2
+
+  // Scholarship signal — penalise very expensive schools for deal-breaker users
+  if (formData.scholarshipImportance === 'deal-breaker' && school.costs.annualTuition > 80000) {
+    score = Math.max(score - 4, 0)
+  }
+
+  return score
 }
 
 /**
- * 4. International Student Support — max 15 pts (weight doubles for non-US)
- * Based on % international students in the cohort.
+ * 4. ROI — Salary-to-Cost Ratio — max 10 pts
+ * Uses avgStartingSalary / totalProgramCost as a return signal.
  */
-function scoreInternational(school) {
-  const pct = school.classProfile.internationalStudentPct
-  if (pct > 40) return 15
-  if (pct >= 35) return 10
-  if (pct >= 30) return 6
-  return 2
+function scoreROI(school) {
+  const salary = school.employment.avgStartingSalary
+  const cost   = school.costs.totalProgramCost
+  if (!salary || !cost) return 5 // neutral if data missing
+
+  const ratio = salary / cost
+  if (ratio >= 1.3) return 10
+  if (ratio >= 1.1) return 7
+  if (ratio >= 0.9) return 5
+  return 3
 }
 
 /**
- * 5. Culture Fit — max 15 pts
+ * 5. International Student Support — max 15 pts
+ * Based on % international students + STEM OPT bonus for F-1 visa holders.
+ */
+function scoreInternational(school, formData) {
+  const pct = school.classProfile.internationalStudentPct
+  let score
+  if (pct > 40) score = 15
+  else if (pct >= 35) score = 10
+  else if (pct >= 30) score = 6
+  else score = 2
+
+  // STEM OPT bonus — meaningful for international students on F-1 visa
+  const isInternational = formData.currentRegion !== 'north-america'
+  if (isInternational && school.stemOpt) {
+    score = Math.min(score + 3, 15)
+  }
+
+  return score
+}
+
+/**
+ * 6. Culture Fit — max 15 pts
  * Rewards collaborative culture when user rates it highly;
- * rewards prestige-adjacent culture signals when user rates prestige highly.
+ * penalises competitive schools for users seeking collaborative environments.
  */
 function scoreCulture(school, formData) {
   const { priorities } = formData
   const collabRating = priorities.collaborativeCulture
+  const cultureTags  = school.culture.map(c => c.toLowerCase())
 
-  const hasCollab = school.culture.some(c =>
-    c.toLowerCase().includes('collaborative') || c.toLowerCase().includes('team')
+  const hasCollab = cultureTags.some(c =>
+    c.includes('collaborative') || c.includes('team') || c.includes('community')
   )
-  const hasMission = school.culture.some(c =>
-    c.toLowerCase().includes('mission') || c.toLowerCase().includes('social')
+  const hasCompetitive = cultureTags.some(c =>
+    c.includes('competitive') || c.includes('cutthroat') || c.includes('high energy')
+  )
+  const hasMission = cultureTags.some(c =>
+    c.includes('mission') || c.includes('social') || c.includes('beyond yourself')
   )
 
-  let score = 0
-  if (collabRating >= 4 && hasCollab) score = 15
-  else if (collabRating >= 3 && hasCollab) score = 10
-  else if (collabRating <= 2) score = 8 // user doesn't prioritise this
-  else score = 5
+  let score = 5 // base
 
-  // Small prestige-culture bonus for M7 when user values brand
+  if (collabRating >= 4) {
+    if (hasCollab && !hasCompetitive)  score = 15
+    else if (hasCollab && hasCompetitive) score = 10
+    else if (hasCompetitive)           score = 3   // explicit mismatch
+    else                               score = 7
+  } else if (collabRating >= 3) {
+    if (hasCollab) score = 10
+    else           score = 7
+  } else {
+    // User doesn't care about collaboration — flatten scores
+    score = 8
+  }
+
+  // Small mission-driven bonus for social impact goals
+  if (hasMission && formData.postMBAGoal === 'social-impact') {
+    score = Math.min(score + 2, 15)
+  }
+
+  // M7 prestige bonus when user values brand
   if (priorities.prestige >= 4 && M7_IDS.has(school.id)) {
     score = Math.min(score + 2, 15)
   }
@@ -194,24 +261,34 @@ function scoreCulture(school, formData) {
 }
 
 /**
- * 6. GMAT Competitiveness — max 10 pts
- * If no GMAT entered, all schools receive 7 (neutral).
- * Stretch schools (gap > 30) receive 0 from this dimension.
+ * 7. Test Score Competitiveness — max 10 pts
+ * Supports GMAT Focus, GMAT Classic, and GRE.
+ * If no score entered or exam type is 'none', returns neutral 7.
  */
-function scoreGmat(school, formData) {
-  const gmat = parseInt(formData.gmatScore)
-  if (!gmat || gmat === 0) return 7 // neutral — not penalised
+function scoreTestScore(school, formData) {
+  const { examType, examScore } = formData
+  const score = parseInt(examScore)
 
-  const avg = school.classProfile.avgGMAT
-  const gap = avg - gmat // positive = user is below avg
+  if (!examType || examType === 'none' || !score || score === 0) return 7
 
-  if (gap <= 20) return 10 // within 20 pts (or above avg)
-  if (gap <= 40) return 5  // 20–40 pts below — possible but tough
-  return 0                  // 40+ pts below — stretch territory
+  let avg, gap
+  if (examType === 'gre') {
+    avg = school.classProfile.avgGRE
+    gap = avg - score
+  } else {
+    // gmat-focus and gmat-classic treated equivalently
+    avg = school.classProfile.avgGMAT
+    gap = avg - score
+  }
+
+  if (gap <= 10) return 10  // at or above average
+  if (gap <= 30) return 7   // within 30 pts — reasonable
+  if (gap <= 50) return 4   // 30–50 pts below — tough
+  return 0                   // 50+ below — stretch territory
 }
 
 /**
- * 7. Employment Rate Quality — max 10 pts
+ * 8. Employment Rate Quality — max 10 pts
  */
 function scoreEmployment(school) {
   const r = school.employment.employmentRate3Months
@@ -223,18 +300,30 @@ function scoreEmployment(school) {
 }
 
 /**
- * 8. Prestige / Brand Weight — max 10 pts
- * Scaled by how much the user rated prestige.
- * Flattened to ~5 when user rates prestige 1–2.
+ * 9. Prestige / Brand Weight — max 10 pts
  */
 function scorePrestige(school, formData) {
   const rating = formData.priorities.prestige
-
   if (rating <= 2) return 5 // user doesn't care — everyone scores the same
-
   if (M7_IDS.has(school.id)) return 10
   if (T15_IDS.has(school.id)) return 6
   return 2
+}
+
+/**
+ * 10. Work Experience Fit — max 6 pts
+ * Checks how close the user's years of experience is to the school's average.
+ */
+function scoreWorkExperience(school, formData) {
+  const years = parseFloat(formData.yearsExperience)
+  if (!years && years !== 0) return 3 // neutral if blank
+  const avg = school.classProfile.avgWorkExperience
+  const gap = Math.abs(avg - years)
+
+  if (gap <= 0.5) return 6  // very close to school average
+  if (gap <= 1.5) return 4  // within 1.5 years — fine
+  if (gap <= 3.0) return 2  // notable mismatch
+  return 1                   // significant outlier
 }
 
 // ---------------------------------------------------------------------------
@@ -253,22 +342,23 @@ export function scoreSchool(school, formData) {
   const weights = buildWeights(formData)
   const totalWeight = Object.values(weights).reduce((a, b) => a + b, 0)
 
-  // Raw scores (each on its own scale)
   const raw = {
-    career:        scoreCareer(school, formData),
-    geography:     scoreGeography(school, formData),
-    affordability: scoreAffordability(school),
-    international: scoreInternational(school),
-    culture:       scoreCulture(school, formData),
-    gmat:          scoreGmat(school, formData),
-    employment:    scoreEmployment(school),
-    prestige:      scorePrestige(school, formData),
+    career:         scoreCareer(school, formData),
+    campusEnv:      scoreCampusEnv(school, formData),
+    affordability:  scoreAffordability(school, formData),
+    roi:            scoreROI(school),
+    international:  scoreInternational(school, formData),
+    culture:        scoreCulture(school, formData),
+    gmat:           scoreTestScore(school, formData),
+    employment:     scoreEmployment(school),
+    prestige:       scorePrestige(school, formData),
+    workExperience: scoreWorkExperience(school, formData),
   }
 
-  // Max possible raw score for each dimension (for normalisation)
   const maxRaw = {
-    career: 25, geography: 15, affordability: 15,
-    international: 15, culture: 15, gmat: 10, employment: 10, prestige: 10,
+    career: 25, campusEnv: 10, affordability: 15,
+    roi: 10, international: 15, culture: 15,
+    gmat: 10, employment: 10, prestige: 10, workExperience: 6,
   }
 
   // Weighted sum, normalised to 0–100
@@ -292,21 +382,27 @@ export function scoreSchool(school, formData) {
 // ---------------------------------------------------------------------------
 
 /**
- * A school is a "stretch" if the user's GMAT is > 30 pts below the school avg.
- * Only applies when the user has entered a GMAT score.
+ * A school is a "stretch" if the user's score is > 30 pts below the school avg.
+ * Supports GMAT and GRE.
  */
-function isStretch(school, gmatInput) {
-  const gmat = parseInt(gmatInput)
-  if (!gmat || gmat === 0) return false
-  return gmat < school.classProfile.avgGMAT - 30
+function isStretch(school, formData) {
+  const { examType, examScore } = formData
+  const score = parseInt(examScore)
+  if (!score || score === 0 || examType === 'none' || !examType) return false
+
+  if (examType === 'gre') {
+    return score < school.classProfile.avgGRE - 30
+  }
+  // gmat-focus and gmat-classic
+  return score < school.classProfile.avgGMAT - 30
 }
 
 /**
- * Score the same school but treat GMAT as neutral (7/10).
+ * Score the same school but treat test score as neutral (0).
  * Used to determine if a stretch school is still "otherwise a reasonable fit."
  */
-function scoreWithNeutralGmat(school, formData) {
-  const neutralForm = { ...formData, gmatScore: '0' }
+function scoreWithNeutralTest(school, formData) {
+  const neutralForm = { ...formData, examScore: '0' }
   return scoreSchool(school, neutralForm).totalScore
 }
 
@@ -320,11 +416,11 @@ function scoreWithNeutralGmat(school, formData) {
  * @param {object[]} schools   - Full array from mba_schools_data.json
  * @param {object}   formData  - User form state
  * @returns {{
- *   strongFit:     ScoredSchool[],
+ *   strongFit:      ScoredSchool[],
  *   worthExploring: ScoredSchool[],
- *   stretch:       ScoredSchool[],
- *   hiddenGems:    ScoredSchool[],
- *   allScored:     ScoredSchool[],
+ *   stretch:        ScoredSchool[],
+ *   hiddenGems:     ScoredSchool[],
+ *   allScored:      ScoredSchool[],
  * }}
  */
 export function runMatching(schools, formData) {
@@ -335,24 +431,23 @@ export function runMatching(schools, formData) {
   scored.sort((a, b) => b.totalScore - a.totalScore)
 
   // Separate stretch vs non-stretch
-  const stretchPool  = []
-  const regularPool  = []
+  const stretchPool = []
+  const regularPool = []
 
   for (const s of scored) {
-    if (isStretch(s.school, formData.gmatScore)) {
+    if (isStretch(s.school, formData)) {
       // Only include as stretch if it would otherwise be a reasonable fit
-      const neutralScore = scoreWithNeutralGmat(s.school, formData)
+      const neutralScore = scoreWithNeutralTest(s.school, formData)
       if (neutralScore >= 40) {
         stretchPool.push({ ...s, tier: 'stretch' })
       }
-      // If score is very low even with neutral GMAT, omit from stretch tier
     } else {
       regularPool.push(s)
     }
   }
 
   // Tier the regular pool
-  const STRONG_THRESHOLD   = 65
+  const STRONG_THRESHOLD    = 65
   const EXPLORING_THRESHOLD = 45
 
   let strongFitRaw = regularPool.filter(s => s.totalScore >= STRONG_THRESHOLD).slice(0, 6)
@@ -369,7 +464,7 @@ export function runMatching(schools, formData) {
     .slice(0, 8)
 
   // Assign tiers
-  const strongFit     = strongFitRaw.map(s => ({ ...s, tier: 'strong' }))
+  const strongFit      = strongFitRaw.map(s => ({ ...s, tier: 'strong' }))
   const worthExploring = worthExploringRaw.map(s => ({ ...s, tier: 'exploring' }))
   const stretch        = stretchPool.slice(0, 4)
 

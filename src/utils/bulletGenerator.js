@@ -8,7 +8,7 @@
  * ---------------------------------------------------------------------------
  */
 
-import { GOAL_TO_INDUSTRY_KW, STATE_TO_GEO } from './constants.js'
+import { GOAL_TO_INDUSTRY_KW } from './constants.js'
 
 // ---------------------------------------------------------------------------
 // Helpers
@@ -43,18 +43,24 @@ function kwMatch(text, keywords) {
 export function generateFitBullets(school, formData, breakdown) {
   const {
     postMBAGoal,
-    targetGeography,
+    careerSwitchTarget,
     currentRegion,
     priorities,
-    gmatScore,
+    examScore,
     budgetSensitivity,
+    campusEnv,
   } = formData
 
   const isInternational = currentRegion !== 'north-america'
   const candidates = []
 
+  // Resolve effective goal (career switchers use their sub-goal for matching)
+  const effectiveGoal = (postMBAGoal === 'career-switch' && careerSwitchTarget)
+    ? careerSwitchTarget
+    : postMBAGoal
+
   // ── 1. Industry / career placement match ─────────────────────────────────
-  const industryKW = GOAL_TO_INDUSTRY_KW[postMBAGoal] || []
+  const industryKW = GOAL_TO_INDUSTRY_KW[effectiveGoal] || []
   const top3 = school.employment.top3Industries
   const matchedIndustry = top3.find(ind => kwMatch(ind, industryKW))
 
@@ -67,16 +73,14 @@ export function generateFitBullets(school, formData, breakdown) {
     })
   }
 
-  // ── 2. Geography / location match ────────────────────────────────────────
-  const schoolGeo = STATE_TO_GEO[school.location.state]
-  if (
-    targetGeography !== 'flexible' &&
-    targetGeography !== 'outside-us' &&
-    schoolGeo === targetGeography
-  ) {
+  // ── 2. Campus environment match ──────────────────────────────────────────
+  if (campusEnv && campusEnv !== 'no-preference' && school.campusType === campusEnv) {
+    const envLabel = campusEnv === 'urban'
+      ? 'urban campus embedded in a major metro'
+      : 'tight-knit campus-town environment'
     candidates.push({
       score: 9,
-      text: `Located in ${school.location.city}, ${school.location.state} — right in your preferred region for post-MBA work`,
+      text: `${school.location.city} offers the ${envLabel} you're looking for`,
     })
   }
 
@@ -144,7 +148,15 @@ export function generateFitBullets(school, formData, breakdown) {
     })
   }
 
-  // ── 7. Cost advantage (if user is budget-aware) ───────────────────────────
+  // ── 7. STEM OPT for international students ───────────────────────────────
+  if (isInternational && school.stemOpt) {
+    candidates.push({
+      score: 7,
+      text: `STEM-designated program — F-1 students eligible for 3-year OPT extension, strengthening your job search runway`,
+    })
+  }
+
+  // ── 8. Cost advantage (if user is budget-aware) ───────────────────────────
   if (budgetSensitivity !== 'not-concern' && tuition < 65_000) {
     candidates.push({
       score: 8,
@@ -152,7 +164,7 @@ export function generateFitBullets(school, formData, breakdown) {
     })
   }
 
-  // ── 8. Exceptional placement rate ────────────────────────────────────────
+  // ── 9. Exceptional placement rate ────────────────────────────────────────
   const empRate = school.employment.employmentRate3Months
   if (empRate >= 95) {
     candidates.push({
@@ -161,7 +173,7 @@ export function generateFitBullets(school, formData, breakdown) {
     })
   }
 
-  // ── 9. Academic strength match for goal ──────────────────────────────────
+  // ── 10. Academic strength match for goal ─────────────────────────────────
   const strengthMap = {
     entrepreneurship: 'Entrepreneurship',
     finance: 'Finance',
@@ -170,7 +182,7 @@ export function generateFitBullets(school, formData, breakdown) {
     'social-impact': 'Social Enterprise',
     consulting: 'Strategy',
   }
-  const targetStrength = strengthMap[postMBAGoal]
+  const targetStrength = strengthMap[effectiveGoal]
   if (targetStrength) {
     const hasStrength = school.academicStrengths.some(s =>
       s.toLowerCase().includes(targetStrength.toLowerCase())
@@ -200,22 +212,26 @@ export function generateFitBullets(school, formData, breakdown) {
  * @returns {string}
  */
 export function generateWatchOut(school, formData) {
-  const { gmatScore, budgetSensitivity, targetGeography } = formData
+  const { examScore, examType, budgetSensitivity, campusEnv } = formData
   const warnings = []
 
-  // GMAT gap
-  const gmat = parseInt(gmatScore)
-  if (gmat > 0) {
-    const gap = school.classProfile.avgGMAT - gmat
+  // Test score gap
+  const score = parseInt(examScore)
+  if (score > 0 && examType && examType !== 'none') {
+    const avg = examType === 'gre'
+      ? school.classProfile.avgGRE
+      : school.classProfile.avgGMAT
+    const gap = avg - score
+    const examLabel = examType === 'gre' ? 'GRE' : 'GMAT'
     if (gap > 40) {
       warnings.push({
         priority: 10,
-        text: `Your GMAT (${gmat}) is ${gap} pts below the class avg (${school.classProfile.avgGMAT}) — consider this a reach and invest heavily in essays and interviews`,
+        text: `Your ${examLabel} (${score}) is ${gap} pts below the class avg (${avg}) — consider this a reach and invest heavily in essays and interviews`,
       })
     } else if (gap > 20) {
       warnings.push({
         priority: 8,
-        text: `Your GMAT (${gmat}) is ${gap} pts below the class avg (${school.classProfile.avgGMAT}) — a compelling narrative and strong recommenders will matter more here`,
+        text: `Your ${examLabel} (${score}) is ${gap} pts below the class avg (${avg}) — a compelling narrative and strong recommenders will matter more here`,
       })
     }
   }
@@ -231,22 +247,13 @@ export function generateWatchOut(school, formData) {
     })
   }
 
-  // Geography mismatch
-  const schoolGeo = STATE_TO_GEO[school.location.state]
-  const geoLabel = {
-    northeast: 'Northeast US',
-    'west-coast': 'West Coast',
-    midwest: 'Midwest',
-    'south-southwest': 'South / Southwest',
-  }
-  if (
-    targetGeography !== 'flexible' &&
-    targetGeography !== 'outside-us' &&
-    schoolGeo !== targetGeography
-  ) {
+  // Campus environment mismatch
+  if (campusEnv && campusEnv !== 'no-preference' && school.campusType !== campusEnv) {
+    const preferred = campusEnv === 'urban' ? 'a major metro campus' : 'a quieter campus-town setting'
+    const actual = school.campusType === 'urban' ? 'urban' : 'campus-town'
     warnings.push({
       priority: 5,
-      text: `Most alumni stay in the ${geoLabel[schoolGeo] || 'local'} region — landing in ${geoLabel[targetGeography] || 'your target area'} will require extra networking effort`,
+      text: `You prefer ${preferred}, but ${school.name} is in a ${actual} setting — factor in lifestyle fit during the 2 years`,
     })
   }
 

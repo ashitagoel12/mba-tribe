@@ -1,0 +1,129 @@
+{
+  "schoolId": "stanford-gsb",
+  "schoolName": "Stanford Graduate School of Business",
+  "eventsPageUrl": "https://www.gsb.stanford.edu/programs/mba/admission/events",
+  "scrapingStatus": "success",
+  "eventsFound": 7,
+  "scrapedAt": "2026-04-11T19:51:33.518493+00:00",
+  "events": [
+    {
+      "id": "stanford-gsb-2026-04-11-meet-an-mba-alumopen-in-new-window",
+      "title": "Meet an MBA Alum",
+      "date": "2026-04-11",
+      "time": null,
+      "location": {
+        "type": "in-person",
+        "venue": null,
+        "city": null,
+        "state": null
+      },
+      "eventType": "info-session",
+      "description": "",
+      "registrationUrl": "https://applymbamsx.stanford.edu/register/?id=6f4abec1-75f7-4db0-aa65-70ed4dfce17a",
+      "registrationDeadline": null,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+    },
+    {
+      "id": "stanford-gsb-2026-04-13-gsb-campus-visit-dayopen-in-new-window",
+      "title": "GSB Campus Visit Day",
+      "date": "2026-04-13",
+      "time": null,
+      "location": {
+        "type": "in-person",
+        "venue": null,
+        "city": null,
+        "state": null
+      },
+      "eventType": "campus-visit",
+      "description": "",
+      "registrationUrl": "https://applymbamsx.stanford.edu/register/?id=4508547a-848f-4a4c-889c-cb9b8a71cfe3",
+      "registrationDeadline": null,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+    },
+    {
+      "id": "stanford-gsb-2026-04-13-mba-msx-information-session-in-londonope",
+      "title": "MBA/MSx Information Session in London",
+      "date": "2026-04-13",
+      "time": null,
+      "location": {
+        "type": "in-person",
+        "venue": null,
+        "city": null,
+        "state": null
+      },
+      "eventType": "info-session",
+      "description": "",
+      "registrationUrl": "https://applymbamsx.stanford.edu/register/?id=d3d59a27-3c0e-4a5d-8340-34a4f304c796",
+      "registrationDeadline": null,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+    },
+    {
+      "id": "stanford-gsb-2026-04-14-meet-an-mba-studentopen-in-new-window",
+      "title": "Meet an MBA Student",
+      "date": "2026-04-14",
+      "time": null,
+      "location": {
+        "type": "in-person",
+        "venue": null,
+        "city": null,
+        "state": null
+      },
+      "eventType": "info-session",
+      "description": "",
+      "registrationUrl": "https://applymbamsx.stanford.edu/register/?id=d4d1a287-3f9e-468c-b987-070b555226e6",
+      "registrationDeadline": null,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+    },
+    {
+      "id": "stanford-gsb-2026-04-14-the-mba-master-s-tour-europeopen-in-new-",
+      "title": "The MBA + Master's Tour Europe",
+      "date": "2026-04-14",
+      "time": null,
+      "location": {
+        "type": "in-person",
+        "venue": null,
+        "city": null,
+        "state": null
+      },
+      "eventType": "info-session",
+      "description": "",
+      "registrationUrl": "https://tours.mba.com/europe?utm_source=schooladm&utm_medium=website&utm_campaign=university_marketing_stanford",
+      "registrationDeadline": null,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+    },
+    {
+      "id": "stanford-gsb-2026-05-01-first-fridays-with-gsb-admissions-msx-an",
+      "title": "First Fridays with GSB Admissions: MSx and Mid-Career Development",
+      "date": "2026-05-01",
+      "time": null,
+      "location": {
+        "type": "in-person",
+        "venue": null,
+        "city": null,
+        "state": null
+      },
+      "eventType": "info-session",
+      "description": "",
+      "registrationUrl": "https://applymbamsx.stanford.edu/register/?id=9d35b638-9ed0-4ab4-bc8a-3528df51a2b3",
+      "registrationDeadline": null,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+    },
+    {
+      "id": "stanford-gsb-2026-05-11-clear-admit-mba-fair-in-atlantaopen-in-n",
+      "title": "Clear Admit MBA Fair in Atlanta",
+      "date": "2026-05-11",
+      "time": null,
+      "location": {
+        "type": "in-person",
+        "venue": null,
+        "city": null,
+        "state": null
+      },
+      "eventType": "info-session",
+      "description": "",
+      "registrationUrl": "https://www.clearadmit.com/2026/02/clear-admit-mba-fair-2026-may-11th-atlanta/?utm_campaign=34770045-GMERA%20%26%20MBA%20Fair%202026&utm_source=schools-promo&utm_content=mbafair2026",
+      "registrationDeadline": null,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+    }
+  ]
+}

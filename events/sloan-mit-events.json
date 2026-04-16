@@ -1,0 +1,146 @@
+{
+  "schoolId": "sloan-mit",
+  "schoolName": "MIT Sloan School of Management",
+  "eventsPageUrl": "https://mitsloan.mit.edu/mba/admissions/events",
+  "scrapingStatus": "success",
+  "eventsFound": 8,
+  "scrapedAt": "2026-04-11T19:51:33.518493+00:00",
+  "events": [
+    {
+      "id": "sloan-mit-undated-sloan-visit-program",
+      "title": "Sloan Visit Program",
+      "date": null,
+      "time": null,
+      "location": {
+        "type": "in-person",
+        "venue": null,
+        "city": null,
+        "state": null
+      },
+      "eventType": "info-session",
+      "description": "Join us on campus for MIT Sloan’s Visit Program! This event will give you the chance to learn about all of our programs and tour our campus.",
+      "registrationUrl": "https://applymitsloan.mit.edu/portal/Admissions_SloanVisit",
+      "registrationDeadline": null,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+    },
+    {
+      "id": "sloan-mit-undated-mba-class-visit-program",
+      "title": "MBA Class Visit Program",
+      "date": null,
+      "time": null,
+      "location": {
+        "type": "in-person",
+        "venue": null,
+        "city": null,
+        "state": null
+      },
+      "eventType": "class-visit",
+      "description": "Join us on campus to learn more about the two-year MBA program at MIT Sloan!",
+      "registrationUrl": "https://applymitsloan.mit.edu/portal/Admissions_MBA_ClassVisit",
+      "registrationDeadline": null,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+    },
+    {
+      "id": "sloan-mit-undated-mba-class-visit-program-10-00-am-class",
+      "title": "MBA Class Visit Program • 10:00 AM Class",
+      "date": null,
+      "time": null,
+      "location": {
+        "type": "in-person",
+        "venue": null,
+        "city": null,
+        "state": null
+      },
+      "eventType": "class-visit",
+      "description": "Join us on campus to learn more about the two-year MBA program at MIT Sloan.",
+      "registrationUrl": "https://applymitsloan.mit.edu/portal/Admissions_MBA_ClassVisit?id=9f538d70-c676-4020-9206-6eebf3520b39",
+      "registrationDeadline": null,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+    },
+    {
+      "id": "sloan-mit-undated-mba-class-visit-program-1-00-pm-class",
+      "title": "MBA Class Visit Program • 1:00 PM Class",
+      "date": null,
+      "time": null,
+      "location": {
+        "type": "in-person",
+        "venue": null,
+        "city": null,
+        "state": null
+      },
+      "eventType": "class-visit",
+      "description": "Join us on campus to learn more about the two-year MBA program at MIT Sloan.",
+      "registrationUrl": "https://applymitsloan.mit.edu/portal/Admissions_MBA_ClassVisit?id=d098d02e-b1b5-4af0-abfc-6949cfb07bf5",
+      "registrationDeadline": null,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+    },
+    {
+      "id": "sloan-mit-undated-master-of-finance-virtual-information-se",
+      "title": "Master of Finance • Virtual Information Session",
+      "date": null,
+      "time": null,
+      "location": {
+        "type": "virtual",
+        "venue": null,
+        "city": null,
+        "state": null
+      },
+      "eventType": "webinar",
+      "description": "During this online event, an admissions representative will give an overview of the MFin program's curriculum, student life, career paths, and admissions process.",
+      "registrationUrl": "https://applymitsloan.mit.edu/register/MFinVirtualInfoSession4_14",
+      "registrationDeadline": null,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+    },
+    {
+      "id": "sloan-mit-undated-the-mba-master-s-tour-europe",
+      "title": "The MBA + Master's Tour Europe",
+      "date": null,
+      "time": null,
+      "location": {
+        "type": "in-person",
+        "venue": null,
+        "city": null,
+        "state": null
+      },
+      "eventType": "info-session",
+      "description": "Meet top business schools and learn about their MBA programs and master's programs at this upcoming event.",
+      "registrationUrl": "https://tours.mba.com/europe?utm_source=schooladm&utm_medium=website&utm_campaign=university_marketing_MIT",
+      "registrationDeadline": null,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+    },
+    {
+      "id": "sloan-mit-undated-mit-sloan-mba-early-application-q-a-with",
+      "title": "MIT Sloan MBA Early • Application Q&A with Admissions",
+      "date": null,
+      "time": null,
+      "location": {
+        "type": "in-person",
+        "venue": null,
+        "city": null,
+        "state": null
+      },
+      "eventType": "info-session",
+      "description": "Join an MIT Sloan admissions representative for a group Q&A to get your questions answered.",
+      "registrationUrl": "https://applymitsloan.mit.edu/register/MBAEarlyAppQ&AChatAPR142026",
+      "registrationDeadline": null,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+    },
+    {
+      "id": "sloan-mit-undated-human-centered-leadership-in-an-ai-world",
+      "title": "Human-Centered Leadership in an AI World",
+      "date": null,
+      "time": null,
+      "location": {
+        "type": "in-person",
+        "venue": null,
+        "city": null,
+        "state": null
+      },
+      "eventType": "info-session",
+      "description": "MIT Sloan faculty will present cutting-edge research and insights on three of the most pressing questions shaping the future workforce in relation to generative AI",
+      "registrationUrl": "https://mitsloan.mit.edu/events/2026-04-14-human-centered-leadership-ai-world",
+      "registrationDeadline": null,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+    }
+  ]
+}

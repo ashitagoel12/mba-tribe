@@ -1,0 +1,614 @@
+{
+  "successful": [
+    {
+      "id": "harvard-hbs",
+      "name": "Harvard Business School",
+      "status": "success",
+      "data": {
+        "location": {
+          "city": null,
+          "state": null
+        },
+        "class_profile": {},
+        "academics": {
+          "gmat_average": 10
+        },
+        "extraction_method": "automated_scraping"
+      },
+      "urls_attempted": [
+        "https://www.hbs.edu/mba/admissions/class-profile/",
+        "https://www.hbs.edu/mba/career-outcomes/"
+      ]
+    },
+    {
+      "id": "chicago-booth",
+      "name": "University of Chicago Booth School of Business",
+      "status": "success",
+      "data": {
+        "location": {
+          "city": null,
+          "state": null
+        },
+        "class_profile": {
+          "class_size": 714,
+          "international_percentage": 37
+        },
+        "academics": {
+          "gmat_average": 729,
+          "gpa_average": 3.6
+        },
+        "extraction_method": "automated_scraping",
+        "employment": {}
+      },
+      "urls_attempted": [
+        "https://www.chicagobooth.edu/mba/full-time/admissions/class-profile",
+        "https://www.chicagobooth.edu/mba/full-time/career-impact/employment-report"
+      ]
+    },
+    {
+      "id": "mit-sloan",
+      "name": "MIT Sloan School of Management",
+      "status": "success",
+      "data": {
+        "location": {
+          "city": null,
+          "state": null
+        },
+        "class_profile": {},
+        "academics": {},
+        "extraction_method": "automated_scraping"
+      },
+      "urls_attempted": [
+        "https://mitsloan.mit.edu/mba/meet-class/class-profile",
+        "https://mitsloan.mit.edu/mba/careers/employment-data"
+      ]
+    },
+    {
+      "id": "tuck-dartmouth",
+      "name": "Tuck School of Business - Dartmouth",
+      "status": "success",
+      "data": {
+        "location": {
+          "city": null,
+          "state": null
+        },
+        "class_profile": {},
+        "academics": {
+          "gpa_average": 3.6
+        },
+        "extraction_method": "automated_scraping"
+      },
+      "urls_attempted": [
+        "https://tuck.dartmouth.edu/admissions/class-profile",
+        "https://tuck.dartmouth.edu/careers/employment-reports"
+      ]
+    },
+    {
+      "id": "yale-som",
+      "name": "Yale School of Management",
+      "status": "success",
+      "data": {
+        "location": {
+          "city": null,
+          "state": null
+        },
+        "class_profile": {},
+        "academics": {},
+        "extraction_method": "automated_scraping"
+      },
+      "urls_attempted": [
+        "https://som.yale.edu/programs/mba/admissions/class-profile",
+        "https://som.yale.edu/programs/mba/career-development/employment-data"
+      ]
+    },
+    {
+      "id": "darden-virginia",
+      "name": "Darden School of Business - University of Virginia",
+      "status": "success",
+      "data": {
+        "location": {
+          "city": null,
+          "state": null
+        },
+        "class_profile": {},
+        "academics": {},
+        "extraction_method": "automated_scraping"
+      },
+      "urls_attempted": [
+        "https://www.darden.virginia.edu/mba/admissions/class-profile",
+        "https://www.darden.virginia.edu/mba/career-development/employment-report"
+      ]
+    },
+    {
+      "id": "anderson-ucla",
+      "name": "UCLA Anderson School of Management",
+      "status": "success",
+      "data": {
+        "location": {
+          "city": null,
+          "state": null
+        },
+        "class_profile": {},
+        "academics": {
+          "gmat_average": 10,
+          "gpa_average": 3.1
+        },
+        "extraction_method": "automated_scraping"
+      },
+      "urls_attempted": [
+        "https://www.anderson.ucla.edu/degrees/full-time-mba/admissions/class-profile",
+        "https://www.anderson.ucla.edu/degrees/full-time-mba/career-services/employment-reports"
+      ]
+    },
+    {
+      "id": "marshall-usc",
+      "name": "Marshall School of Business - USC",
+      "status": "success",
+      "data": {
+        "location": {
+          "city": null,
+          "state": null
+        },
+        "class_profile": {},
+        "academics": {},
+        "extraction_method": "automated_scraping",
+        "employment": {}
+      },
+      "urls_attempted": [
+        "https://www.marshall.usc.edu/programs/mba-programs/full-time-mba/admissions/class-profile",
+        "https://www.marshall.usc.edu/programs/mba-programs/full-time-mba/career-services/employment-reports"
+      ]
+    },
+    {
+      "id": "kelley-indiana",
+      "name": "Kelley School of Business - Indiana University",
+      "status": "success",
+      "data": {
+        "location": {
+          "city": null,
+          "state": null
+        },
+        "class_profile": {},
+        "academics": {
+          "gpa_average": 3.5
+        },
+        "extraction_method": "automated_scraping"
+      },
+      "urls_attempted": [
+        "https://kelley.iu.edu/programs/full-time-mba/admissions/class-profile.html",
+        "https://kelley.iu.edu/programs/full-time-mba/career-services/employment-report.html"
+      ]
+    },
+    {
+      "id": "simon-rochester",
+      "name": "Simon Business School - University of Rochester",
+      "status": "success",
+      "data": {
+        "location": {
+          "city": null,
+          "state": null
+        },
+        "class_profile": {},
+        "academics": {
+          "gmat_average": 10
+        },
+        "extraction_method": "automated_scraping"
+      },
+      "urls_attempted": [
+        "https://www.simon.rochester.edu/programs/full-time-mba/admissions/class-profile",
+        "https://www.simon.rochester.edu/programs/full-time-mba/career-management/employment-report"
+      ]
+    }
+  ],
+  "failed": [
+    {
+      "id": "stern-nyu",
+      "name": "NYU Stern School of Business",
+      "status": "failed",
+      "data": {},
+      "urls_attempted": [
+        "https://www.stern.nyu.edu/programs-admissions/full-time-mba/admissions/class-profile"
+      ],
+      "error": "HTTP 404"
+    },
+    {
+      "id": "goizueta-emory",
+      "name": "Goizueta Business School - Emory University",
+      "status": "failed",
+      "data": {},
+      "urls_attempted": [
+        "https://goizueta.emory.edu/programs/mba/admissions/class_profile"
+      ],
+      "error": "HTTP 404"
+    },
+    {
+      "id": "jones-rice",
+      "name": "Jones Graduate School of Business - Rice University",
+      "status": "failed",
+      "data": {},
+      "urls_attempted": [
+        "https://business.rice.edu/mba/admissions/class-profile"
+      ],
+      "error": "HTTP 404"
+    },
+    {
+      "id": "scheller-gatech",
+      "name": "Scheller College of Business - Georgia Tech",
+      "status": "failed",
+      "data": {},
+      "urls_attempted": [
+        "https://scheller.gatech.edu/degree-programs/full-time-mba/admissions/class-profile.html"
+      ],
+      "error": "HTTP 404"
+    },
+    {
+      "id": "fisher-ohio-state",
+      "name": "Fisher College of Business - Ohio State University",
+      "status": "failed",
+      "data": {},
+      "urls_attempted": [
+        "https://fisher.osu.edu/graduate/full-time-mba/admissions/class-profile"
+      ],
+      "error": "HTTP 404"
+    },
+    {
+      "id": "smeal-penn-state",
+      "name": "Smeal College of Business - Penn State University",
+      "status": "failed",
+      "data": {},
+      "urls_attempted": [
+        "https://www.smeal.psu.edu/mba/admissions/class-profile"
+      ],
+      "error": "HTTPSConnectionPool(host='oneyearmba.smeal.psu.edu', port=443): Max retries exceeded with url: /details/application-process (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)')))"
+    },
+    {
+      "id": "smith-maryland",
+      "name": "Robert H. Smith School of Business - University of Maryland",
+      "status": "failed",
+      "data": {},
+      "urls_attempted": [
+        "https://www.rhsmith.umd.edu/programs/full-time-mba/admissions/class-profile"
+      ],
+      "error": "HTTP 404"
+    },
+    {
+      "id": "carey-asu",
+      "name": "W. P. Carey School of Business - Arizona State University",
+      "status": "failed",
+      "data": {},
+      "urls_attempted": [
+        "https://wpcarey.asu.edu/mba-programs/full-time-mba/admissions/class-profile"
+      ],
+      "error": "HTTP 404"
+    },
+    {
+      "id": "krannert-purdue",
+      "name": "Krannert School of Management - Purdue University",
+      "status": "failed",
+      "data": {},
+      "urls_attempted": [
+        "https://krannert.purdue.edu/masters/programs/mba/admissions/class-profile.php"
+      ],
+      "error": "HTTP 404"
+    },
+    {
+      "id": "gsm-ucdavis",
+      "name": "Graduate School of Management - UC Davis",
+      "status": "failed",
+      "data": {},
+      "urls_attempted": [
+        "https://gsm.ucdavis.edu/mba-programs/full-time-mba/admissions/class-profile"
+      ],
+      "error": "HTTP 404"
+    },
+    {
+      "id": "merage-uci",
+      "name": "Paul Merage School of Business - UC Irvine",
+      "status": "failed",
+      "data": {},
+      "urls_attempted": [
+        "https://merage.uci.edu/programs/mba/full-time-mba/admissions/class-profile.html"
+      ],
+      "error": "('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
+    },
+    {
+      "id": "cox-smu",
+      "name": "Cox School of Business - Southern Methodist University",
+      "status": "failed",
+      "data": {},
+      "urls_attempted": [
+        "https://www.smu.edu/cox/Degrees-and-Programs/mba/admissions/class-profile"
+      ],
+      "error": "HTTP 404"
+    },
+    {
+      "id": "thunderbird-asu",
+      "name": "Thunderbird School of Global Management - ASU",
+      "status": "failed",
+      "data": {},
+      "urls_attempted": [
+        "https://thunderbird.asu.edu/degrees/global-mba/admissions/class-profile"
+      ],
+      "error": "HTTP 404"
+    },
+    {
+      "id": "mason-wm",
+      "name": "Raymond A. Mason School of Business - William & Mary",
+      "status": "failed",
+      "data": {},
+      "urls_attempted": [
+        "https://mason.wm.edu/programs/mba/admissions/class-profile.php"
+      ],
+      "error": "HTTP 404"
+    }
+  ],
+  "manual_review_needed": [
+    {
+      "id": "stanford-gsb",
+      "name": "Stanford Graduate School of Business",
+      "status": "manual_review_needed",
+      "data": {},
+      "urls_attempted": [
+        "https://www.gsb.stanford.edu/programs/mba/admission/evaluation-criteria/class-profile"
+      ],
+      "error": "Anti-bot protection (Cloudflare/CAPTCHA)"
+    },
+    {
+      "id": "wharton-penn",
+      "name": "The Wharton School - University of Pennsylvania",
+      "status": "manual_review_needed",
+      "data": {},
+      "urls_attempted": [
+        "https://mba.wharton.upenn.edu/class-profile/"
+      ],
+      "error": "Anti-bot protection (Cloudflare/CAPTCHA)"
+    },
+    {
+      "id": "kellogg-northwestern",
+      "name": "Northwestern University Kellogg School of Management",
+      "status": "manual_review_needed",
+      "data": {},
+      "urls_attempted": [
+        "https://www.kellogg.northwestern.edu/programs/full-time-mba/class-profile/"
+      ],
+      "error": "Anti-bot protection (Cloudflare/CAPTCHA)"
+    },
+    {
+      "id": "columbia-cbs",
+      "name": "Columbia Business School",
+      "status": "manual_review_needed",
+      "data": {},
+      "urls_attempted": [
+        "https://academics.business.columbia.edu/mba/admissions/class-profile"
+      ],
+      "error": "Anti-bot protection (Cloudflare/CAPTCHA)"
+    },
+    {
+      "id": "haas-berkeley",
+      "name": "Haas School of Business - UC Berkeley",
+      "status": "manual_review_needed",
+      "data": {},
+      "urls_attempted": [
+        "https://mba.haas.berkeley.edu/admissions/class-profile"
+      ],
+      "error": "Anti-bot protection (Cloudflare/CAPTCHA)"
+    },
+    {
+      "id": "ross-michigan",
+      "name": "Ross School of Business - University of Michigan",
+      "status": "manual_review_needed",
+      "data": {},
+      "urls_attempted": [
+        "https://michiganross.umich.edu/graduate/full-time-mba/admissions/class-profile"
+      ],
+      "error": "Anti-bot protection (Cloudflare/CAPTCHA)"
+    },
+    {
+      "id": "fuqua-duke",
+      "name": "Fuqua School of Business - Duke University",
+      "status": "manual_review_needed",
+      "data": {},
+      "urls_attempted": [
+        "https://www.fuqua.duke.edu/programs/daytime-mba/class-profile"
+      ],
+      "error": "Anti-bot protection (Cloudflare/CAPTCHA)"
+    },
+    {
+      "id": "johnson-cornell",
+      "name": "Johnson Graduate School of Management - Cornell University",
+      "status": "manual_review_needed",
+      "data": {},
+      "urls_attempted": [
+        "https://www.johnson.cornell.edu/programs/full-time-mba/admissions/class-profile/"
+      ],
+      "error": "Anti-bot protection (Cloudflare/CAPTCHA)"
+    },
+    {
+      "id": "mccombs-texas",
+      "name": "McCombs School of Business - University of Texas Austin",
+      "status": "manual_review_needed",
+      "data": {},
+      "urls_attempted": [
+        "https://www.mccombs.utexas.edu/master-of-business-administration/full-time-mba/admissions/class-profile"
+      ],
+      "error": "Anti-bot protection (Cloudflare/CAPTCHA)"
+    },
+    {
+      "id": "kenan-flagler-unc",
+      "name": "Kenan-Flagler Business School - UNC Chapel Hill",
+      "status": "manual_review_needed",
+      "data": {},
+      "urls_attempted": [
+        "https://www.kenan-flagler.unc.edu/programs/mba/admissions/class-profile/"
+      ],
+      "error": "Anti-bot protection (Cloudflare/CAPTCHA)"
+    },
+    {
+      "id": "tepper-cmu",
+      "name": "Tepper School of Business - Carnegie Mellon University",
+      "status": "manual_review_needed",
+      "data": {},
+      "urls_attempted": [
+        "https://www.cmu.edu/tepper/programs/mba/admissions/class-profile.html"
+      ],
+      "error": "Anti-bot protection (Cloudflare/CAPTCHA)"
+    },
+    {
+      "id": "mcdough-georgetown",
+      "name": "McDonough School of Business - Georgetown University",
+      "status": "manual_review_needed",
+      "data": {},
+      "urls_attempted": [
+        "https://msb.georgetown.edu/mba/full-time-mba/admissions/class-profile"
+      ],
+      "error": "Anti-bot protection (Cloudflare/CAPTCHA)"
+    },
+    {
+      "id": "foster-washington",
+      "name": "Foster School of Business - University of Washington",
+      "status": "manual_review_needed",
+      "data": {},
+      "urls_attempted": [
+        "https://foster.uw.edu/academics/degree-programs/full-time-mba/admissions/class-profile/"
+      ],
+      "error": "Anti-bot protection (Cloudflare/CAPTCHA)"
+    },
+    {
+      "id": "owen-vanderbilt",
+      "name": "Owen Graduate School of Management - Vanderbilt University",
+      "status": "manual_review_needed",
+      "data": {},
+      "urls_attempted": [
+        "https://business.vanderbilt.edu/mba/admissions/class-profile/"
+      ],
+      "error": "Anti-bot protection (Cloudflare/CAPTCHA)"
+    },
+    {
+      "id": "mendoza-notredame",
+      "name": "Mendoza College of Business - University of Notre Dame",
+      "status": "manual_review_needed",
+      "data": {},
+      "urls_attempted": [
+        "https://mendoza.nd.edu/mba/admissions/class-profile/"
+      ],
+      "error": "Anti-bot protection (Cloudflare/CAPTCHA)"
+    },
+    {
+      "id": "wisconsin-wsb",
+      "name": "Wisconsin School of Business - UW Madison",
+      "status": "manual_review_needed",
+      "data": {},
+      "urls_attempted": [
+        "https://wsb.wisc.edu/programs/full-time-mba/admissions/class-profile"
+      ],
+      "error": "Anti-bot protection (Cloudflare/CAPTCHA)"
+    },
+    {
+      "id": "mays-texas-am",
+      "name": "Mays Business School - Texas A&M University",
+      "status": "manual_review_needed",
+      "data": {},
+      "urls_attempted": [
+        "https://mays.tamu.edu/mba/admissions/class-profile/"
+      ],
+      "error": "Anti-bot protection (Cloudflare/CAPTCHA)"
+    },
+    {
+      "id": "carlson-minnesota",
+      "name": "Carlson School of Management - University of Minnesota",
+      "status": "manual_review_needed",
+      "data": {},
+      "urls_attempted": [
+        "https://carlsonschool.umn.edu/degrees/master-business-administration/admissions/class-profile"
+      ],
+      "error": "Anti-bot protection (Cloudflare/CAPTCHA)"
+    },
+    {
+      "id": "broad-msu",
+      "name": "Broad College of Business - Michigan State University",
+      "status": "manual_review_needed",
+      "data": {},
+      "urls_attempted": [
+        "https://broad.msu.edu/mba/admissions/class-profile/"
+      ],
+      "error": "Anti-bot protection (Cloudflare/CAPTCHA)"
+    },
+    {
+      "id": "marriott-byu",
+      "name": "Marriott School of Business - Brigham Young University",
+      "status": "manual_review_needed",
+      "data": {},
+      "urls_attempted": [
+        "https://marriott.byu.edu/mba/admissions/class-profile/"
+      ],
+      "error": "Anti-bot protection (Cloudflare/CAPTCHA)"
+    },
+    {
+      "id": "questrom-bu",
+      "name": "Questrom School of Business - Boston University",
+      "status": "manual_review_needed",
+      "data": {},
+      "urls_attempted": [
+        "https://www.bu.edu/questrom/degree-programs/mba/admissions/class-profile/"
+      ],
+      "error": "Anti-bot protection (Cloudflare/CAPTCHA)"
+    },
+    {
+      "id": "carroll-bc",
+      "name": "Carroll School of Management - Boston College",
+      "status": "manual_review_needed",
+      "data": {},
+      "urls_attempted": [
+        "https://www.bc.edu/bc-web/schools/carroll-school/graduate/full-time-mba/admissions/class-profile.html"
+      ],
+      "error": "Anti-bot protection (Cloudflare/CAPTCHA)"
+    },
+    {
+      "id": "katz-pitt",
+      "name": "Joseph M. Katz Graduate School of Business - University of Pittsburgh",
+      "status": "manual_review_needed",
+      "data": {},
+      "urls_attempted": [
+        "https://www.business.pitt.edu/mba/admissions/class-profile/"
+      ],
+      "error": "Anti-bot protection (Cloudflare/CAPTCHA)"
+    },
+    {
+      "id": "olin-babson",
+      "name": "F.W. Olin Graduate School of Business - Babson College",
+      "status": "manual_review_needed",
+      "data": {},
+      "urls_attempted": [
+        "https://www.babson.edu/academics/graduate-school/mba-programs/one-year-mba/admissions/class-profile/"
+      ],
+      "error": "Anti-bot protection (Cloudflare/CAPTCHA)"
+    },
+    {
+      "id": "wfu-business",
+      "name": "School of Business - Wake Forest University",
+      "status": "manual_review_needed",
+      "data": {},
+      "urls_attempted": [
+        "https://business.wfu.edu/mba/admissions/class-profile/"
+      ],
+      "error": "Anti-bot protection (Cloudflare/CAPTCHA)"
+    },
+    {
+      "id": "rady-ucsd",
+      "name": "Rady School of Management - UC San Diego",
+      "status": "manual_review_needed",
+      "data": {},
+      "urls_attempted": [
+        "https://rady.ucsd.edu/programs/mba/admissions/class-profile.html"
+      ],
+      "error": "Anti-bot protection (Cloudflare/CAPTCHA)"
+    }
+  ],
+  "metadata": {
+    "scrape_date": "2026-04-10T09:50:01.459804",
+    "total_schools": 50,
+    "success_count": 10,
+    "fail_count": 14,
+    "manual_count": 26
+  }
+}

@@ -1,0 +1,653 @@
+{
+  "lastUpdated": "2026-04-11T19:51:33.518493+00:00",
+  "totalEvents": 34,
+  "schools": [
+    {
+      "schoolId": "harvard-hbs",
+      "schoolName": "Harvard Business School",
+      "eventsPageUrl": "https://www.hbs.edu/mba/admissions/events/Pages/default.aspx",
+      "scrapingStatus": "success",
+      "eventsFound": 11,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00",
+      "events": [
+        {
+          "id": "harvard-hbs-undated-mba-class-visit",
+          "title": "MBA Class Visit",
+          "date": null,
+          "time": null,
+          "location": {
+            "type": "in-person",
+            "venue": null,
+            "city": null,
+            "state": null
+          },
+          "eventType": "class-visit",
+          "description": "Event",
+          "registrationUrl": "https://www.hbs.edu/mba/admissions/events/Pages/default.aspx",
+          "registrationDeadline": null,
+          "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+        },
+        {
+          "id": "harvard-hbs-undated-2-2-program-information-session",
+          "title": "2+2 Program Information Session",
+          "date": null,
+          "time": null,
+          "location": {
+            "type": "in-person",
+            "venue": null,
+            "city": null,
+            "state": null
+          },
+          "eventType": "info-session",
+          "description": "Event",
+          "registrationUrl": "https://www.hbs.edu/mba/admissions/events/Pages/default.aspx",
+          "registrationDeadline": null,
+          "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+        },
+        {
+          "id": "harvard-hbs-undated-hbs-information-session-in-warsaw",
+          "title": "HBS Information Session in Warsaw",
+          "date": null,
+          "time": null,
+          "location": {
+            "type": "in-person",
+            "venue": null,
+            "city": null,
+            "state": null
+          },
+          "eventType": "info-session",
+          "description": "Event",
+          "registrationUrl": "https://www.hbs.edu/mba/admissions/events/Pages/default.aspx",
+          "registrationDeadline": null,
+          "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+        },
+        {
+          "id": "harvard-hbs-undated-2-2-program-application-q-a",
+          "title": "2+2 Program Application Q&A",
+          "date": null,
+          "time": null,
+          "location": {
+            "type": "in-person",
+            "venue": null,
+            "city": null,
+            "state": null
+          },
+          "eventType": "info-session",
+          "description": "Event",
+          "registrationUrl": "https://www.hbs.edu/mba/admissions/events/Pages/default.aspx",
+          "registrationDeadline": null,
+          "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+        },
+        {
+          "id": "harvard-hbs-undated-hbs-information-session-in-copenhagen",
+          "title": "HBS Information Session in Copenhagen",
+          "date": null,
+          "time": null,
+          "location": {
+            "type": "in-person",
+            "venue": null,
+            "city": null,
+            "state": null
+          },
+          "eventType": "info-session",
+          "description": "Event",
+          "registrationUrl": "https://www.hbs.edu/mba/admissions/events/Pages/default.aspx",
+          "registrationDeadline": null,
+          "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+        },
+        {
+          "id": "harvard-hbs-undated-hbs-information-session-in-zurich",
+          "title": "HBS Information Session in Zurich",
+          "date": null,
+          "time": null,
+          "location": {
+            "type": "in-person",
+            "venue": null,
+            "city": null,
+            "state": null
+          },
+          "eventType": "info-session",
+          "description": "Event",
+          "registrationUrl": "https://www.hbs.edu/mba/admissions/events/Pages/default.aspx",
+          "registrationDeadline": null,
+          "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+        },
+        {
+          "id": "harvard-hbs-undated-mba-program-open-house",
+          "title": "MBA Program Open House",
+          "date": null,
+          "time": null,
+          "location": {
+            "type": "in-person",
+            "venue": null,
+            "city": null,
+            "state": null
+          },
+          "eventType": "campus-visit",
+          "description": "Event",
+          "registrationUrl": "https://www.hbs.edu/mba/admissions/events/Pages/default.aspx",
+          "registrationDeadline": null,
+          "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+        },
+        {
+          "id": "harvard-hbs-undated-hbs-information-session-in-london",
+          "title": "HBS Information Session in London",
+          "date": null,
+          "time": null,
+          "location": {
+            "type": "in-person",
+            "venue": null,
+            "city": null,
+            "state": null
+          },
+          "eventType": "info-session",
+          "description": "Event",
+          "registrationUrl": "https://www.hbs.edu/mba/admissions/events/Pages/default.aspx",
+          "registrationDeadline": null,
+          "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+        },
+        {
+          "id": "harvard-hbs-undated-life-at-hbs-chat-with-the-hbs-club-of-sw",
+          "title": "Life at HBS Chat with the HBS Club of Sweden (Virtual)",
+          "date": null,
+          "time": null,
+          "location": {
+            "type": "virtual",
+            "venue": null,
+            "city": null,
+            "state": null
+          },
+          "eventType": "info-session",
+          "description": "Event",
+          "registrationUrl": "https://www.hbs.edu/mba/admissions/events/Pages/default.aspx",
+          "registrationDeadline": null,
+          "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+        },
+        {
+          "id": "harvard-hbs-undated-life-at-hbs-chat-with-the-hbs-club-of-sw",
+          "title": "Life at HBS Chat with the HBS Club of Sweden (In-Person)",
+          "date": null,
+          "time": null,
+          "location": {
+            "type": "in-person",
+            "venue": null,
+            "city": null,
+            "state": null
+          },
+          "eventType": "info-session",
+          "description": "Event",
+          "registrationUrl": "https://www.hbs.edu/mba/admissions/events/Pages/default.aspx",
+          "registrationDeadline": null,
+          "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+        },
+        {
+          "id": "harvard-hbs-undated-hbs-information-session-in-milan",
+          "title": "HBS Information Session in Milan",
+          "date": null,
+          "time": null,
+          "location": {
+            "type": "in-person",
+            "venue": null,
+            "city": null,
+            "state": null
+          },
+          "eventType": "info-session",
+          "description": "Event",
+          "registrationUrl": "https://www.hbs.edu/mba/admissions/events/Pages/default.aspx",
+          "registrationDeadline": null,
+          "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+        }
+      ]
+    },
+    {
+      "schoolId": "stanford-gsb",
+      "schoolName": "Stanford Graduate School of Business",
+      "eventsPageUrl": "https://www.gsb.stanford.edu/programs/mba/admission/events",
+      "scrapingStatus": "success",
+      "eventsFound": 7,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00",
+      "events": [
+        {
+          "id": "stanford-gsb-2026-04-11-meet-an-mba-alumopen-in-new-window",
+          "title": "Meet an MBA Alum",
+          "date": "2026-04-11",
+          "time": null,
+          "location": {
+            "type": "in-person",
+            "venue": null,
+            "city": null,
+            "state": null
+          },
+          "eventType": "info-session",
+          "description": "",
+          "registrationUrl": "https://applymbamsx.stanford.edu/register/?id=6f4abec1-75f7-4db0-aa65-70ed4dfce17a",
+          "registrationDeadline": null,
+          "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+        },
+        {
+          "id": "stanford-gsb-2026-04-13-gsb-campus-visit-dayopen-in-new-window",
+          "title": "GSB Campus Visit Day",
+          "date": "2026-04-13",
+          "time": null,
+          "location": {
+            "type": "in-person",
+            "venue": null,
+            "city": null,
+            "state": null
+          },
+          "eventType": "campus-visit",
+          "description": "",
+          "registrationUrl": "https://applymbamsx.stanford.edu/register/?id=4508547a-848f-4a4c-889c-cb9b8a71cfe3",
+          "registrationDeadline": null,
+          "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+        },
+        {
+          "id": "stanford-gsb-2026-04-13-mba-msx-information-session-in-londonope",
+          "title": "MBA/MSx Information Session in London",
+          "date": "2026-04-13",
+          "time": null,
+          "location": {
+            "type": "in-person",
+            "venue": null,
+            "city": null,
+            "state": null
+          },
+          "eventType": "info-session",
+          "description": "",
+          "registrationUrl": "https://applymbamsx.stanford.edu/register/?id=d3d59a27-3c0e-4a5d-8340-34a4f304c796",
+          "registrationDeadline": null,
+          "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+        },
+        {
+          "id": "stanford-gsb-2026-04-14-meet-an-mba-studentopen-in-new-window",
+          "title": "Meet an MBA Student",
+          "date": "2026-04-14",
+          "time": null,
+          "location": {
+            "type": "in-person",
+            "venue": null,
+            "city": null,
+            "state": null
+          },
+          "eventType": "info-session",
+          "description": "",
+          "registrationUrl": "https://applymbamsx.stanford.edu/register/?id=d4d1a287-3f9e-468c-b987-070b555226e6",
+          "registrationDeadline": null,
+          "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+        },
+        {
+          "id": "stanford-gsb-2026-04-14-the-mba-master-s-tour-europeopen-in-new-",
+          "title": "The MBA + Master's Tour Europe",
+          "date": "2026-04-14",
+          "time": null,
+          "location": {
+            "type": "in-person",
+            "venue": null,
+            "city": null,
+            "state": null
+          },
+          "eventType": "info-session",
+          "description": "",
+          "registrationUrl": "https://tours.mba.com/europe?utm_source=schooladm&utm_medium=website&utm_campaign=university_marketing_stanford",
+          "registrationDeadline": null,
+          "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+        },
+        {
+          "id": "stanford-gsb-2026-05-01-first-fridays-with-gsb-admissions-msx-an",
+          "title": "First Fridays with GSB Admissions: MSx and Mid-Career Development",
+          "date": "2026-05-01",
+          "time": null,
+          "location": {
+            "type": "in-person",
+            "venue": null,
+            "city": null,
+            "state": null
+          },
+          "eventType": "info-session",
+          "description": "",
+          "registrationUrl": "https://applymbamsx.stanford.edu/register/?id=9d35b638-9ed0-4ab4-bc8a-3528df51a2b3",
+          "registrationDeadline": null,
+          "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+        },
+        {
+          "id": "stanford-gsb-2026-05-11-clear-admit-mba-fair-in-atlantaopen-in-n",
+          "title": "Clear Admit MBA Fair in Atlanta",
+          "date": "2026-05-11",
+          "time": null,
+          "location": {
+            "type": "in-person",
+            "venue": null,
+            "city": null,
+            "state": null
+          },
+          "eventType": "info-session",
+          "description": "",
+          "registrationUrl": "https://www.clearadmit.com/2026/02/clear-admit-mba-fair-2026-may-11th-atlanta/?utm_campaign=34770045-GMERA%20%26%20MBA%20Fair%202026&utm_source=schools-promo&utm_content=mbafair2026",
+          "registrationDeadline": null,
+          "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+        }
+      ]
+    },
+    {
+      "schoolId": "wharton-penn",
+      "schoolName": "Wharton School",
+      "eventsPageUrl": "https://mba.wharton.upenn.edu/admissions-events/",
+      "scrapingStatus": "success",
+      "eventsFound": 3,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00",
+      "events": [
+        {
+          "id": "wharton-penn-undated-student-led-wharton-mba-overview-webinar",
+          "title": "Student-led Wharton MBA Overview Webinar",
+          "date": null,
+          "time": "04:00 PM",
+          "location": {
+            "type": "virtual",
+            "venue": null,
+            "city": null,
+            "state": null
+          },
+          "eventType": "webinar",
+          "description": "April 15 | 04:00 PM  - 05:00 PM Virtual",
+          "registrationUrl": "https://mba.wharton.upenn.edu/events-hq/a1WVr000009W1ztMAC/",
+          "registrationDeadline": null,
+          "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+        },
+        {
+          "id": "wharton-penn-undated-clear-admit-mba-fair-2026",
+          "title": "Clear Admit MBA Fair 2026",
+          "date": null,
+          "time": "05:00 PM",
+          "location": {
+            "type": "in-person",
+            "venue": "George Tower | Scheller Tower Atlanta",
+            "city": null,
+            "state": null
+          },
+          "eventType": "info-session",
+          "description": "May 11 | 05:00 PM  - 08:30 PM George Tower | Scheller Tower Atlanta",
+          "registrationUrl": "https://mba.wharton.upenn.edu/events-hq/a1WVr00000GDFG9MAP/",
+          "registrationDeadline": null,
+          "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+        },
+        {
+          "id": "wharton-penn-undated-clear-admit-mba-application-overview",
+          "title": "Clear Admit MBA Application Overview",
+          "date": null,
+          "time": "12:00 PM",
+          "location": {
+            "type": "virtual",
+            "venue": null,
+            "city": null,
+            "state": null
+          },
+          "eventType": "info-session",
+          "description": "May 26 | 12:00 PM  - 01:45 PM Virtual",
+          "registrationUrl": "https://mba.wharton.upenn.edu/events-hq/a1WVr00000FzxSLMAZ/",
+          "registrationDeadline": null,
+          "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+        }
+      ]
+    },
+    {
+      "schoolId": "booth-chicago",
+      "schoolName": "Booth School of Business",
+      "eventsPageUrl": "https://www.chicagobooth.edu/mba/full-time/admissions/events",
+      "scrapingStatus": "success",
+      "eventsFound": 1,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00",
+      "events": [
+        {
+          "id": "booth-chicago-undated-campus-visit-program",
+          "title": "Campus Visit Program",
+          "date": null,
+          "time": null,
+          "location": {
+            "type": "in-person",
+            "venue": null,
+            "city": null,
+            "state": null
+          },
+          "eventType": "campus-visit",
+          "description": "Join us on campus to see what life is like at Chicago Booth. Sign up for a day and time that works for you.",
+          "registrationUrl": "https://apply.chicagobooth.edu/portal/FTCampus2023",
+          "registrationDeadline": null,
+          "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+        }
+      ]
+    },
+    {
+      "schoolId": "sloan-mit",
+      "schoolName": "MIT Sloan School of Management",
+      "eventsPageUrl": "https://mitsloan.mit.edu/mba/admissions/events",
+      "scrapingStatus": "success",
+      "eventsFound": 8,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00",
+      "events": [
+        {
+          "id": "sloan-mit-undated-sloan-visit-program",
+          "title": "Sloan Visit Program",
+          "date": null,
+          "time": null,
+          "location": {
+            "type": "in-person",
+            "venue": null,
+            "city": null,
+            "state": null
+          },
+          "eventType": "info-session",
+          "description": "Join us on campus for MIT Sloan’s Visit Program! This event will give you the chance to learn about all of our programs and tour our campus.",
+          "registrationUrl": "https://applymitsloan.mit.edu/portal/Admissions_SloanVisit",
+          "registrationDeadline": null,
+          "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+        },
+        {
+          "id": "sloan-mit-undated-mba-class-visit-program",
+          "title": "MBA Class Visit Program",
+          "date": null,
+          "time": null,
+          "location": {
+            "type": "in-person",
+            "venue": null,
+            "city": null,
+            "state": null
+          },
+          "eventType": "class-visit",
+          "description": "Join us on campus to learn more about the two-year MBA program at MIT Sloan!",
+          "registrationUrl": "https://applymitsloan.mit.edu/portal/Admissions_MBA_ClassVisit",
+          "registrationDeadline": null,
+          "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+        },
+        {
+          "id": "sloan-mit-undated-mba-class-visit-program-10-00-am-class",
+          "title": "MBA Class Visit Program • 10:00 AM Class",
+          "date": null,
+          "time": null,
+          "location": {
+            "type": "in-person",
+            "venue": null,
+            "city": null,
+            "state": null
+          },
+          "eventType": "class-visit",
+          "description": "Join us on campus to learn more about the two-year MBA program at MIT Sloan.",
+          "registrationUrl": "https://applymitsloan.mit.edu/portal/Admissions_MBA_ClassVisit?id=9f538d70-c676-4020-9206-6eebf3520b39",
+          "registrationDeadline": null,
+          "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+        },
+        {
+          "id": "sloan-mit-undated-mba-class-visit-program-1-00-pm-class",
+          "title": "MBA Class Visit Program • 1:00 PM Class",
+          "date": null,
+          "time": null,
+          "location": {
+            "type": "in-person",
+            "venue": null,
+            "city": null,
+            "state": null
+          },
+          "eventType": "class-visit",
+          "description": "Join us on campus to learn more about the two-year MBA program at MIT Sloan.",
+          "registrationUrl": "https://applymitsloan.mit.edu/portal/Admissions_MBA_ClassVisit?id=d098d02e-b1b5-4af0-abfc-6949cfb07bf5",
+          "registrationDeadline": null,
+          "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+        },
+        {
+          "id": "sloan-mit-undated-master-of-finance-virtual-information-se",
+          "title": "Master of Finance • Virtual Information Session",
+          "date": null,
+          "time": null,
+          "location": {
+            "type": "virtual",
+            "venue": null,
+            "city": null,
+            "state": null
+          },
+          "eventType": "webinar",
+          "description": "During this online event, an admissions representative will give an overview of the MFin program's curriculum, student life, career paths, and admissions process.",
+          "registrationUrl": "https://applymitsloan.mit.edu/register/MFinVirtualInfoSession4_14",
+          "registrationDeadline": null,
+          "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+        },
+        {
+          "id": "sloan-mit-undated-the-mba-master-s-tour-europe",
+          "title": "The MBA + Master's Tour Europe",
+          "date": null,
+          "time": null,
+          "location": {
+            "type": "in-person",
+            "venue": null,
+            "city": null,
+            "state": null
+          },
+          "eventType": "info-session",
+          "description": "Meet top business schools and learn about their MBA programs and master's programs at this upcoming event.",
+          "registrationUrl": "https://tours.mba.com/europe?utm_source=schooladm&utm_medium=website&utm_campaign=university_marketing_MIT",
+          "registrationDeadline": null,
+          "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+        },
+        {
+          "id": "sloan-mit-undated-mit-sloan-mba-early-application-q-a-with",
+          "title": "MIT Sloan MBA Early • Application Q&A with Admissions",
+          "date": null,
+          "time": null,
+          "location": {
+            "type": "in-person",
+            "venue": null,
+            "city": null,
+            "state": null
+          },
+          "eventType": "info-session",
+          "description": "Join an MIT Sloan admissions representative for a group Q&A to get your questions answered.",
+          "registrationUrl": "https://applymitsloan.mit.edu/register/MBAEarlyAppQ&AChatAPR142026",
+          "registrationDeadline": null,
+          "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+        },
+        {
+          "id": "sloan-mit-undated-human-centered-leadership-in-an-ai-world",
+          "title": "Human-Centered Leadership in an AI World",
+          "date": null,
+          "time": null,
+          "location": {
+            "type": "in-person",
+            "venue": null,
+            "city": null,
+            "state": null
+          },
+          "eventType": "info-session",
+          "description": "MIT Sloan faculty will present cutting-edge research and insights on three of the most pressing questions shaping the future workforce in relation to generative AI",
+          "registrationUrl": "https://mitsloan.mit.edu/events/2026-04-14-human-centered-leadership-ai-world",
+          "registrationDeadline": null,
+          "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+        }
+      ]
+    },
+    {
+      "schoolId": "kellogg-northwestern",
+      "schoolName": "Kellogg School of Management",
+      "eventsPageUrl": "https://www.kellogg.northwestern.edu/admissions/admissions-events.aspx",
+      "scrapingStatus": "success",
+      "eventsFound": 4,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00",
+      "events": [
+        {
+          "id": "kellogg-northwestern-undated-we-d-love-to-meet-you",
+          "title": "We’d love to meet you",
+          "date": null,
+          "time": null,
+          "location": {
+            "type": "virtual",
+            "venue": null,
+            "city": null,
+            "state": null
+          },
+          "eventType": "info-session",
+          "description": "Choose from virtual and in-person events to discover more about our programs, connect with students, faculty and alumni, and learn about applying to Kellogg.",
+          "registrationUrl": "https://admissions.kellogg.northwestern.edu/portal/admissions-events",
+          "registrationDeadline": null,
+          "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+        },
+        {
+          "id": "kellogg-northwestern-undated-exploring-specialized-mbas-one-year-mmm-",
+          "title": "Exploring Specialized MBAs: One-Year, MMM, MBAi, JD-MBA",
+          "date": null,
+          "time": null,
+          "location": {
+            "type": "in-person",
+            "venue": null,
+            "city": null,
+            "state": null
+          },
+          "eventType": "info-session",
+          "description": "",
+          "registrationUrl": "https://admissions.kellogg.northwestern.edu/register/?id=f1df8474-3e87-494a-b66f-fb40dd945a93",
+          "registrationDeadline": null,
+          "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+        },
+        {
+          "id": "kellogg-northwestern-undated-atlanta-get-to-know-kellogg",
+          "title": "Atlanta: Get to Know Kellogg",
+          "date": null,
+          "time": null,
+          "location": {
+            "type": "in-person",
+            "venue": null,
+            "city": null,
+            "state": null
+          },
+          "eventType": "info-session",
+          "description": "",
+          "registrationUrl": "https://admissions.kellogg.northwestern.edu/register/EWATL041426",
+          "registrationDeadline": null,
+          "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+        },
+        {
+          "id": "kellogg-northwestern-undated-virtual-chat-with-a-miami-student-kevin-",
+          "title": "Virtual Chat with a Miami Student: Kevin Sims, Sr. Group Manager - Procurement, Walgreens",
+          "date": null,
+          "time": null,
+          "location": {
+            "type": "virtual",
+            "venue": null,
+            "city": null,
+            "state": null
+          },
+          "eventType": "info-session",
+          "description": "",
+          "registrationUrl": "https://admissions.kellogg.northwestern.edu/register/embavcks41526",
+          "registrationDeadline": null,
+          "scrapedAt": "2026-04-11T19:51:33.518493+00:00"
+        }
+      ]
+    },
+    {
+      "schoolId": "columbia-cbs",
+      "schoolName": "Columbia Business School",
+      "eventsPageUrl": "https://academics.business.columbia.edu/mba/admissions/events",
+      "scrapingStatus": "blocked-bot-protection",
+      "eventsFound": 0,
+      "scrapedAt": "2026-04-11T19:51:33.518493+00:00",
+      "events": []
+    }
+  ]
+}

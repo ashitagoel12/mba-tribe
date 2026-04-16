@@ -8,7 +8,7 @@ import SchoolCardCompact from './SchoolCardCompact.jsx'
 import ComparisonView from './ComparisonView.jsx'
 import {
   POST_MBA_GOALS,
-  TARGET_GEOGRAPHIES,
+  CAMPUS_ENV_OPTIONS,
   PRIORITIES,
   M7_IDS,
   T15_IDS,
@@ -20,7 +20,7 @@ import {
 
 function buildSummary(formData, results) {
   const goalLabel  = POST_MBA_GOALS.find(g => g.value === formData.postMBAGoal)?.label ?? 'your target role'
-  const geoLabel   = TARGET_GEOGRAPHIES.find(g => g.value === formData.targetGeography)?.label ?? 'your target geography'
+  const envLabel   = CAMPUS_ENV_OPTIONS.find(o => o.value === formData.campusEnv)?.label ?? null
   const isIntl     = formData.currentRegion !== 'north-america'
 
   // Find the top-2 rated priorities by the user
@@ -33,7 +33,10 @@ function buildSummary(formData, results) {
     ? `${sortedPriorities[0]} and ${sortedPriorities[1]}`
     : sortedPriorities[0] ?? 'fit'
 
-  let summary = `You're targeting ${goalLabel} in the ${geoLabel} area.`
+  let summary = `You're targeting ${goalLabel}.`
+  if (formData.campusEnv && formData.campusEnv !== 'no-preference' && envLabel) {
+    summary += ` You prefer a ${formData.campusEnv === 'urban' ? 'big-city campus' : 'quieter campus-town setting'}.`
+  }
   summary += ` Your highest-rated priorities are ${priorityPhrase}.`
   if (isIntl) summary += ` As an international applicant, we've given extra weight to programs with strong global communities and international student support.`
   summary += ` We've sorted all 50 programs accordingly. Programs that genuinely over-index on what matters to you appear first.`
@@ -46,7 +49,7 @@ function buildSummary(formData, results) {
 // ---------------------------------------------------------------------------
 
 function buildVisitQuestions(formData) {
-  const { priorities, targetGeography, currentRegion, postMBAGoal, budgetSensitivity, scholarshipImportance } = formData
+  const { priorities, campusEnv, currentRegion, postMBAGoal, budgetSensitivity, scholarshipImportance } = formData
   const isInternational = currentRegion !== 'north-america'
   const questions = []
 
@@ -74,8 +77,8 @@ function buildVisitQuestions(formData) {
   if (priorities.collaborativeCulture >= 4) {
     questions.push('How would current students describe the dynamic between collaboration and competition, both in study groups and during the recruiting season?')
   }
-  if (targetGeography !== 'flexible' && targetGeography !== 'outside-us') {
-    questions.push('What percentage of your graduates stay in the local region versus relocate, and how does career services actively support those seeking roles elsewhere?')
+  if (campusEnv && campusEnv !== 'no-preference') {
+    questions.push('What do students say about day-to-day life on and around campus — how much of the social and professional energy stays within the school community versus the broader city?')
   }
 
   // Universal questions (always useful)
