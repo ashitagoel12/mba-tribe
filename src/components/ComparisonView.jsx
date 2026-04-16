@@ -134,7 +134,7 @@ export default function ComparisonView({ selectedSchools, onBack }) {
           </button>
           <div className="flex items-center gap-2 ml-auto">
             <BookOpen size={15} className="text-indigo-600" />
-            <span className="font-semibold text-slate-800 text-sm tracking-tight">MBA Tribe</span>
+            <span className="font-semibold text-slate-800 text-sm tracking-tight">MBATribe</span>
           </div>
         </div>
       </header>

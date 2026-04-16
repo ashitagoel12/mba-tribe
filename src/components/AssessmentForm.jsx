@@ -205,7 +205,7 @@ function SectionC({ formData, updatePriority }) {
     <div>
       <h2 className="text-2xl font-semibold text-slate-800 mb-1 tracking-tight">What matters most to you?</h2>
       <p className="text-slate-500 mb-8 leading-relaxed">
-        Rate each factor 1–5 stars. Be honest — there are no wrong answers. These weights drive the match.
+        Rate each factor 1–5 stars. Be honest, there are no wrong answers. These weights drive the match.
       </p>
 
       <div className="space-y-4">
@@ -249,7 +249,7 @@ function SectionD({ formData, updateField, errors }) {
           <label htmlFor="gmat" className="block text-sm font-medium text-slate-700 mb-1">
             GMAT score
           </label>
-          <p className="text-xs text-slate-400 mb-1.5">Enter 0 if not yet taken — it won't penalise you.</p>
+          <p className="text-xs text-slate-400 mb-1.5">Enter 0 if not yet taken; it won't penalise you.</p>
           <input
             id="gmat"
             type="number"
@@ -379,7 +379,7 @@ export default function AssessmentForm({
         <div className="max-w-2xl mx-auto px-4 py-3">
           <div className="flex items-center gap-2 mb-3">
             <BookOpen size={16} className="text-indigo-600" />
-            <span className="font-semibold text-slate-800 text-sm tracking-tight">MBA Tribe</span>
+            <span className="font-semibold text-slate-800 text-sm tracking-tight">MBATribe</span>
           </div>
 
           {/* Step dots */}

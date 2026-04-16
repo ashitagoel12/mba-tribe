@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowRight, Users, Target, DollarSign } from 'lucide-react'
+import { ArrowRight, Users, Target, DollarSign, BookOpen, Clock } from 'lucide-react'
 import NavBar from './NavBar.jsx'
 
 export default function WelcomeScreen({ onStart }) {
@@ -60,13 +60,13 @@ export default function WelcomeScreen({ onStart }) {
           </h2>
           <div className="space-y-4 text-slate-600 text-sm leading-relaxed">
             <p>
-              I built MBA Tribe when I was applying to business school as an international applicant.
+              I built MBATribe when I was applying to business school as an international applicant.
               I was overwhelmed by rankings, prestige obsession, and expensive consultants who pushed
-              the same "safe" schools to everyone — regardless of what I actually wanted from the degree.
+              the same "safe" schools to everyone, regardless of what I actually wanted from the degree.
             </p>
             <p>
-              MBA Tribe grew to 2,000 members in four months because applicants need clarity, not more
-              noise. This tool exists to help you find schools that actually fit your goals — not just
+              MBATribe grew to 2,000 members in four months because applicants need clarity, not more
+              noise. This tool exists to help you find schools that actually fit your goals, not just
               the most famous names on a magazine list.
             </p>
             <p className="font-medium text-slate-700">
@@ -78,12 +78,12 @@ export default function WelcomeScreen({ onStart }) {
 
       {/* ── Value props ─────────────────────────────────────────────────── */}
       <section className="px-4 pb-16">
-        <div className="max-w-3xl mx-auto grid sm:grid-cols-3 gap-4">
+        <div className="max-w-4xl mx-auto grid sm:grid-cols-3 gap-4">
           {[
             {
               icon: <Target size={20} className="text-indigo-500" />,
               heading: 'Fit, not rankings',
-              body: "We weight what matters to you — placement, cost, culture, geography — not a magazine's formula.",
+              body: "We weight what matters to you: placement, cost, culture, geography, not a magazine's formula.",
             },
             {
               icon: <Users size={20} className="text-indigo-500" />,
@@ -94,6 +94,16 @@ export default function WelcomeScreen({ onStart }) {
               icon: <DollarSign size={20} className="text-indigo-500" />,
               heading: 'Honest tradeoffs',
               body: 'Every match includes a candid "watch out for" note so you go in with open eyes.',
+            },
+            {
+              icon: <BookOpen size={20} className="text-indigo-500" />,
+              heading: 'Built for Real Applicants',
+              body: 'No fluff, no filler. Every data point reflects what actually matters in an MBA decision: cost, culture, outcomes, and your career goals.',
+            },
+            {
+              icon: <Clock size={20} className="text-indigo-500" />,
+              heading: 'Saves You Weeks of Research',
+              body: "We've pulled from official employment reports, tuition tables, and class profiles so you don't have to. One place, all the signal.",
             },
           ].map(({ icon, heading, body }) => (
             <div key={heading} className="bg-white rounded-xl border border-slate-100 shadow-sm p-5">
@@ -108,7 +118,7 @@ export default function WelcomeScreen({ onStart }) {
       {/* ── Footer ──────────────────────────────────────────────────────── */}
       <footer className="bg-white border-t border-slate-100 px-6 py-4">
         <div className="max-w-5xl mx-auto text-center text-sm text-slate-400">
-          100 programs · Data updated 2025–2026 · Built by MBA Tribe
+          100 programs · Data updated 2025–2026 · Built by MBATribe
         </div>
       </footer>
 

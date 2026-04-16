@@ -272,7 +272,7 @@ export default function BrowseSchools() {
             Browse MBA Programs
           </h1>
           <p className="text-slate-500 mt-1.5 text-sm sm:text-base">
-            Explore all 100 programs in our database — find your fit, then dive into details.
+            Explore all 100 programs in our database. Find your fit, then dive into details.
           </p>
         </div>
       </div>
@@ -361,7 +361,7 @@ export default function BrowseSchools() {
       {/* ── Footer ───────────────────────────────────────────────────────── */}
       <footer className="border-t border-slate-100 bg-white px-6 py-4 mt-4">
         <div className="max-w-6xl mx-auto text-center text-xs text-slate-400">
-          100 programs · Data updated 2025–2026 · Built by MBA Tribe
+          100 programs · Data updated 2025–2026 · Built by MBATribe
         </div>
       </footer>
     </div>

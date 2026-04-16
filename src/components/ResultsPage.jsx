@@ -36,7 +36,7 @@ function buildSummary(formData, results) {
   let summary = `You're targeting ${goalLabel} in the ${geoLabel} area.`
   summary += ` Your highest-rated priorities are ${priorityPhrase}.`
   if (isIntl) summary += ` As an international applicant, we've given extra weight to programs with strong global communities and international student support.`
-  summary += ` We've sorted all 50 programs accordingly — programs that genuinely over-index on what matters to you appear first.`
+  summary += ` We've sorted all 50 programs accordingly. Programs that genuinely over-index on what matters to you appear first.`
 
   return summary
 }
@@ -63,7 +63,7 @@ function buildVisitQuestions(formData) {
     questions.push('How many investment banking summer associate positions are filled through on-campus recruiting versus off-cycle processes each year?')
   }
   if (postMBAGoal === 'entrepreneurship') {
-    questions.push('What resources exist for students who want to launch a company during the program — funding competitions, mentorship access, dedicated incubator space?')
+    questions.push('What resources exist for students who want to launch a company during the program: funding competitions, mentorship access, dedicated incubator space?')
   }
   if (postMBAGoal === 'tech') {
     questions.push('Which tech companies specifically recruit MBAs for product management roles here, and how is that recruiting pipeline structured?')
@@ -72,7 +72,7 @@ function buildVisitQuestions(formData) {
     questions.push('What percentage of graduates enter the social sector, and are there dedicated fellowship programs or social impact career support?')
   }
   if (priorities.collaborativeCulture >= 4) {
-    questions.push('How would current students describe the dynamic between collaboration and competition — both in study groups and during the recruiting season?')
+    questions.push('How would current students describe the dynamic between collaboration and competition, both in study groups and during the recruiting season?')
   }
   if (targetGeography !== 'flexible' && targetGeography !== 'outside-us') {
     questions.push('What percentage of your graduates stay in the local region versus relocate, and how does career services actively support those seeking roles elsewhere?')
@@ -186,7 +186,7 @@ export default function ResultsPage({ schools, formData, onRetake }) {
         <div className="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <BookOpen size={16} className="text-indigo-600" />
-            <span className="font-semibold text-slate-800 text-sm tracking-tight">MBA Tribe</span>
+            <span className="font-semibold text-slate-800 text-sm tracking-tight">MBATribe</span>
           </div>
           <button
             onClick={onRetake}
@@ -256,6 +256,7 @@ export default function ResultsPage({ schools, formData, onRetake }) {
             title="Strong Fit"
             subtitle={`${strongFit.length} program${strongFit.length !== 1 ? 's' : ''} that align well with your goals, priorities, and constraints`}
           />
+          <p className="text-xs text-gray-400 italic mb-4">Data verified against official sources. Always confirm details directly with each school before applying.</p>
           <div className="space-y-5">
             {strongFit.map(scored => (
               <SchoolCard
@@ -278,8 +279,9 @@ export default function ResultsPage({ schools, formData, onRetake }) {
               <SectionHeading
                 icon={<ChevronRight size={18} className="text-indigo-500" />}
                 title="Worth Exploring"
-                subtitle="Solid programs with real tradeoffs — understand those tradeoffs before deciding"
+                subtitle="Solid programs with real tradeoffs. Understand those tradeoffs before deciding"
               />
+              <p className="text-xs text-gray-400 italic mb-4">Data verified against official sources. Always confirm details directly with each school before applying.</p>
               <div className="grid sm:grid-cols-2 gap-4">
                 {worthExploring.map(scored => (
                   <SchoolCardCompact
@@ -304,8 +306,9 @@ export default function ResultsPage({ schools, formData, onRetake }) {
               <SectionHeading
                 icon={<ChevronRight size={18} className="text-amber-500" />}
                 title="Stretch / Reach"
-                subtitle="These programs are a reach given your current GMAT — but not out of reach with a standout application"
+                subtitle="These programs are a reach given your current GMAT, but not out of reach with a standout application"
               />
+              <p className="text-xs text-gray-400 italic mb-4">Data verified against official sources. Always confirm details directly with each school before applying.</p>
               <div className="grid sm:grid-cols-2 gap-4">
                 {stretch.map(scored => (
                   <SchoolCardCompact
@@ -330,7 +333,7 @@ export default function ResultsPage({ schools, formData, onRetake }) {
               <SectionHeading
                 icon={<Sparkles size={18} className="text-indigo-400" />}
                 title="Schools You Might Be Overlooking"
-                subtitle="Lower-ranked programs that score surprisingly well for your specific inputs — worth a second look"
+                subtitle="Lower-ranked programs that score surprisingly well for your specific inputs. Worth a second look"
               />
               <div className="space-y-4">
                 {hiddenGems.map(scored => (
@@ -378,7 +381,7 @@ export default function ResultsPage({ schools, formData, onRetake }) {
           <SectionHeading
             icon={<HelpCircle size={18} className="text-indigo-500" />}
             title="Questions to Ask on Your School Visit"
-            subtitle="Personalised based on what you told us — these will give you far more signal than a tour script"
+            subtitle="Personalised based on what you told us. These will give you far more signal than a tour script"
           />
           <div className="bg-white rounded-xl border border-slate-100 shadow-sm p-6">
             <ol className="space-y-4">
@@ -405,7 +408,7 @@ export default function ResultsPage({ schools, formData, onRetake }) {
           />
           <div className="bg-white rounded-xl border border-slate-100 shadow-sm p-6">
             <p className="text-slate-600 leading-relaxed mb-3">
-              Rankings exist and they matter — a school's reputation affects recruiting pipelines,
+              Rankings exist and they matter. A school's reputation affects recruiting pipelines,
               alumni networks, and how hiring managers respond to your application. We're not here
               to pretend otherwise.
             </p>
@@ -418,13 +421,13 @@ export default function ResultsPage({ schools, formData, onRetake }) {
             </p>
             <p className="text-slate-600 leading-relaxed">
               Use rankings as one data point. Use this report as another. The decision that changes
-              your career is the one you make with all the information — not just the shiniest number.
+              your career is the one you make with all the information, not just the shiniest number.
             </p>
           </div>
         </section>
 
         {/* ═══════════════════════════════════════════════════════════════
-            MBA Tribe CTA
+            MBATribe CTA
         ════════════════════════════════════════════════════════════════ */}
         <Divider />
         <section>
@@ -438,8 +441,8 @@ export default function ResultsPage({ schools, formData, onRetake }) {
               Still building your shortlist?
             </h2>
             <p className="text-indigo-100 leading-relaxed mb-6 max-w-md mx-auto">
-              MBA Tribe is a peer-support community of applicants who've been where you are.
-              No consultants, no sales pitch — just people who've navigated this process and
+              MBATribe is a peer-support community of applicants who've been where you are.
+              No consultants, no sales pitch, just people who've navigated this process and
               want to help you do the same.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -454,7 +457,7 @@ export default function ResultsPage({ schools, formData, onRetake }) {
                 href="#"
                 className="inline-flex items-center justify-center gap-2 border border-indigo-400 text-white hover:bg-indigo-700 font-medium px-6 py-3 rounded-lg transition-colors"
               >
-                Join the MBA Tribe community
+                Join the MBATribe community
               </a>
             </div>
           </div>
@@ -502,7 +505,7 @@ export default function ResultsPage({ schools, formData, onRetake }) {
       {/* ── Footer ──────────────────────────────────────────────────────── */}
       <footer className="border-t border-slate-100 bg-white mt-12 px-6 py-5">
         <div className="max-w-4xl mx-auto text-center text-sm text-slate-400">
-          50 programs · Data updated 2025–2026 · MBA Tribe
+          50 programs · Data updated 2025–2026 · MBATribe
         </div>
       </footer>
 

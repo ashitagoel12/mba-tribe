@@ -18,7 +18,7 @@ export default function NavBar() {
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 shrink-0">
           <BookOpen size={17} className="text-indigo-600" />
-          <span className="font-semibold text-slate-800 tracking-tight text-sm">MBA Tribe</span>
+          <span className="font-semibold text-slate-800 tracking-tight text-sm">MBATribe</span>
         </Link>
 
         {/* Desktop nav */}
