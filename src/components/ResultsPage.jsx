@@ -39,7 +39,7 @@ function buildSummary(formData, results) {
   }
   summary += ` Your highest-rated priorities are ${priorityPhrase}.`
   if (isIntl) summary += ` As an international applicant, we've given extra weight to programs with strong global communities and international student support.`
-  summary += ` We've sorted all 50 programs accordingly. Programs that genuinely over-index on what matters to you appear first.`
+  summary += ` We've sorted all ${results.allScored ? results.allScored.length : 100} programs accordingly. Programs that genuinely over-index on what matters to you appear first.`
 
   return summary
 }
@@ -139,7 +139,6 @@ export default function ResultsPage({ schools, formData, onRetake }) {
   const insights = useMemo(() => generateUserInsights(formData), [formData])
 
   const { strongFit, worthExploring, stretch, hiddenGems } = results
-  const summary   = useMemo(() => buildSummary(formData, results), [formData, results])
   const questions = useMemo(() => buildVisitQuestions(formData), [formData])
 
   const hasStretch    = stretch.length > 0
@@ -209,9 +208,6 @@ export default function ResultsPage({ schools, formData, onRetake }) {
           <h1 className="text-3xl sm:text-4xl font-semibold text-slate-800 tracking-tight mb-4">
             Your MBA Fit Report
           </h1>
-          <div className="bg-white rounded-xl border border-slate-100 shadow-sm p-5">
-            <p className="text-slate-600 leading-relaxed">{summary}</p>
-          </div>
         </div>
 
         {/* ── What matters to you ─────────────────────────────────────── */}
@@ -508,7 +504,7 @@ export default function ResultsPage({ schools, formData, onRetake }) {
       {/* ── Footer ──────────────────────────────────────────────────────── */}
       <footer className="border-t border-slate-100 bg-white mt-12 px-6 py-5">
         <div className="max-w-4xl mx-auto text-center text-sm text-slate-400">
-          50 programs · Data updated 2025–2026 · MBATribe
+          100 programs · Data updated 2025–2026 · MBATribe
         </div>
       </footer>
 

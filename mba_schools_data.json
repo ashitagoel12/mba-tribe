@@ -60,7 +60,7 @@
       },
       "classProfile": {
         "size": 431,
-        "avgWorkExperience": 5.0,
+        "avgWorkExperience": 5,
         "avgGMAT": 738,
         "avgGRE": 165,
         "internationalStudentPct": 40
@@ -110,7 +110,7 @@
       },
       "classProfile": {
         "size": 866,
-        "avgWorkExperience": 5.0,
+        "avgWorkExperience": 5,
         "avgGMAT": 735,
         "avgGRE": 163,
         "internationalStudentPct": 31
@@ -160,7 +160,7 @@
       },
       "classProfile": {
         "size": 603,
-        "avgWorkExperience": 5.0,
+        "avgWorkExperience": 5,
         "avgGMAT": 728,
         "avgGRE": 163,
         "internationalStudentPct": 38
@@ -210,7 +210,7 @@
       },
       "classProfile": {
         "size": 474,
-        "avgWorkExperience": 5.0,
+        "avgWorkExperience": 5,
         "avgGMAT": 730,
         "avgGRE": 162,
         "internationalStudentPct": 35
@@ -260,7 +260,7 @@
       },
       "classProfile": {
         "size": 438,
-        "avgWorkExperience": 5.0,
+        "avgWorkExperience": 5,
         "avgGMAT": 735,
         "avgGRE": 165,
         "internationalStudentPct": 44
@@ -310,7 +310,7 @@
       },
       "classProfile": {
         "size": 756,
-        "avgWorkExperience": 5.0,
+        "avgWorkExperience": 5,
         "avgGMAT": 730,
         "avgGRE": 163,
         "internationalStudentPct": 43
@@ -360,7 +360,7 @@
       },
       "classProfile": {
         "size": 295,
-        "avgWorkExperience": 5.0,
+        "avgWorkExperience": 5,
         "avgGMAT": 723,
         "avgGRE": 162,
         "internationalStudentPct": 37
@@ -410,7 +410,7 @@
       },
       "classProfile": {
         "size": 335,
-        "avgWorkExperience": 5.0,
+        "avgWorkExperience": 5,
         "avgGMAT": 730,
         "avgGRE": 163,
         "internationalStudentPct": 47
@@ -510,7 +510,7 @@
       },
       "classProfile": {
         "size": 413,
-        "avgWorkExperience": 5.0,
+        "avgWorkExperience": 5,
         "avgGMAT": 722,
         "avgGRE": 162,
         "internationalStudentPct": 32
@@ -560,7 +560,7 @@
       },
       "classProfile": {
         "size": 316,
-        "avgWorkExperience": 5.0,
+        "avgWorkExperience": 5,
         "avgGMAT": 722,
         "avgGRE": 162,
         "internationalStudentPct": 36
@@ -610,7 +610,7 @@
       },
       "classProfile": {
         "size": 470,
-        "avgWorkExperience": 5.0,
+        "avgWorkExperience": 5,
         "avgGMAT": 718,
         "avgGRE": 161,
         "internationalStudentPct": 38
@@ -860,7 +860,7 @@
       },
       "classProfile": {
         "size": 240,
-        "avgWorkExperience": 5.0,
+        "avgWorkExperience": 5,
         "avgGMAT": 710,
         "avgGRE": 321,
         "internationalStudentPct": 31
@@ -910,7 +910,7 @@
       },
       "classProfile": {
         "size": 249,
-        "avgWorkExperience": 5.0,
+        "avgWorkExperience": 5,
         "avgGMAT": 707,
         "avgGRE": 318,
         "internationalStudentPct": 43
@@ -1010,7 +1010,7 @@
       },
       "classProfile": {
         "size": 128,
-        "avgWorkExperience": 6.0,
+        "avgWorkExperience": 6,
         "avgGMAT": 723,
         "avgGRE": 160,
         "internationalStudentPct": 40
@@ -1060,7 +1060,7 @@
       },
       "classProfile": {
         "size": 248,
-        "avgWorkExperience": 5.0,
+        "avgWorkExperience": 5,
         "avgGMAT": 700,
         "avgGRE": 318,
         "internationalStudentPct": 44
@@ -1160,7 +1160,7 @@
       },
       "classProfile": {
         "size": 102,
-        "avgWorkExperience": 6.0,
+        "avgWorkExperience": 6,
         "avgGMAT": 720,
         "avgGRE": 320,
         "internationalStudentPct": 56
@@ -1210,7 +1210,7 @@
       },
       "classProfile": {
         "size": 137,
-        "avgWorkExperience": 5.0,
+        "avgWorkExperience": 5,
         "avgGMAT": 693,
         "avgGRE": 160,
         "internationalStudentPct": 34
@@ -1303,7 +1303,7 @@
   ],
   "metadata": {
     "collectionDate": "2026-04-10",
-    "totalSchools": 26,
+    "totalSchools": 100,
     "sources": "Official school websites, employment reports, class profiles (2024-2026 data)",
     "notes": "Phase 1 of 50-school dataset. Data reflects most recent available class profiles (Class of 2025-2027) and employment reports (Class of 2024-2025). Tuition shown as annual out-of-state/private rate for 2025-2026 academic year."
   }
