@@ -10,6 +10,30 @@
 
 import { GOAL_TO_INDUSTRY_KW } from './constants.js'
 
+/**
+ * Convert a GMAT Focus Edition score (205–805) to its GMAT Classic equivalent (200–800).
+ * Source: GMAC Official Score Concordance Table, published July 2025.
+ */
+function focusToClassic(focusScore) {
+  const table = {
+    805: 795, 795: 790, 785: 785, 775: 780, 765: 780,
+    755: 775, 745: 770, 735: 765, 725: 760, 715: 755,
+    705: 750, 695: 745, 685: 735, 675: 725, 665: 715,
+    655: 705, 645: 695, 635: 685, 625: 680, 615: 665,
+    605: 650, 595: 645, 585: 630, 575: 615, 565: 605,
+    555: 590, 545: 575, 535: 565, 525: 555, 515: 540,
+    505: 530, 495: 515, 485: 495, 475: 480, 465: 465,
+    455: 455, 445: 445, 435: 425, 425: 405, 415: 390,
+    405: 375, 395: 360, 385: 350, 375: 335, 365: 315,
+    355: 305, 345: 290, 335: 265, 325: 250, 315: 245,
+    305: 235, 295: 225, 285: 215, 275: 210, 265: 210,
+    255: 205, 245: 200, 235: 200, 225: 200, 215: 200, 205: 200,
+  }
+  const clamped = Math.min(805, Math.max(205, focusScore))
+  const rounded = Math.round((clamped - 5) / 10) * 10 + 5
+  return table[rounded] ?? 500
+}
+
 // ---------------------------------------------------------------------------
 // Helpers
 // ---------------------------------------------------------------------------
@@ -218,21 +242,36 @@ export function generateWatchOut(school, formData) {
   // Test score gap
   const score = parseInt(examScore)
   if (score > 0 && examType && examType !== 'none') {
-    const avg = examType === 'gre'
-      ? school.classProfile.avgGRE
-      : school.classProfile.avgGMAT
-    const gap = avg - score
-    const examLabel = examType === 'gre' ? 'GRE' : 'GMAT'
-    if (gap > 40) {
-      warnings.push({
-        priority: 10,
-        text: `Your ${examLabel} (${score}) is ${gap} pts below the class avg (${avg}) — consider this a reach and invest heavily in essays and interviews`,
-      })
-    } else if (gap > 20) {
-      warnings.push({
-        priority: 8,
-        text: `Your ${examLabel} (${score}) is ${gap} pts below the class avg (${avg}) — a compelling narrative and strong recommenders will matter more here`,
-      })
+    let avg, gap, examLabel, scoreDisplay
+    if (examType === 'gre') {
+      avg = school.classProfile.avgGRE
+      gap = avg ? avg - score : null
+      examLabel = 'GRE'
+      scoreDisplay = `${score}`
+    } else if (examType === 'gmat-focus') {
+      avg = school.classProfile.avgGMAT
+      const converted = focusToClassic(score)
+      gap = avg ? avg - converted : null
+      examLabel = 'GMAT Focus'
+      scoreDisplay = `${score} (≈${converted} Classic)`
+    } else {
+      avg = school.classProfile.avgGMAT
+      gap = avg ? avg - score : null
+      examLabel = 'GMAT'
+      scoreDisplay = `${score}`
+    }
+    if (avg && gap !== null) {
+      if (gap > 40) {
+        warnings.push({
+          priority: 10,
+          text: `Your ${examLabel} score (${scoreDisplay}) is ${gap} pts below the class avg (${avg}) — consider this a reach and invest heavily in essays and interviews`,
+        })
+      } else if (gap > 20) {
+        warnings.push({
+          priority: 8,
+          text: `Your ${examLabel} score (${scoreDisplay}) is ${gap} pts below the class avg (${avg}) — a compelling narrative and strong recommenders will matter more here`,
+        })
+      }
     }
   }
 

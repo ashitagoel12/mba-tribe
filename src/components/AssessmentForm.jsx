@@ -354,17 +354,17 @@ function SectionD({ formData, updateField, errors }) {
           <div>
             <label htmlFor="examScore" className="block text-sm font-medium text-slate-700 mb-1">
               {scoreLabel}
+              <span className="text-red-400 ml-1" aria-hidden>*</span>
             </label>
             <p className="text-xs text-slate-400 mb-1.5">
-              Enter 0 or leave blank if not yet taken; it won't penalise you.
+              Enter your actual score, or your target score if you haven't taken the exam yet.
             </p>
             <input
               id="examScore"
-              type="number"
-              min={selectedExam?.min}
-              max={selectedExam?.max}
+              type="text"
+              inputMode="numeric"
               value={formData.examScore}
-              onChange={e => updateField('examScore', e.target.value)}
+              onChange={e => updateField('examScore', e.target.value.replace(/[^0-9]/g, ''))}
               placeholder={scorePlaceholder}
               className={`w-full border rounded-lg px-3 py-2.5 text-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-400 transition-colors ${
                 errors.examScore ? 'border-red-400 bg-red-50' : 'border-slate-200'
@@ -466,12 +466,15 @@ export default function AssessmentForm({
     // Section 3 (priorities) has defaults — no validation needed
     if (section === 4) {
       if (!formData.examType) e.examType = 'Please select an exam type'
-      // Validate score range if a score was entered
-      if (formData.examType && formData.examType !== 'none' && formData.examScore) {
-        const score = parseInt(formData.examScore)
-        const examOpt = EXAM_TYPE_OPTIONS.find(o => o.value === formData.examType)
-        if (examOpt && score && (score < examOpt.min || score > examOpt.max)) {
-          e.examScore = `Score must be between ${examOpt.min} and ${examOpt.max} for ${examOpt.label}`
+      if (formData.examType && formData.examType !== 'none') {
+        if (!formData.examScore) {
+          e.examScore = 'Please enter your score, or your target score if not yet taken'
+        } else {
+          const score = parseInt(formData.examScore)
+          const examOpt = EXAM_TYPE_OPTIONS.find(o => o.value === formData.examType)
+          if (examOpt && (score < examOpt.min || score > examOpt.max)) {
+            e.examScore = `Score must be between ${examOpt.min} and ${examOpt.max} for ${examOpt.label}`
+          }
         }
       }
       if (!formData.budgetSensitivity) e.budgetSensitivity = 'Please select an option'

@@ -49,6 +49,33 @@ function kwMatchAny(arr, keywords) {
   return arr.some(item => kwMatch(item, keywords))
 }
 
+/**
+ * Convert a GMAT Focus Edition score (205–805) to its GMAT Classic equivalent (200–800).
+ * Source: GMAC Official Score Concordance Table, published July 2025.
+ * For scores between table entries (Focus scores are multiples of 10 ending in 5),
+ * we round to the nearest table entry before lookup.
+ */
+function focusToClassic(focusScore) {
+  const table = {
+    805: 795, 795: 790, 785: 785, 775: 780, 765: 780,
+    755: 775, 745: 770, 735: 765, 725: 760, 715: 755,
+    705: 750, 695: 745, 685: 735, 675: 725, 665: 715,
+    655: 705, 645: 695, 635: 685, 625: 680, 615: 665,
+    605: 650, 595: 645, 585: 630, 575: 615, 565: 605,
+    555: 590, 545: 575, 535: 565, 525: 555, 515: 540,
+    505: 530, 495: 515, 485: 495, 475: 480, 465: 465,
+    455: 455, 445: 445, 435: 425, 425: 405, 415: 390,
+    405: 375, 395: 360, 385: 350, 375: 335, 365: 315,
+    355: 305, 345: 290, 335: 265, 325: 250, 315: 245,
+    305: 235, 295: 225, 285: 215, 275: 210, 265: 210,
+    255: 205, 245: 200, 235: 200, 225: 200, 215: 200, 205: 200,
+  }
+  // Clamp to valid Focus range, then round to nearest table entry (multiples of 10, ending in 5)
+  const clamped = Math.min(805, Math.max(205, focusScore))
+  const rounded = Math.round((clamped - 5) / 10) * 10 + 5
+  return table[rounded] ?? 500 // fallback to midpoint if somehow out of range
+}
+
 // ---------------------------------------------------------------------------
 // Weight builder — edit this to tune the algorithm
 // ---------------------------------------------------------------------------
@@ -280,23 +307,29 @@ function scoreCulture(school, formData) {
 
 /**
  * 7. Test Score Competitiveness — max 10 pts
- * Supports GMAT Focus, GMAT Classic, and GRE.
- * If no score entered or exam type is 'none', returns neutral 7.
+ * Supports GMAT Focus (converted to Classic via concordance), GMAT Classic, and GRE.
+ * Returns neutral 7 if no score or exam type is 'none'.
  */
 function scoreTestScore(school, formData) {
   const { examType, examScore } = formData
-  const score = parseInt(examScore)
+  const rawScore = parseInt(examScore)
 
-  if (!examType || examType === 'none' || !score || score === 0) return 7
+  if (!examType || examType === 'none' || !rawScore) return 7
 
   let avg, gap
   if (examType === 'gre') {
     avg = school.classProfile.avgGRE
-    gap = avg - score
-  } else {
-    // gmat-focus and gmat-classic treated equivalently
+    if (!avg) return 7
+    gap = avg - rawScore
+  } else if (examType === 'gmat-focus') {
     avg = school.classProfile.avgGMAT
-    gap = avg - score
+    if (!avg) return 7
+    gap = avg - focusToClassic(rawScore)
+  } else {
+    // gmat-classic
+    avg = school.classProfile.avgGMAT
+    if (!avg) return 7
+    gap = avg - rawScore
   }
 
   if (gap <= 10) return 10  // at or above average
@@ -401,18 +434,28 @@ export function scoreSchool(school, formData) {
 
 /**
  * A school is a "stretch" if the user's score is > 30 pts below the school avg.
- * Supports GMAT and GRE.
+ * Supports GMAT Focus (converted via concordance), GMAT Classic, and GRE.
+ * Returns false if the school has no avg score for the given exam type.
  */
 function isStretch(school, formData) {
   const { examType, examScore } = formData
-  const score = parseInt(examScore)
-  if (!score || score === 0 || examType === 'none' || !examType) return false
+  const rawScore = parseInt(examScore)
+  if (!rawScore || examType === 'none' || !examType) return false
 
   if (examType === 'gre') {
-    return score < school.classProfile.avgGRE - 30
+    const avg = school.classProfile.avgGRE
+    if (!avg) return false
+    return rawScore < avg - 30
+  } else if (examType === 'gmat-focus') {
+    const avg = school.classProfile.avgGMAT
+    if (!avg) return false
+    return focusToClassic(rawScore) < avg - 30
+  } else {
+    // gmat-classic
+    const avg = school.classProfile.avgGMAT
+    if (!avg) return false
+    return rawScore < avg - 30
   }
-  // gmat-focus and gmat-classic
-  return score < school.classProfile.avgGMAT - 30
 }
 
 /**

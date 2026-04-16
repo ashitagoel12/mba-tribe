@@ -53,9 +53,9 @@ export const CAMPUS_ENV_OPTIONS = [
 ]
 
 export const EXAM_TYPE_OPTIONS = [
-  { value: 'gmat-focus',   label: 'GMAT (Focus Edition)',       min: 205, max: 805 },
-  { value: 'gmat-classic', label: 'GMAT (Classic)',              min: 200, max: 800 },
-  { value: 'gre',          label: 'GRE',                         min: 260, max: 340 },
+  { value: 'gmat-focus',   label: 'GMAT Focus Edition (scores 205–805, current format)', min: 205, max: 805 },
+  { value: 'gmat-classic', label: 'GMAT Classic (scores 200–800, pre-2024 format)',       min: 200, max: 800 },
+  { value: 'gre',          label: 'GRE (total score 260–340)',                            min: 260, max: 340 },
   { value: 'none',         label: 'Not taken / planning to waive' },
 ]
 
