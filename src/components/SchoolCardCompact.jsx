@@ -39,10 +39,10 @@ function FitScoreBar({ score, tier }) {
 // Compact card — used in Worth Exploring and Stretch tiers
 // ---------------------------------------------------------------------------
 
-export default function SchoolCardCompact({ scored, formData, isSelectable, isSelected, isDisabled, onToggleSelect }) {
-  const { school, totalScore, breakdown, tier } = scored
-  const bullets = generateFitBullets(school, formData, breakdown)
-  const watchOut = generateWatchOut(school, formData)
+export default function SchoolCardCompact({ scored, formData, allScoredResults, isSelectable, isSelected, isDisabled, onToggleSelect }) {
+  const { school, totalScore, tier } = scored
+  const bullets  = generateFitBullets(school, formData, allScoredResults)
+  const watchOuts = generateWatchOut(school, formData, allScoredResults)
 
   const isStretch = tier === 'stretch'
 
@@ -104,10 +104,10 @@ export default function SchoolCardCompact({ scored, formData, isSelectable, isSe
         <FitScoreBar score={totalScore} tier={tier} />
       </div>
 
-      {/* ── Watch out first (more prominent in this tier) ───────────────── */}
+      {/* ── Watch out first (show top warning only in compact view) ────── */}
       <div className="flex gap-2 bg-amber-50 rounded-lg p-2.5 border border-amber-100 mb-3">
         <AlertCircle size={13} className="text-amber-500 shrink-0 mt-0.5" />
-        <p className="text-xs text-amber-800 leading-relaxed">{watchOut}</p>
+        <p className="text-xs text-amber-800 leading-relaxed">{watchOuts[0]}</p>
       </div>
 
       {/* ── Top 2 fit bullets ──────────────────────────────────────────── */}

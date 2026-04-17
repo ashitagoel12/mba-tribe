@@ -262,6 +262,7 @@ export default function ResultsPage({ schools, formData, onRetake }) {
                 key={scored.school.id}
                 scored={scored}
                 formData={formData}
+                allScoredResults={results.allScored}
                 {...compareProps(scored.school.id)}
               />
             ))}
@@ -287,6 +288,7 @@ export default function ResultsPage({ schools, formData, onRetake }) {
                     key={scored.school.id}
                     scored={scored}
                     formData={formData}
+                    allScoredResults={results.allScored}
                     {...compareProps(scored.school.id)}
                   />
                 ))}
@@ -314,6 +316,7 @@ export default function ResultsPage({ schools, formData, onRetake }) {
                     key={scored.school.id}
                     scored={scored}
                     formData={formData}
+                    allScoredResults={results.allScored}
                     {...compareProps(scored.school.id)}
                   />
                 ))}

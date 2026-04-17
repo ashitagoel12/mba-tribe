@@ -66,10 +66,10 @@ function StatTile({ label, value }) {
 // Main component — Full card used in Strong Fit tier
 // ---------------------------------------------------------------------------
 
-export default function SchoolCard({ scored, formData, isSelectable, isSelected, isDisabled, onToggleSelect }) {
-  const { school, totalScore, breakdown, tier } = scored
-  const bullets = generateFitBullets(school, formData, breakdown)
-  const watchOut = generateWatchOut(school, formData)
+export default function SchoolCard({ scored, formData, allScoredResults, isSelectable, isSelected, isDisabled, onToggleSelect }) {
+  const { school, totalScore, tier } = scored
+  const bullets  = generateFitBullets(school, formData, allScoredResults)
+  const watchOuts = generateWatchOut(school, formData, allScoredResults)
 
   return (
     <div className={`bg-white rounded-xl shadow-sm border p-6 hover:shadow-md transition-shadow ${
@@ -152,9 +152,13 @@ export default function SchoolCard({ scored, formData, isSelectable, isSelected,
       </div>
 
       {/* ── Watch out ──────────────────────────────────────────────────── */}
-      <div className="flex gap-2.5 bg-amber-50 rounded-lg p-3.5 border border-amber-100">
-        <AlertCircle size={15} className="text-amber-500 shrink-0 mt-0.5" />
-        <p className="text-sm text-amber-800 leading-relaxed">{watchOut}</p>
+      <div className="bg-amber-50 rounded-lg p-3.5 border border-amber-100 space-y-2.5">
+        {watchOuts.map((warning, i) => (
+          <div key={i} className="flex gap-2.5">
+            <AlertCircle size={15} className="text-amber-500 shrink-0 mt-0.5" />
+            <p className="text-sm text-amber-800 leading-relaxed">{warning}</p>
+          </div>
+        ))}
       </div>
 
       {/* ── View full profile ───────────────────────────────────────────── */}
