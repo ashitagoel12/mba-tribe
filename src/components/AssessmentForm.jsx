@@ -134,11 +134,10 @@ function SectionA({ formData, updateField, errors }) {
           </label>
           <input
             id="experience"
-            type="number"
-            min="0"
-            max="20"
+            type="text"
+            inputMode="numeric"
             value={formData.yearsExperience}
-            onChange={e => updateField('yearsExperience', e.target.value)}
+            onChange={e => updateField('yearsExperience', e.target.value.replace(/[^0-9]/g, ''))}
             placeholder="e.g. 4"
             className={`w-full border rounded-lg px-3 py-2.5 text-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-400 transition-colors ${
               errors.yearsExperience ? 'border-red-400 bg-red-50' : 'border-slate-200'
@@ -364,18 +363,7 @@ function SectionD({ formData, updateField, errors }) {
               type="text"
               inputMode="numeric"
               value={formData.examScore}
-              onChange={e => updateField('examScore', e.target.value)}
-              onKeyDown={e => {
-                // Block non-digit printable keys; allow Backspace, Delete, arrows, etc.
-                if (e.key.length === 1 && !/\d/.test(e.key) && !e.ctrlKey && !e.metaKey) {
-                  e.preventDefault()
-                }
-              }}
-              onPaste={e => {
-                e.preventDefault()
-                const digits = e.clipboardData.getData('text/plain').replace(/[^0-9]/g, '')
-                if (digits) updateField('examScore', formData.examScore + digits)
-              }}
+              onChange={e => updateField('examScore', e.target.value.replace(/[^0-9]/g, ''))}
               placeholder={scorePlaceholder}
               className={`w-full border rounded-lg px-3 py-2.5 text-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-400 transition-colors ${
                 errors.examScore ? 'border-red-400 bg-red-50' : 'border-slate-200'
@@ -457,8 +445,13 @@ export default function AssessmentForm({
     const e = {}
     if (section === 1) {
       if (!formData.currentRegion) e.currentRegion = 'Please select your region'
-      if (formData.yearsExperience === '' || formData.yearsExperience === undefined)
+      if (formData.yearsExperience === '' || formData.yearsExperience === undefined) {
         e.yearsExperience = 'Please enter your years of experience'
+      } else {
+        const yrs = parseInt(formData.yearsExperience)
+        if (isNaN(yrs) || yrs < 0 || yrs > 20)
+          e.yearsExperience = 'Please enter a value between 0 and 20'
+      }
       if (!formData.currentIndustry) e.currentIndustry = 'Please select your industry'
       if (formData.currentIndustry === 'other' && !formData.currentIndustryOther)
         e.currentIndustryOther = 'Please describe your industry'
