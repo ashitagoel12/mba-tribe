@@ -1,11 +1,11 @@
 import React, { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { RotateCcw, BookOpen, Users, MessageCircle, HelpCircle, Sparkles, ChevronRight, GitCompare } from 'lucide-react'
+import { RotateCcw, BookOpen, Users, MessageCircle, HelpCircle, Sparkles, ChevronRight, X } from 'lucide-react'
 import { runMatching } from '../utils/matchingAlgorithm.js'
 import { generateUserInsights } from '../utils/userInsights.js'
 import SchoolCard from './SchoolCard.jsx'
 import SchoolCardCompact from './SchoolCardCompact.jsx'
-import ComparisonView from './ComparisonView.jsx'
+import CompareModal from './CompareModal.jsx'
 import {
   POST_MBA_GOALS,
   CAMPUS_ENV_OPTIONS,
@@ -145,8 +145,8 @@ export default function ResultsPage({ schools, formData, onRetake }) {
   const hasHiddenGems = hiddenGems.length > 0
 
   // ── Comparison mode state ───────────────────────────────────────────────
-  const [selectedIds, setSelectedIds]     = useState(new Set())
-  const [showComparison, setShowComparison] = useState(false)
+  const [selectedIds, setSelectedIds] = useState(new Set())
+  const [showModal, setShowModal]     = useState(false)
   const MAX_COMPARE = 3
 
   const toggleSelect = (id) => {
@@ -158,25 +158,21 @@ export default function ResultsPage({ schools, formData, onRetake }) {
     })
   }
 
-  // Build full school objects for the comparison view
-  const selectedSchools = [...selectedIds]
-    .map(id => schools.find(s => s.id === id))
-    .filter(Boolean)
-
-  if (showComparison) {
-    return (
-      <ComparisonView
-        selectedSchools={selectedSchools}
-        onBack={() => setShowComparison(false)}
-      />
-    )
-  }
+  // Ordered list of scored results for selected schools (preserves selection order)
+  const selectedScoredList = useMemo(
+    () => [...selectedIds]
+      .map(id => results.allScored.find(r => r.school.id === id))
+      .filter(Boolean),
+    [selectedIds, results.allScored]
+  )
 
   // Shared comparison props passed to every card
+  const atLimit = selectedIds.size >= MAX_COMPARE
   const compareProps = (id) => ({
     isSelectable:   true,
     isSelected:     selectedIds.has(id),
-    isDisabled:     !selectedIds.has(id) && selectedIds.size >= MAX_COMPARE,
+    isDisabled:     !selectedIds.has(id) && atLimit,
+    atLimit:        !selectedIds.has(id) && atLimit,
     onToggleSelect: toggleSelect,
   })
 
@@ -200,7 +196,7 @@ export default function ResultsPage({ schools, formData, onRetake }) {
         </div>
       </header>
 
-      <main className="max-w-4xl mx-auto px-4 py-10">
+      <main className={`max-w-4xl mx-auto px-4 py-10 ${selectedIds.size >= 2 ? 'pb-28' : ''}`}>
 
         {/* ── Page header ─────────────────────────────────────────────── */}
         <div className="mb-8">
@@ -488,20 +484,60 @@ export default function ResultsPage({ schools, formData, onRetake }) {
 
       </main>
 
-      {/* ── Floating compare button ──────────────────────────────────────── */}
-      {selectedIds.size > 0 && (
-        <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50">
-          <button
-            onClick={() => setShowComparison(true)}
-            className="inline-flex items-center gap-2.5 bg-slate-900 hover:bg-slate-800 text-white px-6 py-3.5 rounded-full shadow-xl font-medium text-sm transition-colors"
-          >
-            <GitCompare size={16} />
-            Compare Selected Schools ({selectedIds.size})
-            {selectedIds.size < MAX_COMPARE && (
-              <span className="text-slate-400 text-xs">· add up to {MAX_COMPARE - selectedIds.size} more</span>
-            )}
-          </button>
+      {/* ── Sticky comparison bar (appears when ≥ 2 schools selected) ───── */}
+      {selectedIds.size >= 2 && (
+        <div className="fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-slate-200 shadow-[0_-2px_16px_rgba(0,0,0,0.08)]">
+          <div className="max-w-4xl mx-auto px-4 py-3 flex items-center gap-3">
+
+            {/* School name pills */}
+            <div className="flex items-center gap-2 flex-wrap flex-1 min-w-0">
+              {[...selectedIds].map(id => {
+                const scored = results.allScored.find(r => r.school.id === id)
+                if (!scored) return null
+                const name = scored.school.shortName || scored.school.name
+                return (
+                  <span
+                    key={id}
+                    className="inline-flex items-center gap-1.5 bg-indigo-50 text-indigo-700 text-xs font-medium px-2.5 py-1 rounded-full border border-indigo-100"
+                  >
+                    <span className="max-w-[120px] truncate">{name}</span>
+                    <button
+                      onClick={() => toggleSelect(id)}
+                      title={`Remove ${scored.school.name}`}
+                      className="text-indigo-400 hover:text-indigo-700 transition-colors shrink-0"
+                    >
+                      <X size={11} />
+                    </button>
+                  </span>
+                )
+              })}
+              {selectedIds.size < MAX_COMPARE && (
+                <span className="text-xs text-slate-400 hidden sm:inline">
+                  + add {MAX_COMPARE - selectedIds.size} more
+                </span>
+              )}
+            </div>
+
+            {/* Compare button */}
+            <button
+              onClick={() => setShowModal(true)}
+              className="shrink-0 bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition-colors whitespace-nowrap"
+            >
+              Compare {selectedIds.size} Schools
+            </button>
+
+          </div>
         </div>
+      )}
+
+      {/* ── Comparison modal ─────────────────────────────────────────────── */}
+      {showModal && selectedScoredList.length >= 2 && (
+        <CompareModal
+          scoredList={selectedScoredList}
+          formData={formData}
+          allScoredResults={results.allScored}
+          onClose={() => setShowModal(false)}
+        />
       )}
 
       {/* ── Footer ──────────────────────────────────────────────────────── */}

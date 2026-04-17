@@ -39,7 +39,7 @@ function FitScoreBar({ score, tier }) {
 // Compact card — used in Worth Exploring and Stretch tiers
 // ---------------------------------------------------------------------------
 
-export default function SchoolCardCompact({ scored, formData, allScoredResults, isSelectable, isSelected, isDisabled, onToggleSelect }) {
+export default function SchoolCardCompact({ scored, formData, allScoredResults, isSelectable, isSelected, isDisabled, atLimit, onToggleSelect }) {
   const { school, totalScore, tier } = scored
   const bullets  = generateFitBullets(school, formData, allScoredResults)
   const watchOuts = generateWatchOut(school, formData, allScoredResults)
@@ -66,36 +66,44 @@ export default function SchoolCardCompact({ scored, formData, allScoredResults, 
             {school.location.city}, {school.location.state}
           </p>
         </div>
-        <div className="flex items-center gap-2 shrink-0 mt-0.5">
-          {isSelectable && (
-            <button
-              onClick={() => onToggleSelect(school.id)}
-              disabled={isDisabled}
-              title={isSelected ? 'Remove from comparison' : isDisabled ? 'Max 3 schools selected' : 'Add to comparison'}
-              className={`w-4.5 h-4.5 w-[18px] h-[18px] rounded border-2 flex items-center justify-center transition-colors ${
-                isSelected
-                  ? 'bg-indigo-600 border-indigo-600 text-white'
-                  : isDisabled
-                  ? 'border-slate-200 bg-slate-50 cursor-not-allowed'
-                  : 'border-slate-300 hover:border-indigo-400 bg-white cursor-pointer'
-              }`}
+        <div className="flex flex-col items-end gap-1 shrink-0">
+          <div className="flex items-center gap-2">
+            {isSelectable && (
+              <button
+                onClick={() => onToggleSelect(school.id)}
+                disabled={isDisabled}
+                title={isSelected ? 'Remove from comparison' : isDisabled ? 'Max 3 schools selected' : 'Add to comparison'}
+                className={`w-[18px] h-[18px] rounded border-2 flex items-center justify-center transition-colors ${
+                  isSelected
+                    ? 'bg-indigo-600 border-indigo-600 text-white'
+                    : isDisabled
+                    ? 'border-slate-200 bg-slate-50 cursor-not-allowed'
+                    : 'border-slate-300 hover:border-indigo-400 bg-white cursor-pointer'
+                }`}
+              >
+                {isSelected && (
+                  <svg width="9" height="7" viewBox="0 0 10 8" fill="none">
+                    <path d="M1 4l3 3 5-6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                )}
+              </button>
+            )}
+            <a
+              href={school.programUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-indigo-500 hover:text-indigo-700 transition-colors"
+              aria-label={`Visit ${school.name} website`}
             >
-              {isSelected && (
-                <svg width="9" height="7" viewBox="0 0 10 8" fill="none">
-                  <path d="M1 4l3 3 5-6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              )}
-            </button>
+              <ExternalLink size={14} />
+            </a>
+          </div>
+          {/* "Remove a school" hint when at the 3-school limit */}
+          {atLimit && (
+            <p className="text-[10px] text-slate-400 text-right leading-tight whitespace-nowrap">
+              Remove a school to add another
+            </p>
           )}
-          <a
-            href={school.programUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-indigo-500 hover:text-indigo-700 transition-colors"
-            aria-label={`Visit ${school.name} website`}
-          >
-            <ExternalLink size={14} />
-          </a>
         </div>
       </div>
 
