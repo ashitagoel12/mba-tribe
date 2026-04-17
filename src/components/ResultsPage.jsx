@@ -251,7 +251,11 @@ export default function ResultsPage({ schools, formData, onRetake }) {
             title="Strong Fit"
             subtitle={`${strongFit.length} program${strongFit.length !== 1 ? 's' : ''} that align well with your goals, priorities, and constraints`}
           />
-          <p className="text-xs text-gray-400 italic mb-4">Data verified against official sources. Always confirm details directly with each school before applying.</p>
+          <div className="border-l-4 border-indigo-300 bg-indigo-50 rounded-r-lg px-4 py-3 mb-5">
+            <p className="text-sm text-indigo-700 leading-relaxed">
+              Data verified against official sources. Always confirm details directly with each school before applying.
+            </p>
+          </div>
           <div className="space-y-5">
             {strongFit.map(scored => (
               <SchoolCard
@@ -277,7 +281,11 @@ export default function ResultsPage({ schools, formData, onRetake }) {
                 title="Worth Exploring"
                 subtitle="Solid programs with real tradeoffs. Understand those tradeoffs before deciding"
               />
-              <p className="text-xs text-gray-400 italic mb-4">Data verified against official sources. Always confirm details directly with each school before applying.</p>
+              <div className="border-l-4 border-indigo-300 bg-indigo-50 rounded-r-lg px-4 py-3 mb-5">
+            <p className="text-sm text-indigo-700 leading-relaxed">
+              Data verified against official sources. Always confirm details directly with each school before applying.
+            </p>
+          </div>
               <div className="grid sm:grid-cols-2 gap-4">
                 {worthExploring.map(scored => (
                   <SchoolCardCompact
@@ -305,7 +313,11 @@ export default function ResultsPage({ schools, formData, onRetake }) {
                 title="Stretch / Reach"
                 subtitle="These programs are a reach given your current GMAT, but not out of reach with a standout application"
               />
-              <p className="text-xs text-gray-400 italic mb-4">Data verified against official sources. Always confirm details directly with each school before applying.</p>
+              <div className="border-l-4 border-indigo-300 bg-indigo-50 rounded-r-lg px-4 py-3 mb-5">
+            <p className="text-sm text-indigo-700 leading-relaxed">
+              Data verified against official sources. Always confirm details directly with each school before applying.
+            </p>
+          </div>
               <div className="grid sm:grid-cols-2 gap-4">
                 {stretch.map(scored => (
                   <SchoolCardCompact

@@ -51,6 +51,55 @@ export default function SchoolCardCompact({ scored, formData, allScoredResults, 
       isSelected ? 'border-indigo-400 ring-2 ring-indigo-200' : isStretch ? 'border-amber-200' : 'border-slate-100'
     }`}>
 
+      {/* ── Top row: compare checkbox (left) + Visit site (right) ──────── */}
+      <div className="flex items-center justify-between mb-3">
+        {isSelectable ? (
+          <div>
+            <button
+              onClick={() => onToggleSelect(school.id)}
+              disabled={isDisabled}
+              title={isSelected ? 'Remove from comparison' : isDisabled ? 'Max 3 schools selected' : 'Add to comparison'}
+              className="flex items-center gap-1.5 group"
+            >
+              <span className={`w-3.5 h-3.5 rounded border-2 flex items-center justify-center transition-colors shrink-0 ${
+                isSelected
+                  ? 'bg-indigo-600 border-indigo-600 text-white'
+                  : isDisabled
+                  ? 'border-slate-200 bg-slate-50 cursor-not-allowed'
+                  : 'border-slate-300 group-hover:border-indigo-400 bg-white cursor-pointer'
+              }`}>
+                {isSelected && (
+                  <svg width="8" height="6" viewBox="0 0 10 8" fill="none">
+                    <path d="M1 4l3 3 5-6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                )}
+              </span>
+              <span className={`text-xs font-medium transition-colors ${
+                isSelected ? 'text-indigo-600' : isDisabled ? 'text-slate-300' : 'text-slate-400 group-hover:text-indigo-500'
+              }`}>
+                {isSelected ? 'Added' : 'Compare'}
+              </span>
+            </button>
+            {atLimit && (
+              <p className="text-[10px] text-slate-400 mt-0.5 ml-5 leading-tight whitespace-nowrap">
+                Remove a school to add another
+              </p>
+            )}
+          </div>
+        ) : (
+          <div />
+        )}
+        <a
+          href={school.programUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-indigo-500 hover:text-indigo-700 transition-colors"
+          aria-label={`Visit ${school.name} website`}
+        >
+          <ExternalLink size={14} />
+        </a>
+      </div>
+
       {/* Stretch badge */}
       {isStretch && (
         <div className="inline-flex items-center gap-1.5 bg-amber-50 text-amber-700 text-xs font-semibold px-2.5 py-1 rounded-full border border-amber-200 mb-3">
@@ -58,53 +107,12 @@ export default function SchoolCardCompact({ scored, formData, allScoredResults, 
         </div>
       )}
 
-      {/* ── Header ─────────────────────────────────────────────────────── */}
-      <div className="flex items-start justify-between gap-3 mb-3">
-        <div className="flex-1 min-w-0">
-          <h3 className="font-semibold text-slate-800 text-base leading-snug">{school.name}</h3>
-          <p className="text-xs text-slate-400 mt-0.5 font-mono">
-            {school.location.city}, {school.location.state}
-          </p>
-        </div>
-        <div className="flex flex-col items-end gap-1 shrink-0">
-          <div className="flex items-center gap-2">
-            {isSelectable && (
-              <button
-                onClick={() => onToggleSelect(school.id)}
-                disabled={isDisabled}
-                title={isSelected ? 'Remove from comparison' : isDisabled ? 'Max 3 schools selected' : 'Add to comparison'}
-                className={`w-[18px] h-[18px] rounded border-2 flex items-center justify-center transition-colors ${
-                  isSelected
-                    ? 'bg-indigo-600 border-indigo-600 text-white'
-                    : isDisabled
-                    ? 'border-slate-200 bg-slate-50 cursor-not-allowed'
-                    : 'border-slate-300 hover:border-indigo-400 bg-white cursor-pointer'
-                }`}
-              >
-                {isSelected && (
-                  <svg width="9" height="7" viewBox="0 0 10 8" fill="none">
-                    <path d="M1 4l3 3 5-6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                )}
-              </button>
-            )}
-            <a
-              href={school.programUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-indigo-500 hover:text-indigo-700 transition-colors"
-              aria-label={`Visit ${school.name} website`}
-            >
-              <ExternalLink size={14} />
-            </a>
-          </div>
-          {/* "Remove a school" hint when at the 3-school limit */}
-          {atLimit && (
-            <p className="text-[10px] text-slate-400 text-right leading-tight whitespace-nowrap">
-              Remove a school to add another
-            </p>
-          )}
-        </div>
+      {/* ── School name + location ─────────────────────────────────────── */}
+      <div className="mb-3">
+        <h3 className="font-semibold text-slate-800 text-base leading-snug">{school.name}</h3>
+        <p className="text-xs text-slate-400 mt-0.5 font-mono">
+          {school.location.city}, {school.location.state}
+        </p>
       </div>
 
       {/* ── Fit score ──────────────────────────────────────────────────── */}

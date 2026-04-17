@@ -42,8 +42,8 @@ const ROWS = [
   {
     key: 'avgGMAT',
     label: 'Avg GMAT',
-    better: 'higher',
-    getValue: s => s.school.classProfile?.avgGMAT ?? null,
+    better: null,       // higher GMAT avg = harder to get in, not "better" for the user
+    getValue: () => null,
     render: s => s.school.classProfile?.avgGMAT ?? '—',
   },
   {

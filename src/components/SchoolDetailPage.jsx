@@ -430,6 +430,13 @@ export default function SchoolDetailPage() {
 
       <main className="max-w-4xl mx-auto px-4 py-8 space-y-6">
 
+        {/* ── Disclaimer ──────────────────────────────────────────────────── */}
+        <div className="border-l-4 border-indigo-300 bg-indigo-50 rounded-r-lg px-4 py-3">
+          <p className="text-sm text-indigo-700 leading-relaxed">
+            Data verified against official sources. Always confirm details directly with each school before applying.
+          </p>
+        </div>
+
         {/* ── Overview ────────────────────────────────────────────────────── */}
         <SectionCard id="overview" title="Overview" icon={Users}>
           <div className="grid sm:grid-cols-2 gap-6">
