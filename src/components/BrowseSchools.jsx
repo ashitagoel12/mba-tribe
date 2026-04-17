@@ -3,9 +3,6 @@ import { Link } from 'react-router-dom'
 import { Search, ChevronDown, X, GraduationCap } from 'lucide-react'
 import NavBar from './NavBar.jsx'
 import allSchoolsData from '../../data/mba_schools_data.json'
-import comprehensiveData from '../../data/m7-schools-comprehensive-data.json'
-import top18Data from '../../data/top-18-schools-comprehensive-data.json'
-import next10Data from '../../data/next-10-schools-comprehensive-data.json'
 
 // ---------------------------------------------------------------------------
 // Data preparation — done once at module load (not on every render)
@@ -13,59 +10,11 @@ import next10Data from '../../data/next-10-schools-comprehensive-data.json'
 
 const ALL_SCHOOLS = allSchoolsData.schools  // array keeps original order = ranking order
 
-// ID bridge — maps app IDs → comprehensive data IDs
-const COMPREHENSIVE_ID_MAP = {
-  // M7
-  'harvard-hbs':          'harvard-business-school',
-  'stanford-gsb':         'stanford-gsb',
-  'wharton-penn':         'wharton',
-  'booth-chicago':        'chicago-booth',
-  'kellogg-northwestern': 'kellogg',
-  'sloan-mit':            'mit-sloan',
-  'columbia-cbs':         'columbia-business-school',
-  // Top 18
-  'tuck-dartmouth':         'tuck-dartmouth',
-  'yale-som':               'yale-som',
-  'haas-berkeley':          'haas-berkeley',
-  'ross-michigan':          'ross-michigan',
-  'darden-virginia':        'darden-uva',
-  'fuqua-duke':             'fuqua-duke',
-  'nyu-stern':              'stern-nyu',
-  'anderson-ucla':          'anderson-ucla',
-  'cornell-johnson':        'johnson-cornell',
-  'tepper-cmu':             'tepper-cmu',
-  'mccombs-utaustin':       'mccombs-texas',
-  'kenan-flagler-unc':      'kenan-flagler-unc',
-  'goizueta-emory':         'goizueta-emory',
-  'marshall-usc':           'marshall-usc',
-  'mcdonough-georgetown':   'mcdonough-georgetown',
-  'jones-rice':             'jones-rice',
-  'vanderbilt-owen':        'owen-vanderbilt',
-  'foster-uw':              'foster-uw',
-  // Next 10
-  'kelley-indiana':         'kelley-indiana',
-  'simon-rochester':        'simon-rochester',
-  'georgia-tech-scheller':  'georgia-tech-scheller',
-  'notre-dame-mendoza':     'notre-dame-mendoza',
-  'ohio-state-fisher':      'ohio-state-fisher',
-  'wisconsin':              'wisconsin',
-  'texas-am-mays':          'texas-am-mays',
-  'penn-state-smeal':       'penn-state-smeal',
-  'maryland-smith':         'maryland-smith',
-  'minnesota-carlson':      'minnesota-carlson',
-}
-
-// Merge all comprehensive datasets into one lookup
-const ALL_COMPREHENSIVE_DATA = Object.fromEntries([
-  ...comprehensiveData.schools.map(s => [s.id, s]),
-  ...top18Data.schools.map(s => [s.id, s]),
-  ...next10Data.schools.map(s => [s.id, s]),
+// M7 school IDs — used for the M7 badge only
+const M7_IDS = new Set([
+  'harvard-hbs', 'stanford-gsb', 'wharton-penn',
+  'booth-chicago', 'kellogg-northwestern', 'sloan-mit', 'columbia-cbs',
 ])
-
-function getM7Data(schoolId) {
-  const cid = COMPREHENSIVE_ID_MAP[schoolId]
-  return cid ? ALL_COMPREHENSIVE_DATA[cid] : null
-}
 
 const STATES = ['All States', ...Array.from(new Set(ALL_SCHOOLS.map(s => s.location.state))).sort()]
 
@@ -96,10 +45,10 @@ function fmt(n) {
 // ---------------------------------------------------------------------------
 
 const SchoolBrowseCard = memo(function SchoolBrowseCard({ school, rank }) {
-  const m7 = getM7Data(school.id)
+  const hasComprehensiveData = !!school.description
 
   return (
-    <div className={`bg-white rounded-xl border shadow-sm p-5 flex flex-col gap-3 hover:shadow-md transition-shadow ${m7 ? 'border-indigo-100' : 'border-slate-100'}`}>
+    <div className={`bg-white rounded-xl border shadow-sm p-5 flex flex-col gap-3 hover:shadow-md transition-shadow ${hasComprehensiveData ? 'border-indigo-100' : 'border-slate-100'}`}>
 
       {/* Rank badge + name */}
       <div className="flex items-start gap-3">
@@ -109,7 +58,7 @@ const SchoolBrowseCard = memo(function SchoolBrowseCard({ school, rank }) {
         <div className="min-w-0 flex-1">
           <div className="flex items-start justify-between gap-1">
             <h3 className="font-semibold text-slate-800 text-sm leading-snug">{school.name}</h3>
-            {m7 && (
+            {M7_IDS.has(school.id) && (
               <span className="shrink-0 bg-indigo-600 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full uppercase tracking-widest">
                 M7
               </span>
@@ -122,10 +71,10 @@ const SchoolBrowseCard = memo(function SchoolBrowseCard({ school, rank }) {
         </div>
       </div>
 
-      {/* M7 description snippet */}
-      {m7?.description && (
+      {/* Description snippet (schools with comprehensive data) */}
+      {school.description && (
         <p className="text-[11px] text-slate-500 leading-relaxed line-clamp-2">
-          {m7.description}
+          {school.description}
         </p>
       )}
 
@@ -151,11 +100,11 @@ const SchoolBrowseCard = memo(function SchoolBrowseCard({ school, rank }) {
         </div>
       </div>
 
-      {/* M7 programs count */}
-      {m7?.programs?.length > 0 && (
+      {/* Programs count (schools with comprehensive data) */}
+      {school.programs?.length > 0 && (
         <div className="flex items-center gap-1.5 text-[11px] text-slate-500">
           <GraduationCap size={12} className="text-indigo-400 shrink-0" />
-          <span>{m7.programs.length} programs offered</span>
+          <span>{school.programs.length} programs offered</span>
         </div>
       )}
 

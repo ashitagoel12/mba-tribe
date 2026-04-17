@@ -8,66 +8,15 @@ import {
 } from 'lucide-react'
 import NavBar from './NavBar.jsx'
 import schoolsData from '../../data/mba_schools_data.json'
-import comprehensiveData from '../../data/m7-schools-comprehensive-data.json'
-import top18Data from '../../data/top-18-schools-comprehensive-data.json'
-import next10Data from '../../data/next-10-schools-comprehensive-data.json'
 
 // ---------------------------------------------------------------------------
-// ID bridge — maps app IDs (mba_schools_data.json) → comprehensive data IDs
+// Constants
 // ---------------------------------------------------------------------------
 
-const COMPREHENSIVE_ID_MAP = {
-  // M7
-  'harvard-hbs':          'harvard-business-school',
-  'stanford-gsb':         'stanford-gsb',
-  'wharton-penn':         'wharton',
-  'booth-chicago':        'chicago-booth',
-  'kellogg-northwestern': 'kellogg',
-  'sloan-mit':            'mit-sloan',
-  'columbia-cbs':         'columbia-business-school',
-  // Top 18
-  'tuck-dartmouth':         'tuck-dartmouth',
-  'yale-som':               'yale-som',
-  'haas-berkeley':          'haas-berkeley',
-  'ross-michigan':          'ross-michigan',
-  'darden-virginia':        'darden-uva',
-  'fuqua-duke':             'fuqua-duke',
-  'nyu-stern':              'stern-nyu',
-  'anderson-ucla':          'anderson-ucla',
-  'cornell-johnson':        'johnson-cornell',
-  'tepper-cmu':             'tepper-cmu',
-  'mccombs-utaustin':       'mccombs-texas',
-  'kenan-flagler-unc':      'kenan-flagler-unc',
-  'goizueta-emory':         'goizueta-emory',
-  'marshall-usc':           'marshall-usc',
-  'mcdonough-georgetown':   'mcdonough-georgetown',
-  'jones-rice':             'jones-rice',
-  'vanderbilt-owen':        'owen-vanderbilt',
-  'foster-uw':              'foster-uw',
-  // Next 10
-  'kelley-indiana':         'kelley-indiana',
-  'simon-rochester':        'simon-rochester',
-  'georgia-tech-scheller':  'georgia-tech-scheller',
-  'notre-dame-mendoza':     'notre-dame-mendoza',
-  'ohio-state-fisher':      'ohio-state-fisher',
-  'wisconsin':              'wisconsin',
-  'texas-am-mays':          'texas-am-mays',
-  'penn-state-smeal':       'penn-state-smeal',
-  'maryland-smith':         'maryland-smith',
-  'minnesota-carlson':      'minnesota-carlson',
-}
-
-// Merge all comprehensive datasets into one lookup
-const ALL_COMPREHENSIVE_DATA = Object.fromEntries([
-  ...comprehensiveData.schools.map(s => [s.id, s]),
-  ...top18Data.schools.map(s => [s.id, s]),
-  ...next10Data.schools.map(s => [s.id, s]),
+const M7_IDS = new Set([
+  'harvard-hbs', 'stanford-gsb', 'wharton-penn',
+  'booth-chicago', 'kellogg-northwestern', 'sloan-mit', 'columbia-cbs',
 ])
-
-function getM7Data(schoolId) {
-  const comprehensiveId = COMPREHENSIVE_ID_MAP[schoolId]
-  return comprehensiveId ? ALL_COMPREHENSIVE_DATA[comprehensiveId] : null
-}
 
 // ---------------------------------------------------------------------------
 // Helpers
@@ -140,11 +89,11 @@ function DeadlineCard({ round, label }) {
 }
 
 // ---------------------------------------------------------------------------
-// M7 Sections
+// Rich sections (schools with comprehensive data merged in)
 // ---------------------------------------------------------------------------
 
-function ProgramsSection({ m7 }) {
-  const programs = m7.programs
+function ProgramsSection({ school }) {
+  const programs = school.programs
   if (!programs?.length) return null
 
   const typeLabel = {
@@ -190,8 +139,8 @@ function ProgramsSection({ m7 }) {
   )
 }
 
-function AcademicsSection({ m7 }) {
-  const ac = m7.academics
+function AcademicsSection({ school }) {
+  const ac = school.academics
   if (!ac) return null
 
   return (
@@ -284,8 +233,8 @@ function AcademicsSection({ m7 }) {
   )
 }
 
-function HybridEventsSection({ m7 }) {
-  const ev = m7.eventsAndEngagement
+function EventsSection({ school }) {
+  const ev = school.eventsAndEngagement
   if (!ev) return null
 
   return (
@@ -343,8 +292,8 @@ function HybridEventsSection({ m7 }) {
   )
 }
 
-function QuickLinksSection({ m7 }) {
-  const links = m7.quickLinks
+function QuickLinksSection({ school }) {
+  const links = school.quickLinks
   if (!links?.length) return null
 
   return (
@@ -381,7 +330,6 @@ function QuickLinksSection({ m7 }) {
 export default function SchoolDetailPage() {
   const { schoolId } = useParams()
   const school = schoolsData.schools.find(s => s.id === schoolId)
-  const m7 = getM7Data(schoolId)   // null for non-M7 schools
 
   if (!school) {
     return (
@@ -402,17 +350,17 @@ export default function SchoolDetailPage() {
   const hasDeadlines    = !!school.applicationInfo?.deadlines
   const hasEssays       = (school.applicationInfo?.essayQuestions?.length ?? 0) > 0
   const hasRequirements = !!school.applicationInfo?.requirements
-  // Legacy scraped events — only show for non-M7 (M7 gets hybrid section)
-  const hasLegacyEvents = !m7 && (school.events?.length ?? 0) > 0
+  // Legacy scraped events — only show when rich eventsAndEngagement is absent
+  const hasLegacyEvents = !school.eventsAndEngagement && (school.events?.length ?? 0) > 0
 
   const tabs = [
     { href: '#overview',    label: 'Overview',       always: true },
-    { href: '#programs',    label: 'Programs',        show: !!m7?.programs?.length },
-    { href: '#academics',   label: 'Academics',       show: !!m7?.academics },
+    { href: '#programs',    label: 'Programs',        show: !!school.programs?.length },
+    { href: '#academics',   label: 'Academics',       show: !!school.academics },
     { href: '#application', label: 'Application',     show: hasDeadlines },
-    { href: '#events',      label: 'Events',          show: !!m7?.eventsAndEngagement || hasLegacyEvents },
+    { href: '#events',      label: 'Events',          show: !!school.eventsAndEngagement || hasLegacyEvents },
     { href: '#outcomes',    label: 'Outcomes',        always: true },
-    { href: '#quick-links', label: 'Quick Links',     show: !!m7?.quickLinks?.length },
+    { href: '#quick-links', label: 'Quick Links',     show: !!school.quickLinks?.length },
   ].filter(t => t.always || t.show)
 
   return (
@@ -451,16 +399,16 @@ export default function SchoolDetailPage() {
                 {school.location.city}, {school.location.state}
               </p>
             </div>
-            {m7 && (
+            {M7_IDS.has(school.id) && (
               <span className="shrink-0 bg-indigo-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest mt-1">
                 M7
               </span>
             )}
           </div>
 
-          {/* M7 description */}
-          {m7?.description && (
-            <p className="text-sm text-slate-600 mt-3 leading-relaxed max-w-2xl">{m7.description}</p>
+          {/* Description (schools with comprehensive data) */}
+          {school.description && (
+            <p className="text-sm text-slate-600 mt-3 leading-relaxed max-w-2xl">{school.description}</p>
           )}
         </div>
       </header>
@@ -494,8 +442,8 @@ export default function SchoolDetailPage() {
                 <li><span className="text-slate-400">Avg work exp:</span> {school.classProfile.avgWorkExperience} yrs</li>
                 <li><span className="text-slate-400">Avg GMAT:</span> {school.classProfile.avgGMAT}</li>
                 <li><span className="text-slate-400">International:</span> {school.classProfile.internationalStudentPct}%</li>
-                {m7?.classProfile?.womenPercentage && (
-                  <li><span className="text-slate-400">Women:</span> {m7.classProfile.womenPercentage}%</li>
+                {school.classProfile.womenPercentage != null && (
+                  <li><span className="text-slate-400">Women:</span> {school.classProfile.womenPercentage}%</li>
                 )}
               </ul>
             </div>
@@ -506,12 +454,12 @@ export default function SchoolDetailPage() {
               <ul className="space-y-1.5 text-sm text-slate-700">
                 <li><span className="text-slate-400">Annual tuition:</span> {fmt(school.costs.annualTuition)}</li>
                 <li><span className="text-slate-400">Total program:</span> {fmt(school.costs.totalProgramCost)}</li>
-                {m7?.financialAid?.totalCostOfAttendance && (
-                  <li><span className="text-slate-400">Cost of attendance:</span> {m7.financialAid.totalCostOfAttendance}/yr</li>
+                {school.financialAid?.totalCostOfAttendance && (
+                  <li><span className="text-slate-400">Cost of attendance:</span> {school.financialAid.totalCostOfAttendance}/yr</li>
                 )}
-                {m7?.financialAid?.financialAidUrl && (
+                {school.financialAid?.financialAidUrl && (
                   <li>
-                    <a href={m7.financialAid.financialAidUrl} target="_blank" rel="noopener noreferrer"
+                    <a href={school.financialAid.financialAidUrl} target="_blank" rel="noopener noreferrer"
                       className="text-indigo-600 hover:text-indigo-800 text-xs font-medium inline-flex items-center gap-1">
                       Financial aid info <ExternalLink size={10} />
                     </a>
@@ -549,35 +497,35 @@ export default function SchoolDetailPage() {
             </div>
           )}
 
-          {/* Student Life (M7 only) */}
-          {m7?.studentLife && (
+          {/* Student Life */}
+          {school.studentLife && (
             <div className="mt-6 border-t border-slate-100 pt-5">
               <h3 className="text-sm font-semibold text-slate-400 uppercase tracking-widest mb-3">
                 Student Life
               </h3>
               <div className="grid sm:grid-cols-2 gap-3 text-sm text-slate-700">
-                {m7.studentLife.clubs && (
+                {school.studentLife.clubs && (
                   <div className="bg-slate-50 rounded-lg p-3">
                     <div className="text-[10px] font-semibold text-slate-400 uppercase tracking-wider mb-1">Clubs & Activities</div>
-                    <div>{m7.studentLife.clubs}</div>
+                    <div>{school.studentLife.clubs}</div>
                   </div>
                 )}
-                {m7.studentLife.location && (
+                {school.studentLife.location && (
                   <div className="bg-slate-50 rounded-lg p-3">
                     <div className="text-[10px] font-semibold text-slate-400 uppercase tracking-wider mb-1">Campus</div>
-                    <div>{m7.studentLife.location}</div>
+                    <div>{school.studentLife.location}</div>
                   </div>
                 )}
               </div>
               <div className="flex gap-3 mt-3 flex-wrap">
-                {m7.studentLife.housingUrl && (
-                  <a href={m7.studentLife.housingUrl} target="_blank" rel="noopener noreferrer"
+                {school.studentLife.housingUrl && (
+                  <a href={school.studentLife.housingUrl} target="_blank" rel="noopener noreferrer"
                     className="text-xs text-indigo-600 hover:text-indigo-800 font-medium inline-flex items-center gap-1">
                     Housing info <ExternalLink size={10} />
                   </a>
                 )}
-                {m7.studentLife.studentBlogsUrl && (
-                  <a href={m7.studentLife.studentBlogsUrl} target="_blank" rel="noopener noreferrer"
+                {school.studentLife.studentBlogsUrl && (
+                  <a href={school.studentLife.studentBlogsUrl} target="_blank" rel="noopener noreferrer"
                     className="text-xs text-indigo-600 hover:text-indigo-800 font-medium inline-flex items-center gap-1">
                     Student blogs <ExternalLink size={10} />
                   </a>
@@ -587,11 +535,11 @@ export default function SchoolDetailPage() {
           )}
         </SectionCard>
 
-        {/* ── Programs (M7 only) ──────────────────────────────────────────── */}
-        {m7 && <ProgramsSection m7={m7} />}
+        {/* ── Programs ────────────────────────────────────────────────────── */}
+        {school.programs?.length > 0 && <ProgramsSection school={school} />}
 
-        {/* ── Academics (M7 only) ─────────────────────────────────────────── */}
-        {m7 && <AcademicsSection m7={m7} />}
+        {/* ── Academics ───────────────────────────────────────────────────── */}
+        {school.academics && <AcademicsSection school={school} />}
 
         {/* ── Application Info ────────────────────────────────────────────── */}
         {hasDeadlines && (
@@ -616,9 +564,9 @@ export default function SchoolDetailPage() {
                   )}
                 </p>
               )}
-              {m7?.admissions?.applicationUrl && (
+              {school.admissions?.applicationUrl && (
                 <a
-                  href={m7.admissions.applicationUrl}
+                  href={school.admissions.applicationUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 mt-3 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors"
@@ -721,9 +669,10 @@ export default function SchoolDetailPage() {
           </SectionCard>
         )}
 
-        {/* ── Events — Hybrid (M7) or Legacy scraped (non-M7) ─────────────── */}
-        {m7 && <HybridEventsSection m7={m7} />}
+        {/* ── Events (rich eventsAndEngagement) ───────────────────────────── */}
+        {school.eventsAndEngagement && <EventsSection school={school} />}
 
+        {/* ── Events (legacy scraped, only when rich data is absent) ───────── */}
         {hasLegacyEvents && (
           <SectionCard id="events" title="Upcoming Events" icon={Calendar}>
             <div className="space-y-3">
@@ -772,8 +721,8 @@ export default function SchoolDetailPage() {
                 <li><span className="text-slate-400">Avg starting salary:</span> {fmt(school.employment.avgStartingSalary)}</li>
                 <li><span className="text-slate-400">Median signing bonus:</span> {fmt(school.employment.medianSigningBonus)}</li>
               </ul>
-              {m7?.career?.employmentReportUrl && (
-                <a href={m7.career.employmentReportUrl} target="_blank" rel="noopener noreferrer"
+              {school.career?.employmentReportUrl && (
+                <a href={school.career.employmentReportUrl} target="_blank" rel="noopener noreferrer"
                   className="inline-flex items-center gap-1 text-xs text-indigo-600 hover:text-indigo-800 font-medium mt-3">
                   Full employment report <ExternalLink size={10} />
                 </a>
@@ -783,10 +732,10 @@ export default function SchoolDetailPage() {
               <h3 className="text-sm font-semibold text-slate-400 uppercase tracking-widest mb-3">
                 Top Industries
               </h3>
-              {/* M7: use rich industry breakdown with percentages */}
-              {m7?.career?.topIndustries?.length > 0 ? (
+              {/* Rich industry breakdown with percentages (schools with comprehensive data) */}
+              {school.career?.topIndustries?.length > 0 ? (
                 <ul className="space-y-2">
-                  {m7.career.topIndustries.map((ind, i) => (
+                  {school.career.topIndustries.map((ind, i) => (
                     <li key={i} className="text-sm">
                       <div className="flex items-center justify-between mb-0.5">
                         <span className="text-slate-700">{ind.industry}</span>
@@ -827,13 +776,13 @@ export default function SchoolDetailPage() {
           )}
         </SectionCard>
 
-        {/* ── Quick Links (M7 only) ────────────────────────────────────────── */}
-        {m7 && <QuickLinksSection m7={m7} />}
+        {/* ── Quick Links ──────────────────────────────────────────────────── */}
+        {school.quickLinks?.length > 0 && <QuickLinksSection school={school} />}
 
         {/* ── Action buttons ──────────────────────────────────────────────── */}
         <div className="flex flex-wrap gap-3 pb-4">
           <a
-            href={m7?.website ?? school.programUrl}
+            href={school.website ?? school.programUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-indigo-600 text-white px-5 py-2.5 rounded-lg hover:bg-indigo-700 font-medium text-sm transition-colors"
