@@ -6627,5 +6627,10 @@
         "general-management": "broad"
       }
     }
-  ]
+  ],
+  "metadata": {
+    "totalSchools": 100,
+    "lastUpdated": "2025-07-01",
+    "dataVersion": "2.0"
+  }
 }

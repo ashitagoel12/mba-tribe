@@ -64,7 +64,10 @@
       "Bash(mv \"C:\\\\Users\\\\Ashita Goel\\\\Desktop\\\\There Is No Try\\\\mba-tribe\\\\scripts\\\\addSchoolFields.js\" \"C:\\\\Users\\\\Ashita Goel\\\\Desktop\\\\There Is No Try\\\\mba-tribe\\\\scripts\\\\addSchoolFields.cjs\")",
       "Bash(node scripts/addSchoolFields.cjs)",
       "Bash(node -e \"const d = JSON.parse\\(require\\('fs'\\).readFileSync\\('./data/mba_schools_data.json','utf8'\\)\\); const spot = ['harvard-hbs','booth-chicago','columbia-cbs','nyu-stern','tuck-dartmouth']; spot.forEach\\(id => { const s = d.schools.find\\(s=>s.id===id\\); console.log\\(id, s.campusType, s.stemOpt\\); }\\);\")",
-      "Bash(node scripts/addRecruiterAccess.cjs)"
+      "Bash(node scripts/addRecruiterAccess.cjs)",
+      "Bash(powershell -Command 'Get-ChildItem -Recurse -Filter '\\\\''*.json'\\\\'' | Where-Object { $_.Name -like '\\\\''*schools*'\\\\'' -or \\($_.DirectoryName -eq \\(Get-Location\\).Path -and $_.Extension -eq '\\\\''.json'\\\\''\\) } | Select-Object FullName, Length')",
+      "Bash(del m7-events.json m7_schools_complete_data.json mba_schools_scraped_data.json schools_list.json scraping_results.json)",
+      "Bash(ls *.json)"
     ]
   }
 }
