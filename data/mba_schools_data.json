@@ -1312,9 +1312,9 @@
       },
       "employment": {
         "top3Industries": [
-          "Finance",
+          "Investment Banking",
           "Consulting",
-          "Technology"
+          "Technology & Telecommunications"
         ],
         "top5Companies": [
           "Amazon",
@@ -2623,7 +2623,7 @@
       },
       "employment": {
         "top3Industries": [
-          "Healthcare",
+          "Healthcare Management",
           "Consulting",
           "Financial Services"
         ],
@@ -2658,7 +2658,7 @@
         "consulting": "broad",
         "technology": "broad",
         "private-equity": "limited",
-        "healthcare": "broad",
+        "healthcare": "core",
         "social-impact": "broad",
         "entrepreneurship": "broad",
         "general-management": "broad"
@@ -2908,11 +2908,11 @@
       "recruiterAccess": {
         "investment-banking": "limited",
         "consulting": "broad",
-        "technology": "broad",
+        "technology": "core",
         "private-equity": "limited",
         "healthcare": "broad",
         "social-impact": "broad",
-        "entrepreneurship": "broad",
+        "entrepreneurship": "core",
         "general-management": "broad"
       }
     },
@@ -2970,7 +2970,7 @@
       "stemOpt": true,
       "recruiterAccess": {
         "investment-banking": "limited",
-        "consulting": "broad",
+        "consulting": "core",
         "technology": "broad",
         "private-equity": "limited",
         "healthcare": "broad",
@@ -3316,9 +3316,9 @@
       },
       "employment": {
         "top3Industries": [
-          "Consulting",
           "Technology",
-          "Financial Services"
+          "Financial Services",
+          "Consulting"
         ],
         "top5Companies": [
           "Deloitte",
@@ -3349,11 +3349,11 @@
       "recruiterAccess": {
         "investment-banking": "limited",
         "consulting": "broad",
-        "technology": "broad",
+        "technology": "core",
         "private-equity": "limited",
         "healthcare": "broad",
         "social-impact": "broad",
-        "entrepreneurship": "broad",
+        "entrepreneurship": "target",
         "general-management": "broad"
       }
     },
@@ -3568,9 +3568,9 @@
       },
       "employment": {
         "top3Industries": [
-          "Technology",
+          "Healthcare",
           "Consulting",
-          "Biotech"
+          "Financial Services"
         ],
         "top5Companies": [
           "Amazon",
@@ -3603,7 +3603,7 @@
         "consulting": "broad",
         "technology": "broad",
         "private-equity": "limited",
-        "healthcare": "broad",
+        "healthcare": "core",
         "social-impact": "broad",
         "entrepreneurship": "broad",
         "general-management": "broad"
