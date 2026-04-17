@@ -76,22 +76,22 @@ export default function App() {
 
   const schools = schoolsData.schools
 
-  function AssessmentFlow() {
-    if (step === 0) {
-      return <WelcomeScreen onStart={handleStart} />
-    }
-
-    if (step === 5) {
-      return (
-        <ResultsPage
-          schools={schools}
-          formData={formData}
-          onRetake={handleRetake}
-        />
-      )
-    }
-
-    return (
+  // Inline the step logic directly — never define components inside render
+  // functions, as React would treat each re-render as a new component type
+  // and unmount/remount the entire subtree (causing focus loss on every keystroke).
+  let mainContent
+  if (step === 0) {
+    mainContent = <WelcomeScreen onStart={handleStart} />
+  } else if (step === 5) {
+    mainContent = (
+      <ResultsPage
+        schools={schools}
+        formData={formData}
+        onRetake={handleRetake}
+      />
+    )
+  } else {
+    mainContent = (
       <AssessmentForm
         formData={formData}
         setFormData={setFormData}
@@ -107,7 +107,7 @@ export default function App() {
       <Routes>
         <Route path="/schools"           element={<BrowseSchools />} />
         <Route path="/schools/:schoolId" element={<SchoolDetailPage />} />
-        <Route path="*"                  element={<AssessmentFlow />} />
+        <Route path="*"                  element={mainContent} />
       </Routes>
     </BrowserRouter>
   )
