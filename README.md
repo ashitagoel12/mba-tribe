@@ -166,3 +166,14 @@ ANTHROPIC_API_KEY=... node scripts/evalAi.mjs --live   # real Claude runs, incl.
 Run it from GitHub: **Actions → refresh-school-data → Run workflow** (`pilot`, `all`, or school ids). It opens a pull request with the report; nothing changes on the site until it is merged. It also runs quarterly. Needs the `ANTHROPIC_API_KEY` repository secret.
 
 Tests: `node scripts/refresh/refresh.test.mjs`
+
+## Talk to students and alumni
+
+- **/mentors**: approved students and alumni, filterable by school. "Book a free call" opens the mentor's own Calendly or Cal.com link.
+- **/questions**: a public Q&A board. Anyone can ask (optionally about a school); mentors answer. School pages show their mentors and questions too.
+- **/mentors/apply**: students and alumni apply. **/admin** (password = `ADMIN_TOKEN`): approve or reject mentors, review held posts, issue new mentor links.
+- **/mentor**: a mentor's private inbox, opened from the one-time link shown when you approve them.
+
+Every public question and answer is checked by Claude for spam, abuse and personal contact details. Anything flagged, or anything posted when the check can't run, is held for review. Posting is rate limited per IP. Mentor emails are never shown publicly.
+
+Setup: connect **Upstash for Redis** from the Vercel project's Storage tab (free), and set `ADMIN_TOKEN`. Tests: `node scripts/community.test.mjs`.

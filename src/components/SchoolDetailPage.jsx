@@ -9,6 +9,7 @@ import {
 } from 'lucide-react'
 import NavBar from './NavBar.jsx'
 import AskSchool from './AskSchool.jsx'
+import SchoolCommunity from './community/SchoolCommunity.jsx'
 import schoolsData from '../../data/mba_schools_data.json'
 
 // ---------------------------------------------------------------------------
@@ -563,6 +564,9 @@ export default function SchoolDetailPage() {
 
         {/* ── Ask Claude about this school ───────────────────────────────── */}
         <AskSchool school={school} />
+
+        {/* ── Students and alumni: book a call, Q&A ───────────────────────── */}
+        <SchoolCommunity school={school} />
 
         {/* ── Programs ────────────────────────────────────────────────────── */}
         {school.programs?.length > 0 && <ProgramsSection school={school} />}
