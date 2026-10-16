@@ -25,31 +25,54 @@ permissions:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 180
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
       - run: npm ci && npm install --no-save pdfjs-dist@4
+
+      # Run the offline tests first, so a broken script fails before any API spend.
+      - name: Tests (before spending anything)
+        run: node scripts/refresh/refresh.test.mjs
+
       - name: Find and verify
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           REFRESH_MODEL: ${{ github.event.inputs.model || 'claude-haiku-5-5' }}
         run: node scripts/refresh/refreshData.mjs --schools "${{ github.event.inputs.schools || 'all' }}"
-      - name: Apply verified values and re-run checks
+
+      # Results are saved after every school; keep them even if a later step fails.
+      - name: Save results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: refresh-results
+          path: data/refresh/
+          if-no-files-found: ignore
+
+      - name: Apply verified values
         run: |
           DIR=$(ls -d data/refresh/*/ | sort | tail -1)
           node scripts/refresh/applyRefresh.mjs "${DIR}changes.json"
-          node scripts/personaCheck.mjs
-          python3 scripts/auditData.py
-          node scripts/refresh/refresh.test.mjs
+
+      # Checks on the updated data are reported in the PR, not allowed to block it.
+      - name: Checks on updated data
+        continue-on-error: true
+        run: |
+          DIR=$(ls -d data/refresh/*/ | sort | tail -1)
+          { echo; echo '## Checks on the updated data'; echo '```';
+            node scripts/personaCheck.mjs 2>&1 | tail -15;
+            python3 scripts/auditData.py 2>&1 | head -12;
+            echo '```'; } >> "${DIR}report.md"
+
       - name: Open pull request
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           DATE=$(date -u +%Y-%m-%d)
-          BRANCH="data-refresh-$DATE-${{ github.run_number }}"
+          BRANCH="data-refresh-$DATE-${{ github.run_number }}-${{ github.run_attempt }}"
           git config user.name "data-refresh-bot"
           git config user.email "actions@users.noreply.github.com"
           git checkout -b "$BRANCH"
@@ -57,5 +80,10 @@ jobs:
           git commit -m "Data refresh $DATE (${{ github.event.inputs.schools || 'all' }})"
           git push origin "$BRANCH"
           REPORT=$(ls -d data/refresh/*/ | sort | tail -1)report.md
-          gh pr create --title "Data refresh $DATE" --body-file "$REPORT" --base main --head "$BRANCH" \
-            || echo "::warning::Could not open a PR automatically. Open one from branch $BRANCH, or enable 'Allow GitHub Actions to create pull requests' in Settings → Actions → General."
+          # PR bodies are capped at 65k characters; link the full report if it is longer.
+          if [ $(wc -c < "$REPORT") -gt 60000 ]; then
+            head -c 55000 "$REPORT" > /tmp/body.md
+            printf '\n\n…report truncated. Full report: data/refresh/%s/report.md on this branch.\n' "$DATE" >> /tmp/body.md
+          else cp "$REPORT" /tmp/body.md; fi
+          gh pr create --title "Data refresh $DATE" --body-file /tmp/body.md --base main --head "$BRANCH" \
+            || echo "::warning::Could not open a PR automatically. Open one from branch $BRANCH."
