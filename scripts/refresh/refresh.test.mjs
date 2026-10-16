@@ -6,6 +6,8 @@ import { applyChanges } from './applyRefresh.mjs'
 let fails = 0
 const check = (name, ok, detail = '') => { if (!ok) fails++; console.log(`${ok ? '✓' : '✗'} ${name}${detail ? '  ' + detail : ''}`) }
 const data = JSON.parse(readFileSync(new URL('../../data/mba_schools_data.json', import.meta.url)))
+// Tests must not depend on what earlier refreshes wrote: start from a clean copy.
+for (const s of data.schools) { delete s.sources; delete s.refresh; delete s.lastVerified; delete s.classProfile.avgGMATFocus }
 const hbs = data.schools.find(s => s.id === 'harvard-hbs')
 
 // Value-in-quote

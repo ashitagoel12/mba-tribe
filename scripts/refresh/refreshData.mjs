@@ -276,10 +276,12 @@ export async function verifyValue(v, school, pageTextImpl = pageText) {
 
 const fmt = (field, v) => v == null ? '—' : FIELDS[field].kind === 'money' ? `$${Number(v).toLocaleString('en-US')}` : String(v)
 
-export async function refreshSchools(ids, apiKey, { extract = extractSchool, verify = verifyValue } = {}) {
+export async function refreshSchools(ids, apiKey, { extract = extractSchool, verify = verifyValue, onResult = () => {}, done = [] } = {}) {
   const byId = Object.fromEntries(DATA.schools.map(s => [s.id, s]))
-  const results = []
+  const results = [...done]
+  const skip = new Set(done.map(r => r.id))
   for (const id of ids) {
+    if (skip.has(id)) continue
     const school = byId[id]
     if (!school) { results.push({ id, error: 'unknown school id' }); continue }
     process.stdout.write(`• ${id} … `)
@@ -293,9 +295,11 @@ export async function refreshSchools(ids, apiKey, { extract = extractSchool, ver
           changed: check.ok && String(current) !== String(v.value) })
       }
       results.push({ id, name: school.name, items, not_found: out.not_found || [], usage: out.usage })
+      onResult(results)
       console.log(`${items.filter(i => i.verified).length} verified, ${items.filter(i => !i.verified).length} rejected, ${(out.not_found || []).length} not found`)
     } catch (e) {
       results.push({ id, name: school.name, error: e.message })
+      onResult(results)
       console.log('ERROR ' + e.message)
     }
   }
@@ -340,11 +344,17 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const apiKey = process.env.ANTHROPIC_API_KEY
   if (!apiKey) { console.error('Set ANTHROPIC_API_KEY'); process.exit(1) }
 
-  console.log(`Refreshing ${ids.length} school(s) with ${MODEL}`)
-  const results = await refreshSchools(ids, apiKey)
   const dir = join(ROOT, 'data', 'refresh', TODAY)
   mkdirSync(dir, { recursive: true })
-  writeFileSync(join(dir, 'report.md'), renderReport(results))
-  writeFileSync(join(dir, 'changes.json'), JSON.stringify({ date: TODAY, model: MODEL, results }, null, 2))
+  const save = results => {
+    writeFileSync(join(dir, 'changes.json'), JSON.stringify({ date: TODAY, model: MODEL, results }, null, 2))
+    writeFileSync(join(dir, 'report.md'), renderReport(results))
+  }
+  // Resume: schools already done today (from a saved partial run) are skipped.
+  let done = []
+  try { done = JSON.parse(readFileSync(join(dir, 'changes.json'), 'utf8')).results.filter(r => !r.error) } catch { /* fresh run */ }
+  console.log(`Refreshing ${ids.length} school(s) with ${MODEL}${done.length ? ` (resuming; ${done.length} already done)` : ''}`)
+  const results = await refreshSchools(ids, apiKey, { onResult: save, done })
+  save(results)
   console.log(`\nWrote ${join('data', 'refresh', TODAY)}/report.md and changes.json`)
 }
