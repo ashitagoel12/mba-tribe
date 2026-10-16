@@ -153,3 +153,16 @@ python3 scripts/auditData.py      # data: flags impossible, placeholder or stale
 node scripts/evalAi.mjs           # AI layer: grounding filter + endpoint tests with a fake model
 ANTHROPIC_API_KEY=... node scripts/evalAi.mjs --live   # real Claude runs, incl. a prompt-injection case
 ```
+
+## Keeping the data current
+
+`scripts/refresh/refreshData.mjs` re-checks each school against its own website:
+
+1. **Find.** Claude searches only the school's domain for the newest class profile, employment report, tuition and deadlines.
+2. **Extract.** Every value comes back with its source URL, the exact sentence it came from, and the year it covers.
+3. **Verify in code.** The script opens the source page or PDF and checks that the sentence is there, that it contains the value, and that the value is plausible. A third-party source, a missing quote or an out-of-range number is rejected.
+4. **Review.** `data/refresh/<date>/report.md` lists every value as updated, unchanged or rejected (with the reason). `applyRefresh.mjs` writes only verified values and records each source, which the school page shows under "Sources".
+
+Run it from GitHub: **Actions → refresh-school-data → Run workflow** (`pilot`, `all`, or school ids). It opens a pull request with the report; nothing changes on the site until it is merged. It also runs quarterly. Needs the `ANTHROPIC_API_KEY` repository secret.
+
+Tests: `node scripts/refresh/refresh.test.mjs`

@@ -1,0 +1,56 @@
+name: refresh-school-data
+
+# Finds current figures on each school's own website, verifies every value in code,
+# and opens a pull request with the verified changes and a report. Nothing goes live
+# until the pull request is merged.
+
+on:
+  workflow_dispatch:
+    inputs:
+      schools:
+        description: 'pilot, all, or comma-separated school ids'
+        required: true
+        default: pilot
+  schedule:
+    - cron: '23 14 1 1,4,7,10 *'   # quarterly, all schools
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci && npm install --no-save pdfjs-dist@4
+      - name: Find and verify
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/refresh/refreshData.mjs --schools "${{ github.event.inputs.schools || 'all' }}"
+      - name: Apply verified values and re-run checks
+        run: |
+          DIR=$(ls -d data/refresh/*/ | sort | tail -1)
+          node scripts/refresh/applyRefresh.mjs "${DIR}changes.json"
+          node scripts/personaCheck.mjs
+          python3 scripts/auditData.py
+          node scripts/refresh/refresh.test.mjs
+      - name: Open pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          DATE=$(date -u +%Y-%m-%d)
+          BRANCH="data-refresh-$DATE-${{ github.run_number }}"
+          git config user.name "data-refresh-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add data/
+          git commit -m "Data refresh $DATE (${{ github.event.inputs.schools || 'all' }})"
+          git push origin "$BRANCH"
+          REPORT=$(ls -d data/refresh/*/ | sort | tail -1)report.md
+          gh pr create --title "Data refresh $DATE" --body-file "$REPORT" --base main --head "$BRANCH" \
+            || echo "::warning::Could not open a PR automatically. Open one from branch $BRANCH, or enable 'Allow GitHub Actions to create pull requests' in Settings → Actions → General."
