@@ -1488,18 +1488,6 @@
           "type": "part-time",
           "duration": "2.5-3 years",
           "url": "https://www.chicagobooth.edu/mba/part-time/weekend"
-        },
-        {
-          "name": "Executive MBA",
-          "type": "executive",
-          "duration": "21 months",
-          "url": "https://www.chicagobooth.edu/mba/emba"
-        },
-        {
-          "name": "Booth Scholars Program",
-          "type": "deferred",
-          "duration": "21 months (after 2-5 years work)",
-          "url": "https://www.chicagobooth.edu/mba/full-time/admissions/scholars"
         }
       ],
       "academics": {
@@ -1563,7 +1551,7 @@
             }
           ]
         },
-        "applicationUrl": "https://www.chicagobooth.edu/mba/full-time/admissions/apply",
+        "applicationUrl": "https://www.chicagobooth.edu/programs/full-time",
         "applicationFee": "$250",
         "essays": [
           {
@@ -1653,11 +1641,6 @@
         "studentBlogsUrl": "https://www.chicagobooth.edu/mba/mba-life/full-time-mba-blog"
       },
       "quickLinks": [
-        {
-          "name": "Apply Now",
-          "url": "https://www.chicagobooth.edu/mba/full-time/admissions/apply",
-          "icon": "application"
-        },
         {
           "name": "Class Profile",
           "url": "https://www.chicagobooth.edu/mba/full-time/admissions/class-profile",
@@ -2343,12 +2326,6 @@
           "url": "https://lgo.mit.edu"
         },
         {
-          "name": "Master of Finance",
-          "type": "specialized-masters",
-          "duration": "12 months",
-          "url": "https://mitsloan.mit.edu/master-of-finance"
-        },
-        {
           "name": "Sloan Fellows (mid-career)",
           "type": "mid-career",
           "duration": "12 months",
@@ -2371,7 +2348,7 @@
         "curriculum": {
           "structure": "Core curriculum followed by flexible electives",
           "tracks": "Innovation & Entrepreneurship, Finance, Operations, Analytics",
-          "url": "https://mitsloan.mit.edu/mba/academics"
+          "url": "https://mitsloan.mit.edu/mba"
         },
         "learningMethods": [
           {
@@ -3034,30 +3011,6 @@
           "type": "full-time",
           "duration": "24 months",
           "url": "https://tuck.dartmouth.edu/mba"
-        },
-        {
-          "name": "MD/MBA",
-          "type": "joint-degree",
-          "duration": "60-72 months",
-          "url": "https://tuck.dartmouth.edu/mba/academic-experience/joint-degree-programs"
-        },
-        {
-          "name": "MPH/MBA",
-          "type": "joint-degree",
-          "duration": "36 months",
-          "url": "https://tuck.dartmouth.edu/mba/academic-experience/joint-degree-programs"
-        },
-        {
-          "name": "MEM/MBA",
-          "type": "joint-degree",
-          "duration": "36 months",
-          "url": "https://tuck.dartmouth.edu/mba/academic-experience/joint-degree-programs"
-        },
-        {
-          "name": "MBA/MPP (with Harvard Kennedy School)",
-          "type": "joint-degree",
-          "duration": "36 months",
-          "url": "https://tuck.dartmouth.edu/mba/academic-experience/joint-degree-programs"
         }
       ],
       "academics": {
@@ -3083,20 +3036,7 @@
             "url": "https://tuck.dartmouth.edu/mba/academic-experience"
           }
         ],
-        "centers": [
-          {
-            "name": "Center for Business, Government & Society",
-            "url": "https://tuck.dartmouth.edu/centers/center-business-government-society"
-          },
-          {
-            "name": "Revers Center for Energy, Sustainability and the Environment",
-            "url": "https://tuck.dartmouth.edu/centers/revers-center"
-          },
-          {
-            "name": "Center for Digital Strategies",
-            "url": "https://tuck.dartmouth.edu/centers/center-digital-strategies"
-          }
-        ],
+        "centers": [],
         "crossRegistration": [
           "Dartmouth Geisel School of Medicine",
           "Dartmouth Thayer School of Engineering",
@@ -3235,7 +3175,7 @@
       },
       "studentLife": {
         "clubs": "50+ student clubs",
-        "housingUrl": "https://tuck.dartmouth.edu/mba/life-at-tuck/housing",
+        "housingUrl": "https://www.tuck.dartmouth.edu/mba",
         "location": "Residential campus in Hanover, NH. Students, faculty, and families live and work together in a close-knit community.",
         "studentBlogsUrl": "https://tuck.dartmouth.edu/mba/blog"
       },
@@ -3426,30 +3366,6 @@
           "type": "executive",
           "duration": "22 months",
           "url": "https://som.yale.edu/programs/emba"
-        },
-        {
-          "name": "MBA/JD (with Yale Law School)",
-          "type": "joint-degree",
-          "duration": "48 months",
-          "url": "https://som.yale.edu/programs/mba/academics/joint-degree-programs"
-        },
-        {
-          "name": "MBA/MD (with Yale School of Medicine)",
-          "type": "joint-degree",
-          "duration": "60 months",
-          "url": "https://som.yale.edu/programs/mba/academics/joint-degree-programs"
-        },
-        {
-          "name": "MBA/MEM (with Yale School of the Environment)",
-          "type": "joint-degree",
-          "duration": "36 months",
-          "url": "https://som.yale.edu/programs/mba/academics/joint-degree-programs"
-        },
-        {
-          "name": "MBA/MA Global Affairs (with Jackson School)",
-          "type": "joint-degree",
-          "duration": "36 months",
-          "url": "https://som.yale.edu/programs/mba/academics/joint-degree-programs"
         }
       ],
       "academics": {
@@ -3525,7 +3441,7 @@
             }
           ]
         },
-        "applicationUrl": "https://apply.som.yale.edu",
+        "applicationUrl": "https://som.yale.edu/programs/mba",
         "applicationFee": "$250",
         "essays": [
           {
@@ -3600,7 +3516,7 @@
           }
         ],
         "eventsCalendarUrl": "https://som.yale.edu/programs/mba/admissions/mba-admissions-events",
-        "virtualTourUrl": "https://som.yale.edu/programs/mba/admissions/visit-yale-som"
+        "virtualTourUrl": "https://som.yale.edu/programs/mba"
       },
       "financialAid": {
         "tuition": "$87,800",
@@ -3631,16 +3547,11 @@
       },
       "studentLife": {
         "clubs": "70+ student clubs",
-        "housingUrl": "https://som.yale.edu/programs/mba/life-at-yale-som/housing",
+        "housingUrl": "https://som.yale.edu/programs/mba",
         "location": "New Haven, CT. Yale SOM occupies the award-winning Evans Hall at the heart of Yale's campus.",
-        "studentBlogsUrl": "https://som.yale.edu/programs/mba/life-at-yale-som/student-voices"
+        "studentBlogsUrl": "https://som.yale.edu/programs/mba"
       },
       "quickLinks": [
-        {
-          "name": "Apply Now",
-          "url": "https://apply.som.yale.edu",
-          "icon": "application"
-        },
         {
           "name": "Class Profile",
           "url": "https://som.yale.edu/programs/mba/admissions/class-profile",
@@ -3655,11 +3566,6 @@
           "name": "Events Calendar",
           "url": "https://som.yale.edu/programs/mba/admissions/mba-admissions-events",
           "icon": "calendar"
-        },
-        {
-          "name": "Virtual Tour",
-          "url": "https://som.yale.edu/programs/mba/admissions/visit-yale-som",
-          "icon": "tour"
         },
         {
           "name": "Contact Admissions",
@@ -3834,24 +3740,6 @@
           "type": "deferred",
           "duration": "21 months",
           "url": "https://mba.haas.berkeley.edu/admissions/accelerated-access"
-        },
-        {
-          "name": "MBA/JD (with UC Berkeley School of Law)",
-          "type": "joint-degree",
-          "duration": "48 months",
-          "url": "https://mba.haas.berkeley.edu/academics/joint-degree-programs"
-        },
-        {
-          "name": "MBA/MPH (with UC Berkeley School of Public Health)",
-          "type": "joint-degree",
-          "duration": "36 months",
-          "url": "https://mba.haas.berkeley.edu/academics/joint-degree-programs"
-        },
-        {
-          "name": "MBA/MEng (with UC Berkeley College of Engineering)",
-          "type": "joint-degree",
-          "duration": "24 months",
-          "url": "https://mba.haas.berkeley.edu/academics/joint-degree-programs"
         }
       ],
       "academics": {
@@ -3865,29 +3753,12 @@
             "name": "Haas@Work",
             "description": "Experiential consulting projects where MBA students work directly with companies to solve real business problems.",
             "url": "https://mba.haas.berkeley.edu/academics/experiential-learning"
-          },
-          {
-            "name": "Global Immersions",
-            "description": "International study trips providing hands-on exposure to global markets and emerging economies.",
-            "url": "https://mba.haas.berkeley.edu/academics/global-opportunities"
           }
         ],
         "centers": [
           {
-            "name": "Haas Institute for Business Innovation",
-            "url": "https://haas.berkeley.edu/innovation"
-          },
-          {
             "name": "Center for Responsible Business",
             "url": "https://responsiblebusiness.haas.berkeley.edu"
-          },
-          {
-            "name": "Fisher Center for Real Estate & Urban Economics",
-            "url": "https://fisher.haas.berkeley.edu"
-          },
-          {
-            "name": "Lester Center for Entrepreneurship",
-            "url": "https://entrepreneurship.haas.berkeley.edu"
           }
         ],
         "crossRegistration": [
@@ -3921,7 +3792,7 @@
             }
           ]
         },
-        "applicationUrl": "https://apply.haas.berkeley.edu",
+        "applicationUrl": "https://haas.berkeley.edu/mba/",
         "applicationFee": "$250",
         "essays": [
           {
@@ -3987,24 +3858,16 @@
       "eventsAndEngagement": {
         "eventCategories": [
           {
-            "name": "Campus Visits",
-            "url": "https://mba.haas.berkeley.edu/admissions/visit-haas"
-          },
-          {
             "name": "Information Sessions",
             "url": "https://mba.haas.berkeley.edu/admissions/events"
           },
           {
             "name": "Virtual Events",
             "url": "https://mba.haas.berkeley.edu/admissions/events"
-          },
-          {
-            "name": "Coffee Chats",
-            "url": "https://mba.haas.berkeley.edu/admissions/connect-with-haas"
           }
         ],
         "eventsCalendarUrl": "https://mba.haas.berkeley.edu/admissions/events",
-        "virtualTourUrl": "https://mba.haas.berkeley.edu/admissions/visit-haas"
+        "virtualTourUrl": "https://haas.berkeley.edu/mba/"
       },
       "financialAid": {
         "tuition": "$85,406",
@@ -4041,11 +3904,6 @@
       },
       "quickLinks": [
         {
-          "name": "Apply Now",
-          "url": "https://apply.haas.berkeley.edu",
-          "icon": "application"
-        },
-        {
           "name": "Class Profile",
           "url": "https://mba.haas.berkeley.edu/admissions/class-profile",
           "icon": "stats"
@@ -4059,16 +3917,6 @@
           "name": "Events Calendar",
           "url": "https://mba.haas.berkeley.edu/admissions/events",
           "icon": "calendar"
-        },
-        {
-          "name": "Virtual Tour",
-          "url": "https://mba.haas.berkeley.edu/admissions/visit-haas",
-          "icon": "tour"
-        },
-        {
-          "name": "Contact Admissions",
-          "url": "https://mba.haas.berkeley.edu/admissions/contact-admissions",
-          "icon": "contact"
         }
       ],
       "sources": {
@@ -4306,7 +4154,7 @@
             }
           ]
         },
-        "applicationUrl": "https://apply.bus.umich.edu",
+        "applicationUrl": "https://michiganross.umich.edu/programs/full-time-mba",
         "applicationFee": "$250",
         "essays": [
           {
@@ -4425,11 +4273,6 @@
         "studentBlogsUrl": "https://michiganross.umich.edu/graduate/full-time-mba/student-experience/student-voices"
       },
       "quickLinks": [
-        {
-          "name": "Apply Now",
-          "url": "https://apply.bus.umich.edu",
-          "icon": "application"
-        },
         {
           "name": "Class Profile",
           "url": "https://michiganross.umich.edu/graduate/full-time-mba/admissions/class-profile",
@@ -4856,7 +4699,7 @@
         "Leadership-focused",
         "Diverse & inclusive"
       ],
-      "programUrl": "https://www.fuqua.duke.edu/programs/mba-programs/daytime-mba",
+      "programUrl": "https://www.fuqua.duke.edu/programs/daytime-mba",
       "campusType": "campus-town",
       "stemOpt": true,
       "recruiterAccess": {
@@ -4943,7 +4786,7 @@
           "Duke Nicholas School of the Environment",
           "Duke Sanford School of Public Policy"
         ],
-        "courseCatalog": "https://fuqua.bulletins.duke.edu/allprograms/masters/f-mba-mba"
+        "courseCatalog": "https://www.fuqua.duke.edu/programs/daytime-mba"
       },
       "admissions": {
         "deadlines": {
@@ -5163,9 +5006,9 @@
         ],
         "links": {
           "class_size": "https://www.fuqua.duke.edu/sites/default/files/media/programs/daytime/duke-mba-employment-2025.pdf",
-          "avg_gmat": "https://www.fuqua.duke.edu/programs/mba-programs/daytime-mba",
-          "avg_gre_total": "https://www.fuqua.duke.edu/programs/mba-programs/daytime-mba",
-          "international_pct": "https://www.fuqua.duke.edu/programs/mba-programs/daytime-mba",
+          "avg_gmat": "https://www.fuqua.duke.edu/programs/daytime-mba",
+          "avg_gre_total": "https://www.fuqua.duke.edu/programs/daytime-mba",
+          "international_pct": "https://www.fuqua.duke.edu/programs/daytime-mba",
           "employed_3_months_pct": "https://www.fuqua.duke.edu/sites/default/files/media/programs/daytime/duke-mba-employment-2025.pdf",
           "starting_salary": "https://www.fuqua.duke.edu/sites/default/files/media/programs/daytime/duke-mba-employment-2025.pdf",
           "signing_bonus": "https://www.fuqua.duke.edu/sites/default/files/media/programs/daytime/duke-mba-employment-2025.pdf"
@@ -5252,12 +5095,6 @@
           "url": "https://johnson.cornell.edu/programs/full-time-mba/accelerated-mba/"
         },
         {
-          "name": "Cornell Tech MBA (NYC)",
-          "type": "full-time",
-          "duration": "12 months",
-          "url": "https://tech.cornell.edu/programs/masters/mba/"
-        },
-        {
           "name": "Executive MBA (Metro NY)",
           "type": "executive",
           "duration": "24 months",
@@ -5268,24 +5105,6 @@
           "type": "executive",
           "duration": "24 months",
           "url": "https://johnson.cornell.edu/programs/executive-mba/"
-        },
-        {
-          "name": "MBA/JD (with Cornell Law School)",
-          "type": "joint-degree",
-          "duration": "48 months",
-          "url": "https://johnson.cornell.edu/programs/full-time-mba/dual-degree-programs/"
-        },
-        {
-          "name": "MBA/MILR (Industrial & Labor Relations)",
-          "type": "joint-degree",
-          "duration": "36 months",
-          "url": "https://johnson.cornell.edu/programs/full-time-mba/dual-degree-programs/"
-        },
-        {
-          "name": "MBA/MEng (Engineering)",
-          "type": "joint-degree",
-          "duration": "36 months",
-          "url": "https://johnson.cornell.edu/programs/full-time-mba/dual-degree-programs/"
         }
       ],
       "academics": {
@@ -5817,17 +5636,13 @@
           }
         ],
         "employmentReportUrl": "https://www.stern.nyu.edu/business-partnerships/employment-reports",
-        "careerServicesUrl": "https://www.stern.nyu.edu/programs-admissions/full-time-mba/career-development"
+        "careerServicesUrl": "https://www.stern.nyu.edu/programs-admissions/full-time-mba"
       },
       "eventsAndEngagement": {
         "eventCategories": [
           {
             "name": "Campus Visits",
             "url": "https://apply.stern.nyu.edu/portal/campus_visit"
-          },
-          {
-            "name": "Information Sessions",
-            "url": "https://www.stern.nyu.edu/programs-admissions/full-time-mba/meet-with-us/events-and-chats"
           },
           {
             "name": "Virtual Events",
@@ -5839,7 +5654,7 @@
           }
         ],
         "eventsCalendarUrl": "https://admissions.stern.nyu.edu/portal/ftmbaevents",
-        "virtualTourUrl": "https://www.stern.nyu.edu/programs-admissions/full-time-mba/meet-with-us/virtual-tour"
+        "virtualTourUrl": "https://www.stern.nyu.edu/programs-admissions/full-time-mba"
       },
       "financialAid": {
         "tuition": "$86,916",
@@ -5894,11 +5709,6 @@
           "name": "Events Calendar",
           "url": "https://admissions.stern.nyu.edu/portal/ftmbaevents",
           "icon": "calendar"
-        },
-        {
-          "name": "Virtual Tour",
-          "url": "https://www.stern.nyu.edu/programs-admissions/full-time-mba/meet-with-us/virtual-tour",
-          "icon": "tour"
         },
         {
           "name": "Contact Admissions",
@@ -6012,7 +5822,7 @@
         "LA network access",
         "Entrepreneurial spirit"
       ],
-      "programUrl": "https://www.anderson.ucla.edu/programs/mba",
+      "programUrl": "https://www.anderson.ucla.edu/degrees/full-time-mba",
       "campusType": "urban",
       "stemOpt": true,
       "recruiterAccess": {
@@ -6313,10 +6123,10 @@
           "starting_salary"
         ],
         "links": {
-          "avg_work_experience": "https://www.anderson.ucla.edu/programs/mba",
-          "international_pct": "https://www.anderson.ucla.edu/programs/mba",
-          "women_pct": "https://www.anderson.ucla.edu/programs/mba",
-          "employed_3_months_pct": "https://www.anderson.ucla.edu/programs/mba",
+          "avg_work_experience": "https://www.anderson.ucla.edu/degrees/full-time-mba",
+          "international_pct": "https://www.anderson.ucla.edu/degrees/full-time-mba",
+          "women_pct": "https://www.anderson.ucla.edu/degrees/full-time-mba",
+          "employed_3_months_pct": "https://www.anderson.ucla.edu/degrees/full-time-mba",
           "signing_bonus": "https://www.anderson.ucla.edu/sites/default/files/document/2026-03/Class%20of%202025%20Employment%20Report%20PDF_0.pdf"
         }
       }
@@ -6743,15 +6553,9 @@
       },
       "shortName": "McCombs",
       "description": "The McCombs School of Business at UT Austin sits in the heart of one of America's fastest-growing tech and innovation hubs. The Texas MBA is known for its strength in energy, technology, consulting, and entrepreneurship, with strong ties to Austin's thriving startup ecosystem and Fortune 500 companies headquartered in Texas. As a flagship public university program, McCombs offers exceptional value with 75% of admitted students receiving scholarships.",
-      "website": "https://www.mccombs.utexas.edu/mba/texas-mba/",
+      "website": "https://www.mccombs.utexas.edu/graduate/mba/full-time-mba/",
       "logo": "/logos/mccombs-texas.png",
       "programs": [
-        {
-          "name": "Texas MBA (Full-Time)",
-          "type": "full-time",
-          "duration": "21 months",
-          "url": "https://www.mccombs.utexas.edu/mba/texas-mba/"
-        },
         {
           "name": "Working Professional MBA (Dallas)",
           "type": "part-time",
@@ -6765,22 +6569,10 @@
           "url": "https://www.mccombs.utexas.edu/mba/working-professional-mba/houston/"
         },
         {
-          "name": "Online MBA",
-          "type": "part-time",
-          "duration": "24 months",
-          "url": "https://www.mccombs.utexas.edu/mba/online-mba/"
-        },
-        {
           "name": "Executive MBA",
           "type": "executive",
           "duration": "21 months",
           "url": "https://www.mccombs.utexas.edu/mba/executive-mba/"
-        },
-        {
-          "name": "MBA/JD (with UT Law)",
-          "type": "joint-degree",
-          "duration": "48 months",
-          "url": "https://www.mccombs.utexas.edu/mba/texas-mba/academics/dual-degrees/"
         }
       ],
       "academics": {
@@ -6803,16 +6595,8 @@
         ],
         "centers": [
           {
-            "name": "Center for Energy Finance Education and Research (CEFER)",
-            "url": "https://www.mccombs.utexas.edu/faculty-and-research/centers-and-institutes/"
-          },
-          {
             "name": "IC2 Institute (Innovation, Creativity, Capital)",
             "url": "https://ic2.utexas.edu/"
-          },
-          {
-            "name": "Center for Leadership and Ethics",
-            "url": "https://www.mccombs.utexas.edu/faculty-and-research/centers-and-institutes/"
           }
         ],
         "crossRegistration": [
@@ -6820,7 +6604,7 @@
           "UT Austin LBJ School of Public Affairs",
           "UT Austin Cockrell School of Engineering"
         ],
-        "courseCatalog": "https://www.mccombs.utexas.edu/mba/texas-mba/academics/courses/"
+        "courseCatalog": "https://www.mccombs.utexas.edu/graduate/mba/full-time-mba/"
       },
       "admissions": {
         "deadlines": {
@@ -6905,7 +6689,7 @@
             "percentage": 9
           }
         ],
-        "employmentReportUrl": "https://www.mccombs.utexas.edu/mba/texas-mba/career-management/employment-report/",
+        "employmentReportUrl": "https://www.mccombs.utexas.edu/graduate/mba/full-time-mba/",
         "careerServicesUrl": "https://www.mccombs.utexas.edu/mba/texas-mba/career-management/"
       },
       "eventsAndEngagement": {
@@ -6935,25 +6719,12 @@
         "fees": "$2,000",
         "estimatedLivingExpenses": "$26,000",
         "totalCostOfAttendance": "$92,000",
-        "scholarships": [
-          {
-            "name": "Merit Scholarships",
-            "description": "75% of admitted students receive merit-based scholarships. Automatically considered at time of admission.",
-            "averageAward": "Varies",
-            "url": "https://www.mccombs.utexas.edu/mba/texas-mba/admissions/financing/"
-          },
-          {
-            "name": "Forté Fellowship",
-            "description": "Awarded to exceptional women leaders demonstrating outstanding leadership potential.",
-            "averageAward": "Varies",
-            "url": "https://www.mccombs.utexas.edu/mba/texas-mba/admissions/financing/"
-          }
-        ],
-        "financialAidUrl": "https://www.mccombs.utexas.edu/mba/texas-mba/admissions/financing/"
+        "scholarships": [],
+        "financialAidUrl": "https://www.mccombs.utexas.edu/graduate/mba/full-time-mba/"
       },
       "studentLife": {
         "clubs": "45+ student clubs and organizations",
-        "housingUrl": "https://www.mccombs.utexas.edu/mba/texas-mba/life-in-austin/",
+        "housingUrl": "https://www.mccombs.utexas.edu/graduate/mba/full-time-mba/",
         "location": "Austin, TX — one of the fastest-growing tech hubs in the US, home to Dell, Apple, Tesla, Oracle, and hundreds of startups. Vibrant city with live music, outdoor activities, and a booming food scene.",
         "studentBlogsUrl": "https://www.mccombs.utexas.edu/mba/texas-mba/student-experience/"
       },
@@ -6967,11 +6738,6 @@
           "name": "Class Profile",
           "url": "https://www.mccombs.utexas.edu/mba/texas-mba/admissions/class-profile/",
           "icon": "stats"
-        },
-        {
-          "name": "Employment Report",
-          "url": "https://www.mccombs.utexas.edu/mba/texas-mba/career-management/employment-report/",
-          "icon": "career"
         },
         {
           "name": "Events Calendar",
@@ -7140,79 +6906,18 @@
       "description": "Kenan-Flagler Business School at UNC Chapel Hill is a top-ranked public business school known for developing principled, innovative leaders committed to creating sustainable value. The MBA program emphasizes collaborative teamwork, global perspectives, and strong career placement across consulting, finance, and healthcare. With 43% international students and the pioneering MBA@UNC online program, Kenan-Flagler has a truly global footprint.",
       "website": "https://mba.unc.edu/",
       "logo": "/logos/kenan-flagler-unc.png",
-      "programs": [
-        {
-          "name": "Full-Time MBA",
-          "type": "full-time",
-          "duration": "21 months",
-          "url": "https://mba.unc.edu/programs/mba/"
-        },
-        {
-          "name": "MBA@UNC (Online)",
-          "type": "part-time",
-          "duration": "18-36 months",
-          "url": "https://mba.unc.edu/programs/mbaunc/"
-        },
-        {
-          "name": "Executive MBA (Chapel Hill)",
-          "type": "executive",
-          "duration": "18 months",
-          "url": "https://mba.unc.edu/programs/emba/"
-        },
-        {
-          "name": "Executive MBA (Charlotte)",
-          "type": "executive",
-          "duration": "18 months",
-          "url": "https://mba.unc.edu/programs/emba/charlotte/"
-        },
-        {
-          "name": "MBA/JD",
-          "type": "joint-degree",
-          "duration": "48 months",
-          "url": "https://mba.unc.edu/programs/mba/dual-degrees/"
-        },
-        {
-          "name": "MBA/MPH",
-          "type": "joint-degree",
-          "duration": "36 months",
-          "url": "https://mba.unc.edu/programs/mba/dual-degrees/"
-        }
-      ],
+      "programs": [],
       "academics": {
         "curriculum": {
           "year1": "First-year students complete an integrated core curriculum covering accounting, finance, marketing, operations, strategy, leadership, and ethics. The Leadership Development Initiative (LDI) runs throughout both years. Students complete an Action Learning Project with a real company in the first year.",
           "year2": "Second year is fully elective-based with seven concentrations: Finance, Marketing, Consulting, Healthcare, Real Estate, Entrepreneurship, and Strategy & Leadership. Students can pursue dual concentrations and engage in global immersions, consulting projects, and investment funds.",
-          "url": "https://mba.unc.edu/programs/mba/academics/"
+          "url": "https://www.kenan-flagler.unc.edu/programs/mba/"
         },
-        "learningMethods": [
-          {
-            "name": "Action Learning Projects (ALP)",
-            "description": "Team-based consulting projects with real client companies providing hands-on business problem-solving experience.",
-            "url": "https://mba.unc.edu/programs/mba/academics/"
-          },
-          {
-            "name": "Leadership Development Initiative (LDI)",
-            "description": "Personalized leadership coaching and development program running throughout both years of the MBA.",
-            "url": "https://mba.unc.edu/programs/mba/academics/"
-          },
-          {
-            "name": "Global Immersions",
-            "description": "International study trips providing first-hand exposure to global business environments and markets.",
-            "url": "https://mba.unc.edu/programs/mba/academics/"
-          }
-        ],
+        "learningMethods": [],
         "centers": [
-          {
-            "name": "Center for Sustainable Enterprise",
-            "url": "https://mba.unc.edu/faculty-research/centers/"
-          },
           {
             "name": "Frank Hawkins Kenan Institute of Private Enterprise",
             "url": "https://kenaninstitute.unc.edu/"
-          },
-          {
-            "name": "Center for the Business of Health",
-            "url": "https://mba.unc.edu/faculty-research/centers/"
           }
         ],
         "crossRegistration": [
@@ -7221,7 +6926,7 @@
           "UNC School of Medicine",
           "UNC Eshelman School of Pharmacy"
         ],
-        "courseCatalog": "https://mba.unc.edu/programs/mba/academics/courses/"
+        "courseCatalog": "https://www.kenan-flagler.unc.edu/programs/mba/"
       },
       "admissions": {
         "deadlines": {
@@ -7252,7 +6957,7 @@
             }
           ]
         },
-        "applicationUrl": "https://mba.unc.edu/programs/mba/admissions/apply/",
+        "applicationUrl": "https://www.kenan-flagler.unc.edu/programs/mba/",
         "applicationFee": "$150",
         "essays": [
           {
@@ -7268,7 +6973,7 @@
         "recommendations": {
           "required": 2,
           "preferredFrom": "Professional supervisors who can speak to your strengths, potential, and areas for development.",
-          "url": "https://mba.unc.edu/programs/mba/admissions/apply/"
+          "url": "https://www.kenan-flagler.unc.edu/programs/mba/"
         },
         "testScores": {
           "gmat": {
@@ -7312,96 +7017,29 @@
             "percentage": 8
           }
         ],
-        "employmentReportUrl": "https://mba.unc.edu/programs/mba/career-management/employment-report/",
-        "careerServicesUrl": "https://mba.unc.edu/programs/mba/career-management/"
+        "employmentReportUrl": "https://www.kenan-flagler.unc.edu/programs/mba/",
+        "careerServicesUrl": "https://www.kenan-flagler.unc.edu/programs/mba/"
       },
       "eventsAndEngagement": {
-        "eventCategories": [
-          {
-            "name": "Campus Visits",
-            "url": "https://mba.unc.edu/programs/mba/admissions/visit/"
-          },
-          {
-            "name": "Information Sessions",
-            "url": "https://mba.unc.edu/programs/mba/admissions/events/"
-          },
-          {
-            "name": "Virtual Events",
-            "url": "https://mba.unc.edu/programs/mba/admissions/events/"
-          },
-          {
-            "name": "Coffee Chats",
-            "url": "https://mba.unc.edu/programs/mba/admissions/connect/"
-          }
-        ],
-        "eventsCalendarUrl": "https://mba.unc.edu/programs/mba/admissions/events/",
-        "virtualTourUrl": "https://mba.unc.edu/programs/mba/admissions/visit/"
+        "eventCategories": [],
+        "eventsCalendarUrl": "https://www.kenan-flagler.unc.edu/programs/mba/",
+        "virtualTourUrl": "https://www.kenan-flagler.unc.edu/programs/mba/"
       },
       "financialAid": {
         "tuition": "$74,138",
         "fees": "$2,500",
         "estimatedLivingExpenses": "$24,000",
         "totalCostOfAttendance": "$103,000",
-        "scholarships": [
-          {
-            "name": "Full-Tuition Scholarships",
-            "description": "Highly competitive full-tuition awards given to outstanding incoming students based on academic excellence and leadership.",
-            "averageAward": "Full tuition ($148,276)",
-            "url": "https://mba.unc.edu/programs/mba/admissions/financing/"
-          },
-          {
-            "name": "Merit Scholarships",
-            "description": "Partial merit scholarships automatically considered for all admitted students.",
-            "averageAward": "Varies",
-            "url": "https://mba.unc.edu/programs/mba/admissions/financing/"
-          },
-          {
-            "name": "Forté Fellowship",
-            "description": "For exceptional women business leaders with outstanding potential.",
-            "averageAward": "Varies",
-            "url": "https://mba.unc.edu/programs/mba/admissions/financing/"
-          }
-        ],
-        "financialAidUrl": "https://mba.unc.edu/programs/mba/admissions/financing/"
+        "scholarships": [],
+        "financialAidUrl": "https://www.kenan-flagler.unc.edu/programs/mba/"
       },
       "studentLife": {
         "clubs": "45+ student clubs and organizations",
-        "housingUrl": "https://mba.unc.edu/programs/mba/student-experience/living-in-chapel-hill/",
+        "housingUrl": "https://www.kenan-flagler.unc.edu/programs/mba/",
         "location": "Chapel Hill, NC — part of the Research Triangle with Raleigh and Durham. A vibrant college town with excellent quality of life, affordable housing, and access to the growing tech and biotech corridor.",
-        "studentBlogsUrl": "https://mba.unc.edu/programs/mba/student-experience/"
+        "studentBlogsUrl": "https://www.kenan-flagler.unc.edu/programs/mba/"
       },
-      "quickLinks": [
-        {
-          "name": "Apply Now",
-          "url": "https://mba.unc.edu/programs/mba/admissions/apply/",
-          "icon": "application"
-        },
-        {
-          "name": "Class Profile",
-          "url": "https://mba.unc.edu/programs/mba/admissions/class-profile/",
-          "icon": "stats"
-        },
-        {
-          "name": "Employment Report",
-          "url": "https://mba.unc.edu/programs/mba/career-management/employment-report/",
-          "icon": "career"
-        },
-        {
-          "name": "Events Calendar",
-          "url": "https://mba.unc.edu/programs/mba/admissions/events/",
-          "icon": "calendar"
-        },
-        {
-          "name": "Virtual Tour",
-          "url": "https://mba.unc.edu/programs/mba/admissions/visit/",
-          "icon": "tour"
-        },
-        {
-          "name": "Contact Admissions",
-          "url": "https://mba.unc.edu/programs/mba/admissions/contact/",
-          "icon": "contact"
-        }
-      ],
+      "quickLinks": [],
       "sources": {
         "class_size": {
           "url": "https://www.kenan-flagler.unc.edu/programs/mba/full-time-mba/class-profile/",
@@ -7516,52 +7154,16 @@
       },
       "shortName": "Tepper",
       "description": "Carnegie Mellon's Tepper School of Business is the pioneer of analytical, technology-driven management education. The STEM-designated MBA integrates data science, AI, and quantitative methods with core business disciplines, producing graduates who are uniquely equipped to lead in the digital economy. With CMU's world-leading computer science and engineering programs next door, Tepper offers unrivaled access to tech talent and innovation.",
-      "website": "https://www.cmu.edu/tepper/programs/mba/full-time/index.html",
+      "website": "https://www.cmu.edu/tepper/programs/mba/",
       "logo": "/logos/tepper-cmu.png",
-      "programs": [
-        {
-          "name": "Full-Time MBA",
-          "type": "full-time",
-          "duration": "21 months",
-          "url": "https://www.cmu.edu/tepper/programs/mba/full-time/index.html"
-        },
-        {
-          "name": "Hybrid Flex MBA",
-          "type": "part-time",
-          "duration": "33 months",
-          "url": "https://www.cmu.edu/tepper/programs/mba/part-time/index.html"
-        },
-        {
-          "name": "Online Hybrid MBA",
-          "type": "part-time",
-          "duration": "33 months",
-          "url": "https://www.cmu.edu/tepper/programs/mba/part-time/index.html"
-        },
-        {
-          "name": "Executive MBA",
-          "type": "executive",
-          "duration": "24 months",
-          "url": "https://www.cmu.edu/tepper/programs/mba/executive/index.html"
-        }
-      ],
+      "programs": [],
       "academics": {
         "curriculum": {
           "year1": "First-year students complete an integrated core covering business analytics, financial accounting, microeconomics, organizational behavior, marketing, operations, corporate finance, and strategy. The STEM designation means quantitative rigor is embedded throughout, preparing students for data-driven decision making from day one.",
           "year2": "The second year offers deep flexibility with electives across finance, marketing, strategy, operations, and entrepreneurship. Students can pursue specializations in Business Analytics, Finance, Strategy, Marketing, or Entrepreneurship. Many students collaborate with CMU's CS and engineering departments.",
-          "url": "https://www.cmu.edu/tepper/programs/mba/full-time/academics/index.html"
+          "url": "https://www.cmu.edu/tepper/programs/mba/"
         },
-        "learningMethods": [
-          {
-            "name": "Analytics-Driven Decision Making",
-            "description": "Signature quantitative approach embedded throughout the curriculum integrating data science and AI with management.",
-            "url": "https://www.cmu.edu/tepper/programs/mba/full-time/academics/index.html"
-          },
-          {
-            "name": "Cross-Disciplinary Collaboration",
-            "description": "Deep integration with CMU's top-ranked computer science, engineering, and human-computer interaction departments.",
-            "url": "https://www.cmu.edu/tepper/programs/mba/full-time/academics/index.html"
-          }
-        ],
+        "learningMethods": [],
         "centers": [
           {
             "name": "Center for Financial Markets and Policy",
@@ -7582,7 +7184,7 @@
           "CMU Heinz College of Information Systems and Public Policy",
           "CMU College of Fine Arts"
         ],
-        "courseCatalog": "https://www.cmu.edu/tepper/programs/mba/full-time/academics/index.html"
+        "courseCatalog": "https://www.cmu.edu/tepper/programs/mba/"
       },
       "admissions": {
         "deadlines": {
@@ -7613,7 +7215,7 @@
             }
           ]
         },
-        "applicationUrl": "https://www.cmu.edu/tepper/programs/mba/full-time/admissions/index.html",
+        "applicationUrl": "https://www.cmu.edu/tepper/programs/mba/",
         "applicationFee": "$150",
         "essays": [
           {
@@ -7629,7 +7231,7 @@
         "recommendations": {
           "required": 2,
           "preferredFrom": "Professional supervisors who can evaluate your strengths, areas for growth, and potential as a business leader.",
-          "url": "https://www.cmu.edu/tepper/programs/mba/full-time/admissions/index.html"
+          "url": "https://www.cmu.edu/tepper/programs/mba/"
         },
         "testScores": {
           "gmat": {
@@ -7673,90 +7275,29 @@
             "percentage": 5
           }
         ],
-        "employmentReportUrl": "https://www.cmu.edu/tepper/programs/mba/full-time/career-opportunities/employment-report.html",
-        "careerServicesUrl": "https://www.cmu.edu/tepper/programs/mba/full-time/career-opportunities/index.html"
+        "employmentReportUrl": "https://www.cmu.edu/tepper/programs/mba/",
+        "careerServicesUrl": "https://www.cmu.edu/tepper/programs/mba/"
       },
       "eventsAndEngagement": {
-        "eventCategories": [
-          {
-            "name": "Campus Visits",
-            "url": "https://www.cmu.edu/tepper/programs/mba/full-time/admissions/visit/index.html"
-          },
-          {
-            "name": "Information Sessions",
-            "url": "https://www.cmu.edu/tepper/programs/mba/full-time/admissions/events/index.html"
-          },
-          {
-            "name": "Virtual Events",
-            "url": "https://www.cmu.edu/tepper/programs/mba/full-time/admissions/events/index.html"
-          },
-          {
-            "name": "Coffee Chats",
-            "url": "https://www.cmu.edu/tepper/programs/mba/full-time/admissions/connect/index.html"
-          }
-        ],
-        "eventsCalendarUrl": "https://www.cmu.edu/tepper/programs/mba/full-time/admissions/events/index.html",
-        "virtualTourUrl": "https://www.cmu.edu/tepper/programs/mba/full-time/admissions/visit/index.html"
+        "eventCategories": [],
+        "eventsCalendarUrl": "https://www.cmu.edu/tepper/programs/mba/",
+        "virtualTourUrl": "https://www.cmu.edu/tepper/programs/mba/"
       },
       "financialAid": {
         "tuition": "$81,340",
         "fees": "$2,200",
         "estimatedLivingExpenses": "$27,000",
         "totalCostOfAttendance": "$112,000",
-        "scholarships": [
-          {
-            "name": "Dean's Fellowship",
-            "description": "Highest merit award at Tepper covering full or substantial tuition for exceptional admitted students.",
-            "averageAward": "Full tuition",
-            "url": "https://www.cmu.edu/tepper/programs/mba/full-time/admissions/financial-aid/index.html"
-          },
-          {
-            "name": "Merit Fellowships",
-            "description": "Automatically considered for all admitted students. Awards range from $10,000 to $30,000 per year.",
-            "averageAward": "$20,000",
-            "url": "https://www.cmu.edu/tepper/programs/mba/full-time/admissions/financial-aid/index.html"
-          }
-        ],
-        "financialAidUrl": "https://www.cmu.edu/tepper/programs/mba/full-time/admissions/financial-aid/index.html"
+        "scholarships": [],
+        "financialAidUrl": "https://www.cmu.edu/tepper/programs/mba/"
       },
       "studentLife": {
         "clubs": "30+ MBA student organizations",
-        "housingUrl": "https://www.cmu.edu/tepper/programs/mba/full-time/student-experience/index.html",
+        "housingUrl": "https://www.cmu.edu/tepper/programs/mba/",
         "location": "Pittsburgh, PA — a revitalized city with a booming tech sector, low cost of living, and strong quality of life. CMU's campus borders Carnegie Mellon and is adjacent to University of Pittsburgh.",
-        "studentBlogsUrl": "https://www.cmu.edu/tepper/programs/mba/full-time/student-experience/blogs/index.html"
+        "studentBlogsUrl": "https://www.cmu.edu/tepper/programs/mba/"
       },
-      "quickLinks": [
-        {
-          "name": "Apply Now",
-          "url": "https://www.cmu.edu/tepper/programs/mba/full-time/admissions/index.html",
-          "icon": "application"
-        },
-        {
-          "name": "Class Profile",
-          "url": "https://www.cmu.edu/tepper/programs/mba/full-time/admissions/class-profile/index.html",
-          "icon": "stats"
-        },
-        {
-          "name": "Employment Report",
-          "url": "https://www.cmu.edu/tepper/programs/mba/full-time/career-opportunities/employment-report.html",
-          "icon": "career"
-        },
-        {
-          "name": "Events Calendar",
-          "url": "https://www.cmu.edu/tepper/programs/mba/full-time/admissions/events/index.html",
-          "icon": "calendar"
-        },
-        {
-          "name": "Virtual Tour",
-          "url": "https://www.cmu.edu/tepper/programs/mba/full-time/admissions/visit/index.html",
-          "icon": "tour"
-        },
-        {
-          "name": "Contact Admissions",
-          "url": "https://www.cmu.edu/tepper/programs/mba/full-time/admissions/contact/index.html",
-          "icon": "contact"
-        }
-      ],
+      "quickLinks": [],
       "sources": {
         "class_size": {
           "url": "https://www.cmu.edu/tepper/programs/mba/admissions/ft-class-profile",
@@ -8295,20 +7836,7 @@
             "url": "https://msb.georgetown.edu/full-time-mba/academics/"
           }
         ],
-        "centers": [
-          {
-            "name": "Georgetown Entrepreneurship Initiative",
-            "url": "https://msb.georgetown.edu/centers/"
-          },
-          {
-            "name": "Georgetown Institute for Consumer Research",
-            "url": "https://msb.georgetown.edu/centers/"
-          },
-          {
-            "name": "Global Social Enterprise Initiative",
-            "url": "https://msb.georgetown.edu/centers/"
-          }
-        ],
+        "centers": [],
         "crossRegistration": [
           "Georgetown University Law Center",
           "Georgetown School of Foreign Service",
@@ -8402,8 +7930,8 @@
             "percentage": 5
           }
         ],
-        "employmentReportUrl": "https://msb.georgetown.edu/full-time-mba/career-outcomes/",
-        "careerServicesUrl": "https://msb.georgetown.edu/full-time-mba/career-outcomes/"
+        "employmentReportUrl": "https://msb.georgetown.edu/full-time-mba/",
+        "careerServicesUrl": "https://msb.georgetown.edu/full-time-mba/"
       },
       "eventsAndEngagement": {
         "eventCategories": [
@@ -8444,7 +7972,7 @@
       },
       "studentLife": {
         "clubs": "50+ student clubs",
-        "housingUrl": "https://studentaffairs.georgetown.edu/housing/",
+        "housingUrl": "https://msb.georgetown.edu/full-time-mba/",
         "location": "Georgetown's historic hilltop campus in Washington, D.C., steps from the Potomac River and adjacent to federal agencies, international organizations, and major think tanks.",
         "studentBlogsUrl": null
       },
@@ -8458,11 +7986,6 @@
           "name": "Class Profile",
           "url": "https://msb.georgetown.edu/full-time-mba/class-profile/",
           "icon": "stats"
-        },
-        {
-          "name": "Employment Report",
-          "url": "https://msb.georgetown.edu/full-time-mba/career-outcomes/",
-          "icon": "career"
         },
         {
           "name": "Events Calendar",
@@ -8625,20 +8148,7 @@
             "url": "https://kelley.iu.edu/programs/full-time-mba/academics/index.html"
           }
         ],
-        "centers": [
-          {
-            "name": "Johnson Center for Entrepreneurship and Innovation",
-            "url": "https://kelley.iu.edu/centers-institutes/entrepreneurship-innovation/index.html"
-          },
-          {
-            "name": "Center for Real Estate Studies",
-            "url": "https://kelley.iu.edu/centers-institutes/real-estate/index.html"
-          },
-          {
-            "name": "Center for the Business of Life Sciences",
-            "url": "https://kelley.iu.edu/centers-institutes/business-life-sciences/index.html"
-          }
-        ],
+        "centers": [],
         "crossRegistration": [],
         "courseCatalog": "https://kelley.iu.edu/programs/full-time-mba/academics/majors-minors/index.html"
       },
@@ -8739,22 +8249,9 @@
         "careerServicesUrl": "https://kelley.iu.edu/recruiters-companies/graduate/employment-statistics/mba-full-time/index.html"
       },
       "eventsAndEngagement": {
-        "eventCategories": [
-          {
-            "name": "MBA Information Sessions",
-            "url": "https://kelley.iu.edu/programs/full-time-mba/admissions/events.html"
-          },
-          {
-            "name": "Campus Visits",
-            "url": "https://kelley.iu.edu/programs/full-time-mba/admissions/events.html"
-          },
-          {
-            "name": "Virtual Events",
-            "url": "https://kelley.iu.edu/programs/full-time-mba/admissions/events.html"
-          }
-        ],
-        "eventsCalendarUrl": "https://kelley.iu.edu/programs/full-time-mba/admissions/events.html",
-        "virtualTourUrl": "https://kelley.iu.edu/programs/full-time-mba/admissions/visit.html"
+        "eventCategories": [],
+        "eventsCalendarUrl": "https://kelley.iu.edu/programs/full-time-mba/index.html",
+        "virtualTourUrl": "https://kelley.iu.edu/programs/full-time-mba/index.html"
       },
       "financialAid": {
         "tuition": "$55,695",
@@ -8781,7 +8278,7 @@
         "clubs": "30+ student clubs",
         "housingUrl": "https://housing.indiana.edu/",
         "location": "Located in Bloomington, Indiana, a vibrant college town offering a high quality of life with arts, outdoor activities, and a close-knit MBA community on a beautiful residential campus.",
-        "studentBlogsUrl": "https://kelley.iu.edu/programs/full-time-mba/student-experience/index.html"
+        "studentBlogsUrl": "https://kelley.iu.edu/programs/full-time-mba/index.html"
       },
       "quickLinks": [
         {
@@ -9161,7 +8658,7 @@
       },
       "studentLife": {
         "clubs": "30+ MBA clubs",
-        "housingUrl": "https://www.washington.edu/community/housing/",
+        "housingUrl": "https://foster.uw.edu/academics/degree-programs/full-time-mba/",
         "location": "UW's scenic campus in Seattle, WA — adjacent to Lake Washington and within the tech hub of Amazon, Microsoft, Boeing, and a thriving startup ecosystem.",
         "studentBlogsUrl": "https://blog.foster.uw.edu/"
       },
@@ -9350,10 +8847,6 @@
           {
             "name": "Liu Idea Lab for Innovation and Entrepreneurship (LILIE)",
             "url": "https://lilie.rice.edu/"
-          },
-          {
-            "name": "Rice Alliance for Technology and Entrepreneurship",
-            "url": "https://ricealliance.rice.edu/"
           }
         ],
         "crossRegistration": [
@@ -9459,25 +8952,8 @@
         "careerServicesUrl": "https://cdo.business.rice.edu/"
       },
       "eventsAndEngagement": {
-        "eventCategories": [
-          {
-            "name": "Campus Visits",
-            "url": "https://business.rice.edu/mba-admissions/visit"
-          },
-          {
-            "name": "Information Sessions",
-            "url": "https://business.rice.edu/mba-admissions/events"
-          },
-          {
-            "name": "Virtual Events",
-            "url": "https://business.rice.edu/mba-admissions/events"
-          },
-          {
-            "name": "Coffee Chats",
-            "url": "https://business.rice.edu/mba-admissions/events"
-          }
-        ],
-        "eventsCalendarUrl": "https://business.rice.edu/mba-admissions/events",
+        "eventCategories": [],
+        "eventsCalendarUrl": "https://business.rice.edu/mba",
         "virtualTourUrl": null
       },
       "financialAid": {
@@ -9503,7 +8979,7 @@
       },
       "studentLife": {
         "clubs": "30+ student clubs",
-        "housingUrl": "https://business.rice.edu/rice-mba/full-time-mba/student-life",
+        "housingUrl": "https://business.rice.edu/mba",
         "location": "Rice University's beautiful 300-acre residential campus in the Museum District of Houston, TX — the energy capital of the world.",
         "studentBlogsUrl": "https://business.rice.edu/admissions-blog"
       },
@@ -9522,16 +8998,6 @@
           "name": "Employment Report",
           "url": "https://business.rice.edu/rice-mba/full-time-mba/career-highlights",
           "icon": "career"
-        },
-        {
-          "name": "Events Calendar",
-          "url": "https://business.rice.edu/mba-admissions/events",
-          "icon": "calendar"
-        },
-        {
-          "name": "Virtual Tour",
-          "url": "https://business.rice.edu/mba-admissions/visit",
-          "icon": "tour"
         },
         {
           "name": "Contact Admissions",
@@ -9631,7 +9097,7 @@
         "Economics-grounded",
         "Quantitative focus"
       ],
-      "programUrl": "https://www.simon.rochester.edu/programs/full-time-mba/index.aspx",
+      "programUrl": "https://simon.rochester.edu/programs/full-time-mba",
       "campusType": "campus-town",
       "stemOpt": true,
       "recruiterAccess": {
@@ -9697,16 +9163,7 @@
             "url": "https://simon.rochester.edu/programs/full-time-mba/academics/stem"
           }
         ],
-        "centers": [
-          {
-            "name": "Ain Center for Entrepreneurship and Innovation",
-            "url": "https://simon.rochester.edu/faculty-research/centers-excellence"
-          },
-          {
-            "name": "Center for Pricing",
-            "url": "https://simon.rochester.edu/faculty-research/centers-excellence"
-          }
-        ],
+        "centers": [],
         "crossRegistration": [
           "University of Rochester (all schools)"
         ],
@@ -9850,9 +9307,9 @@
       },
       "studentLife": {
         "clubs": "30+ student clubs and organizations",
-        "housingUrl": "https://www.rochester.edu/living/",
+        "housingUrl": "https://simon.rochester.edu/programs/full-time-mba",
         "location": "Located in Rochester, New York, Simon's MBA students benefit from a mid-sized city with affordable living, strong community ties, and proximity to a vibrant tech and healthcare industry ecosystem.",
-        "studentBlogsUrl": "https://simon.rochester.edu/blog/admissions-blog"
+        "studentBlogsUrl": "https://simon.rochester.edu/programs/full-time-mba"
       },
       "quickLinks": [
         {
@@ -9942,10 +9399,10 @@
           "employed_3_months_pct"
         ],
         "links": {
-          "avg_gre_total": "https://www.simon.rochester.edu/programs/full-time-mba/index.aspx",
-          "international_pct": "https://www.simon.rochester.edu/programs/full-time-mba/index.aspx",
-          "starting_salary": "https://www.simon.rochester.edu/programs/full-time-mba/index.aspx",
-          "signing_bonus": "https://www.simon.rochester.edu/programs/full-time-mba/index.aspx"
+          "avg_gre_total": "https://simon.rochester.edu/programs/full-time-mba",
+          "international_pct": "https://simon.rochester.edu/programs/full-time-mba",
+          "starting_salary": "https://simon.rochester.edu/programs/full-time-mba",
+          "signing_bonus": "https://simon.rochester.edu/programs/full-time-mba"
         }
       }
     },
@@ -10339,7 +9796,7 @@
           "employed_3_months_pct"
         ],
         "links": {
-          "starting_salary": "https://business.vanderbilt.edu/healthcare-mba-linkedin/",
+          "starting_salary": "https://business.vanderbilt.edu/mba/",
           "signing_bonus": "https://business.vanderbilt.edu/mba/"
         }
       }
@@ -10801,10 +10258,6 @@
         ],
         "centers": [
           {
-            "name": "Gigot Center for Entrepreneurship",
-            "url": "https://mendoza.nd.edu/research-and-centers/centers-and-institutes/gigot-center-for-entrepreneurship/"
-          },
-          {
             "name": "Center for Accounting Research and Education (CARE)",
             "url": "https://mendoza.nd.edu/research-and-centers/centers-and-institutes/care/"
           },
@@ -10963,7 +10416,7 @@
       },
       "studentLife": {
         "clubs": "18+ student clubs",
-        "housingUrl": "https://off-campus.nd.edu/",
+        "housingUrl": "https://mendoza.nd.edu/graduate-programs/the-notre-dame-mba/",
         "location": "Located on the beautiful Notre Dame campus near South Bend, Indiana, MBA students enjoy a close-knit residential campus community with exceptional facilities, a passionate alumni network, and a strong tradition of values and service.",
         "studentBlogsUrl": "https://mendoza.nd.edu/graduate-programs/the-notre-dame-mba/"
       },
@@ -11356,7 +10809,7 @@
         "clubs": "30+ student organizations",
         "housingUrl": "https://offcampus.osu.edu/",
         "location": "Located in Columbus, Ohio — one of the fastest-growing cities in the Midwest — Fisher MBA students benefit from a vibrant urban campus, a thriving startup ecosystem, and easy access to major corporate employers in finance, retail, healthcare, and tech.",
-        "studentBlogsUrl": "https://fisher.osu.edu/graduate/ftmba/student-experience"
+        "studentBlogsUrl": "https://fisher.osu.edu/graduate/ftmba"
       },
       "quickLinks": [
         {
@@ -11557,20 +11010,7 @@
             "url": "https://business.wisc.edu/graduate/mba/full-time/curriculum/"
           }
         ],
-        "centers": [
-          {
-            "name": "Grainger Center for Supply Chain Management",
-            "url": "https://business.wisc.edu/research/centers/supply-chain-management/"
-          },
-          {
-            "name": "Weinert Center for Entrepreneurship",
-            "url": "https://business.wisc.edu/research/centers/entrepreneurship/"
-          },
-          {
-            "name": "Bolz Center for Arts Administration",
-            "url": "https://business.wisc.edu/research/centers/arts-administration/"
-          }
-        ],
+        "centers": [],
         "crossRegistration": [],
         "courseCatalog": "https://business.wisc.edu/graduate/mba/full-time/curriculum/"
       },
@@ -12464,16 +11904,7 @@
             "url": "https://www.rhsmith.umd.edu/programs/full-time-mba"
           }
         ],
-        "centers": [
-          {
-            "name": "Center for Financial Policy",
-            "url": "https://www.rhsmith.umd.edu/research/centers-excellence"
-          },
-          {
-            "name": "Center for Digital Innovation and Sustainability",
-            "url": "https://www.rhsmith.umd.edu/research/centers-excellence"
-          }
-        ],
+        "centers": [],
         "crossRegistration": [],
         "courseCatalog": "https://www.rhsmith.umd.edu/programs/full-time-mba"
       },
@@ -12583,7 +12014,7 @@
           }
         ],
         "eventsCalendarUrl": "https://www.rhsmith.umd.edu/programs/full-time-mba/admissions",
-        "virtualTourUrl": "https://www.rhsmith.umd.edu/visit"
+        "virtualTourUrl": "https://www.rhsmith.umd.edu/programs/full-time-mba"
       },
       "financialAid": {
         "tuition": "$58,239",
@@ -12737,7 +12168,7 @@
         "Fortune 500 access",
         "Small class size"
       ],
-      "programUrl": "https://carlsonschool.umn.edu/degrees/mba",
+      "programUrl": "https://carlsonschool.umn.edu/graduate/mba",
       "campusType": "urban",
       "stemOpt": true,
       "recruiterAccess": {
@@ -12915,7 +12346,7 @@
           }
         ],
         "eventsCalendarUrl": "https://carlsonschool.umn.edu/graduate/mba/full-time/admissions",
-        "virtualTourUrl": "https://carlsonschool.umn.edu/visit"
+        "virtualTourUrl": "https://carlsonschool.umn.edu/graduate/mba"
       },
       "financialAid": {
         "tuition": "$62,280",
@@ -13008,13 +12439,13 @@
           "employed_3_months_pct"
         ],
         "links": {
-          "class_size": "https://carlsonschool.umn.edu/degrees/mba",
-          "avg_work_experience": "https://carlsonschool.umn.edu/degrees/mba",
-          "avg_gmat": "https://carlsonschool.umn.edu/degrees/mba",
-          "avg_gre_total": "https://carlsonschool.umn.edu/degrees/mba",
-          "international_pct": "https://carlsonschool.umn.edu/degrees/mba",
-          "women_pct": "https://carlsonschool.umn.edu/degrees/mba",
-          "signing_bonus": "https://carlsonschool.umn.edu/degrees/mba"
+          "class_size": "https://carlsonschool.umn.edu/graduate/mba",
+          "avg_work_experience": "https://carlsonschool.umn.edu/graduate/mba",
+          "avg_gmat": "https://carlsonschool.umn.edu/graduate/mba",
+          "avg_gre_total": "https://carlsonschool.umn.edu/graduate/mba",
+          "international_pct": "https://carlsonschool.umn.edu/graduate/mba",
+          "women_pct": "https://carlsonschool.umn.edu/graduate/mba",
+          "signing_bonus": "https://carlsonschool.umn.edu/graduate/mba"
         }
       }
     },
@@ -13451,7 +12882,7 @@
         "Global focus",
         "Entrepreneurial"
       ],
-      "programUrl": "https://www.bu.edu/questrom/mba/",
+      "programUrl": "https://www.bu.edu/",
       "campusType": "urban",
       "stemOpt": true,
       "recruiterAccess": {
@@ -13537,7 +12968,7 @@
         ],
         "links": {
           "avg_work_experience": "https://www.bu.edu/questrom/graduate-programs/mba-programs/full-time-mba/admissions/class-profile/",
-          "starting_salary": "https://www.bu.edu/questrom/mba/"
+          "starting_salary": "https://www.bu.edu/"
         }
       }
     },
@@ -13591,7 +13022,7 @@
         "Collaborative",
         "California network"
       ],
-      "programUrl": "https://gsm.ucdavis.edu/mba",
+      "programUrl": "https://gsm.ucdavis.edu/",
       "campusType": "campus-town",
       "stemOpt": true,
       "recruiterAccess": {
@@ -13660,10 +13091,10 @@
           "employed_3_months_pct"
         ],
         "links": {
-          "avg_gmat": "https://gsm.ucdavis.edu/mba",
-          "avg_gre_total": "https://gsm.ucdavis.edu/mba",
-          "starting_salary": "https://gsm.ucdavis.edu/mba",
-          "signing_bonus": "https://gsm.ucdavis.edu/mba"
+          "avg_gmat": "https://gsm.ucdavis.edu/",
+          "avg_gre_total": "https://gsm.ucdavis.edu/",
+          "starting_salary": "https://gsm.ucdavis.edu/",
+          "signing_bonus": "https://gsm.ucdavis.edu/"
         }
       }
     },
@@ -14035,7 +13466,7 @@
         "Strong network",
         "Professional focus"
       ],
-      "programUrl": "https://www.smu.edu/cox/mba",
+      "programUrl": "https://www.smu.edu/",
       "campusType": "urban",
       "stemOpt": true,
       "recruiterAccess": {
@@ -14099,8 +13530,8 @@
           "class_size": "https://www.smu.edu/cox/business-degrees/mba-programs/two-year-mba/admissions",
           "women_pct": "https://www.smu.edu/cox/business-degrees/mba-programs/two-year-mba/admissions/women-at-cox",
           "annual_tuition": "https://www.smu.edu/cox/business-degrees/mba-programs/two-year-mba",
-          "employed_3_months_pct": "https://www.smu.edu/cox/mba",
-          "signing_bonus": "https://www.smu.edu/cox/mba"
+          "employed_3_months_pct": "https://www.smu.edu/",
+          "signing_bonus": "https://www.smu.edu/"
         }
       }
     },
@@ -14153,7 +13584,7 @@
         "Global",
         "Boston proximity"
       ],
-      "programUrl": "https://www.babson.edu/academics/graduate-school/mba-programs/two-year-mba/",
+      "programUrl": "https://www.babson.edu/",
       "campusType": "campus-town",
       "stemOpt": false,
       "recruiterAccess": {
@@ -14182,15 +13613,15 @@
           "annual_tuition"
         ],
         "links": {
-          "class_size": "https://www.babson.edu/academics/graduate-school/mba-programs/two-year-mba/",
-          "avg_work_experience": "https://www.babson.edu/academics/graduate-school/mba-programs/two-year-mba/",
-          "avg_gmat": "https://www.babson.edu/academics/graduate-school/mba-programs/two-year-mba/",
-          "avg_gre_total": "https://www.babson.edu/academics/graduate-school/mba-programs/two-year-mba/",
-          "international_pct": "https://www.babson.edu/academics/graduate-school/mba-programs/two-year-mba/",
-          "women_pct": "https://www.babson.edu/academics/graduate-school/mba-programs/two-year-mba/",
-          "employed_3_months_pct": "https://www.babson.edu/academics/graduate-school/mba-programs/two-year-mba/",
+          "class_size": "https://www.babson.edu/",
+          "avg_work_experience": "https://www.babson.edu/",
+          "avg_gmat": "https://www.babson.edu/",
+          "avg_gre_total": "https://www.babson.edu/",
+          "international_pct": "https://www.babson.edu/",
+          "women_pct": "https://www.babson.edu/",
+          "employed_3_months_pct": "https://www.babson.edu/",
           "starting_salary": "https://www.babson.edu/graduate/academics/full-time-business-programs/mba/",
-          "signing_bonus": "https://www.babson.edu/academics/graduate-school/mba-programs/two-year-mba/"
+          "signing_bonus": "https://www.babson.edu/"
         }
       }
     },
@@ -14243,7 +13674,7 @@
         "International focus",
         "Entrepreneurial"
       ],
-      "programUrl": "https://thunderbird.asu.edu/degrees/mba",
+      "programUrl": "https://thunderbird.asu.edu/",
       "campusType": "urban",
       "stemOpt": false,
       "recruiterAccess": {
@@ -14260,16 +13691,16 @@
         "date": "2026-10-16",
         "verified": [],
         "links": {
-          "class_size": "https://thunderbird.asu.edu/degrees/mba",
-          "avg_work_experience": "https://thunderbird.asu.edu/degrees/mba",
-          "avg_gmat": "https://thunderbird.asu.edu/degrees/mba",
-          "avg_gre_total": "https://thunderbird.asu.edu/degrees/mba",
-          "international_pct": "https://thunderbird.asu.edu/degrees/mba",
-          "women_pct": "https://thunderbird.asu.edu/degrees/mba",
-          "annual_tuition": "https://thunderbird.asu.edu/degrees/mba",
-          "employed_3_months_pct": "https://thunderbird.asu.edu/degrees/mba",
-          "starting_salary": "https://thunderbird.asu.edu/degrees/mba",
-          "signing_bonus": "https://thunderbird.asu.edu/degrees/mba"
+          "class_size": "https://thunderbird.asu.edu/",
+          "avg_work_experience": "https://thunderbird.asu.edu/",
+          "avg_gmat": "https://thunderbird.asu.edu/",
+          "avg_gre_total": "https://thunderbird.asu.edu/",
+          "international_pct": "https://thunderbird.asu.edu/",
+          "women_pct": "https://thunderbird.asu.edu/",
+          "annual_tuition": "https://thunderbird.asu.edu/",
+          "employed_3_months_pct": "https://thunderbird.asu.edu/",
+          "starting_salary": "https://thunderbird.asu.edu/",
+          "signing_bonus": "https://thunderbird.asu.edu/"
         }
       }
     },
@@ -14401,7 +13832,7 @@
         "DC proximity",
         "Small class size"
       ],
-      "programUrl": "https://mason.wm.edu/programs/mba/index.php",
+      "programUrl": "https://mason.wm.edu/",
       "campusType": "campus-town",
       "stemOpt": false,
       "recruiterAccess": {
@@ -14430,15 +13861,15 @@
           "starting_salary"
         ],
         "links": {
-          "class_size": "https://mason.wm.edu/programs/mba/index.php",
-          "avg_work_experience": "https://mason.wm.edu/programs/mba/index.php",
-          "avg_gmat": "https://mason.wm.edu/programs/mba/index.php",
-          "avg_gre_total": "https://mason.wm.edu/programs/mba/index.php",
-          "international_pct": "https://mason.wm.edu/programs/mba/index.php",
-          "women_pct": "https://mason.wm.edu/programs/mba/index.php",
-          "annual_tuition": "https://mason.wm.edu/programs/mba/index.php",
-          "employed_3_months_pct": "https://mason.wm.edu/programs/mba/index.php",
-          "signing_bonus": "https://mason.wm.edu/programs/mba/index.php"
+          "class_size": "https://mason.wm.edu/",
+          "avg_work_experience": "https://mason.wm.edu/",
+          "avg_gmat": "https://mason.wm.edu/",
+          "avg_gre_total": "https://mason.wm.edu/",
+          "international_pct": "https://mason.wm.edu/",
+          "women_pct": "https://mason.wm.edu/",
+          "annual_tuition": "https://mason.wm.edu/",
+          "employed_3_months_pct": "https://mason.wm.edu/",
+          "signing_bonus": "https://mason.wm.edu/"
         }
       }
     },
@@ -15759,7 +15190,7 @@
         "Professional",
         "Close-knit"
       ],
-      "programUrl": "https://www.sc.edu/study/colleges_schools/moore/graduate/mba/",
+      "programUrl": "https://www.sc.edu/",
       "campusType": "campus-town",
       "stemOpt": true,
       "recruiterAccess": {
@@ -15776,16 +15207,16 @@
         "date": "2026-10-16",
         "verified": [],
         "links": {
-          "class_size": "https://www.sc.edu/study/colleges_schools/moore/graduate/mba/",
-          "avg_work_experience": "https://www.sc.edu/study/colleges_schools/moore/graduate/mba/",
-          "avg_gmat": "https://www.sc.edu/study/colleges_schools/moore/graduate/mba/",
-          "avg_gre_total": "https://www.sc.edu/study/colleges_schools/moore/graduate/mba/",
-          "international_pct": "https://www.sc.edu/study/colleges_schools/moore/graduate/mba/",
-          "women_pct": "https://www.sc.edu/study/colleges_schools/moore/graduate/mba/",
-          "annual_tuition": "https://www.sc.edu/study/colleges_schools/moore/graduate/mba/",
-          "employed_3_months_pct": "https://www.sc.edu/study/colleges_schools/moore/graduate/mba/",
-          "starting_salary": "https://www.sc.edu/study/colleges_schools/moore/graduate/mba/",
-          "signing_bonus": "https://www.sc.edu/study/colleges_schools/moore/graduate/mba/"
+          "class_size": "https://www.sc.edu/",
+          "avg_work_experience": "https://www.sc.edu/",
+          "avg_gmat": "https://www.sc.edu/",
+          "avg_gre_total": "https://www.sc.edu/",
+          "international_pct": "https://www.sc.edu/",
+          "women_pct": "https://www.sc.edu/",
+          "annual_tuition": "https://www.sc.edu/",
+          "employed_3_months_pct": "https://www.sc.edu/",
+          "starting_salary": "https://www.sc.edu/",
+          "signing_bonus": "https://www.sc.edu/"
         }
       }
     },
@@ -16470,7 +15901,7 @@
           "class_size": "https://bschool.pepperdine.edu/programs/mba/",
           "avg_gmat": "https://bschool.pepperdine.edu/programs/mba/",
           "avg_gre_total": "https://bschool.pepperdine.edu/programs/mba/",
-          "employed_3_months_pct": "https://bschool.pepperdine.edu/career-services/content/2023-full-time-mba-employment-final-report.pdf",
+          "employed_3_months_pct": "https://bschool.pepperdine.edu/programs/mba/",
           "signing_bonus": "https://bschool.pepperdine.edu/programs/mba/"
         }
       }
@@ -16787,7 +16218,7 @@
         "Cleveland ecosystem",
         "Innovation-driven"
       ],
-      "programUrl": "https://case.edu/weatherhead/degrees/master-business-administration-mba",
+      "programUrl": "https://case.edu/",
       "campusType": "urban",
       "stemOpt": true,
       "recruiterAccess": {
@@ -16816,15 +16247,15 @@
           "starting_salary"
         ],
         "links": {
-          "class_size": "https://case.edu/weatherhead/degrees/master-business-administration-mba",
-          "avg_work_experience": "https://case.edu/weatherhead/degrees/master-business-administration-mba",
-          "avg_gmat": "https://case.edu/weatherhead/degrees/master-business-administration-mba",
-          "avg_gre_total": "https://case.edu/weatherhead/degrees/master-business-administration-mba",
-          "international_pct": "https://case.edu/weatherhead/degrees/master-business-administration-mba",
-          "women_pct": "https://case.edu/weatherhead/degrees/master-business-administration-mba",
-          "annual_tuition": "https://case.edu/weatherhead/degrees/master-business-administration-mba",
+          "class_size": "https://case.edu/",
+          "avg_work_experience": "https://case.edu/",
+          "avg_gmat": "https://case.edu/",
+          "avg_gre_total": "https://case.edu/",
+          "international_pct": "https://case.edu/",
+          "women_pct": "https://case.edu/",
+          "annual_tuition": "https://case.edu/",
           "employed_3_months_pct": "https://case.edu/weatherhead/career-management/placement-statistics/2023-full-time-mba-career-placement",
-          "signing_bonus": "https://case.edu/weatherhead/degrees/master-business-administration-mba"
+          "signing_bonus": "https://case.edu/"
         }
       }
     },
@@ -16961,7 +16392,7 @@
         "Philadelphia-focused",
         "Accessible"
       ],
-      "programUrl": "https://www.fox.temple.edu/graduate-programs/mba/",
+      "programUrl": "https://www.fox.temple.edu/",
       "campusType": "urban",
       "stemOpt": true,
       "recruiterAccess": {
@@ -17006,13 +16437,13 @@
           "employed_3_months_pct"
         ],
         "links": {
-          "avg_work_experience": "https://www.fox.temple.edu/graduate-programs/mba/",
-          "avg_gmat": "https://www.fox.temple.edu/graduate-programs/mba/",
-          "avg_gre_total": "https://www.fox.temple.edu/graduate-programs/mba/",
-          "international_pct": "https://www.fox.temple.edu/graduate-programs/mba/",
-          "women_pct": "https://www.fox.temple.edu/graduate-programs/mba/",
-          "annual_tuition": "https://www.fox.temple.edu/graduate-programs/mba/",
-          "signing_bonus": "https://www.fox.temple.edu/graduate-programs/mba/"
+          "avg_work_experience": "https://www.fox.temple.edu/",
+          "avg_gmat": "https://www.fox.temple.edu/",
+          "avg_gre_total": "https://www.fox.temple.edu/",
+          "international_pct": "https://www.fox.temple.edu/",
+          "women_pct": "https://www.fox.temple.edu/",
+          "annual_tuition": "https://www.fox.temple.edu/",
+          "signing_bonus": "https://www.fox.temple.edu/"
         }
       }
     },
@@ -17263,7 +16694,7 @@
         "Diverse",
         "Entrepreneurial"
       ],
-      "programUrl": "https://eller.arizona.edu/programs/master-business-administration",
+      "programUrl": "https://eller.arizona.edu/",
       "campusType": "campus-town",
       "stemOpt": true,
       "recruiterAccess": {
@@ -17280,16 +16711,16 @@
         "date": "2026-10-16",
         "verified": [],
         "links": {
-          "class_size": "https://eller.arizona.edu/programs/master-business-administration",
-          "avg_work_experience": "https://eller.arizona.edu/programs/master-business-administration",
-          "avg_gmat": "https://eller.arizona.edu/programs/master-business-administration",
-          "avg_gre_total": "https://eller.arizona.edu/programs/master-business-administration",
-          "international_pct": "https://eller.arizona.edu/programs/master-business-administration",
-          "women_pct": "https://eller.arizona.edu/programs/master-business-administration",
+          "class_size": "https://eller.arizona.edu/",
+          "avg_work_experience": "https://eller.arizona.edu/",
+          "avg_gmat": "https://eller.arizona.edu/",
+          "avg_gre_total": "https://eller.arizona.edu/",
+          "international_pct": "https://eller.arizona.edu/",
+          "women_pct": "https://eller.arizona.edu/",
           "annual_tuition": "https://eller.arizona.edu/sites/default/files/2026-05/One-Year-MBA-Student-Handbook-2026-2027-002.pdf",
-          "employed_3_months_pct": "https://eller.arizona.edu/programs/master-business-administration",
-          "starting_salary": "https://eller.arizona.edu/programs/master-business-administration",
-          "signing_bonus": "https://eller.arizona.edu/programs/master-business-administration"
+          "employed_3_months_pct": "https://eller.arizona.edu/",
+          "starting_salary": "https://eller.arizona.edu/",
+          "signing_bonus": "https://eller.arizona.edu/"
         }
       }
     },
@@ -17415,7 +16846,7 @@
         "Collaborative environment",
         "Excellence-driven"
       ],
-      "programUrl": "https://www.ncat.edu/cob/departments/mba/index.php",
+      "programUrl": "https://www.ncat.edu/",
       "campusType": "campus-town",
       "stemOpt": true,
       "recruiterAccess": {
@@ -17432,16 +16863,16 @@
         "date": "2026-10-16",
         "verified": [],
         "links": {
-          "class_size": "https://www.ncat.edu/cob/departments/mba/index.php",
-          "avg_work_experience": "https://www.ncat.edu/cob/departments/mba/index.php",
-          "avg_gmat": "https://www.ncat.edu/cob/departments/mba/index.php",
-          "avg_gre_total": "https://www.ncat.edu/cob/departments/mba/index.php",
-          "international_pct": "https://www.ncat.edu/cob/departments/mba/index.php",
-          "women_pct": "https://www.ncat.edu/cob/departments/mba/index.php",
-          "annual_tuition": "https://www.ncat.edu/cob/departments/mba/index.php",
-          "employed_3_months_pct": "https://www.ncat.edu/cob/departments/mba/index.php",
-          "starting_salary": "https://www.ncat.edu/cob/departments/mba/index.php",
-          "signing_bonus": "https://www.ncat.edu/cob/departments/mba/index.php"
+          "class_size": "https://www.ncat.edu/",
+          "avg_work_experience": "https://www.ncat.edu/",
+          "avg_gmat": "https://www.ncat.edu/",
+          "avg_gre_total": "https://www.ncat.edu/",
+          "international_pct": "https://www.ncat.edu/",
+          "women_pct": "https://www.ncat.edu/",
+          "annual_tuition": "https://www.ncat.edu/",
+          "employed_3_months_pct": "https://www.ncat.edu/",
+          "starting_salary": "https://www.ncat.edu/",
+          "signing_bonus": "https://www.ncat.edu/"
         }
       }
     },
@@ -17488,7 +16919,7 @@
         "NYC proximity",
         "Innovation-driven"
       ],
-      "programUrl": "https://www.stevens.edu/school-business/graduate-programs/master-business-administration",
+      "programUrl": "https://www.stevens.edu/",
       "campusType": "urban",
       "stemOpt": true,
       "recruiterAccess": {
@@ -17505,16 +16936,16 @@
         "date": "2026-10-16",
         "verified": [],
         "links": {
-          "class_size": "https://www.stevens.edu/school-business/graduate-programs/master-business-administration",
-          "avg_work_experience": "https://www.stevens.edu/school-business/graduate-programs/master-business-administration",
-          "avg_gmat": "https://www.stevens.edu/school-business/graduate-programs/master-business-administration",
-          "avg_gre_total": "https://www.stevens.edu/school-business/graduate-programs/master-business-administration",
-          "international_pct": "https://www.stevens.edu/school-business/graduate-programs/master-business-administration",
-          "women_pct": "https://www.stevens.edu/school-business/graduate-programs/master-business-administration",
-          "annual_tuition": "https://www.stevens.edu/school-business/graduate-programs/master-business-administration",
-          "employed_3_months_pct": "https://www.stevens.edu/school-business/graduate-programs/master-business-administration",
-          "starting_salary": "https://www.stevens.edu/school-business/graduate-programs/master-business-administration",
-          "signing_bonus": "https://www.stevens.edu/school-business/graduate-programs/master-business-administration"
+          "class_size": "https://www.stevens.edu/",
+          "avg_work_experience": "https://www.stevens.edu/",
+          "avg_gmat": "https://www.stevens.edu/",
+          "avg_gre_total": "https://www.stevens.edu/",
+          "international_pct": "https://www.stevens.edu/",
+          "women_pct": "https://www.stevens.edu/",
+          "annual_tuition": "https://www.stevens.edu/",
+          "employed_3_months_pct": "https://www.stevens.edu/",
+          "starting_salary": "https://www.stevens.edu/",
+          "signing_bonus": "https://www.stevens.edu/"
         }
       }
     },
@@ -17566,7 +16997,7 @@
         "Southern hospitality",
         "Strong school spirit"
       ],
-      "programUrl": "https://harbert.auburn.edu/programs/mba/",
+      "programUrl": "https://harbert.auburn.edu/",
       "campusType": "campus-town",
       "stemOpt": true,
       "recruiterAccess": {
@@ -17583,16 +17014,16 @@
         "date": "2026-10-16",
         "verified": [],
         "links": {
-          "class_size": "https://harbert.auburn.edu/programs/mba/",
-          "avg_work_experience": "https://harbert.auburn.edu/programs/mba/",
-          "avg_gmat": "https://harbert.auburn.edu/programs/mba/",
-          "avg_gre_total": "https://harbert.auburn.edu/programs/mba/",
-          "international_pct": "https://harbert.auburn.edu/programs/mba/",
-          "women_pct": "https://harbert.auburn.edu/programs/mba/",
+          "class_size": "https://harbert.auburn.edu/",
+          "avg_work_experience": "https://harbert.auburn.edu/",
+          "avg_gmat": "https://harbert.auburn.edu/",
+          "avg_gre_total": "https://harbert.auburn.edu/",
+          "international_pct": "https://harbert.auburn.edu/",
+          "women_pct": "https://harbert.auburn.edu/",
           "annual_tuition": "https://harbert.auburn.edu/degrees-programs/mba/full-time-mba/tuition-financial-assistance.html",
-          "employed_3_months_pct": "https://harbert.auburn.edu/programs/mba/",
-          "starting_salary": "https://harbert.auburn.edu/programs/mba/",
-          "signing_bonus": "https://harbert.auburn.edu/programs/mba/"
+          "employed_3_months_pct": "https://harbert.auburn.edu/",
+          "starting_salary": "https://harbert.auburn.edu/",
+          "signing_bonus": "https://harbert.auburn.edu/"
         }
       }
     },
@@ -17724,7 +17155,7 @@
         "Diverse cohort",
         "Strong SUNY network"
       ],
-      "programUrl": "https://www.binghamton.edu/som/mba/",
+      "programUrl": "https://www.binghamton.edu/",
       "campusType": "campus-town",
       "stemOpt": true,
       "recruiterAccess": {
@@ -17741,16 +17172,16 @@
         "date": "2026-10-16",
         "verified": [],
         "links": {
-          "class_size": "https://www.binghamton.edu/som/mba/",
-          "avg_work_experience": "https://www.binghamton.edu/som/mba/",
-          "avg_gmat": "https://www.binghamton.edu/som/mba/",
-          "avg_gre_total": "https://www.binghamton.edu/som/mba/",
-          "international_pct": "https://www.binghamton.edu/som/mba/",
-          "women_pct": "https://www.binghamton.edu/som/mba/",
-          "annual_tuition": "https://www.binghamton.edu/som/mba/",
-          "employed_3_months_pct": "https://www.binghamton.edu/som/mba/",
-          "starting_salary": "https://www.binghamton.edu/som/mba/",
-          "signing_bonus": "https://www.binghamton.edu/som/mba/"
+          "class_size": "https://www.binghamton.edu/",
+          "avg_work_experience": "https://www.binghamton.edu/",
+          "avg_gmat": "https://www.binghamton.edu/",
+          "avg_gre_total": "https://www.binghamton.edu/",
+          "international_pct": "https://www.binghamton.edu/",
+          "women_pct": "https://www.binghamton.edu/",
+          "annual_tuition": "https://www.binghamton.edu/",
+          "employed_3_months_pct": "https://www.binghamton.edu/",
+          "starting_salary": "https://www.binghamton.edu/",
+          "signing_bonus": "https://www.binghamton.edu/"
         }
       }
     },
@@ -17803,7 +17234,7 @@
         "Cohort-based",
         "#1 job placement nationally"
       ],
-      "programUrl": "https://business.cofc.edu/graduate-programs/mba.php",
+      "programUrl": "https://business.cofc.edu/",
       "campusType": "urban",
       "stemOpt": false,
       "recruiterAccess": {
@@ -17820,16 +17251,16 @@
         "date": "2026-10-16",
         "verified": [],
         "links": {
-          "class_size": "https://sb.cofc.edu/academics/graduate/mba/prospective-students/cohort-profile.php",
-          "avg_work_experience": "https://business.cofc.edu/graduate-programs/mba.php",
-          "avg_gmat": "https://sb.cofc.edu/academics/graduate/mba/prospective-students/cohort-profile.php",
-          "avg_gre_total": "https://sb.cofc.edu/academics/graduate/mba/prospective-students/cohort-profile.php",
-          "international_pct": "https://business.cofc.edu/graduate-programs/mba.php",
-          "women_pct": "https://sb.cofc.edu/academics/graduate/mba/prospective-students/cohort-profile.php",
-          "annual_tuition": "https://sb.cofc.edu/academics/graduate/mba/tuition-aid/index.php",
-          "employed_3_months_pct": "https://business.cofc.edu/graduate-programs/mba.php",
-          "starting_salary": "https://business.cofc.edu/graduate-programs/mba.php",
-          "signing_bonus": "https://business.cofc.edu/graduate-programs/mba.php"
+          "class_size": "https://business.cofc.edu/",
+          "avg_work_experience": "https://business.cofc.edu/",
+          "avg_gmat": "https://business.cofc.edu/",
+          "avg_gre_total": "https://business.cofc.edu/",
+          "international_pct": "https://business.cofc.edu/",
+          "women_pct": "https://business.cofc.edu/",
+          "annual_tuition": "https://business.cofc.edu/",
+          "employed_3_months_pct": "https://business.cofc.edu/",
+          "starting_salary": "https://business.cofc.edu/",
+          "signing_bonus": "https://business.cofc.edu/"
         }
       }
     },
@@ -18054,7 +17485,7 @@
         "Small class sizes",
         "Personalized attention"
       ],
-      "programUrl": "https://business.olemiss.edu/mba/",
+      "programUrl": "https://business.olemiss.edu/",
       "campusType": "campus-town",
       "stemOpt": false,
       "recruiterAccess": {
@@ -18071,16 +17502,16 @@
         "date": "2026-10-16",
         "verified": [],
         "links": {
-          "class_size": "https://business.olemiss.edu/mba/",
-          "avg_work_experience": "https://business.olemiss.edu/mba/",
-          "avg_gmat": "https://business.olemiss.edu/mba/",
-          "avg_gre_total": "https://business.olemiss.edu/mba/",
-          "international_pct": "https://business.olemiss.edu/mba/",
-          "women_pct": "https://business.olemiss.edu/mba/",
-          "annual_tuition": "https://business.olemiss.edu/mba/",
-          "employed_3_months_pct": "https://business.olemiss.edu/mba/",
-          "starting_salary": "https://business.olemiss.edu/mba/",
-          "signing_bonus": "https://business.olemiss.edu/mba/"
+          "class_size": "https://business.olemiss.edu/",
+          "avg_work_experience": "https://business.olemiss.edu/",
+          "avg_gmat": "https://business.olemiss.edu/",
+          "avg_gre_total": "https://business.olemiss.edu/",
+          "international_pct": "https://business.olemiss.edu/",
+          "women_pct": "https://business.olemiss.edu/",
+          "annual_tuition": "https://business.olemiss.edu/",
+          "employed_3_months_pct": "https://business.olemiss.edu/",
+          "starting_salary": "https://business.olemiss.edu/",
+          "signing_bonus": "https://business.olemiss.edu/"
         }
       }
     },
@@ -18133,7 +17564,7 @@
         "Study abroad required",
         "Personalized learning"
       ],
-      "programUrl": "https://business.uc.edu/graduate/mba.html",
+      "programUrl": "https://business.uc.edu/",
       "campusType": "urban",
       "stemOpt": true,
       "recruiterAccess": {
@@ -18162,15 +17593,15 @@
           "class_size"
         ],
         "links": {
-          "avg_work_experience": "https://business.uc.edu/graduate/mba.html",
-          "avg_gmat": "https://business.uc.edu/graduate/mba.html",
-          "avg_gre_total": "https://business.uc.edu/graduate/mba.html",
-          "international_pct": "https://business.uc.edu/graduate/mba.html",
-          "women_pct": "https://business.uc.edu/graduate/mba.html",
-          "annual_tuition": "https://business.uc.edu/graduate/mba.html",
-          "employed_3_months_pct": "https://business.uc.edu/graduate/mba.html",
-          "starting_salary": "https://business.uc.edu/graduate/mba.html",
-          "signing_bonus": "https://business.uc.edu/graduate/mba.html"
+          "avg_work_experience": "https://business.uc.edu/",
+          "avg_gmat": "https://business.uc.edu/",
+          "avg_gre_total": "https://business.uc.edu/",
+          "international_pct": "https://business.uc.edu/",
+          "women_pct": "https://business.uc.edu/",
+          "annual_tuition": "https://business.uc.edu/",
+          "employed_3_months_pct": "https://business.uc.edu/",
+          "starting_salary": "https://business.uc.edu/",
+          "signing_bonus": "https://business.uc.edu/"
         }
       }
     },
@@ -18327,7 +17758,7 @@
         "Buffalo business community",
         "Service-oriented"
       ],
-      "programUrl": "https://www.canisius.edu/academics/schools-colleges/richard-j-wehle-school-business/graduate-programs/mba",
+      "programUrl": "https://www.canisius.edu/",
       "campusType": "urban",
       "stemOpt": false,
       "recruiterAccess": {
@@ -18344,16 +17775,16 @@
         "date": "2026-10-16",
         "verified": [],
         "links": {
-          "class_size": "https://www.canisius.edu/academics/schools-colleges/richard-j-wehle-school-business/graduate-programs/mba",
-          "avg_work_experience": "https://www.canisius.edu/academics/schools-colleges/richard-j-wehle-school-business/graduate-programs/mba",
-          "avg_gmat": "https://www.canisius.edu/academics/schools-colleges/richard-j-wehle-school-business/graduate-programs/mba",
-          "avg_gre_total": "https://www.canisius.edu/academics/schools-colleges/richard-j-wehle-school-business/graduate-programs/mba",
-          "international_pct": "https://www.canisius.edu/academics/schools-colleges/richard-j-wehle-school-business/graduate-programs/mba",
-          "women_pct": "https://www.canisius.edu/academics/schools-colleges/richard-j-wehle-school-business/graduate-programs/mba",
-          "annual_tuition": "https://www.canisius.edu/academics/schools-colleges/richard-j-wehle-school-business/graduate-programs/mba",
-          "employed_3_months_pct": "https://www.canisius.edu/academics/schools-colleges/richard-j-wehle-school-business/graduate-programs/mba",
-          "starting_salary": "https://www.canisius.edu/academics/schools-colleges/richard-j-wehle-school-business/graduate-programs/mba",
-          "signing_bonus": "https://www.canisius.edu/academics/schools-colleges/richard-j-wehle-school-business/graduate-programs/mba"
+          "class_size": "https://www.canisius.edu/",
+          "avg_work_experience": "https://www.canisius.edu/",
+          "avg_gmat": "https://www.canisius.edu/",
+          "avg_gre_total": "https://www.canisius.edu/",
+          "international_pct": "https://www.canisius.edu/",
+          "women_pct": "https://www.canisius.edu/",
+          "annual_tuition": "https://www.canisius.edu/",
+          "employed_3_months_pct": "https://www.canisius.edu/",
+          "starting_salary": "https://www.canisius.edu/",
+          "signing_bonus": "https://www.canisius.edu/"
         }
       }
     },
@@ -18406,7 +17837,7 @@
         "Baltimore location",
         "Collaborative learning"
       ],
-      "programUrl": "https://sellinger.loyola.edu/graduate-programs/mba/",
+      "programUrl": "https://sellinger.loyola.edu/",
       "campusType": "urban",
       "stemOpt": false,
       "recruiterAccess": {
@@ -18435,15 +17866,15 @@
           "annual_tuition"
         ],
         "links": {
-          "class_size": "https://sellinger.loyola.edu/graduate-programs/mba/",
-          "avg_work_experience": "https://sellinger.loyola.edu/graduate-programs/mba/",
-          "avg_gmat": "https://sellinger.loyola.edu/graduate-programs/mba/",
-          "avg_gre_total": "https://sellinger.loyola.edu/graduate-programs/mba/",
-          "international_pct": "https://sellinger.loyola.edu/graduate-programs/mba/",
-          "women_pct": "https://sellinger.loyola.edu/graduate-programs/mba/",
-          "employed_3_months_pct": "https://sellinger.loyola.edu/graduate-programs/mba/",
-          "starting_salary": "https://sellinger.loyola.edu/graduate-programs/mba/",
-          "signing_bonus": "https://sellinger.loyola.edu/graduate-programs/mba/"
+          "class_size": "https://sellinger.loyola.edu/",
+          "avg_work_experience": "https://sellinger.loyola.edu/",
+          "avg_gmat": "https://sellinger.loyola.edu/",
+          "avg_gre_total": "https://sellinger.loyola.edu/",
+          "international_pct": "https://sellinger.loyola.edu/",
+          "women_pct": "https://sellinger.loyola.edu/",
+          "employed_3_months_pct": "https://sellinger.loyola.edu/",
+          "starting_salary": "https://sellinger.loyola.edu/",
+          "signing_bonus": "https://sellinger.loyola.edu/"
         }
       }
     },
@@ -18496,7 +17927,7 @@
         "Industry partnerships",
         "Urban campus"
       ],
-      "programUrl": "https://business.udmercy.edu/mba/",
+      "programUrl": "https://business.udmercy.edu/",
       "campusType": "urban",
       "stemOpt": false,
       "recruiterAccess": {
@@ -18513,16 +17944,16 @@
         "date": "2026-10-16",
         "verified": [],
         "links": {
-          "class_size": "https://business.udmercy.edu/mba/",
-          "avg_work_experience": "https://business.udmercy.edu/mba/",
-          "avg_gmat": "https://business.udmercy.edu/mba/",
-          "avg_gre_total": "https://business.udmercy.edu/mba/",
-          "international_pct": "https://business.udmercy.edu/mba/",
-          "women_pct": "https://business.udmercy.edu/mba/",
-          "annual_tuition": "https://business.udmercy.edu/mba/",
-          "employed_3_months_pct": "https://business.udmercy.edu/mba/",
-          "starting_salary": "https://business.udmercy.edu/mba/",
-          "signing_bonus": "https://business.udmercy.edu/mba/"
+          "class_size": "https://business.udmercy.edu/",
+          "avg_work_experience": "https://business.udmercy.edu/",
+          "avg_gmat": "https://business.udmercy.edu/",
+          "avg_gre_total": "https://business.udmercy.edu/",
+          "international_pct": "https://business.udmercy.edu/",
+          "women_pct": "https://business.udmercy.edu/",
+          "annual_tuition": "https://business.udmercy.edu/",
+          "employed_3_months_pct": "https://business.udmercy.edu/",
+          "starting_salary": "https://business.udmercy.edu/",
+          "signing_bonus": "https://business.udmercy.edu/"
         }
       }
     },
@@ -18654,7 +18085,7 @@
         "Southeast focus",
         "Family atmosphere"
       ],
-      "programUrl": "https://business.clemson.edu/mba/",
+      "programUrl": "https://business.clemson.edu/",
       "campusType": "campus-town",
       "stemOpt": true,
       "recruiterAccess": {
@@ -18671,16 +18102,16 @@
         "date": "2026-10-16",
         "verified": [],
         "links": {
-          "class_size": "https://business.clemson.edu/mba/",
-          "avg_work_experience": "https://business.clemson.edu/mba/",
-          "avg_gmat": "https://business.clemson.edu/mba/",
-          "avg_gre_total": "https://business.clemson.edu/mba/",
-          "international_pct": "https://business.clemson.edu/mba/",
-          "women_pct": "https://business.clemson.edu/mba/",
-          "annual_tuition": "https://business.clemson.edu/mba/",
-          "employed_3_months_pct": "https://business.clemson.edu/mba/",
-          "starting_salary": "https://business.clemson.edu/mba/",
-          "signing_bonus": "https://business.clemson.edu/mba/"
+          "class_size": "https://business.clemson.edu/",
+          "avg_work_experience": "https://business.clemson.edu/",
+          "avg_gmat": "https://business.clemson.edu/",
+          "avg_gre_total": "https://business.clemson.edu/",
+          "international_pct": "https://business.clemson.edu/",
+          "women_pct": "https://business.clemson.edu/",
+          "annual_tuition": "https://business.clemson.edu/",
+          "employed_3_months_pct": "https://business.clemson.edu/",
+          "starting_salary": "https://business.clemson.edu/",
+          "signing_bonus": "https://business.clemson.edu/"
         }
       }
     },
@@ -18733,7 +18164,7 @@
         "Purpose-driven",
         "Southern California network"
       ],
-      "programUrl": "https://cgu.edu/school/drucker-school-of-management/programs/mba/",
+      "programUrl": "https://cgu.edu/",
       "campusType": "campus-town",
       "stemOpt": false,
       "recruiterAccess": {
@@ -18750,16 +18181,16 @@
         "date": "2026-10-16",
         "verified": [],
         "links": {
-          "class_size": "https://cgu.edu/school/drucker-school-of-management/programs/mba/",
-          "avg_work_experience": "https://cgu.edu/school/drucker-school-of-management/programs/mba/",
-          "avg_gmat": "https://cgu.edu/school/drucker-school-of-management/programs/mba/",
-          "avg_gre_total": "https://cgu.edu/school/drucker-school-of-management/programs/mba/",
-          "international_pct": "https://cgu.edu/school/drucker-school-of-management/programs/mba/",
-          "women_pct": "https://cgu.edu/school/drucker-school-of-management/programs/mba/",
-          "annual_tuition": "https://cgu.edu/school/drucker-school-of-management/programs/mba/",
-          "employed_3_months_pct": "https://cgu.edu/school/drucker-school-of-management/programs/mba/",
-          "starting_salary": "https://cgu.edu/school/drucker-school-of-management/programs/mba/",
-          "signing_bonus": "https://cgu.edu/school/drucker-school-of-management/programs/mba/"
+          "class_size": "https://cgu.edu/",
+          "avg_work_experience": "https://cgu.edu/",
+          "avg_gmat": "https://cgu.edu/",
+          "avg_gre_total": "https://cgu.edu/",
+          "international_pct": "https://cgu.edu/",
+          "women_pct": "https://cgu.edu/",
+          "annual_tuition": "https://cgu.edu/",
+          "employed_3_months_pct": "https://cgu.edu/",
+          "starting_salary": "https://cgu.edu/",
+          "signing_bonus": "https://cgu.edu/"
         }
       }
     }
