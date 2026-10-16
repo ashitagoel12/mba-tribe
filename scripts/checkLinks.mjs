@@ -103,6 +103,21 @@ export function repair(data, results) {
   return changes
 }
 
+/** Replace URLs listed in data/url-overrides.json (exact match, trailing slash ignored). */
+export function applyOverrides(data, map) {
+  const norm = u => u.replace(/\/$/, '')
+  const m = new Map(Object.entries(map).map(([k, v]) => [norm(k), v]))
+  let n = 0
+  const walk = o => {
+    if (Array.isArray(o)) o.forEach((v, i) => { if (typeof v === 'string' && m.has(norm(v))) { o[i] = m.get(norm(v)); n++ } else walk(v) })
+    else if (o && typeof o === 'object') for (const k of Object.keys(o)) {
+      if (typeof o[k] === 'string' && m.has(norm(o[k]))) { o[k] = m.get(norm(o[k])); n++ } else walk(o[k])
+    }
+  }
+  walk(data.schools)
+  return n
+}
+
 /** A short random sample of verified figures for a person to spot-check. */
 export function spotCheck(data, n = 15, seed = 7) {
   const all = data.schools.flatMap(s => Object.entries(s.sources || {}).map(([f, src]) => ({ school: s.shortName || s.name, field: f, ...src })))
@@ -114,6 +129,11 @@ export function spotCheck(data, n = 15, seed = 7) {
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const dry = process.argv.includes('--dry-run')
   const data = JSON.parse(readFileSync(DATA_PATH, 'utf8'))
+  // Manual corrections first (sites that block automated checks).
+  let overrides = {}
+  try { overrides = JSON.parse(readFileSync(join(ROOT, 'data', 'url-overrides.json'), 'utf8')).replace || {} } catch { /* none */ }
+  const overridden = applyOverrides(data, overrides)
+  if (overridden) console.log(`Applied ${overridden} manual link correction(s)`)
   const all = data.schools.flatMap(s => collectUrls(s).map(f => f.url))
   const unique = [...new Set(all)]
   console.log(`Checking ${unique.length} unique URLs (${all.length} references)…`)

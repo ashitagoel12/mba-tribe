@@ -1,5 +1,5 @@
 // Offline tests: node scripts/checkLinks.test.mjs
-import { repair, collectUrls, checkUrl } from './checkLinks.mjs'
+import { repair, collectUrls, checkUrl, applyOverrides } from './checkLinks.mjs'
 let fails = 0
 const check = (n, ok, d = '') => { if (!ok) fails++; console.log(`${ok ? '✓' : '✗'} ${n}${d ? '  ' + d : ''}`) }
 const school = () => ({ id: 'x', programUrl: 'https://x.edu/mba', website: 'https://x.edu/mba',
@@ -23,4 +23,6 @@ check('404 is broken', (await checkUrl('https://a.b', fake(404))).state === 'bro
 check('403 is unknown, not broken', (await checkUrl('https://a.b', fake(403))).state === 'unknown')
 check('200 is ok', (await checkUrl('https://a.b', fake(200))).state === 'ok')
 check('bad domain is broken', (await checkUrl('https://a.b', async () => { throw Object.assign(new Error('x'), { cause: { code: 'ENOTFOUND' } }) })).state === 'broken')
+const od = { schools: [{ programUrl: 'https://old.edu/mba/', quickLinks: [{ url: 'https://old.edu/mba' }] }] }
+check('manual overrides applied everywhere', applyOverrides(od, { 'https://old.edu/mba': 'https://new.edu/mba' }) === 2 && od.schools[0].quickLinks[0].url === 'https://new.edu/mba')
 console.log(fails ? `\n${fails} failed` : '\nAll checks passed'); process.exitCode = fails ? 1 : 0

@@ -2637,7 +2637,7 @@
         "Competitive",
         "High energy"
       ],
-      "programUrl": "https://business.columbia.edu/mba",
+      "programUrl": "https://academics.business.columbia.edu/mba",
       "applicationInfo": {
         "deadlines": {
           "round1": {
@@ -2715,50 +2715,50 @@
       },
       "shortName": "Columbia CBS",
       "description": "Columbia offers August-entry (2-year) and January-entry (16-month) MBA programs in the heart of New York City. Known for finance, media, real estate, and NYC connections.",
-      "website": "https://business.columbia.edu/mba",
+      "website": "https://academics.business.columbia.edu/mba",
       "logo": "/logos/columbia-cbs.png",
       "programs": [
         {
           "name": "Full-Time MBA (August Entry)",
           "type": "full-time",
           "duration": "24 months",
-          "url": "https://business.columbia.edu/mba"
+          "url": "https://academics.business.columbia.edu/mba"
         },
         {
           "name": "Full-Time MBA (January Entry)",
           "type": "full-time",
           "duration": "16 months",
-          "url": "https://business.columbia.edu/mba"
+          "url": "https://academics.business.columbia.edu/mba"
         },
         {
           "name": "Executive MBA",
           "type": "executive",
           "duration": "20 months",
-          "url": "https://business.columbia.edu/emba"
+          "url": "https://academics.business.columbia.edu/emba"
         },
         {
           "name": "MBA-MS (Healthcare, Real Estate, Social Impact)",
           "type": "dual-degree",
           "duration": "24 months",
-          "url": "https://business.columbia.edu/admissions/dual-degrees"
+          "url": "https://academics.business.columbia.edu/admissions/dual-degrees"
         }
       ],
       "academics": {
         "curriculum": {
           "structure": "Core curriculum followed by curriculum pathways",
           "pathways": "Value Investing, Media, Tech, Entrepreneurship, and more",
-          "url": "https://business.columbia.edu/mba/academics/curriculum"
+          "url": "https://academics.business.columbia.edu/mba/academics/curriculum"
         },
         "learningMethods": [
           {
             "name": "Chazen Global Immersion",
             "description": "International study tours led by CBS faculty",
-            "url": "https://business.columbia.edu/mba/academics/global-opportunities"
+            "url": "https://academics.business.columbia.edu/mba"
           },
           {
             "name": "Master Classes",
             "description": "Hands-on consulting projects with NYC companies",
-            "url": "https://business.columbia.edu/mba/academics/curriculum"
+            "url": "https://academics.business.columbia.edu/mba/academics/curriculum"
           }
         ],
         "centers": [
@@ -2775,7 +2775,7 @@
             "url": "https://business.columbia.edu/realestate"
           }
         ],
-        "courseCatalog": "https://business.columbia.edu/mba/academics/curriculum"
+        "courseCatalog": "https://academics.business.columbia.edu/mba/academics/curriculum"
       },
       "admissions": {
         "deadlines": {
@@ -2812,7 +2812,7 @@
             }
           ]
         },
-        "applicationUrl": "https://business.columbia.edu/admissions/mba",
+        "applicationUrl": "https://academics.business.columbia.edu/admissions/mba",
         "applicationFee": "$250",
         "essays": [
           {
@@ -2831,7 +2831,7 @@
         "recommendations": {
           "required": 1,
           "preferredFrom": "Current supervisor ideally",
-          "url": "https://business.columbia.edu/admissions/mba"
+          "url": "https://academics.business.columbia.edu/admissions/mba"
         },
         "testScores": {
           "gmat": {
@@ -2880,15 +2880,15 @@
         "eventCategories": [
           {
             "name": "Information Sessions",
-            "url": "https://business.columbia.edu/admissions/mba/events"
+            "url": "https://academics.business.columbia.edu/admissions/mba/events"
           },
           {
             "name": "Virtual Events",
-            "url": "https://business.columbia.edu/admissions/mba/events"
+            "url": "https://academics.business.columbia.edu/admissions/mba/events"
           }
         ],
-        "eventsCalendarUrl": "https://business.columbia.edu/admissions/mba/events",
-        "virtualTourUrl": "https://business.columbia.edu/admissions/mba/events"
+        "eventsCalendarUrl": "https://academics.business.columbia.edu/admissions/mba/events",
+        "virtualTourUrl": "https://academics.business.columbia.edu/admissions/mba/events"
       },
       "financialAid": {
         "tuition": "$91,172",
@@ -2899,10 +2899,10 @@
           {
             "name": "Merit & Need-Based Fellowships",
             "description": "~50% of students receive financial aid",
-            "url": "https://business.columbia.edu/mba/tuition-financial-aid/mba-scholarships"
+            "url": "https://academics.business.columbia.edu/mba/tuition-financial-aid/mba-scholarships"
           }
         ],
-        "financialAidUrl": "https://business.columbia.edu/mba/tuition-financial-aid"
+        "financialAidUrl": "https://academics.business.columbia.edu/mba/tuition-financial-aid"
       },
       "studentLife": {
         "clubs": "100+ student clubs",
@@ -2911,12 +2911,12 @@
       "quickLinks": [
         {
           "name": "Apply Now",
-          "url": "https://business.columbia.edu/admissions/mba",
+          "url": "https://academics.business.columbia.edu/admissions/mba",
           "icon": "application"
         },
         {
           "name": "Class Profile",
-          "url": "https://business.columbia.edu/admissions/mba",
+          "url": "https://academics.business.columbia.edu/admissions/mba",
           "icon": "stats"
         },
         {
@@ -2926,17 +2926,17 @@
         },
         {
           "name": "Events Calendar",
-          "url": "https://business.columbia.edu/admissions/mba/events",
+          "url": "https://academics.business.columbia.edu/admissions/mba/events",
           "icon": "calendar"
         },
         {
           "name": "Virtual Tour",
-          "url": "https://business.columbia.edu/admissions/mba/events",
+          "url": "https://academics.business.columbia.edu/admissions/mba/events",
           "icon": "tour"
         },
         {
           "name": "Contact Admissions",
-          "url": "https://business.columbia.edu/admissions/mba",
+          "url": "https://academics.business.columbia.edu/admissions/mba",
           "icon": "contact"
         }
       ],
@@ -2944,12 +2944,12 @@
         "date": "2026-10-16",
         "verified": [],
         "links": {
-          "class_size": "https://business.columbia.edu/mba",
-          "avg_work_experience": "https://business.columbia.edu/mba",
-          "avg_gmat": "https://business.columbia.edu/mba",
-          "avg_gre_total": "https://business.columbia.edu/mba",
-          "international_pct": "https://business.columbia.edu/mba",
-          "women_pct": "https://business.columbia.edu/mba",
+          "class_size": "https://academics.business.columbia.edu/mba",
+          "avg_work_experience": "https://academics.business.columbia.edu/mba",
+          "avg_gmat": "https://academics.business.columbia.edu/mba",
+          "avg_gre_total": "https://academics.business.columbia.edu/mba",
+          "international_pct": "https://academics.business.columbia.edu/mba",
+          "women_pct": "https://academics.business.columbia.edu/mba",
           "annual_tuition": "https://business.columbia.edu/financial-aid/costs/full-time",
           "employed_3_months_pct": "https://business.columbia.edu/annual-report",
           "starting_salary": "https://business.columbia.edu/recruiters/employment-report",
