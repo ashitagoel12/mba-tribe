@@ -340,7 +340,11 @@ export function renderReport(results, model = MODEL) {
 // ---------------------------------------------------------------------------
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const arg = process.argv[process.argv.indexOf('--schools') + 1] || 'pilot'
-  const ids = arg === 'pilot' ? PILOT : arg === 'all' ? DATA.schools.map(s => s.id) : arg.split(',').map(s => s.trim())
+  const ids = arg === 'pilot' ? PILOT
+    : arg === 'all' ? DATA.schools.map(s => s.id)
+    // 'remaining': schools never verified by an earlier run (skips ones already refreshed)
+    : arg === 'remaining' ? DATA.schools.filter(s => !s.lastVerified).map(s => s.id)
+    : arg.split(',').map(s => s.trim())
   const apiKey = process.env.ANTHROPIC_API_KEY
   if (!apiKey) { console.error('Set ANTHROPIC_API_KEY'); process.exit(1) }
 

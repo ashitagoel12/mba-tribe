@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
     inputs:
       schools:
-        description: 'pilot, all, or comma-separated school ids'
+        description: 'remaining (not yet verified), pilot, all, or comma-separated school ids'
         required: true
         default: pilot
       model:
