@@ -9,6 +9,8 @@ export default function NavBar() {
   const links = [
     { to: '/',        label: 'Take Assessment' },
     { to: '/schools', label: 'Browse Schools'  },
+    { to: '/mentors', label: 'Talk to Students' },
+    { to: '/questions', label: 'Q&A' },
   ]
 
   return (

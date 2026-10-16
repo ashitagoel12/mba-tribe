@@ -5,6 +5,11 @@ import AssessmentForm from './components/AssessmentForm.jsx'
 import ResultsPage from './components/ResultsPage.jsx'
 import SchoolDetailPage from './components/SchoolDetailPage.jsx'
 import BrowseSchools from './components/BrowseSchools.jsx'
+import MentorsPage from './components/community/MentorsPage.jsx'
+import MentorApplyPage from './components/community/MentorApplyPage.jsx'
+import QuestionsPage from './components/community/QuestionsPage.jsx'
+import MentorDashboard from './components/community/MentorDashboard.jsx'
+import AdminPage from './components/community/AdminPage.jsx'
 import schoolsData from '../data/mba_schools_data.json'
 
 // ---------------------------------------------------------------------------
@@ -107,6 +112,11 @@ export default function App() {
       <Routes>
         <Route path="/schools"           element={<BrowseSchools />} />
         <Route path="/schools/:schoolId" element={<SchoolDetailPage />} />
+        <Route path="/mentors"           element={<MentorsPage />} />
+        <Route path="/mentors/apply"     element={<MentorApplyPage />} />
+        <Route path="/questions"         element={<QuestionsPage />} />
+        <Route path="/mentor"            element={<MentorDashboard />} />
+        <Route path="/admin"             element={<AdminPage />} />
         <Route path="*"                  element={mainContent} />
       </Routes>
     </BrowserRouter>
