@@ -493,7 +493,7 @@
           "Boston Consulting Group"
         ],
         "employmentRate3Months": 81,
-        "avgStartingSalary": 185000,
+        "avgStartingSalary": 175000,
         "medianSigningBonus": 30000
       },
       "academicStrengths": [
@@ -869,13 +869,6 @@
           "asOf": "Class of 2025 employment report",
           "note": "81% of job seekers accepted an offer within three months; 90% had received offers. Percentage is of job seekers, not all graduates.",
           "verifiedOn": "2026-10-16"
-        },
-        "starting_salary": {
-          "url": "https://www.gsb.stanford.edu/programs/mba",
-          "quote": "$185K median base salary for MBA graduates",
-          "asOf": "Most recent figure on MBA program page (likely Class of 2025 report)",
-          "note": "Median, not mean; the mean was not found on the pages I could read. The class year isn't stated on the program page. The employment page only says the Class of 2025 median base salary was in line with previous years.",
-          "verifiedOn": "2026-10-16"
         }
       },
       "lastVerified": "2026-10-16"
@@ -889,13 +882,12 @@
         "state": "PA"
       },
       "classProfile": {
-        "size": 864,
+        "size": 866,
         "avgWorkExperience": 5,
-        "avgGMAT": 725,
+        "avgGMAT": 735,
         "avgGRE": 326,
         "internationalStudentPct": 31,
-        "womenPercentage": 47,
-        "avgGMATFocus": 676
+        "womenPercentage": 47
       },
       "costs": {
         "annualTuition": 87970,
@@ -1230,25 +1222,11 @@
         }
       ],
       "sources": {
-        "class_size": {
-          "url": "https://mba.wharton.upenn.edu/mba-or-emba/",
-          "quote": "Entering Class Size · ~864 · 256 (Philadelphia, San Francisco, Global combined)",
-          "asOf": "Current full-time MBA entering class figure on MBA vs EMBA page (undated; class-profile page text still shows Class of 2026: 866)",
-          "note": "Approximate (~864) as published. The Class of 2027 numbers on the class-profile page are script-rendered and not readable; the readable text there is Class of 2026 (866).",
-          "verifiedOn": "2026-10-16"
-        },
         "avg_work_experience": {
           "url": "https://mba.wharton.upenn.edu/class-profile/",
           "quote": "5 years average work experience",
           "asOf": "Class profile page (readable text is Class of 2026 profile)",
           "note": null,
-          "verifiedOn": "2026-10-16"
-        },
-        "avg_gmat": {
-          "url": "https://mba.wharton.upenn.edu/mba-or-emba/",
-          "quote": "Avg GMAT Traditional: 735 | Avg GMAT Focus: 676",
-          "asOf": "Current full-time MBA entering class figure on MBA vs EMBA page (undated, likely Class of 2027). Class of 2026 profile lists legacy GMAT average 732.",
-          "note": "GMAT Focus average; legacy average for same class is 735.",
           "verifiedOn": "2026-10-16"
         },
         "international_pct": {
@@ -1322,7 +1300,7 @@
         "size": 635,
         "avgWorkExperience": 5,
         "avgGMAT": 729,
-        "avgGRE": 327,
+        "avgGRE": 326,
         "internationalStudentPct": 37,
         "womenPercentage": 41
       },
@@ -1670,13 +1648,6 @@
           "quote": "| 73% GMAT | 729 | 730 |",
           "asOf": "Class of 2027 profile",
           "note": "Headline GMAT average (median 730), taken to be the classic 200-800 scale. The same page also shows a separate GMAT Focus average of 670 (39% of class) and a classic-only average of 736 (14% of class), so the scale of the combined figure is not explicitly stated.",
-          "verifiedOn": "2026-10-16"
-        },
-        "avg_gre_total": {
-          "url": "https://www.chicagobooth.edu/mba/full-time/admissions/class-profile",
-          "quote": "| 26% GRE - Quantitative | 164 | | | 26% GRE - Verbal | 163 | |",
-          "asOf": "Class of 2027 profile",
-          "note": "Quant 164 + Verbal 163 = 327, from the Average/Median test score table. A separate graphic on the same page shows Quant 163 / Verbal 161 (sum 324), so the page is internally inconsistent.",
           "verifiedOn": "2026-10-16"
         },
         "international_pct": {
@@ -2145,7 +2116,7 @@
         "state": "MA"
       },
       "classProfile": {
-        "size": 450,
+        "size": 438,
         "avgWorkExperience": 5,
         "avgGMAT": 735,
         "avgGRE": 330,
@@ -2153,8 +2124,8 @@
         "womenPercentage": 47
       },
       "costs": {
-        "annualTuition": 91892,
-        "totalProgramCost": 183784
+        "annualTuition": 83380,
+        "totalProgramCost": 166760
       },
       "employment": {
         "top3Industries": [
@@ -2171,7 +2142,7 @@
         ],
         "employmentRate3Months": 94,
         "avgStartingSalary": 175000,
-        "medianSigningBonus": 40192
+        "medianSigningBonus": 30000
       },
       "academicStrengths": [
         "Technology & Innovation",
@@ -2490,27 +2461,6 @@
         }
       ],
       "sources": {
-        "class_size": {
-          "url": "https://mitsloan.mit.edu/mba/admissions/frequently-asked-questions",
-          "quote": "MIT Sloan has approximately 450 MBA students per class year (400 MBA and 50 LGO students) for a total of approximately 900 MBA students.",
-          "asOf": "MBA admissions FAQ (current, approximate)",
-          "note": "Approximate figure from the FAQ: about 400 MBA plus about 50 LGO students. The Class of 2028 profile page text did not expose an exact count.",
-          "verifiedOn": "2026-10-16"
-        },
-        "annual_tuition": {
-          "url": "https://mitsloan.mit.edu/mba/admissions/financing-your-education",
-          "quote": "Tuition for the full-time MIT Sloan MBA program is $91,892 for the 2026-2027 academic year, including the mandatory $2,200 annual MBA program fee.",
-          "asOf": "2026-27 tuition",
-          "note": "Includes the mandatory $2,200 annual program fee.",
-          "verifiedOn": "2026-10-16"
-        },
-        "signing_bonus": {
-          "url": "https://mitsloan.mit.edu/sites/default/files/2025-12/2025-2026-MBA-Employment-Report.pdf",
-          "quote": "Mean Signing Bonus $40,192",
-          "asOf": "Class of 2025 employment report (2025-2026 MBA Employment Report)",
-          "note": "Mean signing bonus. The median is $30,000.",
-          "verifiedOn": "2026-10-16"
-        },
         "deadline_round1": {
           "url": "https://mitsloan.mit.edu/mba/admissions/how-to-apply",
           "quote": "Round 1 | September 29, 2026 | Mid-December 2026",
@@ -8004,8 +7954,8 @@
           "Deloitte"
         ],
         "employmentRate3Months": 89,
-        "avgStartingSalary": 144000,
-        "medianSigningBonus": 39000
+        "avgStartingSalary": 151322,
+        "medianSigningBonus": 44537
       },
       "academicStrengths": [
         "Technology Management",
@@ -8274,20 +8224,6 @@
           "quote": "Average years of work experience: 6",
           "asOf": "Class of 2027 profile",
           "note": null,
-          "verifiedOn": "2026-10-16"
-        },
-        "starting_salary": {
-          "url": "https://foster.uw.edu/academics/degree-programs/full-time-mba/career-management/",
-          "quote": "$144k+ Average starting salary",
-          "asOf": "Full-time MBA Career Outcomes page (links to Class of 2025 report)",
-          "note": "Published as rounded '$144k+' average (mean) base salary; the Class of 2025 PDF report itself could not be read. The main program page labels the same $144k+ figure 'Class of 2024', so the class year is ambiguous.",
-          "verifiedOn": "2026-10-16"
-        },
-        "signing_bonus": {
-          "url": "https://foster.uw.edu/academics/degree-programs/full-time-mba/career-management/",
-          "quote": "$39k+ Average signing bonus",
-          "asOf": "Full-time MBA Career Outcomes page (links to Class of 2025 report)",
-          "note": "Published as rounded '$39k+' average; PDF not readable.",
           "verifiedOn": "2026-10-16"
         }
       },

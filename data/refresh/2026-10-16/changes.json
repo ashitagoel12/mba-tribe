@@ -238,9 +238,9 @@
           "as_of": "Most recent figure on MBA program page (likely Class of 2025 report)",
           "note": "Median, not mean; the mean was not found on the pages I could read. The class year isn't stated on the program page. The employment page only says the Class of 2025 median base salary was in line with previous years.",
           "current": 175000,
-          "verified": true,
-          "why": null,
-          "changed": true
+          "verified": false,
+          "why": "source is unclear about the year or definition (median, not mean; the mean was not found on the pages i could read. the class ye…)",
+          "changed": false
         },
         {
           "field": "deadline_round1",
@@ -300,9 +300,9 @@
           "as_of": "Current full-time MBA entering class figure on MBA vs EMBA page (undated; class-profile page text still shows Class of 2026: 866)",
           "note": "Approximate (~864) as published. The Class of 2027 numbers on the class-profile page are script-rendered and not readable; the readable text there is Class of 2026 (866).",
           "current": 866,
-          "verified": true,
-          "why": null,
-          "changed": true
+          "verified": false,
+          "why": "approximate figure, not an exact published value",
+          "changed": false
         },
         {
           "field": "avg_work_experience",
@@ -324,9 +324,9 @@
           "as_of": "Current full-time MBA entering class figure on MBA vs EMBA page (undated, likely Class of 2027). Class of 2026 profile lists legacy GMAT average 732.",
           "note": "GMAT Focus average; legacy average for same class is 735.",
           "current": 735,
-          "verified": true,
-          "why": null,
-          "changed": true
+          "verified": false,
+          "why": "source is unclear about the year or definition (gmat focus average; legacy average for same class is 735. current full-time mba …)",
+          "changed": false
         },
         {
           "field": "avg_gre_total",
@@ -500,9 +500,9 @@
           "as_of": "Class of 2027 profile",
           "note": "Quant 164 + Verbal 163 = 327, from the Average/Median test score table. A separate graphic on the same page shows Quant 163 / Verbal 161 (sum 324), so the page is internally inconsistent.",
           "current": 326,
-          "verified": true,
-          "why": null,
-          "changed": true
+          "verified": false,
+          "why": "source is unclear (Quant 164 + Verbal 163 = 327, from the Average/Median test score table. A separa…)",
+          "changed": false
         },
         {
           "field": "international_pct",
@@ -729,9 +729,9 @@
           "as_of": "MBA admissions FAQ (current, approximate)",
           "note": "Approximate figure from the FAQ: about 400 MBA plus about 50 LGO students. The Class of 2028 profile page text did not expose an exact count.",
           "current": 438,
-          "verified": true,
-          "why": null,
-          "changed": true
+          "verified": false,
+          "why": "approximate figure, not an exact published value",
+          "changed": false
         },
         {
           "field": "avg_work_experience",
@@ -753,9 +753,9 @@
           "as_of": "2026-27 tuition",
           "note": "Includes the mandatory $2,200 annual program fee.",
           "current": 83380,
-          "verified": true,
-          "why": null,
-          "changed": true
+          "verified": false,
+          "why": "figure includes fees; this field is tuition only",
+          "changed": false
         },
         {
           "field": "employed_3_months_pct",
@@ -789,9 +789,9 @@
           "as_of": "Class of 2025 employment report (2025-2026 MBA Employment Report)",
           "note": "Mean signing bonus. The median is $30,000.",
           "current": 30000,
-          "verified": true,
-          "why": null,
-          "changed": true
+          "verified": false,
+          "why": "mean bonus reported; this field is the median",
+          "changed": false
         },
         {
           "field": "deadline_round1",
@@ -1034,9 +1034,9 @@
           "as_of": "Full-time MBA Career Outcomes page (links to Class of 2025 report)",
           "note": "Published as rounded '$144k+' average (mean) base salary; the Class of 2025 PDF report itself could not be read. The main program page labels the same $144k+ figure 'Class of 2024', so the class year is ambiguous.",
           "current": 151322,
-          "verified": true,
-          "why": null,
-          "changed": true
+          "verified": false,
+          "why": "approximate figure, not an exact published value",
+          "changed": false
         },
         {
           "field": "signing_bonus",
@@ -1046,9 +1046,9 @@
           "as_of": "Full-time MBA Career Outcomes page (links to Class of 2025 report)",
           "note": "Published as rounded '$39k+' average; PDF not readable.",
           "current": 44537,
-          "verified": true,
-          "why": null,
-          "changed": true
+          "verified": false,
+          "why": "approximate figure, not an exact published value",
+          "changed": false
         },
         {
           "field": "deadline_round1",
@@ -1250,5 +1250,6 @@
         "searches": 6
       }
     }
-  ]
+  ],
+  "recheck": "2026-10-16: re-checked with exactness, dating and field-definition rules"
 }

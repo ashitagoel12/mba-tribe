@@ -1,6 +1,6 @@
 // Offline tests for the data refresh: node scripts/refresh/refresh.test.mjs
 import { readFileSync } from 'node:fs'
-import { valueInQuote, quoteOnPage, inRange, verifyValue, schoolDomains, refreshSchools, renderReport } from './refreshData.mjs'
+import { valueInQuote, quoteOnPage, inRange, verifyValue, schoolDomains, refreshSchools, renderReport, policyCheck } from './refreshData.mjs'
 import { applyChanges } from './applyRefresh.mjs'
 
 let fails = 0
@@ -21,6 +21,15 @@ const page = '<h2>Class of 2028</h2> Average GMAT Focus 695 . International stud
 check('exact quote found', quoteOnPage('International students 37% of the class', page))
 check('elided quote found', quoteOnPage('Class of 2028 … International students 37%', page))
 check('invented quote rejected', !quoteOnPage('International students 41% of the class', page))
+
+// Policy rules from the 2026-10-16 pilot
+check('approximate figure rejected', !!policyCheck({ field: 'class_size', value: 450, quote: 'about 400 MBA and about 50 LGO students', as_of: '2026 FAQ' }))
+check('"$144k+" rejected', !!policyCheck({ field: 'starting_salary', value: 144000, quote: 'average base salary $144k+', as_of: 'Class of 2025' }))
+check('undated figure rejected', !!policyCheck({ field: 'starting_salary', value: 185000, quote: 'median base salary $185,000', as_of: 'Most recent figure on program page' }))
+check('mean signing bonus rejected', !!policyCheck({ field: 'signing_bonus', value: 40192, quote: 'Mean signing bonus $40,192', as_of: 'Class of 2025', note: 'Mean signing bonus.' }))
+check('tuition with fees rejected', !!policyCheck({ field: 'annual_tuition', value: 91892, quote: 'Tuition $91,892', as_of: '2026-27', note: 'Includes the mandatory $2,200 annual program fee.' }))
+check('caveat in as_of rejected', !!policyCheck({ field: 'avg_gmat', value: 676, quote: 'GMAT 676', as_of: 'Current class (undated, likely Class of 2027)', gmat_scale: 'focus' }))
+check('clean dated value passes', policyCheck({ field: 'international_pct', value: 37, quote: '37% international', as_of: 'Class of 2027 profile' }) === null)
 
 // Ranges and domains
 check('GRE section score rejected as total', !inRange('avg_gre_total', 163))

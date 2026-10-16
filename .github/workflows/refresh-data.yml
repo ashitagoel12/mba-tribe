@@ -11,6 +11,10 @@ on:
         description: 'pilot, all, or comma-separated school ids'
         required: true
         default: pilot
+      model:
+        description: 'claude-haiku-5-5 (cheaper) or claude-sonnet-5-5 (more thorough)'
+        required: true
+        default: claude-haiku-5-5
   schedule:
     - cron: '23 14 1 1,4,7,10 *'   # quarterly, all schools
 
@@ -31,6 +35,7 @@ jobs:
       - name: Find and verify
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          REFRESH_MODEL: ${{ github.event.inputs.model || 'claude-haiku-5-5' }}
         run: node scripts/refresh/refreshData.mjs --schools "${{ github.event.inputs.schools || 'all' }}"
       - name: Apply verified values and re-run checks
         run: |
