@@ -7,8 +7,8 @@
 //   broken   404/410, or the domain doesn't resolve -> repaired
 //   unknown  401/403/429/5xx/timeout -> the site blocks automated checks; left as is, listed in the report
 //
-// Repair: a broken link inside a list (quick links, centers, events…) is removed.
-// Any other broken link is replaced with the school's program page (or its site's home page).
+// Repair: a broken quick link or event link is removed. Any other broken link is
+// replaced with the school's program page (or its site's home page), keeping the entry.
 
 import { readFileSync, writeFileSync } from 'node:fs'
 import { join, dirname } from 'node:path'
@@ -84,7 +84,10 @@ export function repair(data, results) {
       const listPath = Array.isArray(parent) ? parentPath : parentPath.slice(0, -1)
       const list = get(listPath)
       const idx = Array.isArray(parent) ? f.path.at(-1) : parentPath.at(-1)
-      if (Array.isArray(list) && typeof idx === 'number' && listPath.length) {
+      // Pure link lists (quick links, event links) lose the item; lists that carry other
+      // information (programs, centers, scholarships…) keep it and get the fallback link.
+      const linkOnly = ['quickLinks', 'eventCategories'].includes(String(listPath.at(-1)))
+      if (linkOnly && Array.isArray(list) && typeof idx === 'number') {
         if (!removals.has(list)) removals.set(list, new Set())
         removals.get(list).add(idx)
         changes.push({ school: school.id, where, url: f.url, action: 'removed from list' })
