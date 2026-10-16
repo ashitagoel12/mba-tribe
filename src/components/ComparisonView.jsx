@@ -68,7 +68,7 @@ const ROWS = [
   },
   {
     label: 'Avg GMAT',
-    render: s => s.classProfile.avgGMAT,
+    render: s => s.classProfile.avgGMAT ?? '—',
   },
   {
     label: 'Avg GRE',

@@ -127,3 +127,29 @@ npm run preview # local preview of production build
 - `mba_schools_data.json` is Phase 1 of a planned 50-school dataset
 - All data reflects Class of 2025–2027 profiles and Class of 2024–2025 employment reports
 - Tuition shown as annual out-of-state/private rate for 2025–2026 academic year
+
+---
+
+## AI layer (Claude)
+
+The scoring is rules-based and explainable. Claude adds what the rules can't do:
+
+- **AI read on your top matches** (`/api/explain`): explains each top match using the applicant's industry, function and free-text notes, which the rules never read.
+- **Ask about this school** (`/api/ask`): answers questions about one school from its record only, and says when the data doesn't cover the question.
+
+Guardrails:
+- Claude only sees the school records it is asked about and is told not to use outside knowledge.
+- Every number in a response is checked against that school's record before it is shown. A read that fails is hidden, and the page says how many were hidden.
+- Free text from users is treated as data, not instructions. Inputs are capped, output is structured (tool use), and each IP is limited to 20 calls an hour per server instance.
+- If the AI is down or not configured, the rest of the app works as before.
+
+Setup on Vercel: add `ANTHROPIC_API_KEY` as an environment variable (optional `ANTHROPIC_MODEL`, default `claude-haiku-5-5`). Set a monthly spend limit in the Anthropic Console.
+
+## Tests
+
+```bash
+node scripts/personaCheck.mjs     # scoring: runs 4 test applicants and checks for known failure modes
+python3 scripts/auditData.py      # data: flags impossible, placeholder or stale values -> data/AUDIT-REPORT.md
+node scripts/evalAi.mjs           # AI layer: grounding filter + endpoint tests with a fake model
+ANTHROPIC_API_KEY=... node scripts/evalAi.mjs --live   # real Claude runs, incl. a prompt-injection case
+```

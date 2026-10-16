@@ -7,6 +7,7 @@ import {
   Clock, Award, Layers
 } from 'lucide-react'
 import NavBar from './NavBar.jsx'
+import AskSchool from './AskSchool.jsx'
 import schoolsData from '../../data/mba_schools_data.json'
 
 // ---------------------------------------------------------------------------
@@ -433,7 +434,7 @@ export default function SchoolDetailPage() {
         {/* ── Disclaimer ──────────────────────────────────────────────────── */}
         <div className="border-l-4 border-indigo-300 bg-indigo-50 rounded-r-lg px-4 py-3">
           <p className="text-sm text-indigo-700 leading-relaxed">
-            Data verified against official sources. Always confirm details directly with each school before applying.
+            Figures come from public school data, last audited in October 2026. Confirm details directly with each school before applying.
           </p>
         </div>
 
@@ -447,7 +448,7 @@ export default function SchoolDetailPage() {
               <ul className="space-y-1.5 text-sm text-slate-700">
                 <li><span className="text-slate-400">Class size:</span> {school.classProfile.size}</li>
                 <li><span className="text-slate-400">Avg work exp:</span> {school.classProfile.avgWorkExperience} yrs</li>
-                <li><span className="text-slate-400">Avg GMAT:</span> {school.classProfile.avgGMAT}</li>
+                <li><span className="text-slate-400">Avg GMAT:</span> {school.classProfile.avgGMAT ?? 'Not published'}</li>
                 <li><span className="text-slate-400">International:</span> {school.classProfile.internationalStudentPct}%</li>
                 {school.classProfile.womenPercentage != null && (
                   <li><span className="text-slate-400">Women:</span> {school.classProfile.womenPercentage}%</li>
@@ -542,6 +543,9 @@ export default function SchoolDetailPage() {
           )}
         </SectionCard>
 
+        {/* ── Ask Claude about this school ───────────────────────────────── */}
+        <AskSchool school={school} />
+
         {/* ── Programs ────────────────────────────────────────────────────── */}
         {school.programs?.length > 0 && <ProgramsSection school={school} />}
 
@@ -563,6 +567,14 @@ export default function SchoolDetailPage() {
                 <DeadlineCard round={school.applicationInfo.deadlines.round2} label="Round 2" />
                 <DeadlineCard round={school.applicationInfo.deadlines.round3} label="Round 3" />
               </div>
+              {Object.values(school.applicationInfo.deadlines)
+                .map(r => r?.deadline)
+                .filter(d => /^\d{4}-\d{2}-\d{2}$/.test(d || ''))
+                .every(d => new Date(d) < new Date()) && (
+                <p className="text-sm text-amber-700 bg-amber-50 border border-amber-200 rounded-lg px-3 py-2 mt-3">
+                  These dates are from a past application cycle. Check the school's admissions page for current deadlines.
+                </p>
+              )}
               {school.applicationInfo.applicationFee && (
                 <p className="text-sm text-slate-500 mt-3">
                   Application fee: <span className="font-medium text-slate-700">${school.applicationInfo.applicationFee}</span>

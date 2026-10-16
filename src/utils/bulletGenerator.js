@@ -428,12 +428,13 @@ export function generateWatchOut(school, formData, allScoredResults) {
       const avg = school.classProfile?.avgGRE
       if (avg != null) {
         const gap = avg - score
-        if (gap > 40) {
+        // GRE bands: 8+ pts below ≈ 40 GMAT pts, 4+ pts ≈ 20 GMAT pts
+        if (gap >= 8) {
           warnings.push({
             priority: 10,
             text: `Your GRE (${score}) is ${gap} pts below the class avg of ${avg} — consider this a reach; invest heavily in essays and recommendations`,
           })
-        } else if (gap > 20) {
+        } else if (gap >= 4) {
           warnings.push({
             priority: 8,
             text: `Your GRE (${score}) is ${gap} pts below the class avg of ${avg} — a compelling narrative and strong recommenders will matter more here`,

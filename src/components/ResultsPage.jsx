@@ -6,6 +6,8 @@ import { generateUserInsights } from '../utils/userInsights.js'
 import SchoolCard from './SchoolCard.jsx'
 import SchoolCardCompact from './SchoolCardCompact.jsx'
 import CompareModal from './CompareModal.jsx'
+import AiReadout from './AiReadout.jsx'
+import { rememberProfile } from '../utils/aiClient.js'
 import {
   POST_MBA_GOALS,
   CAMPUS_ENV_OPTIONS,
@@ -137,6 +139,7 @@ function hiddenGemNote(school, formData) {
 export default function ResultsPage({ schools, formData, onRetake }) {
   const results  = useMemo(() => runMatching(schools, formData), [schools, formData])
   const insights = useMemo(() => generateUserInsights(formData), [formData])
+  useMemo(() => rememberProfile(formData), [formData])
 
   const { strongFit, worthExploring, stretch, hiddenGems } = results
   const questions = useMemo(() => buildVisitQuestions(formData), [formData])
@@ -242,18 +245,23 @@ export default function ResultsPage({ schools, formData, onRetake }) {
           </div>
         </div>
 
+        {/* ── AI read (Claude) ────────────────────────────────────────── */}
+        <AiReadout formData={formData} topSchools={results.strongFit.slice(0, 3)} />
+
         {/* ═══════════════════════════════════════════════════════════════
             TIER 1 — Strong Fit
         ════════════════════════════════════════════════════════════════ */}
         <section>
           <SectionHeading
             icon={<Sparkles size={18} className="text-emerald-500" />}
-            title="Strong Fit"
-            subtitle={`${strongFit.length} program${strongFit.length !== 1 ? 's' : ''} that align well with your goals, priorities, and constraints`}
+            title={results.strongLabel === 'best' ? 'Your Best Matches' : 'Strong Fit'}
+            subtitle={results.strongLabel === 'best'
+              ? `No program cleared our strong-fit bar (65%) for this mix of priorities. These ${strongFit.length} come closest. Read the trade-offs on each card.`
+              : `${strongFit.length} program${strongFit.length !== 1 ? 's' : ''} that align well with your goals, priorities, and constraints`}
           />
           <div className="border-l-4 border-indigo-300 bg-indigo-50 rounded-r-lg px-4 py-3 mb-5">
             <p className="text-sm text-indigo-700 leading-relaxed">
-              Data verified against official sources. Always confirm details directly with each school before applying.
+              Figures come from public school data, last audited in October 2026. Confirm details directly with each school before applying.
             </p>
           </div>
           <div className="space-y-5">
@@ -283,7 +291,7 @@ export default function ResultsPage({ schools, formData, onRetake }) {
               />
               <div className="border-l-4 border-indigo-300 bg-indigo-50 rounded-r-lg px-4 py-3 mb-5">
             <p className="text-sm text-indigo-700 leading-relaxed">
-              Data verified against official sources. Always confirm details directly with each school before applying.
+              Figures come from public school data, last audited in October 2026. Confirm details directly with each school before applying.
             </p>
           </div>
               <div className="grid sm:grid-cols-2 gap-4">
@@ -315,7 +323,7 @@ export default function ResultsPage({ schools, formData, onRetake }) {
               />
               <div className="border-l-4 border-indigo-300 bg-indigo-50 rounded-r-lg px-4 py-3 mb-5">
             <p className="text-sm text-indigo-700 leading-relaxed">
-              Data verified against official sources. Always confirm details directly with each school before applying.
+              Figures come from public school data, last audited in October 2026. Confirm details directly with each school before applying.
             </p>
           </div>
               <div className="grid sm:grid-cols-2 gap-4">

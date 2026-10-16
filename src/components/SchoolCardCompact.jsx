@@ -139,7 +139,7 @@ export default function SchoolCardCompact({ scored, formData, allScoredResults, 
       {/* ── Mini stats ─────────────────────────────────────────────────── */}
       <div className="grid grid-cols-3 gap-2">
         {[
-          { label: 'Avg GMAT', value: school.classProfile.avgGMAT },
+          { label: 'Avg GMAT', value: school.classProfile.avgGMAT ?? '—' },
           { label: 'Tuition / yr', value: fmt(school.costs.annualTuition) },
           { label: 'Placed', value: `${school.employment.employmentRate3Months}%` },
         ].map(({ label, value }) => (
