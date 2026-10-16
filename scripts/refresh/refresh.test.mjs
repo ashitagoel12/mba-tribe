@@ -67,5 +67,12 @@ check('Focus GMAT stored and converted to Classic for scoring', h.classProfile.a
 check('rejected value not applied', h.employment.avgStartingSalary !== 999999)
 check('source recorded with date', h.sources.international_pct.verifiedOn === '2026-10-16' && h.lastVerified === '2026-10-16')
 
+check('refresh record lists verified fields', h.refresh.verified.includes('international_pct') && h.refresh.verified.includes('avg_gmat'))
+check('unverified field links to the page Claude tried', h.refresh.links.starting_salary === 'https://www.hbs.edu/x')
+check('unverified field with no page found links to the program page', h.refresh.links.women_pct === h.programUrl)
+const { checkLink } = await import('../../src/utils/fieldStatus.js')
+check('site shows link only for unverified fields', checkLink(h, 'starting_salary') && !checkLink(h, 'international_pct'))
+check('schools not yet refreshed show figures as before', checkLink(data.schools.find(s => s.id === 'kansas'), 'starting_salary') === null)
+
 console.log(fails ? `\n${fails} check(s) failed` : '\nAll checks passed')
 process.exitCode = fails ? 1 : 0

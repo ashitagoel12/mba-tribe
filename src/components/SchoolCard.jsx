@@ -1,3 +1,4 @@
+import Fact from './Fact.jsx'
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ExternalLink, AlertCircle, CheckCircle2 } from 'lucide-react'
@@ -159,10 +160,10 @@ export default function SchoolCard({ scored, formData, allScoredResults, isSelec
 
       {/* ── Quick stats ────────────────────────────────────────────────── */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 mb-5">
-        <StatTile label="Avg GMAT" value={school.classProfile.avgGMAT ?? '—'} />
-        <StatTile label="Placed (3 mo)" value={`${school.employment.employmentRate3Months}%`} />
-        <StatTile label="Tuition / yr" value={fmt(school.costs.annualTuition)} />
-        <StatTile label="Avg Salary" value={fmt(school.employment.avgStartingSalary)} />
+        <StatTile label="Avg GMAT" value={<Fact school={school} field="avg_gmat">{school.classProfile.avgGMAT ?? '—'}</Fact>} />
+        <StatTile label="Placed (3 mo)" value={<Fact school={school} field="employed_3_months_pct">{`${school.employment.employmentRate3Months}%`}</Fact>} />
+        <StatTile label="Tuition / yr" value={<Fact school={school} field="annual_tuition">{fmt(school.costs.annualTuition)}</Fact>} />
+        <StatTile label="Base Salary" value={<Fact school={school} field="starting_salary">{fmt(school.employment.avgStartingSalary)}</Fact>} />
       </div>
 
       {/* ── Watch out ──────────────────────────────────────────────────── */}

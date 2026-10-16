@@ -5,7 +5,7 @@
 import { readFileSync, writeFileSync } from 'node:fs'
 import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { FIELDS } from './refreshData.mjs'
+import { FIELDS, schoolDomains } from './refreshData.mjs'
 import { focusToClassic } from '../../src/utils/matchingAlgorithm.js'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', '..')
@@ -50,6 +50,21 @@ export function applyChanges(data, changes) {
       school.costs.totalProgramCost = Number(tuitionItem.value) * years
     }
     if (r.items.some(i => i.verified)) school.lastVerified = changes.date
+
+    // Record what was and wasn't verified, so the site can show a link to the
+    // school's own page instead of a figure we couldn't confirm.
+    const onSchoolSite = url => {
+      try { const h = new URL(url).hostname.replace(/^www\./, ''); return schoolDomains(school).some(d => h === d || h.endsWith('.' + d)) } catch { return false }
+    }
+    // Verified in this run or in an earlier one (each verified value has a source entry).
+    const verified = Object.keys(school.sources || {}).filter(f => FIELDS[f])
+    const links = {}
+    for (const field of Object.keys(FIELDS)) {
+      if (field.startsWith('deadline_') || verified.includes(field)) continue
+      const tried = r.items.find(i => i.field === field && onSchoolSite(i.source_url))
+      links[field] = tried?.source_url || school.programUrl
+    }
+    school.refresh = { date: changes.date, verified, links }
   }
   data.metadata.lastRefresh = changes.date
   return { applied, confirmed }
