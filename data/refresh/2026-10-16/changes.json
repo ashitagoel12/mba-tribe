@@ -1,0 +1,1255 @@
+{
+  "date": "2026-10-16",
+  "model": "claude-sonnet-5-5",
+  "results": [
+    {
+      "id": "harvard-hbs",
+      "name": "Harvard Business School",
+      "items": [
+        {
+          "field": "class_size",
+          "value": 943,
+          "source_url": "https://www.hbs.edu/mba/admissions/class-profile",
+          "quote": "943 Students in the MBA Class of 2027",
+          "as_of": "Class of 2027 profile (newest on the class profile page)",
+          "current": 935,
+          "verified": true,
+          "why": null,
+          "changed": true
+        },
+        {
+          "field": "avg_work_experience",
+          "value": 4.9,
+          "source_url": "https://www.hbs.edu/mba/admissions/class-profile",
+          "quote": "4.9 Average years of work experience",
+          "as_of": "Class of 2027 profile",
+          "current": 4.7,
+          "verified": true,
+          "why": null,
+          "changed": true
+        },
+        {
+          "field": "avg_gmat",
+          "value": 685,
+          "gmat_scale": "focus",
+          "source_url": "https://www.hbs.edu/mba/admissions/class-profile",
+          "quote": "Total: 685",
+          "as_of": "Class of 2027 profile",
+          "note": "Median total, not mean; HBS publishes only medians. This is the GMAT Focus Edition row (the separate 'GMAT 10th Edition' row has a median of 730).",
+          "current": 730,
+          "verified": true,
+          "why": null,
+          "changed": true
+        },
+        {
+          "field": "avg_gre_total",
+          "value": 328,
+          "source_url": "https://www.hbs.edu/mba/admissions/class-profile",
+          "quote": "Median Scores Verbal: 164 Quantitative: 164",
+          "as_of": "Class of 2027 profile",
+          "note": "Medians, not averages (HBS does not publish GRE means). 164 Verbal + 164 Quant = 328.",
+          "current": 326,
+          "verified": true,
+          "why": null,
+          "changed": true
+        },
+        {
+          "field": "international_pct",
+          "value": 37,
+          "source_url": "https://www.hbs.edu/mba/admissions/class-profile",
+          "quote": "37% International",
+          "as_of": "Class of 2027 profile",
+          "current": 37,
+          "verified": false,
+          "why": "quote not found on the source page",
+          "changed": false
+        },
+        {
+          "field": "women_pct",
+          "value": 44,
+          "source_url": "https://www.hbs.edu/mba/admissions/class-profile",
+          "quote": "44% Women",
+          "as_of": "Class of 2027 profile",
+          "current": 44,
+          "verified": false,
+          "why": "quote not found on the source page",
+          "changed": false
+        },
+        {
+          "field": "annual_tuition",
+          "value": 84760,
+          "source_url": "https://www.hbs.edu/mba/financial-aid/tuition-assistance/cost-of-attendance",
+          "quote": "Tuition: $84,760",
+          "as_of": "2026-27 MBA Program cost of attendance",
+          "note": "Full-time MBA tuition only, 9-month academic year; excludes fees, insurance and living costs.",
+          "current": 73440,
+          "verified": true,
+          "why": null,
+          "changed": true
+        },
+        {
+          "field": "employed_3_months_pct",
+          "value": 90,
+          "source_url": "https://www.hbs.edu/mba/blog/class-of-2025-employment-report",
+          "quote": "Ninety percent of students seeking employment had received an offer three months after graduation",
+          "as_of": "Class of 2025 employment report",
+          "note": "90% of graduates seeking employment had received an offer at 3 months. The employment data page shows 65% sought employment, so this is not a share of the whole class.",
+          "current": 95,
+          "verified": false,
+          "why": "the quote does not contain the value",
+          "changed": false
+        },
+        {
+          "field": "starting_salary",
+          "value": 184500,
+          "source_url": "https://www.hbs.edu/recruiting/employment-data/Pages/default.aspx",
+          "quote": "Median Base Salary $184,500",
+          "as_of": "Class of 2025 employment data",
+          "note": "Median, not mean; HBS publishes only the median. Salary is self-reported by students.",
+          "current": 175000,
+          "verified": false,
+          "why": "quote not found on the source page",
+          "changed": false
+        },
+        {
+          "field": "signing_bonus",
+          "value": 30000,
+          "source_url": "https://www.hbs.edu/recruiting/employment-data/Pages/default.aspx",
+          "quote": "Median Signing Bonus $30,000",
+          "as_of": "Class of 2025 employment data",
+          "note": "Median; 58% of graduates received a signing bonus.",
+          "current": 30000,
+          "verified": false,
+          "why": "quote not found on the source page",
+          "changed": false
+        },
+        {
+          "field": "deadline_round1",
+          "value": "2026-09-09",
+          "source_url": "https://www.hbs.edu/mba/admissions/application-dates",
+          "quote": "Round One: September 9, 2026 · December 10, 2026",
+          "as_of": "MBA Class of 2029 application cycle (matriculating fall 2027)",
+          "current": "2025-09-03",
+          "verified": true,
+          "why": null,
+          "changed": true
+        },
+        {
+          "field": "deadline_round2",
+          "value": "2027-01-05",
+          "source_url": "https://www.hbs.edu/mba/admissions/application-dates",
+          "quote": "Round Two: January 5, 2027 · March 25, 2027",
+          "as_of": "MBA Class of 2029 application cycle (matriculating fall 2027)",
+          "current": "2026-01-05",
+          "verified": true,
+          "why": null,
+          "changed": true
+        }
+      ],
+      "not_found": [
+        "deadline_round3"
+      ],
+      "usage": {
+        "input_tokens": 102510,
+        "output_tokens": 2883,
+        "searches": 6
+      }
+    },
+    {
+      "id": "stanford-gsb",
+      "name": "Stanford Graduate School of Business",
+      "items": [
+        {
+          "field": "class_size",
+          "value": 434,
+          "source_url": "https://www.gsb.stanford.edu/experience/about/school-profile",
+          "quote": "| Enrollment | 434 | 424 | 431 |",
+          "as_of": "Class of 2027 profile (incoming class)",
+          "note": "Enrollment figure for MBA Class of 2027; the MBA program page says ~430 students.",
+          "current": 431,
+          "verified": true,
+          "why": null,
+          "changed": true
+        },
+        {
+          "field": "avg_work_experience",
+          "value": 5.3,
+          "source_url": "https://www.gsb.stanford.edu/experience/about/school-profile",
+          "quote": "| Average Work Experience (yrs.)\\* | 5.3 | 5.1 | 5.0 |",
+          "as_of": "Class of 2027 profile",
+          "note": "Years; first column is Class of 2027",
+          "current": 5,
+          "verified": true,
+          "why": null,
+          "changed": true
+        },
+        {
+          "field": "international_pct",
+          "value": 38,
+          "source_url": "https://www.gsb.stanford.edu/experience/about/school-profile",
+          "quote": "| International\\* | 38% | 39% | 36% |",
+          "as_of": "Class of 2027 profile",
+          "note": "Includes foreign nationals, dual citizens and U.S. permanent residents.",
+          "current": 40,
+          "verified": true,
+          "why": null,
+          "changed": true
+        },
+        {
+          "field": "women_pct",
+          "value": 45,
+          "source_url": "https://www.gsb.stanford.edu/experience/about/school-profile",
+          "quote": "| Women | 45% | 44% | 46% |",
+          "as_of": "Class of 2027 profile",
+          "current": 44,
+          "verified": true,
+          "why": null,
+          "changed": true
+        },
+        {
+          "field": "annual_tuition",
+          "value": 89187,
+          "source_url": "https://www.gsb.stanford.edu/programs/mba/tuition-financial-aid/cost-attendance",
+          "quote": "| Tuition | $89,187 | $89,187 |",
+          "as_of": "2026-27 first-year MBA tuition",
+          "note": "First-year tuition only (3 quarters at $29,729). The page's intro text still mentions 2025-26 but the table is labelled First-Year MBA 2026-2027.",
+          "current": 79143,
+          "verified": true,
+          "why": null,
+          "changed": true
+        },
+        {
+          "field": "employed_3_months_pct",
+          "value": 81,
+          "source_url": "https://www.gsb.stanford.edu/programs/mba/career-impact/employment-outcomes",
+          "quote": "90% of job seekers secured offers within three months of graduation, and 81% of seekers accepted their offer",
+          "as_of": "Class of 2025 employment report",
+          "note": "81% of job seekers accepted an offer within three months; 90% had received offers. Percentage is of job seekers, not all graduates.",
+          "current": 86,
+          "verified": true,
+          "why": null,
+          "changed": true
+        },
+        {
+          "field": "starting_salary",
+          "value": 185000,
+          "source_url": "https://www.gsb.stanford.edu/programs/mba",
+          "quote": "$185K median base salary for MBA graduates",
+          "as_of": "Most recent figure on MBA program page (likely Class of 2025 report)",
+          "note": "Median, not mean; the mean was not found on the pages I could read. The class year isn't stated on the program page. The employment page only says the Class of 2025 median base salary was in line with previous years.",
+          "current": 175000,
+          "verified": false,
+          "why": "source is unclear about the year or definition (median, not mean; the mean was not found on the pages i could read. the class ye…)",
+          "changed": false
+        },
+        {
+          "field": "deadline_round1",
+          "value": "2026-09-09",
+          "source_url": "https://www.gsb.stanford.edu/programs/mba/admission/deadlines",
+          "quote": "| Round 1 | 09 Sep 2026 | 09 Dec 2026 |",
+          "as_of": "2026-27 application cycle",
+          "note": "This deadline has already passed as of 2026-10-16.",
+          "current": "2025-09-09",
+          "verified": false,
+          "why": "the quote does not contain the value",
+          "changed": false
+        },
+        {
+          "field": "deadline_round2",
+          "value": "2027-01-06",
+          "source_url": "https://www.gsb.stanford.edu/programs/mba/admission/deadlines",
+          "quote": "| Round 2 | 06 Jan 2027 | 01 Apr 2027 |",
+          "as_of": "2026-27 application cycle",
+          "current": "2026-01-07",
+          "verified": false,
+          "why": "the quote does not contain the value",
+          "changed": false
+        },
+        {
+          "field": "deadline_round3",
+          "value": "2027-04-07",
+          "source_url": "https://www.gsb.stanford.edu/programs/mba/admission/deadlines",
+          "quote": "| Round 3 | 07 Apr 2027 | 27 May 2027 |",
+          "as_of": "2026-27 application cycle",
+          "current": "2026-04-01",
+          "verified": false,
+          "why": "the quote does not contain the value",
+          "changed": false
+        }
+      ],
+      "not_found": [
+        "avg_gmat",
+        "avg_gre_total",
+        "signing_bonus"
+      ],
+      "usage": {
+        "input_tokens": 203925,
+        "output_tokens": 2729,
+        "searches": 8
+      }
+    },
+    {
+      "id": "wharton-penn",
+      "name": "Wharton School",
+      "items": [
+        {
+          "field": "class_size",
+          "value": 864,
+          "source_url": "https://mba.wharton.upenn.edu/mba-or-emba/",
+          "quote": "Entering Class Size · ~864 · 256 (Philadelphia, San Francisco, Global combined)",
+          "as_of": "Current full-time MBA entering class figure on MBA vs EMBA page (undated; class-profile page text still shows Class of 2026: 866)",
+          "note": "Approximate (~864) as published. The Class of 2027 numbers on the class-profile page are script-rendered and not readable; the readable text there is Class of 2026 (866).",
+          "current": 866,
+          "verified": false,
+          "why": "approximate figure, not an exact published value",
+          "changed": false
+        },
+        {
+          "field": "avg_work_experience",
+          "value": 5,
+          "source_url": "https://mba.wharton.upenn.edu/class-profile/",
+          "quote": "5 years average work experience",
+          "as_of": "Class profile page (readable text is Class of 2026 profile)",
+          "current": 5,
+          "verified": true,
+          "why": null,
+          "changed": false
+        },
+        {
+          "field": "avg_gmat",
+          "value": 676,
+          "gmat_scale": "focus",
+          "source_url": "https://mba.wharton.upenn.edu/mba-or-emba/",
+          "quote": "Avg GMAT Traditional: 735 | Avg GMAT Focus: 676",
+          "as_of": "Current full-time MBA entering class figure on MBA vs EMBA page (undated, likely Class of 2027). Class of 2026 profile lists legacy GMAT average 732.",
+          "note": "GMAT Focus average; legacy average for same class is 735.",
+          "current": 735,
+          "verified": false,
+          "why": "source is unclear about the year or definition (gmat focus average; legacy average for same class is 735. current full-time mba …)",
+          "changed": false
+        },
+        {
+          "field": "avg_gre_total",
+          "value": 325,
+          "source_url": "https://mba.wharton.upenn.edu/class-profile/",
+          "quote": "Average GRE (Verbal): 163 - Average GRE (Quant): 162",
+          "as_of": "Class of 2026 profile (readable text on class-profile page)",
+          "note": "Sum of Verbal 163 + Quant 162. Class of 2027 GRE values are not readable on the page.",
+          "current": 326,
+          "verified": false,
+          "why": "quote not found on the source page",
+          "changed": false
+        },
+        {
+          "field": "international_pct",
+          "value": 31,
+          "source_url": "https://mba.wharton.upenn.edu/class-profile/",
+          "quote": "International Students: 31%",
+          "as_of": "Class of 2026 profile (readable text on class-profile page)",
+          "note": "Class of 2027 value is script-rendered and not readable.",
+          "current": 31,
+          "verified": true,
+          "why": null,
+          "changed": false
+        },
+        {
+          "field": "women_pct",
+          "value": 47,
+          "source_url": "https://mba.wharton.upenn.edu/class-profile/",
+          "quote": "Female: 47%",
+          "as_of": "Class of 2026 profile (readable text on class-profile page)",
+          "note": "Class of 2027 value is script-rendered and not readable.",
+          "current": 47,
+          "verified": true,
+          "why": null,
+          "changed": false
+        },
+        {
+          "field": "annual_tuition",
+          "value": 87970,
+          "source_url": "https://mba.wharton.upenn.edu/tuition-financial-aid/",
+          "quote": "Tuition · $87,970 · $87,970",
+          "as_of": "2026-27 first-year budget",
+          "note": "Tuition only; university fees of $5,038 are separate, and total tuition and fees are $93,008.",
+          "current": 87970,
+          "verified": true,
+          "why": null,
+          "changed": false
+        },
+        {
+          "field": "employed_3_months_pct",
+          "value": 87,
+          "source_url": "https://statistics.mbacareers.wharton.upenn.edu/wp-content/uploads/2025/12/2025-Career-Report.pdf",
+          "quote": "Reporting Job Acceptances · 776 · 99.7 · 529 · 87.0",
+          "as_of": "Class of 2025 full-time employment report",
+          "note": "Percent of seeking students reporting job acceptances (529 of 608 seeking). Column assignment (internship vs full-time) inferred from the table layout; the report does not label this as 'three months' in the extracted text.",
+          "current": 90,
+          "verified": false,
+          "why": "quote not found on the source page",
+          "changed": false
+        },
+        {
+          "field": "starting_salary",
+          "value": 185000,
+          "source_url": "https://statistics.mbacareers.wharton.upenn.edu/full-time/",
+          "quote": "25th Percentile $165,000 Median $185,000 75th Percentile $192,000",
+          "as_of": "Class of 2025 full-time employment report",
+          "note": "Median base salary; no mean is published.",
+          "current": 185000,
+          "verified": true,
+          "why": null,
+          "changed": false
+        },
+        {
+          "field": "signing_bonus",
+          "value": 30000,
+          "source_url": "https://statistics.mbacareers.wharton.upenn.edu/full-time/",
+          "quote": "25th Percentile $30,000 Median $30,000 75th Percentile $50,000",
+          "as_of": "Class of 2025 full-time employment report",
+          "note": "Median sign-on bonus among those reporting one.",
+          "current": 30000,
+          "verified": true,
+          "why": null,
+          "changed": false
+        },
+        {
+          "field": "deadline_round1",
+          "value": "2026-09-08",
+          "source_url": "https://mba.wharton.upenn.edu/application-timeline-deadlines/",
+          "quote": "Round 1: Tuesday, September 8, 2026 at 5:00 PM ET",
+          "as_of": "2026-27 application cycle (Class of 2029)",
+          "current": "2025-09-03",
+          "verified": true,
+          "why": null,
+          "changed": true
+        },
+        {
+          "field": "deadline_round2",
+          "value": "2027-01-05",
+          "source_url": "https://mba.wharton.upenn.edu/application-timeline-deadlines/",
+          "quote": "Round 2: Tuesday, January 5, 2027 at 5:00 PM ET",
+          "as_of": "2026-27 application cycle (Class of 2029)",
+          "current": "2026-01-06",
+          "verified": true,
+          "why": null,
+          "changed": true
+        },
+        {
+          "field": "deadline_round3",
+          "value": "2027-03-31",
+          "source_url": "https://mba.wharton.upenn.edu/application-timeline-deadlines/",
+          "quote": "Round 3: Wednesday, March 31, 2027 at 5:00 PM ET",
+          "as_of": "2026-27 application cycle (Class of 2029)",
+          "current": "2026-04-01",
+          "verified": true,
+          "why": null,
+          "changed": true
+        }
+      ],
+      "not_found": [],
+      "usage": {
+        "input_tokens": 154655,
+        "output_tokens": 4193,
+        "searches": 7
+      }
+    },
+    {
+      "id": "booth-chicago",
+      "name": "Booth School of Business",
+      "items": [
+        {
+          "field": "class_size",
+          "value": 635,
+          "source_url": "https://www.chicagobooth.edu/mba/full-time/admissions/class-profile",
+          "quote": "Chicago Booth Full-Time MBA Class of 2027 Profile ## 635 ### Full-Time MBA Students",
+          "as_of": "Class of 2027 profile (newest found on school's class profile page)",
+          "current": 603,
+          "verified": true,
+          "why": null,
+          "changed": true
+        },
+        {
+          "field": "avg_work_experience",
+          "value": 5,
+          "source_url": "https://www.chicagobooth.edu/mba/full-time/admissions/class-profile",
+          "quote": "5 ### Average Years Work Experience",
+          "as_of": "Class of 2027 profile",
+          "current": 5,
+          "verified": true,
+          "why": null,
+          "changed": false
+        },
+        {
+          "field": "avg_gmat",
+          "value": 729,
+          "gmat_scale": "classic",
+          "source_url": "https://www.chicagobooth.edu/mba/full-time/admissions/class-profile",
+          "quote": "| 73% GMAT | 729 | 730 |",
+          "as_of": "Class of 2027 profile",
+          "note": "Headline GMAT average (median 730), taken to be the classic 200-800 scale. The same page also shows a separate GMAT Focus average of 670 (39% of class) and a classic-only average of 736 (14% of class), so the scale of the combined figure is not explicitly stated.",
+          "current": 728,
+          "verified": true,
+          "why": null,
+          "changed": true
+        },
+        {
+          "field": "avg_gre_total",
+          "value": 327,
+          "source_url": "https://www.chicagobooth.edu/mba/full-time/admissions/class-profile",
+          "quote": "| 26% GRE - Quantitative | 164 | | | 26% GRE - Verbal | 163 | |",
+          "as_of": "Class of 2027 profile",
+          "note": "Quant 164 + Verbal 163 = 327, from the Average/Median test score table. A separate graphic on the same page shows Quant 163 / Verbal 161 (sum 324), so the page is internally inconsistent.",
+          "current": 326,
+          "verified": false,
+          "why": "source is unclear (Quant 164 + Verbal 163 = 327, from the Average/Median test score table. A separa…)",
+          "changed": false
+        },
+        {
+          "field": "international_pct",
+          "value": 37,
+          "source_url": "https://www.chicagobooth.edu/mba/full-time/admissions/class-profile",
+          "quote": "## 37% ### International 37%",
+          "as_of": "Class of 2027 profile",
+          "current": 38,
+          "verified": true,
+          "why": null,
+          "changed": true
+        },
+        {
+          "field": "women_pct",
+          "value": 41,
+          "source_url": "https://www.chicagobooth.edu/mba/full-time/admissions/class-profile",
+          "quote": "## 41% Women 41% Women",
+          "as_of": "Class of 2027 profile",
+          "current": 41,
+          "verified": false,
+          "why": "quote not found on the source page",
+          "changed": false
+        },
+        {
+          "field": "annual_tuition",
+          "value": 89976,
+          "source_url": "https://www.chicagobooth.edu/mba/full-time/admissions/cost",
+          "quote": "Tuition · $89,976\\* · $134,127 · $98,967\\*\\*\\*\\*\\* · $93,192 · $119,967",
+          "as_of": "2026-27 academic year, MBA Class of 2028",
+          "note": "Full-time MBA tuition only, excluding fees and living costs. The page says the full program tuition is charged over six quarterly installments, so this is the 2026-27 tuition figure, not a separate first-year-only amount.",
+          "current": 77000,
+          "verified": true,
+          "why": null,
+          "changed": true
+        },
+        {
+          "field": "employed_3_months_pct",
+          "value": 88,
+          "source_url": "https://www.chicagobooth.edu/mba/full-time/career-impact",
+          "quote": "88% Job-seeking 2025 graduates who accepted full-time job offers within three months of graduation",
+          "as_of": "Class of 2025 employment report",
+          "note": "The school's pages disagree. The Employment Report page says 89% of job-seekers received offers within 3 months, and the Full-Time MBA program page says 86.8% accepted job offers within three months. I used the 88% accepted-offer figure from the Career Impact page.",
+          "current": 93,
+          "verified": true,
+          "why": null,
+          "changed": true
+        },
+        {
+          "field": "starting_salary",
+          "value": 175000,
+          "source_url": "https://www.chicagobooth.edu/why-booth/stories/mba-employment-report-2025",
+          "quote": "The median base salary for Booth’s 2025 Full-Time MBA graduates was $175,000, with a median sign-on bonus of $30,000.",
+          "as_of": "Class of 2025 Full-Time MBA employment report",
+          "note": "Median, not mean. No mean base salary was found on the school's pages.",
+          "current": 175000,
+          "verified": false,
+          "why": "quote not found on the source page",
+          "changed": false
+        },
+        {
+          "field": "signing_bonus",
+          "value": 30000,
+          "source_url": "https://www.chicagobooth.edu/why-booth/stories/mba-employment-report-2025",
+          "quote": "The median base salary for Booth’s 2025 Full-Time MBA graduates was $175,000, with a median sign-on bonus of $30,000.",
+          "as_of": "Class of 2025 Full-Time MBA employment report",
+          "note": "Median sign-on bonus. 65% of graduates who accepted offers reported receiving one.",
+          "current": 30000,
+          "verified": false,
+          "why": "quote not found on the source page",
+          "changed": false
+        },
+        {
+          "field": "deadline_round1",
+          "value": "2026-09-15",
+          "source_url": "https://www.chicagobooth.edu/mba/full-time/admissions/how-to-apply",
+          "quote": "| One | September 15, 2026 11:59 p.m. CT | December 3, 2026 |",
+          "as_of": "2026-27 application cycle",
+          "note": "This deadline has already passed as of 2026-10-16.",
+          "current": "2025-09-11",
+          "verified": true,
+          "why": null,
+          "changed": true
+        },
+        {
+          "field": "deadline_round2",
+          "value": "2027-01-07",
+          "source_url": "https://www.chicagobooth.edu/mba/full-time/admissions/how-to-apply",
+          "quote": "| Two | January 7, 2027 11:59 p.m. CT | March 25, 2027 |",
+          "as_of": "2026-27 application cycle",
+          "current": "2026-01-03",
+          "verified": true,
+          "why": null,
+          "changed": true
+        },
+        {
+          "field": "deadline_round3",
+          "value": "2027-04-01",
+          "source_url": "https://www.chicagobooth.edu/mba/full-time/admissions/how-to-apply",
+          "quote": "| Three | April 1, 2027 11:59 p.m. CT | May 20, 2027 |",
+          "as_of": "2026-27 application cycle",
+          "current": "2026-04-03",
+          "verified": true,
+          "why": null,
+          "changed": true
+        }
+      ],
+      "not_found": [],
+      "usage": {
+        "input_tokens": 166928,
+        "output_tokens": 4592,
+        "searches": 7
+      }
+    },
+    {
+      "id": "kellogg-northwestern",
+      "name": "Kellogg School of Management",
+      "items": [
+        {
+          "field": "class_size",
+          "value": 534,
+          "source_url": "https://www.kellogg.northwestern.edu/news/blog/2025/11/05/welcoming-class-2027-high-achievers/",
+          "quote": "Growing to 534 students, the Class of 2027 reflects both the exceptional caliber of candidates drawn to Kellogg",
+          "as_of": "Class of 2027 incoming Two-Year MBA class",
+          "note": "Two-Year MBA incoming class",
+          "current": 474,
+          "verified": true,
+          "why": null,
+          "changed": true
+        },
+        {
+          "field": "avg_gmat",
+          "value": 687,
+          "gmat_scale": "focus",
+          "source_url": "https://www.kellogg.northwestern.edu/news/blog/2025/11/05/welcoming-class-2027-high-achievers/",
+          "quote": "With an average GMAT Focus score of 687, this cohort reinforces the rigorous academic standards that define our community.",
+          "as_of": "Class of 2027 incoming Two-Year MBA class",
+          "note": "GMAT Focus scale; average",
+          "current": 730,
+          "verified": true,
+          "why": null,
+          "changed": true
+        },
+        {
+          "field": "annual_tuition",
+          "value": 88536,
+          "source_url": "https://www.kellogg.northwestern.edu/admissions/financial-aid/ft-fin-aid/",
+          "quote": "| Tuition  | $123,600 | $88,536 | $93,600 | $118,048 | $117,582 |",
+          "as_of": "2026-2027 tuition",
+          "note": "Two-Year MBA tuition (columns: One-Year, Two-Year, MBAi, MMM, JD-MBA); One-Year is $123,600",
+          "current": 82000,
+          "verified": true,
+          "why": null,
+          "changed": true
+        },
+        {
+          "field": "starting_salary",
+          "value": 175000,
+          "source_url": "https://www.kellogg.northwestern.edu/news/blog/2025/12/17/class-2025-career-outcomes-top-employers/",
+          "quote": "Our graduates’ median base salary rose to $175,000, nearly double their median pre-MBA base salaries",
+          "as_of": "Class of 2025 Two-Year MBA employment outcomes",
+          "note": "Median base salary, not mean (mean not published); Two-Year MBA",
+          "current": 175000,
+          "verified": false,
+          "why": "quote not found on the source page",
+          "changed": false
+        },
+        {
+          "field": "deadline_round1",
+          "value": "2026-09-09",
+          "source_url": "https://www.kellogg.northwestern.edu/admissions/apply/",
+          "quote": "| Round 1 | Sept. 9, 2026 | Dec. 9, 2026 |",
+          "as_of": "2026-27 application cycle",
+          "current": "2025-09-10",
+          "verified": true,
+          "why": null,
+          "changed": true
+        },
+        {
+          "field": "deadline_round2",
+          "value": "2027-01-06",
+          "source_url": "https://www.kellogg.northwestern.edu/admissions/apply/",
+          "quote": "| Round 2 | Jan. 6, 2027 | March 24, 2027 |",
+          "as_of": "2026-27 application cycle",
+          "current": "2026-01-07",
+          "verified": true,
+          "why": null,
+          "changed": true
+        },
+        {
+          "field": "deadline_round3",
+          "value": "2027-03-31",
+          "source_url": "https://www.kellogg.northwestern.edu/admissions/apply/",
+          "quote": "| Round 3 | March 31, 2027 | May 12, 2027 |",
+          "as_of": "2026-27 application cycle",
+          "current": "2026-04-01",
+          "verified": true,
+          "why": null,
+          "changed": true
+        }
+      ],
+      "not_found": [
+        "avg_work_experience",
+        "avg_gre_total",
+        "international_pct",
+        "women_pct",
+        "employed_3_months_pct",
+        "signing_bonus"
+      ],
+      "usage": {
+        "input_tokens": 218063,
+        "output_tokens": 3443,
+        "searches": 8
+      }
+    },
+    {
+      "id": "sloan-mit",
+      "name": "MIT Sloan School of Management",
+      "items": [
+        {
+          "field": "class_size",
+          "value": 450,
+          "source_url": "https://mitsloan.mit.edu/mba/admissions/frequently-asked-questions",
+          "quote": "MIT Sloan has approximately 450 MBA students per class year (400 MBA and 50 LGO students) for a total of approximately 900 MBA students.",
+          "as_of": "MBA admissions FAQ (current, approximate)",
+          "note": "Approximate figure from the FAQ: about 400 MBA plus about 50 LGO students. The Class of 2028 profile page text did not expose an exact count.",
+          "current": 438,
+          "verified": false,
+          "why": "approximate figure, not an exact published value",
+          "changed": false
+        },
+        {
+          "field": "avg_work_experience",
+          "value": 5,
+          "source_url": "https://mitsloan.mit.edu/programs/mit-sloan-fellows-mba-program/frequently-asked-questions",
+          "quote": "If you do not have significant work experience, you might consider applying to our MBA program, where incoming students have an average of five years of work experience.",
+          "as_of": "Sloan Fellows FAQ page, describing incoming full-time MBA students",
+          "note": "Rounded figure from an FAQ page. It does not come from the Class of 2028 profile page, whose numbers I could not read.",
+          "current": 5,
+          "verified": false,
+          "why": "the quote does not contain the value",
+          "changed": false
+        },
+        {
+          "field": "annual_tuition",
+          "value": 91892,
+          "source_url": "https://mitsloan.mit.edu/mba/admissions/financing-your-education",
+          "quote": "Tuition for the full-time MIT Sloan MBA program is $91,892 for the 2026-2027 academic year, including the mandatory $2,200 annual MBA program fee.",
+          "as_of": "2026-27 tuition",
+          "note": "Includes the mandatory $2,200 annual program fee.",
+          "current": 83380,
+          "verified": false,
+          "why": "figure includes fees; this field is tuition only",
+          "changed": false
+        },
+        {
+          "field": "employed_3_months_pct",
+          "value": 91,
+          "source_url": "https://mitsloan.mit.edu/sites/default/files/2025-12/2025-2026-MBA-Employment-Report.pdf",
+          "quote": "By three months after graduation, 91.0% of job seekers had received an offer of employment, with the majority sourced through school-facilitated activities.",
+          "as_of": "Class of 2025 employment report (2025-2026 MBA Employment Report)",
+          "note": "Share of job seekers who had received an offer within 3 months of graduation. The same report says 87.1% had accepted offers at graduation, and a separate 3-months-after-graduation block lists 73.8% received and 67.2% accepted.",
+          "current": 94,
+          "verified": false,
+          "why": "quote not found on the source page",
+          "changed": false
+        },
+        {
+          "field": "starting_salary",
+          "value": 173132,
+          "source_url": "https://mitsloan.mit.edu/sites/default/files/2025-12/2025-2026-MBA-Employment-Report.pdf",
+          "quote": "an average salary of $173,132 and a median of $175,000.",
+          "as_of": "Class of 2025 employment report (2025-2026 MBA Employment Report)",
+          "note": "Mean base salary. The median is $175,000.",
+          "current": 175000,
+          "verified": false,
+          "why": "quote not found on the source page",
+          "changed": false
+        },
+        {
+          "field": "signing_bonus",
+          "value": 40192,
+          "source_url": "https://mitsloan.mit.edu/sites/default/files/2025-12/2025-2026-MBA-Employment-Report.pdf",
+          "quote": "Mean Signing Bonus $40,192",
+          "as_of": "Class of 2025 employment report (2025-2026 MBA Employment Report)",
+          "note": "Mean signing bonus. The median is $30,000.",
+          "current": 30000,
+          "verified": false,
+          "why": "mean bonus reported; this field is the median",
+          "changed": false
+        },
+        {
+          "field": "deadline_round1",
+          "value": "2026-09-29",
+          "source_url": "https://mitsloan.mit.edu/mba/admissions/how-to-apply",
+          "quote": "Round 1 | September 29, 2026 | Mid-December 2026",
+          "as_of": "2026-27 application cycle (2027 entry)",
+          "current": "2025-09-29",
+          "verified": true,
+          "why": null,
+          "changed": true
+        },
+        {
+          "field": "deadline_round2",
+          "value": "2027-01-12",
+          "source_url": "https://mitsloan.mit.edu/mba/admissions/how-to-apply",
+          "quote": "Round 2 | January 12, 2027 | Early April 2027",
+          "as_of": "2026-27 application cycle (2027 entry)",
+          "current": "2026-01-13",
+          "verified": true,
+          "why": null,
+          "changed": true
+        }
+      ],
+      "not_found": [
+        "avg_gmat",
+        "avg_gre_total",
+        "international_pct",
+        "women_pct",
+        "deadline_round3"
+      ],
+      "usage": {
+        "input_tokens": 176196,
+        "output_tokens": 3054,
+        "searches": 6
+      }
+    },
+    {
+      "id": "columbia-cbs",
+      "name": "Columbia Business School",
+      "items": [
+        {
+          "field": "annual_tuition",
+          "value": 93908,
+          "source_url": "https://business.columbia.edu/financial-aid/costs/full-time",
+          "quote": "Tuition* · $93,908",
+          "as_of": "2026-27 Full-Time MBA first-year budget",
+          "note": "First-year tuition only (first listed cost-of-attendance column; first-year total budget $143,030 is not used).",
+          "current": 86000,
+          "verified": false,
+          "why": "could not open source (HTTP 403)",
+          "changed": false
+        },
+        {
+          "field": "employed_3_months_pct",
+          "value": 92,
+          "source_url": "https://business.columbia.edu/annual-report",
+          "quote": "Maintaining strong career outcomes for our students, with 92% of the Class of 2025 receiving full-time employment offers within three months of graduation.",
+          "as_of": "Class of 2025 employment report",
+          "note": "92% received offers within three months; the 2025 Employment Report page shows 90% acceptances. The newest employment report is for 2025.",
+          "current": 92,
+          "verified": false,
+          "why": "could not open source (HTTP 403)",
+          "changed": false
+        },
+        {
+          "field": "starting_salary",
+          "value": 175000,
+          "source_url": "https://business.columbia.edu/recruiters/employment-report",
+          "quote": "| Base Salary | 100% | $175,000 | $450,000 |",
+          "as_of": "Class of 2025 employment report",
+          "note": "Median, not mean. Only the median is published. Report includes sponsored students.",
+          "current": 175000,
+          "verified": false,
+          "why": "could not open source (HTTP 403)",
+          "changed": false
+        },
+        {
+          "field": "signing_bonus",
+          "value": 30000,
+          "source_url": "https://business.columbia.edu/recruiters/employment-report",
+          "quote": "| Signing Bonus | 68.9% | $30,000 | $218,000 |",
+          "as_of": "Class of 2025 employment report",
+          "note": "Median; 68.9% of graduates received one.",
+          "current": 30000,
+          "verified": false,
+          "why": "could not open source (HTTP 403)",
+          "changed": false
+        },
+        {
+          "field": "deadline_round1",
+          "value": "2026-09-09",
+          "source_url": "https://academics.business.columbia.edu/admissions/mba/options-deadlines",
+          "quote": "| Round 1 | September 9, 2026 at 12:00 PM (ET) | By November 2, 2026 | On December 14, 2026 |",
+          "as_of": "August 2027 entry application cycle (open now)",
+          "note": "August-entry. January 2027 entry is closed.",
+          "current": "2025-09-03",
+          "verified": false,
+          "why": "could not open source (HTTP 403)",
+          "changed": false
+        },
+        {
+          "field": "deadline_round2",
+          "value": "2027-01-05",
+          "source_url": "https://academics.business.columbia.edu/admissions/mba/options-deadlines",
+          "quote": "| Round 2 | January 5, 2027 at 12:00 PM (ET) | By February 17, 2027 | On March 24, 2027 |",
+          "as_of": "August 2027 entry application cycle (open now)",
+          "current": "2026-01-06",
+          "verified": false,
+          "why": "could not open source (HTTP 403)",
+          "changed": false
+        },
+        {
+          "field": "deadline_round3",
+          "value": "2027-03-29",
+          "source_url": "https://academics.business.columbia.edu/admissions/mba/options-deadlines",
+          "quote": "| Round 3 | March 29, 2027 at 12:00 PM (ET) | By April 30, 2027 | On May 12, 2027 |",
+          "as_of": "August 2027 entry application cycle (open now)",
+          "current": "2026-03-26",
+          "verified": false,
+          "why": "could not open source (HTTP 403)",
+          "changed": false
+        }
+      ],
+      "not_found": [
+        "class_size",
+        "avg_work_experience",
+        "avg_gmat",
+        "avg_gre_total",
+        "international_pct",
+        "women_pct"
+      ],
+      "usage": {
+        "input_tokens": 174533,
+        "output_tokens": 2464,
+        "searches": 8
+      }
+    },
+    {
+      "id": "nc-at-deese",
+      "name": "Willie A. Deese College of Business",
+      "items": [],
+      "not_found": [
+        "class_size",
+        "avg_work_experience",
+        "avg_gmat",
+        "avg_gre_total",
+        "international_pct",
+        "women_pct",
+        "annual_tuition",
+        "employed_3_months_pct",
+        "starting_salary",
+        "signing_bonus"
+      ],
+      "usage": {
+        "input_tokens": 96623,
+        "output_tokens": 977,
+        "searches": 4
+      }
+    },
+    {
+      "id": "foster-uw",
+      "name": "Michael G. Foster School of Business",
+      "items": [
+        {
+          "field": "class_size",
+          "value": 102,
+          "source_url": "https://foster.uw.edu/academics/degree-programs/full-time-mba/class-profile/",
+          "quote": "Class size: 102",
+          "as_of": "Class of 2027 profile",
+          "note": "Entering class size",
+          "current": 102,
+          "verified": false,
+          "why": "quote not found on the source page",
+          "changed": false
+        },
+        {
+          "field": "avg_work_experience",
+          "value": 6,
+          "source_url": "https://foster.uw.edu/academics/degree-programs/full-time-mba/class-profile/",
+          "quote": "Average years of work experience: 6",
+          "as_of": "Class of 2027 profile",
+          "current": 6,
+          "verified": true,
+          "why": null,
+          "changed": false
+        },
+        {
+          "field": "avg_gmat",
+          "value": 655,
+          "gmat_scale": "n/a",
+          "source_url": "https://foster.uw.edu/academics/degree-programs/full-time-mba/class-profile/",
+          "quote": "Median GMAT: 655",
+          "as_of": "Class of 2027 profile",
+          "note": "Median, not mean; page doesn't say whether Classic or Focus scale. Middle 80%: 615–695.",
+          "current": 720,
+          "verified": false,
+          "why": "GMAT scale not stated",
+          "changed": false
+        },
+        {
+          "field": "avg_gre_total",
+          "value": 318,
+          "source_url": "https://foster.uw.edu/academics/degree-programs/full-time-mba/class-profile/",
+          "quote": "Median GRE Quant: 158 ... Median GRE Verbal: 160",
+          "as_of": "Class of 2027 profile",
+          "note": "Sum of median Quant (158) + median Verbal (160); medians, not means.",
+          "current": 320,
+          "verified": false,
+          "why": "quote not found on the source page",
+          "changed": false
+        },
+        {
+          "field": "international_pct",
+          "value": 56,
+          "source_url": "https://foster.uw.edu/academics/degree-programs/full-time-mba/class-profile/",
+          "quote": "International students: 56%",
+          "as_of": "Class of 2027 profile",
+          "current": 56,
+          "verified": false,
+          "why": "quote not found on the source page",
+          "changed": false
+        },
+        {
+          "field": "women_pct",
+          "value": 51,
+          "source_url": "https://foster.uw.edu/academics/degree-programs/full-time-mba/class-profile/",
+          "quote": "Women: 51%",
+          "as_of": "Class of 2027 profile",
+          "current": 51,
+          "verified": false,
+          "why": "quote not found on the source page",
+          "changed": false
+        },
+        {
+          "field": "starting_salary",
+          "value": 144000,
+          "source_url": "https://foster.uw.edu/academics/degree-programs/full-time-mba/career-management/",
+          "quote": "$144k+ Average starting salary",
+          "as_of": "Full-time MBA Career Outcomes page (links to Class of 2025 report)",
+          "note": "Published as rounded '$144k+' average (mean) base salary; the Class of 2025 PDF report itself could not be read. The main program page labels the same $144k+ figure 'Class of 2024', so the class year is ambiguous.",
+          "current": 151322,
+          "verified": false,
+          "why": "approximate figure, not an exact published value",
+          "changed": false
+        },
+        {
+          "field": "signing_bonus",
+          "value": 39000,
+          "source_url": "https://foster.uw.edu/academics/degree-programs/full-time-mba/career-management/",
+          "quote": "$39k+ Average signing bonus",
+          "as_of": "Full-time MBA Career Outcomes page (links to Class of 2025 report)",
+          "note": "Published as rounded '$39k+' average; PDF not readable.",
+          "current": 44537,
+          "verified": false,
+          "why": "approximate figure, not an exact published value",
+          "changed": false
+        },
+        {
+          "field": "deadline_round1",
+          "value": "2026-10-01",
+          "source_url": "https://foster.uw.edu/academics/degree-programs/full-time-mba/admissions/",
+          "quote": "Application Deadline: October 1, 2026 (11:59pm PDT)",
+          "as_of": "2026-27 application cycle",
+          "current": null,
+          "verified": true,
+          "why": null,
+          "changed": true
+        },
+        {
+          "field": "deadline_round2",
+          "value": "2027-01-05",
+          "source_url": "https://foster.uw.edu/academics/degree-programs/full-time-mba/admissions/",
+          "quote": "Application Deadline: January 5, 2027 (11:59pm PDT)",
+          "as_of": "2026-27 application cycle",
+          "note": "Final deadline for international applicants",
+          "current": null,
+          "verified": true,
+          "why": null,
+          "changed": true
+        },
+        {
+          "field": "deadline_round3",
+          "value": "2027-03-23",
+          "source_url": "https://foster.uw.edu/academics/degree-programs/full-time-mba/admissions/",
+          "quote": "Application Deadline: March 23, 2027 (11:59pm PDT)",
+          "as_of": "2026-27 application cycle",
+          "current": null,
+          "verified": true,
+          "why": null,
+          "changed": true
+        }
+      ],
+      "not_found": [
+        "annual_tuition",
+        "employed_3_months_pct"
+      ],
+      "usage": {
+        "input_tokens": 165168,
+        "output_tokens": 3018,
+        "searches": 6
+      }
+    },
+    {
+      "id": "georgia-tech-scheller",
+      "name": "Scheller MBA",
+      "items": [
+        {
+          "field": "class_size",
+          "value": 72,
+          "source_url": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/admissions/class-profile.html",
+          "quote": "Class of 2027 Profile 72 Full-time MBA Students",
+          "as_of": "Class of 2027 profile",
+          "note": "Incoming entering class size",
+          "current": 72,
+          "verified": false,
+          "why": "quote not found on the source page",
+          "changed": false
+        },
+        {
+          "field": "avg_work_experience",
+          "value": 5.25,
+          "source_url": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/admissions/class-profile.html",
+          "quote": "Average Years of Work Experience 5.25",
+          "as_of": "Class of 2027 profile",
+          "current": 5,
+          "verified": false,
+          "why": "quote not found on the source page",
+          "changed": false
+        },
+        {
+          "field": "avg_gmat",
+          "value": 654,
+          "source_url": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/admissions/class-profile.html",
+          "quote": "GMAT Average 654",
+          "as_of": "Class of 2027 profile",
+          "gmat_scale": "n/a",
+          "note": "Page does not say whether this is GMAT Focus or Classic scale, so the scale is left as n/a.",
+          "current": 654,
+          "verified": false,
+          "why": "GMAT scale not stated",
+          "changed": false
+        },
+        {
+          "field": "avg_gre_total",
+          "value": 324,
+          "source_url": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/admissions/class-profile.html",
+          "quote": "GRE Average (Verbal) 160 GRE Average (Quant) 164",
+          "as_of": "Class of 2027 profile",
+          "note": "Sum of the published Verbal average (160) and Quant average (164). The school does not publish a total.",
+          "current": 324,
+          "verified": false,
+          "why": "quote not found on the source page",
+          "changed": false
+        },
+        {
+          "field": "international_pct",
+          "value": 43,
+          "source_url": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/admissions/class-profile.html",
+          "quote": "43 % International",
+          "as_of": "Class of 2027 profile",
+          "note": "The page lists the stats in this order: 29 average age, 44% women, 17% U.S. veterans, 43% international.",
+          "current": 43,
+          "verified": false,
+          "why": "quote not found on the source page",
+          "changed": false
+        },
+        {
+          "field": "women_pct",
+          "value": 44,
+          "source_url": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/admissions/class-profile.html",
+          "quote": "44 % Women",
+          "as_of": "Class of 2027 profile",
+          "current": 44,
+          "verified": false,
+          "why": "quote not found on the source page",
+          "changed": false
+        },
+        {
+          "field": "annual_tuition",
+          "value": 44956,
+          "source_url": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/tuition-and-financing/index.html",
+          "quote": "In-State: $30,548/YearOut-of-State: $44,956/Year Out-of-Country: $46,260/Year",
+          "as_of": "Current Full-time MBA tuition page (academic year not stated on page)",
+          "note": "Out-of-state annual tuition, excluding $1,516/year fees. In-state is $30,548/year and out-of-country is $46,260/year. The school's page does not state which rate counts as the headline.",
+          "current": 43646,
+          "verified": false,
+          "why": "quote not found on the source page",
+          "changed": false
+        },
+        {
+          "field": "employed_3_months_pct",
+          "value": 91,
+          "source_url": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/career-development/index.html",
+          "quote": "91% Employment Rate 3 Months Post-Graduation MBA Class of 2026",
+          "as_of": "Class of 2026 employment stats (Full-time MBA Career Development page)",
+          "note": "Some other Scheller pages still show Class of 2025 figures (82.5%). This career-development page is the newest and shows Class of 2026.",
+          "current": 88,
+          "verified": true,
+          "why": null,
+          "changed": true
+        },
+        {
+          "field": "starting_salary",
+          "value": 140000,
+          "source_url": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/career-development/index.html",
+          "quote": "$140,000 Average Starting Salary MBA Class of 2026",
+          "as_of": "Class of 2026 employment stats (Full-time MBA Career Development page)",
+          "note": "Labeled as an average (mean) base salary. The salary-to-tuition page separately lists a $140,000 median from U.S. News. The Class of 2025 figure on other pages is $136,378.",
+          "current": 146260,
+          "verified": true,
+          "why": null,
+          "changed": true
+        },
+        {
+          "field": "deadline_round1",
+          "value": "2026-10-05",
+          "source_url": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/admissions/index.html",
+          "quote": "1 | October 5, 2026 | November 9-13, 2026 | November 20, 2026 | January 15, 2027",
+          "as_of": "Fall 2027 start application deadlines",
+          "current": null,
+          "verified": true,
+          "why": null,
+          "changed": true
+        },
+        {
+          "field": "deadline_round2",
+          "value": "2027-01-08",
+          "source_url": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/admissions/index.html",
+          "quote": "2 | January 8, 2027 | February 22-27, 2027 | March 5, 2027 | April 12, 2027",
+          "as_of": "Fall 2027 start application deadlines",
+          "current": null,
+          "verified": true,
+          "why": null,
+          "changed": true
+        },
+        {
+          "field": "deadline_round3",
+          "value": "2027-03-05",
+          "source_url": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/admissions/index.html",
+          "quote": "3 | March 5, 2027 | April 7-9, 2027 | April 16, 2027 | May 16, 2027",
+          "as_of": "Fall 2027 start application deadlines",
+          "note": "There is also a Round 4 deadline of April 30, 2027.",
+          "current": null,
+          "verified": true,
+          "why": null,
+          "changed": true
+        }
+      ],
+      "not_found": [
+        "signing_bonus"
+      ],
+      "usage": {
+        "input_tokens": 145083,
+        "output_tokens": 3126,
+        "searches": 6
+      }
+    }
+  ],
+  "recheck": "2026-10-16: re-checked with exactness, dating and field-definition rules"
+}

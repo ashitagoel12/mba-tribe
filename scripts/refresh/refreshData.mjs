@@ -102,7 +102,11 @@ Fields to find: ${fields.join(', ')}
 
 Rules:
 - Use the newest class profile (incoming class) and the newest full-time MBA employment report the school has published.
-- starting_salary is the full-time MBA base salary. Prefer the mean; if only the median is published, use it and say so in note.
+- starting_salary: MEDIAN full-time MBA base salary from the newest employment report. If only a mean is published, use it and write "mean" in note.
+- signing_bonus: MEDIAN signing bonus only. Never report a mean here.
+- employed_3_months_pct: share of job-seeking graduates who ACCEPTED an offer within three months of graduation. If the school only reports offers received, use that and write "received, not accepted" in note.
+- Only exact published figures. Skip anything written as approximate ("about", "approximately", "~", "nearly", "$144k+"); put the field in not_found instead.
+- as_of must name the class year or academic year (e.g. "Class of 2027 profile"). If the page doesn't say which year a figure covers, put the field in not_found.
 - avg_gmat: report the number as published and set gmat_scale ("focus" if 205–805 GMAT Focus Edition, "classic" if the old 200–800 test). Do not convert.
 - avg_gre_total: the total score (260–340). If only Verbal and Quant averages are given, add them, and put both numbers in the quote.
 - annual_tuition: first-year tuition for the full-time MBA only, not total cost of attendance.
@@ -129,7 +133,7 @@ async function callApi(body, apiKey) {
 export async function extractSchool(school, apiKey) {
   const wantDeadlines = !!school.applicationInfo?.deadlines
   const tools = [
-    { type: 'web_search_20250305', name: 'web_search', max_uses: 8, allowed_domains: schoolDomains(school) },
+    { type: 'web_search_20250305', name: 'web_search', max_uses: Number(process.env.REFRESH_MAX_SEARCHES || 6), allowed_domains: schoolDomains(school) },
     REPORT_TOOL,
   ]
   const messages = [{ role: 'user', content: buildPrompt(school, wantDeadlines) }]
@@ -234,12 +238,30 @@ export function inRange(field, value) {
   return Number.isFinite(n) && n >= f.min && n <= f.max
 }
 
+/** Rules that don't need the source page: exactness, a dated figure, and field definitions. */
+export function policyCheck(v) {
+  const text = `${v.quote || ''} ${v.note || ''}`.toLowerCase()
+  if (/\b(about|approximately|approx\.?|roughly|nearly|around)\b|~|\d[kK]?\+/.test(v.quote || '') || /\bapproximate/.test(text)) {
+    return 'approximate figure, not an exact published value'
+  }
+  if (!/\b20\d\d\b/.test(v.as_of || '') && !FIELDS[v.field]?.kind?.startsWith('date')) return 'the year this figure covers is not stated'
+  const caveats = `${v.note || ''} ${v.as_of || ''}`.toLowerCase()
+  if (/\b(undated|ambiguous|not stated|isn't stated|is not stated|unclear|likely|inferred|internally inconsistent)\b/.test(caveats)) {
+    return `source is unclear about the year or definition (${caveats.trim().slice(0, 80)}…)`
+  }
+  if (v.field === 'signing_bonus' && /\bmean\b/.test(String(v.note || '').toLowerCase())) return 'mean bonus reported; this field is the median'
+  if (v.field === 'annual_tuition' && /\b(includes|including)\b.*\bfee/.test(String(v.note || '').toLowerCase())) return 'figure includes fees; this field is tuition only'
+  return null
+}
+
 export async function verifyValue(v, school, pageTextImpl = pageText) {
   if (!FIELDS[v.field]) return { ok: false, why: 'unknown field' }
   let host
   try { host = new URL(v.source_url).hostname.replace(/^www\./, '') } catch { return { ok: false, why: 'invalid source URL' } }
   if (!schoolDomains(school).some(d => host === d || host.endsWith('.' + d))) return { ok: false, why: `source is not the school's site (${host})` }
   if (!inRange(v.field, v.value)) return { ok: false, why: `value ${v.value} is outside the plausible range` }
+  const policy = policyCheck(v)
+  if (policy) return { ok: false, why: policy }
   if (v.field === 'avg_gmat' && !['focus', 'classic'].includes(v.gmat_scale)) return { ok: false, why: 'GMAT scale not stated' }
   if (!valueInQuote(v.field, v.value, v.quote)) return { ok: false, why: 'the quote does not contain the value' }
   let text

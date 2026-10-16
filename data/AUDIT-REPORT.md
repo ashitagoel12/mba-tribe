@@ -10,7 +10,7 @@ Fixes already applied: avgGRE is the total score (260-340). 48 values were store
 |---|---|
 | GMAT high for a non-top-15 program (verify) | 16 |
 | Employment rate at M7 level for a non-top-15 program (verify) | 11 |
-| All listed application deadlines have passed (old cycle) | 7 |
+| All listed application deadlines have passed (old cycle) | 2 |
 | Total cost inconsistent with annual tuition | 1 |
 
 ## GMAT high for a non-top-15 program (verify)
@@ -48,12 +48,7 @@ Fixes already applied: avgGRE is the total score (260-340). 48 values were store
 
 ## All listed application deadlines have passed (old cycle)
 
-- `harvard-hbs`
 - `stanford-gsb`
-- `wharton-penn`
-- `booth-chicago`
-- `kellogg-northwestern`
-- `sloan-mit`
 - `columbia-cbs`
 
 ## Total cost inconsistent with annual tuition
