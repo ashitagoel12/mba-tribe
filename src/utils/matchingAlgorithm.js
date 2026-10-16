@@ -100,11 +100,11 @@ function buildWeights(formData) {
       : 5 + (priorities.campusEnvironment / 5) * 10, // 6–15
 
     // Affordability — scales with budget sensitivity
-    affordability: budgetSensitivity === 'major-factor'
-      ? 20
-      : budgetSensitivity === 'matters-somewhat'
-        ? 14
-        : 8,
+    // Takes the stronger of the two signals: the budget answer and the 1–5 rating.
+    affordability: Math.max(
+      budgetSensitivity === 'major-factor' ? 20 : budgetSensitivity === 'matters-somewhat' ? 14 : 8,
+      4 + (priorities.affordability ?? 3) * 3, // 7–19
+    ),
 
     // ROI (salary-to-cost ratio) — separate from raw affordability
     roi: budgetSensitivity === 'major-factor'
@@ -332,10 +332,13 @@ function scoreTestScore(school, formData) {
     gap = avg - rawScore
   }
 
-  if (gap <= 10) return 10  // at or above average
-  if (gap <= 30) return 7   // within 30 pts — reasonable
-  if (gap <= 50) return 4   // 30–50 pts below — tough
-  return 0                   // 50+ below — stretch territory
+  // GRE totals run 260–340, so a point there is worth roughly 5 GMAT points.
+  // Scale the gap bands to the exam so GRE takers are scored on the same footing.
+  const unit = examType === 'gre' ? 0.2 : 1
+  if (gap <= 10 * unit) return 10  // at or above average
+  if (gap <= 30 * unit) return 7   // within 30 GMAT-equivalent pts — reasonable
+  if (gap <= 50 * unit) return 4   // 30–50 below — tough
+  return 0                          // 50+ below — stretch territory
 }
 
 /**
@@ -445,7 +448,7 @@ function isStretch(school, formData) {
   if (examType === 'gre') {
     const avg = school.classProfile.avgGRE
     if (!avg) return false
-    return rawScore < avg - 30
+    return rawScore < avg - 6 // ≈ 30 GMAT points on the GRE scale
   } else if (examType === 'gmat-focus') {
     const avg = school.classProfile.avgGMAT
     if (!avg) return false
@@ -478,6 +481,7 @@ function scoreWithNeutralTest(school, formData) {
  * @param {object}   formData  - User form state
  * @returns {{
  *   strongFit:      ScoredSchool[],
+ *   strongLabel:    'strong' | 'best',
  *   worthExploring: ScoredSchool[],
  *   stretch:        ScoredSchool[],
  *   hiddenGems:     ScoredSchool[],
@@ -511,11 +515,24 @@ export function runMatching(schools, formData) {
   const STRONG_THRESHOLD    = 65
   const EXPLORING_THRESHOLD = 45
 
-  let strongFitRaw = regularPool.filter(s => s.totalScore >= STRONG_THRESHOLD).slice(0, 6)
+  // A stated campus preference is a hard filter for the top tier, unless the
+  // user rated campus vibe as low priority (1–2). A school that misses it can
+  // still appear in Worth Exploring, where its trade-off is shown.
+  const campusPref = formData.campusEnv
+  const campusMatters = campusPref && campusPref !== 'no-preference' &&
+    (formData.priorities?.campusEnvironment ?? 3) >= 3
+  const topEligible = campusMatters
+    ? regularPool.filter(s => s.school.campusType === campusPref)
+    : regularPool
 
-  // Guarantee at least 3 schools in Strong Fit regardless of scores
+  let strongFitRaw = topEligible.filter(s => s.totalScore >= STRONG_THRESHOLD).slice(0, 6)
+
+  // Always show at least 3 top matches. When they come from below the
+  // threshold, label them honestly as "best available" rather than "strong".
+  let strongLabel = 'strong'
   if (strongFitRaw.length < 3) {
-    strongFitRaw = regularPool.slice(0, Math.max(3, strongFitRaw.length))
+    strongFitRaw = topEligible.slice(0, 3)
+    strongLabel = 'best'
   }
 
   const strongFitIds = new Set(strongFitRaw.map(s => s.school.id))
@@ -532,12 +549,13 @@ export function runMatching(schools, formData) {
   // Hidden gems: non-M7, non-T15 schools that score surprisingly well
   const knownIds = new Set([...M7_IDS, ...T15_IDS])
   const hiddenGems = regularPool
-    .filter(s => !knownIds.has(s.school.id) && s.totalScore >= 50)
+    .filter(s => !knownIds.has(s.school.id) && !strongFitIds.has(s.school.id) && s.totalScore >= 50)
     .slice(0, 2)
     .map(s => ({ ...s, tier: 'exploring' }))
 
   return {
     strongFit,
+    strongLabel,
     worthExploring,
     stretch,
     hiddenGems,

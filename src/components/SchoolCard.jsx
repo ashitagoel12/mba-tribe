@@ -159,7 +159,7 @@ export default function SchoolCard({ scored, formData, allScoredResults, isSelec
 
       {/* ── Quick stats ────────────────────────────────────────────────── */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 mb-5">
-        <StatTile label="Avg GMAT" value={school.classProfile.avgGMAT} />
+        <StatTile label="Avg GMAT" value={school.classProfile.avgGMAT ?? '—'} />
         <StatTile label="Placed (3 mo)" value={`${school.employment.employmentRate3Months}%`} />
         <StatTile label="Tuition / yr" value={fmt(school.costs.annualTuition)} />
         <StatTile label="Avg Salary" value={fmt(school.employment.avgStartingSalary)} />

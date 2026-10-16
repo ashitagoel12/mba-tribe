@@ -288,7 +288,7 @@ export default function BrowseSchools() {
       <div className="max-w-6xl mx-auto px-4 pt-6">
         <div className="border-l-4 border-indigo-300 bg-indigo-50 rounded-r-lg px-4 py-3">
           <p className="text-sm text-indigo-700 leading-relaxed">
-            Data verified against official sources. Always confirm details directly with each school before applying.
+            Figures come from public school data, last audited in October 2026. Confirm details directly with each school before applying.
           </p>
         </div>
       </div>

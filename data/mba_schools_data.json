@@ -12,7 +12,7 @@
         "size": 935,
         "avgWorkExperience": 4.7,
         "avgGMAT": 730,
-        "avgGRE": 163,
+        "avgGRE": 326,
         "internationalStudentPct": 37,
         "womenPercentage": 44
       },
@@ -418,7 +418,7 @@
         "size": 431,
         "avgWorkExperience": 5,
         "avgGMAT": 738,
-        "avgGRE": 165,
+        "avgGRE": 330,
         "internationalStudentPct": 40,
         "womenPercentage": 44
       },
@@ -787,7 +787,7 @@
         "size": 866,
         "avgWorkExperience": 5,
         "avgGMAT": 735,
-        "avgGRE": 163,
+        "avgGRE": 326,
         "internationalStudentPct": 31,
         "womenPercentage": 47
       },
@@ -1136,7 +1136,7 @@
         "size": 603,
         "avgWorkExperience": 5,
         "avgGMAT": 728,
-        "avgGRE": 163,
+        "avgGRE": 326,
         "internationalStudentPct": 38,
         "womenPercentage": 41
       },
@@ -1477,7 +1477,7 @@
         "size": 474,
         "avgWorkExperience": 5,
         "avgGMAT": 730,
-        "avgGRE": 162,
+        "avgGRE": 324,
         "internationalStudentPct": 35,
         "womenPercentage": 46
       },
@@ -1843,7 +1843,7 @@
         "size": 438,
         "avgWorkExperience": 5,
         "avgGMAT": 735,
-        "avgGRE": 165,
+        "avgGRE": 330,
         "internationalStudentPct": 44,
         "womenPercentage": 47
       },
@@ -2197,7 +2197,7 @@
         "size": 756,
         "avgWorkExperience": 5,
         "avgGMAT": 730,
-        "avgGRE": 163,
+        "avgGRE": 326,
         "internationalStudentPct": 43,
         "womenPercentage": 46
       },
@@ -2550,7 +2550,7 @@
         "size": 295,
         "avgWorkExperience": 5,
         "avgGMAT": 723,
-        "avgGRE": 162,
+        "avgGRE": 324,
         "internationalStudentPct": 37,
         "womenPercentage": 44
       },
@@ -2860,7 +2860,7 @@
         "size": 335,
         "avgWorkExperience": 5,
         "avgGMAT": 730,
-        "avgGRE": 163,
+        "avgGRE": 326,
         "internationalStudentPct": 47,
         "womenPercentage": 44
       },
@@ -3186,7 +3186,7 @@
         "size": 285,
         "avgWorkExperience": 5.8,
         "avgGMAT": 727,
-        "avgGRE": 163,
+        "avgGRE": 326,
         "internationalStudentPct": 37,
         "womenPercentage": 43
       },
@@ -3514,7 +3514,7 @@
         "size": 413,
         "avgWorkExperience": 5,
         "avgGMAT": 722,
-        "avgGRE": 162,
+        "avgGRE": 324,
         "internationalStudentPct": 32,
         "womenPercentage": 39
       },
@@ -3844,7 +3844,7 @@
         "size": 316,
         "avgWorkExperience": 5,
         "avgGMAT": 722,
-        "avgGRE": 162,
+        "avgGRE": 324,
         "internationalStudentPct": 36,
         "womenPercentage": 41
       },
@@ -4162,7 +4162,7 @@
         "size": 470,
         "avgWorkExperience": 5,
         "avgGMAT": 718,
-        "avgGRE": 161,
+        "avgGRE": 322,
         "internationalStudentPct": 38,
         "womenPercentage": 45
       },
@@ -4486,7 +4486,7 @@
         "size": 280,
         "avgWorkExperience": 5.3,
         "avgGMAT": 710,
-        "avgGRE": 161,
+        "avgGRE": 322,
         "internationalStudentPct": 42,
         "womenPercentage": 37
       },
@@ -4830,7 +4830,7 @@
         "size": 336,
         "avgWorkExperience": 5.1,
         "avgGMAT": 737,
-        "avgGRE": 163,
+        "avgGRE": 326,
         "internationalStudentPct": 43,
         "womenPercentage": 45
       },
@@ -5158,7 +5158,7 @@
         "size": 360,
         "avgWorkExperience": 5.3,
         "avgGMAT": 716,
-        "avgGRE": 161,
+        "avgGRE": 322,
         "internationalStudentPct": 35,
         "womenPercentage": 46
       },
@@ -5461,7 +5461,7 @@
         "size": 209,
         "avgWorkExperience": 5.3,
         "avgGMAT": 710,
-        "avgGRE": 160,
+        "avgGRE": 320,
         "internationalStudentPct": 38,
         "womenPercentage": 31
       },
@@ -6708,7 +6708,7 @@
         "size": 128,
         "avgWorkExperience": 6,
         "avgGMAT": 723,
-        "avgGRE": 160,
+        "avgGRE": 320,
         "internationalStudentPct": 40,
         "womenPercentage": 34
       },
@@ -7938,7 +7938,7 @@
         "size": 137,
         "avgWorkExperience": 5,
         "avgGMAT": 693,
-        "avgGRE": 160,
+        "avgGRE": 320,
         "internationalStudentPct": 34,
         "womenPercentage": 36
       },
@@ -12178,7 +12178,7 @@
         "size": 75,
         "avgWorkExperience": 4.8,
         "avgGMAT": 682,
-        "avgGRE": 156,
+        "avgGRE": 312,
         "internationalStudentPct": null
       },
       "costs": {
@@ -12241,7 +12241,7 @@
         "size": 74,
         "avgWorkExperience": 3.8,
         "avgGMAT": 656,
-        "avgGRE": 157,
+        "avgGRE": 314,
         "internationalStudentPct": null
       },
       "costs": {
@@ -12304,7 +12304,7 @@
         "size": 93,
         "avgWorkExperience": 4.4,
         "avgGMAT": 701,
-        "avgGRE": 164,
+        "avgGRE": 328,
         "internationalStudentPct": 44
       },
       "costs": {
@@ -12424,7 +12424,7 @@
         "size": 50,
         "avgWorkExperience": 3.8,
         "avgGMAT": 631,
-        "avgGRE": 149,
+        "avgGRE": 298,
         "internationalStudentPct": 40
       },
       "costs": {
@@ -12595,7 +12595,7 @@
         "size": 25,
         "avgWorkExperience": 6.2,
         "avgGMAT": 643,
-        "avgGRE": 147,
+        "avgGRE": 294,
         "internationalStudentPct": null
       },
       "costs": {
@@ -12715,7 +12715,7 @@
         "size": 53,
         "avgWorkExperience": 3.7,
         "avgGMAT": 587,
-        "avgGRE": 153,
+        "avgGRE": 306,
         "internationalStudentPct": null
       },
       "costs": {
@@ -12778,7 +12778,7 @@
         "size": 55,
         "avgWorkExperience": 2.8,
         "avgGMAT": 633,
-        "avgGRE": 154,
+        "avgGRE": 308,
         "internationalStudentPct": null
       },
       "costs": {
@@ -12835,7 +12835,7 @@
         "size": 84,
         "avgWorkExperience": 2.8,
         "avgGMAT": 608,
-        "avgGRE": 152,
+        "avgGRE": 304,
         "internationalStudentPct": null
       },
       "costs": {
@@ -13006,7 +13006,7 @@
         "size": 48,
         "avgWorkExperience": 4.5,
         "avgGMAT": 656,
-        "avgGRE": 151,
+        "avgGRE": 302,
         "internationalStudentPct": null
       },
       "costs": {
@@ -13120,7 +13120,7 @@
         "size": 68,
         "avgWorkExperience": 9,
         "avgGMAT": 538,
-        "avgGRE": 154,
+        "avgGRE": 308,
         "internationalStudentPct": null
       },
       "costs": {
@@ -13240,7 +13240,7 @@
         "size": 95,
         "avgWorkExperience": 5.3,
         "avgGMAT": 664,
-        "avgGRE": 156,
+        "avgGRE": 312,
         "internationalStudentPct": null
       },
       "costs": {
@@ -13423,7 +13423,7 @@
         "size": 93,
         "avgWorkExperience": 2.2,
         "avgGMAT": 617,
-        "avgGRE": 154,
+        "avgGRE": 308,
         "internationalStudentPct": null
       },
       "costs": {
@@ -13480,7 +13480,7 @@
         "size": 131,
         "avgWorkExperience": 4.3,
         "avgGMAT": 597,
-        "avgGRE": 154,
+        "avgGRE": 308,
         "internationalStudentPct": null
       },
       "costs": {
@@ -14062,7 +14062,7 @@
         "size": 72,
         "avgWorkExperience": 5.5,
         "avgGMAT": 620,
-        "avgGRE": 157,
+        "avgGRE": 314,
         "internationalStudentPct": 37
       },
       "costs": {
@@ -14124,7 +14124,7 @@
       "classProfile": {
         "size": 45,
         "avgWorkExperience": 5,
-        "avgGMAT": 684,
+        "avgGMAT": null,
         "avgGRE": null,
         "internationalStudentPct": 15
       },
@@ -14138,13 +14138,7 @@
           "Human Resources",
           "General Management"
         ],
-        "top5Companies": [
-          "Industry Advisory Board partners",
-          "Regional corporations",
-          "Fortune 500 companies",
-          "Consulting firms",
-          "Technology companies"
-        ],
+        "top5Companies": [],
         "employmentRate3Months": 94,
         "avgStartingSalary": 101000,
         "medianSigningBonus": null
@@ -14188,7 +14182,7 @@
         "size": 100,
         "avgWorkExperience": 4,
         "avgGMAT": 620,
-        "avgGRE": 153,
+        "avgGRE": 306,
         "internationalStudentPct": 45
       },
       "costs": {
@@ -14201,13 +14195,7 @@
           "Finance",
           "Consulting"
         ],
-        "top5Companies": [
-          "Fortune 500 firms",
-          "NYC financial institutions",
-          "Technology companies",
-          "Consulting firms",
-          "Manufacturing companies"
-        ],
+        "top5Companies": [],
         "employmentRate3Months": 89,
         "avgStartingSalary": 116000,
         "medianSigningBonus": null
@@ -14251,7 +14239,7 @@
         "size": 66,
         "avgWorkExperience": 3,
         "avgGMAT": 598,
-        "avgGRE": 151,
+        "avgGRE": 302,
         "internationalStudentPct": 12
       },
       "costs": {
@@ -14268,8 +14256,7 @@
           "Deloitte",
           "EY",
           "PwC",
-          "KPMG",
-          "Regional corporations"
+          "KPMG"
         ],
         "employmentRate3Months": 97,
         "avgStartingSalary": 68000,
@@ -14377,7 +14364,7 @@
         "size": 200,
         "avgWorkExperience": 1.5,
         "avgGMAT": 603,
-        "avgGRE": 152,
+        "avgGRE": 304,
         "internationalStudentPct": 40
       },
       "costs": {
@@ -14440,7 +14427,7 @@
         "size": 50,
         "avgWorkExperience": 2,
         "avgGMAT": 519,
-        "avgGRE": 149,
+        "avgGRE": 298,
         "internationalStudentPct": 10
       },
       "costs": {
@@ -14503,7 +14490,7 @@
         "size": 66,
         "avgWorkExperience": 3.6,
         "avgGMAT": 604,
-        "avgGRE": 155,
+        "avgGRE": 310,
         "internationalStudentPct": 20
       },
       "costs": {
@@ -14566,7 +14553,7 @@
         "size": 60,
         "avgWorkExperience": 4.4,
         "avgGMAT": 610,
-        "avgGRE": 154,
+        "avgGRE": 308,
         "internationalStudentPct": 25
       },
       "costs": {
@@ -14629,7 +14616,7 @@
         "size": 45,
         "avgWorkExperience": 2.5,
         "avgGMAT": 550,
-        "avgGRE": 152,
+        "avgGRE": 304,
         "internationalStudentPct": 18
       },
       "costs": {
@@ -14643,11 +14630,7 @@
           "Operations"
         ],
         "top5Companies": [
-          "FedEx",
-          "Regional corporations",
-          "Consulting firms",
-          "Manufacturing companies",
-          "Financial services"
+          "FedEx"
         ],
         "employmentRate3Months": 80,
         "avgStartingSalary": 65000,
@@ -14692,7 +14675,7 @@
         "size": 72,
         "avgWorkExperience": 5,
         "avgGMAT": 639,
-        "avgGRE": 158,
+        "avgGRE": 316,
         "internationalStudentPct": 30
       },
       "costs": {
@@ -14755,7 +14738,7 @@
         "size": 85,
         "avgWorkExperience": 3,
         "avgGMAT": 590,
-        "avgGRE": 153,
+        "avgGRE": 306,
         "internationalStudentPct": 45
       },
       "costs": {
@@ -14818,7 +14801,7 @@
         "size": 40,
         "avgWorkExperience": 4,
         "avgGMAT": 540,
-        "avgGRE": 150,
+        "avgGRE": 300,
         "internationalStudentPct": 20
       },
       "costs": {
@@ -14881,7 +14864,7 @@
         "size": 55,
         "avgWorkExperience": 4.5,
         "avgGMAT": 560,
-        "avgGRE": 152,
+        "avgGRE": 304,
         "internationalStudentPct": 15
       },
       "costs": {
@@ -14944,7 +14927,7 @@
         "size": 50,
         "avgWorkExperience": 5,
         "avgGMAT": 530,
-        "avgGRE": 150,
+        "avgGRE": 300,
         "internationalStudentPct": 25
       },
       "costs": {
@@ -15007,7 +14990,7 @@
         "size": 95,
         "avgWorkExperience": 2.8,
         "avgGMAT": 563,
-        "avgGRE": 152,
+        "avgGRE": 304,
         "internationalStudentPct": 35
       },
       "costs": {
@@ -15070,7 +15053,7 @@
         "size": 99,
         "avgWorkExperience": 4.8,
         "avgGMAT": 550,
-        "avgGRE": 153,
+        "avgGRE": 306,
         "internationalStudentPct": 22
       },
       "costs": {
@@ -15133,7 +15116,7 @@
         "size": 65,
         "avgWorkExperience": 5.5,
         "avgGMAT": 580,
-        "avgGRE": 155,
+        "avgGRE": 310,
         "internationalStudentPct": 28
       },
       "costs": {
@@ -15187,6 +15170,8 @@
   "metadata": {
     "totalSchools": 100,
     "lastUpdated": "2025-07-01",
-    "dataVersion": "2.0"
+    "dataVersion": "2.0",
+    "greNote": "avgGRE is the total score (260-340). 48 values were stored as per-section averages and were converted (x2) on 2026-10-16.",
+    "auditNote": "Audited 2026-10-16 (scripts/auditData.py). NC A&T avgGMAT removed (school waives the GMAT and publishes no average). Placeholder employer names removed for 4 schools."
   }
 }

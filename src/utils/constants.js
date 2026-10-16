@@ -130,7 +130,7 @@ export const GOAL_TO_INDUSTRY_KW = {
   finance:              ['Finance', 'Investment Banking', 'Private Equity'],
   tech:                 ['Technology', 'Tech'],
   entrepreneurship:     ['Entrepreneurship', 'Startup'],
-  'general-management': ['General Management', 'Management'],
+  'general-management': ['General Management', 'Leadership'],
   'social-impact':      ['Non-profit', 'Social Impact', 'Social Enterprise'],
   healthcare:           ['Healthcare', 'Health'],
   'career-switch':      [],   // algorithm uses careerSwitchTarget instead

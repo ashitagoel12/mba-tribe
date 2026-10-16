@@ -8,7 +8,7 @@
  * ---------------------------------------------------------------------------
  */
 
-import { POST_MBA_GOALS, CAMPUS_ENV_OPTIONS } from './constants.js'
+import { POST_MBA_GOALS, CAMPUS_ENV_OPTIONS, CAREER_SWITCH_INDUSTRIES } from './constants.js'
 
 // Human-readable labels for each priority key
 const PRIORITY_LABELS = {
@@ -37,7 +37,12 @@ export function generateUserInsights(formData) {
           budgetSensitivity, scholarshipImportance, examScore, examType } = formData
 
   const isInternational = currentRegion !== 'north-america'
-  const goalLabel  = POST_MBA_GOALS.find(g => g.value === postMBAGoal)?.label ?? 'your target role'
+  const switchLabel = postMBAGoal === 'career-switch'
+    ? CAREER_SWITCH_INDUSTRIES.find(g => g.value === formData.careerSwitchTarget)?.label
+    : null
+  const goalLabel  = switchLabel && formData.careerSwitchTarget !== 'other'
+    ? `a career switch ${switchLabel.toLowerCase()}`
+    : POST_MBA_GOALS.find(g => g.value === postMBAGoal)?.label ?? 'your target role'
   const envLabel   = CAMPUS_ENV_OPTIONS.find(o => o.value === campusEnv)?.label ?? null
 
   // Sort priorities by rating
@@ -67,7 +72,7 @@ export function generateUserInsights(formData) {
   }
 
   // Add goal context
-  summary += `, with a clear target of ${goalLabel}`
+  summary += postMBAGoal === 'career-switch' ? `, aiming for ${goalLabel}` : `, with a clear target of ${goalLabel}`
   if (campusEnv && campusEnv !== 'no-preference' && envLabel) {
     summary += `. You prefer a ${campusEnv === 'urban' ? 'big-city campus' : 'quieter campus-town setting'}`
   }
@@ -80,7 +85,7 @@ export function generateUserInsights(formData) {
       : `${flexLabels.slice(0, -1).join(', ')} and ${flexLabels[flexLabels.length - 1]}`
     summary += ` You've indicated you're flexible on ${flexPhrase}, which gives us more room to surface strong-fit programs you might not have considered.`
   } else {
-    summary += ` You've rated all factors fairly high — we've weighted them proportionally.`
+    summary += ` You didn't mark any factor as low priority, so every factor counts in your score.`
   }
 
   // ── Profile note (optional contextual observation) ─────────────────────
