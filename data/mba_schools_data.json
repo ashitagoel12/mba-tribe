@@ -17605,7 +17605,7 @@
         "Cohort-based",
         "#1 job placement nationally"
       ],
-      "programUrl": "https://business.cofc.edu/graduate-programs/mba.php",
+      "programUrl": "https://business.cofc.edu/",
       "campusType": "urban",
       "stemOpt": false,
       "recruiterAccess": {
@@ -17622,16 +17622,16 @@
         "date": "2026-10-16",
         "verified": [],
         "links": {
-          "class_size": "https://business.cofc.edu/graduate-programs/mba.php",
-          "avg_work_experience": "https://business.cofc.edu/graduate-programs/mba.php",
-          "avg_gmat": "https://business.cofc.edu/graduate-programs/mba.php",
-          "avg_gre_total": "https://business.cofc.edu/graduate-programs/mba.php",
-          "international_pct": "https://business.cofc.edu/graduate-programs/mba.php",
-          "women_pct": "https://business.cofc.edu/graduate-programs/mba.php",
-          "annual_tuition": "https://business.cofc.edu/graduate-programs/mba.php",
-          "employed_3_months_pct": "https://business.cofc.edu/graduate-programs/mba.php",
-          "starting_salary": "https://business.cofc.edu/graduate-programs/mba.php",
-          "signing_bonus": "https://business.cofc.edu/graduate-programs/mba.php"
+          "class_size": "https://business.cofc.edu/",
+          "avg_work_experience": "https://business.cofc.edu/",
+          "avg_gmat": "https://business.cofc.edu/",
+          "avg_gre_total": "https://business.cofc.edu/",
+          "international_pct": "https://business.cofc.edu/",
+          "women_pct": "https://business.cofc.edu/",
+          "annual_tuition": "https://business.cofc.edu/",
+          "employed_3_months_pct": "https://business.cofc.edu/",
+          "starting_salary": "https://business.cofc.edu/",
+          "signing_bonus": "https://business.cofc.edu/"
         }
       }
     },
