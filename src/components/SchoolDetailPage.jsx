@@ -1,3 +1,4 @@
+import Fact from './Fact.jsx'
 import React from 'react'
 import { useParams, Link } from 'react-router-dom'
 import {
@@ -463,12 +464,12 @@ export default function SchoolDetailPage() {
                 Class Profile
               </h3>
               <ul className="space-y-1.5 text-sm text-slate-700">
-                <li><span className="text-slate-400">Class size:</span> {school.classProfile.size}</li>
-                <li><span className="text-slate-400">Avg work exp:</span> {school.classProfile.avgWorkExperience} yrs</li>
-                <li><span className="text-slate-400">Avg GMAT:</span> {school.classProfile.avgGMAT ?? 'Not published'}</li>
-                <li><span className="text-slate-400">International:</span> {school.classProfile.internationalStudentPct}%</li>
+                <li><span className="text-slate-400">Class size:</span> <Fact school={school} field="class_size">{school.classProfile.size}</Fact></li>
+                <li><span className="text-slate-400">Avg work exp:</span> <Fact school={school} field="avg_work_experience">{school.classProfile.avgWorkExperience} yrs</Fact></li>
+                <li><span className="text-slate-400">Avg GMAT:</span> <Fact school={school} field="avg_gmat">{school.classProfile.avgGMAT ?? 'Not published'}{school.classProfile.avgGMATFocus ? ` (Focus ${school.classProfile.avgGMATFocus})` : ''}</Fact></li>
+                <li><span className="text-slate-400">International:</span> <Fact school={school} field="international_pct">{school.classProfile.internationalStudentPct}%</Fact></li>
                 {school.classProfile.womenPercentage != null && (
-                  <li><span className="text-slate-400">Women:</span> {school.classProfile.womenPercentage}%</li>
+                  <li><span className="text-slate-400">Women:</span> <Fact school={school} field="women_pct">{school.classProfile.womenPercentage}%</Fact></li>
                 )}
               </ul>
             </div>
@@ -477,8 +478,8 @@ export default function SchoolDetailPage() {
                 Costs
               </h3>
               <ul className="space-y-1.5 text-sm text-slate-700">
-                <li><span className="text-slate-400">Annual tuition:</span> {fmt(school.costs.annualTuition)}</li>
-                <li><span className="text-slate-400">Total program:</span> {fmt(school.costs.totalProgramCost)}</li>
+                <li><span className="text-slate-400">Annual tuition:</span> <Fact school={school} field="annual_tuition">{fmt(school.costs.annualTuition)}</Fact></li>
+                <li><span className="text-slate-400">Total program:</span> <Fact school={school} field="annual_tuition">{fmt(school.costs.totalProgramCost)}</Fact></li>
                 {school.financialAid?.totalCostOfAttendance && (
                   <li><span className="text-slate-400">Cost of attendance:</span> {school.financialAid.totalCostOfAttendance}/yr</li>
                 )}
@@ -753,9 +754,9 @@ export default function SchoolDetailPage() {
                 Quick Stats
               </h3>
               <ul className="space-y-1.5 text-sm text-slate-700">
-                <li><span className="text-slate-400">Employment (3 mo):</span> {school.employment.employmentRate3Months}%</li>
-                <li><span className="text-slate-400">Avg starting salary:</span> {fmt(school.employment.avgStartingSalary)}</li>
-                <li><span className="text-slate-400">Median signing bonus:</span> {fmt(school.employment.medianSigningBonus)}</li>
+                <li><span className="text-slate-400">Accepted offers (3 mo):</span> <Fact school={school} field="employed_3_months_pct">{school.employment.employmentRate3Months}%</Fact></li>
+                <li><span className="text-slate-400">Base salary:</span> <Fact school={school} field="starting_salary">{fmt(school.employment.avgStartingSalary)}</Fact></li>
+                <li><span className="text-slate-400">Median signing bonus:</span> <Fact school={school} field="signing_bonus">{fmt(school.employment.medianSigningBonus)}</Fact></li>
               </ul>
               {school.career?.employmentReportUrl && (
                 <a href={school.career.employmentReportUrl} target="_blank" rel="noopener noreferrer"

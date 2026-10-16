@@ -1,3 +1,4 @@
+import Fact from './Fact.jsx'
 import React, { useEffect, useState } from 'react'
 import { ExternalLink, AlertCircle, CheckCircle2 } from 'lucide-react'
 import { generateFitBullets, generateWatchOut } from '../utils/bulletGenerator.js'
@@ -139,9 +140,9 @@ export default function SchoolCardCompact({ scored, formData, allScoredResults, 
       {/* ── Mini stats ─────────────────────────────────────────────────── */}
       <div className="grid grid-cols-3 gap-2">
         {[
-          { label: 'Avg GMAT', value: school.classProfile.avgGMAT ?? '—' },
-          { label: 'Tuition / yr', value: fmt(school.costs.annualTuition) },
-          { label: 'Placed', value: `${school.employment.employmentRate3Months}%` },
+          { label: 'Avg GMAT', value: <Fact school={school} field="avg_gmat">{school.classProfile.avgGMAT ?? '—'}</Fact> },
+          { label: 'Tuition / yr', value: <Fact school={school} field="annual_tuition">{fmt(school.costs.annualTuition)}</Fact> },
+          { label: 'Placed', value: <Fact school={school} field="employed_3_months_pct">{`${school.employment.employmentRate3Months}%`}</Fact> },
         ].map(({ label, value }) => (
           <div key={label} className="bg-slate-50 rounded-lg p-2 text-center">
             <div className="font-mono font-semibold text-slate-700 text-xs leading-none mb-0.5">{value}</div>

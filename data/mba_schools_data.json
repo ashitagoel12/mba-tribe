@@ -457,7 +457,26 @@
           "verifiedOn": "2026-10-16"
         }
       },
-      "lastVerified": "2026-10-16"
+      "lastVerified": "2026-10-16",
+      "refresh": {
+        "date": "2026-10-16",
+        "verified": [
+          "class_size",
+          "avg_work_experience",
+          "avg_gmat",
+          "avg_gre_total",
+          "annual_tuition",
+          "deadline_round1",
+          "deadline_round2"
+        ],
+        "links": {
+          "international_pct": "https://www.hbs.edu/mba/admissions/class-profile",
+          "women_pct": "https://www.hbs.edu/mba/admissions/class-profile",
+          "employed_3_months_pct": "https://www.hbs.edu/mba/blog/class-of-2025-employment-report",
+          "starting_salary": "https://www.hbs.edu/recruiting/employment-data/Pages/default.aspx",
+          "signing_bonus": "https://www.hbs.edu/recruiting/employment-data/Pages/default.aspx"
+        }
+      }
     },
     {
       "id": "stanford-gsb",
@@ -871,7 +890,24 @@
           "verifiedOn": "2026-10-16"
         }
       },
-      "lastVerified": "2026-10-16"
+      "lastVerified": "2026-10-16",
+      "refresh": {
+        "date": "2026-10-16",
+        "verified": [
+          "class_size",
+          "avg_work_experience",
+          "international_pct",
+          "women_pct",
+          "annual_tuition",
+          "employed_3_months_pct"
+        ],
+        "links": {
+          "avg_gmat": "https://www.gsb.stanford.edu/programs/mba",
+          "avg_gre_total": "https://www.gsb.stanford.edu/programs/mba",
+          "starting_salary": "https://www.gsb.stanford.edu/programs/mba",
+          "signing_bonus": "https://www.gsb.stanford.edu/programs/mba"
+        }
+      }
     },
     {
       "id": "wharton-penn",
@@ -1286,7 +1322,27 @@
           "verifiedOn": "2026-10-16"
         }
       },
-      "lastVerified": "2026-10-16"
+      "lastVerified": "2026-10-16",
+      "refresh": {
+        "date": "2026-10-16",
+        "verified": [
+          "avg_work_experience",
+          "international_pct",
+          "women_pct",
+          "annual_tuition",
+          "starting_salary",
+          "signing_bonus",
+          "deadline_round1",
+          "deadline_round2",
+          "deadline_round3"
+        ],
+        "links": {
+          "class_size": "https://mba.wharton.upenn.edu/mba-or-emba/",
+          "avg_gmat": "https://mba.wharton.upenn.edu/mba-or-emba/",
+          "avg_gre_total": "https://mba.wharton.upenn.edu/class-profile/",
+          "employed_3_months_pct": "https://statistics.mbacareers.wharton.upenn.edu/wp-content/uploads/2025/12/2025-Career-Report.pdf"
+        }
+      }
     },
     {
       "id": "booth-chicago",
@@ -1693,7 +1749,27 @@
           "verifiedOn": "2026-10-16"
         }
       },
-      "lastVerified": "2026-10-16"
+      "lastVerified": "2026-10-16",
+      "refresh": {
+        "date": "2026-10-16",
+        "verified": [
+          "class_size",
+          "avg_work_experience",
+          "avg_gmat",
+          "international_pct",
+          "annual_tuition",
+          "employed_3_months_pct",
+          "deadline_round1",
+          "deadline_round2",
+          "deadline_round3"
+        ],
+        "links": {
+          "avg_gre_total": "https://www.chicagobooth.edu/mba/full-time/admissions/class-profile",
+          "women_pct": "https://www.chicagobooth.edu/mba/full-time/admissions/class-profile",
+          "starting_salary": "https://www.chicagobooth.edu/why-booth/stories/mba-employment-report-2025",
+          "signing_bonus": "https://www.chicagobooth.edu/why-booth/stories/mba-employment-report-2025"
+        }
+      }
     },
     {
       "id": "kellogg-northwestern",
@@ -2105,7 +2181,27 @@
           "verifiedOn": "2026-10-16"
         }
       },
-      "lastVerified": "2026-10-16"
+      "lastVerified": "2026-10-16",
+      "refresh": {
+        "date": "2026-10-16",
+        "verified": [
+          "class_size",
+          "avg_gmat",
+          "annual_tuition",
+          "deadline_round1",
+          "deadline_round2",
+          "deadline_round3"
+        ],
+        "links": {
+          "avg_work_experience": "https://www.kellogg.northwestern.edu/programs/full-time-mba.aspx",
+          "avg_gre_total": "https://www.kellogg.northwestern.edu/programs/full-time-mba.aspx",
+          "international_pct": "https://www.kellogg.northwestern.edu/programs/full-time-mba.aspx",
+          "women_pct": "https://www.kellogg.northwestern.edu/programs/full-time-mba.aspx",
+          "employed_3_months_pct": "https://www.kellogg.northwestern.edu/programs/full-time-mba.aspx",
+          "starting_salary": "https://www.kellogg.northwestern.edu/news/blog/2025/12/17/class-2025-career-outcomes-top-employers/",
+          "signing_bonus": "https://www.kellogg.northwestern.edu/programs/full-time-mba.aspx"
+        }
+      }
     },
     {
       "id": "sloan-mit",
@@ -2476,7 +2572,26 @@
           "verifiedOn": "2026-10-16"
         }
       },
-      "lastVerified": "2026-10-16"
+      "lastVerified": "2026-10-16",
+      "refresh": {
+        "date": "2026-10-16",
+        "verified": [
+          "deadline_round1",
+          "deadline_round2"
+        ],
+        "links": {
+          "class_size": "https://mitsloan.mit.edu/mba/admissions/frequently-asked-questions",
+          "avg_work_experience": "https://mitsloan.mit.edu/programs/mit-sloan-fellows-mba-program/frequently-asked-questions",
+          "avg_gmat": "https://mitsloan.mit.edu/mba",
+          "avg_gre_total": "https://mitsloan.mit.edu/mba",
+          "international_pct": "https://mitsloan.mit.edu/mba",
+          "women_pct": "https://mitsloan.mit.edu/mba",
+          "annual_tuition": "https://mitsloan.mit.edu/mba/admissions/financing-your-education",
+          "employed_3_months_pct": "https://mitsloan.mit.edu/sites/default/files/2025-12/2025-2026-MBA-Employment-Report.pdf",
+          "starting_salary": "https://mitsloan.mit.edu/sites/default/files/2025-12/2025-2026-MBA-Employment-Report.pdf",
+          "signing_bonus": "https://mitsloan.mit.edu/sites/default/files/2025-12/2025-2026-MBA-Employment-Report.pdf"
+        }
+      }
     },
     {
       "id": "columbia-cbs",
@@ -2829,7 +2944,23 @@
           "url": "https://business.columbia.edu/admissions/mba",
           "icon": "contact"
         }
-      ]
+      ],
+      "refresh": {
+        "date": "2026-10-16",
+        "verified": [],
+        "links": {
+          "class_size": "https://business.columbia.edu/mba",
+          "avg_work_experience": "https://business.columbia.edu/mba",
+          "avg_gmat": "https://business.columbia.edu/mba",
+          "avg_gre_total": "https://business.columbia.edu/mba",
+          "international_pct": "https://business.columbia.edu/mba",
+          "women_pct": "https://business.columbia.edu/mba",
+          "annual_tuition": "https://business.columbia.edu/financial-aid/costs/full-time",
+          "employed_3_months_pct": "https://business.columbia.edu/annual-report",
+          "starting_salary": "https://business.columbia.edu/recruiters/employment-report",
+          "signing_bonus": "https://business.columbia.edu/recruiters/employment-report"
+        }
+      }
     },
     {
       "id": "tuck-dartmouth",
@@ -8227,7 +8358,24 @@
           "verifiedOn": "2026-10-16"
         }
       },
-      "lastVerified": "2026-10-16"
+      "lastVerified": "2026-10-16",
+      "refresh": {
+        "date": "2026-10-16",
+        "verified": [
+          "avg_work_experience"
+        ],
+        "links": {
+          "class_size": "https://foster.uw.edu/academics/degree-programs/full-time-mba/class-profile/",
+          "avg_gmat": "https://foster.uw.edu/academics/degree-programs/full-time-mba/class-profile/",
+          "avg_gre_total": "https://foster.uw.edu/academics/degree-programs/full-time-mba/class-profile/",
+          "international_pct": "https://foster.uw.edu/academics/degree-programs/full-time-mba/class-profile/",
+          "women_pct": "https://foster.uw.edu/academics/degree-programs/full-time-mba/class-profile/",
+          "annual_tuition": "https://foster.uw.edu/academics/degree-programs/full-time-mba/",
+          "employed_3_months_pct": "https://foster.uw.edu/academics/degree-programs/full-time-mba/",
+          "starting_salary": "https://foster.uw.edu/academics/degree-programs/full-time-mba/career-management/",
+          "signing_bonus": "https://foster.uw.edu/academics/degree-programs/full-time-mba/career-management/"
+        }
+      }
     },
     {
       "id": "jones-rice",
@@ -9486,7 +9634,24 @@
           "verifiedOn": "2026-10-16"
         }
       },
-      "lastVerified": "2026-10-16"
+      "lastVerified": "2026-10-16",
+      "refresh": {
+        "date": "2026-10-16",
+        "verified": [
+          "employed_3_months_pct",
+          "starting_salary"
+        ],
+        "links": {
+          "class_size": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/admissions/class-profile.html",
+          "avg_work_experience": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/admissions/class-profile.html",
+          "avg_gmat": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/admissions/class-profile.html",
+          "avg_gre_total": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/admissions/class-profile.html",
+          "international_pct": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/admissions/class-profile.html",
+          "women_pct": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/admissions/class-profile.html",
+          "annual_tuition": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/tuition-and-financing/index.html",
+          "signing_bonus": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/"
+        }
+      }
     },
     {
       "id": "notre-dame-mendoza",
@@ -14487,6 +14652,22 @@
         "social-impact": "broad",
         "entrepreneurship": "broad",
         "general-management": "broad"
+      },
+      "refresh": {
+        "date": "2026-10-16",
+        "verified": [],
+        "links": {
+          "class_size": "https://www.ncat.edu/cob/departments/mba/index.php",
+          "avg_work_experience": "https://www.ncat.edu/cob/departments/mba/index.php",
+          "avg_gmat": "https://www.ncat.edu/cob/departments/mba/index.php",
+          "avg_gre_total": "https://www.ncat.edu/cob/departments/mba/index.php",
+          "international_pct": "https://www.ncat.edu/cob/departments/mba/index.php",
+          "women_pct": "https://www.ncat.edu/cob/departments/mba/index.php",
+          "annual_tuition": "https://www.ncat.edu/cob/departments/mba/index.php",
+          "employed_3_months_pct": "https://www.ncat.edu/cob/departments/mba/index.php",
+          "starting_salary": "https://www.ncat.edu/cob/departments/mba/index.php",
+          "signing_bonus": "https://www.ncat.edu/cob/departments/mba/index.php"
+        }
       }
     },
     {

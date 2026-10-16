@@ -1,3 +1,4 @@
+import Fact from './Fact.jsx'
 import React from 'react'
 import { ArrowLeft, ExternalLink, BookOpen } from 'lucide-react'
 
@@ -60,39 +61,39 @@ const ROWS = [
   },
   {
     label: 'Annual tuition',
-    render: s => fmt(s.costs.annualTuition),
+    render: s => <Fact school={s} field="annual_tuition">{fmt(s.costs.annualTuition)}</Fact>,
   },
   {
     label: 'Class size',
-    render: s => s.classProfile.size,
+    render: s => <Fact school={s} field="class_size">{s.classProfile.size}</Fact>,
   },
   {
     label: 'Avg GMAT',
-    render: s => s.classProfile.avgGMAT ?? '—',
+    render: s => <Fact school={s} field="avg_gmat">{s.classProfile.avgGMAT ?? '—'}</Fact>,
   },
   {
     label: 'Avg GRE',
-    render: s => s.classProfile.avgGRE ?? '—',
+    render: s => <Fact school={s} field="avg_gre_total">{s.classProfile.avgGRE ?? '—'}</Fact>,
   },
   {
     label: 'Avg work exp.',
-    render: s => `${s.classProfile.avgWorkExperience} yrs`,
+    render: s => <Fact school={s} field="avg_work_experience">{`${s.classProfile.avgWorkExperience} yrs`}</Fact>,
   },
   {
     label: 'Intl students',
-    render: s => `${s.classProfile.internationalStudentPct}%`,
+    render: s => <Fact school={s} field="international_pct">{`${s.classProfile.internationalStudentPct}%`}</Fact>,
   },
   {
     label: 'Placed (3 mo)',
-    render: s => `${s.employment.employmentRate3Months}%`,
+    render: s => <Fact school={s} field="employed_3_months_pct">{`${s.employment.employmentRate3Months}%`}</Fact>,
   },
   {
     label: 'Avg salary',
-    render: s => fmt(s.employment.avgStartingSalary),
+    render: s => <Fact school={s} field="starting_salary">{fmt(s.employment.avgStartingSalary)}</Fact>,
   },
   {
     label: 'Signing bonus',
-    render: s => fmt(s.employment.medianSigningBonus),
+    render: s => <Fact school={s} field="signing_bonus">{fmt(s.employment.medianSigningBonus)}</Fact>,
   },
   {
     label: 'Top industries',

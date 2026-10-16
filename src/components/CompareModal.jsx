@@ -8,6 +8,8 @@
  */
 
 import React, { useEffect } from 'react'
+import Fact from './Fact.jsx'
+import { isVerified } from '../utils/fieldStatus.js'
 import { X, CheckCircle2, AlertCircle } from 'lucide-react'
 import { generateFitBullets, generateWatchOut } from '../utils/bulletGenerator.js'
 
@@ -44,30 +46,30 @@ const ROWS = [
     label: 'Avg GMAT',
     better: null,       // higher GMAT avg = harder to get in, not "better" for the user
     getValue: () => null,
-    render: s => s.school.classProfile?.avgGMAT ?? '—',
+    render: s => <Fact school={s.school} field="avg_gmat">{s.school.classProfile?.avgGMAT ?? '—'}</Fact>,
   },
   {
     key: 'tuition',
     label: 'Annual Tuition',
     better: 'lower',
-    getValue: s => s.school.costs?.annualTuition ?? null,
-    render: s => fmt(s.school.costs?.annualTuition),
+    getValue: s => isVerified(s.school, 'annual_tuition') ? s.school.costs?.annualTuition ?? null : null,
+    render: s => <Fact school={s.school} field="annual_tuition">{fmt(s.school.costs?.annualTuition)}</Fact>,
   },
   {
     key: 'salary',
-    label: 'Avg Starting Salary',
+    label: 'Base Salary',
     better: 'higher',
-    getValue: s => s.school.employment?.avgStartingSalary ?? null,
-    render: s => fmt(s.school.employment?.avgStartingSalary),
+    getValue: s => isVerified(s.school, 'starting_salary') ? s.school.employment?.avgStartingSalary ?? null : null,
+    render: s => <Fact school={s.school} field="starting_salary">{fmt(s.school.employment?.avgStartingSalary)}</Fact>,
   },
   {
     key: 'empRate',
     label: 'Employment Rate',
     better: 'higher',
-    getValue: s => s.school.employment?.employmentRate3Months ?? null,
+    getValue: s => isVerified(s.school, 'employed_3_months_pct') ? s.school.employment?.employmentRate3Months ?? null : null,
     render: s => {
       const r = s.school.employment?.employmentRate3Months
-      return r != null ? `${r}% at 3 months` : '—'
+      return <Fact school={s.school} field="employed_3_months_pct">{r != null ? `${r}% at 3 months` : '—'}</Fact>
     },
   },
   {
@@ -75,7 +77,7 @@ const ROWS = [
     label: 'Class Size',
     better: null,
     getValue: () => null,
-    render: s => s.school.classProfile?.size ?? '—',
+    render: s => <Fact school={s.school} field="class_size">{s.school.classProfile?.size ?? '—'}</Fact>,
   },
   {
     key: 'workExp',
@@ -84,7 +86,7 @@ const ROWS = [
     getValue: () => null,
     render: s => {
       const v = s.school.classProfile?.avgWorkExperience
-      return v != null ? `${v} years` : '—'
+      return <Fact school={s.school} field="avg_work_experience">{v != null ? `${v} years` : '—'}</Fact>
     },
   },
   {
@@ -94,7 +96,7 @@ const ROWS = [
     getValue: () => null,
     render: s => {
       const v = s.school.classProfile?.internationalStudentPct
-      return v != null ? `${v}%` : '—'
+      return <Fact school={s.school} field="international_pct">{v != null ? `${v}%` : '—'}</Fact>
     },
   },
   {
