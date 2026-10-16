@@ -55,7 +55,7 @@ function kwMatchAny(arr, keywords) {
  * For scores between table entries (Focus scores are multiples of 10 ending in 5),
  * we round to the nearest table entry before lookup.
  */
-function focusToClassic(focusScore) {
+export function focusToClassic(focusScore) {
   const table = {
     805: 795, 795: 790, 785: 785, 775: 780, 765: 780,
     755: 775, 745: 770, 735: 765, 725: 760, 715: 755,

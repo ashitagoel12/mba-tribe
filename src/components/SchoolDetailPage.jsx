@@ -434,8 +434,25 @@ export default function SchoolDetailPage() {
         {/* ── Disclaimer ──────────────────────────────────────────────────── */}
         <div className="border-l-4 border-indigo-300 bg-indigo-50 rounded-r-lg px-4 py-3">
           <p className="text-sm text-indigo-700 leading-relaxed">
-            Figures come from public school data, last audited in October 2026. Confirm details directly with each school before applying.
+            {school.lastVerified
+              ? `Key figures checked against ${school.shortName || school.name}'s own website on ${school.lastVerified}. Confirm details directly with the school before applying.`
+              : 'Figures come from public school data, last audited in October 2026. Confirm details directly with each school before applying.'}
           </p>
+          {school.sources && (
+            <details className="mt-2 text-xs text-indigo-700">
+              <summary className="cursor-pointer font-medium">Sources ({Object.keys(school.sources).length})</summary>
+              <ul className="mt-2 space-y-1">
+                {Object.entries(school.sources).map(([field, src]) => (
+                  <li key={field}>
+                    <span className="font-medium">{field.replace(/_/g, ' ')}</span>
+                    {src.asOf ? ` · ${src.asOf}` : ''} ·{' '}
+                    <a href={src.url} target="_blank" rel="noopener noreferrer" className="underline">source</a>
+                    {src.note ? ` · ${src.note}` : ''}
+                  </li>
+                ))}
+              </ul>
+            </details>
+          )}
         </div>
 
         {/* ── Overview ────────────────────────────────────────────────────── */}
