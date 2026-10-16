@@ -1,0 +1,15 @@
+{
+  "_note": "Manual link corrections for sites that block automated checks. Checked by hand in a browser. Applied by scripts/checkLinks.mjs before every check.",
+  "checked": "2026-10-16",
+  "replace": {
+    "https://business.columbia.edu/mba": "https://academics.business.columbia.edu/mba",
+    "https://business.columbia.edu/emba": "https://academics.business.columbia.edu/emba",
+    "https://business.columbia.edu/admissions/dual-degrees": "https://academics.business.columbia.edu/admissions/dual-degrees",
+    "https://business.columbia.edu/admissions/mba": "https://academics.business.columbia.edu/admissions/mba",
+    "https://business.columbia.edu/admissions/mba/events": "https://academics.business.columbia.edu/admissions/mba/events",
+    "https://business.columbia.edu/mba/academics/curriculum": "https://academics.business.columbia.edu/mba/academics/curriculum",
+    "https://business.columbia.edu/mba/academics/global-opportunities": "https://academics.business.columbia.edu/mba",
+    "https://business.columbia.edu/mba/tuition-financial-aid": "https://academics.business.columbia.edu/mba/tuition-financial-aid",
+    "https://business.columbia.edu/mba/tuition-financial-aid/mba-scholarships": "https://academics.business.columbia.edu/mba/tuition-financial-aid/mba-scholarships"
+  }
+}
