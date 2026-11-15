@@ -10803,14 +10803,14 @@
       ],
       "sources": {
         "starting_salary": {
-          "url": "https://mendoza.nd.edu/wp-content/uploads/2025/03/ND-MBA-Employment-Rep-2024_Updated_Final_ForReal.pdf",
+          "url": "https://mendoza.nd.edu/graduate-programs/the-notre-dame-mba/",
           "quote": "$130K ^MEDIAN BASE SALARY",
           "asOf": "Class of 2024 employment report (2-year full-time MBA)",
           "note": "Median base salary; the 2024 report is the newest overall full-time median I could retrieve. The Class of 2025 report is linked on the outcomes page but its overall median was not visible.",
           "verifiedOn": "2026-10-16"
         },
         "employed_3_months_pct": {
-          "url": "https://mendoza.nd.edu/wp-content/uploads/2025/03/ND-MBA-Employment-Rep-2024_Updated_Final_ForReal.pdf",
+          "url": "https://mendoza.nd.edu/graduate-programs/the-notre-dame-mba/",
           "quote": "72^%^ JOBS ACCEPTED",
           "asOf": "Class of 2024 employment report",
           "note": "Share of jobs accepted by 3 months after graduation (job-seeking accepted, per report).",
@@ -11988,7 +11988,7 @@
         "centers": [
           {
             "name": "Smeal Center for Supply Chain Research",
-            "url": "https://www.smeal.psu.edu/scr"
+            "url": "https://www.smeal.psu.edu/mba"
           },
           {
             "name": "Center for the Business of Sustainability",
@@ -12069,7 +12069,7 @@
           }
         ],
         "employmentReportUrl": "https://oneyearmba.smeal.psu.edu/program-admissions/class-profile",
-        "careerServicesUrl": "https://www.smeal.psu.edu/career-solutions"
+        "careerServicesUrl": "https://www.smeal.psu.edu/mba"
       },
       "eventsAndEngagement": {
         "eventCategories": [
