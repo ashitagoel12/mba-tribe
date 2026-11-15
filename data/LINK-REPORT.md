@@ -1,22 +1,15 @@
-# Link check — 2026-10-16
+# Link check — 2026-11-15
 
-Unique URLs: 765 · OK: 692 · Broken: 3 · Could not check: 70
+Unique URLs: 765 · OK: 672 · Broken: 5 · Could not check: 88
 
 Broken links inside lists were removed; other broken links now point to the school's program page. "Could not check" means the site blocks automated visits (usually HTTP 403); those links were left as they are.
 
 ## Repairs
 
-- `charleston-mba` programUrl: https://business.cofc.edu/graduate-programs/mba.php → replaced with https://business.cofc.edu/
-- `charleston-mba` refresh.links.class_size: https://business.cofc.edu/graduate-programs/mba.php → replaced with https://business.cofc.edu/
-- `charleston-mba` refresh.links.avg_work_experience: https://business.cofc.edu/graduate-programs/mba.php → replaced with https://business.cofc.edu/
-- `charleston-mba` refresh.links.avg_gmat: https://business.cofc.edu/graduate-programs/mba.php → replaced with https://business.cofc.edu/
-- `charleston-mba` refresh.links.avg_gre_total: https://business.cofc.edu/graduate-programs/mba.php → replaced with https://business.cofc.edu/
-- `charleston-mba` refresh.links.international_pct: https://business.cofc.edu/graduate-programs/mba.php → replaced with https://business.cofc.edu/
-- `charleston-mba` refresh.links.women_pct: https://business.cofc.edu/graduate-programs/mba.php → replaced with https://business.cofc.edu/
-- `charleston-mba` refresh.links.annual_tuition: https://business.cofc.edu/graduate-programs/mba.php → replaced with https://business.cofc.edu/
-- `charleston-mba` refresh.links.employed_3_months_pct: https://business.cofc.edu/graduate-programs/mba.php → replaced with https://business.cofc.edu/
-- `charleston-mba` refresh.links.starting_salary: https://business.cofc.edu/graduate-programs/mba.php → replaced with https://business.cofc.edu/
-- `charleston-mba` refresh.links.signing_bonus: https://business.cofc.edu/graduate-programs/mba.php → replaced with https://business.cofc.edu/
+- `notre-dame-mendoza` sources.starting_salary.url: https://mendoza.nd.edu/wp-content/uploads/2025/03/ND-MBA-Employment-Rep-2024_Updated_Final_ForReal.pdf → replaced with https://mendoza.nd.edu/graduate-programs/the-notre-dame-mba/
+- `notre-dame-mendoza` sources.employed_3_months_pct.url: https://mendoza.nd.edu/wp-content/uploads/2025/03/ND-MBA-Employment-Rep-2024_Updated_Final_ForReal.pdf → replaced with https://mendoza.nd.edu/graduate-programs/the-notre-dame-mba/
+- `penn-state-smeal` academics.centers.0.url: https://www.smeal.psu.edu/scr → replaced with https://www.smeal.psu.edu/mba
+- `penn-state-smeal` career.careerServicesUrl: https://www.smeal.psu.edu/career-solutions → replaced with https://www.smeal.psu.edu/mba
 - `loyola-maryland-sellinger` programUrl: https://sellinger.loyola.edu/ → no working page found for this school; needs a person
 - `loyola-maryland-sellinger` refresh.links.class_size: https://sellinger.loyola.edu/ → no working page found for this school; needs a person
 - `loyola-maryland-sellinger` refresh.links.avg_work_experience: https://sellinger.loyola.edu/ → no working page found for this school; needs a person
@@ -41,11 +34,12 @@ Broken links inside lists were removed; other broken links now point to the scho
 
 ## Sites that block automated checks
 
-- michiganross.umich.edu: 21 link(s) (502)
+- michiganross.umich.edu: 21 link(s) (403)
+- mendoza.nd.edu: 11 link(s) (403)
 - academics.business.columbia.edu: 8 link(s) (403)
+- business.wisc.edu: 8 link(s) (403)
 - oneyearmba.smeal.psu.edu: 7 link(s) (UNABLE_TO_VERIFY_LEAF_SIGNATURE)
 - business.columbia.edu: 6 link(s) (403)
-- www.smeal.psu.edu: 5 link(s) (UNABLE_TO_VERIFY_LEAF_SIGNATURE)
 - www.terry.uga.edu: 3 link(s) (403)
 - hankamer.baylor.edu: 3 link(s) (403)
 - zicklin.baruch.cuny.edu: 2 link(s) (UNABLE_TO_VERIFY_LEAF_SIGNATURE)
@@ -56,13 +50,17 @@ Broken links inside lists were removed; other broken links now point to the scho
 - zli.umich.edu: 1 link(s) (403)
 - positiveorgs.bus.umich.edu: 1 link(s) (403)
 - www.fuqua.duke.edu: 1 link(s) (403)
-- blogs.fuqua.duke.edu: 1 link(s) (UNABLE_TO_VERIFY_LEAF_SIGNATURE)
 - mbablogs.anderson.ucla.edu: 1 link(s) (UNABLE_TO_VERIFY_LEAF_SIGNATURE)
+- innovation.mit.edu: 1 link(s) (UND_ERR_CONNECT_TIMEOUT)
+- entrepreneurship.mit.edu: 1 link(s) (UND_ERR_CONNECT_TIMEOUT)
+- lgo.mit.edu: 1 link(s) (UND_ERR_CONNECT_TIMEOUT)
+- wsb.wisc.edu: 1 link(s) (403)
+- admissions.wsb.wisc.edu: 1 link(s) (403)
 - krannert.purdue.edu: 1 link(s) (ECONNRESET)
-- spears.okstate.edu: 1 link(s) (403)
-- drexel.edu: 1 link(s) (ECONNREFUSED)
-- www.baylor.edu: 1 link(s) (403)
 - lilie.rice.edu: 1 link(s) (UND_ERR_CONNECT_TIMEOUT)
+- spears.okstate.edu: 1 link(s) (403)
+- www.baylor.edu: 1 link(s) (403)
+- drexel.edu: 1 link(s) (ECONNREFUSED)
 
 ## Spot-check (10 minutes)
 
@@ -78,7 +76,7 @@ A random sample of verified figures. Open a few links and confirm the quote is o
 | Wharton | women_pct | Female: 47% | Class of 2026 profile (readable text on class-profile page) | [link](https://mba.wharton.upenn.edu/class-profile/) |
 | Sam M. Walton College of Business | employed_3_months_pct | 89% Percentage of full-time Walton MBA students who were employed within 3 months of gradu | 2024-2025 Full-time MBA Graduate Employment Statistics (Fall 2024-Spring 2025 knowledge rate) | [link](https://waltoncareers.uark.edu/employment-outcomes/) |
 | Kellogg | deadline_round3 | / Round 3 / March 31, 2027 / May 12, 2027 / | 2026-27 application cycle | [link](https://www.kellogg.northwestern.edu/admissions/apply/) |
-| Mendoza | starting_salary | $130K ^MEDIAN BASE SALARY | Class of 2024 employment report (2-year full-time MBA) | [link](https://mendoza.nd.edu/wp-content/uploads/2025/03/ND-MBA-Employment-Rep-2024_Updated_Final_ForReal.pdf) |
+| Mendoza | starting_salary | $130K ^MEDIAN BASE SALARY | Class of 2024 employment report (2-year full-time MBA) | [link](https://mendoza.nd.edu/graduate-programs/the-notre-dame-mba/) |
 | Questrom MBA | signing_bonus | MEAN SIGNING BONUS MEDIAN SIGNING BONUS $11,250 $10,000 | Full-Time MBA Employment Report Class of 2025 | [link](https://www.bu.edu/questrom/wp-content/uploads/sites/2/2026/03/26102_Feld_FTMBA_EmploymentReport-8.5X11-003.pdf) |
 | Kenan-Flagler | avg_work_experience | 5 Average years of work experience | Class of 2027 profile | [link](https://www.kenan-flagler.unc.edu/programs/mba/full-time-mba/class-profile/) |
 | Wharton | avg_work_experience | 5 years average work experience | Class profile page (readable text is Class of 2026 profile) | [link](https://mba.wharton.upenn.edu/class-profile/) |
